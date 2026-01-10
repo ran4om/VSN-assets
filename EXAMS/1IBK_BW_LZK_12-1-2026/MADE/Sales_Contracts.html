@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Contracts and Their Legal Framework | VSN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --vsn-primary: #1e2e48;
+            --vsn-secondary: #fbc92d;
+            --vsn-complementary: #dc4ebf;
+            --callout-definition: rgba(220, 78, 191, 0.7);
+            --callout-info: rgba(41, 128, 185, 0.7);
+            --callout-tip: rgba(251, 201, 45, 0.7);
+            --text-dark: #1e2e48;
+            --text-light: #ffffff;
+            --bg-light: #f8f9fa;
+            --border-light: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: #fff;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15mm;
+        }
+
+        /* Header/Cover */
+        .cover-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 250mm;
+            text-align: center;
+            page-break-after: always;
+        }
+
+        .cover-logo {
+            width: 120px;
+            margin-bottom: 40px;
+        }
+
+        .cover-title {
+            font-size: 28pt;
+            font-weight: 700;
+            color: var(--vsn-primary);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .cover-subtitle {
+            font-size: 14pt;
+            color: var(--vsn-complementary);
+            margin-bottom: 30px;
+        }
+
+        .cover-date {
+            font-size: 11pt;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        .cover-decoration {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--vsn-primary), var(--vsn-secondary), var(--vsn-complementary));
+            margin: 20px 0;
+            border-radius: 2px;
+        }
+
+        /* Table of Contents */
+        .toc {
+            page-break-after: always;
+        }
+
+        .toc h2 {
+            font-size: 18pt;
+            color: var(--vsn-primary);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--vsn-secondary);
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            padding: 8px 0;
+            border-bottom: 1px dotted var(--border-light);
+        }
+
+        .toc-list a {
+            color: var(--vsn-primary);
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .toc-list a:hover {
+            color: var(--vsn-complementary);
+        }
+
+        .toc-section {
+            font-weight: 600;
+        }
+
+        .toc-subsection {
+            padding-left: 20px;
+            font-size: 10pt;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 20pt;
+            color: var(--vsn-primary);
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 3px solid var(--vsn-secondary);
+        }
+
+        h2 {
+            font-size: 16pt;
+            color: var(--vsn-primary);
+            margin: 25px 0 12px 0;
+            padding-left: 10px;
+            border-left: 4px solid var(--vsn-complementary);
+        }
+
+        h3 {
+            font-size: 13pt;
+            color: var(--vsn-primary);
+            margin: 20px 0 10px 0;
+        }
+
+        h4 {
+            font-size: 11pt;
+            color: var(--vsn-complementary);
+            margin: 15px 0 8px 0;
+        }
+
+        /* Bilingual Layout */
+        .bilingual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 15px 0;
+        }
+
+        .lang-en,
+        .lang-de {
+            padding: 15px;
+            background: var(--bg-light);
+            border-radius: 8px;
+        }
+
+        .lang-label {
+            font-size: 9pt;
+            font-weight: 600;
+            color: var(--vsn-complementary);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        /* Callout Boxes */
+        .callout {
+            padding: 15px 15px 15px 50px;
+            border-radius: 8px;
+            margin: 15px 0;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .callout-icon {
+            position: absolute;
+            left: 12px;
+            top: 15px;
+            width: 24px;
+            height: 24px;
+        }
+
+        .callout-definition {
+            background: var(--callout-definition);
+            color: var(--text-light);
+        }
+
+        .callout-info {
+            background: var(--callout-info);
+            color: var(--text-light);
+        }
+
+        .callout-tip {
+            background: var(--callout-tip);
+            color: var(--text-dark);
+        }
+
+        .callout strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+        }
+
+        th {
+            background: var(--vsn-primary);
+            color: var(--text-light);
+            padding: 12px 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin: 10px 0 10px 25px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        li::marker {
+            color: var(--vsn-secondary);
+        }
+
+        /* Specialized Text */
+        code,
+        .mono {
+            font-family: 'Roboto Mono', monospace;
+            background: var(--bg-light);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10pt;
+        }
+
+        /* Section Breaks */
+        .section {
+            page-break-inside: avoid;
+        }
+
+        .page-break {
+            page-break-after: always;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                padding: 0;
+                max-width: none;
+            }
+
+            .cover-page {
+                min-height: 100vh;
+            }
+
+            .callout {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            th,
+            tr:nth-child(even) {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm;
+        }
+
+        /* SVG Diagram Container */
+        .diagram-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+
+        .diagram-container svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Paragraph */
+        p {
+            margin: 10px 0;
+        }
+
+        /* Strong emphasis */
+        strong {
+            color: var(--vsn-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cover Page -->
+    <div class="cover-page">
+        <img src="assets/VSN_new.png" alt="VSN Logo" class="cover-logo">
+        <div class="cover-decoration"></div>
+        <h1 class="cover-title">The Consumer as Buyer</h1>
+        <p class="cover-subtitle">Sales Contracts and Their Legal Framework</p>
+        <div class="cover-decoration"></div>
+        <p class="cover-date">January 2026 | 1IBK Business Studies</p>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul class="toc-list">
+            <li class="toc-section"><a href="#phases"><span>1. Phases of Buying and Selling</span></a></li>
+            <li class="toc-subsection"><a href="#initiation"><span>1.1 Initiation of the Sales Contract</span></a></li>
+            <li class="toc-subsection"><a href="#conclusion"><span>1.2 Conclusion of the Sales Contract</span></a></li>
+            <li class="toc-subsection"><a href="#fulfillment"><span>1.3 Fulfillment of the Sales Contract</span></a>
+            </li>
+            <li class="toc-section"><a href="#parties"><span>2. Contract Parties and Business Types</span></a></li>
+            <li class="toc-section"><a href="#laws"><span>3. Applicable Laws</span></a></li>
+            <li class="toc-section"><a href="#contracts"><span>4. Other Important Contract Types</span></a></li>
+            <li class="toc-section"><a href="#ecommerce"><span>5. Distance Selling and E-Commerce</span></a></li>
+            <li class="toc-section"><a href="#withdrawal"><span>6. Withdrawal Rights</span></a></li>
+            <li class="toc-section"><a href="#quality"><span>7. Quality: Legal Components of a Sales Contract</span></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Section 1: Phases -->
+    <section id="phases">
+        <h1>1. Phases of Buying and Selling</h1>
+
+        <div class="bilingual">
+            <div class="lang-en">
+                <div class="lang-label">English</div>
+                <p>A sales contract is a legally binding agreement for the exchange of goods for money, following a
+                    similar process regardless of the item. Understanding the individual phases is crucial for
+                    consumers.</p>
+            </div>
+            <div class="lang-de">
+                <div class="lang-label">Deutsch</div>
+                <p>Ein Kaufvertrag ist eine rechtsverbindliche Vereinbarung über den Austausch von Gütern gegen Geld.
+                    Das Verständnis der einzelnen Phasen ist für Konsumenten entscheidend.</p>
+            </div>
+        </div>
+
+        <!-- Phases Diagram -->
+        <div class="diagram-container">
+            <svg width="600" height="200" viewBox="0 0 600 200">
+                <!-- Phase 1 -->
+                <rect x="10" y="60" width="160" height="80" rx="10" fill="#1e2e48" />
+                <text x="90" y="95" text-anchor="middle" fill="white" font-family="Open Sans" font-size="11"
+                    font-weight="600">1. INITIATION</text>
+                <text x="90" y="115" text-anchor="middle" fill="#fbc92d" font-family="Open Sans"
+                    font-size="9">Anbahnung</text>
+
+                <!-- Arrow 1 -->
+                <path d="M175 100 L215 100" stroke="#fbc92d" stroke-width="3" fill="none" />
+                <polygon points="215,95 225,100 215,105" fill="#fbc92d" />
+
+                <!-- Phase 2 -->
+                <rect x="230" y="60" width="160" height="80" rx="10" fill="#1e2e48" />
+                <text x="310" y="95" text-anchor="middle" fill="white" font-family="Open Sans" font-size="11"
+                    font-weight="600">2. CONCLUSION</text>
+                <text x="310" y="115" text-anchor="middle" fill="#fbc92d" font-family="Open Sans"
+                    font-size="9">Abschluss</text>
+
+                <!-- Arrow 2 -->
+                <path d="M395 100 L435 100" stroke="#fbc92d" stroke-width="3" fill="none" />
+                <polygon points="435,95 445,100 435,105" fill="#fbc92d" />
+
+                <!-- Phase 3 -->
+                <rect x="450" y="60" width="160" height="80" rx="10" fill="#1e2e48" />
+                <text x="530" y="95" text-anchor="middle" fill="white" font-family="Open Sans" font-size="11"
+                    font-weight="600">3. FULFILLMENT</text>
+                <text x="530" y="115" text-anchor="middle" fill="#fbc92d" font-family="Open Sans"
+                    font-size="9">Erfüllung</text>
+
+                <!-- Labels -->
+                <text x="90" y="165" text-anchor="middle" fill="#666" font-family="Open Sans" font-size="8">Inquiry,
+                    Offer, Order</text>
+                <text x="310" y="165" text-anchor="middle" fill="#666" font-family="Open Sans" font-size="8">Agreement
+                    on Terms</text>
+                <text x="530" y="165" text-anchor="middle" fill="#666" font-family="Open Sans" font-size="8">Delivery
+                    &amp; Payment</text>
+            </svg>
+        </div>
+
+        <h2 id="initiation">1.1 Initiation of the Sales Contract</h2>
+
+        <h3>Seller's Actions</h3>
+
+        <h4>Advertising (Anpreisung)</h4>
+        <div class="bilingual">
+            <div class="lang-en">
+                <div class="lang-label">English</div>
+                <p>Companies use advertising (flyers, TV ads) to draw attention to their products.</p>
+            </div>
+            <div class="lang-de">
+                <div class="lang-label">Deutsch</div>
+                <p>Unternehmen machen mit Anpreisungen (z.B. Flugblatt, TV-Werbung) auf ihre Produkte aufmerksam.</p>
+            </div>
+        </div>
+
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2" />
+                <circle cx="12" cy="8" r="1" fill="currentColor" />
+            </svg>
+            <strong>Disclaimer Clauses (Freizeichnungsklauseln)</strong>
+            Lack of binding intent is indicated by phrases like "While stocks last," "Non-binding," or "Prices subject
+            to change."
+        </div>
+
+        <h4>Offer (Angebot)</h4>
+
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                    stroke-width="2" fill="none" />
+            </svg>
+            <strong>Binding Offer (Verbindliches Angebot)</strong>
+            An offer that signals the seller's firm intention to sell. It is legally binding for the seller.
+        </div>
+
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                    stroke-width="2" fill="none" />
+            </svg>
+            <strong>Non-binding Offer (Unverbindliches Angebot)</strong>
+            An offer that includes disclaimer clauses (e.g., "subject to change") and does not create a binding
+            commitment.
+        </div>
+
+        <h4>Requirements for a Binding Offer</h4>
+        <table>
+            <tr>
+                <th>Element</th>
+                <th>English</th>
+                <th>German</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Specific Seller</td>
+                <td>Bestimmter Verkäufer</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Specific Buyer</td>
+                <td>Bestimmter Käufer</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Quality (Product Type)</td>
+                <td>Qualität (Produktart)</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Quantity</td>
+                <td>Menge (Quantität)</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Price</td>
+                <td>Preis</td>
+            </tr>
+        </table>
+
+        <h4>Duration of Binding Offers</h4>
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>With stated duration</td>
+                <td>Binding for the specified period</td>
+            </tr>
+            <tr>
+                <td>Verbal offers (no duration)</td>
+                <td>Binding for the duration of the conversation</td>
+            </tr>
+            <tr>
+                <td>Written offers - Mail</td>
+                <td>4-6 days (transport + reflection time)</td>
+            </tr>
+            <tr>
+                <td>Written offers - Email</td>
+                <td>Limited to delivery time (immediate)</td>
+            </tr>
+        </table>
+
+        <h3>Buyer's Actions</h3>
+
+        <h4>Inquiry (Anfrage)</h4>
+        <div class="bilingual">
+            <div class="lang-en">
+                <div class="lang-label">English</div>
+                <p><strong>General Inquiry:</strong> Customer wants an overview and general information (catalogs, price
+                    lists).</p>
+                <p><strong>Specific Inquiry:</strong> Customer has concrete wishes and wants targeted information about
+                    a product.</p>
+            </div>
+            <div class="lang-de">
+                <div class="lang-label">Deutsch</div>
+                <p><strong>Allgemeine Anfrage:</strong> Der Kunde möchte einen Überblick sowie allgemeines
+                    Informationsmaterial bekommen.</p>
+                <p><strong>Spezielle Anfrage:</strong> Der Kunde hat konkrete Wünsche und möchte gezielte Informationen
+                    zu einem Produkt.</p>
+            </div>
+        </div>
+
+        <div class="callout callout-tip">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="#1e2e48">
+                <path
+                    d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"
+                    stroke="currentColor" stroke-width="2" fill="none" />
+                <line x1="9" y1="21" x2="15" y2="21" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <strong>Remember</strong>
+            Inquiries are legally non-binding; the buyer incurs no legal obligation.
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <!-- Section 2: Conclusion -->
+    <section id="conclusion">
+        <h2>1.2 Conclusion of the Sales Contract</h2>
+
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                    stroke-width="2" fill="none" />
+            </svg>
+            <strong>Concordant Declarations of Intent (Übereinstimmende Willenserklärung)</strong>
+            The sales contract is concluded when buyer and seller reach mutual agreement on all essential points.
+        </div>
+
+        <h3>Forms of Contract Conclusion</h3>
+        <table>
+            <tr>
+                <th>Form</th>
+                <th>Description</th>
+                <th>Examples</th>
+            </tr>
+            <tr>
+                <td><strong>Verbal</strong> (Mündlich)</td>
+                <td>Common for everyday goods of low value</td>
+                <td>Ordering pizza, buying bread</td>
+            </tr>
+            <tr>
+                <td><strong>Written</strong> (Schriftlich)</td>
+                <td>Customary for complex or high-value transactions</td>
+                <td>Property purchases, installment plans</td>
+            </tr>
+            <tr>
+                <td><strong>Electronic</strong> (Elektronisch)</td>
+                <td>Via internet, effective on order confirmation</td>
+                <td>Online shops, email orders</td>
+            </tr>
+            <tr>
+                <td><strong>Conclusive Action</strong> (Schlüssiges Handeln)</td>
+                <td>Actions indicating intent without explicit declaration</td>
+                <td>Placing goods on checkout conveyor</td>
+            </tr>
+        </table>
+
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2" />
+                <circle cx="12" cy="8" r="1" fill="currentColor" />
+            </svg>
+            <strong>Mandatory Written Form (Zwingende Schriftform)</strong>
+            Required for: Property purchases (land, houses, apartments) and installment payment plans.
+        </div>
+
+        <h3>Legal Requirements for a Valid Sales Contract</h3>
+
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Requirement</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><strong>Bilateralism</strong> (Zweiseitigkeit)</td>
+                <td>At least two contract partners must be involved</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><strong>Concordant Intent</strong></td>
+                <td>Both must agree on all essential conditions</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><strong>Voluntariness</strong> (Freiwilligkeit)</td>
+                <td>No coercion, threats, or blackmail</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><strong>Permissibility</strong> (Erlaubtheit)</td>
+                <td>Transaction must not violate any law</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><strong>Possibility</strong> (Möglichkeit)</td>
+                <td>Subject must be possible (no time machines!)</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><strong>Capacity to Contract</strong></td>
+                <td>Minimum age and mental capability required</td>
+            </tr>
+        </table>
+
+        <h3>Capacity to Contract: Stages</h3>
+
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                    stroke-width="2" fill="none" />
+            </svg>
+            <strong>Capacity to Contract (Geschäftsfähigkeit)</strong>
+            The ability of a person to conclude valid contracts through their own actions, depending on age and mental
+            state.
+        </div>
+
+        <table>
+            <tr>
+                <th>Stage</th>
+                <th>Age</th>
+                <th>Scope</th>
+            </tr>
+            <tr>
+                <td><strong>Completely Incapable</strong><br><em>Gänzlich geschäftsunfähig</em></td>
+                <td>Under 7 years</td>
+                <td>Cannot conclude contracts. Exception: pocket money transactions</td>
+            </tr>
+            <tr>
+                <td><strong>Limited Capacity</strong><br><em>Beschränkt geschäftsfähig</em></td>
+                <td>7 to under 14</td>
+                <td>Age-appropriate minor transactions; needs parental consent for others</td>
+            </tr>
+            <tr>
+                <td><strong>Extended Limited</strong><br><em>Erweitert beschränkt geschäftsfähig</em></td>
+                <td>14 to under 18</td>
+                <td>Within pocket money or earned income; livelihood must not be endangered</td>
+            </tr>
+            <tr>
+                <td><strong>Full Capacity</strong><br><em>Voll geschäftsfähig</em></td>
+                <td>18+ years</td>
+                <td>All permissible transactions; full rights and obligations</td>
+            </tr>
+        </table>
+
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2" />
+                <circle cx="12" cy="8" r="1" fill="currentColor" />
+            </svg>
+            <strong>Adult Representatives (Erwachsenenvertreter)</strong>
+            Persons with mental illness or intellectual disability who cannot manage their affairs are represented by
+            court-appointed representatives.
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <!-- Section 3: Fulfillment -->
+    <section id="fulfillment">
+        <h2>1.3 Fulfillment of the Sales Contract</h2>
+
+        <div class="bilingual">
+            <div class="lang-en">
+                <div class="lang-label">English</div>
+                <p><strong>Seller's Obligation:</strong> Delivery of the product (defect-free) and invoicing.</p>
+                <p><strong>Buyer's Obligation:</strong> Acceptance of the product and payment of the purchase price.</p>
+            </div>
+            <div class="lang-de">
+                <div class="lang-label">Deutsch</div>
+                <p><strong>Verkäuferpflicht:</strong> Lieferung des Produkts (mangelfrei) und Rechnungslegung.</p>
+                <p><strong>Käuferpflicht:</strong> Annahme des Produkts und Zahlung des Kaufpreises.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Contract Parties -->
+    <section id="parties">
+        <h1>2. Contract Parties and Business Types</h1>
+
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                    stroke-width="2" fill="none" />
+            </svg>
+            <strong>Contracts (Verträge)</strong>
+            Agreements about a specific transaction between two or more contracting parties. Associated with legal
+            consequences.
+        </div>
+
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Parties</th>
+                <th>Characteristics</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><strong>C2C</strong><br>Consumer-to-Consumer</td>
+                <td>Private ↔ Private</td>
+                <td>Limited legal protection; warranties often excluded</td>
+                <td>Selling on eBay/Willhaben</td>
+            </tr>
+            <tr>
+                <td><strong>B2C</strong><br>Business-to-Consumer</td>
+                <td>Company → Private</td>
+                <td>Strong consumer protection (KSchG, FAGG)</td>
+                <td>Supermarket, online shop</td>
+            </tr>
+            <tr>
+                <td><strong>B2B</strong><br>Business-to-Business</td>
+                <td>Company ↔ Company</td>
+                <td>Less consumer protection; governed by UGB</td>
+                <td>Wholesaler to retailer</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Section 5: Laws -->
+    <section id="laws">
+        <h1>3. Applicable Laws</h1>
+
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2" />
+                <circle cx="12" cy="8" r="1" fill="currentColor" />
+            </svg>
+            <strong>Freedom of Content (Inhaltsfreiheit)</strong>
+            Contract content can generally be freely determined, but various laws apply.
+        </div>
+
+        <table>
+            <tr>
+                <th>Law</th>
+                <th>Applies To</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><strong>ABGB</strong><br><em>General Civil Code</em></td>
+                <td>All contracts</td>
+                <td>Regulates capacity to contract, general contract law</td>
+            </tr>
+            <tr>
+                <td><strong>KSchG</strong><br><em>Consumer Protection Act</em></td>
+                <td>B2C contracts</td>
+                <td>Protects consumers from unfair business practices</td>
+            </tr>
+            <tr>
+                <td><strong>UGB</strong><br><em>Commercial Code</em></td>
+                <td>B2B contracts</td>
+                <td>Regulates business-to-business rights and obligations</td>
+            </tr>
+            <tr>
+                <td><strong>ECG</strong><br><em>E-Commerce Act</em></td>
+                <td>Online sellers</td>
+                <td>Information obligations for websites</td>
+            </tr>
+            <tr>
+                <td><strong>FAGG</strong><br><em>Distance Contracts Act</em></td>
+                <td>B2C outside premises</td>
+                <td>Distance and off-premises contract rules</td>
+            </tr>
+            <tr>
+                <td><strong>DSGVO</strong><br><em>GDPR</em></td>
+                <td>All EU companies</td>
+                <td>Personal data protection</td>
+            </tr>
+        </table>
+
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                    stroke-width="2" fill="none" />
+            </svg>
+            <strong>Usances (Usancen)</strong>
+            Rules and customs in business known to contracting parties and not renegotiated each time.
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <!-- Section 6: Other Contracts -->
+    <section id="contracts">
+        <h1>4. Other Important Contract Types</h1>
+
+        <table>
+            <tr>
+                <th>Contract Type</th>
+                <th>Performance (Leistung)</th>
+                <th>Consideration (Gegenleistung)</th>
+            </tr>
+            <tr>
+                <td><strong>Sales Contract</strong><br><em>Kaufvertrag</em></td>
+                <td>Product</td>
+                <td>Purchase Price</td>
+            </tr>
+            <tr>
+                <td><strong>Work Contract</strong><br><em>Werkvertrag</em></td>
+                <td>Work, Service</td>
+                <td>Fee for Work (Werklohn)</td>
+            </tr>
+            <tr>
+                <td><strong>Rental Contract</strong><br><em>Mietvertrag</em></td>
+                <td>Leased object</td>
+                <td>Rent (Mietzins)</td>
+            </tr>
+            <tr>
+                <td><strong>Employment Contract</strong><br><em>Arbeitsvertrag</em></td>
+                <td>Work performance</td>
+                <td>Wage, Salary</td>
+            </tr>
+            <tr>
+                <td><strong>Loan Agreement</strong><br><em>Kreditvertrag</em></td>
+                <td>Money amount</td>
+                <td>Interest + Repayment</td>
+            </tr>
+            <tr>
+                <td><strong>Insurance Contract</strong><br><em>Versicherungsvertrag</em></td>
+                <td>Insurance benefit</td>
+                <td>Premium</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Section 7: E-Commerce -->
+    <section id="ecommerce">
+        <h1>5. Distance Selling and E-Commerce</h1>
+
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                    stroke-width="2" fill="none" />
+            </svg>
+            <strong>Distance Selling (Fernabsatz)</strong>
+            Contracting parties do not meet in person. All phases use remote communication means.
+        </div>
+
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                    stroke-width="2" fill="none" />
+            </svg>
+            <strong>E-Commerce</strong>
+            A special form of distance selling where trade is concluded entirely via the Internet.
+        </div>
+
+        <h2>Risks in E-Commerce</h2>
+        <table>
+            <tr>
+                <th>Risk</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><strong>Fraud Risk</strong> (Betrugsgefahr)</td>
+                <td>Sellers can hide online and delete websites after receiving payment</td>
+            </tr>
+            <tr>
+                <td><strong>No Product Inspection</strong></td>
+                <td>Rely on images, descriptions, and reviews (which can be faked)</td>
+            </tr>
+            <tr>
+                <td><strong>Data Misuse</strong></td>
+                <td>Personal data or account details may be stolen by hackers</td>
+            </tr>
+        </table>
+
+        <h2>Seller's Obligations</h2>
+
+        <h3>1. Information Obligations (Informationspflichten)</h3>
+        <p>Sellers must provide in the impressum:</p>
+        <ul>
+            <li>Name/company name and address</li>
+            <li>Contact details (email, phone)</li>
+            <li>Company registration number (Firmenbuchnummer)</li>
+            <li>VAT identification number (UID-Nr.)</li>
+        </ul>
+
+        <p>Before contract conclusion, inform about:</p>
+        <ul>
+            <li>Product characteristics and price (including taxes)</li>
+            <li>Delivery and payment details</li>
+            <li>Withdrawal rights (conditions, deadlines)</li>
+            <li>Warranty rights and guarantees</li>
+        </ul>
+
+        <div class="callout callout-tip">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="#1e2e48">
+                <path
+                    d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"
+                    stroke="currentColor" stroke-width="2" fill="none" />
+                <line x1="9" y1="21" x2="15" y2="21" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <strong>EU Button Solution</strong>
+            The "Order now, subject to payment" button must clearly indicate that clicking concludes a sales contract.
+        </div>
+
+        <h3>2. Delivery Deadline</h3>
+        <p>Delivery must occur within <strong>30 days</strong> after contract conclusion. If unable to fulfill, seller
+            must inform buyer and refund payments.</p>
+
+        <h2>Buyer's Tips for Safe Online Shopping</h2>
+        <ol>
+            <li><strong>Research the seller</strong> – Is it a company or private seller?</li>
+            <li><strong>Choose certified EU shops</strong> – Look for quality labels (guetezeichen.at)</li>
+            <li><strong>Read the AGB</strong> – Reputable providers make them clear and accessible</li>
+            <li><strong>Save important documents</strong> – Order confirmation and AGBs</li>
+            <li><strong>Beware of tempting offers</strong> – "Free" often means hidden costs</li>
+            <li><strong>Avoid prepayment</strong> – No leverage if product is defective</li>
+            <li><strong>Check total price</strong> – Include shipping costs</li>
+            <li><strong>Look for https://</strong> – Encrypted connection with lock symbol</li>
+        </ol>
+
+        <div class="callout callout-tip">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="#1e2e48">
+                <path
+                    d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"
+                    stroke="currentColor" stroke-width="2" fill="none" />
+                <line x1="9" y1="21" x2="15" y2="21" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <strong>ID Austria</strong>
+            Austria's qualified electronic signature system – use it for secure online identification and digital
+            services.
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <!-- Section 8: Withdrawal -->
+    <section id="withdrawal">
+        <h1>6. Withdrawal Rights (Widerrufsrechte)</h1>
+
+        <div class="callout callout-tip">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="#1e2e48">
+                <path
+                    d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"
+                    stroke="currentColor" stroke-width="2" fill="none" />
+                <line x1="9" y1="21" x2="15" y2="21" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <strong>Key Rule</strong>
+            Once a valid contract is concluded, there is generally no going back! Both parties must fulfill their
+            obligations.
+        </div>
+
+        <h2>General Rules for Contract Dissolution</h2>
+
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><strong>Mutual Agreement</strong><br><em>Einvernehmliche Auflösung</em></td>
+                <td>Both parties agree to reverse the contract</td>
+            </tr>
+            <tr>
+                <td><strong>Exchange</strong><br><em>Umtausch</em></td>
+                <td>Return product, select another. No legal right – must be agreed upon</td>
+            </tr>
+            <tr>
+                <td><strong>Withdrawal</strong><br><em>Rücktritt</em></td>
+                <td>Only if: explicitly agreed, illegal contract, fraud, or seller delay</td>
+            </tr>
+            <tr>
+                <td><strong>Cancellation</strong><br><em>Stornierung</em></td>
+                <td>Possible but usually incurs a cancellation fee</td>
+            </tr>
+        </table>
+
+        <h2>Special Withdrawal Rights</h2>
+
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2" />
+                <circle cx="12" cy="8" r="1" fill="currentColor" />
+            </svg>
+            <strong>When Special Rights Apply</strong>
+            For contracts concluded <strong>outside business premises</strong> (door-to-door, promotional trips) or
+            exclusively via <strong>distance selling</strong> (online shops).
+        </div>
+
+        <h3>Withdrawal Periods</h3>
+        <table>
+            <tr>
+                <th>Seller's Information</th>
+                <th>Buyer's Withdrawal Period</th>
+            </tr>
+            <tr>
+                <td>Seller informs about right of withdrawal</td>
+                <td><strong>14 calendar days</strong> after contract or delivery</td>
+            </tr>
+            <tr>
+                <td>Seller does NOT inform</td>
+                <td><strong>1 year + 14 calendar days</strong></td>
+            </tr>
+        </table>
+
+        <h3>Exceptions – No Withdrawal Possible</h3>
+        <ul>
+            <li>Home delivery of food (pizza)</li>
+            <li>Custom-made products (tailored clothing, photo books)</li>
+            <li>Opened software, CDs, DVDs</li>
+            <li>Urgent repair work explicitly requested</li>
+            <li>Leisure services (theater tickets, flight tickets)</li>
+        </ul>
+    </section>
+
+    <!-- Section 9: Quality -->
+    <section id="quality">
+        <h1>7. Quality: Legal Components of a Sales Contract</h1>
+
+        <h2>Statutory Components</h2>
+        <div class="diagram-container">
+            <svg width="500" height="100" viewBox="0 0 500 100">
+                <rect x="10" y="20" width="80" height="60" rx="8" fill="#1e2e48" />
+                <text x="50" y="50" text-anchor="middle" fill="white" font-family="Open Sans" font-size="9"
+                    font-weight="600">Seller</text>
+                <text x="50" y="63" text-anchor="middle" fill="#fbc92d" font-family="Open Sans"
+                    font-size="7">Verkäufer</text>
+
+                <rect x="110" y="20" width="80" height="60" rx="8" fill="#1e2e48" />
+                <text x="150" y="50" text-anchor="middle" fill="white" font-family="Open Sans" font-size="9"
+                    font-weight="600">Buyer</text>
+                <text x="150" y="63" text-anchor="middle" fill="#fbc92d" font-family="Open Sans"
+                    font-size="7">Käufer</text>
+
+                <rect x="210" y="20" width="80" height="60" rx="8" fill="#1e2e48" />
+                <text x="250" y="50" text-anchor="middle" fill="white" font-family="Open Sans" font-size="9"
+                    font-weight="600">Quality</text>
+                <text x="250" y="63" text-anchor="middle" fill="#fbc92d" font-family="Open Sans"
+                    font-size="7">Qualität</text>
+
+                <rect x="310" y="20" width="80" height="60" rx="8" fill="#1e2e48" />
+                <text x="350" y="50" text-anchor="middle" fill="white" font-family="Open Sans" font-size="9"
+                    font-weight="600">Quantity</text>
+                <text x="350" y="63" text-anchor="middle" fill="#fbc92d" font-family="Open Sans"
+                    font-size="7">Menge</text>
+
+                <rect x="410" y="20" width="80" height="60" rx="8" fill="#1e2e48" />
+                <text x="450" y="50" text-anchor="middle" fill="white" font-family="Open Sans" font-size="9"
+                    font-weight="600">Price</text>
+                <text x="450" y="63" text-anchor="middle" fill="#fbc92d" font-family="Open Sans"
+                    font-size="7">Preis</text>
+            </svg>
+        </div>
+
+        <h2>Fungible vs. Non-fungible Goods</h2>
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Characteristics</th>
+                <th>Quality Methods</th>
+                <th>Examples</th>
+            </tr>
+            <tr>
+                <td><strong>Fungible</strong><br><em>Vertretbar</em></td>
+                <td>Interchangeable; quality evident from one piece</td>
+                <td>Samples, brands, types, standards</td>
+                <td>Mobile phones, new cars, clothing</td>
+            </tr>
+            <tr>
+                <td><strong>Non-fungible</strong><br><em>Nicht vertretbar</em></td>
+                <td>Individually made; each piece unique</td>
+                <td>Inspection, description, illustration</td>
+                <td>Art, real estate, used cars</td>
+            </tr>
+        </table>
+
+        <h2>Methods of Quality Definition</h2>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><strong>Inspection</strong> (Besichtigung)</td>
+                <td>Buyer examines product directly. "As inspected" clause.</td>
+            </tr>
+            <tr>
+                <td><strong>Description &amp; Illustration</strong></td>
+                <td>Text and images explain characteristics</td>
+            </tr>
+            <tr>
+                <td><strong>Samples &amp; Specimens</strong></td>
+                <td>Small quantities to assess quality (Muster/Proben)</td>
+            </tr>
+            <tr>
+                <td><strong>Brands &amp; Types</strong></td>
+                <td>Protected marks distinguishing products (Marken/Typen)</td>
+            </tr>
+            <tr>
+                <td><strong>Standards</strong> (Normen)</td>
+                <td>Guidelines for standardization (ÖNORM, DIN)</td>
+            </tr>
+            <tr>
+                <td><strong>Quality Classes</strong></td>
+                <td>Products classified by criteria (Extra, 1, 2, 3)</td>
+            </tr>
+            <tr>
+                <td><strong>Quality Labels</strong> (Gütezeichen)</td>
+                <td>Markings indicating quality (e.g., AMA)</td>
+            </tr>
+        </table>
+
+        <h3>Special Purchase Types</h3>
+
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                    stroke-width="2" fill="none" />
+            </svg>
+            <strong>Purchase by Specification (Spezifikationskauf)</strong>
+            Quality roughly defined; buyer specifies details (quantity, dimensions) within a deadline.
+        </div>
+
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="white">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                    stroke-width="2" fill="none" />
+            </svg>
+            <strong>Purchase in Bulk (Kauf in Bausch und Bogen)</strong>
+            Buyer takes entire goods at one price regardless of defects. Seller not liable for specific quality.
+        </div>
+
+        <table>
+            <tr>
+                <th>Purchase Type</th>
+                <th>Description</th>
+                <th>Return Right</th>
+            </tr>
+            <tr>
+                <td><strong>Purchase by Sample</strong><br><em>Kauf nach Probe/Muster</em></td>
+                <td>Order based on sample; product must match</td>
+                <td>If doesn't match sample</td>
+            </tr>
+            <tr>
+                <td><strong>Purchase on Approval</strong><br><em>Kauf auf Probe</em></td>
+                <td>Return within set period (conditional)</td>
+                <td>Yes, within period</td>
+            </tr>
+            <tr>
+                <td><strong>Purchase for Testing</strong><br><em>Kauf zur Probe</em></td>
+                <td>Small quantity at low price to test</td>
+                <td>No</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <div
+        style="margin-top: 50px; padding-top: 20px; border-top: 2px solid var(--vsn-secondary); text-align: center; color: #666; font-size: 9pt;">
+        <p>© 2026 VSN - VBS Student Network | Learning Materials</p>
+    </div>
+
+</body>
+
+</html>
