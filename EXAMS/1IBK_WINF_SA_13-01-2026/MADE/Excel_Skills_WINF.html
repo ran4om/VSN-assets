@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Skills for Business Informatics | VSN</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e2e48;
+            --secondary: #fbc92d;
+            --complementary: #dc4ebf;
+            --info-blue: #2980b9;
+            --bg-light: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        code,
+        .mono {
+            font-family: 'Roboto Mono', monospace;
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10pt;
+        }
+
+        /* Print Styles */
+        @page {
+            size: A4;
+            margin: 20mm 15mm;
+        }
+
+        @media print {
+            .page-break {
+                page-break-after: always;
+            }
+
+            .no-break {
+                page-break-inside: avoid;
+            }
+
+            body {
+                font-size: 10pt;
+            }
+
+            .cover-page {
+                height: 100vh;
+            }
+        }
+
+        /* Cover Page */
+        .cover-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--primary);
+            color: #fff;
+            padding: 40px;
+        }
+
+        .cover-page img {
+            max-width: 200px;
+            margin-bottom: 50px;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+        }
+
+        .cover-page h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 1px;
+        }
+
+        .cover-page h2 {
+            font-size: 1.6em;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .cover-page .date {
+            font-size: 1.1em;
+            margin-top: 60px;
+            border-top: 3px solid var(--secondary);
+            padding-top: 25px;
+        }
+
+        /* TOC */
+        .toc {
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .toc h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .toc a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--complementary);
+        }
+
+        /* Content */
+        .content {
+            padding: 30px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 1.8em;
+            margin: 30px 0 15px;
+            border-left: 4px solid var(--secondary);
+            padding-left: 15px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4em;
+            margin: 25px 0 12px;
+        }
+
+        h3 {
+            color: var(--complementary);
+            font-size: 1.1em;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul,
+        ol {
+            margin: 10px 0 15px 25px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Bilingual Layout */
+        .bilingual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .lang-en,
+        .lang-de {
+            padding: 15px;
+            background: var(--bg-light);
+            border-radius: 8px;
+        }
+
+        .lang-en {
+            border-top: 3px solid var(--info-blue);
+        }
+
+        .lang-de {
+            border-top: 3px solid var(--secondary);
+        }
+
+        .lang-label {
+            font-size: 0.75em;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .lang-en .lang-label {
+            color: var(--info-blue);
+        }
+
+        .lang-de .lang-label {
+            color: #b8860b;
+        }
+
+        /* Callout Boxes */
+        .callout {
+            padding: 15px 15px 15px 50px;
+            border-radius: 8px;
+            margin: 15px 0;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .callout::before {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            font-size: 1.2em;
+        }
+
+        .callout-definition {
+            background: rgba(220, 78, 191, 0.15);
+            border-left: 4px solid var(--complementary);
+        }
+
+        .callout-definition::before {
+            content: "📖";
+        }
+
+        .callout-info {
+            background: rgba(41, 128, 185, 0.15);
+            border-left: 4px solid var(--info-blue);
+        }
+
+        .callout-info::before {
+            content: "ℹ️";
+        }
+
+        .callout-tip {
+            background: rgba(251, 201, 45, 0.25);
+            border-left: 4px solid var(--secondary);
+        }
+
+        .callout-tip::before {
+            content: "💡";
+        }
+
+        .callout-title {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+        }
+
+        th {
+            background: var(--primary);
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background: #f5f5f5;
+        }
+
+        /* Images */
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-caption {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 8px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- COVER PAGE -->
+    <div class="cover-page">
+        <img src="assets/VSN_new.png" alt="VSN Logo">
+        <h1>Excel Skills for Business Informatics</h1>
+        <h2>Excel-Fertigkeiten für Wirtschaftsinformatik</h2>
+        <p style="font-size:1.1em; opacity:0.9;">VBS Oberstufe</p>
+        <div class="date">January 12, 2026 | 12. Januar 2026</div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- TABLE OF CONTENTS -->
+    <div class="toc">
+        <h2>📑 Table of Contents | Inhaltsverzeichnis</h2>
+        <ul>
+            <li><strong>1.</strong> Excel Basics | Excel-Grundlagen</li>
+            <li style="margin-left:20px;">1.1 Basic Calculations | Grundlegende Berechnungen</li>
+            <li style="margin-left:20px;">1.2 Cell References | Zellbezüge</li>
+            <li><strong>2.</strong> Data Organization | Datenorganisation</li>
+            <li style="margin-left:20px;">2.1 Filtering Data | Filtern von Daten</li>
+            <li style="margin-left:20px;">2.2 Sorting Data | Sortieren von Daten</li>
+            <li style="margin-left:20px;">2.3 Subtotals | Teilergebnisse</li>
+            <li><strong>3.</strong> Data Formatting | Datenformatierung</li>
+            <li style="margin-left:20px;">3.1 Custom Number Formats | Benutzerdefinierte Zahlenformate</li>
+            <li style="margin-left:20px;">3.2 Conditional Formatting | Bedingte Formatierung</li>
+            <li><strong>4.</strong> Excel Functions | Excel-Funktionen</li>
+            <li style="margin-left:20px;">4.1 Aggregation Functions | Aggregationsfunktionen</li>
+            <li style="margin-left:20px;">4.2 Counting Functions | Zählfunktionen</li>
+            <li style="margin-left:20px;">4.3 IF Function | WENN-Funktion</li>
+            <li style="margin-left:20px;">4.4 Date Functions | Datumsfunktionen</li>
+            <li><strong>5.</strong> Practical Examples | Praktische Beispiele</li>
+        </ul>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- SECTION 1: EXCEL BASICS -->
+    <div class="content">
+        <h1>1. Excel Basics | Excel-Grundlagen</h1>
+
+        <h2>1.1 Basic Calculations | Grundlegende Berechnungen</h2>
+
+        <div class="callout callout-info no-break">
+            <div class="callout-title">Mathematical Operations in Excel</div>
+            Excel allows various mathematical operations directly in cells using formulas. All formulas start with
+            <code>=</code>
+        </div>
+
+        <table class="no-break">
+            <tr>
+                <th>Operation</th>
+                <th>English</th>
+                <th>Deutsch</th>
+                <th>Formula Example</th>
+            </tr>
+            <tr>
+                <td>➕ Addition</td>
+                <td>Addition</td>
+                <td>Addition</td>
+                <td><code>=A1+B1</code></td>
+            </tr>
+            <tr>
+                <td>➖ Subtraction</td>
+                <td>Subtraction</td>
+                <td>Subtraktion</td>
+                <td><code>=A1-B1</code></td>
+            </tr>
+            <tr>
+                <td>✖️ Multiplication</td>
+                <td>Multiplication</td>
+                <td>Multiplikation</td>
+                <td><code>=A1*B1</code></td>
+            </tr>
+            <tr>
+                <td>➗ Division</td>
+                <td>Division</td>
+                <td>Division</td>
+                <td><code>=A1/B1</code></td>
+            </tr>
+        </table>
+
+        <h2>1.2 Cell References | Zellbezüge</h2>
+
+        <div class="callout callout-definition no-break">
+            <div class="callout-title">Definition: Cell Reference</div>
+            <strong>EN:</strong> A cell reference indicates the location of a cell or range in a worksheet.<br>
+            <strong>DE:</strong> Ein Zellbezug gibt den Speicherort einer Zelle oder eines Zellbereichs an.
+        </div>
+
+        <div class="img-container no-break">
+            <img src="assets/excel_cell_references_1768245840068.png" alt="Cell References Explained">
+            <div class="img-caption">Types of cell references: Relative, Absolute, and Mixed</div>
+        </div>
+
+        <table class="no-break">
+            <tr>
+                <th>Type</th>
+                <th>Example</th>
+                <th>Behavior when copied</th>
+            </tr>
+            <tr>
+                <td><strong>Relative</strong></td>
+                <td><code>A1</code></td>
+                <td>Changes (A1 → B1 → C1)</td>
+            </tr>
+            <tr>
+                <td><strong>Absolute</strong></td>
+                <td><code>$A$1</code></td>
+                <td>Stays constant</td>
+            </tr>
+            <tr>
+                <td><strong>Mixed</strong></td>
+                <td><code>$A1</code> or <code>A$1</code></td>
+                <td>Column or row stays fixed</td>
+            </tr>
+        </table>
+
+        <div class="callout callout-tip no-break">
+            <div class="callout-title">💡 Exam Tip</div>
+            <strong>EN:</strong> Press <code>F4</code> after typing a cell reference to toggle between reference
+            types!<br>
+            <strong>DE:</strong> Drücken Sie <code>F4</code> nach Eingabe eines Zellbezugs, um zwischen Bezugsarten zu
+            wechseln!
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- SECTION 2: DATA ORGANIZATION -->
+    <div class="content">
+        <h1>2. Data Organization & Analysis | Datenorganisation & -analyse</h1>
+
+        <h2>2.1 Filtering Data | Filtern von Daten</h2>
+
+        <div class="callout callout-definition no-break">
+            <div class="callout-title">Definition: Filtering</div>
+            <strong>EN:</strong> Filtering displays only rows meeting specific criteria, temporarily hiding others.<br>
+            <strong>DE:</strong> Filtern zeigt nur Zeilen an, die bestimmte Kriterien erfüllen.
+        </div>
+
+        <div class="img-container no-break">
+            <img src="assets/excel_filter_tutorial_1768245816967.png" alt="How to Apply Filters">
+            <div class="img-caption">Step-by-step: Applying filters in Excel</div>
+        </div>
+
+        <h3>Filter Types | Filtertypen</h3>
+        <ul>
+            <li><strong>Table Filters:</strong> Dropdown arrows in column headers | Dropdown-Pfeile in
+                Spaltenüberschriften</li>
+            <li><strong>Number Filters:</strong> Greater than, Less than, Between | Größer als, Kleiner als, Zwischen
+            </li>
+            <li><strong>Text Filters:</strong> Contains, Begins with, Ends with | Enthält, Beginnt mit, Endet mit</li>
+        </ul>
+
+        <div class="callout callout-tip no-break">
+            <div class="callout-title">💡 Practical Examples</div>
+            <ul style="margin:0;">
+                <li>Filter female employees earning more than €40,000</li>
+                <li>Show only "AHS" branch data</li>
+                <li>Find models sold in Germany AND Italy (filter multiple columns)</li>
+            </ul>
+        </div>
+
+        <h2>2.2 Sorting Data | Sortieren von Daten</h2>
+
+        <div class="callout callout-definition no-break">
+            <div class="callout-title">Definition: Sorting</div>
+            <strong>EN:</strong> Sorting arranges data in a specified order (alphabetical, numerical,
+            chronological).<br>
+            <strong>DE:</strong> Sortieren ordnet Daten in einer bestimmten Reihenfolge an.
+        </div>
+
+        <table class="no-break">
+            <tr>
+                <th>Sort Type</th>
+                <th>Description EN</th>
+                <th>Beschreibung DE</th>
+            </tr>
+            <tr>
+                <td>Single-level</td>
+                <td>Sorts by one column</td>
+                <td>Sortiert nach einer Spalte</td>
+            </tr>
+            <tr>
+                <td>Multi-level</td>
+                <td>Primary, secondary, tertiary keys</td>
+                <td>Primäre, sekundäre, tertiäre Schlüssel</td>
+            </tr>
+        </table>
+
+        <h2>2.3 Subtotals | Teilergebnisse (<code>TEILERGEBNIS</code>)</h2>
+
+        <div class="callout callout-definition no-break">
+            <div class="callout-title">Definition: SUBTOTAL Function</div>
+            <strong>Syntax:</strong> <code>=TEILERGEBNIS(function_num; range)</code><br><br>
+            Returns a subtotal that <strong>ignores rows hidden by filters</strong>. Function numbers: 9 = SUM, 2 =
+            COUNT, 1 = AVERAGE
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- SECTION 3: DATA FORMATTING -->
+    <div class="content">
+        <h1>3. Data Formatting | Datenformatierung</h1>
+
+        <h2>3.1 Custom Number Formats | Benutzerdefinierte Zahlenformate</h2>
+
+        <div class="callout callout-definition no-break">
+            <div class="callout-title">Definition: Custom Number Formats</div>
+            <strong>EN:</strong> Custom formats display numbers in specific ways without changing their underlying
+            value.<br>
+            <strong>DE:</strong> Benutzerdefinierte Formate zeigen Zahlen auf bestimmte Weise an, ohne deren Wert zu
+            ändern.
+        </div>
+
+        <div class="img-container no-break">
+            <img src="assets/excel_custom_format_1768245883274.png" alt="Custom Number Format Structure">
+            <div class="img-caption">The four-section structure of custom number formats</div>
+        </div>
+
+        <h3>Format Syntax | Format-Syntax</h3>
+        <div class="callout callout-info no-break">
+            <code style="font-size:1.1em;">[Positive];[Negative];[Zero];[Text]</code>
+        </div>
+
+        <table class="no-break">
+            <tr>
+                <th>Symbol</th>
+                <th>Meaning</th>
+                <th>Bedeutung</th>
+            </tr>
+            <tr>
+                <td><code>#</code></td>
+                <td>Optional digit (no leading zeros)</td>
+                <td>Optionale Ziffer (keine führenden Nullen)</td>
+            </tr>
+            <tr>
+                <td><code>0</code></td>
+                <td>Required digit (shows zeros)</td>
+                <td>Erforderliche Ziffer (zeigt Nullen)</td>
+            </tr>
+            <tr>
+                <td><code>@</code></td>
+                <td>Text placeholder</td>
+                <td>Textplatzhalter</td>
+            </tr>
+            <tr>
+                <td><code>[Color]</code></td>
+                <td>Font color (e.g., [Red])</td>
+                <td>Schriftfarbe (z.B. [Rot])</td>
+            </tr>
+        </table>
+
+        <h3>Examples | Beispiele</h3>
+        <table class="no-break">
+            <tr>
+                <th>Desired Output</th>
+                <th>Format Code</th>
+            </tr>
+            <tr>
+                <td>80 m²</td>
+                <td><code>0" m²"</code></td>
+            </tr>
+            <tr>
+                <td>27881 EUR</td>
+                <td><code>0" EUR"</code></td>
+            </tr>
+            <tr>
+                <td>1,75% p.a.</td>
+                <td><code>0,00"% p.a."</code></td>
+            </tr>
+            <tr>
+                <td>1.250 Liter</td>
+                <td><code>#.##0" Liter"</code></td>
+            </tr>
+            <tr>
+                <td>00012369 (8-digit)</td>
+                <td><code>00000000</code></td>
+            </tr>
+            <tr>
+                <td>Negative in red</td>
+                <td><code>[Blue]#.##0;[Red]-#.##0</code></td>
+            </tr>
+        </table>
+
+        <h2>3.2 Conditional Formatting | Bedingte Formatierung</h2>
+
+        <div class="callout callout-definition no-break">
+            <div class="callout-title">Definition: Conditional Formatting</div>
+            <strong>EN:</strong> Automatically applies formatting (colors, icons, data bars) based on cell values.<br>
+            <strong>DE:</strong> Wendet automatisch Formatierungen basierend auf Zellwerten an.
+        </div>
+
+        <div class="img-container no-break">
+            <img src="assets/excel_conditional_format_1768245860586.png" alt="Conditional Formatting Steps">
+            <div class="img-caption">How to apply conditional formatting in Excel</div>
+        </div>
+
+        <h3>Rule Types | Regeltypen</h3>
+        <ul>
+            <li><strong>Highlight Cells:</strong> Greater Than, Less Than, Text Contains</li>
+            <li><strong>Top/Bottom Rules:</strong> Top 10 Items, Bottom 10%</li>
+            <li><strong>Data Bars, Color Scales, Icon Sets</strong></li>
+            <li><strong>Formula-based:</strong> Most flexible option</li>
+        </ul>
+
+        <div class="callout callout-tip no-break">
+            <div class="callout-title">💡 Formula Tip for Entire Rows</div>
+            When using a formula for an entire row, make the column reference absolute:<br>
+            <code>=$B2>ZEIT(18;0;0)</code> — formats row if time in column B is after 18:00
+        </div>
+
+        <h3>Practical Examples | Praktische Beispiele</h3>
+        <table class="no-break">
+            <tr>
+                <th>Scenario</th>
+                <th>Condition</th>
+                <th>Format</th>
+            </tr>
+            <tr>
+                <td>Stock &lt; 100 kg</td>
+                <td>Less than 100</td>
+                <td>Light red fill</td>
+            </tr>
+            <tr>
+                <td>Initial stock &gt; 200 kg</td>
+                <td>Greater than 200</td>
+                <td>Blue font</td>
+            </tr>
+            <tr>
+                <td>Orders &lt; 35,000</td>
+                <td>Unprofitable</td>
+                <td>Red fill</td>
+            </tr>
+            <tr>
+                <td>Orders 35,000-60,000</td>
+                <td>Critical</td>
+                <td>Yellow fill</td>
+            </tr>
+            <tr>
+                <td>Orders &gt; 60,000</td>
+                <td>Optimal</td>
+                <td>Green checkmark ✓</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- SECTION 4: FUNCTIONS -->
+    <div class="content">
+        <h1>4. Excel Functions | Excel-Funktionen</h1>
+
+        <h2>4.1 Aggregation Functions | Aggregationsfunktionen</h2>
+
+        <table class="no-break">
+            <tr>
+                <th>Function</th>
+                <th>English</th>
+                <th>Deutsch</th>
+                <th>Syntax</th>
+            </tr>
+            <tr>
+                <td><code>SUMME</code></td>
+                <td>Adds all numbers</td>
+                <td>Addiert alle Zahlen</td>
+                <td><code>=SUMME(A1:A10)</code></td>
+            </tr>
+            <tr>
+                <td><code>MITTELWERT</code></td>
+                <td>Average</td>
+                <td>Durchschnitt</td>
+                <td><code>=MITTELWERT(A1:A10)</code></td>
+            </tr>
+            <tr>
+                <td><code>MAX</code></td>
+                <td>Largest value</td>
+                <td>Größter Wert</td>
+                <td><code>=MAX(A1:A10)</code></td>
+            </tr>
+            <tr>
+                <td><code>MIN</code></td>
+                <td>Smallest value</td>
+                <td>Kleinster Wert</td>
+                <td><code>=MIN(A1:A10)</code></td>
+            </tr>
+        </table>
+
+        <h2>4.2 Counting Functions | Zählfunktionen</h2>
+
+        <table class="no-break">
+            <tr>
+                <th>Function</th>
+                <th>Counts</th>
+                <th>Zählt</th>
+            </tr>
+            <tr>
+                <td><code>ANZAHL</code></td>
+                <td>Cells with numbers only</td>
+                <td>Nur Zellen mit Zahlen</td>
+            </tr>
+            <tr>
+                <td><code>ANZAHL2</code></td>
+                <td>All non-empty cells</td>
+                <td>Alle nicht-leeren Zellen</td>
+            </tr>
+        </table>
+
+        <h2>4.3 IF Function | WENN-Funktion</h2>
+
+        <div class="callout callout-definition no-break">
+            <div class="callout-title">Definition: IF (WENN) Function</div>
+            Checks if a condition is met and returns different values for TRUE/FALSE.<br>
+            <strong>Syntax:</strong> <code>=WENN(condition; value_if_true; value_if_false)</code>
+        </div>
+
+        <div class="img-container no-break">
+            <img src="assets/excel_if_function_1768245914394.png" alt="IF Function Flowchart">
+            <div class="img-caption">How the IF/WENN function works</div>
+        </div>
+
+        <h3>Examples | Beispiele</h3>
+        <table class="no-break">
+            <tr>
+                <th>Scenario</th>
+                <th>Formula</th>
+            </tr>
+            <tr>
+                <td>Bonus if sales ≥ €50,000</td>
+                <td><code>=WENN(Umsatz>=50000;"Bonus";"-")</code></td>
+            </tr>
+            <tr>
+                <td>Salutation based on gender</td>
+                <td><code>=WENN(Geschlecht="m";"Herr";"Frau")</code></td>
+            </tr>
+            <tr>
+                <td>Pass/Fail (27+ points)</td>
+                <td><code>=WENN(Punkte>=27;"bestanden";"nicht bestanden")</code></td>
+            </tr>
+            <tr>
+                <td>Interest rate by balance</td>
+                <td><code>=WENN(Guthaben>10000;Guthaben*0,03;Guthaben*0,0225)</code></td>
+            </tr>
+        </table>
+
+        <h2>4.4 Date & Time Functions | Datums- & Zeitfunktionen</h2>
+
+        <table class="no-break">
+            <tr>
+                <th>Function</th>
+                <th>Purpose</th>
+                <th>Zweck</th>
+            </tr>
+            <tr>
+                <td><code>HEUTE()</code></td>
+                <td>Current date</td>
+                <td>Heutiges Datum</td>
+            </tr>
+            <tr>
+                <td><code>DATUM(Jahr;Monat;Tag)</code></td>
+                <td>Create date from parts</td>
+                <td>Datum aus Teilen erstellen</td>
+            </tr>
+            <tr>
+                <td><code>JAHR()</code>, <code>MONAT()</code>, <code>TAG()</code></td>
+                <td>Extract date parts</td>
+                <td>Datumsteile extrahieren</td>
+            </tr>
+            <tr>
+                <td><code>DATEDIF(start;end;"d")</code></td>
+                <td>Days between dates</td>
+                <td>Tage zwischen Daten</td>
+            </tr>
+        </table>
+
+        <div class="callout callout-tip no-break">
+            <div class="callout-title">💡 Age Calculation Example</div>
+            <code>=DATEDIF(Geburtsdatum;HEUTE();"y")</code> — Returns age in years
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- SECTION 5: PRACTICAL EXAMPLES -->
+    <div class="content">
+        <h1>5. Practical Examples | Praktische Beispiele</h1>
+
+        <h2>5.1 Sales Analysis | Umsatzanalyse</h2>
+        <div class="callout callout-info no-break">
+            <ul style="margin:0;">
+                <li>Calculate <code>MAX</code>, <code>MIN</code>, <code>MITTELWERT</code>, <code>ANZAHL</code> of offers
+                </li>
+                <li>Format amounts as currency without decimals</li>
+                <li>Apply conditional formatting to highlight top performers</li>
+            </ul>
+        </div>
+
+        <h2>5.2 Employee Management | Mitarbeiterverwaltung</h2>
+        <div class="callout callout-info no-break">
+            <ul style="margin:0;">
+                <li>Sort by last name, age, or salary</li>
+                <li>Filter specific departments (e.g., Sekretariat, Logistik)</li>
+                <li>Calculate salary bonuses: <code>=WENN(Abteilung="Vertrieb";Gehalt*1,015;Gehalt)</code></li>
+                <li>Count employees meeting criteria using <code>ANZAHL2</code> after filtering</li>
+            </ul>
+        </div>
+
+        <h2>5.3 Stock & Order Management | Lager- & Bestellverwaltung</h2>
+        <div class="callout callout-info no-break">
+            <ul style="margin:0;">
+                <li>Calculate current stock: <code>=Anfangsbestand - Verkauf + Zugang</code></li>
+                <li>Conditional formatting for low stock (red if &lt; 100)</li>
+                <li>Icon sets for order status (✓ optimal, ⚠ critical, ✗ unprofitable)</li>
+            </ul>
+        </div>
+
+        <h2>5.4 Salary Calculations | Gehaltsberechnungen</h2>
+
+        <table class="no-break">
+            <tr>
+                <th>Calculation</th>
+                <th>Formula</th>
+            </tr>
+            <tr>
+                <td>Individual wage</td>
+                <td><code>=Stunden * Stundenlohn</code></td>
+            </tr>
+            <tr>
+                <td>Total wages</td>
+                <td><code>=SUMME(Lohnzahlungen)</code></td>
+            </tr>
+            <tr>
+                <td>Average wage</td>
+                <td><code>=MITTELWERT(Lohnzahlungen)</code></td>
+            </tr>
+            <tr>
+                <td>% of total</td>
+                <td><code>=Einzellohn / SUMME(Alle Löhne)</code></td>
+            </tr>
+        </table>
+
+        <h2>5.5 Interest Calculation | Zinsberechnung</h2>
+
+        <div class="callout callout-definition no-break">
+            <div class="callout-title">Interest Formula</div>
+            <strong>Interest Amount:</strong> <code>=Kapital * Zinssatz</code><br>
+            <strong>New Balance:</strong> <code>=Kapital + Zinsbetrag</code>
+        </div>
+
+        <div class="callout callout-tip no-break">
+            <div class="callout-title">💡 Tiered Interest Example</div>
+            <code>=WENN(Guthaben>10000; Guthaben*0,03; Guthaben*0,0225)</code><br>
+            If balance &gt; €10,000 → 3% interest, otherwise → 2.25%
+        </div>
+
+        <div style="text-align:center; margin-top:60px; padding:30px; background:var(--bg-light); border-radius:8px;">
+            <img src="assets/VSN_new.png" alt="VSN" style="max-width:80px; margin-bottom:15px;">
+            <p style="color:var(--primary); font-weight:600;">Good luck on your exam! | Viel Erfolg bei der Prüfung! 🍀
+            </p>
+            <p style="font-size:0.85em; color:#666;">© VSN Learning Materials | VBS Oberstufe | January 2026</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
