@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpreting Variables, Terms, and Formulas | VSN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        /* ========== CSS VARIABLES ========== */
+        :root {
+            --vsn-primary: #1e2e48;
+            --vsn-secondary: #fbc92d;
+            --vsn-complementary: #dc4ebf;
+            --vsn-info-blue: #2980b9;
+            --vsn-white: #ffffff;
+            --vsn-light-gray: #f8f9fa;
+            --vsn-text: #333333;
+
+            --callout-definition: rgba(220, 78, 191, 0.7);
+            --callout-info: rgba(41, 128, 185, 0.7);
+            --callout-tip: rgba(251, 201, 45, 0.7);
+
+            --font-body: 'Open Sans', sans-serif;
+            --font-mono: 'Roboto Mono', monospace;
+        }
+
+        /* ========== BASE STYLES ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 11pt;
+            line-height: 1.6;
+            color: var(--vsn-text);
+            background: var(--vsn-white);
+        }
+
+        /* ========== PRINT STYLES ========== */
+        @page {
+            size: A4;
+            margin: 18mm 15mm 20mm 15mm;
+        }
+
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .page-break {
+                page-break-after: always;
+            }
+
+            .no-break {
+                page-break-inside: avoid;
+            }
+
+            .cover-page {
+                margin: -18mm -15mm 0 -15mm;
+                padding: 18mm 15mm;
+            }
+        }
+
+        /* ========== COVER PAGE ========== */
+        .cover-page {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--vsn-primary) 0%, #2a3f5f 100%);
+            color: var(--vsn-white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        .cover-logo {
+            width: 120px;
+            margin-bottom: 40px;
+        }
+
+        .cover-title {
+            font-size: 32pt;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+            max-width: 600px;
+        }
+
+        .cover-subtitle {
+            font-size: 14pt;
+            color: var(--vsn-complementary);
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .cover-meta {
+            position: absolute;
+            bottom: 40px;
+            font-size: 11pt;
+            opacity: 0.9;
+        }
+
+        .cover-meta span {
+            margin: 0 15px;
+        }
+
+        .cover-accent {
+            width: 80px;
+            height: 4px;
+            background: var(--vsn-secondary);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        /* ========== TABLE OF CONTENTS ========== */
+        .toc-page {
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .toc-title {
+            font-size: 24pt;
+            color: var(--vsn-primary);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .toc-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .toc-column h3 {
+            font-size: 12pt;
+            color: var(--vsn-complementary);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .toc-item a {
+            color: var(--vsn-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .toc-number {
+            color: var(--vsn-secondary);
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        /* ========== CONTENT LAYOUT ========== */
+        .content-section {
+            padding: 30px 20px;
+        }
+
+        .section-header {
+            background: var(--vsn-primary);
+            color: var(--vsn-white);
+            padding: 20px 30px;
+            margin: -30px -20px 30px -20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-number {
+            font-size: 28pt;
+            font-weight: 700;
+            color: var(--vsn-secondary);
+            margin-right: 20px;
+        }
+
+        .section-title-wrapper h2 {
+            font-size: 16pt;
+            font-weight: 700;
+        }
+
+        .section-title-wrapper .german {
+            font-size: 12pt;
+            opacity: 0.85;
+            font-weight: 400;
+            margin-top: 4px;
+        }
+
+        /* ========== BILINGUAL LAYOUT ========== */
+        .bilingual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .lang-column {
+            padding: 0 10px;
+        }
+
+        .lang-column.en {
+            border-right: 2px solid var(--vsn-secondary);
+        }
+
+        .lang-label {
+            display: inline-block;
+            font-size: 9pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--vsn-white);
+            background: var(--vsn-primary);
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        /* ========== TYPOGRAPHY ========== */
+        h3 {
+            font-size: 13pt;
+            color: var(--vsn-primary);
+            margin: 25px 0 12px 0;
+            border-left: 4px solid var(--vsn-secondary);
+            padding-left: 12px;
+        }
+
+        h4 {
+            font-size: 11pt;
+            color: var(--vsn-complementary);
+            margin: 18px 0 10px 0;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul,
+        ol {
+            margin: 12px 0 12px 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .math {
+            font-family: var(--font-mono);
+            font-size: 10pt;
+            background: var(--vsn-light-gray);
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: var(--vsn-primary);
+        }
+
+        .math-block {
+            font-family: var(--font-mono);
+            font-size: 11pt;
+            background: var(--vsn-light-gray);
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 4px solid var(--vsn-secondary);
+        }
+
+        strong {
+            color: var(--vsn-primary);
+        }
+
+        /* ========== CALLOUT BOXES ========== */
+        .callout {
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .callout-icon {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+        }
+
+        .callout-content {
+            flex: 1;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            font-size: 10pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .callout.definition {
+            background: var(--callout-definition);
+            color: var(--vsn-white);
+        }
+
+        .callout.definition .math {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--vsn-white);
+        }
+
+        .callout.info {
+            background: var(--callout-info);
+            color: var(--vsn-white);
+        }
+
+        .callout.info .math {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--vsn-white);
+        }
+
+        .callout.tip {
+            background: var(--callout-tip);
+            color: var(--vsn-primary);
+        }
+
+        /* ========== TABLES ========== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 10pt;
+        }
+
+        th {
+            background: var(--vsn-primary);
+            color: var(--vsn-white);
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background: var(--vsn-light-gray);
+        }
+
+        /* ========== IMAGES ========== */
+        .visual-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .visual-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .visual-caption {
+            font-size: 9pt;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* ========== EXAMPLE BLOCKS ========== */
+        .example-block {
+            background: var(--vsn-light-gray);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid var(--vsn-complementary);
+        }
+
+        .example-title {
+            font-weight: 700;
+            color: var(--vsn-complementary);
+            font-size: 11pt;
+            margin-bottom: 12px;
+        }
+
+        .interpretation-item {
+            background: white;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .interpretation-formula {
+            font-family: var(--font-mono);
+            font-size: 12pt;
+            color: var(--vsn-primary);
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .interpretation-decode {
+            font-size: 10pt;
+            color: #555;
+            margin-bottom: 6px;
+        }
+
+        .interpretation-meaning {
+            font-size: 10pt;
+            color: var(--vsn-primary);
+            font-weight: 600;
+        }
+
+        /* ========== DECODER TABLE ========== */
+        .decoder-table th:first-child {
+            width: 15%;
+        }
+
+        .decoder-table td:first-child {
+            font-family: var(--font-mono);
+            font-size: 12pt;
+            text-align: center;
+            color: var(--vsn-primary);
+            font-weight: 500;
+        }
+
+        /* ========== PRACTICE SECTION ========== */
+        .practice-item {
+            background: white;
+            border: 2px solid var(--vsn-secondary);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 12px 0;
+        }
+
+        .practice-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background: var(--vsn-secondary);
+            color: var(--vsn-primary);
+            font-weight: 700;
+            text-align: center;
+            line-height: 28px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .practice-formula {
+            font-family: var(--font-mono);
+            font-size: 13pt;
+            color: var(--vsn-primary);
+        }
+
+        .practice-answer {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #ddd;
+            font-size: 10pt;
+        }
+
+        /* ========== SVG ICONS ========== */
+        .icon-book {
+            fill: currentColor;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ==================== COVER PAGE ==================== -->
+    <div class="cover-page page-break">
+        <img src="assets/VSN_new.png" alt="VSN Logo" class="cover-logo">
+        <h1 class="cover-title">Interpreting Variables, Terms, and Formulas</h1>
+        <div class="cover-accent"></div>
+        <p class="cover-subtitle">Variablen, Terme und Formeln interpretieren</p>
+        <div class="cover-meta">
+            <span>1IBK Mathematics</span>
+            <span>•</span>
+            <span>19.01.2026</span>
+        </div>
+    </div>
+
+    <!-- ==================== TABLE OF CONTENTS ==================== -->
+    <div class="toc-page page-break">
+        <h2 class="toc-title">Table of Contents / Inhaltsverzeichnis</h2>
+        <div class="toc-columns">
+            <div class="toc-column">
+                <h3>English</h3>
+                <ul class="toc-list">
+                    <li class="toc-item">
+                        <span><span class="toc-number">1</span>What is "Interpreting" in Mathematics?</span>
+                    </li>
+                    <li class="toc-item">
+                        <span><span class="toc-number">2</span>Interpreting in Social & Business Contexts</span>
+                    </li>
+                    <li class="toc-item">
+                        <span><span class="toc-number">3</span>Interpreting in Geometry Contexts</span>
+                    </li>
+                    <li class="toc-item">
+                        <span><span class="toc-number">4</span>The "Interpretation Decoder" Key</span>
+                    </li>
+                    <li class="toc-item">
+                        <span><span class="toc-number">5</span>Self-Check Practice</span>
+                    </li>
+                    <li class="toc-item">
+                        <span><span class="toc-number">6</span>Exam Exercises with Solutions</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="toc-column">
+                <h3>Deutsch</h3>
+                <ul class="toc-list">
+                    <li class="toc-item">
+                        <span><span class="toc-number">1</span>Was ist „Interpretieren" in der Mathematik?</span>
+                    </li>
+                    <li class="toc-item">
+                        <span><span class="toc-number">2</span>Interpretieren in sozialen & geschäftlichen
+                            Kontexten</span>
+                    </li>
+                    <li class="toc-item">
+                        <span><span class="toc-number">3</span>Interpretieren in der Geometrie</span>
+                    </li>
+                    <li class="toc-item">
+                        <span><span class="toc-number">4</span>Der „Interpretations-Decoder"</span>
+                    </li>
+                    <li class="toc-item">
+                        <span><span class="toc-number">5</span>Selbstkontrolle: Übungsaufgaben</span>
+                    </li>
+                    <li class="toc-item">
+                        <span><span class="toc-number">6</span>Prüfungsaufgaben mit Lösungen</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Concept Visual -->
+        <div class="visual-container" style="margin-top: 40px;">
+            <img src="assets/modeling_interpreting.png" alt="Modeling vs Interpreting Concept"
+                style="max-width: 500px;">
+            <p class="visual-caption">The relationship between modeling and interpreting in mathematics</p>
+        </div>
+    </div>
+
+    <!-- ==================== SECTION 1: WHAT IS INTERPRETING ==================== -->
+    <div class="content-section page-break">
+        <div class="section-header">
+            <span class="section-number">1</span>
+            <div class="section-title-wrapper">
+                <h2>What is "Interpreting" in Mathematics?</h2>
+                <p class="german">Was ist „Interpretieren" in der Mathematik?</p>
+            </div>
+        </div>
+
+        <div class="bilingual">
+            <div class="lang-column en">
+                <span class="lang-label">English</span>
+
+                <p>This material focuses on the essential skill of interpreting mathematical expressions in real-world
+                    contexts. Unlike modeling, which translates real-world scenarios into mathematical terms,
+                    <strong>interpreting is the reverse process</strong>: taking a mathematical expression and
+                    describing its meaning using natural language.
+                </p>
+
+                <div class="callout definition no-break">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M6 2C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2H6ZM13 9V3.5L18.5 9H13ZM8 12H16V14H8V12ZM8 16H14V18H8V16Z" />
+                    </svg>
+                    <div class="callout-content">
+                        <div class="callout-title">Key Definition</div>
+                        <p><strong>Modeling</strong> = Translating a real-life sentence or situation into a mathematical
+                            expression.</p>
+                        <p><strong>Interpreting</strong> = Given a mathematical expression, describe what it means in
+                            the real world using natural language.</p>
+                    </div>
+                </div>
+
+                <p>To interpret correctly, you must answer two fundamental questions:</p>
+                <ol>
+                    <li><strong>Who?</strong> What do the variables (<span class="math">x</span>, <span
+                            class="math">y</span>, <span class="math">v</span>, <span class="math">f</span>, etc.)
+                        represent in the specific context?</li>
+                    <li><strong>What?</strong> What is the operation (<span class="math">+</span>, <span
+                            class="math">−</span>, <span class="math">·</span>, <span class="math">÷</span>, <span
+                            class="math">=</span>, <span class="math">&lt;</span>, <span class="math">&gt;</span>) doing
+                        to these variables? What is the real-world meaning of the entire expression?</li>
+                </ol>
+            </div>
+
+            <div class="lang-column de">
+                <span class="lang-label">Deutsch</span>
+
+                <p>Dieses Material konzentriert sich auf die wesentliche Fähigkeit, mathematische Ausdrücke in realen
+                    Kontexten zu interpretieren. Im Gegensatz zur Modellierung, die reale Szenarien in mathematische
+                    Begriffe übersetzt, ist <strong>die Interpretation der umgekehrte Prozess</strong>: einen
+                    mathematischen Ausdruck zu nehmen und seine Bedeutung mithilfe natürlicher Sprache zu beschreiben.
+                </p>
+
+                <div class="callout definition no-break">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M6 2C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2H6ZM13 9V3.5L18.5 9H13ZM8 12H16V14H8V12ZM8 16H14V18H8V16Z" />
+                    </svg>
+                    <div class="callout-content">
+                        <div class="callout-title">Schlüsseldefinition</div>
+                        <p><strong>Modellieren</strong> = Übersetzung eines realen Satzes oder einer Situation in einen
+                            mathematischen Ausdruck.</p>
+                        <p><strong>Interpretieren</strong> = Bei einem mathematischen Ausdruck dessen Bedeutung in der
+                            realen Welt mithilfe natürlicher Sprache beschreiben.</p>
+                    </div>
+                </div>
+
+                <p>Um korrekt zu interpretieren, müssen Sie zwei grundlegende Fragen beantworten:</p>
+                <ol>
+                    <li><strong>Wer?</strong> Was stellen die Variablen (<span class="math">x</span>, <span
+                            class="math">y</span>, <span class="math">v</span>, <span class="math">f</span>, usw.) im
+                        jeweiligen Kontext dar?</li>
+                    <li><strong>Was?</strong> Was bewirkt die Operation (<span class="math">+</span>, <span
+                            class="math">−</span>, <span class="math">·</span>, <span class="math">÷</span>, <span
+                            class="math">=</span>, <span class="math">&lt;</span>, <span class="math">&gt;</span>) mit
+                        diesen Variablen? Was ist die reale Bedeutung des gesamten Ausdrucks?</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SECTION 2: SOCIAL & BUSINESS CONTEXTS ==================== -->
+    <div class="content-section page-break">
+        <div class="section-header">
+            <span class="section-number">2</span>
+            <div class="section-title-wrapper">
+                <h2>Interpreting in Social & Business Contexts</h2>
+                <p class="german">Interpretieren in sozialen und geschäftlichen Kontexten</p>
+            </div>
+        </div>
+
+        <div class="bilingual">
+            <div class="lang-column en">
+                <span class="lang-label">English</span>
+
+                <p>When dealing with situations involving people, money, or other quantifiable social or business
+                    metrics, standard mathematical operations typically represent <strong>totals</strong>,
+                    <strong>relationships</strong>, or <strong>limits</strong>.
+                </p>
+
+                <div class="example-block no-break">
+                    <div class="example-title">📍 Example: The Restaurant</div>
+                    <p><strong>Scenario:</strong> A restaurant serves vegetarian and meat meals.</p>
+                    <p><strong>Variables:</strong></p>
+                    <ul>
+                        <li><span class="math">v</span> = Number of guests eating vegetarian meals</li>
+                        <li><span class="math">f</span> = Number of guests eating meat meals</li>
+                        <li><span class="math">a</span> = Cost per meal in Euro (€)</li>
+                    </ul>
+                </div>
+
+                <div class="interpretation-item no-break">
+                    <div class="interpretation-formula">(v + f) · a</div>
+                    <div class="interpretation-decode"><strong>Decoding:</strong> <span class="math">(v+f)</span> adds
+                        vegetarian and meat guests = total guests. Multiply by cost <span class="math">a</span> = total
+                        cost.</div>
+                    <div class="interpretation-meaning">➜ The <strong>total revenue</strong> for all meals served.</div>
+                </div>
+
+                <div class="interpretation-item no-break">
+                    <div class="interpretation-formula">2 · v = f</div>
+                    <div class="interpretation-decode"><strong>Decoding:</strong> <span class="math">2·v</span> doubles
+                        vegetarian guests. Equals meat-eating guests <span class="math">f</span>.</div>
+                    <div class="interpretation-meaning">➜ There are <strong>twice as many</strong> meat-eaters as
+                        vegetarians.</div>
+                </div>
+
+                <div class="interpretation-item no-break">
+                    <div class="interpretation-formula">f + v < 40</div>
+                            <div class="interpretation-decode"><strong>Decoding:</strong> <span class="math">f+v</span>
+                                = total guests. Symbol <span class="math">&lt;</span> means "less than".</div>
+                            <div class="interpretation-meaning">➜ Total guests is <strong>fewer than 40</strong>.</div>
+                    </div>
+
+                    <div class="interpretation-item no-break">
+                        <div class="interpretation-formula">f ∈ [20; 25]</div>
+                        <div class="interpretation-decode"><strong>Decoding:</strong> <span class="math">∈</span> = "is
+                            in the interval". Interval includes 20 to 25.</div>
+                        <div class="interpretation-meaning">➜ Meat-eaters are <strong>between 20 and 25</strong>
+                            (inclusive).</div>
+                    </div>
+                </div>
+
+                <div class="lang-column de">
+                    <span class="lang-label">Deutsch</span>
+
+                    <p>Bei der Behandlung von Situationen, die Menschen, Geld oder andere quantifizierbare Metriken
+                        betreffen, stellen mathematische Operationen typischerweise <strong>Gesamtsummen</strong>,
+                        <strong>Beziehungen</strong> oder <strong>Grenzwerte</strong> dar.
+                    </p>
+
+                    <div class="example-block no-break">
+                        <div class="example-title">📍 Beispiel: Das Restaurant</div>
+                        <p><strong>Szenario:</strong> Ein Restaurant serviert vegetarische und fleischhaltige Gerichte.
+                        </p>
+                        <p><strong>Variablen:</strong></p>
+                        <ul>
+                            <li><span class="math">v</span> = Anzahl der Gäste, die vegetarisch essen</li>
+                            <li><span class="math">f</span> = Anzahl der Gäste, die Fleisch essen</li>
+                            <li><span class="math">a</span> = Kosten pro Gericht in Euro (€)</li>
+                        </ul>
+                    </div>
+
+                    <div class="interpretation-item no-break">
+                        <div class="interpretation-formula">(v + f) · a</div>
+                        <div class="interpretation-decode"><strong>Entschlüsselung:</strong> <span
+                                class="math">(v+f)</span> addiert Gäste = Gesamtzahl. Multipliziert mit Kosten <span
+                                class="math">a</span> = Gesamtkosten.</div>
+                        <div class="interpretation-meaning">➜ Der <strong>Gesamtumsatz</strong> für alle servierten
+                            Mahlzeiten.</div>
+                    </div>
+
+                    <div class="interpretation-item no-break">
+                        <div class="interpretation-formula">2 · v = f</div>
+                        <div class="interpretation-decode"><strong>Entschlüsselung:</strong> <span
+                                class="math">2·v</span> verdoppelt vegetarische Gäste. Gleich Fleischesser <span
+                                class="math">f</span>.</div>
+                        <div class="interpretation-meaning">➜ Es gibt <strong>doppelt so viele</strong> Fleischesser wie
+                            Vegetarier.</div>
+                    </div>
+
+                    <div class="interpretation-item no-break">
+                        <div class="interpretation-formula">f + v < 40</div>
+                                <div class="interpretation-decode"><strong>Entschlüsselung:</strong> <span
+                                        class="math">f+v</span> = Gesamtzahl Gäste. Symbol <span
+                                        class="math">&lt;</span> bedeutet „weniger als".</div>
+                                <div class="interpretation-meaning">➜ Gesamtzahl der Gäste beträgt <strong>weniger als
+                                        40</strong>.</div>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">f ∈ [20; 25]</div>
+                            <div class="interpretation-decode"><strong>Entschlüsselung:</strong> <span
+                                    class="math">∈</span> = „liegt im Intervall". Intervall umfasst 20 bis 25.</div>
+                            <div class="interpretation-meaning">➜ Die Anzahl der Fleischesser liegt <strong>zwischen 20
+                                    und 25</strong> (einschließlich).</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SECTION 2B: SPORTS WEEK + VAT INFO ==================== -->
+            <div class="content-section page-break">
+                <div class="bilingual">
+                    <div class="lang-column en">
+                        <span class="lang-label">English</span>
+
+                        <div class="example-block no-break">
+                            <div class="example-title">📍 Example: The Sports Week</div>
+                            <p><strong>Scenario:</strong> Participants choose different sports.</p>
+                            <p><strong>Variables:</strong> <span class="math">r</span> = cycling, <span
+                                    class="math">s</span> = sailing, <span class="math">t</span> = tennis</p>
+                            <p><strong>Constants:</strong> Cycling 200€, Sailing 280€, Tennis 260€</p>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">200 · r</div>
+                            <div class="interpretation-decode"><strong>Decoding:</strong> Cost of cycling (200€) ×
+                                number of cyclists (<span class="math">r</span>).</div>
+                            <div class="interpretation-meaning">➜ The <strong>total cost</strong> for the cycling group.
+                            </div>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">r + s + t</div>
+                            <div class="interpretation-decode"><strong>Decoding:</strong> Sum of all participants in
+                                each sport.</div>
+                            <div class="interpretation-meaning">➜ The <strong>total number of students</strong>
+                                attending the sports week.</div>
+                        </div>
+
+                        <h3>Understanding VAT and Discounts</h3>
+
+                        <div class="callout info no-break">
+                            <svg class="callout-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                            </svg>
+                            <div class="callout-content">
+                                <div class="callout-title">Important Information</div>
+                                <p>When dealing with prices and percentages:</p>
+                                <ul>
+                                    <li>Net price + 20% VAT: <span class="math">P<sub>net</sub> · 1.2</span> = Gross
+                                        price</li>
+                                    <li>Gross price to Net: <span class="math">P<sub>gross</sub> / 1.2</span></li>
+                                    <li>The VAT amount = <span class="math">P<sub>gross</sub> · (1/6)</span> ≈ 16.67% of
+                                        gross</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="callout tip no-break">
+                            <svg class="callout-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z" />
+                            </svg>
+                            <div class="callout-content">
+                                <div class="callout-title">Exam Tip</div>
+                                <p>If a store advertises a "20% VAT reduction" on items where the price already
+                                    <em>includes</em> VAT, they reduce the price by <strong>1/6 (≈16.67%)</strong> of
+                                    the gross price—not 20%!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lang-column de">
+                        <span class="lang-label">Deutsch</span>
+
+                        <div class="example-block no-break">
+                            <div class="example-title">📍 Beispiel: Die Sportwoche</div>
+                            <p><strong>Szenario:</strong> Teilnehmer wählen verschiedene Sportarten.</p>
+                            <p><strong>Variablen:</strong> <span class="math">r</span> = Radfahren, <span
+                                    class="math">s</span> = Segeln, <span class="math">t</span> = Tennis</p>
+                            <p><strong>Konstanten:</strong> Radfahren 200€, Segeln 280€, Tennis 260€</p>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">200 · r</div>
+                            <div class="interpretation-decode"><strong>Entschlüsselung:</strong> Kosten für Radfahren
+                                (200€) × Anzahl der Radfahrer (<span class="math">r</span>).</div>
+                            <div class="interpretation-meaning">➜ Die <strong>Gesamtkosten</strong> für die
+                                Radfahrgruppe.</div>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">r + s + t</div>
+                            <div class="interpretation-decode"><strong>Entschlüsselung:</strong> Summe aller Teilnehmer
+                                in jeder Sportart.</div>
+                            <div class="interpretation-meaning">➜ Die <strong>Gesamtzahl der Schüler</strong>, die an
+                                der Sportwoche teilnehmen.</div>
+                        </div>
+
+                        <h3>MwSt. und Rabatte verstehen</h3>
+
+                        <div class="callout info no-break">
+                            <svg class="callout-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                            </svg>
+                            <div class="callout-content">
+                                <div class="callout-title">Wichtige Information</div>
+                                <p>Beim Umgang mit Preisen und Prozentsätzen:</p>
+                                <ul>
+                                    <li>Nettopreis + 20% MwSt.: <span class="math">P<sub>net</sub> · 1.2</span> =
+                                        Bruttopreis</li>
+                                    <li>Bruttopreis zu Netto: <span class="math">P<sub>gross</sub> / 1.2</span></li>
+                                    <li>MwSt.-Betrag = <span class="math">P<sub>gross</sub> · (1/6)</span> ≈ 16,67% des
+                                        Brutto</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="callout tip no-break">
+                            <svg class="callout-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z" />
+                            </svg>
+                            <div class="callout-content">
+                                <div class="callout-title">Prüfungstipp</div>
+                                <p>Wenn ein Geschäft eine „20% MwSt.-Reduzierung" auf Artikel anbietet, deren Preis
+                                    bereits die MwSt. <em>enthält</em>, reduziert es den Preis um <strong>1/6
+                                        (≈16,67%)</strong> des Bruttopreises—nicht 20%!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Percentage Visual -->
+                <div class="visual-container" style="margin-top: 30px;">
+                    <img src="assets/percentage_operations.png" alt="Percentage Operations Visual"
+                        style="max-width: 550px;">
+                    <p class="visual-caption">Understanding percentage increase (×1.2) vs decrease (×0.8) on a price</p>
+                </div>
+            </div>
+
+            <!-- ==================== SECTION 3: GEOMETRY CONTEXTS ==================== -->
+            <div class="content-section page-break">
+                <div class="section-header">
+                    <span class="section-number">3</span>
+                    <div class="section-title-wrapper">
+                        <h2>Interpreting in Geometry Contexts</h2>
+                        <p class="german">Interpretieren in der Geometrie</p>
+                    </div>
+                </div>
+
+                <div class="bilingual">
+                    <div class="lang-column en">
+                        <span class="lang-label">English</span>
+
+                        <p>In geometry, variables typically represent <strong>dimensions</strong> such as length, width,
+                            height, or side lengths. Recognizing standard formulas for perimeter, area, and volume is
+                            crucial.</p>
+
+                        <div class="example-block no-break">
+                            <div class="example-title">📐 Example: The Rectangle</div>
+                            <p><strong>Variables:</strong> <span class="math">l</span> = length, <span
+                                    class="math">b</span> = width</p>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">2 · l + 2 · b</div>
+                            <div class="interpretation-decode"><strong>Decoding:</strong> Adds two lengths and two
+                                widths.</div>
+                            <div class="interpretation-meaning">➜ The <strong>perimeter (Umfang)</strong> of the
+                                rectangle.</div>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">l · b</div>
+                            <div class="interpretation-decode"><strong>Decoding:</strong> Length multiplied by width.
+                            </div>
+                            <div class="interpretation-meaning">➜ The <strong>area (Flächeninhalt)</strong> of the
+                                rectangle.</div>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">0.5 · l · b</div>
+                            <div class="interpretation-decode"><strong>Decoding:</strong> Half of the product of length
+                                and width.</div>
+                            <div class="interpretation-meaning">➜ <strong>Half the rectangle's area</strong> (or area of
+                                inscribed triangle).</div>
+                        </div>
+
+                        <div class="example-block no-break" style="margin-top: 25px;">
+                            <div class="example-title">📐 Example: The Right-Angled Triangle</div>
+                            <p><strong>Variables:</strong> <span class="math">a</span> and <span class="math">b</span> =
+                                cathetus (legs forming the right angle)</p>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">√(a² + b²)</div>
+                            <div class="interpretation-decode"><strong>Decoding:</strong> Pythagorean theorem: <span
+                                    class="math">c² = a² + b²</span></div>
+                            <div class="interpretation-meaning">➜ The length of the <strong>hypotenuse</strong> (longest
+                                side).</div>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">(a · b) / 2</div>
+                            <div class="interpretation-decode"><strong>Decoding:</strong> Product of perpendicular
+                                sides, divided by 2.</div>
+                            <div class="interpretation-meaning">➜ The <strong>area</strong> of the right-angled
+                                triangle.</div>
+                        </div>
+                    </div>
+
+                    <div class="lang-column de">
+                        <span class="lang-label">Deutsch</span>
+
+                        <p>In der Geometrie stellen Variablen typischerweise <strong>Dimensionen</strong> wie Länge,
+                            Breite, Höhe oder Seitenlängen dar. Die Erkennung von Standardformeln für Umfang, Fläche und
+                            Volumen ist entscheidend.</p>
+
+                        <div class="example-block no-break">
+                            <div class="example-title">📐 Beispiel: Das Rechteck</div>
+                            <p><strong>Variablen:</strong> <span class="math">l</span> = Länge, <span
+                                    class="math">b</span> = Breite</p>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">2 · l + 2 · b</div>
+                            <div class="interpretation-decode"><strong>Entschlüsselung:</strong> Addiert zwei Längen und
+                                zwei Breiten.</div>
+                            <div class="interpretation-meaning">➜ Der <strong>Umfang</strong> des Rechtecks.</div>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">l · b</div>
+                            <div class="interpretation-decode"><strong>Entschlüsselung:</strong> Länge multipliziert mit
+                                Breite.</div>
+                            <div class="interpretation-meaning">➜ Der <strong>Flächeninhalt</strong> des Rechtecks.
+                            </div>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">0.5 · l · b</div>
+                            <div class="interpretation-decode"><strong>Entschlüsselung:</strong> Die Hälfte des Produkts
+                                aus Länge und Breite.</div>
+                            <div class="interpretation-meaning">➜ <strong>Die Hälfte der Rechteckfläche</strong> (oder
+                                Fläche des eingeschriebenen Dreiecks).</div>
+                        </div>
+
+                        <div class="example-block no-break" style="margin-top: 25px;">
+                            <div class="example-title">📐 Beispiel: Das rechtwinklige Dreieck</div>
+                            <p><strong>Variablen:</strong> <span class="math">a</span> und <span class="math">b</span> =
+                                Katheten (die Seiten, die den rechten Winkel bilden)</p>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">√(a² + b²)</div>
+                            <div class="interpretation-decode"><strong>Entschlüsselung:</strong> Satz des Pythagoras:
+                                <span class="math">c² = a² + b²</span>
+                            </div>
+                            <div class="interpretation-meaning">➜ Die Länge der <strong>Hypotenuse</strong> (längste
+                                Seite).</div>
+                        </div>
+
+                        <div class="interpretation-item no-break">
+                            <div class="interpretation-formula">(a · b) / 2</div>
+                            <div class="interpretation-decode"><strong>Entschlüsselung:</strong> Produkt der senkrechten
+                                Seiten, geteilt durch 2.</div>
+                            <div class="interpretation-meaning">➜ Der <strong>Flächeninhalt</strong> des rechtwinkligen
+                                Dreiecks.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Triangle Visual -->
+                <div class="visual-container" style="margin-top: 30px;">
+                    <img src="assets/pythagorean_theorem.png" alt="Pythagorean Theorem Diagram"
+                        style="max-width: 350px;">
+                    <p class="visual-caption">Right-angled triangle with cathetus a, b and hypotenuse c: c² = a² + b²
+                    </p>
+                </div>
+            </div>
+
+            <!-- ==================== SECTION 4: INTERPRETATION DECODER ==================== -->
+            <div class="content-section page-break">
+                <div class="section-header">
+                    <span class="section-number">4</span>
+                    <div class="section-title-wrapper">
+                        <h2>The "Interpretation Decoder" Key</h2>
+                        <p class="german">Der „Interpretations-Decoder"</p>
+                    </div>
+                </div>
+
+                <p style="margin: 20px 0;">Use this guide as a quick reference when interpreting mathematical
+                    expressions in word problems.</p>
+
+                <table class="decoder-table no-break">
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Context Clue / Kontext-Hinweis</th>
+                            <th>Common Words / Häufige Begriffe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>+</td>
+                            <td>Summing, combining quantities</td>
+                            <td>Total, Combined, Together, Sum of / Gesamt, Zusammen, Summe</td>
+                        </tr>
+                        <tr>
+                            <td>−</td>
+                            <td>Finding differences, remaining amounts</td>
+                            <td>Difference, Remaining, How much more/less / Differenz, Restlich</td>
+                        </tr>
+                        <tr>
+                            <td>·</td>
+                            <td>Calculating totals, scaling, areas</td>
+                            <td>Total Cost, Area, Product of / Gesamtkosten, Fläche, Produkt</td>
+                        </tr>
+                        <tr>
+                            <td>÷</td>
+                            <td>Sharing equally, finding rates</td>
+                            <td>Per, Ratio, Average / Pro, Verhältnis, Durchschnitt</td>
+                        </tr>
+                        <tr>
+                            <td>=</td>
+                            <td>Indicating equivalence, results</td>
+                            <td>Is, Amounts to, Results in / Ist, Beläuft sich auf, Ergibt</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                < />
+                            </td>
+                            <td>Setting limits, comparing</td>
+                            <td>Fewer than, More than / Weniger als, Mehr als</td>
+                        </tr>
+                        <tr>
+                            <td>≤ / ≥</td>
+                            <td>Limits including boundary</td>
+                            <td>At most, At least / Höchstens, Mindestens</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 30px;">Percentage Operations / Prozentoperationen</h3>
+
+                <table class="decoder-table no-break">
+                    <thead>
+                        <tr>
+                            <th>Expression</th>
+                            <th>Meaning</th>
+                            <th>Example / Beispiel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.2 · x</td>
+                            <td>20% <strong>increase</strong> / 20%ige Erhöhung</td>
+                            <td>Price + 20% VAT / Preis + 20% MwSt.</td>
+                        </tr>
+                        <tr>
+                            <td>0.8 · x</td>
+                            <td>20% <strong>decrease</strong> / 20%ige Verringerung</td>
+                            <td>20% discount / 20% Rabatt</td>
+                        </tr>
+                        <tr>
+                            <td>0.2 · x</td>
+                            <td>20% <strong>of</strong> the value / 20% des Wertes</td>
+                            <td>The tax amount itself / Der Steuerbetrag selbst</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="callout tip no-break" style="margin-top: 25px;">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z" />
+                    </svg>
+                    <div class="callout-content">
+                        <div class="callout-title">Memory Tip / Gedächtnisstütze</div>
+                        <p><strong>EN:</strong> If the multiplier is greater than 1, you're <em>adding</em> to the
+                            value. If less than 1, you're <em>subtracting</em> from it.</p>
+                        <p><strong>DE:</strong> Wenn der Multiplikator größer als 1 ist, <em>erhöhst</em> du den Wert.
+                            Wenn er kleiner als 1 ist, <em>verringerst</em> du ihn.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SECTION 5: SELF-CHECK PRACTICE ==================== -->
+            <div class="content-section">
+                <div class="section-header">
+                    <span class="section-number">5</span>
+                    <div class="section-title-wrapper">
+                        <h2>Self-Check Practice: Percentage Interpretations</h2>
+                        <p class="german">Selbstkontrolle: Prozent-Interpretationen</p>
+                    </div>
+                </div>
+
+                <div class="bilingual">
+                    <div class="lang-column en">
+                        <span class="lang-label">English</span>
+
+                        <p><strong>Scenario:</strong> A price <span class="math">p</span> usually has 20% VAT added to
+                            it.</p>
+                        <p><strong>Task:</strong> Interpret the following terms in the context of the scenario.</p>
+
+                        <div class="practice-item no-break">
+                            <span class="practice-number">1</span>
+                            <span class="practice-formula">p · 1.2</span>
+                            <div class="practice-answer">
+                                <strong>Answer:</strong> The price <strong>including</strong> 20% VAT. (Gross price if
+                                <span class="math">p</span> is net price.)
+                            </div>
+                        </div>
+
+                        <div class="practice-item no-break">
+                            <span class="practice-number">2</span>
+                            <span class="practice-formula">p + 20</span>
+                            <div class="practice-answer">
+                                <strong>Answer:</strong> The price increased by <strong>20 Euros</strong> (fixed
+                                amount), <em>not</em> 20%.
+                            </div>
+                        </div>
+
+                        <div class="practice-item no-break">
+                            <span class="practice-number">3</span>
+                            <span class="practice-formula">p · 0.2</span>
+                            <div class="practice-answer">
+                                <strong>Answer:</strong> The <strong>amount of tax</strong> itself; just the 20% portion
+                                of <span class="math">p</span>.
+                            </div>
+                        </div>
+
+                        <div class="practice-item no-break">
+                            <span class="practice-number">4</span>
+                            <span class="practice-formula">p + 0.2</span>
+                            <div class="practice-answer">
+                                <strong>Answer:</strong> The price increased by <strong>0.2 Euros</strong> (20 cents).
+                                Fixed amount, not %.
+                            </div>
+                        </div>
+
+                        <div class="practice-item no-break">
+                            <span class="practice-number">5</span>
+                            <span class="practice-formula">p · 0.8</span>
+                            <div class="practice-answer">
+                                <strong>Answer:</strong> The price after a <strong>20% decrease</strong> or discount.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lang-column de">
+                        <span class="lang-label">Deutsch</span>
+
+                        <p><strong>Szenario:</strong> Ein Preis <span class="math">p</span> wird üblicherweise um 20%
+                            MwSt. erhöht.</p>
+                        <p><strong>Aufgabe:</strong> Interpretieren Sie die folgenden Terme im Kontext des Szenarios.
+                        </p>
+
+                        <div class="practice-item no-break">
+                            <span class="practice-number">1</span>
+                            <span class="practice-formula">p · 1.2</span>
+                            <div class="practice-answer">
+                                <strong>Antwort:</strong> Der Preis <strong>inklusive</strong> 20% MwSt. (Bruttopreis
+                                wenn <span class="math">p</span> Nettopreis ist.)
+                            </div>
+                        </div>
+
+                        <div class="practice-item no-break">
+                            <span class="practice-number">2</span>
+                            <span class="practice-formula">p + 20</span>
+                            <div class="practice-answer">
+                                <strong>Antwort:</strong> Der Preis erhöht um <strong>20 Euro</strong> (fester Betrag),
+                                <em>nicht</em> 20%.
+                            </div>
+                        </div>
+
+                        <div class="practice-item no-break">
+                            <span class="practice-number">3</span>
+                            <span class="practice-formula">p · 0.2</span>
+                            <div class="practice-answer">
+                                <strong>Antwort:</strong> Der <strong>Steuerbetrag</strong> selbst; nur der 20%-Anteil
+                                von <span class="math">p</span>.
+                            </div>
+                        </div>
+
+                        <div class="practice-item no-break">
+                            <span class="practice-number">4</span>
+                            <span class="practice-formula">p + 0.2</span>
+                            <div class="practice-answer">
+                                <strong>Antwort:</strong> Der Preis erhöht um <strong>0,2 Euro</strong> (20 Cent).
+                                Fester Betrag, nicht %.
+                            </div>
+                        </div>
+
+                        <div class="practice-item no-break">
+                            <span class="practice-number">5</span>
+                            <span class="practice-formula">p · 0.8</span>
+                            <div class="practice-answer">
+                                <strong>Antwort:</strong> Der Preis nach einer <strong>20%igen Senkung</strong> oder
+                                Rabatt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div
+                    style="margin-top: 50px; padding-top: 20px; border-top: 2px solid var(--vsn-secondary); text-align: center; color: #999; font-size: 9pt;">
+                    <p>© VSN Student Network | 1IBK Mathematics | 19.01.2026</p>
+                </div>
+            </div>
+
+            <!-- ==================== SECTION 6: PRÜFUNGSAUFGABEN MIT LÖSUNGEN ==================== -->
+            <div class="content-section page-break">
+                <div class="section-header">
+                    <span class="section-number">6</span>
+                    <div class="section-title-wrapper">
+                        <h2>Prüfungsaufgaben mit Lösungen</h2>
+                        <p class="german">Exam Exercises with Solutions</p>
+                    </div>
+                </div>
+
+                <p style="margin: 20px 0; font-size: 11pt;"><strong>Hinweis:</strong> Die folgenden Aufgaben sind im
+                    Stil typischer Prüfungsfragen formuliert. Jede Aufgabe enthält eine ausführliche Lösung in beiden
+                    Sprachen.</p>
+                <p style="margin-bottom: 25px; font-size: 11pt;"><strong>Note:</strong> The following exercises are
+                    formatted in typical exam style. Each includes a detailed solution in both languages.</p>
+
+                <!-- ===== AUFGABE 1: RESTAURANT ===== -->
+                <div class="example-block no-break" style="background: #fff; border: 2px solid var(--vsn-primary);">
+                    <div class="example-title" style="color: var(--vsn-primary); font-size: 13pt;">📝 Aufgabe 1:
+                        Restaurant-Umsatz</div>
+                    <p><strong>Angabe (Exam Question):</strong></p>
+                    <p
+                        style="background: var(--vsn-light-gray); padding: 12px; border-radius: 6px; font-style: italic;">
+                        Ein Restaurant serviert vegetarische und fleischhaltige Gerichte. Die Variable <span
+                            class="math">v</span> bezeichnet die Anzahl der Gäste, die vegetarisch essen, und <span
+                            class="math">f</span> die Anzahl der Fleischesser. Jedes Gericht kostet <span class="math">a
+                            = 15€</span>.
+                        <br><br>
+                        <strong>a)</strong> Interpretieren Sie den Term <span class="math">(v + f) · a</span> im
+                        Sachzusammenhang.
+                        <br>
+                        <strong>b)</strong> Berechnen Sie den Gesamtumsatz, wenn <span class="math">v = 12</span> und
+                        <span class="math">f = 24</span>.
+                    </p>
+                </div>
+
+                <div class="bilingual" style="margin-top: 20px;">
+                    <div class="lang-column en">
+                        <span class="lang-label">Solution (English)</span>
+
+                        <h4>Part a) Interpretation</h4>
+                        <div class="callout definition no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p><strong>Step 1:</strong> Identify variables</p>
+                                <ul style="margin: 8px 0;">
+                                    <li><span class="math">v</span> = vegetarian guests</li>
+                                    <li><span class="math">f</span> = meat-eating guests</li>
+                                    <li><span class="math">a</span> = price per meal</li>
+                                </ul>
+                                <p><strong>Step 2:</strong> Decode the expression</p>
+                                <ul style="margin: 8px 0;">
+                                    <li><span class="math">(v + f)</span> = total number of guests</li>
+                                    <li><span class="math">× a</span> = multiplied by price per meal</li>
+                                </ul>
+                                <p><strong>Answer:</strong> The term <span class="math">(v + f) · a</span> represents
+                                    the <strong>total revenue</strong> from all meals served.</p>
+                            </div>
+                        </div>
+
+                        <h4>Part b) Calculation</h4>
+                        <div class="math-block">
+                            <strong>Given:</strong> v = 12, f = 24, a = 15€<br><br>
+                            <strong>Formula:</strong> (v + f) · a<br><br>
+                            <strong>Substitution:</strong><br>
+                            = (12 + 24) · 15<br>
+                            = 36 · 15<br>
+                            = <strong>540€</strong>
+                        </div>
+                        <p><strong>Answer:</strong> The total revenue is <strong>540 Euros</strong>.</p>
+                    </div>
+
+                    <div class="lang-column de">
+                        <span class="lang-label">Lösung (Deutsch)</span>
+
+                        <h4>Teil a) Interpretation</h4>
+                        <div class="callout definition no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p><strong>Schritt 1:</strong> Variablen identifizieren</p>
+                                <ul style="margin: 8px 0;">
+                                    <li><span class="math">v</span> = vegetarische Gäste</li>
+                                    <li><span class="math">f</span> = fleischessende Gäste</li>
+                                    <li><span class="math">a</span> = Preis pro Gericht</li>
+                                </ul>
+                                <p><strong>Schritt 2:</strong> Den Ausdruck entschlüsseln</p>
+                                <ul style="margin: 8px 0;">
+                                    <li><span class="math">(v + f)</span> = Gesamtzahl der Gäste</li>
+                                    <li><span class="math">× a</span> = multipliziert mit dem Preis pro Gericht</li>
+                                </ul>
+                                <p><strong>Antwort:</strong> Der Term <span class="math">(v + f) · a</span> stellt den
+                                    <strong>Gesamtumsatz</strong> aller servierten Mahlzeiten dar.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h4>Teil b) Berechnung</h4>
+                        <div class="math-block">
+                            <strong>Gegeben:</strong> v = 12, f = 24, a = 15€<br><br>
+                            <strong>Formel:</strong> (v + f) · a<br><br>
+                            <strong>Einsetzen:</strong><br>
+                            = (12 + 24) · 15<br>
+                            = 36 · 15<br>
+                            = <strong>540€</strong>
+                        </div>
+                        <p><strong>Antwort:</strong> Der Gesamtumsatz beträgt <strong>540 Euro</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- Visual for Aufgabe 1 -->
+                <div class="visual-container" style="margin: 25px 0;">
+                    <img src="assets/restaurant_example.png" alt="Restaurant Calculation Visual"
+                        style="max-width: 500px;">
+                    <p class="visual-caption">Visualisierung: Gesamtumsatz = (v + f) × a = (12 + 24) × 15 = 540€</p>
+                </div>
+            </div>
+
+            <!-- ==================== AUFGABE 2: PYTHAGORAS ==================== -->
+            <div class="content-section page-break">
+                <div class="example-block no-break" style="background: #fff; border: 2px solid var(--vsn-primary);">
+                    <div class="example-title" style="color: var(--vsn-primary); font-size: 13pt;">📝 Aufgabe 2:
+                        Rechtwinkliges Dreieck</div>
+                    <p><strong>Angabe (Exam Question):</strong></p>
+                    <p
+                        style="background: var(--vsn-light-gray); padding: 12px; border-radius: 6px; font-style: italic;">
+                        Ein rechtwinkliges Dreieck hat die Katheten <span class="math">a = 3 cm</span> und <span
+                            class="math">b = 4 cm</span>.
+                        <br><br>
+                        <strong>a)</strong> Interpretieren Sie den Term <span class="math">√(a² + b²)</span> im
+                        geometrischen Kontext.
+                        <br>
+                        <strong>b)</strong> Berechnen Sie die Länge der Hypotenuse.
+                        <br>
+                        <strong>c)</strong> Berechnen Sie den Flächeninhalt des Dreiecks.
+                    </p>
+                </div>
+
+                <div class="bilingual" style="margin-top: 20px;">
+                    <div class="lang-column en">
+                        <span class="lang-label">Solution (English)</span>
+
+                        <h4>Part a) Interpretation</h4>
+                        <div class="callout definition no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p>The expression <span class="math">√(a² + b²)</span> comes from the
+                                    <strong>Pythagorean theorem</strong>:
+                                </p>
+                                <p
+                                    style="text-align: center; font-family: var(--font-mono); font-size: 12pt; margin: 10px 0;">
+                                    c² = a² + b² → c = √(a² + b²)</p>
+                                <p><strong>Answer:</strong> The term represents the <strong>length of the
+                                        hypotenuse</strong> (the side opposite the right angle).</p>
+                            </div>
+                        </div>
+
+                        <h4>Part b) Hypotenuse Calculation</h4>
+                        <div class="math-block">
+                            <strong>Given:</strong> a = 3 cm, b = 4 cm<br><br>
+                            <strong>Formula:</strong> c = √(a² + b²)<br><br>
+                            <strong>Calculation:</strong><br>
+                            c² = 3² + 4²<br>
+                            c² = 9 + 16<br>
+                            c² = 25<br>
+                            c = √25<br>
+                            c = <strong>5 cm</strong>
+                        </div>
+
+                        <h4>Part c) Area Calculation</h4>
+                        <div class="math-block">
+                            <strong>Formula:</strong> A = (a · b) / 2<br><br>
+                            <strong>Calculation:</strong><br>
+                            A = (3 · 4) / 2<br>
+                            A = 12 / 2<br>
+                            A = <strong>6 cm²</strong>
+                        </div>
+                    </div>
+
+                    <div class="lang-column de">
+                        <span class="lang-label">Lösung (Deutsch)</span>
+
+                        <h4>Teil a) Interpretation</h4>
+                        <div class="callout definition no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p>Der Ausdruck <span class="math">√(a² + b²)</span> stammt aus dem <strong>Satz des
+                                        Pythagoras</strong>:</p>
+                                <p
+                                    style="text-align: center; font-family: var(--font-mono); font-size: 12pt; margin: 10px 0;">
+                                    c² = a² + b² → c = √(a² + b²)</p>
+                                <p><strong>Antwort:</strong> Der Term stellt die <strong>Länge der Hypotenuse</strong>
+                                    dar (die Seite gegenüber dem rechten Winkel).</p>
+                            </div>
+                        </div>
+
+                        <h4>Teil b) Berechnung der Hypotenuse</h4>
+                        <div class="math-block">
+                            <strong>Gegeben:</strong> a = 3 cm, b = 4 cm<br><br>
+                            <strong>Formel:</strong> c = √(a² + b²)<br><br>
+                            <strong>Rechnung:</strong><br>
+                            c² = 3² + 4²<br>
+                            c² = 9 + 16<br>
+                            c² = 25<br>
+                            c = √25<br>
+                            c = <strong>5 cm</strong>
+                        </div>
+
+                        <h4>Teil c) Berechnung des Flächeninhalts</h4>
+                        <div class="math-block">
+                            <strong>Formel:</strong> A = (a · b) / 2<br><br>
+                            <strong>Rechnung:</strong><br>
+                            A = (3 · 4) / 2<br>
+                            A = 12 / 2<br>
+                            A = <strong>6 cm²</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual for Aufgabe 2 -->
+                <div class="visual-container" style="margin: 25px 0;">
+                    <img src="assets/triangle_calculation.png" alt="Pythagorean Theorem Calculation"
+                        style="max-width: 450px;">
+                    <p class="visual-caption">Schritt-für-Schritt-Lösung: c = √(3² + 4²) = √25 = 5 cm</p>
+                </div>
+            </div>
+
+            <!-- ==================== AUFGABE 3: MEHRWERTSTEUER ==================== -->
+            <div class="content-section page-break">
+                <div class="example-block no-break" style="background: #fff; border: 2px solid var(--vsn-primary);">
+                    <div class="example-title" style="color: var(--vsn-primary); font-size: 13pt;">📝 Aufgabe 3:
+                        Mehrwertsteuer (MwSt.)</div>
+                    <p><strong>Angabe (Exam Question):</strong></p>
+                    <p
+                        style="background: var(--vsn-light-gray); padding: 12px; border-radius: 6px; font-style: italic;">
+                        Ein Produkt hat einen Nettopreis von <span class="math">p = 80€</span>. In Österreich beträgt
+                        die Mehrwertsteuer (MwSt.) 20%.
+                        <br><br>
+                        <strong>a)</strong> Interpretieren Sie den Term <span class="math">p · 1.2</span>.
+                        <br>
+                        <strong>b)</strong> Berechnen Sie den Bruttopreis.
+                        <br>
+                        <strong>c)</strong> Wie hoch ist der MwSt.-Betrag?
+                        <br>
+                        <strong>d)</strong> Was bedeutet <span class="math">p · 0.8</span> im Kontext eines Rabattes?
+                    </p>
+                </div>
+
+                <div class="bilingual" style="margin-top: 20px;">
+                    <div class="lang-column en">
+                        <span class="lang-label">Solution (English)</span>
+
+                        <h4>Part a) Interpretation of p · 1.2</h4>
+                        <div class="callout definition no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p><strong>Decoding:</strong></p>
+                                <ul style="margin: 8px 0;">
+                                    <li><span class="math">1.2 = 1 + 0.2 = 100% + 20%</span></li>
+                                    <li>Multiplying by 1.2 adds 20% to the original value</li>
+                                </ul>
+                                <p><strong>Answer:</strong> <span class="math">p · 1.2</span> is the <strong>gross
+                                        price</strong> (price including 20% VAT).</p>
+                            </div>
+                        </div>
+
+                        <h4>Part b) Gross Price Calculation</h4>
+                        <div class="math-block">
+                            <strong>Given:</strong> p = 80€ (net price)<br><br>
+                            <strong>Gross price</strong> = p · 1.2<br>
+                            = 80 · 1.2<br>
+                            = <strong>96€</strong>
+                        </div>
+
+                        <h4>Part c) VAT Amount</h4>
+                        <div class="math-block">
+                            <strong>Method 1:</strong> VAT = p · 0.2<br>
+                            = 80 · 0.2 = <strong>16€</strong><br><br>
+                            <strong>Method 2:</strong> VAT = Gross − Net<br>
+                            = 96 − 80 = <strong>16€</strong>
+                        </div>
+
+                        <h4>Part d) Meaning of p · 0.8</h4>
+                        <div class="callout tip no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p><span class="math">0.8 = 1 − 0.2 = 100% − 20%</span></p>
+                                <p><strong>Answer:</strong> <span class="math">p · 0.8</span> is the price after a
+                                    <strong>20% discount</strong>.
+                                </p>
+                                <p>Example: 80 · 0.8 = <strong>64€</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lang-column de">
+                        <span class="lang-label">Lösung (Deutsch)</span>
+
+                        <h4>Teil a) Interpretation von p · 1.2</h4>
+                        <div class="callout definition no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p><strong>Entschlüsselung:</strong></p>
+                                <ul style="margin: 8px 0;">
+                                    <li><span class="math">1.2 = 1 + 0.2 = 100% + 20%</span></li>
+                                    <li>Multiplikation mit 1,2 erhöht den Wert um 20%</li>
+                                </ul>
+                                <p><strong>Antwort:</strong> <span class="math">p · 1.2</span> ist der
+                                    <strong>Bruttopreis</strong> (Preis inklusive 20% MwSt.).
+                                </p>
+                            </div>
+                        </div>
+
+                        <h4>Teil b) Berechnung des Bruttopreises</h4>
+                        <div class="math-block">
+                            <strong>Gegeben:</strong> p = 80€ (Nettopreis)<br><br>
+                            <strong>Bruttopreis</strong> = p · 1.2<br>
+                            = 80 · 1.2<br>
+                            = <strong>96€</strong>
+                        </div>
+
+                        <h4>Teil c) MwSt.-Betrag</h4>
+                        <div class="math-block">
+                            <strong>Methode 1:</strong> MwSt. = p · 0.2<br>
+                            = 80 · 0.2 = <strong>16€</strong><br><br>
+                            <strong>Methode 2:</strong> MwSt. = Brutto − Netto<br>
+                            = 96 − 80 = <strong>16€</strong>
+                        </div>
+
+                        <h4>Teil d) Bedeutung von p · 0.8</h4>
+                        <div class="callout tip no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p><span class="math">0.8 = 1 − 0.2 = 100% − 20%</span></p>
+                                <p><strong>Antwort:</strong> <span class="math">p · 0.8</span> ist der Preis nach einem
+                                    <strong>20%igen Rabatt</strong>.
+                                </p>
+                                <p>Beispiel: 80 · 0.8 = <strong>64€</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual for Aufgabe 3 -->
+                <div class="visual-container" style="margin: 25px 0;">
+                    <img src="assets/vat_calculation.png" alt="VAT Calculation Visual" style="max-width: 450px;">
+                    <p class="visual-caption">Bruttopreis = p × 1.2 = 80€ × 1.2 = 96€ (inkl. MwSt.-Betrag von 16€)</p>
+                </div>
+            </div>
+
+            <!-- ==================== AUFGABE 4: INTERVALLE ==================== -->
+            <div class="content-section page-break">
+                <div class="example-block no-break" style="background: #fff; border: 2px solid var(--vsn-primary);">
+                    <div class="example-title" style="color: var(--vsn-primary); font-size: 13pt;">📝 Aufgabe 4:
+                        Ungleichungen und Intervalle</div>
+                    <p><strong>Angabe (Exam Question):</strong></p>
+                    <p
+                        style="background: var(--vsn-light-gray); padding: 12px; border-radius: 6px; font-style: italic;">
+                        Bei einer Schulveranstaltung gibt es maximal 50 Plätze. Die Variable <span class="math">s</span>
+                        steht für die Anzahl der Schüler und <span class="math">l</span> für die Anzahl der Lehrer.
+                        <br><br>
+                        <strong>a)</strong> Interpretieren Sie die Ungleichung <span class="math">s + l ≤ 50</span>.
+                        <br>
+                        <strong>b)</strong> Was bedeutet <span class="math">s ∈ [30; 40]</span>?
+                        <br>
+                        <strong>c)</strong> Interpretieren Sie <span class="math">3 · s = l</span>.
+                    </p>
+                </div>
+
+                <div class="bilingual" style="margin-top: 20px;">
+                    <div class="lang-column en">
+                        <span class="lang-label">Solution (English)</span>
+
+                        <h4>Part a) Interpretation of s + l ≤ 50</h4>
+                        <div class="callout info no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p><strong>Symbol breakdown:</strong></p>
+                                <ul style="margin: 8px 0;">
+                                    <li><span class="math">s + l</span> = total attendees (students + teachers)</li>
+                                    <li><span class="math">≤</span> means "less than or equal to"</li>
+                                    <li><span class="math">50</span> = maximum capacity</li>
+                                </ul>
+                                <p><strong>Answer:</strong> The total number of students and teachers is <strong>at most
+                                        50</strong> (can be 50 or fewer).</p>
+                            </div>
+                        </div>
+
+                        <h4>Part b) Meaning of s ∈ [30; 40]</h4>
+                        <div class="callout info no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p><strong>Symbol breakdown:</strong></p>
+                                <ul style="margin: 8px 0;">
+                                    <li><span class="math">∈</span> = "is an element of" / "is in"</li>
+                                    <li><span class="math">[30; 40]</span> = closed interval from 30 to 40</li>
+                                    <li>Square brackets [ ] = endpoints included</li>
+                                </ul>
+                                <p><strong>Answer:</strong> The number of students is <strong>between 30 and 40,
+                                        inclusive</strong>.</p>
+                            </div>
+                        </div>
+
+                        <h4>Part c) Interpretation of 3 · s = l</h4>
+                        <div class="math-block">
+                            <strong>Decoding:</strong><br>
+                            • Left side: 3 × (number of students)<br>
+                            • Right side: number of teachers<br>
+                            • = means they are equal<br><br>
+                            <strong>Answer:</strong> There are <strong>3 times as many students as teachers</strong>.
+                            <br><br>
+                            <em>Example: If l = 10 teachers, then s = 30 students.</em>
+                        </div>
+                    </div>
+
+                    <div class="lang-column de">
+                        <span class="lang-label">Lösung (Deutsch)</span>
+
+                        <h4>Teil a) Interpretation von s + l ≤ 50</h4>
+                        <div class="callout info no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p><strong>Symbol-Aufschlüsselung:</strong></p>
+                                <ul style="margin: 8px 0;">
+                                    <li><span class="math">s + l</span> = Gesamtteilnehmer (Schüler + Lehrer)</li>
+                                    <li><span class="math">≤</span> bedeutet „kleiner oder gleich"</li>
+                                    <li><span class="math">50</span> = maximale Kapazität</li>
+                                </ul>
+                                <p><strong>Antwort:</strong> Die Gesamtzahl der Schüler und Lehrer beträgt
+                                    <strong>höchstens 50</strong> (kann 50 oder weniger sein).
+                                </p>
+                            </div>
+                        </div>
+
+                        <h4>Teil b) Bedeutung von s ∈ [30; 40]</h4>
+                        <div class="callout info no-break" style="padding: 12px 16px;">
+                            <div class="callout-content">
+                                <p><strong>Symbol-Aufschlüsselung:</strong></p>
+                                <ul style="margin: 8px 0;">
+                                    <li><span class="math">∈</span> = „ist Element von" / „liegt in"</li>
+                                    <li><span class="math">[30; 40]</span> = geschlossenes Intervall von 30 bis 40</li>
+                                    <li>Eckige Klammern [ ] = Randwerte eingeschlossen</li>
+                                </ul>
+                                <p><strong>Antwort:</strong> Die Anzahl der Schüler liegt <strong>zwischen 30 und 40,
+                                        einschließlich</strong>.</p>
+                            </div>
+                        </div>
+
+                        <h4>Teil c) Interpretation von 3 · s = l</h4>
+                        <div class="math-block">
+                            <strong>Entschlüsselung:</strong><br>
+                            • Linke Seite: 3 × (Anzahl der Schüler)<br>
+                            • Rechte Seite: Anzahl der Lehrer<br>
+                            • = bedeutet Gleichheit<br><br>
+                            <strong>Antwort:</strong> Es gibt <strong>dreimal so viele Schüler wie Lehrer</strong>.
+                            <br><br>
+                            <em>Beispiel: Bei l = 10 Lehrern gibt es s = 30 Schüler.</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout tip no-break" style="margin-top: 25px;">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z" />
+                    </svg>
+                    <div class="callout-content">
+                        <div class="callout-title">Prüfungstipp / Exam Tip</div>
+                        <p><strong>DE:</strong> Achten Sie auf den Unterschied zwischen <span class="math">&lt;</span>
+                            (weniger als) und <span class="math">≤</span> (höchstens). Bei <span class="math">≤</span>
+                            ist der Grenzwert selbst erlaubt!</p>
+                        <p><strong>EN:</strong> Pay attention to the difference between <span class="math">&lt;</span>
+                            (less than) and <span class="math">≤</span> (at most). With <span class="math">≤</span>, the
+                            boundary value itself is allowed!</p>
+                    </div>
+                </div>
+
+                <!-- Final Footer -->
+                <div
+                    style="margin-top: 50px; padding-top: 20px; border-top: 2px solid var(--vsn-secondary); text-align: center; color: #999; font-size: 9pt;">
+                    <p>© VSN Student Network | 1IBK Mathematics | 19.01.2026</p>
+                    <p style="margin-top: 5px;">Viel Erfolg bei der Prüfung! / Good luck on your exam!</p>
+                </div>
+            </div>
+
+</body>
+
+</html>
