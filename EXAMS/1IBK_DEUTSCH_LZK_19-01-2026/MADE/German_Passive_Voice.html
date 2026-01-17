@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das Passiv im Deutschen - The German Passive Voice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e2e48;
+            --secondary: #fbc92d;
+            --complementary: #dc4ebf;
+            --info-blue: #2980b9;
+            --white: #ffffff;
+            --light-gray: #f5f5f5;
+            --text-dark: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--white);
+        }
+
+        .mono {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        /* Cover Page */
+        .cover-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary) 0%, #2a3f5f 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            page-break-after: always;
+        }
+
+        .cover-logo {
+            max-width: 180px;
+            margin-bottom: 2rem;
+        }
+
+        .cover-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .cover-subtitle {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .cover-level {
+            font-size: 1.1rem;
+            color: var(--complementary);
+            margin-bottom: 2rem;
+        }
+
+        .cover-date {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* TOC */
+        .toc-page {
+            padding: 2rem;
+            page-break-after: always;
+        }
+
+        .toc-title {
+            color: var(--primary);
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dotted #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .toc-list a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .toc-list a:hover {
+            color: var(--complementary);
+        }
+
+        /* Main Content */
+        .content {
+            padding: 1.5rem 2rem;
+            max-width: 210mm;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 1.6rem;
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 0.4rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            border-left: 4px solid var(--complementary);
+            padding-left: 0.8rem;
+            margin: 1.2rem 0 0.8rem;
+        }
+
+        h3 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin: 1rem 0 0.6rem;
+        }
+
+        /* Bilingual Grid */
+        .bilingual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .lang-col {
+            padding: 0.5rem;
+        }
+
+        .lang-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--complementary);
+            margin-bottom: 0.3rem;
+        }
+
+        /* Callout Boxes */
+        .callout {
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .callout-icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+        }
+
+        .callout-content {
+            flex: 1;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .callout-definition {
+            background: rgba(220, 78, 191, 0.15);
+            border-left: 4px solid var(--complementary);
+        }
+
+        .callout-definition .callout-icon {
+            fill: var(--complementary);
+        }
+
+        .callout-definition .callout-title {
+            color: var(--complementary);
+        }
+
+        .callout-info {
+            background: rgba(41, 128, 185, 0.15);
+            border-left: 4px solid var(--info-blue);
+        }
+
+        .callout-info .callout-icon {
+            fill: var(--info-blue);
+        }
+
+        .callout-info .callout-title {
+            color: var(--info-blue);
+        }
+
+        .callout-tip {
+            background: rgba(251, 201, 45, 0.25);
+            border-left: 4px solid var(--secondary);
+        }
+
+        .callout-tip .callout-icon {
+            fill: #b8860b;
+        }
+
+        .callout-tip .callout-title {
+            color: #8b6914;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        th {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.6rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 0.5rem 0.6rem;
+            border: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background: var(--light-gray);
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin: 0.5rem 0 0.5rem 1.5rem;
+        }
+
+        li {
+            margin: 0.3rem 0;
+        }
+
+        li::marker {
+            color: var(--secondary);
+        }
+
+        strong {
+            color: var(--primary);
+        }
+
+        .highlight {
+            background: rgba(251, 201, 45, 0.3);
+            padding: 0 0.2rem;
+        }
+
+        /* Page Breaks */
+        .page-break {
+            page-break-after: always;
+        }
+
+        .avoid-break {
+            page-break-inside: avoid;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                font-size: 10pt;
+            }
+
+            .cover-page {
+                min-height: auto;
+                padding: 3cm 2cm;
+            }
+
+            .content {
+                padding: 1cm 1.5cm;
+            }
+
+            .callout {
+                break-inside: avoid;
+            }
+
+            table {
+                break-inside: avoid;
+            }
+
+            h1,
+            h2,
+            h3 {
+                break-after: avoid;
+            }
+        }
+
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cover Page -->
+    <div class="cover-page">
+        <img src="assets/VSN_new.png" alt="VSN Logo" class="cover-logo">
+        <h1 class="cover-title">Das Passiv im Deutschen</h1>
+        <p class="cover-subtitle">The German Passive Voice</p>
+        <p class="cover-level">Niveau B1 – C1 | 1IBK VBS</p>
+        <p class="cover-date">Januar 2026</p>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="toc-page">
+        <h1 class="toc-title">Inhaltsverzeichnis / Table of Contents</h1>
+        <ul class="toc-list">
+            <li><a href="#intro">1. Einführung / Introduction</a></li>
+            <li><a href="#basic">2. Basic Passive Voice (B1)</a></li>
+            <li><a href="#vorgangspassiv">3. Vorgangspassiv Formation</a></li>
+            <li><a href="#usage">4. When to Use Passive</a></li>
+            <li><a href="#transformation">5. Active to Passive Transformation</a></li>
+            <li><a href="#contexts">6. Examples by Context</a></li>
+            <li><a href="#advanced">7. Advanced Passive (B2/C1)</a></li>
+            <li><a href="#zustandspassiv">8. Zustandspassiv</a></li>
+            <li><a href="#agents">9. Agent: von & durch</a></li>
+            <li><a href="#impersonal">10. Impersonal Passive</a></li>
+            <li><a href="#modal">11. Passive with Modal Verbs</a></li>
+            <li><a href="#subordinate">12. Passive in Subordinate Clauses</a></li>
+            <li><a href="#mistakes">13. Common Mistakes</a></li>
+            <li><a href="#exercises">14. Practice Exercises</a></li>
+            <li><a href="#tips">15. Memory Tips</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- Section 1: Introduction -->
+        <section id="intro">
+            <h1>1. Einführung / Introduction</h1>
+            <div class="bilingual">
+                <div class="lang-col">
+                    <div class="lang-label">English</div>
+                    <p>The passive voice in German is a grammatical construction used to emphasize the action or the
+                        result of an action, rather than the agent. It is often referred to as the "Leideform"
+                        (suffering form) because the subject of the passive sentence undergoes the action.</p>
+                    <p style="margin-top:0.5rem">This mode is particularly useful when the agent is unknown,
+                        unimportant, or intentionally not mentioned—for example, in news reports or formal texts.</p>
+                </div>
+                <div class="lang-col">
+                    <div class="lang-label">Deutsch</div>
+                    <p>Das Passiv im Deutschen ist eine grammatische Konstruktion, die verwendet wird, um die Handlung
+                        oder das Ergebnis einer Handlung hervorzuheben, und nicht den Handelnden. Es wird oft als
+                        „Leideform" bezeichnet, weil das Subjekt des Passivsatzes die Handlung erleidet.</p>
+                    <p style="margin-top:0.5rem">Diese Form ist besonders nützlich, wenn der Handelnde unbekannt,
+                        unwichtig oder absichtlich nicht genannt wird, zum Beispiel in Nachrichtenberichten oder
+                        formellen Texten.</p>
+                </div>
+            </div>
+
+            <div class="callout callout-info avoid-break">
+                <svg class="callout-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                    <path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <div class="callout-content">
+                    <div class="callout-title">Levels Covered / Behandelte Niveaustufen</div>
+                    <p>This material covers B1, B2, and C1 levels—suitable for Gymnasium Oberstufe. <br>Dieses Material
+                        behandelt die Niveaus B1, B2 und C1—geeignet für die Oberstufe des Gymnasiums.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-break"></div>
+
+        <!-- Section 2: Basic Passive Voice -->
+        <section id="basic">
+            <h1>2. Basic Passive Voice (B1 Level)</h1>
+            <h2 id="vorgangspassiv">Formation of Vorgangspassiv / Bildung des Vorgangspassivs</h2>
+
+            <div class="callout callout-definition avoid-break">
+                <svg class="callout-icon" viewBox="0 0 24 24">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                        stroke-width="2" fill="none" />
+                </svg>
+                <div class="callout-content">
+                    <div class="callout-title">Vorgangspassiv (Process Passive)</div>
+                    <p><strong>EN:</strong> Describes an ongoing process or action. Focuses on <em>what is being
+                            done</em>. Formation: <span class="mono highlight">werden + Partizip II</span></p>
+                    <p><strong>DE:</strong> Beschreibt einen laufenden Vorgang. Konzentriert sich auf das, <em>was getan
+                            wird</em>. Bildung: <span class="mono highlight">werden + Partizip II</span></p>
+                </div>
+            </div>
+
+            <h3>Vorgangspassiv in Different Tenses / in verschiedenen Zeitformen</h3>
+            <table class="avoid-break">
+                <thead>
+                    <tr>
+                        <th>Zeitform / Tense</th>
+                        <th>Aktiv (Active)</th>
+                        <th>Passiv (Passive)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Präsens</strong></td>
+                        <td>Der Mechaniker wechselt den Reifen.</td>
+                        <td>Der Reifen <span class="mono">wird gewechselt</span>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Präteritum</strong></td>
+                        <td>Der Mechaniker wechselte den Reifen.</td>
+                        <td>Der Reifen <span class="mono">wurde gewechselt</span>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Perfekt</strong></td>
+                        <td>Der Mechaniker hat den Reifen gewechselt.</td>
+                        <td>Der Reifen <span class="mono">ist gewechselt worden</span>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plusquamperfekt</strong></td>
+                        <td>Der Mechaniker hatte den Reifen gewechselt.</td>
+                        <td>Der Reifen <span class="mono">war gewechselt worden</span>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Futur I</strong></td>
+                        <td>Der Mechaniker wird den Reifen wechseln.</td>
+                        <td>Der Reifen <span class="mono">wird gewechselt werden</span>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Futur II</strong></td>
+                        <td>Der Mechaniker wird den Reifen gewechselt haben.</td>
+                        <td>Der Reifen <span class="mono">wird gewechselt worden sein</span>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 4: When to Use -->
+        <section id="usage">
+            <h2>When to Use Passive Voice / Wann man das Passiv verwendet</h2>
+            <div class="bilingual">
+                <div class="lang-col">
+                    <div class="lang-label">English</div>
+                    <ul>
+                        <li>The agent (doer) is <strong>unknown</strong> or <strong>unimportant</strong></li>
+                        <li>Focus is on the <strong>action or result</strong>, not who performed it</li>
+                        <li>In <strong>formal writing</strong>, academic texts, instructions, or procedures</li>
+                        <li>The agent is <strong>obvious from context</strong></li>
+                    </ul>
+                </div>
+                <div class="lang-col">
+                    <div class="lang-label">Deutsch</div>
+                    <ul>
+                        <li>Der Handelnde ist <strong>unbekannt</strong> oder <strong>unwichtig</strong></li>
+                        <li>Fokus liegt auf der <strong>Handlung oder dem Ergebnis</strong></li>
+                        <li>In <strong>formeller Schriftsprache</strong>, akademischen Texten, Anweisungen</li>
+                        <li>Der Handelnde ist <strong>aus dem Kontext offensichtlich</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Examples / Beispiele</h3>
+            <ul>
+                <li><span class="mono">Das Auto wird repariert.</span> — The car is being repaired.</li>
+                <li><span class="mono">Die Prüfung wurde bestanden.</span> — The exam was passed.</li>
+                <li><span class="mono">Das Problem ist gelöst worden.</span> — The problem has been solved.</li>
+            </ul>
+        </section>
+
+        <div class="page-break"></div>
+
+        <!-- Section 5: Active to Passive Transformation -->
+        <section id="transformation">
+            <h1>3. Active to Passive Transformation</h1>
+            <div class="bilingual">
+                <div class="lang-col">
+                    <div class="lang-label">English</div>
+                    <ol>
+                        <li>The direct object of the active sentence becomes the <strong>subject</strong> of the passive
+                            sentence.</li>
+                        <li>The auxiliary verb <span class="mono highlight">werden</span> is conjugated according to the
+                            tense and the new subject.</li>
+                        <li>The main verb is converted to its <strong>Partizip II</strong> form.</li>
+                        <li>The original subject (agent) can be omitted or introduced with <span class="mono">von</span>
+                            (people) or <span class="mono">durch</span> (things/means).</li>
+                    </ol>
+                </div>
+                <div class="lang-col">
+                    <div class="lang-label">Deutsch</div>
+                    <ol>
+                        <li>Das Akkusativobjekt des Aktivsatzes wird zum <strong>Subjekt</strong> des Passivsatzes.</li>
+                        <li>Das Hilfsverb <span class="mono highlight">werden</span> wird entsprechend der Zeitform und
+                            dem neuen Subjekt konjugiert.</li>
+                        <li>Das Hauptverb wird in seine <strong>Partizip II</strong>-Form gebracht.</li>
+                        <li>Das ursprüngliche Subjekt kann weggelassen oder mit <span class="mono">von</span> (Personen)
+                            oder <span class="mono">durch</span> (Sachen) eingeführt werden.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="callout callout-tip avoid-break">
+                <svg class="callout-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"
+                        stroke="currentColor" stroke-width="2" fill="none" />
+                </svg>
+                <div class="callout-content">
+                    <div class="callout-title">Transformation Examples / Transformationsbeispiele</div>
+                    <p><strong>Aktiv:</strong> Der Mechaniker repariert das Auto.<br>
+                        <strong>Passiv:</strong> Das Auto wird <em>von dem Mechaniker</em> repariert.
+                    </p>
+                    <p style="margin-top:0.5rem"><strong>Aktiv:</strong> Die Lehrerin erklärt die Grammatik.<br>
+                        <strong>Passiv:</strong> Die Grammatik wird <em>von der Lehrerin</em> erklärt.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Context Examples -->
+        <section id="contexts">
+            <h2>Examples by Context / Anwendungsbeispiele nach Kontext</h2>
+            <div class="bilingual">
+                <div class="lang-col">
+                    <h3>Daily Life / Alltag</h3>
+                    <ul>
+                        <li><span class="mono">Das Frühstück wird um 8 Uhr serviert.</span></li>
+                        <li><span class="mono">Die Post wird jeden Morgen gebracht.</span></li>
+                        <li><span class="mono">Das Zimmer wird täglich gereinigt.</span></li>
+                    </ul>
+                    <h3>Work / Arbeit</h3>
+                    <ul>
+                        <li><span class="mono">Die Berichte werden wöchentlich geschrieben.</span></li>
+                        <li><span class="mono">Die E-Mails werden sofort beantwortet.</span></li>
+                        <li><span class="mono">Die Meetings werden montags geplant.</span></li>
+                    </ul>
+                </div>
+                <div class="lang-col">
+                    <h3>School / Schule</h3>
+                    <ul>
+                        <li><span class="mono">Die Prüfungen werden nächste Woche geschrieben.</span></li>
+                        <li><span class="mono">Die Hausaufgaben werden jeden Tag korrigiert.</span></li>
+                        <li><span class="mono">Die Bücher werden von der Bibliothek ausgeliehen.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-break"></div>
+
+        <!-- Section 7: Advanced Passive -->
+        <section id="advanced">
+            <h1>4. Advanced Passive Voice (B2/C1 Level)</h1>
+            <h2 id="zustandspassiv">Vorgangspassiv vs. Zustandspassiv</h2>
+
+            <div class="bilingual">
+                <div class="lang-col">
+                    <div class="callout callout-definition avoid-break">
+                        <svg class="callout-icon" viewBox="0 0 24 24">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2"
+                                fill="none" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                                stroke="currentColor" stroke-width="2" fill="none" />
+                        </svg>
+                        <div class="callout-content">
+                            <div class="callout-title">Vorgangspassiv (Process)</div>
+                            <p>Describes an <strong>action in progress</strong>.<br>Formation: <span
+                                    class="mono highlight">werden + Partizip II</span><br><em>Das Auto wird
+                                    repariert.</em> (is being repaired)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang-col">
+                    <div class="callout callout-definition avoid-break">
+                        <svg class="callout-icon" viewBox="0 0 24 24">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2"
+                                fill="none" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                                stroke="currentColor" stroke-width="2" fill="none" />
+                        </svg>
+                        <div class="callout-content">
+                            <div class="callout-title">Zustandspassiv (State)</div>
+                            <p>Describes a <strong>resulting state</strong>.<br>Formation: <span
+                                    class="mono highlight">sein + Partizip II</span><br><em>Das Auto ist repariert.</em>
+                                (is repaired)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Zustandspassiv in Different Tenses</h3>
+            <table class="avoid-break">
+                <thead>
+                    <tr>
+                        <th>Zeitform</th>
+                        <th>Example</th>
+                        <th>Explanation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Präsens</strong></td>
+                        <td><span class="mono">Der Reifen ist gewechselt.</span></td>
+                        <td>The tire is (already) changed.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Präteritum</strong></td>
+                        <td><span class="mono">Der Reifen war gewechselt.</span></td>
+                        <td>The tire was (already) changed.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Futur I</strong></td>
+                        <td><span class="mono">Der Reifen wird gewechselt sein.</span></td>
+                        <td>The tire will be (already) changed.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Examples / Beispiele</h3>
+            <ul>
+                <li><span class="mono">Das Buch ist geschrieben.</span> — The book is written (state).</li>
+                <li><span class="mono">Die Tür ist geöffnet.</span> — The door is open (state).</li>
+                <li><span class="mono">Das Essen ist gekocht.</span> — The food is cooked (state).</li>
+            </ul>
+        </section>
+
+        <!-- Section 9: Agents -->
+        <section id="agents">
+            <h2>Agent in Passive: "von" and "durch"</h2>
+            <div class="callout callout-info avoid-break">
+                <svg class="callout-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                    <path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <div class="callout-content">
+                    <div class="callout-title">von + Dativ / durch + Akkusativ</div>
+                    <p><strong>von:</strong> For people or institutions.<br><em>Das Buch wurde <span
+                                class="highlight">von dem Autor</span> geschrieben.</em></p>
+                    <p><strong>durch:</strong> For things, means, or causes.<br><em>Das Problem wurde <span
+                                class="highlight">durch neue Technologie</span> gelöst.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-break"></div>
+
+        <!-- Section 10: Impersonal Passive -->
+        <section id="impersonal">
+            <h2>Impersonal Passive ("Es" Passive)</h2>
+            <div class="bilingual">
+                <div class="lang-col">
+                    <div class="lang-label">English</div>
+                    <p>Used when there is no specific subject, particularly with intransitive verbs.</p>
+                    <ul>
+                        <li><span class="mono">Es wird getanzt.</span> — There is dancing.</li>
+                        <li><span class="mono">Gestern wurde viel gearbeitet.</span> — Much work was done yesterday.
+                        </li>
+                    </ul>
+                </div>
+                <div class="lang-col">
+                    <div class="lang-label">Deutsch</div>
+                    <p>Wird verwendet, wenn kein spezifisches Subjekt vorhanden ist, insbesondere bei intransitiven
+                        Verben.</p>
+                    <ul>
+                        <li><span class="mono">Es wird getanzt.</span></li>
+                        <li><span class="mono">Gestern wurde viel gearbeitet.</span> („Es" kann weggelassen werden)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 11: Modal Verbs -->
+        <section id="modal">
+            <h2>Passive with Modal Verbs</h2>
+            <div class="callout callout-definition avoid-break">
+                <svg class="callout-icon" viewBox="0 0 24 24">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                        stroke-width="2" fill="none" />
+                </svg>
+                <div class="callout-content">
+                    <div class="callout-title">Formation / Bildung</div>
+                    <p><span class="mono highlight">Modal verb + Partizip II + werden (infinitive)</span></p>
+                </div>
+            </div>
+            <ul>
+                <li><span class="mono">Das muss gemacht werden.</span> — That must be done.</li>
+                <li><span class="mono">Das kann nicht geändert werden.</span> — That cannot be changed.</li>
+                <li><span class="mono">Die Hausaufgaben sollen gemacht werden.</span> — The homework should be done.
+                </li>
+                <li><span class="mono">Die Tür darf geöffnet werden.</span> — The door may be opened.</li>
+            </ul>
+        </section>
+
+        <!-- Section 12: Subordinate Clauses -->
+        <section id="subordinate">
+            <h2>Passive in Subordinate Clauses</h2>
+            <div class="callout callout-definition avoid-break">
+                <svg class="callout-icon" viewBox="0 0 24 24">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                        stroke-width="2" fill="none" />
+                </svg>
+                <div class="callout-content">
+                    <div class="callout-title">Complex Constructions / Komplexe Konstruktionen</div>
+                    <ul style="margin-left:1rem;">
+                        <li><span class="mono">Ich weiß, dass das Auto repariert wird.</span></li>
+                        <li><span class="mono">Es ist wichtig, dass die Regeln befolgt werden.</span></li>
+                        <li><span class="mono">Die Frage ist, ob das Problem gelöst werden kann.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Circumscribing Passive with „man"</h3>
+            <p>Instead of passive, use <span class="mono highlight">man</span> or <span
+                    class="mono highlight">jemand</span> as subject:</p>
+            <ul>
+                <li><strong>Passive:</strong> <span class="mono">Der Reifen wird gewechselt.</span></li>
+                <li><strong>Alternative:</strong> <span class="mono">Man wechselt den Reifen.</span></li>
+            </ul>
+        </section>
+
+        <div class="page-break"></div>
+
+        <!-- Section 13: Common Mistakes -->
+        <section id="mistakes">
+            <h1>5. Common Mistakes / Häufige Fehler</h1>
+
+            <div class="avoid-break" style="margin-bottom:1rem;">
+                <h3>1. Confusing Vorgangspassiv and Zustandspassiv</h3>
+                <p><strong style="color:#c0392b;">✗ Incorrect:</strong> <span class="mono">Das Auto ist repariert
+                        worden.</span> (for state)</p>
+                <p><strong style="color:#27ae60;">✓ Correct:</strong> <span class="mono">Das Auto ist repariert.</span>
+                    (state passive)</p>
+                <p><em>"ist repariert worden" = Perfekt Vorgangspassiv; "ist repariert" = Zustandspassiv</em></p>
+            </div>
+
+            <div class="avoid-break" style="margin-bottom:1rem;">
+                <h3>2. Wrong Word Order / Falsche Wortstellung</h3>
+                <p><strong style="color:#c0392b;">✗ Incorrect:</strong> <span class="mono">Wird das Auto repariert von
+                        dem Mechaniker.</span></p>
+                <p><strong style="color:#27ae60;">✓ Correct:</strong> <span class="mono">Das Auto wird von dem
+                        Mechaniker repariert.</span></p>
+            </div>
+
+            <div class="avoid-break" style="margin-bottom:1rem;">
+                <h3>3. Missing "von" or "durch"</h3>
+                <p><strong style="color:#c0392b;">✗ Incorrect:</strong> <span class="mono">Das Buch wird dem Autor
+                        geschrieben.</span></p>
+                <p><strong style="color:#27ae60;">✓ Correct:</strong> <span class="mono">Das Buch wird <span
+                            class="highlight">von</span> dem Autor geschrieben.</span></p>
+            </div>
+
+            <div class="avoid-break" style="margin-bottom:1rem;">
+                <h3>4. Wrong Tense Formation (Perfekt)</h3>
+                <p><strong style="color:#c0392b;">✗ Incorrect:</strong> <span class="mono">Das Auto ist repariert
+                        werden.</span></p>
+                <p><strong style="color:#27ae60;">✓ Correct:</strong> <span class="mono">Das Auto ist repariert <span
+                            class="highlight">worden</span>.</span></p>
+            </div>
+
+            <div class="avoid-break" style="margin-bottom:1rem;">
+                <h3>5. Wrong Modal Verb Placement</h3>
+                <p><strong style="color:#c0392b;">✗ Incorrect:</strong> <span class="mono">Das Auto repariert werden
+                        muss.</span></p>
+                <p><strong style="color:#27ae60;">✓ Correct:</strong> <span class="mono">Das Auto <span
+                            class="highlight">muss</span> repariert werden.</span></p>
+            </div>
+
+            <div class="avoid-break" style="margin-bottom:1rem;">
+                <h3>6. Missing "werden" with Modal Verbs</h3>
+                <p><strong style="color:#c0392b;">✗ Incorrect:</strong> <span class="mono">Das Auto muss
+                        repariert.</span></p>
+                <p><strong style="color:#27ae60;">✓ Correct:</strong> <span class="mono">Das Auto muss repariert <span
+                            class="highlight">werden</span>.</span></p>
+            </div>
+        </section>
+
+        <!-- Section 14: Practice Exercises -->
+        <section id="exercises">
+            <h1>6. Practice Exercises / Übungsaufgaben</h1>
+
+            <div class="avoid-break">
+                <h2>Exercise 1: Identify Passive Forms (B1)</h2>
+                <div class="callout callout-info">
+                    <svg class="callout-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                        <path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <div class="callout-content">
+                        <p><strong>KALTBLÜTIG:</strong> Das CSI-Team <span class="highlight">wird gerufen</span>... das
+                            ermordet <span class="highlight">aufgefunden worden ist</span>... den Opfern <span
+                                class="highlight">ist geschossen worden</span>... dass Laurel Trent dort <span
+                                class="highlight">aufgefunden worden ist</span>...</p>
+                        <p><em>Identify: wird gerufen (Präsens), aufgefunden worden ist (Perfekt), geschossen worden
+                                (Perfekt)</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="avoid-break">
+                <h2>Exercise 2: Transform Active to Passive (B1)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Active</th>
+                            <th>→ Passive</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Der Koch bereitet das Essen zu.</td>
+                            <td><span class="mono">Das Essen wird vom Koch zubereitet.</span></td>
+                        </tr>
+                        <tr>
+                            <td>Die Reinigungskraft putzt das Büro.</td>
+                            <td><span class="mono">Das Büro wird von der Reinigungskraft geputzt.</span></td>
+                        </tr>
+                        <tr>
+                            <td>Der Lehrer erklärt die Grammatik.</td>
+                            <td><span class="mono">Die Grammatik wird vom Lehrer erklärt.</span></td>
+                        </tr>
+                        <tr>
+                            <td>Die Sekretärin schreibt den Brief.</td>
+                            <td><span class="mono">Der Brief wird von der Sekretärin geschrieben.</span></td>
+                        </tr>
+                        <tr>
+                            <td>Der Fahrer bringt die Post.</td>
+                            <td><span class="mono">Die Post wird vom Fahrer gebracht.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="avoid-break">
+                <h2>Exercise 3: Fill in Passive Forms (B1)</h2>
+                <ol>
+                    <li>Das Auto ___ (reparieren) von dem Mechaniker. → <span class="mono highlight">wird
+                            repariert</span></li>
+                    <li>Die Hausaufgaben ___ (machen) von den Schülern. → <span class="mono highlight">werden
+                            gemacht</span></li>
+                    <li>Das Essen ___ (kochen) von der Mutter. → <span class="mono highlight">wird gekocht</span></li>
+                    <li>Die Zeitung ___ (lesen) von dem Vater. → <span class="mono highlight">wird gelesen</span></li>
+                    <li>Das Zimmer ___ (putzen) von der Reinigungskraft. → <span class="mono highlight">wird
+                            geputzt</span></li>
+                </ol>
+            </div>
+
+            <div class="page-break"></div>
+
+            <div class="avoid-break">
+                <h2>Exercise 4: Identify Passive Type (C1)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sentence</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="mono">Das Auto wird repariert.</span></td>
+                            <td><strong>Vorgangspassiv</strong></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">Das Auto ist repariert.</span></td>
+                            <td><strong>Zustandspassiv</strong></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">Die Tür wird geöffnet.</span></td>
+                            <td><strong>Vorgangspassiv</strong></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">Die Tür ist geöffnet.</span></td>
+                            <td><strong>Zustandspassiv</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="avoid-break">
+                <h2>Exercise 5: Modal Passive (C1)</h2>
+                <ol>
+                    <li>Man muss die Regeln befolgen. → <span class="mono highlight">Die Regeln müssen befolgt
+                            werden.</span></li>
+                    <li>Man sollte die Ergebnisse überprüfen. → <span class="mono highlight">Die Ergebnisse sollten
+                            überprüft werden.</span></li>
+                    <li>Man kann das Problem lösen. → <span class="mono highlight">Das Problem kann gelöst
+                            werden.</span></li>
+                </ol>
+            </div>
+
+            <div class="avoid-break">
+                <h2>Exercise 6: Subordinate Clauses (C1)</h2>
+                <ol>
+                    <li>Ich weiß, dass das Auto ___ (reparieren). → <span class="mono highlight">repariert wird</span>
+                    </li>
+                    <li>Es ist wichtig, dass die Regeln ___ (befolgen). → <span class="mono highlight">befolgt
+                            werden</span></li>
+                    <li>Die Frage ist, ob das Problem ___ (lösen). → <span class="mono highlight">gelöst werden
+                            kann</span></li>
+                </ol>
+            </div>
+        </section>
+
+        <div class="page-break"></div>
+
+        <!-- Section 15: Memory Tips -->
+        <section id="tips">
+            <h1>7. Memory Tips / Merk-Tipps</h1>
+
+            <div class="callout callout-tip avoid-break">
+                <svg class="callout-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"
+                        stroke="currentColor" stroke-width="2" fill="none" />
+                </svg>
+                <div class="callout-content">
+                    <div class="callout-title">1. Learn the Formation Patterns</div>
+                    <p><span class="mono highlight">werden + Partizip II</span> = Vorgangspassiv<br>
+                        <span class="mono highlight">sein + Partizip II</span> = Zustandspassiv
+                    </p>
+                </div>
+            </div>
+
+            <div class="callout callout-tip avoid-break">
+                <svg class="callout-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"
+                        stroke="currentColor" stroke-width="2" fill="none" />
+                </svg>
+                <div class="callout-content">
+                    <div class="callout-title">2. Practice Transformations</div>
+                    <p>Convert active to passive and vice versa in all tenses regularly.</p>
+                </div>
+            </div>
+
+            <div class="callout callout-tip avoid-break">
+                <svg class="callout-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"
+                        stroke="currentColor" stroke-width="2" fill="none" />
+                </svg>
+                <div class="callout-content">
+                    <div class="callout-title">3. Use Appropriate Agents</div>
+                    <p><span class="mono highlight">von</span> for people → <span class="mono highlight">durch</span>
+                        for things/means</p>
+                </div>
+            </div>
+
+            <div class="callout callout-tip avoid-break">
+                <svg class="callout-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"
+                        stroke="currentColor" stroke-width="2" fill="none" />
+                </svg>
+                <div class="callout-content">
+                    <div class="callout-title">4. Key Question: Action or State?</div>
+                    <p><strong>Action happening?</strong> → werden (Vorgangspassiv)<br>
+                        <strong>State achieved?</strong> → sein (Zustandspassiv)
+                    </p>
+                </div>
+            </div>
+
+            <!-- Active to Passive Transformation Example -->
+            <h2>5. Active → Passive Transformation Example</h2>
+            <div class="callout callout-definition avoid-break">
+                <svg class="callout-icon" viewBox="0 0 24 24">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" fill="none" />
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor"
+                        stroke-width="2" fill="none" />
+                </svg>
+                <div class="callout-content">
+                    <div class="callout-title">Example / Beispiel</div>
+                    <p><strong>Aktiv:</strong> <span class="mono">Der Lehrer korrigiert die Hausaufgaben.</span><br>
+                        <strong>Passiv:</strong> <span class="mono">Die Hausaufgaben werden (vom Lehrer)
+                            korrigiert.</span>
+                    </p>
+                    <p style="margin-top:0.5rem"><strong>Steps:</strong> 1) Akkusativobjekt → Subjekt, 2) werden
+                        konjugieren, 3) Partizip II am Ende, 4) optional: von + Dativ</p>
+                </div>
+            </div>
+
+            <h2>Practice: Transform Active to Passive</h2>
+            <div class="avoid-break">
+                <p>Transform these active sentences to passive voice:</p>
+                <ol>
+                    <li>Die Schüler lesen das Buch. → <span class="mono highlight">Das Buch wird (von den Schülern)
+                            gelesen.</span></li>
+                    <li>Der Koch bereitet das Essen zu. → <span class="mono highlight">Das Essen wird (vom Koch)
+                            zubereitet.</span></li>
+                    <li>Die Firma baut ein neues Gebäude. → <span class="mono highlight">Ein neues Gebäude wird (von der
+                            Firma) gebaut.</span></li>
+                    <li>Der Arzt untersucht den Patienten. → <span class="mono highlight">Der Patient wird (vom Arzt)
+                            untersucht.</span></li>
+                    <li>Die Sekretärin beantwortet die E-Mails. → <span class="mono highlight">Die E-Mails werden (von
+                            der Sekretärin) beantwortet.</span></li>
+                </ol>
+            </div>
+        </section>
+
+    </div> <!-- End content -->
+</body>
+
+</html>
