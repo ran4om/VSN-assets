@@ -67,8 +67,28 @@ When creating new VSN learning materials:
 5. Structure with: Header → TOC → Sections (with page breaks) → Callouts/Tables/Diagrams
 
 ### Known Best Practices
-- **Bilingual**: Two-column grid with border between languages
-- **Page breaks**: Each major section starts new page
+- **Bilingual**: Two-column grid with border between languages (HTML) or parallel sections with flags (Markdown)
+- **Page breaks**: Each major section starts new page (HTML print)
 - **Callout icons**: Book (definitions), Info-circle (facts), Lightbulb (tips)
 - **Tables**: Dark blue headers (#1e2e48), striped rows for readability
 - **SVG colors**: Use VSN brand palette within diagrams
+- **Markdown navigation**: Text references only (e.g., "Open file 01_Topic.md"), NO hyperlinks for file-to-file navigation
+
+### Markdown Study Set Structure
+A modular markdown study set was created in `MARKDOWN_STUDY_SET/` directory with:
+- **00_MASTER_Study_Guide.md**: Complete roadmap with file descriptions, emoji legend, and navigation instructions
+- **01-06 Topic Files**: Sequential numbered files (Climate Change through Polar Zones)
+- **Text-based navigation**: Navigation blocks at top and bottom with explicit file references (NO hyperlinks)
+- **Emoji categorization**: 📑 TOC, 💡 Key Points, ⚡ Exam Tips, 🔑 Definitions, 📊 Data, 🌍 Examples
+- **Bilingual structure**: Parallel English (🇬🇧) and German (🇩🇪) sections
+- **Print-friendly**: Clean markdown suitable for Cursor, ChatGPT, Claude, Obsidian, and printing
+
+**Navigation Format:**
+```markdown
+📑 Navigation:
+- ← Previous: See file XX_Previous.md
+- → Next: Continue to file XX_Next.md
+- ↑ Back to Master Guide: Open file 00_MASTER_Study_Guide.md
+```
+
+**Critical Constraint:** NO hyperlinks `[text](file.md)` for file navigation. Only internal anchor links allowed within same file.
