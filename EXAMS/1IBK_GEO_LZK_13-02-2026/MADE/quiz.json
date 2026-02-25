@@ -1,0 +1,220 @@
+{
+  "title": "Geography: Humans and Nature - Unit Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What is the definition of an arid climate?",
+      "options": [
+        "Precipitation exceeds evaporation",
+        "Evaporation exceeds precipitation",
+        "Temperature exceeds precipitation",
+        "Rainfall is constant throughout the year"
+      ],
+      "correctAnswer": "Evaporation exceeds precipitation",
+      "points": 10,
+      "topic": "arid-humid"
+    },
+    {
+      "type": "true-false",
+      "text": "The average global temperature increased by 0.6°C in the 20th century.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "climate-change"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How much did the sea level rise in the 20th century?",
+      "options": [
+        "10 cm",
+        "20 cm",
+        "50 cm",
+        "1 meter"
+      ],
+      "correctAnswer": "20 cm",
+      "points": 10,
+      "topic": "sea-level"
+    },
+    {
+      "type": "true-false",
+      "text": "The Arctic is a continent covered in ice, while Antarctica is an ocean covered in sea ice.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "polar-regions"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which country is the largest single buyer of tropical timber, purchasing approximately one-quarter of all tropical timber traded globally?",
+      "options": [
+        "USA",
+        "China",
+        "Japan",
+        "Germany"
+      ],
+      "correctAnswer": "Japan",
+      "points": 10,
+      "topic": "rainforest-destruction"
+    },
+    {
+      "type": "open-ended",
+      "text": "Explain the difference between vollhumid and semihumid climates.",
+      "options": [],
+      "correctAnswer": "Vollhumid (fully humid) means sufficient precipitation occurs all year round. Semihumid means sufficient precipitation only during part of the year, with dry periods occurring seasonally.",
+      "points": 15,
+      "topic": "arid-humid"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What percentage reduction in Arctic sea ice has been observed over the last three decades?",
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "50%"
+      ],
+      "correctAnswer": "20%",
+      "points": 10,
+      "topic": "arctic-ice"
+    },
+    {
+      "type": "true-false",
+      "text": "Steppes are drier than deserts.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "steppes"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the single largest driver of Amazon rainforest deforestation?",
+      "options": [
+        "Logging",
+        "Mining",
+        "Cattle ranching",
+        "Coffee plantations"
+      ],
+      "correctAnswer": "Cattle ranching",
+      "points": 10,
+      "topic": "rainforest-destruction"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which of the following is NOT a cause of desertification?",
+      "options": [
+        "Over-grazing",
+        "Deforestation",
+        "Heavy rainfall",
+        "Inappropriate irrigation"
+      ],
+      "correctAnswer": "Heavy rainfall",
+      "points": 10,
+      "topic": "desertification"
+    },
+    {
+      "type": "true-false",
+      "text": "The Northeast Passage (Northern Sea Route) can save 11-13 days compared to the Suez Canal route.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "northeast-passage"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the annual precipitation range for steppe regions?",
+      "options": [
+        "100-250 mm",
+        "250-500 mm",
+        "500-750 mm",
+        "750-1000 mm"
+      ],
+      "correctAnswer": "250-500 mm",
+      "points": 10,
+      "topic": "steppes"
+    },
+    {
+      "type": "open-ended",
+      "text": "Describe the ice-albedo feedback loop and explain why it causes the Arctic to warm faster than the global average.",
+      "options": [],
+      "correctAnswer": "The ice-albedo feedback loop works as follows: 1) Ice melts and exposes dark ocean water, 2) Dark water has low albedo and absorbs more solar radiation instead of reflecting it, 3) This absorption causes more warming, which leads to more ice melt. This cycle accelerates warming in the Arctic, making it warm approximately twice as fast as the global average.",
+      "points": 20,
+      "topic": "arctic-warming"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the Russian term for the boreal forest belt of the northern subpolar zone, characterized by coniferous forests?",
+      "options": [
+        "Tundra",
+        "Taiga",
+        "Boreal",
+        "Permafrost"
+      ],
+      "correctAnswer": "Taiga",
+      "points": 10,
+      "topic": "taiga-tundra"
+    },
+    {
+      "type": "true-false",
+      "text": "If the entire Greenland ice sheet melted, it would cause a global sea level rise of approximately 7 meters.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 10,
+      "topic": "sea-level"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "In which continent would you find the Pampas grassland region?",
+      "options": [
+        "North America",
+        "Europe",
+        "South America",
+        "Africa"
+      ],
+      "correctAnswer": "South America",
+      "points": 10,
+      "topic": "steppes"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which of the following is a type of soil found in steppe regions, known for its high fertility and organic matter content?",
+      "options": [
+        "Podzol",
+        "Chernozem",
+        "Laterite",
+        "Peat"
+      ],
+      "correctAnswer": "Chernozem",
+      "points": 10,
+      "topic": "steppes"
+    },
+    {
+      "type": "true-false",
+      "text": "Tropical rainforests contain approximately three-quarters of all animal and plant species on Earth.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "rainforest-destruction"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What type of vegetation characterizes the tundra?",
+      "options": [
+        "Coniferous forests",
+        "Deciduous forests",
+        "Treeless mosses, lichens and shrubs",
+        "Grasslands"
+      ],
+      "correctAnswer": "Treeless mosses, lichens and shrubs",
+      "points": 10,
+      "topic": "tundra"
+    },
+    {
+      "type": "open-ended",
+      "text": "Compare the Arctic and Antarctic regions, explaining at least four key differences.",
+      "options": [],
+      "correctAnswer": "Key differences include: 1) Arctic is an ocean covered by sea ice, while Antarctica is a continent covered by ice; 2) Arctic has approximately 1 million permanent residents, while Antarctica has only about 4,000 research personnel; 3) Arctic is bordered by North America, Asia, and Europe, while Antarctica is isolated by oceans; 4) Arctic sea ice is rapidly shrinking, while Antarctic ice sheets are mostly stable.",
+      "points": 20,
+      "topic": "polar-regions"
+    }
+  ]
+}
