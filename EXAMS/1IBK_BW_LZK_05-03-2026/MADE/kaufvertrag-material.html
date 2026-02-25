@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestandteile des Kaufvertrags / Sales Contract - VSN Learning Material</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e2e48;
+            --secondary: #fbc92d;
+            --complementary: #dc4ebf;
+            --info: #2980b9;
+            --text-dark: #0a1628;
+            --text-light: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: var(--text-dark);
+            background: white;
+        }
+
+        .specialized-text { font-family: 'Roboto Mono', monospace; font-size: 9pt; }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.4em;
+            margin-top: 0.8em;
+        }
+
+        h1 { font-size: 22pt; }
+        h2 { font-size: 15pt; border-bottom: 3px solid var(--secondary); padding-bottom: 4px; }
+        h3 { font-size: 12pt; }
+        h4 { font-size: 10pt; color: var(--complementary); margin-top: 0.6em; }
+        h5 { font-size: 9pt; }
+
+        p { margin-bottom: 0.5em; text-align: justify; }
+        ul, ol { margin-left: 1.2em; margin-bottom: 0.5em; }
+        li { margin-bottom: 0.2em; }
+
+        strong { font-weight: 700; color: #0a1628; }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 12mm 15mm;
+            margin: 0 auto;
+            background: white;
+            position: relative;
+        }
+
+        .page-break { page-break-after: always; }
+        .page-break-before { page-break-before: always; }
+        .no-break { page-break-inside: avoid; }
+
+        .cover-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary) 0%, #2c4a6e 100%);
+            color: white;
+            padding: 30mm;
+        }
+
+        .cover-page .logo { width: 150px; height: auto; margin-bottom: 25px; background: white; padding: 12px; border-radius: 8px; }
+        .cover-page h1 { color: white; font-size: 26pt; margin-bottom: 10px; border: none; }
+        .cover-page .subtitle { font-size: 14pt; color: var(--secondary); margin-bottom: 30px; }
+        .cover-page .date { font-size: 11pt; color: rgba(255,255,255,0.8); }
+
+        .toc { background: #e8eef4; padding: 15px; border-radius: 8px; border-left: 4px solid var(--secondary); }
+        .toc h2 { border: none; font-size: 14pt; margin-bottom: 10px; }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { padding: 5px 0; border-bottom: 1px solid #ccc; font-size: 9pt; }
+        .toc li:last-child { border-bottom: none; }
+        .toc a { text-decoration: none; color: var(--primary); }
+        .toc .toc-sub { margin-left: 15px; font-size: 8pt; }
+
+        .callout {
+            padding: 10px 12px;
+            border-radius: 6px;
+            margin: 0.6em 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .callout-icon { width: 18px; height: 18px; flex-shrink: 0; }
+
+        .callout-content { flex: 1; }
+
+        .callout-content > p,
+        .callout-content > ul,
+        .callout-content > ol,
+        .callout-content > div {
+            color: white;
+        }
+
+        .callout-definition { background-color: rgba(180, 50, 140, 0.95); color: white; }
+        .callout-definition .callout-icon { fill: white; }
+        .callout-definition strong { color: white; }
+
+        .callout-info { background-color: rgba(30, 100, 160, 0.95); color: white; }
+        .callout-info .callout-icon { fill: white; }
+        .callout-info strong { color: white; }
+
+        .callout-tip { background-color: rgba(251, 201, 45, 0.95); color: #0a1628; }
+        .callout-tip .callout-icon { fill: #0a1628; }
+        .callout-tip strong { color: #0a1628; }
+
+        /* Ensure text inside callout-tip is dark (for yellow background) */
+        .callout-tip .bilingual-col,
+        .callout-tip .bilingual-col p,
+        .callout-tip .bilingual-col li,
+        .callout-tip .bilingual-col ul,
+        .callout-tip .bilingual-col ol {
+            color: #0a1628;
+            background: transparent;
+        }
+        
+        .callout-tip .bilingual-col.en {
+            border-right: 2px solid rgba(10, 22, 40, 0.3);
+        }
+
+        .callout-tip .bilingual-col h4 {
+            color: #0a1628;
+            border-bottom-color: rgba(10, 22, 40, 0.4);
+        }
+
+        .bilingual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            margin: 0.6em 0;
+            border: 1px solid #999;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .bilingual-col { 
+            padding: 8px 12px; 
+            background: #ffffff; 
+        }
+        .bilingual-col.en { 
+            background: #e8eef4; 
+            border-right: 2px solid var(--secondary);
+        }
+        .bilingual-col.de { 
+            background: #ffffff; 
+        }
+
+        .bilingual-col h4 {
+            margin-top: 0;
+            padding-bottom: 3px;
+            border-bottom: 2px solid var(--secondary);
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: var(--primary);
+        }
+
+        .bilingual-col p { font-size: 9pt; margin-bottom: 0.4em; color: #0a1628; }
+        .bilingual-col ul, .bilingual-col ol { font-size: 9pt; margin-left: 1em; color: #0a1628; }
+        .bilingual-col li { font-size: 9pt; color: #0a1628; }
+
+        /* Fix for bilingual inside callout boxes - ensure proper contrast */
+        .callout .bilingual-col,
+        .callout .bilingual-col p,
+        .callout .bilingual-col li,
+        .callout .bilingual-col ul,
+        .callout .bilingual-col ol,
+        .callout .bilingual-col table,
+        .callout .bilingual-col td,
+        .callout .bilingual-col th {
+            color: white;
+            background: transparent;
+            border-color: rgba(255,255,255,0.3);
+        }
+        
+        .callout .bilingual-col.en {
+            border-right: 2px solid rgba(255,255,255,0.4);
+        }
+
+        .callout .bilingual-col h4 {
+            color: white;
+            border-bottom-color: rgba(255,255,255,0.5);
+        }
+
+        .callout .bilingual-col tr:nth-child(even) {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .callout .bilingual-col tr:nth-child(odd) {
+            background-color: transparent;
+        }
+
+        table { width: 100%; border-collapse: collapse; margin: 0.6em 0; font-size: 8pt; }
+        th { background-color: var(--primary); color: white; font-weight: 600; padding: 6px 8px; text-align: left; border: 1px solid var(--primary); font-size: 8pt; }
+        td { padding: 5px 8px; border: 1px solid #999; font-size: 8pt; color: #0a1628; }
+        tr:nth-child(even) { background-color: #e8eef4; }
+        tr:nth-child(odd) { background-color: white; }
+
+        /* Ensure inside callout boxes table text is white */
+        .callout table,
+        .callout td,
+        .callout th {
+            color: white;
+            border-color: rgba(255,255,255,0.3);
+        }
+        
+        .callout tr:nth-child(even) {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .formula { font-family: 'Roboto Mono', monospace; background: #e0e4e9; color: #0a1628; padding: 6px 10px; border-radius: 4px; margin: 0.6em 0; font-size: 9pt; overflow-x: auto; }
+
+        .example-box { background: #d4e8f2; border-left: 3px solid var(--info); padding: 6px 10px; margin: 0.6em 0; border-radius: 0 4px 4px 0; font-size: 9pt; color: var(--text-dark); }
+        .example-box strong { color: var(--info); }
+
+        /* Fix for bilingual inside example-box */
+        .example-box .bilingual-col,
+        .example-box .bilingual-col p,
+        .example-box .bilingual-col li {
+            color: var(--text-dark);
+            background: transparent;
+        }
+        
+        .example-box .bilingual-col.en {
+            border-right: 2px solid var(--secondary);
+        }
+
+        .example-box .bilingual-col h4 {
+            color: var(--info);
+            border-bottom-color: var(--info);
+        }
+
+        .flowchart { text-align: center; margin: 0.8em 0; padding: 10px; background: #e8eef4; border-radius: 6px; }
+        .flowchart svg { max-width: 100%; height: auto; }
+
+        .brand-header { display: flex; align-items: center; gap: 10px; padding-bottom: 8px; border-bottom: 3px solid var(--secondary); margin-bottom: 12px; }
+        .brand-header img { width: 45px; height: auto; }
+        .brand-header .brand-title { font-size: 11pt; font-weight: 700; color: var(--primary); }
+
+        .section-intro {
+            background: var(--primary);
+            color: white;
+            padding: 6px 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-size: 10pt;
+        }
+
+        .summary-box {
+            background: #f0f2f5;
+            border: 1px solid #ccc;
+            border-left: 4px solid var(--secondary);
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .summary-box .bilingual-col,
+        .summary-box .bilingual-col p,
+        .summary-box .bilingual-col li,
+        .summary-box .bilingual-col ul {
+            color: #0a1628;
+            background: transparent;
+        }
+        
+        .summary-box .bilingual-col.en {
+            border-right: 2px solid var(--secondary);
+        }
+
+        @media print {
+            @page { size: A4; margin: 10mm; }
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .page { padding: 0; page-break-after: always; }
+            .page:last-child { page-break-after: avoid; }
+            .callout { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .bilingual { page-break-inside: avoid; }
+            table { page-break-inside: avoid; }
+        }
+
+        @media screen {
+            body { background: #e0e0e0; }
+            .page { box-shadow: 0 2px 10px rgba(0,0,0,0.2); margin: 15px auto; }
+        }
+    </style>
+</head>
+<body>
+    <!-- COVER PAGE -->
+    <div class="page cover-page">
+        <img src="assets/VSN_new.png" alt="VSN Logo" class="logo">
+        <h1>Bestandteile des Kaufvertrags</h1>
+        <p class="subtitle">Major Points of a Sales Contract</p>
+        <p class="date">VSN Learning Material | 2026</p>
+    </div>
+
+    <!-- PAGE 2: TABLE OF CONTENTS -->
+    <div class="page">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+        <div class="toc">
+            <h2>Table of Contents / Inhaltsverzeichnis</h2>
+            <ul>
+                <li><a href="#section-legal">1. Legal Components / Gesetzliche Bestandteile</a>
+                    <ul class="toc-sub">
+                        <li><a href="#section-parties">1.1 Buyer & Seller / Käufer und Verkäufer</a></li>
+                        <li><a href="#section-quality">1.2 Quality / Qualität</a></li>
+                        <li><a href="#section-quantity">1.3 Quantity / Quantität</a></li>
+                        <li><a href="#section-price">1.4 Price / Preis</a></li>
+                    </ul>
+                </li>
+                <li><a href="#section-kalkulation">2. Purchase Price Calculation / Bezugskalkulation</a></li>
+                <li><a href="#section-delivery">3. Delivery Terms / Lieferbedingungen</a></li>
+                <li><a href="#section-payment">4. Payment Terms / Zahlungsbedingungen</a></li>
+                <li><a href="#section-other">5. Other Components / Sonstige Bestandteile</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PAGE 3: LEGAL COMPONENTS - INTRODUCTION -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h2 id="section-legal">Legal Components / Gesetzliche Bestandteile</h2>
+        
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <h4>English</h4>
+                <p>A sales contract is an agreement between a buyer and a seller regarding the exchange of goods or services for a price. For a sales contract to be legally valid, certain essential elements must be agreed upon.</p>
+            </div>
+            <div class="bilingual-col de">
+                <h4>Deutsch</h4>
+                <p>Ein Kaufvertrag ist eine Vereinbarung zwischen einem Käufer und einem Verkäufer über den Austausch von Waren oder Dienstleistungen gegen einen Preis. Damit ein Kaufvertrag rechtlich gültig ist, müssen bestimmte wesentliche Elemente vereinbart werden.</p>
+            </div>
+        </div>
+
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <div class="callout-content">
+                <strong>5 Essential Elements / 5 Wesentliche Elemente</strong>
+                <div class="bilingual" style="margin-top:8px;">
+                    <div class="bilingual-col en">
+                        <ol>
+                            <li><strong>Buyer & Seller</strong> - Parties involved</li>
+                            <li><strong>Product/Quality</strong> - What is exchanged</li>
+                            <li><strong>Quantity</strong> - Amount</li>
+                            <li><strong>Price</strong> - Monetary value</li>
+                            <li><strong>Delivery</strong> - Time, place, risk</li>
+                        </ol>
+                    </div>
+                    <div class="bilingual-col de">
+                        <ol>
+                            <li><strong>Käufer und Verkäufer</strong> - Beteiligte Parteien</li>
+                            <li><strong>Produkt/Qualität</strong> - Was getauscht wird</li>
+                            <li><strong>Menge</strong> - Anzahl</li>
+                            <li><strong>Preis</strong> - Geldwert</li>
+                            <li><strong>Lieferung</strong> - Zeit, Ort, Risiko</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: BUYER & SELLER + QUALITY -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h3 id="section-parties">Buyer and Seller / Käufer und Verkäufer</h3>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <p>For a sales contract to be concluded, it is first necessary that there is a specific buyer and seller. The contracting parties can be private individuals (consumers) or companies.</p>
+            </div>
+            <div class="bilingual-col de">
+                <p>Für den Abschluss eines Kaufvertrages ist es zunächst notwendig, dass es einen bestimmten Verkäufer und Käufer gibt. Die Vertragspartner können dabei Privatpersonen (Konsumenten) oder Unternehmen sein.</p>
+            </div>
+        </div>
+
+        <h3 id="section-quality">Quality Determination / Qualitätsfestlegung</h3>
+        
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <strong>Definition</strong>
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>The quality determination specifies the type of product and its characteristics. If the product's characteristics are not self-explanatory, they must be described as precisely as possible.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Bei der Qualitätsfestlegung werden die Produktart und ihre Eigenschaften angegeben. Wenn die Eigenschaften des Produktes nicht selbsterklärend sind, müssen sie möglichst genau angegeben werden.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Fungible vs Non-Fungible / Vertretbar vs Nicht vertretbar</h4>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <p><strong>Fungible Products:</strong> Products where characteristics are essentially the same. Interchangeable. Quality determined by samples, brands, types, norms.</p>
+                <p><strong>Non-Fungible Products:</strong> Individually produced items with unique characteristics. Each piece is unique.</p>
+            </div>
+            <div class="bilingual-col de">
+                <p><strong>Vertretbare Produkte:</strong> Aus einem Stück lassen sich die Eigenschaften aller Stücke erkennen. Gleichwertig ersetzbar.</p>
+                <p><strong>Nicht vertretbare Produkte:</strong> Individuell hergestellt mit verschiedenen Eigenschaften. Jedes Stück ist einzigartig.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 5: QUALITY METHODS -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h3>Methods of Quality Determination / Methoden der Qualitätsfestlegung</h3>
+
+        <h4>Inspection / Besichtigung</h4>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <p>Buyer physically inspects the product. Common phrase: "as inspected".</p>
+                <div class="example-box"><strong>Examples:</strong> Used cars, antiques, houses</div>
+            </div>
+            <div class="bilingual-col de">
+                <p>Der Käufer kann das Produkt selbst prüfen. Gebräuchliche Formulierung: „Wie besichtigt".</p>
+                <div class="example-box"><strong>Beispiele:</strong> Gebrauchtwagen, Antiquitäten, Häuser</div>
+            </div>
+        </div>
+
+        <h4>Description & Illustration / Beschreibung und Abbildung</h4>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <p>Description explains product characteristics, supported by images.</p>
+                <div class="example-box"><strong>Example:</strong> Online shop product descriptions</div>
+            </div>
+            <div class="bilingual-col de">
+                <p>Eine Beschreibung erklärt die Eigenschaften. Abbildungen unterstützen.</p>
+                <div class="example-box"><strong>Beispiel:</strong> Onlineshop-Beschreibungen</div>
+            </div>
+        </div>
+
+        <h4>Samples and Prototypes / Muster und Proben</h4>
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <strong>Definition</strong>
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p><strong>Sale by Sample:</strong> Buyer receives sample, delivered product must match.</p>
+                        <p><strong>Sale on Approval:</strong> Buyer can return within a period (conditional).</p>
+                        <p><strong>Trial Purchase:</strong> Small quantity at favorable price to test (unconditional).</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p><strong>Kauf nach Probe:</strong> Produkt muss der Probe entsprechen.</p>
+                        <p><strong>Kauf auf Probe:</strong> Rückgabe innerhalb einer Frist möglich (bedingt).</p>
+                        <p><strong>Kauf zur Probe:</strong> Kleine Menge zum Testen (unbedingt).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Brands and Types / Marken und Typen</h4>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <p><strong>Brands:</strong> Protected signs differentiating products (word marks, figurative marks, combined marks)</p>
+                <p><strong>Types:</strong> Specific models with detailed specifications</p>
+            </div>
+            <div class="bilingual-col de">
+                <p><strong>Marken:</strong> Geschützte Zeichen zur Unterscheidung (Wortmarken, Bildmarken)</p>
+                <p><strong>Typen:</strong> Bestimmte Modelle mit Spezifikationen</p>
+            </div>
+        </div>
+
+        <h4>Standards and Quality Classes / Normen und Qualitätsklassen</h4>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <p><strong>Standards:</strong> Guidelines for standardizing products (DIN, ÖNORM)</p>
+                <p><strong>Quality Classes:</strong> Categories based on criteria (e.g., Extra, 1, 2 for apples)</p>
+                <p><strong>Quality Marks:</strong> Graphic labels attesting quality (AMA, BIO, Fairtrade)</p>
+            </div>
+            <div class="bilingual-col de">
+                <p><strong>Normen:</strong> Richtlinien zur Vereinheitlichung (DIN, ÖNORM)</p>
+                <p><strong>Qualitätsklassen:</strong> Einteilung nach Merkmalen (z.B. Extra, 1, 2)</p>
+                <p><strong>Gütezeichen:</strong> Grafische Markierungen (AMA, BIO, Fairtrade)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 6: SPECIAL QUALITY + QUANTITY -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h4>Special Quality Regulations / Sonderregelungen der Qualität</h4>
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p><strong>Specification Purchase:</strong> Quality roughly specified, buyer determines exact specs later.</p>
+                        <p><strong>Purchase in Bulk:</strong> Buyer takes entire goods at fixed price regardless of defects (but must be usable).</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p><strong>Spezifikationskauf:</strong> Qualität nur ungefähr, Käufer bestimmt später genau.</p>
+                        <p><strong>Kauf in Bausch und Bogen:</strong> Ganze Ware zu Festpreis ohne Rücksicht auf Fehler.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="section-quantity">Quantity Determination / Quantitätsfestlegung</h3>
+        
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <strong>Definition</strong>
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>The quantity determination specifies the amount of goods and the units of measurement.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Bei der Quantitätsfestlegung werden die Menge und die Maßeinheiten vereinbart.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>Type / Art</th>
+                <th>Description / Beschreibung</th>
+                <th>Examples / Beispiele</th>
+            </tr>
+            <tr>
+                <td><strong>Precise / Genau</strong></td>
+                <td>Fixed at contract conclusion / Festgelegt bei Vertragsabschluss</td>
+                <td>50 kg cement / 50 kg Zement</td>
+            </tr>
+            <tr>
+                <td><strong>Approximate / Ungefähr</strong></td>
+                <td>Not exactly specifiable, deviation agreed / Nicht exakt, Abweichung vereinbart</td>
+                <td>circa 3000 kg +/- 5%</td>
+            </tr>
+            <tr>
+                <td><strong>No specification / Ohne Angabe</strong></td>
+                <td>Unknown, estimated by inspection / Nicht bekannt, geschätzt</td>
+                <td>Purchase in bulk / In Bausch und Bogen</td>
+            </tr>
+        </table>
+
+        <h4>Weight and Quantity Terms / Gewichts- und Mengenabzüge</h4>
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <table style="font-size:8pt; margin-top:5px;">
+                    <tr><th style="width:25%">Term</th><th style="width:40%">English</th><th style="width:35%">Deutsch</th></tr>
+                    <tr><td><strong>Giveaway</strong></td><td>Uncharged extra quantity</td><td>Draufgabe</td></tr>
+                    <tr><td><strong>Discount</strong></td><td>Smaller quantity invoiced</td><td>Dreingabe</td></tr>
+                    <tr><td><strong>Net Weight</strong></td><td>Weight without packaging</td><td>Nettogewicht</td></tr>
+                    <tr><td><strong>Tare</strong></td><td>Weight of packaging</td><td>Tara</td></tr>
+                    <tr><td><strong>Gross Weight</strong></td><td>Net + Tare</td><td>Bruttogewicht</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 7: PRICE DETERMINATION -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h2 id="section-price">Price Determination / Preisfestlegung</h2>
+        
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <div class="callout-content">
+                <strong>Info</strong>
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>Price determination includes the price itself and any discounts (Rabatt) or cash discounts (Skonto).</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Bei der Preisfestsetzung werden der Preis sowie eventuelle Rabatte bzw. Skonti vereinbart.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Ways of Price Determination / Möglichkeiten der Preisfestsetzung</h3>
+        <table>
+            <tr>
+                <th>Type / Art</th>
+                <th>Description / Beschreibung</th>
+            </tr>
+            <tr>
+                <td><strong>Fixed Price</strong><br>Fester Preis</td>
+                <td>Price precisely stated / Preis genau angegeben</td>
+            </tr>
+            <tr>
+                <td><strong>Non-Binding Price</strong><br>Freibleibender Preis</td>
+                <td>Price depends on market, index, or costs / Preis nach Markt, Index oder Kosten</td>
+            </tr>
+        </table>
+
+        <h4>Variants of Non-Binding Price / Varianten</h4>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <ul>
+                    <li><strong>Market Price:</strong> Price on delivery day (oil, coffee, gold)</li>
+                    <li><strong>Value Retention Clause:</strong> Price adjusted to index</li>
+                    <li><strong>Base Purchase:</strong> Reference price adjusted to quality</li>
+                    <li><strong>Cost Fluctuation Clause:</strong> Price change if costs change</li>
+                </ul>
+            </div>
+            <div class="bilingual-col de">
+                <ul>
+                    <li><strong>Markt-/Börsenpreis:</strong> Preis am Liefertag</li>
+                    <li><strong>Wertsicherungsklausel:</strong> Preis an Index angepasst</li>
+                    <li><strong>Basiskauf:</strong> Richtpreis nach Qualität</li>
+                    <li><strong>Kostenschwankungsklausel:</strong> Preis bei Kostenänderung</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Discounts / Rabatte</h3>
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <strong>Discount Types / Rabattarten</strong>
+                <div class="bilingual" style="margin-top:5px;">
+                    <div class="bilingual-col en" style="font-size:8pt;">
+                        <ul>
+                            <li>Quantity Discount - larger quantities</li>
+                            <li>Trade Discount - partial deliveries</li>
+                            <li>Natural Discount - extra item included</li>
+                            <li>Sales Bonus - annual threshold</li>
+                            <li>Loyalty Discount - recurring business</li>
+                        </ul>
+                    </div>
+                    <div class="bilingual-col de" style="font-size:8pt;">
+                        <ul>
+                            <li>Mengenrabatt - größere Mengen</li>
+                            <li>Schlussrabatt - Teillieferungen</li>
+                            <li>Naturalrabatt - Extra zugegeben</li>
+                            <li>Umsatzbonus - Jahresbonus</li>
+                            <li>Treuerabatt - Stammkunde</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 8: SKONTO -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h3>Cash Discount (Skonto) / Skonto</h3>
+        
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p><strong>Definition:</strong> A cash discount is a price deduction that the buyer can claim if they pay the invoice before the agreed payment deadline. The period is called the discount period (Kassafrist). Usually 2-5%.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p><strong>Definition:</strong> Ein Skonto ist ein Preisabzug, den der Käufer in Anspruch nehmen kann, wenn er vor dem Zahlungstermin bezahlt. Die Frist heißt Kassafrist. Meist 2-5%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="callout callout-tip">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+            <div class="callout-content">
+                <strong>Practical Tip / Praktischer Tipp</strong>
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>Always take advantage of cash discounts if possible. The financial advantage is often considerable - even if you need a short-term loan, the effective annual interest rate of the discount is usually very high.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Nehmen Sie den Skonto in Anspruch, wenn möglich. Der finanzielle Vorteil ist oft beträchtlich - selbst bei einem kurzfristigen Kredit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Calculation Example / Berechnungsbeispiel</h4>
+        <div class="formula">
+            <strong>Formula / Formel:</strong><br>
+            <span class="specialized-text">(Skonto % / (Payment Term - Discount Period)) × 360 = Annual Interest Rate %</span>
+        </div>
+
+        <div class="example-box">
+            <strong>Example: "8 days with 3% cash discount, otherwise 30 days net"</strong>
+            <div class="bilingual" style="margin-top:5px;">
+                <div class="bilingual-col en">
+                    <ul>
+                        <li>Skonto amount: 3% of €950 = €28.50</li>
+                        <li>Time saved: 30 - 8 = 22 days</li>
+                        <li>Annual rate: (3 / 22) × 360 ≈ 49.09%</li>
+                        <li>With 4% loan cost: €28.50 - €2.25 = <strong>€26.25 benefit</strong></li>
+                    </ul>
+                </div>
+                <div class="bilingual-col de">
+                    <ul>
+                        <li>Skontobetrag: 3% von 950€ = 28,50€</li>
+                        <li>Eingesparte Tage: 30 - 8 = 22 Tage</li>
+                        <li>Jahreszinssatz: (3 / 22) × 360 ≈ 49,09%</li>
+                        <li>Bei 4% Kreditzinsen: 28,50 - 2,25 = <strong>26,25€ Vorteil</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h4>Price Information / Preisangaben</h4>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <ul>
+                    <li><strong>B2B:</strong> Prices usually net (without VAT)</li>
+                    <li><strong>B2C:</strong> Prices must include VAT</li>
+                </ul>
+            </div>
+            <div class="bilingual-col de">
+                <ul>
+                    <li><strong>B2B:</strong> Preise meist ohne USt (Nettopreis)</li>
+                    <li><strong>B2C:</strong> Preise inkl. USt (Bruttopreis)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 9: BEZUGSKALKULATION -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h2 id="section-kalkulation">Purchase Price Calculation / Bezugskalkulation</h2>
+        
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p><strong>Definition:</strong> Purchase price calculation aims to determine the sales price to ensure adequate profit. The <strong>net purchase price (Einstandspreis)</strong> is the final cost after discounts + transport costs.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p><strong>Definition:</strong> Die Preiskalkulation ermittelt den Verkaufspreis. Der <strong>Einstandspreis</strong> ist der Preis abzüglich Rabatte/Skonti zuzüglich Transportkosten.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>VAT is a pass-through item and not included in the net purchase price. Helps compare different offers.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Die USt ist ein Durchlaufposten und wird nicht zum Einstandspreis gerechnet. Hilft bei Angeboten.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Calculation Scheme / Kalkulationsschema</h3>
+        <table>
+            <tr>
+                <th>Position</th>
+                <th>EN</th>
+                <th>DE</th>
+            </tr>
+            <tr>
+                <td class="specialized-text">Listeneinkaufspreis</td>
+                <td>List purchase price (net from supplier)</td>
+                <td>Preis des Lieferanten ohne USt</td>
+            </tr>
+            <tr>
+                <td class="specialized-text">- Lieferantenrabatt</td>
+                <td>- Supplier discount</td>
+                <td>- Rabatt vom Lieferanten</td>
+            </tr>
+            <tr>
+                <td class="specialized-text">= Rabattierter Preis</td>
+                <td>= Discounted price</td>
+                <td>= Nachlass-Preis</td>
+            </tr>
+            <tr>
+                <td class="specialized-text">+ Fakturenspesen</td>
+                <td>+ Invoice charges (packaging, transport)</td>
+                <td>+ Verpackung, Transport</td>
+            </tr>
+            <tr>
+                <td class="specialized-text">= Zieleinkaufspreis</td>
+                <td>= Target purchase price</td>
+                <td>= Preis bei Lieferung</td>
+            </tr>
+            <tr>
+                <td class="specialized-text">- Lieferantenskonto</td>
+                <td>- Supplier cash discount</td>
+                <td>- Skonto an Lieferanten</td>
+            </tr>
+            <tr>
+                <td class="specialized-text">= Kassaeinkaufspreis</td>
+                <td>= Cash purchase price</td>
+                <td>= Preis bei Barzahlung</td>
+            </tr>
+            <tr>
+                <td class="specialized-text">+ Bezugskosten</td>
+                <td>+ Procurement costs (transport)</td>
+                <td>+ Transportkosten</td>
+            </tr>
+            <tr style="background: var(--secondary);">
+                <td class="specialized-text" style="color:var(--primary);"><strong>= Einstandspreis</strong></td>
+                <td style="color:var(--primary);"><strong>= Net purchase price</strong></td>
+                <td style="color:var(--primary);"><strong>= Gesamtkosten</strong></td>
+            </tr>
+        </table>
+
+        <h4>Example: T-Shirt Calculation / T-Shirt Beispiel</h4>
+        <table>
+            <tr><th>Position</th><th>Calculation</th><th>Amount</th></tr>
+            <tr><td class="specialized-text">Listeneinkaufspreis (30)</td><td></td><td class="specialized-text" style="text-align:right;">285,00 €</td></tr>
+            <tr><td class="specialized-text">- Lieferantenrabatt (20%)</td><td>285 × 20%</td><td class="specialized-text" style="text-align:right;">- 57,00 €</td></tr>
+            <tr><td class="specialized-text">= Rabattierter Preis</td><td></td><td class="specialized-text" style="text-align:right;border-top:2px solid var(--primary);"><strong>228,00 €</strong></td></tr>
+            <tr><td class="specialized-text">- Lieferantenskonto (2%)</td><td>228 × 2%</td><td class="specialized-text" style="text-align:right;">- 4,56 €</td></tr>
+            <tr><td class="specialized-text">= Kassaeinkaufspreis</td><td></td><td class="specialized-text" style="text-align:right;border-top:2px solid var(--primary);"><strong>223,44 €</strong></td></tr>
+            <tr><td class="specialized-text">+ Bezugskosten</td><td></td><td class="specialized-text" style="text-align:right;">+ 20,50 €</td></tr>
+            <tr style="background: var(--secondary);"><td class="specialized-text" style="color:var(--primary);"><strong>= Einstandspreis</strong></td><td></td><td class="specialized-text" style="text-align:right;color:var(--primary);"><strong>243,94 €</strong></td></tr>
+            <tr><td class="specialized-text">Pro Stück / per item</td><td>243,94 / 30</td><td class="specialized-text" style="text-align:right;"><strong>8,13 €</strong></td></tr>
+        </table>
+    </div>
+
+    <!-- PAGE 10: LIEFERBEDINGUNGEN OVERVIEW -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h2 id="section-delivery">Delivery Terms / Lieferbedingungen</h2>
+
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <div class="callout-content">
+                <strong>Three Key Components / Drei wichtige Punkte</strong>
+                <div class="bilingual" style="margin-top:5px;">
+                    <div class="bilingual-col en">
+                        <ol>
+                            <li><strong>Time of Delivery:</strong> When goods are handed over</li>
+                            <li><strong>Place of Delivery:</strong> Where goods are handed over</li>
+                            <li><strong>Risk & Cost Transfer:</strong> Where risk/costs pass to buyer</li>
+                        </ol>
+                    </div>
+                    <div class="bilingual-col de">
+                        <ol>
+                            <li><strong>Erfüllungszeit:</strong> Wann übergeben</li>
+                            <li><strong>Erfüllungsort:</strong> Wo übergeben</li>
+                            <li><strong>Risiko-/Kostenübergang:</strong> Wo auf Käufer übergeht</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flowchart">
+            <svg width="450" height="100" viewBox="0 0 450 100">
+                <rect x="5" y="30" width="110" height="40" rx="6" fill="#1e2e48"/>
+                <text x="60" y="55" fill="white" text-anchor="middle" font-family="Open Sans" font-weight="600" font-size="10">Lieferbedingungen</text>
+                <path d="M115 50 L145 50" stroke="#fbc92d" stroke-width="2"/>
+                <rect x="145" y="10" width="90" height="35" rx="5" fill="#2980b9"/>
+                <text x="190" y="32" fill="white" text-anchor="middle" font-family="Open Sans" font-size="9">Erfüllungszeit</text>
+                <text x="190" y="45" fill="white" text-anchor="middle" font-family="Open Sans" font-size="7">WHEN?</text>
+                <rect x="145" y="55" width="90" height="35" rx="5" fill="#2980b9"/>
+                <text x="190" y="77" fill="white" text-anchor="middle" font-family="Open Sans" font-size="9">Erfüllungsort</text>
+                <text x="190" y="90" fill="white" text-anchor="middle" font-family="Open Sans" font-size="7">WHERE?</text>
+                <path d="M235 50 L265 50" stroke="#fbc92d" stroke-width="2"/>
+                <rect x="265" y="25" width="90" height="50" rx="5" fill="#dc4ebf"/>
+                <text x="310" y="55" fill="white" text-anchor="middle" font-family="Open Sans" font-size="9">Risk & Cost</text>
+                <text x="310" y="68" fill="white" text-anchor="middle" font-family="Open Sans" font-size="9">Transfer</text>
+            </svg>
+        </div>
+
+        <h3 id="section-delivery-time">Time of Delivery / Erfüllungszeit</h3>
+        
+        <table>
+            <tr><th>Type / Art</th><th>EN</th><th>DE</th></tr>
+            <tr>
+                <td><strong>Prompt</strong><br>Promptgeschäft</td>
+                <td>No agreement = immediate delivery</td>
+                <td>Keine Vereinbarung = sofort liefern</td>
+            </tr>
+            <tr>
+                <td><strong>Fix</strong><br>Fixgeschäft</td>
+                <td>Exact date agreed</td>
+                <td>Genauer Termin vereinbart</td>
+            </tr>
+            <tr>
+                <td><strong>Term</strong><br>Termingeschäft</td>
+                <td>Approximate date</td>
+                <td>Ungefährer Termin</td>
+            </tr>
+            <tr>
+                <td><strong>Call-off</strong><br>Kauf auf Abruf</td>
+                <td>Buyer calls off partial deliveries</td>
+                <td>Käufer ruft Teilmengen ab</td>
+            </tr>
+        </table>
+
+        <h3 id="section-delivery-place">Place of Delivery / Erfüllungsort</h3>
+        
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>The place of delivery indicates where ownership, risk, and costs transfer from seller to buyer.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Der Erfüllungsort zeigt, wo Eigentum, Risiko und Kosten vom Verkäufer auf den Käufer übergehen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Forms of Handover / Formen der Übergabe</h4>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <ul>
+                    <li><strong>Physical:</strong> Actual product handed over</li>
+                    <li><strong>Symbolic:</strong> Documents (keys, warehouse receipt)</li>
+                    <li><strong>Electronic:</strong> Download of data</li>
+                </ul>
+            </div>
+            <div class="bilingual-col de">
+                <ul>
+                    <li><strong>Körperlich:</strong> Tatsächliches Produkt</li>
+                    <li><strong>Symbolisch:</strong> Dokumente (Schlüssel, Lagerschein)</li>
+                    <li><strong>Elektronisch:</strong> Download</li>
+                </ul>
+            </div>
+        </div>
+
+        <h4>Legal Regulation / Gesetzliche Regelung</h4>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <ul>
+                    <li>Seller delivers personally → seller's premises</li>
+                    <li><strong>B2B:</strong> Place of handover to carrier</li>
+                    <li><strong>B2C:</strong> Place of handover to buyer</li>
+                </ul>
+            </div>
+            <div class="bilingual-col de">
+                <ul>
+                    <li>Persönliche Lieferung → Betrieb des Verkäufers</li>
+                    <li><strong>B2B:</strong> Übergabe an Frachtführer</li>
+                    <li><strong>B2C:</strong> Übergabe an Käufer</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 11: RISK & COST TRANSFER -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h3 id="section-risk">Risk and Cost Transfer / Risiko- und Kostenübergang</h3>
+        
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p><strong>Risk Transfer:</strong> Where transport risk passes from seller to buyer.</p>
+                        <p><strong>Cost Transfer:</strong> Where transport costs pass from seller to buyer.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p><strong>Risikoübergang:</strong> Wo das Transportrisiko übergeht.</p>
+                        <p><strong>Kostenübergang:</strong> Wo die Transportkosten übergehen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>One-Point Clauses / Einpunktklauseln</h4>
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <p><strong>Transfer of costs and risk at the same location.</strong></p>
+                <table style="font-size:8pt; margin-top:5px;">
+                    <tr><th>Clause</th><th>EN</th><th>DE</th></tr>
+                    <tr><td><strong>Ex Works</strong></td><td>Buyer bears from seller's location all</td><td>Käufer trägt ab Werk</td></tr>
+                    <tr><td><strong>Free House</strong></td><td>Seller bears all to buyer's destination</td><td>Verkäufer bis zum Käufer</td></tr>
+                    <tr><td><strong>Free [Place]</strong></td><td>Seller bears to named place</td><td>Verkäufer bis benannter Ort</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <h4>Two-Point Clauses / Zweipunktklauseln</h4>
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <p><strong>Transfer at two different locations.</strong></p>
+                <div class="bilingual" style="margin-top:5px;">
+                    <div class="bilingual-col en">
+                        <p><strong>Freight Free [Place]:</strong> Risk transfers to first carrier, costs to named place.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p><strong>Frachtfrei [Ort]:</strong> Risiko bei erster Übergabe, Kosten bis benannter Ort.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flowchart">
+            <svg width="500" height="150" viewBox="0 0 500 150">
+                <rect x="10" y="60" width="100" height="30" rx="5" fill="#1e2e48"/>
+                <text x="60" y="80" fill="white" text-anchor="middle" font-family="Open Sans" font-weight="600" font-size="10">SELLER</text>
+                <path d="M110 75 L150 75" stroke="#2980b9" stroke-width="2"/>
+                <rect x="150" y="55" width="70" height="40" rx="5" fill="#dc4ebf"/>
+                <text x="185" y="72" fill="white" text-anchor="middle" font-family="Open Sans" font-size="8">Carrier</text>
+                <text x="185" y="85" fill="white" text-anchor="middle" font-family="Open Sans" font-size="7">(Frachtführer)</text>
+                <path d="M220 75 L260 75" stroke="#2980b9" stroke-width="2"/>
+                <line x1="240" y1="65" x2="240" y2="85" stroke="#fbc92d" stroke-width="2"/>
+                <text x="240" y1="60" fill="#1e2e48" text-anchor="middle" font-family="Open Sans" font-size="7">RISK</text>
+                <rect x="260" y="55" width="70" height="40" rx="5" fill="#2980b9"/>
+                <text x="295" y="72" fill="white" text-anchor="middle" font-family="Open Sans" font-size="8">Transport</text>
+                <path d="M330 75 L370 75" stroke="#2980b9" stroke-width="2"/>
+                <line x1="350" y1="65" x2="350" y2="85" stroke="#fbc92d" stroke-width="2"/>
+                <text x="350" y1="60" fill="#1e2e48" text-anchor="middle" font-family="Open Sans" font-size="7">COSTS</text>
+                <rect x="370" y="55" width="70" height="40" rx="5" fill="#2980b9"/>
+                <text x="405" y="72" fill="white" text-anchor="middle" font-family="Open Sans" font-size="8">Transport</text>
+                <path d="M440 75 L480 75" stroke="#2980b9" stroke-width="2"/>
+                <rect x="480" y="60" width="15" height="30" rx="3" fill="#1e2e48"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- PAGE 12: ZAHLUNGSBEDINGUNGEN -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h2 id="section-payment">Payment Terms / Zahlungsbedingungen</h2>
+
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <div class="callout-content">
+                <strong>Three Key Components / Drei wichtige Punkte</strong>
+                <div class="bilingual" style="margin-top:5px;">
+                    <div class="bilingual-col en">
+                        <ol>
+                            <li><strong>Time of Payment:</strong> When price must be paid</li>
+                            <li><strong>Place of Payment:</strong> Where payment must be made</li>
+                            <li><strong>Form of Payment:</strong> Method used</li>
+                        </ol>
+                    </div>
+                    <div class="bilingual-col de">
+                        <ol>
+                            <li><strong>Erfüllungszeit:</strong> Wann bezahlt wird</li>
+                            <li><strong>Erfüllungsort:</strong> Wo bezahlt wird</li>
+                            <li><strong>Zahlungsform:</strong> Wie bezahlt wird</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="section-payment-time">Time of Payment / Erfüllungszeit der Zahlung</h3>
+        <table>
+            <tr><th>Type / Art</th><th>EN</th><th>DE</th></tr>
+            <tr>
+                <td><strong>Advance Payment</strong><br>Vorauszahlung</td>
+                <td>Payment before receiving product</td>
+                <td>Zahlung vor Erhalt</td>
+            </tr>
+            <tr>
+                <td><strong>Prompt Payment</strong><br>Prompte Zahlung</td>
+                <td>Payment on delivery/invoice</td>
+                <td>Zahlung bei Lieferung</td>
+            </tr>
+            <tr>
+                <td><strong>Credit Purchase</strong><br>Zielkauf</td>
+                <td>Payment after delivery with term</td>
+                <td>Zahlung nach Lieferung</td>
+            </tr>
+            <tr>
+                <td><strong>Installment</strong><br>Teilzahlung</td>
+                <td>Payment in several parts</td>
+                <td>Zahlung in Raten</td>
+            </tr>
+        </table>
+
+        <div class="callout callout-tip">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+            <div class="callout-content">
+                <strong>Practical Tip / Praktischer Tipp</strong>
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>Be cautious with installment purchases! It's often better to save first and pay the full amount. Check if you can truly afford the total sum.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Achtung bei Ratenkäufen! Es ist oft ratsamer, zuerst zu sparen. Prüfen Sie, ob Sie sich den Gesamtbetrag leisten können.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="section-payment-place">Place of Payment / Erfüllungsort</h3>
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p><strong>Legal (no agreement):</strong> Money debts are "bringschulden" - buyer must bring money to seller. Buyer bears transfer costs and risk.</p>
+                        <p><strong>B2B:</strong> Note on invoice sufficient.</p>
+                        <p><strong>B2C:</strong> Must be agreed in contract.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p><strong>Gesetzlich:</strong> Geldschulden sind Bringschulden - Käufer muss überweisen. Käufer trägt Kosten und Risiko.</p>
+                        <p><strong>B2B:</strong> Vermerk auf Rechnung reicht.</p>
+                        <p><strong>B2C:</strong> Muss im Vertrag vereinbart werden.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="section-payment-form">Form of Payment / Zahlungsform</h3>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <p>Numerous options available:</p>
+                <ul>
+                    <li>Bank transfer</li>
+                    <li>Cash</li>
+                    <li>Credit card</li>
+                    <li>PayPal</li>
+                </ul>
+            </div>
+            <div class="bilingual-col de">
+                <p>Zahlreiche Möglichkeiten:</p>
+                <ul>
+                    <li>Überweisung</li>
+                    <li>Bargeld</li>
+                    <li>Kreditkarte</li>
+                    <li>PayPal</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 13: OTHER COMPONENTS -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h2 id="section-other">Other Contractual Components / Sonstige Vertragsbestandteile</h2>
+
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>Beyond legally required elements, sales contracts can include other commercial terms. These are negotiated individually, from GTC (AGB), or from trade customs.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Neben den gesetzlichen Bestandteilen kann ein Kaufvertrag weitere kaufmännische Vereinbarungen enthalten. Diese werden ausgehandelt oder ergeben sich aus AGB.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="section-ownership">Reservation of Ownership / Eigentumsvorbehalt</h3>
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p><strong>Definition:</strong> Secures seller's claim in credit purchases. Buyer receives product immediately but seller remains owner until full payment.</p>
+                        <p><em>Example:</em> "Motorcycle remains our property until full payment."</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p><strong>Definition:</strong> Sichert die Forderung des Verkäufers. Käufer erhält das Produkt sofort, aber Verkäufer bleibt Eigentümer bis zur vollständigen Bezahlung.</p>
+                        <p><em>Beispiel:</em> „Das Motorrad bleibt bis zur vollständigen Bezahlung in unserem Eigentum."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="section-penalty">Penalty Clause / Pönale</h3>
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>Stipulated monetary fine for late delivery. Buyer pays reduced price.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Festgelegte Geldstrafe bei verspäteter Lieferung. Käufer zahlt reduzierten Preis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Cancellation Fee / Stornogebühr</h3>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <p>Buyer and seller can agree on right of withdrawal by paying a fee.</p>
+            </div>
+            <div class="bilingual-col de">
+                <p>Käufer und Verkäufer können ein Rücktrittsrecht vereinbaren.</p>
+            </div>
+        </div>
+
+        <h3>Warranty / Garantie</h3>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <p>Voluntary commitment to liability for defects within warranty period.</p>
+            </div>
+            <div class="bilingual-col de">
+                <p>Freiwillige Leistung für Mängel innerhalb der Garantiefrist.</p>
+            </div>
+        </div>
+
+        <h3>Right to Exchange / Umtauschrecht</h3>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <p>No obligation for seller, but can be agreed in contract.</p>
+            </div>
+            <div class="bilingual-col de">
+                <p>Keine Pflicht für Verkäufer, aber kann vereinbart werden.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 14: PACKAGING & AGB -->
+    <div class="page page-break">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h3 id="section-packaging">Packaging / Verpackung</h3>
+        
+        <div class="callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>Without agreement, seller must ensure adequate packaging. Buyer typically bears packaging costs (usually included in price).</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Ohne Vereinbarung muss Verkäufer für ausreichende Verpackung sorgen. Käufer trägt die Kosten (meist im Preis enthalten).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Functions of Packaging / Funktionen der Verpackung</h4>
+        <table>
+            <tr><th>Function</th><th>EN</th><th>DE</th></tr>
+            <tr><td><strong>Protection</strong></td><td>Protects from damage during transport</td><td>Schutz vor Beschädigungen</td></tr>
+            <tr><td><strong>Transport</strong></td><td>Facilitates transport and storage</td><td>Erleichtert Transport und Lagerung</td></tr>
+            <tr><td><strong>Sales Promotion</strong></td><td>Appealing to customers</td><td>Verkaufsförderung</td></tr>
+            <tr><td><strong>Information</strong></td><td>Contents, usage, care instructions</td><td>Information über Inhalt, Pflege</td></tr>
+            <tr><td><strong>Smart Packaging</strong></td><td>Monitors condition (e.g., freshness)</td><td>Überwacht Zustand (z.B. Frische)</td></tr>
+        </table>
+
+        <h3 id="section-agb">General Terms and Conditions (GTC) / AGB</h3>
+        
+        <div class="callout callout-definition">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            <div class="callout-content">
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>Pre-formulated contract contents that summarize conditions for sales contracts. Regulate frequently occurring elements.</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Vorformulierte Vertragsinhalte, die Bedingungen für Kaufverträge zusammenfassen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Validity / Geltung</h4>
+        <div class="bilingual">
+            <div class="bilingual-col en">
+                <ul>
+                    <li><strong>Duty to Inform:</strong> Company must draw attention to GTC</li>
+                    <li><strong>Retail:</strong> Implicit consent if displayed</li>
+                    <li><strong>Online:</strong> Explicit consent (checkbox)</li>
+                </ul>
+            </div>
+            <div class="bilingual-col de">
+                <ul>
+                    <li><strong>Hinweispflicht:</strong> Unternehmen muss auf AGB hinweisen</li>
+                    <li><strong>Im Geschäft:</strong> Stillschweigend wenn aufgehängt</li>
+                    <li><strong>Online:</strong> Ausdrücklich (Checkbox)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="callout callout-tip">
+            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+            <div class="callout-content">
+                <strong>Practical Tip / Praktischer Tipp</strong>
+                <div class="bilingual">
+                    <div class="bilingual-col en">
+                        <p>Always read GTC carefully before signing. Get help from Chamber of Commerce (businesses) or consumer associations (consumers).</p>
+                    </div>
+                    <div class="bilingual-col de">
+                        <p>Lesen Sie die AGB immer durch. Holen Sie sich Hilfe bei der Wirtschaftskammer (Unternehmer) oder dem VKI (Verbraucher).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 15: SUMMARY -->
+    <div class="page">
+        <div class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <span class="brand-title">Bestandteile des Kaufvertrags</span>
+        </div>
+
+        <h2>Summary / Zusammenfassung</h2>
+        
+        <h3>The 5 Essential Elements / Die 5 wesentlichen Elemente</h3>
+        <table>
+            <tr><th>#</th><th>EN</th><th>DE</th></tr>
+            <tr><td style="text-align:center;">1</td><td><strong>Buyer & Seller</strong> - Parties involved</td><td><strong>Käufer und Verkäufer</strong> - Vertragspartner</td></tr>
+            <tr><td style="text-align:center;">2</td><td><strong>Product/Quality</strong> - What is exchanged</td><td><strong>Produkt/Qualität</strong> - Was getauscht wird</td></tr>
+            <tr><td style="text-align:center;">3</td><td><strong>Quantity</strong> - Amount/units</td><td><strong>Menge</strong> - Anzahl/Einheiten</td></tr>
+            <tr><td style="text-align:center;">4</td><td><strong>Price</strong> - Monetary value</td><td><strong>Preis</strong> - Geldwert</td></tr>
+            <tr><td style="text-align:center;">5</td><td><strong>Delivery</strong> - Time, place, risk</td><td><strong>Lieferung</strong> - Zeit, Ort, Risiko</td></tr>
+        </table>
+
+        <div class="summary-box">
+            <h4 style="margin-top:0;">Additional Important Components / Weitere wichtige Bestandteile</h4>
+            <div class="bilingual">
+                <div class="bilingual-col en">
+                    <ul>
+                        <li>Payment conditions</li>
+                        <li>Reservation of ownership</li>
+                        <li>Penalty clause</li>
+                        <li>Cancellation fee</li>
+                        <li>Warranty</li>
+                        <li>Right to exchange</li>
+                        <li>Packaging</li>
+                        <li>GTC (AGB)</li>
+                    </ul>
+                </div>
+                <div class="bilingual-col de">
+                    <ul>
+                        <li>Zahlungsbedingungen</li>
+                        <li>Eigentumsvorbehalt</li>
+                        <li>Pönale</li>
+                        <li>Stornogebühr</li>
+                        <li>Garantie</li>
+                        <li>Umtauschrecht</li>
+                        <li>Verpackung</li>
+                        <li>AGB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 25px; text-align: center; padding: 15px; color: var(--primary);">
+            <p style="font-size: 12pt; font-weight: 700;">VSN Learning Material</p>
+            <p style="font-size: 9pt; color: #666;">Bestandteile des Kaufvertrags | Major Points of a Sales Contract</p>
+            <p style="font-size: 8pt; color: #999; margin-top: 15px;">© VSN 2026 | Design: Minimal & UX Focused</p>
+        </div>
+    </div>
+</body>
+</html>

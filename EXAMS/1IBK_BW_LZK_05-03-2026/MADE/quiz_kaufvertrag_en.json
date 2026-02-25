@@ -1,0 +1,331 @@
+{
+  "title": "Components of a Sales Contract - Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What is a sales contract?",
+      "options": [
+        "An agreement between employer and employee",
+        "An agreement between a buyer and a seller regarding the exchange of goods or services for a price",
+        "A rental agreement for real estate",
+        "An agreement for providing services without compensation"
+      ],
+      "correctAnswer": "An agreement between a buyer and a seller regarding the exchange of goods or services for a price",
+      "points": 10,
+      "topic": "definition"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How many essential elements must be agreed upon in a sales contract?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctAnswer": "4",
+      "points": 10,
+      "topic": "essential-elements"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which of the following are legally required components of a sales contract?",
+      "options": [
+        "Buyer and seller, quality, quantity, price",
+        "Delivery terms, payment terms, reservation of ownership",
+        "Only price and quantity",
+        "General terms and conditions, warranty, right to exchange"
+      ],
+      "correctAnswer": "Buyer and seller, quality, quantity, price",
+      "points": 10,
+      "topic": "essential-elements"
+    },
+    {
+      "type": "true-false",
+      "text": "The parties to a sales contract can only be companies.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "parties"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What are fungible products?",
+      "options": [
+        "Products that are individually produced and unique",
+        "Products where the characteristics of all items are the same and are interchangeable",
+        "Used products",
+        "Products with special brands"
+      ],
+      "correctAnswer": "Products where the characteristics of all items are the same and are interchangeable",
+      "points": 10,
+      "topic": "quality"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which is an example of a non-fungible product?",
+      "options": [
+        "An iPhone 16",
+        "A DIN A4 exercise book",
+        "A used car",
+        "Standard tiles"
+      ],
+      "correctAnswer": "A used car",
+      "points": 10,
+      "topic": "quality"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which method of quality determination is recommended for used items?",
+      "options": [
+        "Inspection",
+        "Samples and prototypes",
+        "Standards and quality classes",
+        "Brands and types"
+      ],
+      "correctAnswer": "Inspection",
+      "points": 10,
+      "topic": "quality-methods"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does 'sale on approval' (Kauf auf Probe) mean?",
+      "options": [
+        "The buyer can return the product within a specified period",
+        "The buyer receives a free sample to test",
+        "The buyer must keep the product",
+        "The seller only delivers samples"
+      ],
+      "correctAnswer": "The buyer can return the product within a specified period",
+      "points": 10,
+      "topic": "quality-methods"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the difference between 'sale on approval' and 'trial purchase'?",
+      "options": [
+        "No difference - both terms mean the same thing",
+        "Sale on approval = conditional purchase with right of return; trial purchase = unconditional purchase without right of return",
+        "Trial purchase is more expensive",
+        "Sale on approval only applies to electronics"
+      ],
+      "correctAnswer": "Sale on approval = conditional purchase with right of return; trial purchase = unconditional purchase without right of return",
+      "points": 15,
+      "topic": "quality-methods"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does 'specification purchase' mean?",
+      "options": [
+        "The price is determined based on quality",
+        "The quality is only roughly specified and later determined by the buyer",
+        "The purchase is made only according to sample",
+        "The purchase applies to all products of a brand"
+      ],
+      "correctAnswer": "The quality is only roughly specified and later determined by the buyer",
+      "points": 10,
+      "topic": "special-quality"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is a 'giveaway' (Draufgabe)?",
+      "options": [
+        "A smaller quantity than ordered is charged",
+        "An uncharged additional quantity beyond the ordered amount",
+        "A type of packaging",
+        "A form of payment"
+      ],
+      "correctAnswer": "An uncharged additional quantity beyond the ordered amount",
+      "points": 10,
+      "topic": "quantity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is net weight?",
+      "options": [
+        "Total weight including packaging",
+        "Weight of the product alone, excluding packaging",
+        "Weight of packaging alone",
+        "Weight after all deductions"
+      ],
+      "correctAnswer": "Weight of the product alone, excluding packaging",
+      "points": 10,
+      "topic": "quantity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does 'non-binding price' mean?",
+      "options": [
+        "The price cannot be changed later",
+        "The price is not yet finally fixed and may change",
+        "The price is only valid for a limited time",
+        "The price is legally prescribed"
+      ],
+      "correctAnswer": "The price is not yet finally fixed and may change",
+      "points": 10,
+      "topic": "price"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which is an example of a 'non-binding price'?",
+      "options": [
+        "Fixed price of 100 EUR",
+        "Market or stock exchange price",
+        "Price according to price list",
+        "Fixed price"
+      ],
+      "correctAnswer": "Market or stock exchange price",
+      "points": 10,
+      "topic": "price"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is a 'quantity discount'?",
+      "options": [
+        "A discount for new customers",
+        "A discount for larger purchase quantities",
+        "A discount for cash payment",
+        "A discount for loyal customers"
+      ],
+      "correctAnswer": "A discount for larger purchase quantities",
+      "points": 10,
+      "topic": "discounts"
+    },
+    {
+      "type": "true-false",
+      "text": "Cash discount (Skonto) is a price reduction granted regardless of the payment date.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Calculation: Payment terms '8 days with 3% cash discount, otherwise 30 days net'. If the invoice amount is 950.00 EUR, what is the cash discount amount?",
+      "options": [
+        "28.50 EUR",
+        "9.50 EUR",
+        "57.00 EUR",
+        "3.00 EUR"
+      ],
+      "correctAnswer": "28.50 EUR",
+      "points": 15,
+      "topic": "skonto-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the 'net purchase price' (Einstandspreis) in purchase price calculation?",
+      "options": [
+        "The supplier's list price",
+        "The price after deducting discount and cash discount, plus procurement costs",
+        "The selling price to end customers",
+        "The gross price including VAT"
+      ],
+      "correctAnswer": "The price after deducting discount and cash discount, plus procurement costs",
+      "points": 10,
+      "topic": "bezugskalkulation"
+    },
+    {
+      "type": "open-ended",
+      "text": "Calculate the net purchase price: List purchase price: 285.00 EUR, Supplier discount: 20%, Supplier cash discount: 2%, Procurement costs: 20.50 EUR. What is the net purchase price?",
+      "options": [],
+      "correctAnswer": "243.94 EUR (285 - 57 = 228.00 EUR; 228 - 4.56 = 223.44 EUR; 223.44 + 20.50 = 243.94 EUR)",
+      "points": 20,
+      "topic": "bezugskalkulation-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does 'ex works' mean?",
+      "options": [
+        "The seller bears all transport costs to the buyer",
+        "The buyer bears transport costs and risk from the seller's premises",
+        "The goods are delivered shipping-free",
+        "The goods are delivered directly from the manufacturer"
+      ],
+      "correctAnswer": "The buyer bears transport costs and risk from the seller's premises",
+      "points": 10,
+      "topic": "delivery-terms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does 'free house' mean?",
+      "options": [
+        "The buyer picks up the goods themselves",
+        "The seller bears transport costs and risk up to the buyer's destination",
+        "The goods are delivered free of charge",
+        "No shipping costs apply"
+      ],
+      "correctAnswer": "The seller bears transport costs and risk up to the buyer's destination",
+      "points": 10,
+      "topic": "delivery-terms"
+    },
+    {
+      "type": "true-false",
+      "text": "In a 'fixed-date transaction' (Fixgeschäft), delivery must occur exactly at the agreed time.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "delivery-terms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the place of payment without contractual agreement?",
+      "options": [
+        "The buyer's residence",
+        "The creditor's (seller's) residence or business premises",
+        "The buyer's bank",
+        "The bank's headquarters"
+      ],
+      "correctAnswer": "The creditor's (seller's) residence or business premises",
+      "points": 10,
+      "topic": "payment-terms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does 'credit purchase' mean?",
+      "options": [
+        "Payment before delivery",
+        "Payment on delivery",
+        "Payment after delivery with payment term",
+        "Cash only payment"
+      ],
+      "correctAnswer": "Payment after delivery with payment term",
+      "points": 10,
+      "topic": "payment-terms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is a 'reservation of ownership'?",
+      "options": [
+        "The buyer becomes owner as soon as the goods are delivered",
+        "The seller remains owner until the purchase price is fully paid",
+        "The buyer cannot resell the goods",
+        "The goods belong to the bank"
+      ],
+      "correctAnswer": "The seller remains owner until the purchase price is fully paid",
+      "points": 10,
+      "topic": "other-components"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "When do General Terms and Conditions (AGB) become part of the contract?",
+      "options": [
+        "Automatically with every purchase",
+        "Only if the company expressly draws attention to them and the customer has the opportunity to inspect them before concluding the contract",
+        "Only if they appear on the invoice",
+        "They never become part of the contract"
+      ],
+      "correctAnswer": "Only if the company expressly draws attention to them and the customer has the opportunity to inspect them before concluding the contract",
+      "points": 10,
+      "topic": "agb"
+    },
+    {
+      "type": "true-false",
+      "text": "General Terms and Conditions may be unclearly formulated as long as they are advantageous for the seller.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "agb"
+    }
+  ]
+}

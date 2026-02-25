@@ -1,0 +1,331 @@
+{
+  "title": "Bestandteile des Kaufvertrags - Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Was ist ein Kaufvertrag?",
+      "options": [
+        "Eine Vereinbarung zwischen Arbeitnehmer und Arbeitgeber",
+        "Eine Vereinbarung zwischen einem Käufer und einem Verkäufer über den Austausch von Waren oder Dienstleistungen gegen einen Preis",
+        "Ein Mietvertrag für Immobilien",
+        "Eine Vereinbarung zur Lieferung von Dienstleistungen ohne Gegenleistung"
+      ],
+      "correctAnswer": "Eine Vereinbarung zwischen einem Käufer und einem Verkäufer über den Austausch von Waren oder Dienstleistungen gegen einen Preis",
+      "points": 10,
+      "topic": "definition"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie viele wesentliche Elemente müssen bei einem Kaufvertrag vereinbart werden?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctAnswer": "4",
+      "points": 10,
+      "topic": "essential-elements"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche der folgenden Punkte gehören zu den gesetzlich vorgeschriebenen Bestandteilen eines Kaufvertrags?",
+      "options": [
+        "Käufer und Verkäufer, Qualität, Menge, Preis",
+        "Lieferbedingungen, Zahlungsbedingungen, Eigentumsvorbehalt",
+        "Nur der Preis und die Menge",
+        "AGB, Garantie, Umtauschrecht"
+      ],
+      "correctAnswer": "Käufer und Verkäufer, Qualität, Menge, Preis",
+      "points": 10,
+      "topic": "essential-elements"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Vertragspartner eines Kaufvertrages können nur Unternehmen sein.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "parties"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was sind fungible (vertretbare) Produkte?",
+      "options": [
+        "Produkte, die individuell hergestellt werden und einzigartig sind",
+        "Produkte, deren Eigenschaften aller Stücke gleich sind und die ersetzbar sind",
+        "Gebrauchte Produkte",
+        "Produkte mit speziellen Marken"
+      ],
+      "correctAnswer": "Produkte, deren Eigenschaften aller Stücke gleich sind und die ersetzbar sind",
+      "points": 10,
+      "topic": "quality"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches ist ein Beispiel für ein nicht-fungibles Produkt?",
+      "options": [
+        "Ein iPhone 16",
+        "Ein DIN A4 Schulheft",
+        "Ein Gebrauchtwagen",
+        "Standardfliesen"
+      ],
+      "correctAnswer": "Ein Gebrauchtwagen",
+      "points": 10,
+      "topic": "quality"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Methode der Qualitätsfestlegung wird bei gebrauchten Gegenständen empfohlen?",
+      "options": [
+        "Besichtigung",
+        "Muster und Proben",
+        "Normen und Qualitätsklassen",
+        "Marken und Typen"
+      ],
+      "correctAnswer": "Besichtigung",
+      "points": 10,
+      "topic": "quality-methods"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was bedeutet 'Kauf auf Probe'?",
+      "options": [
+        "Der Käufer kann das Produkt innerhalb einer Frist zurückgeben",
+        "Der Käufer erhält eine kostenlose Probe zum Testen",
+        "Der Käufer muss das Produkt behalten",
+        "Der Verkäufer liefert nur Muster"
+      ],
+      "correctAnswer": "Der Käufer kann das Produkt innerhalb einer Frist zurückgeben",
+      "points": 10,
+      "topic": "quality-methods"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist der Unterschied zwischen 'Kauf auf Probe' und 'Kauf zur Probe'?",
+      "options": [
+        "Kein Unterschied - beide Begriffe bedeuten dasselbe",
+        "Kauf auf Probe = bedingter Kauf mit Rückgaberecht, Kauf zur Probe = unbedingter Kauf ohne Rückgaberecht",
+        "Kauf zur Probe ist teurer",
+        "Kauf auf Probe gilt nur für Elektronik"
+      ],
+      "correctAnswer": "Kauf auf Probe = bedingter Kauf mit Rückgaberecht, Kauf zur Probe = unbedingter Kauf ohne Rückgaberecht",
+      "points": 15,
+      "topic": "quality-methods"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was bedeutet 'Spezifikationskauf'?",
+      "options": [
+        "Der Preis wird nach der Qualität festgelegt",
+        "Die Qualität wird nur ungefähr festgelegt und später vom Käufer spezifiziert",
+        "Der Kauf erfolgt nur nach Muster",
+        "Der Kauf gilt für alle Produkte einer Marke"
+      ],
+      "correctAnswer": "Die Qualität wird nur ungefähr festgelegt und später vom Käufer spezifiziert",
+      "points": 10,
+      "topic": "special-quality"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist eine 'Draufgabe'?",
+      "options": [
+        "Eine geringere Menge als bestellt wird berechnet",
+        "Eine nicht berechnete Zugabe zur bestellten Menge",
+        "Eine Verpackungsart",
+        "Eine Zahlungsart"
+      ],
+      "correctAnswer": "Eine nicht berechnete Zugabe zur bestellten Menge",
+      "points": 10,
+      "topic": "quantity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist das Nettogewicht?",
+      "options": [
+        "Das Gesamtgewicht inklusive Verpackung",
+        "Das Gewicht des Produktes ohne Verpackung",
+        "Das Gewicht der Verpackung allein",
+        "Das Gewicht nach allen Abzügen"
+      ],
+      "correctAnswer": "Das Gewicht des Produktes ohne Verpackung",
+      "points": 10,
+      "topic": "quantity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was bedeutet 'freibleibender Preis'?",
+      "options": [
+        "Der Preis kann nachträglich nicht geändert werden",
+        "Der Preis steht noch nicht endgültig fest und kann sich ändern",
+        "Der Preis gilt nur für eine begrenzte Zeit",
+        "Der Preis ist gesetzlich vorgeschrieben"
+      ],
+      "correctAnswer": "Der Preis steht noch nicht endgültig fest und kann sich ändern",
+      "points": 10,
+      "topic": "price"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches ist ein Beispiel für einen 'freibleibenden Preis'?",
+      "options": [
+        "Festpreis von 100 EUR",
+        "Markt- oder Börsenpreis",
+        "Preis laut Preisliste",
+        "Fixpreis"
+      ],
+      "correctAnswer": "Markt- oder Börsenpreis",
+      "points": 10,
+      "topic": "price"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist ein 'Mengenrabatt'?",
+      "options": [
+        "Ein Rabatt für neue Kunden",
+        "Ein Rabatt bei größeren Abnahmemengen",
+        "Ein Rabatt bei Barzahlung",
+        "Ein Rabatt für Stammkunden"
+      ],
+      "correctAnswer": "Ein Rabatt bei größeren Abnahmemengen",
+      "points": 10,
+      "topic": "discounts"
+    },
+    {
+      "type": "true-false",
+      "text": "Skonto ist ein Preisnachlass, der unabhängig vom Zahlungszeitpunkt gewährt wird.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Berechnung: Zahlungsbedingungen '8 Tage bei 3% Skonto, sonst 30 Tage netto'. Wenn der Rechnungsbetrag 950,00 EUR beträgt, wie hoch ist der Skontobetrag?",
+      "options": [
+        "28,50 EUR",
+        "9,50 EUR",
+        "57,00 EUR",
+        "3,00 EUR"
+      ],
+      "correctAnswer": "28,50 EUR",
+      "points": 15,
+      "topic": "skonto-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist der 'Einstandspreis' bei der Bezugskalkulation?",
+      "options": [
+        "Der Listenpreis des Lieferanten",
+        "Der Preis nach Abzug von Rabatt und Skonto, zuzüglich Bezugskosten",
+        "Der Verkaufspreis an Endkunden",
+        "Der Bruttopreis inklusive Umsatzsteuer"
+      ],
+      "correctAnswer": "Der Preis nach Abzug von Rabatt und Skonto, zuzüglich Bezugskosten",
+      "points": 10,
+      "topic": "bezugskalkulation"
+    },
+    {
+      "type": "open-ended",
+      "text": "Berechnen Sie den Einstandspreis: Listeneinkaufspreis: 285,00 EUR, Lieferantenrabatt: 20%, Lieferantenskonto: 2%, Bezugskosten: 20,50 EUR. Wie hoch ist der Einstandspreis?",
+      "options": [],
+      "correctAnswer": "243,94 EUR (285 - 57 = 228,00 EUR; 228 - 4,56 = 223,44 EUR; 223,44 + 20,50 = 243,94 EUR)",
+      "points": 20,
+      "topic": "bezugskalkulation-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was bedeutet 'Ab Werk'?",
+      "options": [
+        "Der Verkäufer trägt alle Transportkosten bis zum Käufer",
+        "Der Käufer trägt Transportkosten und -risiko ab dem Verkaufsort des Verkäufers",
+        "Der Transport erfolgt versandkostenfrei",
+        "Die Ware wird direkt vom Hersteller geliefert"
+      ],
+      "correctAnswer": "Der Käufer trägt Transportkosten und -risiko ab dem Verkaufsort des Verkäufers",
+      "points": 10,
+      "topic": "delivery-terms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was bedeutet 'Frei Haus'?",
+      "options": [
+        "Der Käufer holt die Ware selbst ab",
+        "Der Verkäufer trägt Transportkosten und -risiko bis zum Bestimmungsort des Käufers",
+        "Die Ware wird kostenlos geliefert",
+        "Es fallen keine Versandkosten an"
+      ],
+      "correctAnswer": "Der Verkäufer trägt Transportkosten und -risiko bis zum Bestimmungsort des Käufers",
+      "points": 10,
+      "topic": "delivery-terms"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei einem 'Fixgeschäft' muss die Lieferung exakt zum vereinbarten Zeitpunkt erfolgen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "delivery-terms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist der Erfüllungsort der Zahlung ohne vertragliche Vereinbarung?",
+      "options": [
+        "Der Wohnort des Käufers",
+        "Der Wohnort oder Geschäftssitz des Gläubigers (Verkäufer)",
+        "Die Bank des Käufers",
+        "Der Sitz der Bank"
+      ],
+      "correctAnswer": "Der Wohnort oder Geschäftssitz des Gläubigers (Verkäufer)",
+      "points": 10,
+      "topic": "payment-terms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was bedeutet 'Zielkauf'?",
+      "options": [
+        "Zahlung vor Lieferung",
+        "Zahlung bei Lieferung",
+        "Zahlung nach Lieferung mit Zahlungsziel",
+        "Nur Barzahlung"
+      ],
+      "correctAnswer": "Zahlung nach Lieferung mit Zahlungsziel",
+      "points": 10,
+      "topic": "payment-terms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist ein 'Eigentumsvorbehalt'?",
+      "options": [
+        "Der Käufer wird Eigentümer, sobald die Ware geliefert wird",
+        "Der Verkäufer bleibt Eigentümer, bis der Kaufpreis vollständig bezahlt ist",
+        "Der Käufer kann die Ware nicht weiterverkaufen",
+        "Die Ware gehört der Bank"
+      ],
+      "correctAnswer": "Der Verkäufer bleibt Eigentümer, bis der Kaufpreis vollständig bezahlt ist",
+      "points": 10,
+      "topic": "other-components"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wann werden AGB Vertragsinhalt?",
+      "options": [
+        "Automatisch bei jedem Kauf",
+        "Nur wenn das Unternehmen ausdrücklich darauf hinweist und der Kunde die Möglichkeit hat, sie vor Vertragsabschluss einzusehen",
+        "Nur wenn sie auf der Rechnung stehen",
+        "Sie werden nie Vertragsinhalt"
+      ],
+      "correctAnswer": "Nur wenn das Unternehmen ausdrücklich darauf hinweist und der Kunde die Möglichkeit hat, sie vor Vertragsabschluss einzusehen",
+      "points": 10,
+      "topic": "agb"
+    },
+    {
+      "type": "true-false",
+      "text": "AGB dürfen unklar formuliert sein, solange sie für den Verkäufer vorteilhaft sind.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "agb"
+    }
+  ]
+}
