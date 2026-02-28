@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics: Equations and Percentages - VSN Learning Material</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e2e48;
+            --secondary: #fbc92d;
+            --complementary: #dc4ebf;
+            --info-blue: #2980b9;
+            --callout-definition: rgba(220, 78, 191, 0.7);
+            --callout-info: rgba(41, 128, 185, 0.7);
+            --callout-tip: rgba(251, 201, 45, 0.7);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            margin: 0 auto;
+            background: white;
+        }
+
+        @media print {
+            body { margin: 0; }
+            .page { margin: 0; padding: 15mm; page-break-after: always; }
+            .page:last-child { page-break-after: avoid; }
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm;
+        }
+
+        h1 {
+            font-size: 24pt;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8pt;
+        }
+
+        h2 {
+            font-size: 18pt;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 20pt 0 12pt 0;
+            padding-bottom: 6pt;
+            border-bottom: 3pt solid var(--secondary);
+        }
+
+        h3 {
+            font-size: 14pt;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 16pt 0 8pt 0;
+        }
+
+        h4 {
+            font-size: 12pt;
+            font-weight: 600;
+            color: var(--complementary);
+            margin: 12pt 0 6pt 0;
+        }
+
+        p { margin-bottom: 8pt; text-align: justify; }
+
+        .mono {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 10pt;
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .callout-definition .mono,
+        .callout-info .mono {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .callout-tip .mono {
+            background: rgba(30, 46, 72, 0.15);
+            color: var(--primary);
+        }
+
+        .formula {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 11pt;
+            display: block;
+            background: #f8f9fa;
+            padding: 10pt;
+            margin: 8pt 0;
+            border-left: 3pt solid var(--primary);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .formula-display {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 12pt;
+            text-align: center;
+            padding: 12pt;
+            margin: 10pt 0;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .callout-definition .formula-display,
+        .callout-info .formula-display {
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .callout-tip .formula-display {
+            background: rgba(30, 46, 72, 0.1);
+            border: 1px solid rgba(30, 46, 72, 0.2);
+        }
+
+        .bilingual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            margin: 12pt 0;
+        }
+
+        .bilingual-col { padding: 8pt 12pt; }
+
+        .bilingual-col:first-child { border-right: 2pt solid var(--secondary); }
+
+        .bilingual-label {
+            font-size: 8pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 6pt;
+            letter-spacing: 1pt;
+        }
+
+        .callout {
+            padding: 12pt;
+            border-radius: 8px;
+            margin: 12pt 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            page-break-inside: avoid;
+        }
+
+        .callout-definition { background: var(--callout-definition); color: white; }
+        .callout-info { background: var(--callout-info); color: white; }
+        .callout-tip { background: var(--callout-tip); color: var(--primary); }
+
+        .callout-header {
+            display: flex;
+            align-items: center;
+            gap: 8pt;
+            margin-bottom: 8pt;
+            font-weight: 600;
+            font-size: 11pt;
+        }
+
+        .callout-icon { width: 20px; height: 20px; flex-shrink: 0; }
+
+        .callout-definition .callout-icon,
+        .callout-info .callout-icon { fill: white; }
+        .callout-tip .callout-icon { fill: var(--primary); }
+
+        .callout-content { font-size: 10pt; }
+        .callout-content p { margin-bottom: 6pt; }
+        .callout-content p:last-child { margin-bottom: 0; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12pt 0;
+            font-size: 10pt;
+        }
+
+        th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+            padding: 8pt 6pt;
+            text-align: left;
+            border: 1px solid var(--primary);
+        }
+
+        td { padding: 6pt; border: 1px solid #ddd; }
+        tr:nth-child(even) { background: #f5f7fa; }
+        tr:nth-child(odd) { background: white; }
+
+        .table-caption {
+            font-size: 10pt;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 6pt;
+        }
+
+        ul, ol { margin: 8pt 0 8pt 20pt; }
+        li { margin-bottom: 4pt; }
+
+        .example-block {
+            background: #f0f4f8;
+            border-left: 4pt solid var(--info-blue);
+            padding: 10pt 12pt;
+            margin: 10pt 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .example-block strong { color: var(--primary); }
+
+        .problem-label {
+            font-weight: 600;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 4pt;
+        }
+
+        .result {
+            background: #e8f5e9;
+            padding: 6pt 10pt;
+            border-radius: 4px;
+            margin-top: 6pt;
+            border-left: 3pt solid #4caf50;
+        }
+
+        .result strong { color: #2e7d32; }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 12pt;
+            margin-bottom: 16pt;
+            border-bottom: 3pt solid var(--primary);
+        }
+
+        .header-logo { height: 50px; }
+        .header-title { text-align: right; }
+        .header-title h1 { font-size: 20pt; margin-bottom: 4pt; }
+        .header-title .subtitle { font-size: 11pt; color: #666; }
+        .header-title .date { font-size: 10pt; color: #888; margin-top: 4pt; }
+
+        .toc {
+            background: #f8f9fa;
+            padding: 16pt;
+            border-radius: 8px;
+            margin-bottom: 20pt;
+        }
+
+        .toc h2 { margin-top: 0; border-bottom: none; }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li {
+            padding: 8pt 0;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .toc li:last-child { border-bottom: none; }
+        .toc a { color: var(--primary); text-decoration: none; }
+        .toc .page-num { color: var(--complementary); font-weight: 600; }
+        .toc .section-title { 
+            font-weight: 700; 
+            color: var(--primary); 
+            padding-top: 8pt;
+            border-top: 2pt solid var(--secondary);
+            margin-top: 4pt;
+        }
+
+        .section-divider {
+            height: 2pt;
+            background: linear-gradient(to right, var(--secondary), var(--complementary));
+            margin: 20pt 0;
+            border-radius: 1pt;
+        }
+
+        .diagram-container {
+            text-align: center;
+            margin: 16pt 0;
+            padding: 12pt;
+            background: #fafafa;
+            border-radius: 8px;
+            page-break-inside: avoid;
+        }
+
+        .diagram-container svg { max-width: 100%; height: auto; }
+
+        .diagram-caption {
+            font-size: 10pt;
+            color: #666;
+            margin-top: 8pt;
+            font-style: italic;
+        }
+
+        .exercise-list { counter-reset: exercise; list-style: none; margin: 0; padding: 0; }
+        .exercise-list li { counter-increment: exercise; margin-bottom: 12pt; padding-left: 30pt; position: relative; }
+        .exercise-list li::before {
+            content: counter(exercise);
+            position: absolute; left: 0; top: 0;
+            width: 22px; height: 22px;
+            background: var(--primary); color: white;
+            border-radius: 50%;
+            font-size: 10pt; font-weight: 600;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16pt; }
+
+        .task-box {
+            background: #fffde7;
+            border: 1px solid var(--secondary);
+            border-radius: 6px;
+            padding: 10pt;
+            margin: 10pt 0;
+        }
+
+        .task-box h4 { margin-top: 0; color: var(--primary); }
+        .task-box ol, .task-box ul { margin: 6pt 0 6pt 16pt; font-size: 10pt; }
+
+        .financial-terms { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8pt; margin: 10pt 0; }
+
+        .term {
+            background: #f5f5f5;
+            padding: 8pt;
+            border-radius: 4px;
+            border-left: 3pt solid var(--complementary);
+        }
+
+        .term strong { color: var(--primary); }
+
+        .practice-question {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16pt;
+            margin: 16pt 0;
+            page-break-inside: avoid;
+        }
+
+        .practice-question .question-num {
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8pt;
+        }
+
+        .practice-question .answer {
+            background: #e8f5e9;
+            border-left: 4pt solid #4caf50;
+            padding: 12pt;
+            margin-top: 12pt;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .practice-question .answer strong {
+            color: #2e7d32;
+            display: block;
+            margin-bottom: 6pt;
+        }
+
+        .practice-question .breakdown {
+            background: #fffde7;
+            border-left: 4pt solid var(--secondary);
+            padding: 10pt;
+            margin-top: 8pt;
+            border-radius: 0 4px 4px 0;
+            font-size: 10pt;
+        }
+
+        .practice-question .breakdown strong {
+            color: var(--primary);
+        }
+
+        .learning-exercise {
+            background: #e3f2fd;
+            border: 2px solid var(--info-blue);
+            border-radius: 8px;
+            padding: 16pt;
+            margin: 16pt 0;
+            page-break-inside: avoid;
+        }
+
+        .learning-exercise .exercise-title {
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--info-blue);
+            margin-bottom: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 1pt;
+        }
+
+        .learning-exercise .step {
+            margin-bottom: 12pt;
+            padding-left: 12pt;
+            border-left: 2pt solid var(--info-blue);
+        }
+
+        .learning-exercise .step-num {
+            font-weight: 700;
+            color: var(--info-blue);
+        }
+
+        .learning-exercise .formula-box {
+            background: white;
+            border: 1px solid var(--info-blue);
+            padding: 10pt;
+            margin: 8pt 0;
+            border-radius: 4px;
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+        }
+
+        .learning-exercise .try-it {
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 10pt;
+            border-radius: 6px;
+            margin-top: 12pt;
+            font-weight: 600;
+        }
+
+        .part-header {
+            background: var(--primary);
+            color: white;
+            padding: 12pt 16pt;
+            border-radius: 8px;
+            margin-bottom: 16pt;
+        }
+
+        .part-header.learning { background: var(--info-blue); }
+        .part-header.practice { background: var(--complementary); }
+
+        .part-header h2 { 
+            color: white; 
+            border: none; 
+            margin: 0; 
+            padding: 0;
+            font-size: 20pt;
+        }
+
+        .part-header p { 
+            color: rgba(255,255,255,0.9); 
+            margin: 4pt 0 0 0; 
+            font-size: 10pt;
+        }
+
+        @media print {
+            .callout { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+            th { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+            .bilingual-col:first-child { border-right: 1pt solid #ccc; }
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1: Cover -->
+    <div class="page">
+        <div class="header">
+            <img src="assets/VSN_new.png" alt="VSN Logo" class="header-logo">
+            <div class="header-title">
+                <h1>Mathematics</h1>
+                <div class="subtitle">Equations and Percentages</div>
+                <div class="date">Learning Material &bull; Gymnasium Oberstufe</div>
+            </div>
+        </div>
+
+        <div style="margin-top: 30pt;">
+            <h2>Overview</h2>
+            <p>This comprehensive learning material covers fundamental mathematical concepts including <strong>equivalent transformations</strong> for solving equations and various <strong>percentage calculations</strong>. It includes practice problems from real-world scenarios, perfect for exam preparation and daily study.</p>
+            
+            <div class="section-divider"></div>
+            
+            <h3>Document Structure</h3>
+            <ul>
+                <li><strong>PART 1: LEARNING</strong> — Key concepts, definitions, and explained examples with step-by-step breakdowns</li>
+                <li><strong>PART 2: PRACTICE</strong> — Exercise questions with answers and detailed explanations</li>
+            </ul>
+
+            <div style="margin-top: 20pt; padding: 16pt; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="margin-top: 0; color: var(--primary);">Key Features</h4>
+                <ul style="margin-bottom: 0;">
+                    <li>Bilingual content (English / German)</li>
+                    <li>Clear definitions and practical examples</li>
+                    <li>Exam-focused tips and tricks</li>
+                    <li>Real-world application problems</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: Table of Contents -->
+    <div class="page">
+        <h1>Table of Contents</h1>
+        <div class="toc">
+            <ul>
+                <li class="section-title">PART 1: LEARNING</li>
+                <li><a href="#equations">1. Equations</a><span class="page-num">3</span></li>
+                <li><a href="#equivalent-transformations">  1.1 Equivalent Transformations</a><span class="page-num">3</span></li>
+                <li><a href="#percentage">2. Percentage Calculation</a><span class="page-num">5</span></li>
+                <li><a href="#decimal-conversion">  2.1 Decimal Conversion</a><span class="page-num">5</span></li>
+                <li><a href="#terminology">  2.2 Terminology: "Um" vs "Auf"</a><span class="page-num">6</span></li>
+                <li><a href="#key-components">  2.3 Key Components</a><span class="page-num">7</span></li>
+                <li><a href="#change-factor">  2.4 Change Factor</a><span class="page-num">8</span></li>
+                <li><a href="#percentage-points">  2.5 Percentage Points</a><span class="page-num">10</span></li>
+                <li><a href="#water-diagram">  2.6 Water Distribution Diagram</a><span class="page-num">11</span></li>
+                <li class="section-title">PART 2: PRACTICE</li>
+                <li><a href="#practice-equations">3. Practice: Equations</a><span class="page-num">12</span></li>
+                <li><a href="#practice-percentage">4. Practice: Percentage</a><span class="page-num">13</span></li>
+                <li><a href="#practice-applications">5. Practice: Applications</a><span class="page-num">14</span></li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 30pt;">
+            <h3>How to Use This Material</h3>
+            <div class="two-col">
+                <div>
+                    <div class="callout callout-definition" style="margin: 0;">
+                        <div class="callout-header">
+                            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+                            Key Definitions
+                        </div>
+                        <div class="callout-content">
+                            Pink boxes contain formal definitions, key theories, and foundational formulas to memorize.
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="callout callout-tip" style="margin: 0;">
+                        <div class="callout-header">
+                            <svg class="callout-icon" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+                            Exam Tips
+                        </div>
+                        <div class="callout-content">
+                            Yellow boxes highlight exam-focused tips, practical shortcuts, and problem-solving tricks.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: PART 1 - Equations -->
+    <div class="page">
+        <div class="part-header learning">
+            <h2>PART 1: LEARNING</h2>
+            <p>Understanding key concepts with detailed explanations</p>
+        </div>
+
+        <h1 id="equations">1. Equations</h1>
+        
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <p>This material covers fundamental concepts in mathematics, including solving equations and various types of percentage calculations. It also includes practice problems from real-world scenarios, suitable for high school (Gymnasium Oberstufe) level.</p>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <p>Dieses Material behandelt grundlegende mathematische Konzepte, einschliesslich des Lösens von Gleichungen und verschiedener Arten von Prozentrechnungen. Es enthält auch Übungsaufgaben aus realen Szenarien, geeignet für das Gymnasium (Oberstufe).</p>
+            </div>
+        </div>
+
+        <h2 id="equivalent-transformations">1.1 Equivalent Transformations</h2>
+        
+        <div class="callout callout-definition">
+            <div class="callout-header">
+                <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+                Definition — Equation
+            </div>
+            <div class="callout-content">
+                <p>An equation consists of a right term and a left term, connected by an equality sign (=). The general form is:</p>
+                <div class="formula-display">T<sub>L</sub> = T<sub>R</sub></div>
+                <p>Where T<sub>L</sub> is the left term and T<sub>R</sub> is the right term. In elementary algebra, equations typically involve one unknown variable that needs to be solved for.</p>
+            </div>
+        </div>
+
+        <div class="callout callout-definition">
+            <div class="callout-header">
+                <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+                Definition — Equivalent Transformations
+            </div>
+            <div class="callout-content">
+                <p>Equivalent transformations are operations performed on both sides of an equation that do not change the solution set. These operations are essential for isolating the unknown variable.</p>
+            </div>
+        </div>
+
+        <h3>1.1.1 Addition</h3>
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <p>To solve an equation by isolating 'x', we perform the inverse operation on both sides.</p>
+                <p><span class="problem-label">Problem:</span> x + 3 = 7</p>
+                <p><span class="problem-label">Operation:</span> Subtract 3 from both sides.</p>
+                <div class="formula-display">x + 3 - 3 = 7 - 3<br>x = 4</div>
+                <p><span class="problem-label">Also:</span> 3 + x = 7 → x = 7 - 3 → x = 4</p>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <p>Um eine Gleichung durch Isolieren von 'x' zu lösen, führen wir die umgekehrte Operation auf beiden Seiten durch.</p>
+                <p><span class="problem-label">Problem:</span> x + 3 = 7</p>
+                <p><span class="problem-label">Operation:</span> Subtrahiere 3 von beiden Seiten.</p>
+                <div class="formula-display">x + 3 - 3 = 7 - 3<br>x = 4</div>
+                <p><span class="problem-label">Auch:</span> 3 + x = 7 → x = 7 - 3 → x = 4</p>
+            </div>
+        </div>
+
+        <h3>1.1.2 Subtraction</h3>
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <p>To solve an equation where a number is subtracted from 'x', we add that number to both sides.</p>
+                <p><span class="problem-label">Problem:</span> x - 3 = 7</p>
+                <p><span class="problem-label">Operation:</span> Add 3 to both sides.</p>
+                <div class="formula-display">x - 3 + 3 = 7 + 3<br>x = 10</div>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <p>Um eine Gleichung zu lösen, bei der eine Zahl von 'x' subtrahiert wird, addieren wir diese Zahl zu beiden Seiten.</p>
+                <p><span class="problem-label">Problem:</span> x - 3 = 7</p>
+                <p><span class="problem-label">Operation:</span> Addiere 3 zu beiden Seiten.</p>
+                <div class="formula-display">x - 3 + 3 = 7 + 3<br>x = 10</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: More Equations -->
+    <div class="page">
+        <h3>1.1.3 Multiplication</h3>
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <p>To solve an equation where 'x' is multiplied by a number, we divide both sides by that number.</p>
+                <p><span class="problem-label">Problem:</span> x · 3 = 11</p>
+                <p><span class="problem-label">Operation:</span> Divide both sides by 3.</p>
+                <div class="formula-display">x = 11 : 3<br>x = <span class="mono">11/3</span></div>
+                <p><span class="problem-label">Also:</span> 3 · x = 11 → x = <span class="mono">11/3</span></p>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <p>Um eine Gleichung zu lösen, bei der 'x' mit einer Zahl multipliziert wird, dividieren wir beide Seiten durch diese Zahl.</p>
+                <p><span class="problem-label">Problem:</span> x · 3 = 11</p>
+                <p><span class="problem-label">Operation:</span> Dividiere beide Seiten durch 3.</p>
+                <div class="formula-display">x = 11 : 3<br>x = <span class="mono">11/3</span></div>
+                <p><span class="problem-label">Auch:</span> 3 · x = 11 → x = <span class="mono">11/3</span></p>
+            </div>
+        </div>
+
+        <h3>1.1.4 Division</h3>
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <p>To solve an equation where 'x' is divided by a number, we multiply both sides by that number.</p>
+                <p><span class="problem-label">Problem:</span> x : 3 = 11</p>
+                <p><span class="problem-label">Operation:</span> Multiply both sides by 3.</p>
+                <div class="formula-display">x = 11 · 3<br>x = 33</div>
+                <p><span class="problem-label">Also:</span> <span class="mono">x/3</span> = 11 → x = 11 · 3 → x = 33</p>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <p>Um eine Gleichung zu lösen, bei der 'x' durch eine Zahl dividiert wird, multiplizieren wir beide Seiten mit dieser Zahl.</p>
+                <p><span class="problem-label">Problem:</span> x : 3 = 11</p>
+                <p><span class="problem-label">Operation:</span> Multipliziere beide Seiten mit 3.</p>
+                <div class="formula-display">x = 11 · 3<br>x = 33</div>
+                <p><span class="problem-label">Auch:</span> <span class="mono">x/3</span> = 11 → x = 11 · 3 → x = 33</p>
+            </div>
+        </div>
+
+        <!-- Learning Exercise -->
+        <div class="learning-exercise">
+            <div class="exercise-title">Learning Exercise 1: Solving Equations</div>
+            
+            <p><strong>Problem:</strong> Solve for x: 4x + 7 = 23</p>
+            
+            <div class="step">
+                <span class="step-num">Step 1:</span> Identify what needs to be isolated. We want to get x alone on one side of the equation.
+            </div>
+            
+            <div class="step">
+                <span class="step-num">Step 2:</span> The term "4x" means 4 times x. First, remove the +7 from the left side by doing the opposite operation — subtraction.
+            </div>
+            
+            <div class="step">
+                <span class="step-num">Step 3:</span> Subtract 7 from BOTH sides:
+                <div class="formula-box">4x + 7 - 7 = 23 - 7<br>4x = 16</div>
+            </div>
+            
+            <div class="step">
+                <span class="step-num">Step 4:</span> Now we have 4x = 16. To isolate x, divide by 4 (the opposite of multiplication):
+                <div class="formula-box">4x ÷ 4 = 16 ÷ 4<br>x = 4</div>
+            </div>
+            
+            <div class="step">
+                <span class="step-num">Step 5 (Verification):</span> Always check your answer by substituting back:
+                <div class="formula-box">4(4) + 7 = 16 + 7 = 23 ✓</div>
+            </div>
+            
+            <div class="try-it">
+                Try it yourself: Solve 5x - 3 = 22
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 5: Percentage Calculation -->
+    <div class="page">
+        <h1 id="percentage">2. Percentage Calculation</h1>
+        
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <p>Percentage calculation is a fundamental skill in mathematics, used to express parts of a whole or changes in quantities.</p>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <p>Die Prozentrechnung ist eine grundlegende mathematische Fähigkeit, die verwendet wird, um Teile eines Ganzen oder Änderungen von Mengen auszudrücken.</p>
+            </div>
+        </div>
+
+        <h2 id="decimal-conversion">2.1 Decimal Conversion</h2>
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <p>To perform calculations with percentages, it is often necessary to convert percentages into decimal numbers.</p>
+                <div class="callout callout-info">
+                    <div class="callout-header">
+                        <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Important Information
+                    </div>
+                    <div class="callout-content">
+                        To convert a percentage to a decimal, divide the percentage value by 100. This is equivalent to moving the decimal point two places to the left.
+                    </div>
+                </div>
+                <p><span class="problem-label">Examples:</span></p>
+                <ul>
+                    <li>0.3% = 0.3 ÷ 100 = <span class="mono">0.003</span></li>
+                    <li>12% = 12 ÷ 100 = <span class="mono">0.12</span></li>
+                </ul>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <p>Um Berechnungen mit Prozenten durchzuführen, ist es oft notwendig, Prozentsätze in Dezimalzahlen umzuwandeln.</p>
+                <div class="callout callout-info">
+                    <div class="callout-header">
+                        <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Wichtige Information
+                    </div>
+                    <div class="callout-content">
+                        Um einen Prozentsatz in eine Dezimalzahl umzuwandeln, dividieren Sie den Prozentwert durch 100.
+                    </div>
+                </div>
+                <p><span class="problem-label">Beispiele:</span></p>
+                <ul>
+                    <li>0.3% = 0.3 ÷ 100 = <span class="mono">0.003</span></li>
+                    <li>12% = 12 ÷ 100 = <span class="mono">0.12</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="terminology">2.2 Terminology: "Um" (By) vs. "Auf" (To)</h2>
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <p>In German, the prepositions "um" (by) and "auf" (to) are crucial for understanding percentage changes.</p>
+                <ul>
+                    <li><strong>"Um" (By):</strong> Refers to the <em>change amount</em>. "Es steigt um 20%" means an addition of 20% to the original value.</li>
+                    <li><strong>"Auf" (To):</strong> Refers to the <em>new total value</em> as a percentage of the original. "Es steigt auf 120%" means the new value is 120% of the original.</li>
+                </ul>
+                <div class="callout callout-tip">
+                    <div class="callout-header">
+                        <svg class="callout-icon" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+                        Exam Tip
+                    </div>
+                    <div class="callout-content">
+                        When calculating, convert "auf" percentages directly into a multiplication factor. For "um" percentages, first determine the "auf" percentage.
+                    </div>
+                </div>
+                <p><span class="problem-label">Example:</span> Price increases by 20%</p>
+                <div class="formula-display">P<sub>neu</sub> = P<sub>alt</sub> · (1 + 0.2)<br>P<sub>neu</sub> = P<sub>alt</sub> · 1.2</div>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <p>Im Deutschen sind die Präpositionen „um" und „auf" entscheidend für prozentuale Veränderungen.</p>
+                <ul>
+                    <li><strong>„Um" (By):</strong> Bezieht sich auf die <em>Veränderung</em>.</li>
+                    <li><strong>„Auf" (To):</strong> Bezieht sich auf den <em>neuen Gesamtwert</em>.</li>
+                </ul>
+                <div class="callout callout-tip">
+                    <div class="callout-header">
+                        <svg class="callout-icon" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+                        Prüfungstipp
+                    </div>
+                    <div class="callout-content">
+                        Wandeln Sie „auf"-Prozentsätze direkt in einen Multiplikationsfaktor um.
+                    </div>
+                </div>
+                <p><span class="problem-label">Beispiel:</span> Preis steigt um 20%</p>
+                <div class="formula-display">P<sub>neu</sub> = P<sub>alt</sub> · (1 + 0.2)<br>P<sub>neu</sub> = P<sub>alt</sub> · 1.2</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 6: Key Components -->
+    <div class="page">
+        <h2 id="key-components">2.3 Key Components of Percentage Calculation</h2>
+        
+        <div class="callout callout-definition">
+            <div class="callout-header">
+                <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+                Definition — Key Components
+            </div>
+            <div class="callout-content">
+                <div class="two-col">
+                    <div>
+                        <p><strong>A: Anteil (Part)</strong><br>The value after a change or the specific part of the base value.</p>
+                        <p><strong>G: Grundwert (Base)</strong><br>The original value before a change.</p>
+                        <p><strong>P: Prozentsatz (Rate)</strong><br>The percentage expressed as a decimal (e.g., 20% = 0.2).</p>
+                    </div>
+                    <div>
+                        <div class="formula-display" style="margin: 0;">
+                            <strong>A = G · P</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>2.4 Types of Percentage Calculations</h3>
+        
+        <h3>2.4.1 Anteilberechnung (Calculating the Part)</h3>
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <p><strong>Goal:</strong> Find A when G and P are known.</p>
+                <p><strong>Formula:</strong> A = G · P</p>
+                <div class="example-block">
+                    <p><span class="problem-label">Problem:</span> A fruit farmer harvested 960 kg of apples, 80% sold in farm shop. How many kg sold?</p>
+                    <p><strong>Given:</strong> G = 960 kg, P = 80% = 0.8</p>
+                    <p><strong>Calculation:</strong> A = 960 · 0.8 = 768 kg</p>
+                    <div class="result"><strong>Result: 768 kg</strong></div>
+                </div>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <p><strong>Ziel:</strong> Finde A wenn G und P bekannt sind.</p>
+                <p><strong>Formel:</strong> A = G · P</p>
+                <div class="example-block">
+                    <p><span class="problem-label">Aufgabe:</span> 960 kg Äpfel, 80% verkauft.</p>
+                    <p><strong>Gegeben:</strong> G = 960 kg, P = 0.8</p>
+                    <p><strong>Berechnung:</strong> A = 960 · 0.8 = 768 kg</p>
+                    <div class="result"><strong>Ergebnis: 768 kg</strong></div>
+                </div>
+            </div>
+        </div>
+
+        <h3>2.4.2 Grundwertberechnung (Calculating the Base Value)</h3>
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <p><strong>Goal:</strong> Find G when A and P are known.</p>
+                <p><strong>Formula:</strong> G = <span class="mono">A/P</span></p>
+                <div class="example-block">
+                    <p><span class="problem-label">Problem:</span> 5 students are sick = 20% of class. Total students?</p>
+                    <p><strong>Given:</strong> A = 5, P = 20% = 0.2</p>
+                    <p><strong>Calculation:</strong> G = <span class="mono">5/0.2</span> = 25</p>
+                    <div class="result"><strong>Result: 25 students</strong></div>
+                </div>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <p><strong>Ziel:</strong> Finde G wenn A und P bekannt sind.</p>
+                <p><strong>Formel:</strong> G = <span class="mono">A/P</span></p>
+                <div class="example-block">
+                    <p><span class="problem-label">Aufgabe:</span> 5 Schüler = 20% der Klasse.</p>
+                    <p><strong>Gegeben:</strong> A = 5, P = 0.2</p>
+                    <p><strong>Berechnung:</strong> G = <span class="mono">5/0.2</span> = 25</p>
+                    <div class="result"><strong>Ergebnis: 25 Schüler</strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 7: Change Factor -->
+    <div class="page">
+        <h2 id="change-factor">2.4 Change Factor (Änderungsfaktor)</h2>
+        
+        <div class="callout callout-info">
+            <div class="callout-header">
+                <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Important Information
+            </div>
+            <div class="callout-content">
+                Using a change factor (also called a growth factor or multiplier) simplifies calculations involving percentage increases or decreases.
+                <ul style="margin-top: 8pt;">
+                    <li><strong>Increase by p%:</strong> Multiply by (1 + p/100)</li>
+                    <li><strong>Decrease by p%:</strong> Multiply by (1 - p/100)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <h4>Example: USB-Stick Price Increase</h4>
+                <p><span class="problem-label">Problem:</span> USB stick costs €12. Price increases by 4%.</p>
+                <p><span class="problem-label">Solution:</span> Change factor = 1 + 4/100 = 1.04</p>
+                <p>New price = 12 · 1.04 = €12.48</p>
+                <div class="result"><strong>Result: €12.48</strong></div>
+
+                <h4 style="margin-top: 16pt;">Example: Capri Pants Price Decrease</h4>
+                <p><span class="problem-label">Problem:</span> Pants cost €64. Price reduced by 25%.</p>
+                <p><span class="problem-label">Solution:</span> Change factor = 1 - 25/100 = 0.75</p>
+                <p>Reduced price = 64 · 0.75 = €48</p>
+                <div class="result"><strong>Result: €48</strong></div>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <h4>Beispiel: USB-Stick Preiserhöhung</h4>
+                <p><span class="problem-label">Aufgabe:</span> USB-Stick kostet €12. Preis +4%.</p>
+                <p><span class="problem-label">Lösung:</span> Änderungsfaktor = 1 + 4/100 = 1.04</p>
+                <p>Neuer Preis = 12 · 1.04 = €12.48</p>
+                <div class="result"><strong>Ergebnis: €12.48</strong></div>
+
+                <h4 style="margin-top: 16pt;">Beispiel: Caprihose Preisreduktion</h4>
+                <p><span class="problem-label">Aufgabe:</span> Hose kostet €64. Preis -25%.</p>
+                <p><span class="problem-label">Lösung:</span> Änderungsfaktor = 1 - 25/100 = 0.75</p>
+                <p>Preis = 64 · 0.75 = €48</p>
+                <div class="result"><strong>Ergebnis: €48</strong></div>
+            </div>
+        </div>
+
+        <!-- Learning Exercise for Percentages -->
+        <div class="learning-exercise">
+            <div class="exercise-title">Learning Exercise 2: Understanding "Um" vs "Auf"</div>
+            
+            <p><strong>Scenario:</strong> A product costs €100. Answer these two questions:</p>
+            
+            <div class="step">
+                <span class="step-num">Question A:</span> The price <em>increases by 30%</em>. What is the new price?
+                <p><strong>Analysis:</strong> "Um 30%" means the change is 30% of the original. The new price will be 100% + 30% = 130% of the original.</p>
+                <div class="formula-box">New price = €100 × 1.30 = €130</div>
+            </div>
+            
+            <div class="step">
+                <span class="step-num">Question B:</span> The price <em>increases to 130%</em> of the original. What is the new price?
+                <p><strong>Analysis:</strong> "Auf 130%" directly tells us the new price as a percentage of the original. This is the same as increasing by 30%!</p>
+                <div class="formula-box">New price = €100 × 1.30 = €130</div>
+            </div>
+            
+            <div class="step">
+                <span class="step-num">Key Insight:</span> Both questions give the same answer! The difference is:
+                <ul>
+                    <li>"Um 30%" → tells you the <em>change</em> (the increase)</li>
+                    <li>"Auf 130%" → tells you the <em>result</em> (the final percentage)</li>
+                </ul>
+            </div>
+            
+            <div class="try-it">
+                Try it: If €50 increases BY 20%, what's the new price? If €50 increases TO 120%, what's the new price?
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 8: Percentage Points -->
+    <div class="page">
+        <h2 id="percentage-points">2.5 Percentage Points (Prozentpunkte)</h2>
+        
+        <div class="callout callout-definition">
+            <div class="callout-header">
+                <svg class="callout-icon" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+                Definition — Percentage Points
+            </div>
+            <div class="callout-content">
+                A percentage point is a unit used to express the arithmetic difference between two percentages. It represents an absolute difference, unlike a percentage change which is a relative difference.
+            </div>
+        </div>
+
+        <div class="callout callout-info">
+            <div class="callout-header">
+                <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Note
+            </div>
+            <div class="callout-content">
+                Percentage points are commonly used in statistics, especially when comparing election results, interest rates, or survey data, to avoid ambiguity.
+            </div>
+        </div>
+
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <h4>Example: Interest Rate Increase</h4>
+                <p><span class="problem-label">Problem:</span> Interest rate increases from 5% to 6%.</p>
+                <p>a) Percentage point increase: 6% - 5% = <strong>1 percentage point</strong></p>
+                <p>b) Percentage increase: (6%-5%)/5% = <span class="mono">1/5</span> = 0.2 = <strong>20%</strong></p>
+                <div class="result">The rate increased by 1 pp, which is a 20% relative increase.</div>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <h4>Beispiel: Zinssatzerhöhung</h4>
+                <p><span class="problem-label">Aufgabe:</span> Zinssatz steigt von 5% auf 6%.</p>
+                <p>a) Prozentpunkt-Erhöhung: 6% - 5% = <strong>1 Prozentpunkt</strong></p>
+                <p>b) Prozentuale Erhöhung: (6%-5%)/5% = <span class="mono">1/5</span> = 0.2 = <strong>20%</strong></p>
+                <div class="result">Der Satz stieg um 1 PP, was 20% relative Erhöhung ist.</div>
+            </div>
+        </div>
+
+        <div class="callout callout-tip">
+            <div class="callout-header">
+                <svg class="callout-icon" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+                Exam Tip
+            </div>
+            <div class="callout-content">
+                When comparing percentages in exams, always clarify whether you're talking about:
+                <ul>
+                    <li><strong>Percentage points</strong> — the simple difference (e.g., from 40% to 50% = +10 pp)</li>
+                    <li><strong>Percentage change</strong> — the relative change (e.g., from 40% to 50% = +25%)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 9: Water Diagram -->
+    <div class="page" id="water-diagram">
+        <h2>2.6 Visual: Water Distribution on Earth</h2>
+        
+        <div class="bilingual">
+            <div class="bilingual-col">
+                <div class="bilingual-label">English</div>
+                <p>The graphic illustrates the total water distribution on Earth.</p>
+                <ul>
+                    <li><strong>Global Water Volume:</strong> 1,317,398,571 km³ of seawater (97%)</li>
+                    <li><strong>Usable Water:</strong> Only surface water and groundwater are usable for drinking water.</li>
+                </ul>
+            </div>
+            <div class="bilingual-col">
+                <div class="bilingual-label">Deutsch</div>
+                <p>Die Grafik stellt die Gesamtwasserverteilung der Erde dar.</p>
+                <ul>
+                    <li><strong>Gesamtwasser:</strong> 1.317.398.571 km³ Meerwasser (97%)</li>
+                    <li><strong>Nutzbares Wasser:</strong> Nur Oberflächen- und Grundwasser sind nutzbar.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="diagram-container">
+            <svg viewBox="0 0 600 320" width="600" height="320">
+                <g transform="translate(150, 160)">
+                    <circle cx="0" cy="0" r="100" fill="#2980b9" stroke="white" stroke-width="2"/>
+                    <text x="0" y="5" text-anchor="middle" fill="white" font-size="14" font-weight="bold">97%</text>
+                    <text x="0" y="25" text-anchor="middle" fill="white" font-size="10">Saltwater</text>
+                    <text x="0" y="38" text-anchor="middle" fill="white" font-size="10">(Oceans)</text>
+                </g>
+                <path d="M 150 60 A 100 100 0 0 1 245 85 L 150 160 Z" fill="#fbc92d" stroke="white" stroke-width="2"/>
+                <text x="200" y="80" fill="#1e2e48" font-size="14" font-weight="bold">3%</text>
+                <text x="200" y="95" fill="#1e2e48" font-size="10">Freshwater</text>
+                
+                <g transform="translate(350, 60)">
+                    <text x="0" y="0" fill="#1e2e48" font-size="12" font-weight="bold">Freshwater Breakdown</text>
+                    <rect x="0" y="15" width="180" height="30" fill="#3498db" rx="3"/>
+                    <text x="90" y="35" text-anchor="middle" fill="white" font-size="11">Ice Caps &amp; Glaciers: 68.7%</text>
+                    <rect x="0" y="50" width="180" height="30" fill="#9b59b6" rx="3"/>
+                    <text x="90" y="70" text-anchor="middle" fill="white" font-size="11">Groundwater: 30.1%</text>
+                    <rect x="0" y="85" width="180" height="30" fill="#e74c3c" rx="3"/>
+                    <text x="90" y="105" text-anchor="middle" fill="white" font-size="11">Surface Water: 0.3%</text>
+                </g>
+                
+                <g transform="translate(350, 200)">
+                    <text x="0" y="0" fill="#1e2e48" font-size="12" font-weight="bold">Surface Water Breakdown</text>
+                    <rect x="0" y="15" width="180" height="25" fill="#2ecc71" rx="3"/>
+                    <text x="90" y="33" text-anchor="middle" fill="white" font-size="11">Lakes: 87%</text>
+                    <rect x="0" y="45" width="180" height="25" fill="#f39c12" rx="3"/>
+                    <text x="90" y="63" text-anchor="middle" fill="white" font-size="11">Swamps: 11%</text>
+                    <rect x="0" y="75" width="180" height="25" fill="#1abc9c" rx="3"/>
+                    <text x="90" y="93" text-anchor="middle" fill="white" font-size="11">Rivers: 2%</text>
+                </g>
+            </svg>
+            <div class="diagram-caption">Figure 1: Global Water Distribution on Earth</div>
+        </div>
+
+        <div class="callout callout-info">
+            <div class="callout-header">
+                <svg class="callout-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Key Insight
+            </div>
+            <div class="callout-content">
+                Notice that only 0.3% of all water is surface water (lakes, rivers, swamps), and of that tiny amount, 87% is in lakes. This means lakes represent only about 0.26% of all Earth's water!
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 10: PART 2 - Practice -->
+    <div class="page">
+        <div class="part-header practice">
+            <h2>PART 2: PRACTICE</h2>
+            <p>Exercise questions with detailed answers and explanations</p>
+        </div>
+
+        <h1 id="practice-equations">3. Practice: Equations</h1>
+
+        <div class="practice-question">
+            <div class="question-num">Question 1</div>
+            <p>Solve for x: 3x + 8 = 29</p>
+            <div class="answer">
+                <strong>Answer: x = 7</strong>
+            </div>
+            <div class="breakdown">
+                <strong>Step-by-step breakdown:</strong><br>
+                1. Start with: 3x + 8 = 29<br>
+                2. Subtract 8 from both sides: 3x = 29 - 8 = 21<br>
+                3. Divide both sides by 3: x = 21 ÷ 3 = 7<br>
+                4. Check: 3(7) + 8 = 21 + 8 = 29 ✓
+            </div>
+        </div>
+
+        <div class="practice-question">
+            <div class="question-num">Question 2</div>
+            <p>Solve for x: x/4 - 5 = 3</p>
+            <div class="answer">
+                <strong>Answer: x = 32</strong>
+            </div>
+            <div class="breakdown">
+                <strong>Step-by-step breakdown:</strong><br>
+                1. Start with: x/4 - 5 = 3<br>
+                2. Add 5 to both sides: x/4 = 3 + 5 = 8<br>
+                3. Multiply both sides by 4: x = 8 × 4 = 32<br>
+                4. Check: 32/4 - 5 = 8 - 5 = 3 ✓
+            </div>
+        </div>
+
+        <div class="practice-question">
+            <div class="question-num">Question 3</div>
+            <p>Solve for x: 2(x - 3) = 14</p>
+            <div class="answer">
+                <strong>Answer: x = 10</strong>
+            </div>
+            <div class="breakdown">
+                <strong>Step-by-step breakdown:</strong><br>
+                1. Start with: 2(x - 3) = 14<br>
+                2. Divide both sides by 2: x - 3 = 14 ÷ 2 = 7<br>
+                3. Add 3 to both sides: x = 7 + 3 = 10<br>
+                4. Check: 2(10 - 3) = 2 × 7 = 14 ✓<br><br>
+                <strong>Why this works:</strong> We use the distributive property in reverse. Dividing first is easier than expanding 2x - 6 = 14.
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 11: Practice Percentage -->
+    <div class="page">
+        <h1 id="practice-percentage">4. Practice: Percentage</h1>
+
+        <div class="practice-question">
+            <div class="question-num">Question 1</div>
+            <p>A laptop costs €1,450 including 20% VAT. What is the net price (without VAT)?</p>
+            <div class="answer">
+                <strong>Answer: €1,208.33</strong>
+            </div>
+            <div class="breakdown">
+                <strong>Step-by-step breakdown:</strong><br>
+                <strong>Understanding:</strong> The gross price (€1,450) = 120% of the net price (100% + 20% VAT)<br><br>
+                1. Let G = net price (what we're looking for)<br>
+                2. We know: G × 1.20 = €1,450<br>
+                3. Therefore: G = €1,450 ÷ 1.20 = €1,208.33<br><br>
+                <strong>Why this works:</strong> To remove VAT, we divide by 1.20 (the "auf" factor). To add VAT, we multiply by 1.20.
+            </div>
+        </div>
+
+        <div class="practice-question">
+            <div class="question-num">Question 2</div>
+            <p>A car's value decreases from €25,000 to €18,500. What is the percentage decrease?</p>
+            <div class="answer">
+                <strong>Answer: 26% decrease</strong>
+            </div>
+            <div class="breakdown">
+                <strong>Step-by-step breakdown:</strong><br>
+                1. Calculate the decrease: €25,000 - €18,500 = €6,500<br>
+                2. Find what percentage €6,500 is of the original €25,000:<br>
+                3. Percentage = (6,500 ÷ 25,000) × 100 = 0.26 × 100 = 26%<br><br>
+                <strong>Formula:</strong> Percentage decrease = (Original - New) ÷ Original × 100
+            </div>
+        </div>
+
+        <div class="practice-question">
+            <div class="question-num">Question 3</div>
+            <p>Shop A offers 20% discount, then additional 15% off the sale price. Shop B offers 35% discount on the original price. Which shop is better?</p>
+            <div class="answer">
+                <strong>Answer: Shop A is better (68% vs 65% of original)</strong>
+            </div>
+            <div class="breakdown">
+                <strong>Step-by-step breakdown:</strong><br>
+                <strong>Shop A (sequential discounts):</strong><br>
+                - First discount: 100% - 20% = 80% remaining<br>
+                - Second discount: 80% × (100% - 15%) = 80% × 85% = 68%<br><br>
+                <strong>Shop B (single discount):</strong><br>
+                - 100% - 35% = 65% remaining<br><br>
+                <strong>Why this works:</strong> Sequential discounts are calculated on the <em>reduced</em> amount, not the original. This is why Shop A leaves you paying less!
+            </div>
+        </div>
+
+        <div class="practice-question">
+            <div class="question-num">Question 4</div>
+            <p>An interest rate changes from 4% to 5%. Express this as: (a) percentage points, (b) percentage change.</p>
+            <div class="answer">
+                <strong>Answer: (a) 1 percentage point (b) 25% increase</strong>
+            </div>
+            <div class="breakdown">
+                <strong>Step-by-step breakdown:</strong><br>
+                (a) Percentage points: 5% - 4% = <strong>1 pp</strong><br>
+                (b) Percentage change: (5% - 4%) ÷ 4% = 1% ÷ 4% = 0.25 = <strong>25%</strong><br><br>
+                <strong>Key distinction:</strong> The rate went UP by 1 percentage point, but RELATIVELY it increased by 25% (of the original 4%).
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 12: Practice Applications -->
+    <div class="page">
+        <h1 id="practice-applications">5. Practice: Applications</h1>
+
+        <div class="practice-question">
+            <div class="question-num">Question 1</div>
+            <p>Sarah buys a computer for €1,600. The price first increases by 10%, then decreases by 10%. What is the final price?</p>
+            <div class="answer">
+                <strong>Answer: €1,584</strong>
+            </div>
+            <div class="breakdown">
+                <strong>Step-by-step breakdown:</strong><br>
+                1. Increase by 10%: €1,600 × 1.10 = €1,760<br>
+                2. Then decrease by 10%: €1,760 × 0.90 = €1,584<br><br>
+                <strong>Why this is tricky:</strong> The 10% decrease is calculated on €1,760 (the increased amount), not the original €1,600!<br><br>
+                <strong>Quick method:</strong> Multiply both factors: 1.10 × 0.90 = 0.99<br>
+                Final = €1,600 × 0.99 = €1,584<br><br>
+                <strong>Key insight:</strong> A 10% increase followed by a 10% decrease does NOT get you back to the original! You lose 1%.
+            </div>
+        </div>
+
+        <div class="practice-question">
+            <div class="question-num">Question 2</div>
+            <p>At an election, Party A gained 45% of votes (up from 36% last time). How many percentage points did they gain? What was their percentage increase?</p>
+            <div class="answer">
+                <strong>Answer: 9 percentage points, 25% increase</strong>
+            </div>
+            <div class="breakdown">
+                <strong>Step-by-step breakdown:</strong><br>
+                1. Percentage points: 45% - 36% = <strong>9 pp</strong><br>
+                2. Percentage change: (45% - 36%) ÷ 36% = 9% ÷ 36% = 0.25 = <strong>25%</strong><br><br>
+                <strong>Why both matter:</strong>
+                - "9 percentage points gained" tells you the absolute difference in the score<br>
+                - "25% increase" tells you the relative growth from their previous position
+            </div>
+        </div>
+
+        <div class="practice-question">
+            <div class="question-num">Question 3</div>
+            <p>Using the water distribution data, calculate what percentage of ALL water on Earth is surface water (lakes + swamps + rivers)?</p>
+            <div class="answer">
+                <strong>Answer: 0.00783%</strong>
+            </div>
+            <div class="breakdown">
+                <strong>Step-by-step breakdown:</strong><br>
+                From the diagram:<br>
+                - Saltwater: 97% = 0.97<br>
+                - Freshwater: 3% = 0.03<br>
+                - Surface water (of freshwater): 0.3% = 0.003<br><br>
+                Calculation: 0.03 × 0.003 = 0.0000783<br>
+                As percentage: 0.0000783 × 100 = <strong>0.00783%</strong><br><br>
+                <strong>Why this matters:</strong> This tiny percentage explains why freshwater is such a precious resource!
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+        
+        <div style="text-align: center; margin-top: 20pt;">
+            <p style="font-size: 12pt; color: var(--primary); font-weight: 600;">VSN Learning Material</p>
+            <p style="font-size: 10pt; color: #666;">Equations and Percentages &bull; Gymnasium Oberstufe</p>
+            <p style="font-size: 9pt; color: #888; margin-top: 10pt;">Created following VSN's unified design system</p>
+        </div>
+    </div>
+</body>
+</html>

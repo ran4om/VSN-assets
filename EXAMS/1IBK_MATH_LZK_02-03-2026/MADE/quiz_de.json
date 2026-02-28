@@ -1,0 +1,230 @@
+{
+  "title": "Mathematik: Gleichungen und Prozente - Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Was ist eine Gleichung in der Mathematik?",
+      "options": [
+        "Eine mathematische Aussage ohne Gleichheitszeichen",
+        "Ein rechter Term und ein linker Term, verbunden durch ein Gleichheitszeichen (=)",
+        "Eine Liste von Zahlen in einer bestimmten Reihenfolge",
+        "Eine Funktion, die einen Wert auf einen anderen abbildet"
+      ],
+      "correctAnswer": "Ein rechter Term und ein linker Term, verbunden durch ein Gleichheitszeichen (=)",
+      "points": 10,
+      "topic": "equations-definition"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was sind Äquivalenzumformungen?",
+      "options": [
+        "Operationen, die nur auf einer Seite der Gleichung durchgeführt werden",
+        "Operationen auf beiden Seiten einer Gleichung, die die Lösungsmenge nicht verändern",
+        "Methoden zum Raten von Lösungen",
+        "Diagramme zur Visualisierung von Gleichungen"
+      ],
+      "correctAnswer": "Operationen auf beiden Seiten einer Gleichung, die die Lösungsmenge nicht verändern",
+      "points": 10,
+      "topic": "equivalent-transformations"
+    },
+    {
+      "type": "true-false",
+      "text": "Um die Gleichung x + 5 = 12 zu lösen, muss man auf beiden Seiten 5 subtrahieren.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "equations-operations"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie löst man die Gleichung x - 7 = 14?",
+      "options": [
+        "Man subtrahiert 7 von beiden Seiten",
+        "Man addiert 7 zu beiden Seiten",
+        "Man multipliziert beide Seiten mit 7",
+        "Man dividiert beide Seiten durch 7"
+      ],
+      "correctAnswer": "Man addiert 7 zu beiden Seiten",
+      "points": 10,
+      "topic": "equations-subtraction"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie löst man die Gleichung 4x = 20?",
+      "options": [
+        "Man addiert 4 zu beiden Seiten",
+        "Man subtrahiert 4 von beiden Seiten",
+        "Man dividiert beide Seiten durch 4",
+        "Man multipliziert beide Seiten mit 4"
+      ],
+      "correctAnswer": "Man dividiert beide Seiten durch 4",
+      "points": 10,
+      "topic": "equations-multiplication"
+    },
+    {
+      "type": "true-false",
+      "text": "Um die Gleichung x/3 = 9 zu lösen, multipliziert man beide Seiten mit 3.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "equations-division"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ergibt 25% als Dezimalzahl?",
+      "options": [
+        "0.25",
+        "2.5",
+        "25",
+        "0.025"
+      ],
+      "correctAnswer": "0.25",
+      "points": 10,
+      "topic": "decimal-conversion"
+    },
+    {
+      "type": "true-false",
+      "text": "Um einen Prozentsatz in eine Dezimalzahl umzuwandeln, multipliziert man durch 100.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "decimal-conversion"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was bedeutet 'eine Zahl steigt UM 20%'?",
+      "options": [
+        "Die neue Zahl beträgt 20% der ursprünglichen Zahl",
+        "Die neue Zahl beträgt 120% der ursprünglichen Zahl",
+        "Die Zahl verdoppelt sich",
+        "Die Zahl bleibt gleich"
+      ],
+      "correctAnswer": "Die neue Zahl beträgt 120% der ursprünglichen Zahl",
+      "points": 10,
+      "topic": "um-vs-auf"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was bedeutet 'eine Zahl steigt AUF 120%'?",
+      "options": [
+        "Die Zahl nimmt um 120% zu",
+        "Die neue Zahl beträgt 120% der ursprünglichen Zahl",
+        "Die Zahl verdreifacht sich",
+        "Die Zahl nimmt um 20% zu"
+      ],
+      "correctAnswer": "Die neue Zahl beträgt 120% der ursprünglichen Zahl",
+      "points": 10,
+      "topic": "um-vs-auf"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "In der Prozentrechnung: Was ist G (Grundwert)?",
+      "options": [
+        "Der Wert nach einer Änderung",
+        "Der ursprüngliche Wert vor einer Änderung",
+        "Der Prozentsatz als Dezimalzahl",
+        "Die Differenz zwischen altem und neuem Wert"
+      ],
+      "correctAnswer": "Der ursprüngliche Wert vor einer Änderung",
+      "points": 10,
+      "topic": "percentage-components"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "In der Prozentrechnung: Was ist A (Anteil)?",
+      "options": [
+        "Der ursprüngliche Wert",
+        "Der Prozentsatz",
+        "Der Wert nach einer Änderung oder der Teil des Grundwerts",
+        "Die Prozentpunkte"
+      ],
+      "correctAnswer": "Der Wert nach einer Änderung oder der Teil des Grundwerts",
+      "points": 10,
+      "topic": "percentage-components"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie lautet die Grundformel der Prozentrechnung?",
+      "options": [
+        "G = A × P",
+        "A = G + P",
+        "A = G × P",
+        "P = G + A"
+      ],
+      "correctAnswer": "A = G × P",
+      "points": 15,
+      "topic": "percentage-formula"
+    },
+    {
+      "type": "true-false",
+      "text": "Um den Grundwert G zu finden, wenn A und P bekannt sind, verwendet man die Formel G = A ÷ P.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 10,
+      "topic": "percentage-formula"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Produkt kostet 100€. Der Preis wird um 10% erhöht. Was ist der Änderungsfaktor?",
+      "options": [
+        "0.10",
+        "1.10",
+        "0.90",
+        "10"
+      ],
+      "correctAnswer": "1.10",
+      "points": 10,
+      "topic": "change-factor"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Produkt kostet 80€. Der Preis wird um 25% reduziert. Was ist der neue Preis?",
+      "options": [
+        "55€",
+        "60€",
+        "65€",
+        "20€"
+      ],
+      "correctAnswer": "60€",
+      "points": 15,
+      "topic": "change-factor-calculation"
+    },
+    {
+      "type": "true-false",
+      "text": "Der Zinssatz steigt von 4% auf 5%. Das ist eine Erhöhung um 1 Prozentpunkt.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 10,
+      "topic": "percentage-points"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Zinssatz steigt von 5% auf 6%. Wie viel Prozent beträgt die prozentuale Erhöhung?",
+      "options": [
+        "1%",
+        "6%",
+        "20%",
+        "10%"
+      ],
+      "correctAnswer": "20%",
+      "points": 15,
+      "topic": "percentage-points-calculation"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ein Computer kostet 1600€. Der Preis erhöht sich zuerst um 10%, dann sinkt er um 10%. Berechnen Sie den Endpreis und erklären Sie, warum das Ergebnis nicht 1600€ ist.",
+      "options": [],
+      "correctAnswer": "Der Endpreis beträgt 1584€. Zuerst: 1600 × 1.10 = 1760€. Dann: 1760 × 0.90 = 1584€. Das Ergebnis ist nicht 1600€, weil die 10% Abnahme auf den ERHÖHTEN Betrag (1760€) berechnet wird, nicht auf den ursprünglichen (1600€).",
+      "points": 25,
+      "topic": "sequential-percentage"
+    },
+    {
+      "type": "open-ended",
+      "text": "Berechnen Sie: Wie viel Prozent des gesamten Wassers auf der Erde ist Oberflächenwasser (Seen, Flüsse, Sümpfe)? Zeigen Sie Ihre Berechnung mit den gegebenen Daten: Salzwasser 97%, Süsswasser 3%, davon Oberflächenwasser 0.3%.",
+      "options": [],
+      "correctAnswer": "Berechnung: 0.03 × 0.003 = 0.0000783. Als Prozent: 0.0000783 × 100 = 0.00783%. Also sind nur 0.00783% des gesamten Wassers Oberflächenwasser.",
+      "points": 25,
+      "topic": "water-calculation"
+    }
+  ]
+}

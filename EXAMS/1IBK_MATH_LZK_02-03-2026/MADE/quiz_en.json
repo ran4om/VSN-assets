@@ -1,0 +1,230 @@
+{
+  "title": "Mathematics: Equations and Percentages Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What is an equation in mathematics?",
+      "options": [
+        "A mathematical statement without an equals sign",
+        "A right term and a left term connected by an equals sign (=)",
+        "A list of numbers in a specific order",
+        "A function that maps one value to another"
+      ],
+      "correctAnswer": "A right term and a left term connected by an equals sign (=)",
+      "points": 10,
+      "topic": "equations-definition"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What are equivalent transformations?",
+      "options": [
+        "Operations performed on only one side of the equation",
+        "Operations performed on both sides of an equation that do not change the solution set",
+        "Methods for guessing solutions",
+        "Diagrams for visualizing equations"
+      ],
+      "correctAnswer": "Operations performed on both sides of an equation that do not change the solution set",
+      "points": 10,
+      "topic": "equivalent-transformations"
+    },
+    {
+      "type": "true-false",
+      "text": "To solve the equation x + 5 = 12, you must subtract 5 from both sides.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "equations-operations"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How do you solve the equation x - 7 = 14?",
+      "options": [
+        "Subtract 7 from both sides",
+        "Add 7 to both sides",
+        "Multiply both sides by 7",
+        "Divide both sides by 7"
+      ],
+      "correctAnswer": "Add 7 to both sides",
+      "points": 10,
+      "topic": "equations-subtraction"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How do you solve the equation 4x = 20?",
+      "options": [
+        "Add 4 to both sides",
+        "Subtract 4 from both sides",
+        "Divide both sides by 4",
+        "Multiply both sides by 4"
+      ],
+      "correctAnswer": "Divide both sides by 4",
+      "points": 10,
+      "topic": "equations-multiplication"
+    },
+    {
+      "type": "true-false",
+      "text": "To solve the equation x/3 = 9, you multiply both sides by 3.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "equations-division"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is 25% as a decimal?",
+      "options": [
+        "0.25",
+        "2.5",
+        "25",
+        "0.025"
+      ],
+      "correctAnswer": "0.25",
+      "points": 10,
+      "topic": "decimal-conversion"
+    },
+    {
+      "type": "true-false",
+      "text": "To convert a percentage to a decimal, you multiply by 100.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "decimal-conversion"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does 'a number increases BY 20%' mean?",
+      "options": [
+        "The new number is 20% of the original",
+        "The new number is 120% of the original",
+        "The number doubles",
+        "The number stays the same"
+      ],
+      "correctAnswer": "The new number is 120% of the original",
+      "points": 10,
+      "topic": "um-vs-auf"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does 'a number increases TO 120%' mean?",
+      "options": [
+        "The number increases by 120%",
+        "The new number is 120% of the original",
+        "The number triples",
+        "The number increases by 20%"
+      ],
+      "correctAnswer": "The new number is 120% of the original",
+      "points": 10,
+      "topic": "um-vs-auf"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "In percentage calculation: What is G (Grundwert/Base Value)?",
+      "options": [
+        "The value after a change",
+        "The original value before a change",
+        "The percentage as a decimal",
+        "The difference between old and new value"
+      ],
+      "correctAnswer": "The original value before a change",
+      "points": 10,
+      "topic": "percentage-components"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "In percentage calculation: What is A (Anteil/Part)?",
+      "options": [
+        "The original value",
+        "The percentage rate",
+        "The value after a change or the part of the base value",
+        "Percentage points"
+      ],
+      "correctAnswer": "The value after a change or the part of the base value",
+      "points": 10,
+      "topic": "percentage-components"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the basic formula for percentage calculation?",
+      "options": [
+        "G = A × P",
+        "A = G + P",
+        "A = G × P",
+        "P = G + A"
+      ],
+      "correctAnswer": "A = G × P",
+      "points": 15,
+      "topic": "percentage-formula"
+    },
+    {
+      "type": "true-false",
+      "text": "To find the base value G when A and P are known, you use the formula G = A ÷ P.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 10,
+      "topic": "percentage-formula"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A product costs 100€. The price increases by 10%. What is the change factor?",
+      "options": [
+        "0.10",
+        "1.10",
+        "0.90",
+        "10"
+      ],
+      "correctAnswer": "1.10",
+      "points": 10,
+      "topic": "change-factor"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A product costs 80€. The price is reduced by 25%. What is the new price?",
+      "options": [
+        "55€",
+        "60€",
+        "65€",
+        "20€"
+      ],
+      "correctAnswer": "60€",
+      "points": 15,
+      "topic": "change-factor-calculation"
+    },
+    {
+      "type": "true-false",
+      "text": "The interest rate increases from 4% to 5%. This is an increase of 1 percentage point.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 10,
+      "topic": "percentage-points"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An interest rate increases from 5% to 6%. What is the percentage increase?",
+      "options": [
+        "1%",
+        "6%",
+        "20%",
+        "10%"
+      ],
+      "correctAnswer": "20%",
+      "points": 15,
+      "topic": "percentage-points-calculation"
+    },
+    {
+      "type": "open-ended",
+      "text": "A computer costs 1600€. The price first increases by 10%, then decreases by 10%. Calculate the final price and explain why the result is not 1600€.",
+      "options": [],
+      "correctAnswer": "The final price is 1584€. First: 1600 × 1.10 = 1760€. Then: 1760 × 0.90 = 1584€. The result is not 1600€ because the 10% decrease is calculated on the INCREASED amount (1760€), not the original (1600€).",
+      "points": 25,
+      "topic": "sequential-percentage"
+    },
+    {
+      "type": "open-ended",
+      "text": "Calculate: What percentage of ALL water on Earth is surface water (lakes, rivers, swamps)? Show your calculation using the given data: Saltwater 97%, Freshwater 3%, of which Surface water 0.3%.",
+      "options": [],
+      "correctAnswer": "Calculation: 0.03 × 0.003 = 0.0000783. As percentage: 0.0000783 × 100 = 0.00783%. So only 0.00783% of all water is surface water.",
+      "points": 25,
+      "topic": "water-calculation"
+    }
+  ]
+}
