@@ -1,0 +1,349 @@
+{
+  "title": "Natural Sciences: Matter, Energy and Forces - Quiz (English)",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Which state of matter has a constant shape and constant volume?",
+      "options": ["Liquid", "Gaseous", "Solid", "Plasma"],
+      "correctAnswer": "Solid",
+      "points": 5,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is an amorphous solid body?",
+      "options": ["A crystal with regular arrangement", "A body with irregularly arranged atoms", "A gaseous substance", "A liquid"],
+      "correctAnswer": "A body with irregularly arranged atoms",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "true-false",
+      "text": "In a liquid, particles have more freedom of movement than in a solid.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does the state of matter of a substance mainly depend on?",
+      "options": ["Color", "Temperature", "Mass", "Volume"],
+      "correctAnswer": "Temperature",
+      "points": 5,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the transition from solid to liquid called?",
+      "options": ["Evaporation", "Melting", "Freezing", "Condensation"],
+      "correctAnswer": "Melting",
+      "points": 5,
+      "topic": "phase-transitions"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is 'Resublimation'?",
+      "options": ["Solid to Gaseous", "Gaseous to Solid", "Liquid to Gaseous", "Gaseous to Liquid"],
+      "correctAnswer": "Gaseous to Solid",
+      "points": 5,
+      "topic": "phase-transitions"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "At what temperature does water melt?",
+      "options": ["100°C", "0°C", "-273°C", "50°C"],
+      "correctAnswer": "0°C",
+      "points": 5,
+      "topic": "phase-transitions"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the formula for density?",
+      "options": ["ρ = m × V", "ρ = V / m", "ρ = m / V", "ρ = m + V"],
+      "correctAnswer": "ρ = m / V",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the density of water at 20°C?",
+      "options": ["0.5 g/cm³", "1 g/cm³", "10 g/cm³", "21.45 g/cm³"],
+      "correctAnswer": "1 g/cm³",
+      "points": 5,
+      "topic": "density"
+    },
+    {
+      "type": "true-false",
+      "text": "The smaller the volume for the same mass, the smaller the density.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the SI unit of density?",
+      "options": ["g/cm³", "kg/m³", "kg/L", "g/m³"],
+      "correctAnswer": "kg/m³",
+      "points": 5,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is an electrical conductor?",
+      "options": ["A substance that does not conduct current", "A substance that can transport energy or particles", "An insulator", "A semiconductor"],
+      "correctAnswer": "A substance that can transport energy or particles",
+      "points": 10,
+      "topic": "conductivity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which metal conducts electrical current best?",
+      "options": ["Copper", "Aluminum", "Silver", "Gold"],
+      "correctAnswer": "Silver",
+      "points": 5,
+      "topic": "conductivity"
+    },
+    {
+      "type": "true-false",
+      "text": "Rubber is a good electrical conductor.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "conductivity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the unit of electrical conductance G?",
+      "options": ["Ohm", "Volt", "Siemens", "Ampere"],
+      "correctAnswer": "Siemens",
+      "points": 10,
+      "topic": "conductivity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is viscosity?",
+      "options": ["The density of a substance", "The weight of a substance", "A measure of how viscous a liquid is", "Conductivity"],
+      "correctAnswer": "A measure of how viscous a liquid is",
+      "points": 10,
+      "topic": "conductivity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the ability to do work called?",
+      "options": ["Force", "Energy", "Power", "Mass"],
+      "correctAnswer": "Energy",
+      "points": 5,
+      "topic": "energy-forms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the unit of energy?",
+      "options": ["Newton (N)", "Joule (J)", "Watt (W)", "Pascal (Pa)"],
+      "correctAnswer": "Joule (J)",
+      "points": 5,
+      "topic": "energy-forms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What form of energy does a flying arrow have?",
+      "options": ["Potential energy", "Kinetic energy", "Elastic energy", "Thermal energy"],
+      "correctAnswer": "Kinetic energy",
+      "points": 5,
+      "topic": "energy-forms"
+    },
+    {
+      "type": "true-false",
+      "text": "Acoustic energy is contained in sound waves.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "energy-forms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does the law of energy conservation state?",
+      "options": ["Energy can be destroyed", "Energy can be created", "Energy can only be transformed from one form to another", "Energy is always lost"],
+      "correctAnswer": "Energy can only be transformed from one form to another",
+      "points": 15,
+      "topic": "energy-transformation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is a physical force?",
+      "options": ["A defined quantity that describes changes in motion", "A method for weighing", "A form of energy", "A unit of measurement"],
+      "correctAnswer": "A defined quantity that describes changes in motion",
+      "points": 10,
+      "topic": "forces"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What two effects can a force have on a body?",
+      "options": ["Heating and cooling", "Moving and deforming", "Enlarging and shrinking", "Lighting and darkening"],
+      "correctAnswer": "Moving and deforming",
+      "points": 10,
+      "topic": "forces"
+    },
+    {
+      "type": "true-false",
+      "text": "Forces are visible.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "forces"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which force acts between masses?",
+      "options": ["Electrical force", "Magnetic force", "Gravitational force", "Tensile force"],
+      "correctAnswer": "Gravitational force",
+      "points": 5,
+      "topic": "forces"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is Newton's second law (fundamental equation of mechanics)?",
+      "options": ["F = m × a", "F = m / a", "F = a / m", "F = m + a"],
+      "correctAnswer": "F = m × a",
+      "points": 15,
+      "topic": "newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How much force is needed to accelerate 1 kg by 1 m/s²?",
+      "options": ["1 N", "10 N", "1 kg", "1 m/s²"],
+      "correctAnswer": "1 N",
+      "points": 10,
+      "topic": "newtons-laws"
+    },
+    {
+      "type": "true-false",
+      "text": "Newton's first law states: A body remains at rest unless acted upon by an external force.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 10,
+      "topic": "newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does Newton's third law (action-reaction) state?",
+      "options": ["Every force needs a counterforce", "For every action, there is an equal and opposite reaction", "Forces cannot be added", "Forces are always positive"],
+      "correctAnswer": "For every action, there is an equal and opposite reaction",
+      "points": 10,
+      "topic": "newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the formula for gravitational force?",
+      "options": ["FG = m / g", "FG = m × g", "FG = g / m", "FG = m + g"],
+      "correctAnswer": "FG = m × g",
+      "points": 10,
+      "topic": "gravity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the acceleration due to gravity g on Earth's surface?",
+      "options": ["9.81 m/s²", "1 m/s²", "100 m/s²", "10 m/s²"],
+      "correctAnswer": "9.81 m/s²",
+      "points": 5,
+      "topic": "gravity"
+    },
+    {
+      "type": "true-false",
+      "text": "The mass of a body is less on the Moon than on Earth.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 10,
+      "topic": "gravity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is buoyancy?",
+      "options": ["A force towards Earth's center", "A force opposite to gravity", "A magnetic force", "An electrical force"],
+      "correctAnswer": "A force opposite to gravity",
+      "points": 10,
+      "topic": "buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does buoyancy NOT depend on?",
+      "options": ["Density of the medium", "Volume of displaced substance", "Color of the body", "Gravitational acceleration"],
+      "correctAnswer": "Color of the body",
+      "points": 10,
+      "topic": "buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does Archimedes' Principle state?",
+      "options": ["Buoyant force is greater than weight force", "Buoyant force equals weight force of displaced fluid", "A body always floats", "Density remains constant"],
+      "correctAnswer": "Buoyant force equals weight force of displaced fluid",
+      "points": 15,
+      "topic": "archimedes-principle"
+    },
+    {
+      "type": "true-false",
+      "text": "A stone sinks in water because buoyant force is smaller than weight force.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 10,
+      "topic": "buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "When does a body float in water?",
+      "options": ["When FA > FG", "When FA = FG (partially submerged)", "When ρbody > ρliquid", "Always if made of wood"],
+      "correctAnswer": "When FA = FG (partially submerged)",
+      "points": 10,
+      "topic": "buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is biology?",
+      "options": ["The study of machines", "The study of living beings", "The study of planets", "The study of chemicals"],
+      "correctAnswer": "The study of living beings",
+      "points": 5,
+      "topic": "biology-intro"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which is NOT a characteristic of life?",
+      "options": ["Metabolism", "Movement", "Color", "Reproduction"],
+      "correctAnswer": "Color",
+      "points": 10,
+      "topic": "characteristics-of-life"
+    },
+    {
+      "type": "true-false",
+      "text": "Unicellular organisms consist of multiple cells.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "characteristics-of-life"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is irritability in living beings?",
+      "options": ["The ability to grow", "The ability to perceive environmental stimuli and react", "The ability to move", "The ability to divide"],
+      "correctAnswer": "The ability to perceive environmental stimuli and react",
+      "points": 10,
+      "topic": "characteristics-of-life"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is binomial nomenclature?",
+      "options": ["A Latin name", "A two-part scientific name consisting of genus and species", "A German name", "An English name"],
+      "correctAnswer": "A two-part scientific name consisting of genus and species",
+      "points": 10,
+      "topic": "biology-intro"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which sub-discipline of biology studies plants?",
+      "options": ["Zoology", "Botany", "Ecology", "Microbiology"],
+      "correctAnswer": "Botany",
+      "points": 5,
+      "topic": "biology-intro"
+    }
+  ]
+}

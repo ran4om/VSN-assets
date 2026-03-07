@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturwissenschaften: Materie, Energie und Kräfte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e2e48;
+            --secondary: #fbc92d;
+            --complementary: #dc4ebf;
+            --info-blue: #2980b9;
+            --text-body: #333333;
+            --text-light: #666666;
+            --white: #ffffff;
+            --callout-definition: rgba(220, 78, 191, 0.7);
+            --callout-info: rgba(41, 128, 185, 0.7);
+            --callout-tip: rgba(251, 201, 45, 0.7);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: var(--text-body);
+            background: var(--white);
+        }
+
+        .mono {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.4em;
+            margin-top: 0.8em;
+        }
+
+        h1 { font-size: 20pt; }
+        h2 { font-size: 16pt; border-bottom: 3px solid var(--secondary); padding-bottom: 6px; margin-top: 0; }
+        h3 { font-size: 12pt; }
+        h4 { font-size: 10pt; color: var(--complementary); }
+
+        p {
+            margin-bottom: 0.5em;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-left: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        li {
+            margin-bottom: 0.2em;
+        }
+
+        strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 12pt;
+            color: var(--complementary);
+            margin-bottom: 1.5em;
+        }
+
+        .lang-label {
+            font-size: 8pt;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.3em;
+            font-weight: 600;
+        }
+
+        /* Cover Page */
+        .cover-page {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2cm;
+            background: linear-gradient(135deg, var(--primary) 0%, #2a3f5f 100%);
+            color: var(--white);
+        }
+
+        .cover-page .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 1.5em;
+            background: var(--white);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .cover-page h1 {
+            color: var(--white);
+            font-size: 28pt;
+            margin-bottom: 0.3em;
+            border: none;
+            padding: 0;
+        }
+
+        .cover-page .subtitle {
+            color: var(--secondary);
+            font-size: 14pt;
+            margin-bottom: 2em;
+        }
+
+        .cover-page .date {
+            font-size: 10pt;
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* Table of Contents */
+        .toc {
+            padding: 1.5cm;
+        }
+
+        .toc h2 {
+            margin-bottom: 0.8em;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            padding: 0.4em 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .toc .page-num {
+            color: var(--text-light);
+        }
+
+        /* Bilingual Row Layout */
+        .bilingual-row {
+            display: grid;
+            grid-template-columns: 1fr 2px 1fr;
+            gap: 1em;
+            margin: 0.8em 0;
+            break-inside: avoid;
+        }
+
+        .lang-col {
+            min-width: 0;
+        }
+
+        .divider {
+            background: var(--primary);
+            width: 2px;
+            flex-shrink: 0;
+        }
+
+        /* Full Width Elements */
+        .full-width {
+            width: 100%;
+            margin: 1em 0;
+            break-inside: avoid;
+        }
+
+        /* Callout Boxes */
+        .callout {
+            padding: 0.7em 0.9em;
+            border-radius: 6px;
+            margin: 0.5em 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .callout-definition {
+            background: var(--callout-definition);
+            color: var(--white);
+        }
+
+        .callout-info {
+            background: var(--callout-info);
+            color: var(--white);
+        }
+
+        .callout-tip {
+            background: var(--callout-tip);
+            color: var(--primary);
+        }
+
+        .callout-title {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.4em;
+            margin-bottom: 0.3em;
+            font-size: 9pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .callout-definition .callout-title { color: var(--white); }
+        .callout-info .callout-title { color: var(--white); }
+        .callout-tip .callout-title { color: var(--primary); }
+
+        .callout svg {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.6em 0;
+            font-size: 9pt;
+        }
+
+        th {
+            background: var(--primary);
+            color: var(--white);
+            padding: 6px 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 5px 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background: #f5f7fa;
+        }
+
+        tr:nth-child(odd) {
+            background: var(--white);
+        }
+
+        /* Short Tables Side by Side */
+        .tables-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+            margin: 0.8em 0;
+            break-inside: avoid;
+        }
+
+        .tables-row table {
+            margin: 0;
+        }
+
+        /* Images */
+        figure {
+            margin: 0.8em 0;
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        figcaption {
+            font-size: 8pt;
+            color: var(--text-light);
+            margin-top: 0.3em;
+            font-style: italic;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 1.5cm;
+            max-width: 100%;
+        }
+
+        .section-content {
+            margin-bottom: 1em;
+        }
+
+        /* Practice Problems & Experiments */
+        .practice-problems, .experiment {
+            padding: 0.7em;
+            border-left: 3px solid var(--secondary);
+            margin: 0.5em 0;
+        }
+
+        .experiment {
+            border-left-color: var(--info-blue);
+            background: #f0f7ff;
+        }
+
+        .practice-problems h4, .experiment h4 {
+            color: var(--primary);
+            margin-bottom: 0.3em;
+            font-size: 9pt;
+        }
+
+        .experiment h4 {
+            color: var(--info-blue);
+        }
+
+        .practice-problems ol, .experiment ol {
+            margin-left: 1em;
+            font-size: 9pt;
+        }
+
+        /* Page Breaks */
+        .page-break {
+            page-break-after: always;
+        }
+
+        .page-break-before {
+            page-break-before: always;
+        }
+
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .section-header h2 {
+            border: none;
+            font-size: 18pt;
+        }
+
+        .section-header .lang-title {
+            display: block;
+            margin-bottom: 0.3em;
+        }
+
+        .section-header .lang-title.en { color: var(--primary); }
+        .section-header .lang-title.de { color: var(--complementary); font-size: 14pt; }
+
+        /* Formula Box */
+        .formula {
+            background: #f5f5f5;
+            padding: 0.2em 0.5em;
+            border-radius: 3px;
+            font-family: 'Roboto Mono', monospace;
+            display: inline-block;
+            margin: 0.2em 0;
+            font-size: 9pt;
+        }
+
+        /* Section Divider */
+        hr.section-divider {
+            border: none;
+            border-top: 2px dashed var(--secondary);
+            margin: 1.5em 0;
+        }
+
+        /* Print Styles */
+        @media print {
+            @page {
+                size: A4;
+                margin: 1.5cm;
+            }
+
+            body {
+                font-size: 9pt;
+            }
+
+            .cover-page {
+                height: 100vh;
+                page-break-after: always;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .bilingual-row {
+                page-break-inside: avoid;
+            }
+
+            .page-break {
+                page-break-after: always;
+            }
+
+            h2 {
+                page-break-after: avoid;
+            }
+
+            .callout {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            table {
+                page-break-inside: avoid;
+            }
+
+            figure {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Page -->
+    <div class="cover-page">
+        <img src="assets/VSN_new.png" alt="VSN Logo" class="logo">
+        <h1>Naturwissenschaften</h1>
+        <p class="subtitle">Materie, Energie und Kräfte</p>
+        <p class="date">Learning Material für Prüfungsvorbereitung</p>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="toc page-break">
+        <h2>Inhaltsverzeichnis / Table of Contents</h2>
+        <ul>
+            <li><span>1. Aggregatzustände und Stoffeigenschaften / States of Matter</span><span class="page-num">3</span></li>
+            <li><span>2. Energie / Energy</span><span class="page-num">7</span></li>
+            <li><span>3. Kräfte / Forces</span><span class="page-num">10</span></li>
+            <li><span>4. Gravitationskraft und Auftrieb / Gravitational Force &amp; Buoyancy</span><span class="page-num">14</span></li>
+            <li><span>5. Grundlagen der Biologie / Fundamentals of Biology</span><span class="page-num">18</span></li>
+        </ul>
+    </div>
+
+    <!-- Section 1: States of Matter -->
+    <div class="section page-break">
+        <div class="section-header">
+            <h2>1. Aggregatzustände und Stoffeigenschaften</h2>
+            <span class="lang-title en">States of Matter and Properties of Matter</span>
+        </div>
+
+        <!-- Definition -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <p class="lang-label">English</p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    The states of matter (solid, liquid, gaseous, and plasma) influence the form and volume of substances.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <p class="lang-label">Deutsch</p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Die Aggregatzustände (fest, flüssig, gasförmig und plasmaförmig) beeinflussen Form und Volumen der Stoffe.
+                </div>
+            </div>
+        </div>
+
+        <!-- States of Matter List -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <p class="lang-label">English</p>
+                <ul>
+                    <li><strong>Solid (Fest):</strong> A solid body is either crystalline or amorphous. Atoms/molecules regularly arranged (crystals) or irregularly (amorphous like glass). Constant shape and volume.</li>
+                    <li><strong>Liquid (Flüssig):</strong> Particles close together but in stronger motion. Weak binding forces. Variable shape, constant volume.</li>
+                    <li><strong>Gaseous (Gasförmig):</strong> Particles move far apart, fill available space. Same mass occupies 1000-2000x more space than solid. Variable shape and volume.</li>
+                    <li><strong>Plasma (Plasmaförmig):</strong> Charged particles or mixture of neutral/charged particles. More than 98% of visible matter in universe is plasma. Variable shape and volume.</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <p class="lang-label">Deutsch</p>
+                <ul>
+                    <li><strong>Fest:</strong> Ein Festkörper ist kristallin oder amorph. Atome/Moleküle regelmäßig (Kristalle) oder unregelmäßig (amorph wie Glas). Konstante Form und Volumen.</li>
+                    <li><strong>Flüssig:</strong> Teilchen nahe beieinander, aber in stärkerer Bewegung. Schwache Bindungskräfte. Variable Form, konstantes Volumen.</li>
+                    <li><strong>Gasförmig:</strong> Teilchen bewegen sich weit voneinander, füllen den Raum. Gleiche Masse nimmt 1000-2000x mehr Platz ein als fest. Variable Form und Volumen.</li>
+                    <li><strong>Plasmaförmig:</strong> Geladene Teilchen oder Gemisch aus neutralen/geladenen Teilchen. Mehr als 98% der sichtbaren Materie ist Plasma. Variable Form und Volumen.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- States of Matter Image -->
+        <figure class="full-width">
+            <img src="assets/states_of_matter_particles.png" alt="States of Matter Particle Arrangement">
+            <figcaption>Particle arrangement in solid, liquid, gas, and plasma states / Teilchenanordnung in festen, flüssigen, gasförmigen und Plasmazuständen</figcaption>
+        </figure>
+
+        <!-- Temperature Info -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Additional Information
+                    </div>
+                    The state of matter depends on temperature. By adding or removing heat, a specific state can be achieved.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Zusatzinformation
+                    </div>
+                    Der Aggregatzustand hängt von der Temperatur ab. Durch Zufuhr oder Entzug von Wärme kann man einen bestimmten Zustand erreichen.
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase Transitions -->
+        <h3>Transitions between States of Matter / Übergänge zwischen Aggregatzuständen</h3>
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <ul>
+                    <li><strong>Melting (Schmelzen):</strong> Solid → Liquid</li>
+                    <li><strong>Freezing (Erstarren):</strong> Liquid → Solid</li>
+                    <li><strong>Evaporation (Verdampfen):</strong> Liquid → Gaseous</li>
+                    <li><strong>Condensation (Kondensieren):</strong> Gaseous → Liquid</li>
+                    <li><strong>Sublimation (Sublimieren):</strong> Solid → Gaseous</li>
+                    <li><strong>Resublimation (Resublimieren):</strong> Gaseous → Solid</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <ul>
+                    <li><strong>Schmelzen:</strong> Fest → Flüssig</li>
+                    <li><strong>Erstarren:</strong> Flüssig → Fest</li>
+                    <li><strong>Verdampfen:</strong> Flüssig → Gasförmig</li>
+                    <li><strong>Kondensieren:</strong> Gasförmig → Flüssig</li>
+                    <li><strong>Sublimieren:</strong> Fest → Gasförmig</li>
+                    <li><strong>Resublimieren:</strong> Gasförmig → Fest</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Phase Transition Diagram -->
+        <figure class="full-width">
+            <img src="assets/phase_transition_cycle.png" alt="Phase Transition Cycle">
+            <figcaption>Cyclic diagram showing all six phase transitions / Zyklisches Diagramm aller sechs Phasenübergänge</figcaption>
+        </figure>
+
+        <!-- Melting and Boiling Points Table -->
+        <h3>Examples of Melting and Boiling Points / Beispiele von Schmelz- und Siedepunkten</h3>
+        <table class="full-width">
+            <tr>
+                <th>Element</th>
+                <th>Melting Point (°C)</th>
+                <th>Boiling Point (°C)</th>
+                <th>Schmelzpunkt (°C)</th>
+                <th>Siedepunkt (°C)</th>
+            </tr>
+            <tr>
+                <td>Helium [He]</td>
+                <td>-272 (approx.)</td>
+                <td>-269</td>
+                <td>-272 (ca.)</td>
+                <td>-269</td>
+            </tr>
+            <tr>
+                <td>Nitrogen [N]</td>
+                <td>-210</td>
+                <td>-196</td>
+                <td>-210</td>
+                <td>-196</td>
+            </tr>
+            <tr>
+                <td>Water [H₂O]</td>
+                <td>0</td>
+                <td>100</td>
+                <td>0</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Lead [Pb]</td>
+                <td>327</td>
+                <td>1749</td>
+                <td>327</td>
+                <td>1749</td>
+            </tr>
+            <tr>
+                <td>Tungsten [W]</td>
+                <td>3422</td>
+                <td>5555</td>
+                <td>3422</td>
+                <td>5555</td>
+            </tr>
+        </table>
+
+        <!-- Density Definition -->
+        <h3>Density / Dichte</h3>
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Density is the ratio of mass <span class="mono">m</span> to volume <span class="mono">V</span>. Called density <span class="mono">ρ</span> (Greek Rho).
+                </div>
+                <p><strong>Formula:</strong> <span class="formula">ρ = m / V</span></p>
+                <p><strong>SI Unit:</strong> <span class="mono">kg/m³</span></p>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Dichte ist das Verhältnis der Masse <span class="mono">m</span> zum Volumen <span class="mono">V</span>. Bezeichnet als Dichte <span class="mono">ρ</span> (griechisches Rho).
+                </div>
+                <p><strong>Formel:</strong> <span class="formula">ρ = m / V</span></p>
+                <p><strong>SI-Einheit:</strong> <span class="mono">kg/m³</span></p>
+            </div>
+        </div>
+
+        <!-- Density Info -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Additional Information
+                    </div>
+                    Density is greater when mass is greater for same volume, or volume is smaller for same mass.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Zusatzinformation
+                    </div>
+                    Die Dichte ist größer, wenn die Masse bei gleichem Volumen größer ist bzw. das Volumen bei gleicher Masse kleiner ist.
+                </div>
+            </div>
+        </div>
+
+        <!-- Density Image -->
+        <figure class="full-width">
+            <img src="assets/density_comparison.png" alt="Density Comparison">
+            <figcaption>Objects of equal volume but different mass / Objekte gleichen Volumens aber unterschiedlicher Masse</figcaption>
+        </figure>
+
+        <!-- Density Examples -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <p><strong>Examples (at 20°C):</strong></p>
+                <ul>
+                    <li>Air: 0.0012 g/cm³ → 1.2 kg/m³</li>
+                    <li>Spruce wood: 0.5 g/cm³ → 500 kg/m³</li>
+                    <li>Water: 1 g/cm³ → 1000 kg/m³</li>
+                    <li>Platinum: 21.45 g/cm³ → 21,450 kg/m³</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <p><strong>Beispiele (bei 20°C):</strong></p>
+                <ul>
+                    <li>Luft: 0,0012 g/cm³ → 1,2 kg/m³</li>
+                    <li>Fichtenholz: 0,5 g/cm³ → 500 kg/m³</li>
+                    <li>Wasser: 1 g/cm³ → 1000 kg/m³</li>
+                    <li>Platin: 21,45 g/cm³ → 21.450 kg/m³</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Density Temperature Info -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Additional Information
+                    </div>
+                    Most substances become denser as temperature decreases because particles move closer together.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Zusatzinformation
+                    </div>
+                    Die meisten Stoffe werden mit sinkender Temperatur dichter, da die Teilchen näher zusammenrücken.
+                </div>
+            </div>
+        </div>
+
+        <!-- Experiment -->
+        <h3>Measurement of Density / Messung der Dichte</h3>
+        <div class="experiment full-width">
+            <h4>Experiment: Measuring the density of regular bodies / Experiment: Messung der Dichte regelmäßiger Körper</h4>
+            <div class="bilingual-row" style="margin: 0.5em 0;">
+                <div class="lang-col">
+                    <p><strong>Materials:</strong> Scale, ruler, matchboxes</p>
+                    <ol>
+                        <li>Measure side lengths, calculate volume</li>
+                        <li>Fill with soil, sand, sugar, flour</li>
+                        <li>Weigh each filled matchbox</li>
+                        <li>Calculate density: ρ = m/V</li>
+                    </ol>
+                </div>
+                <div class="divider"></div>
+                <div class="lang-col">
+                    <p><strong>Materialien:</strong> Waage, Lineal, Zündholzschachteln</p>
+                    <ol>
+                        <li>Seitenlängen messen, Volumen berechnen</li>
+                        <li>Füllen mit Erde, Sand, Zucker, Mehl</li>
+                        <li>Gewicht der gefüllten Schachteln wiegen</li>
+                        <li>Dichte berechnen: ρ = m/V</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conductivity -->
+        <h3>Conductivity / Leitfähigkeit</h3>
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    A conductor transports energy/particles. Conductivity describes how well a substance conducts (electricity, heat, light, magnetism).
+                </div>
+                <p>Electrical conductance <span class="mono">G</span>: How well a conductor conducts electric current. Unit: Siemens <span class="mono">[G] = S</span></p>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Ein Leiter transportiert Energie/Teilchen. Leitfähigkeit beschreibt, wie gut ein Stoff leitet (Strom, Wärme, Licht, Magnetismus).
+                </div>
+                <p>Elektrischer Leitwert <span class="mono">G</span>: Wie gut ein Leiter Strom leitet. Einheit: Siemens <span class="mono">[G] = S</span></p>
+            </div>
+        </div>
+
+        <!-- Conductivity Circuit Image -->
+        <figure class="full-width">
+            <img src="assets/conductivity_test_circuit.png" alt="Conductivity Test Circuit">
+            <figcaption>Simple circuit for testing electrical conductivity / Einfacher Stromkreis zur Prüfung der elektrischen Leitfähigkeit</figcaption>
+        </figure>
+
+        <!-- Conductor Types -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <p><strong>How electrical conduction works:</strong></p>
+                <ul>
+                    <li><strong>Conductors (metals):</strong> Free electrons move. Silver is best; copper, aluminum also good.</li>
+                    <li><strong>Insulators:</strong> Very poor conduction. Rubber, glass, porcelain, diamond, distilled water, air.</li>
+                    <li><strong>Semiconductors:</strong> Conductivity between metals and insulators. At low temp: no free carriers (insulator). At high temp: conducts better. Silicon, germanium. Used in diodes, transistors.</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <p><strong>Wie elektrische Leitung funktioniert:</strong></p>
+                <ul>
+                    <li><strong>Leiter (Metalle):</strong> Freie Elektronen bewegen sich. Silber ist am besten; Kupfer, Aluminium auch gut.</li>
+                    <li><strong>Isolatoren:</strong> Sehr schlechte Leitfähigkeit. Gummi, Glas, Porzellan, Diamant, destilliertes Wasser, Luft.</li>
+                    <li><strong>Halbleiter:</strong> Leitfähigkeit zwischen Metallen und Isolatoren. Bei niedriger Temperatur: keine freien Ladungsträger (Isolator). Bei hoher Temperatur: leitet besser. Silizium, Germanium. Verwendung in Dioden, Transistoren.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Metal Conduction Image -->
+        <figure class="full-width">
+            <img src="assets/metal_electron_conduction.png" alt="Metal Electron Conduction">
+            <figcaption>Free electrons moving in a metal lattice / Frei bewegliche Elektronen in einem Metallgitter</figcaption>
+        </figure>
+
+        <!-- Viscosity -->
+        <h3>Viscosity / Viskosität</h3>
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Viscosity is a measure of how viscous a liquid is. Honey has high viscosity, grape juice has low viscosity.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Die Viskosität ist ein Maß dafür, wie zäh eine Flüssigkeit ist. Honig hat hohe, Traubensaft geringe Viskosität.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Energy -->
+    <div class="section page-break">
+        <div class="section-header">
+            <h2>2. Energie</h2>
+            <span class="lang-title en">Energy</span>
+        </div>
+
+        <!-- Energy Definition -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <p class="lang-label">English</p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Energy is the ability to do work.
+                </div>
+                <p><strong>Unit:</strong> Joule (J)</p>
+                <p class="formula">1 J = 1 Nm = 1 Ws</p>
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Info
+                    </div>
+                    James Prescott Joule (1818-1889) investigated equivalence of mechanical work and heat. 1 J raises 1 kg water by 1°C = 4190 J.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <p class="lang-label">Deutsch</p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Energie ist die Fähigkeit, Arbeit zu verrichten.
+                </div>
+                <p><strong>Einheit:</strong> Joule (J)</p>
+                <p class="formula">1 J = 1 Nm = 1 Ws</p>
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Info
+                    </div>
+                    James Prescott Joule (1818-1889) untersuchte Gleichwertigkeit von Arbeit und Wärme. 1 J erhöht 1 kg Wasser um 1°C = 4190 J.
+                </div>
+            </div>
+        </div>
+
+        <!-- Energy Forms Image -->
+        <figure class="full-width">
+            <img src="assets/energy_forms_infographic.png" alt="Energy Forms Infographic">
+            <figcaption>Different forms of energy with examples / Verschiedene Energieformen mit Beispielen</figcaption>
+        </figure>
+
+        <!-- Energy Forms -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <p><strong>Forms of Energy:</strong></p>
+                <ul>
+                    <li><strong>Mechanical:</strong>
+                        <ul>
+                            <li>Potential: Position (pendulum, stone)</li>
+                            <li>Kinetic: Motion (arrow, train)</li>
+                            <li>Rotational: Rotation (rotor)</li>
+                            <li>Elastic: Stretching (expander)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Acoustic:</strong> Sound waves</li>
+                    <li><strong>Electrical:</strong> Distributed charges</li>
+                    <li><strong>Magnetic:</strong> Magnets, currents</li>
+                    <li><strong>Radiation:</strong> EM waves (light, X-rays)</li>
+                    <li><strong>Nuclear:</strong> Radioactive decay, fission, fusion</li>
+                    <li><strong>Thermal:</strong> Atomic/molecular movement</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <p><strong>Formen der Energie:</strong></p>
+                <ul>
+                    <li><strong>Mechanisch:</strong>
+                        <ul>
+                            <li>Lageenergie: Lage (Pendel, Stein)</li>
+                            <li>Bewegungsenergie: Bewegung (Pfeil, Zug)</li>
+                            <li>Rotationsenergie: Drehung (Rotor)</li>
+                            <li>Elastische Energie: Dehnung (Expander)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Akustisch:</strong> Schallwellen</li>
+                    <li><strong>Elektrisch:</strong> Verteile Ladungen</li>
+                    <li><strong>Magnetisch:</strong> Magnete, Ströme</li>
+                    <li><strong>Strahlungsenergie:</strong> EM-Wellen (Licht, Röntgen)</li>
+                    <li><strong>Kernenergie:</strong> Radioaktiver Zerfall, Spaltung, Fusion</li>
+                    <li><strong>Thermisch:</strong> Atom-/Molekülbewegung</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Energy Conservation -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Additional Information
+                    </div>
+                    Energy cannot be created or destroyed, only transformed from one form to another.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Zusatzinformation
+                    </div>
+                    Energie kann weder erzeugt noch vernichtet werden, nur von einer Form in eine andere umgewandelt werden.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Forces -->
+    <div class="section page-break">
+        <div class="section-header">
+            <h2>3. Kräfte</h2>
+            <span class="lang-title en">Forces</span>
+        </div>
+
+        <!-- Force Definition -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <p class="lang-label">English</p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    A force is a defined quantity that describes changes in motion. It is a vector quantity.
+                </div>
+                <p><strong>Effects of a Force:</strong></p>
+                <ul>
+                    <li><strong>Move the body:</strong> Football kicked, box lifted</li>
+                    <li><strong>Deform the body:</strong> Sitting on a ball compresses it</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <p class="lang-label">Deutsch</p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Eine Kraft ist eine definierte Größe, die Bewegungsänderungen beschreibt. Sie ist eine vektorielle Größe.
+                </div>
+                <p><strong>Wirkungen einer Kraft:</strong></p>
+                <ul>
+                    <li><strong>Bewegen:</strong> Ball treten, Kiste heben</li>
+                    <li><strong>Verformen:</strong> Auf Ball sitzen drückt ihn zusammen</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Force Effects Image -->
+        <figure class="full-width">
+            <img src="assets/force_effects_diagram.png" alt="Force Effects Diagram">
+            <figcaption>Four effects of force: acceleration, deceleration, direction change, deformation / Vier Wirkungen: Beschleunigung, Abbremsen, Richtungsänderung, Verformung</figcaption>
+        </figure>
+
+        <!-- Force Visibility Info -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Additional Information
+                    </div>
+                    Forces are not visible; one only sees their effect on the body.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Zusatzinformation
+                    </div>
+                    Kräfte sind nicht sichtbar; man sieht nur ihre Auswirkung auf den Körper.
+                </div>
+            </div>
+        </div>
+
+        <!-- Newton's Second Law -->
+        <h3>Newton's Second Law / Newtons zweites Gesetz</h3>
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Forces cause changes in motion. Force relates to mass and acceleration.
+                </div>
+                <p><strong>Formula:</strong> <span class="formula">F = m × a</span></p>
+                <p><span class="mono">F</span> = force (N), <span class="mono">m</span> = mass (kg), <span class="mono">a</span> = acceleration (m/s²)</p>
+                <p><strong>Unit:</strong> Newton <span class="mono">1 N = 1 kg·m/s²</span></p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    1 N = force to accelerate 1 kg by 1 m/s²
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Kräfte bewirken Bewegungsänderungen. Kraft steht in Zusammenhang mit Masse und Beschleunigung.
+                </div>
+                <p><strong>Formel:</strong> <span class="formula">F = m × a</span></p>
+                <p><span class="mono">F</span> = Kraft (N), <span class="mono">m</span> = Masse (kg), <span class="mono">a</span> = Beschleunigung (m/s²)</p>
+                <p><strong>Einheit:</strong> Newton <span class="mono">1 N = 1 kg·m/s²</span></p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.10 5.39z"/></svg>
+                        Definition
+                    </div>
+                    1 N = Kraft, um 1 kg um 1 m/s² zu beschleunigen
+                </div>
+            </div>
+        </div>
+
+        <!-- Newton's Axioms -->
+        <h3>Newton's Axioms / Newtons Axiome</h3>
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <ol>
+                    <li><strong>First Law (Inertia):</strong> Body at rest or uniform motion unless external force acts.</li>
+                    <li><strong>Second Law (Dynamics):</strong> <span class="formula">F = m × a</span></li>
+                    <li><strong>Third Law (Action-Reaction):</strong> Equal and opposite reaction.</li>
+                </ol>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <ol>
+                    <li><strong>Erstes Gesetz (Trägheit):</strong> Körper bleibt in Ruhe oder gleichförmiger Bewegung.</li>
+                    <li><strong>Zweites Gesetz (Dynamik):</strong> <span class="formula">F = m × a</span></li>
+                    <li><strong>Drittes Gesetz (Wechselwirkung):</strong> Gleich große, entgegengesetzte Reaktion.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Types of Forces -->
+        <h3>Types of Forces / Arten von Kräften</h3>
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <ul>
+                    <li><strong>Gravitational Force:</strong> Between masses</li>
+                    <li><strong>Electrical Force:</strong> Between charged particles</li>
+                    <li><strong>Magnetic Force:</strong> Between elementary magnets</li>
+                    <li><strong>Tensile Force:</strong> Mechanical force (swings, bridges)</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <ul>
+                    <li><strong>Gravitationskraft:</strong> Zwischen Massen</li>
+                    <li><strong>Elektrische Kraft:</strong> Zwischen geladenen Teilchen</li>
+                    <li><strong>Magnetische Kraft:</strong> Zwischen Elementarmagneten</li>
+                    <li><strong>Zugkraft:</strong> Mechanische Kraft (Schaukeln, Brücken)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: Gravitational Force & Buoyancy -->
+    <div class="section page-break">
+        <div class="section-header">
+            <h2>4. Gravitationskraft und Auftrieb</h2>
+            <span class="lang-title en">Gravitational Force &amp; Buoyancy</span>
+        </div>
+
+        <!-- Gravitational Force -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <p class="lang-label">English</p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Gravitational force (gravity/weight force) acts on Earth as attraction toward Earth's center.
+                </div>
+                <p><strong>Formula:</strong> <span class="formula">FG = m × g</span></p>
+                <p><span class="mono">g = 9.81 m/s² ≈ 10 m/s²</span> on Earth</p>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <p class="lang-label">Deutsch</p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Gravitationskraft (Schwerkraft/Gewichtskraft) wirkt auf Erde als Anziehung zum Erdmittelpunkt.
+                </div>
+                <p><strong>Formel:</strong> <span class="formula">FG = m × g</span></p>
+                <p><span class="mono">g = 9,81 m/s² ≈ 10 m/s²</span> auf der Erde</p>
+            </div>
+        </div>
+
+        <!-- Gravity Image -->
+        <figure class="full-width">
+            <img src="assets/gravitational_force_earth.png" alt="Gravitational Force on Earth">
+            <figcaption>Gravitational force acting towards Earth's center / Gravitationskraft zum Erdmittelpunkt</figcaption>
+        </figure>
+
+        <!-- Mass vs Weight -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Additional Information
+                    </div>
+                    <strong>Mass (m):</strong> Property of matter, constant everywhere, unit kg.<br>
+                    <strong>Weight (FG):</strong> Depends on location, measured in N.<br>
+                    Example: 60 kg on Earth = 600 N; on Moon: different weight force.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Zusatzinformation
+                    </div>
+                    <strong>Masse (m):</strong> Eigenschaft der Materie, überall konstant, Einheit kg.<br>
+                    <strong>Gewicht (FG):</strong> Abhängig vom Ort, gemessen in N.<br>
+                    Beispiel: 60 kg auf Erde = 600 N; auf Mond: andere Gewichtskraft.
+                </div>
+            </div>
+        </div>
+
+        <!-- Buoyancy -->
+        <h3>Buoyancy / Auftriebskraft</h3>
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path name="Definition"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Buoyancy: Force opposite to gravity. Depends on: 1) density of medium, 2) volume of displaced fluid.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Auftriebskraft: Der Schwerkraft entgegengesetzte Kraft. Hängt ab von: 1) Dichte des Mediums, 2) Volumen der verdrängten Flüssigkeit.
+                </div>
+            </div>
+        </div>
+
+        <!-- Buoyancy Image -->
+        <figure class="full-width">
+            <img src="assets/buoyancy_in_fluid.png" alt="Buoyancy in Fluid">
+            <figcaption>Buoyant force acting upward on a submerged object / Auftriebskraft wirkt nach oben auf eingetauchtes Objekt</figcaption>
+        </figure>
+
+        <!-- Archimedes' Principle -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Archimedes' Principle
+                    </div>
+                    Buoyant force = weight of displaced fluid.<br>
+                    <span class="formula">FA = ρmedium × Vdisplaced × g</span>
+                </div>
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Info
+                    </div>
+                    Archimedes (≈287-212 BC) discovered this principle.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Archimedisches Prinzip
+                    </div>
+                    Auftriebskraft = Gewicht der verdrängten Flüssigkeit.<br>
+                    <span class="formula">FA = ρmedium × Vverdrängt × g</span>
+                </div>
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Info
+                    </div>
+                    Archimedes (≈287-212 v. Chr.) entdeckte dieses Prinzip.
+                </div>
+            </div>
+        </div>
+
+        <!-- Sinking/Floating Image -->
+        <figure class="full-width">
+            <img src="assets/sinking_floating_conditions.png" alt="Sinking and Floating Conditions">
+            <figcaption>Four conditions: sinking, hovering, rising, swimming / Vier Zustände: Sinken, Schweben, Steigen, Schwimmen</figcaption>
+        </figure>
+
+        <!-- Force/Density Table -->
+        <h3>Interaction of Forces / Zusammenspiel von Kräften</h3>
+        <table class="full-width">
+            <tr>
+                <th>Condition</th>
+                <th>Force</th>
+                <th>Density</th>
+                <th>Example</th>
+                <th>Zustand</th>
+                <th>Kraft</th>
+                <th>Dichte</th>
+                <th>Beispiel</th>
+            </tr>
+            <tr>
+                <td><strong>Sinking</strong></td>
+                <td class="mono">FA &lt; FG</td>
+                <td class="mono">ρfluid &lt; ρbody</td>
+                <td>Stones</td>
+                <td><strong>Sinken</strong></td>
+                <td class="mono">FA &lt; FG</td>
+                <td class="mono">ρFl &lt; ρK</td>
+                <td>Steine</td>
+            </tr>
+            <tr>
+                <td><strong>Hovering</strong></td>
+                <td class="mono">FA = FG</td>
+                <td class="mono">ρfluid = ρbody</td>
+                <td>Fish</td>
+                <td><strong>Schweben</strong></td>
+                <td class="mono">FA = FG</td>
+                <td class="mono">ρFl = ρK</td>
+                <td>Fisch</td>
+            </tr>
+            <tr>
+                <td><strong>Rising</strong></td>
+                <td class="mono">FA &gt; FG</td>
+                <td class="mono">ρfluid &gt; ρbody</td>
+                <td>Submarine</td>
+                <td><strong>Steigen</strong></td>
+                <td class="mono">FA &gt; FG</td>
+                <td class="mono">ρFl &gt; ρK</td>
+                <td>U-Boot</td>
+            </tr>
+            <tr>
+                <td><strong>Swimming</strong></td>
+                <td class="mono">FA = FG</td>
+                <td class="mono">ρfluid &gt; ρbody</td>
+                <td>Boat</td>
+                <td><strong>Schwimmen</strong></td>
+                <td class="mono">FA = FG</td>
+                <td class="mono">ρFl &gt; ρK</td>
+                <td>Boot</td>
+            </tr>
+        </table>
+
+        <!-- Buoyancy in Gases -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Additional Information
+                    </div>
+                    Buoyancy also works in gases. Hot air balloons rise because hot air has lower density than cold air.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Zusatzinformation
+                    </div>
+                    Auftrieb wirkt auch in Gasen. Heißluftballone steigen, weil heiße Luft geringere Dichte hat als kalte Luft.
+                </div>
+            </div>
+        </div>
+
+        <!-- Volume Conversion -->
+        <h3>Volume Conversion / Volumen Umrechnung</h3>
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <ul>
+                    <li><span class="mono">1 m³ = 1000 dm³ = 1,000,000 cm³</span></li>
+                    <li><span class="mono">1 dm³ = 1 L</span></li>
+                    <li><span class="mono">1 L = 1000 ml</span></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <ul>
+                    <li><span class="mono">1 m³ = 1000 dm³ = 1.000.000 cm³</span></li>
+                    <li><span class="mono">1 dm³ = 1 L</span></li>
+                    <li><span class="mono">1 L = 1000 ml</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5: Fundamentals of Biology -->
+    <div class="section page-break">
+        <div class="section-header">
+            <h2>5. Grundlagen der Biologie</h2>
+            <span class="lang-title en">Fundamentals of Biology</span>
+        </div>
+
+        <!-- Biology Definition -->
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <p class="lang-label">English</p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Biology: Branch of natural sciences dealing with living beings (organisms). Studies structure, development, relationships with environment.
+                </div>
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Info
+                    </div>
+                    A living elephant has characteristics distinguishing it from non-living objects. Appearance alone doesn't make something alive.
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <p class="lang-label">Deutsch</p>
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Biologie: Teil der Naturwissenschaften, der sich mit Lebewesen (Organismen) beschäftigt. Erforscht Aufbau, Entwicklung, Beziehungen zur Umwelt.
+                </div>
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Info
+                    </div>
+                    Ein lebender Elefant hat Eigenschaften, die ihn von nicht-lebenden Objekten unterscheiden. Aussehen allein macht nichts lebendig.
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-disciplines Table -->
+        <h3>Important Sub-disciplines / Wichtige Teildisziplinen</h3>
+        <table class="full-width">
+            <tr>
+                <th>Sub-discipline</th>
+                <th>Greek Root</th>
+                <th>Subject</th>
+                <th>Teildisziplin</th>
+                <th>Griech. Wurzel</th>
+                <th>Gegenstand</th>
+            </tr>
+            <tr>
+                <td><strong>Zoology</strong></td>
+                <td class="mono">zóon = animal</td>
+                <td>Animals</td>
+                <td><strong>Zoologie</strong></td>
+                <td class="mono">zóon = Tier</td>
+                <td>Tiere</td>
+            </tr>
+            <tr>
+                <td><strong>Botany</strong></td>
+                <td class="mono">botaniké = plant</td>
+                <td>Plants</td>
+                <td><strong>Botanik</strong></td>
+                <td class="mono">botaniké = Pflanze</td>
+                <td>Pflanzen</td>
+            </tr>
+            <tr>
+                <td><strong>Microbiology</strong></td>
+                <td class="mono">mikrós = small</td>
+                <td>Microorganisms</td>
+                <td><strong>Mikrobiologie</strong></td>
+                <td class="mono">mikrós = klein</td>
+                <td>Kleinstlebewesen</td>
+            </tr>
+            <tr>
+                <td><strong>Ecology</strong></td>
+                <td class="mono">oikos = household</td>
+                <td>Relationships to environment</td>
+                <td><strong>Ökologie</strong></td>
+                <td class="mono">oikos = Haushalt</td>
+                <td>Beziehungen zur Umwelt</td>
+            </tr>
+        </table>
+
+        <!-- Binomial Nomenclature -->
+        <h3>Binomial Nomenclature / Binäre Nomenklatur</h3>
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Two-part scientific name: genus + species. Example: <em>Homo sapiens</em>. If species unknown: <em>Vibrio sp.</em>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <div class="callout callout-definition">
+                    <div class="callout-title">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Definition
+                    </div>
+                    Zweiteiliger wissenschaftlicher Name: Gattung + Art. Beispiel: <em>Homo sapiens</em>. Wenn Art unbekannt: <em>Vibrio sp.</em>
+                </div>
+            </div>
+        </div>
+
+        <!-- Characteristics of Life Image -->
+        <figure class="full-width">
+            <img src="assets/characteristics_of_life.png" alt="Characteristics of Life">
+            <figcaption>Six characteristics that distinguish living beings from inanimate matter / Sechs Kennzeichen des Lebens</figcaption>
+        </figure>
+
+        <!-- Characteristics of Life -->
+        <h3>Characteristics of Life / Kennzeichen des Lebens</h3>
+        <div class="bilingual-row">
+            <div class="lang-col">
+                <ol>
+                    <li><strong>Cellular structure:</strong> All living beings made of one or more cells (unicellular: bacteria; multicellular: humans).</li>
+                    <li><strong>Metabolism:</strong> Take in substances, chemically convert them, release waste products.</li>
+                    <li><strong>Irritability:</strong> Perceive environmental stimuli and react (e.g., pupils in sunlight).</li>
+                    <li><strong>Reproduction:</strong> Produce offspring autonomously, transfer genetic material.</li>
+                    <li><strong>Movement:</strong> All living beings move (some only visible under microscope).</li>
+                    <li><strong>Growth:</strong> Multicellular organisms grow through cell division.</li>
+                </ol>
+            </div>
+            <div class="divider"></div>
+            <div class="lang-col">
+                <ol>
+                    <li><strong>Zellulärer Aufbau:</strong> Alle Lebewesen aus einer oder mehreren Zellen (Einzeller: Bakterien; Vielzeller: Mensch).</li>
+                    <li><strong>Stoffwechsel:</strong> Stoffe aufnehmen, chemisch umwandeln, Abfallstoffe abgeben.</li>
+                    <li><strong>Reizbarkeit:</strong> Umweltreize wahrnehmen und reagieren (z.B. Pupillen im Sonnenlicht).</li>
+                    <li><strong>Fortpflanzung:</strong> Eigenständig Nachkommen erzeugen, Erbsubstanz übertragen.</li>
+                    <li><strong>Bewegung:</strong> Alle Lebewesen bewegen sich (manche nur unter Mikroskop sichtbar).</li>
+                    <li><strong>Wachstum:</strong> Vielzeller wachsen durch Zellteilung.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

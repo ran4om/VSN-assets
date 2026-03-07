@@ -1,0 +1,349 @@
+{
+  "title": "Naturwissenschaften: Materie, Energie und Kräfte - Quiz (Deutsch)",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Aggregatzustand hat eine konstante Form und ein konstantes Volumen?",
+      "options": ["Flüssig", "Gasförmig", "Fest", "Plasmaförmig"],
+      "correctAnswer": "Fest",
+      "points": 5,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was versteht man unter einem amorphen Festkörper?",
+      "options": ["Ein Kristall mit regelmäßiger Anordnung", "Ein Körper mit unregelmäßig angeordneten Atomen", "Ein gasförmiger Stoff", "Eine Flüssigkeit"],
+      "correctAnswer": "Ein Körper mit unregelmäßig angeordneten Atomen",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "true-false",
+      "text": "In einer Flüssigkeit haben die Teilchen mehr Bewegungsfreiheit als in einem Festkörper.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wovon hängt der Aggregatzustand eines Stoffes hauptsächlich ab?",
+      "options": ["Von der Farbe", "Von der Temperatur", "Von der Masse", "Vom Volumen"],
+      "correctAnswer": "Von der Temperatur",
+      "points": 5,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie heißt der Übergang von fest zu flüssig?",
+      "options": ["Verdampfen", "Schmelzen", "Erstarren", "Kondensieren"],
+      "correctAnswer": "Schmelzen",
+      "points": 5,
+      "topic": "phase-transitions"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Übergang heißt 'Resublimieren'?",
+      "options": ["Fest zu Gasförmig", "Gasförmig zu Fest", "Flüssig zu Gasförmig", "Gasförmig zu Flüssig"],
+      "correctAnswer": "Gasförmig zu Fest",
+      "points": 5,
+      "topic": "phase-transitions"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei welcher Temperatur schmilzt Wasser?",
+      "options": ["100°C", "0°C", "-273°C", "50°C"],
+      "correctAnswer": "0°C",
+      "points": 5,
+      "topic": "phase-transitions"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist die Formel für die Dichte?",
+      "options": ["ρ = m × V", "ρ = V / m", "ρ = m / V", "ρ = m + V"],
+      "correctAnswer": "ρ = m / V",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Dichte hat Wasser bei 20°C?",
+      "options": ["0,5 g/cm³", "1 g/cm³", "10 g/cm³", "21,45 g/cm³"],
+      "correctAnswer": "1 g/cm³",
+      "points": 5,
+      "topic": "density"
+    },
+    {
+      "type": "true-false",
+      "text": "Je kleiner das Volumen bei gleicher Masse, desto kleiner ist die Dichte.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist die SI-Einheit der Dichte?",
+      "options": ["g/cm³", "kg/m³", "kg/L", "g/m³"],
+      "correctAnswer": "kg/m³",
+      "points": 5,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was versteht man unter einem elektrischen Leiter?",
+      "options": ["Ein Stoff, der keinen Strom leitet", "Ein Stoff, der Energie oder Teilchen transportieren kann", "Ein Isolator", "Ein Halbleiter"],
+      "correctAnswer": "Ein Stoff, der Energie oder Teilchen transportieren kann",
+      "points": 10,
+      "topic": "conductivity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches Metall leitet elektrischen Strom am besten?",
+      "options": ["Kupfer", "Aluminium", "Silber", "Gold"],
+      "correctAnswer": "Silber",
+      "points": 5,
+      "topic": "conductivity"
+    },
+    {
+      "type": "true-false",
+      "text": "Gummi ist ein guter elektrischer Leiter.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "conductivity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist die Einheit des elektrischen Leitwerts G?",
+      "options": ["Ohm", "Volt", "Siemens", "Ampere"],
+      "correctAnswer": "Siemens",
+      "points": 10,
+      "topic": "conductivity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was versteht man unter Viskosität?",
+      "options": ["Die Dichte eines Stoffes", "Das Gewicht eines Stoffes", "Ein Maß für die Zähflüssigkeit einer Flüssigkeit", "Die Leitfähigkeit"],
+      "correctAnswer": "Ein Maß für die Zähflüssigkeit einer Flüssigkeit",
+      "points": 10,
+      "topic": "conductivity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist die Fähigkeit, Arbeit zu verrichten?",
+      "options": ["Kraft", "Energie", "Leistung", "Masse"],
+      "correctAnswer": "Energie",
+      "points": 5,
+      "topic": "energy-forms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Einheit hat Energie?",
+      "options": ["Newton (N)", "Joule (J)", "Watt (W)", "Pascal (Pa)"],
+      "correctAnswer": "Joule (J)",
+      "points": 5,
+      "topic": "energy-forms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Energieform hat ein fliegender Pfeil?",
+      "options": ["Lageenergie", "Bewegungsenergie", "Elastische Energie", "Thermische Energie"],
+      "correctAnswer": "Bewegungsenergie",
+      "points": 5,
+      "topic": "energy-forms"
+    },
+    {
+      "type": "true-false",
+      "text": "Elektrische Energie ist in Schallwellen enthalten.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "energy-forms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was besagt das Gesetz der Energieerhaltung?",
+      "options": ["Energie kann vernichtet werden", "Energie kann erzeugt werden", "Energie kann nur von einer Form in eine andere umgewandelt werden", "Energie geht immer verloren"],
+      "correctAnswer": "Energie kann nur von einer Form in eine andere umgewandelt werden",
+      "points": 15,
+      "topic": "energy-transformation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist eine physikalische Kraft?",
+      "options": ["Eine definierte Größe, die Bewegungsänderungen beschreibt", "Eine Methode zum Wiegen", "Eine Form von Energie", "Eine Maßeinheit"],
+      "correctAnswer": "Eine definierte Größe, die Bewegungsänderungen beschreibt",
+      "points": 10,
+      "topic": "forces"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche zwei Wirkungen kann eine Kraft auf einen Körper haben?",
+      "options": ["Erhitzen und Abkühlen", "Bewegen und Verformen", "Vergrößern und Verkleinern", "Leuchten und Dunkeln"],
+      "correctAnswer": "Bewegen und Verformen",
+      "points": 10,
+      "topic": "forces"
+    },
+    {
+      "type": "true-false",
+      "text": "Kräfte sind sichtbar.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "forces"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Kraft wirkt zwischen Massen?",
+      "options": ["Elektrische Kraft", "Magnetische Kraft", "Gravitationskraft", "Zugkraft"],
+      "correctAnswer": "Gravitationskraft",
+      "points": 5,
+      "topic": "forces"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist die Grundgleichung der Mechanik (Newtons zweites Gesetz)?",
+      "options": ["F = m × a", "F = m / a", "F = a / m", "F = m + a"],
+      "correctAnswer": "F = m × a",
+      "points": 15,
+      "topic": "newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie viel Kraft ist nötig, um 1 kg um 1 m/s² zu beschleunigen?",
+      "options": ["1 N", "10 N", "1 kg", "1 m/s²"],
+      "correctAnswer": "1 N",
+      "points": 10,
+      "topic": "newtons-laws"
+    },
+    {
+      "type": "true-false",
+      "text": "Newtons erstes Gesetz besagt: Ein Körper bleibt in Ruhe, solange keine äußere Kraft auf ihn einwirkt.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 10,
+      "topic": "newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was besagt Newtons drittes Gesetz (Wechselwirkungsprinzip)?",
+      "options": ["Jede Kraft braucht eine Gegenkraft", "Zu jeder Aktion gibt es eine gleich große, aber entgegengesetzte Reaktion", "Kräfte können nicht addiert werden", "Kräfte sind immer positiv"],
+      "correctAnswer": "Zu jeder Aktion gibt es eine gleich große, aber entgegengesetzte Reaktion",
+      "points": 10,
+      "topic": "newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist die Formel für die Gewichtskraft?",
+      "options": ["FG = m / g", "FG = m × g", "FG = g / m", "FG = m + g"],
+      "correctAnswer": "FG = m × g",
+      "points": 10,
+      "topic": "gravity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie groß ist die Erdbeschleunigung g auf der Erdoberfläche?",
+      "options": ["9,81 m/s²", "1 m/s²", "100 m/s²", "10 m/s²"],
+      "correctAnswer": "9,81 m/s²",
+      "points": 5,
+      "topic": "gravity"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Masse eines Körpers ist auf dem Mond geringer als auf der Erde.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 10,
+      "topic": "gravity"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist die Auftriebskraft?",
+      "options": ["Eine Kraft in Richtung Erdmittelpunkt", "Eine der Schwerkraft entgegengesetzte Kraft", "Eine magnetische Kraft", "Eine elektrische Kraft"],
+      "correctAnswer": "Eine der Schwerkraft entgegengesetzte Kraft",
+      "points": 10,
+      "topic": "buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wovon hängt die Auftriebskraft NICHT ab?",
+      "options": ["Von der Dichte des Mediums", "Vom Volumen des verdrängten Stoffes", "Von der Farbe des Körpers", "Von der Erdbeschleunigung"],
+      "correctAnswer": "Von der Farbe des Körpers",
+      "points": 10,
+      "topic": "buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was besagt das Archimedische Prinzip?",
+      "options": ["Die Auftriebskraft ist größer als die Gewichtskraft", "Die Auftriebskraft ist gleich der Gewichtskraft der verdrängten Flüssigkeit", "Ein Körper schwimmt immer", "Die Dichte bleibt konstant"],
+      "correctAnswer": "Die Auftriebskraft ist gleich der Gewichtskraft der verdrängten Flüssigkeit",
+      "points": 15,
+      "topic": "archimedes-principle"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Stein sinkt im Wasser, weil die Auftriebskraft kleiner ist als die Gewichtskraft.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 10,
+      "topic": "buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wann schwimmt ein Körper im Wasser?",
+      "options": ["Wenn FA > FG", "Wenn FA = FG (teilweise eingetaucht)", "Wenn ρKörper > ρFlüssigkeit", "Immer, wenn er aus Holz ist"],
+      "correctAnswer": "Wenn FA = FG (teilweise eingetaucht)",
+      "points": 10,
+      "topic": "buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist Biologie?",
+      "options": ["Die Lehre von Maschinen", "Die Lehre von Lebewesen", "Die Lehre von Planeten", "Die Lehre von Chemikalien"],
+      "correctAnswer": "Die Lehre von Lebewesen",
+      "points": 5,
+      "topic": "biology-intro"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches ist KEIN Kennzeichen des Lebens?",
+      "options": ["Stoffwechsel", "Bewegung", "Farbe", "Fortpflanzung"],
+      "correctAnswer": "Farbe",
+      "points": 10,
+      "topic": "characteristics-of-life"
+    },
+    {
+      "type": "true-false",
+      "text": "Einzeller bestehen aus mehreren Zellen.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "characteristics-of-life"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was versteht man unter Reizbarkeit bei Lebewesen?",
+      "options": ["Die Fähigkeit zu wachsen", "Die Fähigkeit, Umweltreize wahrzunehmen und zu reagieren", "Die Fähigkeit sich zu bewegen", "Die Fähigkeit sich zu teilen"],
+      "correctAnswer": "Die Fähigkeit, Umweltreize wahrzunehmen und zu reagieren",
+      "points": 10,
+      "topic": "characteristics-of-life"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist die binäre Nomenklatur?",
+      "options": ["Ein lateinischer Name", "Ein zweiteiliger wissenschaftlicher Name aus Gattung und Art", "Ein deutscher Name", "Ein englischer Name"],
+      "correctAnswer": "Ein zweiteiliger wissenschaftlicher Name aus Gattung und Art",
+      "points": 10,
+      "topic": "biology-intro"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Teildisziplin der Biologie untersucht Pflanzen?",
+      "options": ["Zoologie", "Botanik", "Ökologie", "Mikrobiologie"],
+      "correctAnswer": "Botanik",
+      "points": 5,
+      "topic": "biology-intro"
+    }
+  ]
+}
