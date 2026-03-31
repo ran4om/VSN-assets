@@ -1,0 +1,195 @@
+<svg width="2480" height="3508" viewBox="0 0 2480 3508" fill="#ffffff" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xmlns="http://www.w3.org/2000/svg">
+    
+    <!-- Background -->
+    <rect width="2480" height="3508" fill="#ffffff"/>
+
+    <!-- Definitions for Arrow Markers -->
+    <defs>
+        <!-- Yellow Arrow -->
+        <marker id="arrowYellow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#EAB308" />
+        </marker>
+        <!-- Green Arrow -->
+        <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#22C55E" />
+        </marker>
+        <!-- Red Arrow -->
+        <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#EF4444" />
+        </marker>
+        
+        <!-- Subtle Drop Shadow for Cards -->
+        <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+            <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.06"/>
+        </filter>
+    </defs>
+
+    <!-- ==================== HEADER ==================== -->
+    <g id="Header">
+        <text x="1240" y="180" font-size="76" font-weight="900" fill="#0B2545" text-anchor="middle" letter-spacing="2">VERÄNDERUNGEN IN DER BILANZ</text>
+        <text x="1240" y="270" font-size="48" font-weight="500" fill="#4B5563" text-anchor="middle">4 Types with T-Accounts</text>
+    </g>
+
+
+    <!-- ==================== CARD 1: AKTIVTAUSCH ==================== -->
+    <g id="Card1" transform="translate(140, 400)">
+        <!-- Card Background -->
+        <rect width="1050" height="1325" rx="24" fill="#ffffff" stroke="#E5E7EB" stroke-width="4" filter="url(#shadow)"/>
+        <!-- Yellow Left Border -->
+        <path d="M 0 24 C 0 10.745 10.745 0 24 0 L 30 0 L 30 1325 L 24 1325 C 10.745 1325 0 1314.255 0 1301 Z" fill="#EAB308"/>
+        
+        <!-- Card Title -->
+        <text x="70" y="90" font-size="38" font-weight="bold" fill="#1F2937">1. AKTIVTAUSCH - Bilanzsumme bleibt gleich</text>
+        
+        <!-- T-Account 1: Bank -->
+        <text x="275" y="240" font-size="36" font-weight="bold" fill="#374151" text-anchor="middle">Bank</text>
+        <line x1="95" y1="280" x2="455" y2="280" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <line x1="275" y1="280" x2="275" y2="600" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <text x="185" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+        <text x="365" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+        <text x="365" y="440" font-size="36" font-weight="bold" fill="#1F2937" text-anchor="middle">- 5.000</text>
+        
+        <!-- T-Account 2: Kassa -->
+        <text x="775" y="240" font-size="36" font-weight="bold" fill="#374151" text-anchor="middle">Kassa</text>
+        <line x1="595" y1="280" x2="955" y2="280" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <line x1="775" y1="280" x2="775" y2="600" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <text x="685" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+        <text x="865" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+        <text x="685" y="440" font-size="36" font-weight="bold" fill="#1F2937" text-anchor="middle">+ 5.000</text>
+
+        <!-- Arrow: Bank Haben -> Kassa Soll -->
+        <path d="M 450 425 Q 525 350 595 425" fill="none" stroke="#EAB308" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowYellow)"/>
+
+        <!-- Formula -->
+        <rect x="225" y="1150" width="600" height="110" rx="55" fill="#F3F4F6"/>
+        <text x="525" y="1222" font-size="44" font-weight="bold" fill="#1F2937" text-anchor="middle">Aktiva ↓ + Aktiva ↑ = Ø</text>
+    </g>
+
+
+    <!-- ==================== CARD 2: PASSIVTAUSCH ==================== -->
+    <g id="Card2" transform="translate(1290, 400)">
+        <!-- Card Background -->
+        <rect width="1050" height="1325" rx="24" fill="#ffffff" stroke="#E5E7EB" stroke-width="4" filter="url(#shadow)"/>
+        <!-- Yellow Left Border -->
+        <path d="M 0 24 C 0 10.745 10.745 0 24 0 L 30 0 L 30 1325 L 24 1325 C 10.745 1325 0 1314.255 0 1301 Z" fill="#EAB308"/>
+        
+        <!-- Card Title -->
+        <text x="70" y="90" font-size="38" font-weight="bold" fill="#1F2937">2. PASSIVTAUSCH - Bilanzsumme bleibt gleich</text>
+        
+        <!-- T-Account 1: Kurzfr. Verb -->
+        <text x="275" y="240" font-size="36" font-weight="bold" fill="#374151" text-anchor="middle">Kurzfr. Verb</text>
+        <line x1="95" y1="280" x2="455" y2="280" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <line x1="275" y1="280" x2="275" y2="600" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <text x="185" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+        <text x="365" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+        <text x="185" y="440" font-size="36" font-weight="bold" fill="#1F2937" text-anchor="middle">- 3.000</text>
+        
+        <!-- T-Account 2: Langfr. Verb -->
+        <text x="775" y="240" font-size="36" font-weight="bold" fill="#374151" text-anchor="middle">Langfr. Verb</text>
+        <line x1="595" y1="280" x2="955" y2="280" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <line x1="775" y1="280" x2="775" y2="600" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <text x="685" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+        <text x="865" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+        <text x="865" y="440" font-size="36" font-weight="bold" fill="#1F2937" text-anchor="middle">+ 3.000</text>
+
+        <!-- Arrow: Kurzfr Soll -> Langfr Haben (Swoops under) -->
+        <path d="M 185 470 C 185 700, 865 700, 865 470" fill="none" stroke="#EAB308" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowYellow)"/>
+
+        <!-- Formula -->
+        <rect x="225" y="1150" width="600" height="110" rx="55" fill="#F3F4F6"/>
+        <text x="525" y="1222" font-size="44" font-weight="bold" fill="#1F2937" text-anchor="middle">Passiva ↓ + Passiva ↑ = Ø</text>
+    </g>
+
+
+    <!-- ==================== CARD 3: BILANZVERLÄNGERUNG ==================== -->
+    <g id="Card3" transform="translate(140, 1825)">
+        <!-- Card Background -->
+        <rect width="1050" height="1325" rx="24" fill="#ffffff" stroke="#E5E7EB" stroke-width="4" filter="url(#shadow)"/>
+        <!-- Green Left Border -->
+        <path d="M 0 24 C 0 10.745 10.745 0 24 0 L 30 0 L 30 1325 L 24 1325 C 10.745 1325 0 1314.255 0 1301 Z" fill="#22C55E"/>
+        
+        <!-- Card Title -->
+        <text x="70" y="90" font-size="38" font-weight="bold" fill="#1F2937">3. BILANZVERLÄNGERUNG - Bilanzsumme ↑</text>
+        
+        <!-- T-Account 1: Maschine (Aktiva) -->
+        <text x="275" y="240" font-size="36" font-weight="bold" fill="#374151" text-anchor="middle">Maschine (Aktiva)</text>
+        <line x1="95" y1="280" x2="455" y2="280" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <line x1="275" y1="280" x2="275" y2="600" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <text x="185" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+        <text x="365" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+        <text x="185" y="440" font-size="36" font-weight="bold" fill="#1F2937" text-anchor="middle">+ 5.000</text>
+        
+        <!-- T-Account 2: Lieferverb. (Passiva) -->
+        <text x="775" y="240" font-size="36" font-weight="bold" fill="#374151" text-anchor="middle">Lieferverb. (Passiva)</text>
+        <line x1="595" y1="280" x2="955" y2="280" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <line x1="775" y1="280" x2="775" y2="600" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <text x="685" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+        <text x="865" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+        <text x="865" y="440" font-size="36" font-weight="bold" fill="#1F2937" text-anchor="middle">+ 5.000</text>
+
+        <!-- Arrows Up (Green) -->
+        <line x1="90" y1="460" x2="90" y2="380" stroke="#22C55E" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowGreen)"/>
+        <line x1="960" y1="460" x2="960" y2="380" stroke="#22C55E" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowGreen)"/>
+
+        <!-- Formula -->
+        <rect x="225" y="1150" width="600" height="110" rx="55" fill="#F3F4F6"/>
+        <text x="525" y="1222" font-size="44" font-weight="bold" fill="#1F2937" text-anchor="middle">Aktiva ↑ + Passiva ↑ = ↑</text>
+    </g>
+
+
+    <!-- ==================== CARD 4: BILANZVERKÜRZUNG ==================== -->
+    <g id="Card4" transform="translate(1290, 1825)">
+        <!-- Card Background -->
+        <rect width="1050" height="1325" rx="24" fill="#ffffff" stroke="#E5E7EB" stroke-width="4" filter="url(#shadow)"/>
+        <!-- Red Left Border -->
+        <path d="M 0 24 C 0 10.745 10.745 0 24 0 L 30 0 L 30 1325 L 24 1325 C 10.745 1325 0 1314.255 0 1301 Z" fill="#EF4444"/>
+        
+        <!-- Card Title -->
+        <text x="70" y="90" font-size="38" font-weight="bold" fill="#1F2937">4. BILANZVERKÜRZUNG - Bilanzsumme ↓</text>
+        
+        <!-- T-Account 1: Bank (Aktiva) -->
+        <text x="275" y="240" font-size="36" font-weight="bold" fill="#374151" text-anchor="middle">Bank (Aktiva)</text>
+        <line x1="95" y1="280" x2="455" y2="280" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <line x1="275" y1="280" x2="275" y2="600" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <text x="185" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+        <text x="365" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+        <text x="365" y="440" font-size="36" font-weight="bold" fill="#1F2937" text-anchor="middle">- 3.000</text>
+        
+        <!-- T-Account 2: Darlehen (Passiva) -->
+        <text x="775" y="240" font-size="36" font-weight="bold" fill="#374151" text-anchor="middle">Darlehen (Passiva)</text>
+        <line x1="595" y1="280" x2="955" y2="280" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <line x1="775" y1="280" x2="775" y2="600" stroke="#4B5563" stroke-width="5" stroke-linecap="round"/>
+        <text x="685" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+        <text x="865" y="330" font-size="28" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+        <text x="685" y="440" font-size="36" font-weight="bold" fill="#1F2937" text-anchor="middle">- 3.000</text>
+
+        <!-- Arrows Down (Red) -->
+        <line x1="460" y1="380" x2="460" y2="460" stroke="#EF4444" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowRed)"/>
+        <line x1="590" y1="380" x2="590" y2="460" stroke="#EF4444" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowRed)"/>
+
+        <!-- Formula -->
+        <rect x="225" y="1150" width="600" height="110" rx="55" fill="#F3F4F6"/>
+        <text x="525" y="1222" font-size="44" font-weight="bold" fill="#1F2937" text-anchor="middle">Aktiva ↓ + Passiva ↓ = ↓</text>
+    </g>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <g id="Footer">
+        <!-- Footer Box -->
+        <rect x="140" y="3200" width="2200" height="200" rx="40" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="4"/>
+        
+        <!-- Main Footer Text -->
+        <text x="1240" y="3275" font-size="46" font-weight="800" fill="#374151" text-anchor="middle">Merke: Nur 3 und 4 beeinflussen den Erfolg!</text>
+        
+        <!-- Legend Items -->
+        <!-- Green: Success -->
+        <text x="500" y="3355" font-size="42" font-weight="bold" fill="#16A34A" text-anchor="middle">G↑ = Erfolg erhöhend</text>
+        
+        <!-- Yellow: Neutral -->
+        <text x="1240" y="3355" font-size="42" font-weight="bold" fill="#D97706" text-anchor="middle">GØ = neutral</text>
+        
+        <!-- Red: Decrease -->
+        <text x="1980" y="3355" font-size="42" font-weight="bold" fill="#DC2626" text-anchor="middle">G↓</text>
+    </g>
+
+</svg>

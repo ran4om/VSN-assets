@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNCO - Unternehmensrechnung | Prüfungsvorbereitung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e2e48;
+            --secondary: #fbc92d;
+            --complementary: #dc4ebf;
+            --info-blue: #2980b9;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: var(--text-dark);
+            background: var(--white);
+        }
+
+        .bilingual {
+            display: flex;
+            width: 100%;
+        }
+
+        .bilingual-col {
+            width: 50%;
+            padding: 15px 20px;
+        }
+
+        .bilingual-col:first-child {
+            border-right: 2px solid var(--secondary);
+        }
+
+        h1 {
+            font-size: 24pt;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 16pt;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 20px 0 12px 0;
+            padding-bottom: 5px;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        h3 {
+            font-size: 13pt;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 15px 0 8px 0;
+        }
+
+        h4 {
+            font-size: 11pt;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 12px 0 6px 0;
+        }
+
+        p {
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 8px 0 12px 25px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .mono {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 10pt;
+        }
+
+        .callout {
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .callout-definition {
+            background-color: rgba(220, 78, 191, 0.7);
+            border-left: 4px solid var(--complementary);
+        }
+
+        .callout-info {
+            background-color: rgba(41, 128, 185, 0.7);
+            border-left: 4px solid var(--info-blue);
+        }
+
+        .callout-tip {
+            background-color: rgba(251, 201, 45, 0.7);
+            border-left: 4px solid var(--secondary);
+        }
+
+        .callout-title {
+            font-weight: 700;
+            font-size: 10pt;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .callout-definition .callout-title,
+        .callout-definition p,
+        .callout-definition li {
+            color: var(--white);
+        }
+
+        .callout-info .callout-title,
+        .callout-info p,
+        .callout-info li {
+            color: var(--white);
+        }
+
+        .callout-tip .callout-title,
+        .callout-tip p,
+        .callout-tip li {
+            color: var(--primary);
+        }
+
+        .callout-content {
+            font-size: 10pt;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 9pt;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: var(--white);
+            font-weight: 600;
+            padding: 8px 10px;
+            text-align: left;
+        }
+
+        td {
+            padding: 6px 10px;
+            border: 1px solid #cccccc;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        .formula {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-size: 11pt;
+            font-weight: 500;
+            text-align: center;
+            border: 1px solid #cccccc;
+        }
+
+        .highlight {
+            color: var(--complementary);
+            font-weight: 600;
+        }
+
+        .accent {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .page-break {
+            page-break-after: always;
+            break-after: page;
+        }
+
+        .cover-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary) 0%, #2c3e50 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 40px;
+        }
+
+        .cover-logo {
+            width: 200px;
+            margin-bottom: 30px;
+        }
+
+        .cover-title {
+            font-size: 32pt;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .cover-subtitle {
+            font-size: 18pt;
+            color: var(--secondary);
+            margin-bottom: 40px;
+        }
+
+        .cover-date {
+            font-size: 12pt;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .section-header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 15px 20px;
+            margin: -15px -20px 15px -20px;
+        }
+
+        .two-col {
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+        }
+
+        .two-col > div {
+            flex: 1;
+        }
+
+        .example-box {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 12px;
+            margin: 10px 0;
+        }
+
+        .example-box .journal-entry {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 10pt;
+            padding: 8px;
+            background-color: var(--white);
+            border-radius: 4px;
+            margin: 6px 0;
+        }
+
+        .vat-formula {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .vat-formula-item {
+            background-color: var(--white);
+            border: 2px solid var(--secondary);
+            border-radius: 6px;
+            padding: 10px 15px;
+            text-align: center;
+            min-width: 140px;
+        }
+
+        .vat-formula-item .rate {
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .vat-formula-item .calc {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 9pt;
+            margin-top: 4px;
+        }
+
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .toc {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .toc h2 {
+            border-bottom: none;
+            margin-bottom: 15px;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .toc li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc .page-num {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 15mm;
+            }
+
+            body {
+                font-size: 10pt;
+            }
+
+            .page-break {
+                page-break-after: always;
+            }
+
+            .callout {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            table {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            th {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            tr:nth-child(even) {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .cover-page {
+                min-height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1: COVER -->
+    <div class="page-break">
+        <div class="cover-page">
+            <img src="assets/VSN_new.png" alt="VSN Logo" class="cover-logo">
+            <h1 class="cover-title">UNCO</h1>
+            <h2 class="cover-subtitle">Unternehmensrechnung | Accounting</h2>
+            <p style="font-size: 14pt; margin-bottom: 30px;">Prüfungsvorbereitung | Exam Preparation</p>
+            <p class="cover-date">VSN Learning Material</p>
+        </div>
+    </div>
+
+    <!-- PAGE 2: INTRODUCTION -->
+    <div class="page-break">
+        <div style="padding: 20px;">
+            <div class="section-header">
+                <h1 style="color: white; font-size: 18pt;">Einführung | Introduction</h1>
+            </div>
+
+            <div class="bilingual">
+                <div class="bilingual-col">
+                    <h2>Welcome to UNCO</h2>
+                    <p>This document is designed to help you prepare for your university-level exam in Accounting (Unternehmensrechnung). It covers all essential topics including:</p>
+                    <ul>
+                        <li>Double-entry bookkeeping</li>
+                        <li>Balance Sheet (Bilanz)</li>
+                        <li>Income Statement (G&V)</li>
+                        <li>Account Classes (EKR)</li>
+                        <li>Journal Entries (Buchungssätze)</li>
+                        <li>VAT (Umsatzsteuer)</li>
+                    </ul>
+                </div>
+                <div class="bilingual-col">
+                    <h2>Willkommen bei UNCO</h2>
+                    <p>Dieses Dokument ist darauf ausgelegt, Sie bei der Vorbereitung auf Ihre universitäre Prüfung in Unternehmensrechnung zu unterstützen. Es behandelt alle wesentlichen Themen:</p>
+                    <ul>
+                        <li>Doppelte Buchführung</li>
+                        <li>Bilanz</li>
+                        <li>Gewinn- und Verlustrechnung</li>
+                        <li>Kontenklassen (EKR)</li>
+                        <li>Buchungssätze</li>
+                        <li>Umsatzsteuer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>3 Merkmale der Doppelten Buchführung | 3 Characteristics of Double-Entry</h2>
+
+            <div class="callout callout-info">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    INFO
+                </div>
+                <div class="callout-content">
+                    <div class="bilingual">
+                        <div class="bilingual-col">
+                            <p><strong>1. Dual Entry for Every Amount:</strong> Every amount is posted twice - once in debit (Soll) and once in credit (Haben).</p>
+                            <p><strong>2. Dual Entry for Every Business Transaction:</strong> Every transaction is recorded in the general ledger (Hauptbuch - all accounts) and the journal (Journal - chronological order).</p>
+                            <p><strong>3. Dual Profit Determination:</strong> Profit is determined directly (Income Statement/G&V) and indirectly (comparison of assets - Eigenkapital).</p>
+                        </div>
+                        <div class="bilingual-col">
+                            <p><strong>1. 2-Fache Verbuchung jedes Betrages:</strong> Jeder Betrag wird zweimal verbucht - einmal im Soll und einmal im Haben.</p>
+                            <p><strong>2. 2-Fache Erfassung jedes Geschäftsfalles:</strong> Jeder Geschäftsfall wird im Hauptbuch (alle Konten) und im Journal (chronologische Reihenfolge) erfasst.</p>
+                            <p><strong>3. 2-Fache Erfolgsermittlung:</strong> Der Erfolg wird direkt (GuV) und indirekt (Vergleich des Eigenkapitals) ermittelt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: BALANCE SHEET DEFINITION & STRUCTURE -->
+    <div class="page-break">
+        <div style="padding: 20px;">
+            <div class="section-header">
+                <h1 style="color: white; font-size: 18pt;">Die Bilanz | The Balance Sheet</h1>
+            </div>
+
+            <div class="callout callout-definition">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    DEFINITION
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p><strong>The Balance Sheet (Bilanz)</strong> is a statement that shows the assets and capital of a company at a specific date (balance sheet date).</p>
+                        <ul>
+                            <li><strong>Assets (Aktiva)</strong> represent what the company owns</li>
+                            <li><strong>Capital & Liabilities (Passiva)</strong> represent how the assets are financed</li>
+                        </ul>
+                    </div>
+                    <div class="bilingual-col">
+                        <p><strong>Die Bilanz</strong> ist eine Aufstellung, die das Vermögen und das Kapital eines Unternehmens zu einem bestimmten Stichtag (Bilanzstichtag) zeigt.</p>
+                        <ul>
+                            <li><strong>Aktiva (Vermögen)</strong> zeigen, was das Unternehmen besitzt</li>
+                            <li><strong>Passiva (Kapital)</strong> zeigen, wie das Vermögen finanziert wird</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Aufbau der Bilanz | Structure of the Balance Sheet</h2>
+
+            <div class="two-col">
+                <div>
+                    <h3>AKTIVA (Assets)</h3>
+                    <table>
+                        <tr>
+                            <th>Category | Kategorie</th>
+                            <th>Examples | Beispiele</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Anlagevermögen</strong><br><em>Fixed Assets</em></td>
+                            <td>
+                                <ul style="margin:0; padding-left:15px;">
+                                    <li>Immaterielle VG (Software)</li>
+                                    <li>Sachanlagen (Maschinen, Fahrzeuge)</li>
+                                    <li>Finanzanlagen (Beteiligungen)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Umlaufvermögen</strong><br><em>Current Assets</em></td>
+                            <td>
+                                <ul style="margin:0; padding-left:15px;">
+                                    <li>Handelswarenvorrat</li>
+                                    <li>Forderungen (Kunden)</li>
+                                    <li>Bankguthaben</li>
+                                    <li>Kassenbestand</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3>PASSIVA (Capital & Liabilities)</h3>
+                    <table>
+                        <tr>
+                            <th>Category | Kategorie</th>
+                            <th>Examples | Beispiele</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Eigenkapital</strong><br><em>Equity</em></td>
+                            <td>
+                                <ul style="margin:0; padding-left:15px;">
+                                    <li>Eigenkapital</li>
+                                    <li>Jahresüberschuss</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fremdkapital</strong><br><em>Liabilities</em></td>
+                            <td>
+                                <ul style="margin:0; padding-left:15px;">
+                                    <li>Darlehen (Bankkredite)</li>
+                                    <li>Lieferverbindlichkeiten</li>
+                                    <li>Umsatzsteuer</li>
+                                    <li>Verbindlichkeiten ggü. Mitarbeitern</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1e2e48" stroke-width="2">
+                        <path d="M9 18h6M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"></path>
+                    </svg>
+                    Prüfungstipp | Exam Tip
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p>Remember: Aktiva always equals Passiva. This is the fundamental accounting equation!</p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p>Merke: Aktiva = Passiva! Dies ist die grundlegende Bilanzgleichung!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: BALANCE SHEET EQUATION + T-ACCOUNT -->
+    <div class="page-break">
+        <div style="padding: 20px;">
+            <div class="section-header">
+                <h1 style="color: white; font-size: 18pt;">Bilanzgleichung | Balance Sheet Equation</h1>
+            </div>
+
+            <div class="callout callout-definition">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    DEFINITION
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p>The <strong>Balance Sheet Equation</strong> states that total assets must always equal total capital (equity + liabilities).</p>
+                        <div class="formula">Aktiva = Eigenkapital + Fremdkapital</div>
+                        <p>Derived: <span class="mono">Eigenkapital = Aktiva - Fremdkapital</span></p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p>Die <strong>Bilanzgleichung</strong> besagt, dass die Summe der Aktiva stets der Summe der Passiva entsprechen muss.</p>
+                        <div class="formula">Aktiva = Eigenkapital + Fremdkapital</div>
+                        <p>Abgeleitet: <span class="mono">Eigenkapital = Aktiva - Fremdkapital</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>T-Konto Bilanz | T-Account Balance Sheet</h2>
+
+            <svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" style="border:1px solid #ccc; background:white; margin:15px 0;">
+                <!-- Main T-Account Structure -->
+                <line x1="350" y1="30" x2="350" y2="370" stroke="#666" stroke-width="2"/>
+                <line x1="30" y1="30" x2="670" y2="30" stroke="#666" stroke-width="2"/>
+                <line x1="30" y1="370" x2="670" y2="370" stroke="#666" stroke-width="2"/>
+                
+                <!-- Headers -->
+                <text x="175" y="25" text-anchor="middle" font-family="Open Sans" font-size="14" font-weight="bold" fill="#1e2e48">SOLL (Aktiva)</text>
+                <text x="525" y="25" text-anchor="middle" font-family="Open Sans" font-size="14" font-weight="bold" fill="#1e2e48">HABEN (Passiva)</text>
+                
+                <!-- Title -->
+                <text x="350" y="15" text-anchor="middle" font-family="Open Sans" font-size="16" font-weight="bold" fill="#1e2e48">BILANZ</text>
+                
+                <!-- Left Side - AKTIVA -->
+                <text x="50" y="60" font-family="Open Sans" font-size="11" font-weight="bold" fill="#1e2e48">ANLAGEVERMÖGEN</text>
+                <line x1="50" y1="65" x2="200" y2="65" stroke="#fbc92d" stroke-width="3"/>
+                
+                <circle cx="60" cy="90" r="4" fill="#fbc92d"/>
+                <text x="75" y="93" font-family="Open Sans" font-size="9" fill="#333">Immaterielle VG (0xx)</text>
+                
+                <circle cx="60" cy="110" r="4" fill="#fbc92d"/>
+                <text x="75" y="113" font-family="Open Sans" font-size="9" fill="#333">Sachanlagen (0xx)</text>
+                
+                <circle cx="60" cy="130" r="4" fill="#fbc92d"/>
+                <text x="75" y="133" font-family="Open Sans" font-size="9" fill="#333">Finanzanlagen (0xx)</text>
+                
+                <text x="50" y="170" font-family="Open Sans" font-size="11" font-weight="bold" fill="#1e2e48">UMLAUFVERMÖGEN</text>
+                <line x1="50" y1="175" x2="200" y2="175" stroke="#fbc92d" stroke-width="3"/>
+                
+                <circle cx="60" cy="200" r="4" fill="#fbc92d"/>
+                <text x="75" y="203" font-family="Open Sans" font-size="9" fill="#333">Vorräte (1xx)</text>
+                
+                <circle cx="60" cy="220" r="4" fill="#fbc92d"/>
+                <text x="75" y="223" font-family="Open Sans" font-size="9" fill="#333">Forderungen (2xx)</text>
+                
+                <circle cx="60" cy="240" r="4" fill="#fbc92d"/>
+                <text x="75" y="243" font-family="Open Sans" font-size="9" fill="#333">Kassa/Bank (2xx)</text>
+                
+                <!-- Right Side - PASSIVA -->
+                <text x="400" y="60" font-family="Open Sans" font-size="11" font-weight="bold" fill="#1e2e48">EIGENKAPITAL</text>
+                <line x1="400" y1="65" x2="550" y2="65" stroke="#fbc92d" stroke-width="3"/>
+                
+                <circle cx="410" cy="90" r="4" fill="#fbc92d"/>
+                <text x="425" y="93" font-family="Open Sans" font-size="9" fill="#333">Eigenkapital (9xx)</text>
+                
+                <circle cx="410" cy="110" r="4" fill="#fbc92d"/>
+                <text x="425" y="113" font-family="Open Sans" font-size="9" fill="#333">Jahresüberschuss</text>
+                
+                <text x="400" y="170" font-family="Open Sans" font-size="11" font-weight="bold" fill="#1e2e48">FREMDKAPITAL</text>
+                <line x1="400" y1="175" x2="550" y2="175" stroke="#fbc92d" stroke-width="3"/>
+                
+                <circle cx="410" cy="200" r="4" fill="#fbc92d"/>
+                <text x="425" y="203" font-family="Open Sans" font-size="9" fill="#333">Rückstellungen (3xx)</text>
+                
+                <circle cx="410" cy="220" r="4" fill="#fbc92d"/>
+                <text x="425" y="223" font-family="Open Sans" font-size="9" fill="#333">Verbindlichkeiten (3xx)</text>
+                
+                <!-- Sum lines -->
+                <line x1="30" y1="340" x2="340" y2="340" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+                <line x1="360" y1="340" x2="670" y2="340" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+                
+                <text x="60" y="360" font-family="Open Sans" font-size="10" font-weight="bold" fill="#333">Summe Aktiva</text>
+                <text x="380" y="360" font-family="Open Sans" font-size="10" font-weight="bold" fill="#333">Summe Passiva</text>
+                
+                <text x="350" y="390" text-anchor="middle" font-family="Open Sans" font-size="11" font-weight="bold" fill="#dc4ebf" font-style="italic">Die Summen müssen immer gleich sein!</text>
+            </svg>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1e2e48" stroke-width="2">
+                        <path d="M9 18h6M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"></path>
+                    </svg>
+                    Wichtiger Hinweis | Important Note
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p>In T-accounts: <strong>Left = Soll (Debit)</strong>, <strong>Right = Haben (Credit)</strong></p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p>Merke: <strong>Links = Soll</strong>, <strong>Rechts = Haben</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 5: CHANGES IN BALANCE SHEET -->
+    <div class="page-break">
+        <div style="padding: 20px;">
+            <div class="section-header">
+                <h1 style="color: white; font-size: 18pt;">Veränderungen in der Bilanz | Changes in the Balance Sheet</h1>
+            </div>
+
+            <div style="margin: 20px 0; page-break-inside: avoid; break-inside: avoid;">
+                <svg width="100%" viewBox="0 0 2480 3508" fill="#ffffff" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background -->
+                    <rect width="2480" height="3508" fill="#ffffff"/>
+
+                    <!-- Definitions for Arrow Markers -->
+                    <defs>
+                        <marker id="arrowYellow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse">
+                            <path d="M 0 1 L 10 5 L 0 9 z" fill="#EAB308" />
+                        </marker>
+                        <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse">
+                            <path d="M 0 1 L 10 5 L 0 9 z" fill="#22C55E" />
+                        </marker>
+                        <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse">
+                            <path d="M 0 1 L 10 5 L 0 9 z" fill="#EF4444" />
+                        </marker>
+                    </defs>
+
+                    <!-- HEADER -->
+                    <g id="Header">
+                        <text x="1240" y="120" font-size="56" font-weight="900" fill="#0B2545" text-anchor="middle" letter-spacing="2">VERÄNDERUNGEN IN DER BILANZ</text>
+                        <text x="1240" y="180" font-size="36" font-weight="500" fill="#4B5563" text-anchor="middle">4 Types with T-Accounts</text>
+                    </g>
+
+                    <!-- CARD 1: AKTIVTAUSCH -->
+                    <g id="Card1" transform="translate(60, 250)">
+                        <rect width="1100" height="1300" rx="24" fill="#ffffff" stroke="#E5E7EB" stroke-width="2"/>
+                        <path d="M 0 24 C 0 10.745 10.745 0 24 0 L 30 0 L 30 1300 L 24 1300 C 10.745 1300 0 1289.255 0 1276 Z" fill="#EAB308"/>
+                        <text x="60" y="70" font-size="32" font-weight="bold" fill="#1F2937">1. AKTIVTAUSCH - Bilanzsumme bleibt gleich</text>
+                        
+                        <text x="280" y="200" font-size="28" font-weight="bold" fill="#374151" text-anchor="middle">Bank</text>
+                        <line x1="100" y1="240" x2="460" y2="240" stroke="#4B5563" stroke-width="3"/>
+                        <line x1="280" y1="240" x2="280" y2="550" stroke="#4B5563" stroke-width="3"/>
+                        <text x="190" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+                        <text x="370" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+                        <text x="370" y="360" font-size="28" font-weight="bold" fill="#1F2937" text-anchor="middle">- 5.000</text>
+                        
+                        <text x="820" y="200" font-size="28" font-weight="bold" fill="#374151" text-anchor="middle">Kassa</text>
+                        <line x1="640" y1="240" x2="1000" y2="240" stroke="#4B5563" stroke-width="3"/>
+                        <line x1="820" y1="240" x2="820" y2="550" stroke="#4B5563" stroke-width="3"/>
+                        <text x="730" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+                        <text x="910" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+                        <text x="730" y="360" font-size="28" font-weight="bold" fill="#1F2937" text-anchor="middle">+ 5.000</text>
+                        
+                        <path d="M 450 350 Q 550 250 640 350" fill="none" stroke="#EAB308" stroke-width="6" marker-end="url(#arrowYellow)"/>
+                        
+                        <rect x="250" y="1050" width="600" height="80" rx="40" fill="#F3F4F6"/>
+                        <text x="550" y="1105" font-size="32" font-weight="bold" fill="#1F2937" text-anchor="middle">Aktiva ↓ + Aktiva ↑ = Ø</text>
+                    </g>
+
+                    <!-- CARD 2: PASSIVTAUSCH -->
+                    <g id="Card2" transform="translate(1280, 250)">
+                        <rect width="1100" height="1300" rx="24" fill="#ffffff" stroke="#E5E7EB" stroke-width="2"/>
+                        <path d="M 0 24 C 0 10.745 10.745 0 24 0 L 30 0 L 30 1300 L 24 1300 C 10.745 1300 0 1289.255 0 1276 Z" fill="#EAB308"/>
+                        <text x="60" y="70" font-size="32" font-weight="bold" fill="#1F2937">2. PASSIVTAUSCH - Bilanzsumme bleibt gleich</text>
+                        
+                        <text x="280" y="200" font-size="28" font-weight="bold" fill="#374151" text-anchor="middle">Kurzfr. Verb</text>
+                        <line x1="100" y1="240" x2="460" y2="240" stroke="#4B5563" stroke-width="3"/>
+                        <line x1="280" y1="240" x2="280" y2="550" stroke="#4B5563" stroke-width="3"/>
+                        <text x="190" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+                        <text x="370" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+                        <text x="190" y="360" font-size="28" font-weight="bold" fill="#1F2937" text-anchor="middle">- 3.000</text>
+                        
+                        <text x="820" y="200" font-size="28" font-weight="bold" fill="#374151" text-anchor="middle">Langfr. Verb</text>
+                        <line x1="640" y1="240" x2="1000" y2="240" stroke="#4B5563" stroke-width="3"/>
+                        <line x1="820" y1="240" x2="820" y2="550" stroke="#4B5563" stroke-width="3"/>
+                        <text x="730" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+                        <text x="910" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+                        <text x="910" y="360" font-size="28" font-weight="bold" fill="#1F2937" text-anchor="middle">+ 3.000</text>
+                        
+                        <path d="M 190 380 C 190 600, 910 600, 910 380" fill="none" stroke="#EAB308" stroke-width="6" marker-end="url(#arrowYellow)"/>
+                        
+                        <rect x="250" y="1050" width="600" height="80" rx="40" fill="#F3F4F6"/>
+                        <text x="550" y="1105" font-size="32" font-weight="bold" fill="#1F2937" text-anchor="middle">Passiva ↓ + Passiva ↑ = Ø</text>
+                    </g>
+
+                    <!-- CARD 3: BILANZVERLÄNGERUNG -->
+                    <g id="Card3" transform="translate(60, 1650)">
+                        <rect width="1100" height="1300" rx="24" fill="#ffffff" stroke="#E5E7EB" stroke-width="2"/>
+                        <path d="M 0 24 C 0 10.745 10.745 0 24 0 L 30 0 L 30 1300 L 24 1300 C 10.745 1300 0 1289.255 0 1276 Z" fill="#22C55E"/>
+                        <text x="60" y="70" font-size="32" font-weight="bold" fill="#1F2937">3. BILANZVERLÄNGERUNG - Bilanzsumme ↑</text>
+                        
+                        <text x="280" y="200" font-size="28" font-weight="bold" fill="#374151" text-anchor="middle">Maschine (Aktiva)</text>
+                        <line x1="100" y1="240" x2="460" y2="240" stroke="#4B5563" stroke-width="3"/>
+                        <line x1="280" y1="240" x2="280" y2="550" stroke="#4B5563" stroke-width="3"/>
+                        <text x="190" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+                        <text x="370" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+                        <text x="190" y="360" font-size="28" font-weight="bold" fill="#1F2937" text-anchor="middle">+ 5.000</text>
+                        
+                        <text x="820" y="200" font-size="28" font-weight="bold" fill="#374151" text-anchor="middle">Lieferverb. (Passiva)</text>
+                        <line x1="640" y1="240" x2="1000" y2="240" stroke="#4B5563" stroke-width="3"/>
+                        <line x1="820" y1="240" x2="820" y2="550" stroke="#4B5563" stroke-width="3"/>
+                        <text x="730" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+                        <text x="910" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+                        <text x="910" y="360" font-size="28" font-weight="bold" fill="#1F2937" text-anchor="middle">+ 5.000</text>
+                        
+                        <line x1="95" y1="380" x2="95" y2="280" stroke="#22C55E" stroke-width="6" marker-end="url(#arrowGreen)"/>
+                        <line x1="1005" y1="380" x2="1005" y2="280" stroke="#22C55E" stroke-width="6" marker-end="url(#arrowGreen)"/>
+                        
+                        <rect x="250" y="1050" width="600" height="80" rx="40" fill="#F3F4F6"/>
+                        <text x="550" y="1105" font-size="32" font-weight="bold" fill="#1F2937" text-anchor="middle">Aktiva ↑ + Passiva ↑ = ↑</text>
+                    </g>
+
+                    <!-- CARD 4: BILANZVERKÜRZUNG -->
+                    <g id="Card4" transform="translate(1280, 1650)">
+                        <rect width="1100" height="1300" rx="24" fill="#ffffff" stroke="#E5E7EB" stroke-width="2"/>
+                        <path d="M 0 24 C 0 10.745 10.745 0 24 0 L 30 0 L 30 1300 L 24 1300 C 10.745 1300 0 1289.255 0 1276 Z" fill="#EF4444"/>
+                        <text x="60" y="70" font-size="32" font-weight="bold" fill="#1F2937">4. BILANZVERKÜRZUNG - Bilanzsumme ↓</text>
+                        
+                        <text x="280" y="200" font-size="28" font-weight="bold" fill="#374151" text-anchor="middle">Bank (Aktiva)</text>
+                        <line x1="100" y1="240" x2="460" y2="240" stroke="#4B5563" stroke-width="3"/>
+                        <line x1="280" y1="240" x2="280" y2="550" stroke="#4B5563" stroke-width="3"/>
+                        <text x="190" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+                        <text x="370" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+                        <text x="370" y="360" font-size="28" font-weight="bold" fill="#1F2937" text-anchor="middle">- 3.000</text>
+                        
+                        <text x="820" y="200" font-size="28" font-weight="bold" fill="#374151" text-anchor="middle">Darlehen (Passiva)</text>
+                        <line x1="640" y1="240" x2="1000" y2="240" stroke="#4B5563" stroke-width="3"/>
+                        <line x1="820" y1="240" x2="820" y2="550" stroke="#4B5563" stroke-width="3"/>
+                        <text x="730" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Soll</text>
+                        <text x="910" y="280" font-size="22" font-weight="600" fill="#9CA3AF" text-anchor="middle">Haben</text>
+                        <text x="730" y="360" font-size="28" font-weight="bold" fill="#1F2937" text-anchor="middle">- 3.000</text>
+                        
+                        <line x1="460" y1="280" x2="460" y2="380" stroke="#EF4444" stroke-width="6" marker-end="url(#arrowRed)"/>
+                        <line x1="590" y1="280" x2="590" y2="380" stroke="#EF4444" stroke-width="6" marker-end="url(#arrowRed)"/>
+                        
+                        <rect x="250" y="1050" width="600" height="80" rx="40" fill="#F3F4F6"/>
+                        <text x="550" y="1105" font-size="32" font-weight="bold" fill="#1F2937" text-anchor="middle">Aktiva ↓ + Passiva ↓ = ↓</text>
+                    </g>
+
+                    <!-- FOOTER -->
+                    <g id="Footer">
+                        <rect x="60" y="3000" width="2360" height="180" rx="30" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+                        <text x="1240" y="3070" font-size="36" font-weight="800" fill="#374151" text-anchor="middle">Merke: Nur 3 und 4 beeinflussen den Erfolg!</text>
+                        <text x="500" y="3140" font-size="32" font-weight="bold" fill="#16A34A" text-anchor="middle">G↑ = Erfolg erhöhend</text>
+                        <text x="1240" y="3140" font-size="32" font-weight="bold" fill="#D97706" text-anchor="middle">GØ = neutral</text>
+                        <text x="1980" y="3140" font-size="32" font-weight="bold" fill="#DC2626" text-anchor="middle">G↓</text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+            <div class="callout callout-definition">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    MERKE | REMEMBER
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p>Only types 3 and 4 affect profit (Erfolg):</p>
+                        <ul>
+                            <li>Bilanzverlängerung → increases assets and capital → may affect profit</li>
+                            <li>Bilanzverkürzung → decreases assets and capital → may affect profit</li>
+                        </ul>
+                    </div>
+                    <div class="bilingual-col">
+                        <p>Nur Typ 3 und 4 beeinflussen den Erfolg:</p>
+                        <ul>
+                            <li>Bilanzverlängerrung → erhöht Aktiva und Passiva → kann Erfolg beeinflussen</li>
+                            <li>Bilanzverkürzung → vermindert Aktiva und Passiva → kann Erfolg beeinflussen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 6: INCOME STATEMENT -->
+    <div class="page-break">
+        <div style="padding: 20px;">
+            <div class="section-header">
+                <h1 style="color: white; font-size: 18pt;">Gewinn- und Verlustrechnung | Income Statement</h1>
+            </div>
+
+            <div class="callout callout-definition">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    DEFINITION
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p>The <strong>Income Statement (G&V)</strong> summarizes revenues, costs, and expenses during a period (usually a fiscal year). Its purpose is to determine net profit or loss.</p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p>Die <strong>Gewinn- und Verlustrechnung (G&V)</strong> fasst Erträge, Kosten und Aufwendungen während einer Periode zusammen. Ihr Zweck ist die Ermittlung des Nettoerfolgs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>T-Konto G&V | T-Account Income Statement</h2>
+
+            <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="border:1px solid #ccc; background:white; margin:15px 0;">
+                <!-- Main T-Account Structure -->
+                <line x1="350" y1="30" x2="350" y2="350" stroke="#666" stroke-width="2"/>
+                <line x1="30" y1="30" x2="670" y2="30" stroke="#666" stroke-width="2"/>
+                <line x1="30" y1="350" x2="670" y2="350" stroke="#666" stroke-width="2"/>
+                
+                <!-- Headers -->
+                <text x="175" y="25" text-anchor="middle" font-family="Open Sans" font-size="14" font-weight="bold" fill="#1e2e48">SOLL (Aufwände)</text>
+                <text x="525" y="25" text-anchor="middle" font-family="Open Sans" font-size="14" font-weight="bold" fill="#1e2e48">HABEN (Erträge)</text>
+                
+                <!-- Title -->
+                <text x="350" y="15" text-anchor="middle" font-family="Open Sans" font-size="16" font-weight="bold" fill="#1e2e48">GEWINN- UND VERLUSTRECHNUNG</text>
+                
+                <!-- Left Side - AUFWÄNDE -->
+                <circle cx="60" cy="60" r="4" fill="#fbc92d"/>
+                <text x="75" y="63" font-family="Open Sans" font-size="9" fill="#333">Handelswareneinsatz (5000)</text>
+                
+                <circle cx="60" cy="80" r="4" fill="#fbc92d"/>
+                <text x="75" y="83" font-family="Open Sans" font-size="9" fill="#333">Personalaufwand (6000)</text>
+                
+                <circle cx="60" cy="100" r="4" fill="#fbc92d"/>
+                <text x="75" y="103" font-family="Open Sans" font-size="9" fill="#333">Mietaufwand</text>
+                
+                <circle cx="60" cy="120" r="4" fill="#fbc92d"/>
+                <text x="75" y="123" font-family="Open Sans" font-size="9" fill="#333">Zinsaufwand</text>
+                
+                <circle cx="60" cy="140" r="4" fill="#fbc92d"/>
+                <text x="75" y="143" font-family="Open Sans" font-size="9" fill="#333">Instandhaltung (700x)</text>
+                
+                <circle cx="60" cy="160" r="4" fill="#fbc92d"/>
+                <text x="75" y="163" font-family="Open Sans" font-size="9" fill="#333">Versicherungsaufwand</text>
+                
+                <circle cx="60" cy="180" r="4" fill="#fbc92d"/>
+                <text x="75" y="183" font-family="Open Sans" font-size="9" fill="#333">Büromaterialaufwand</text>
+                
+                <circle cx="60" cy="200" r="4" fill="#fbc92d"/>
+                <text x="75" y="203" font-family="Open Sans" font-size="9" fill="#333">Rechts- u. Beratungsaufwand</text>
+                
+                <circle cx="60" cy="220" r="4" fill="#fbc92d"/>
+                <text x="75" y="223" font-family="Open Sans" font-size="9" fill="#333">Postgebühren</text>
+                
+                <!-- Right Side - ERTRÄGE -->
+                <circle cx="410" cy="60" r="4" fill="#fbc92d"/>
+                <text x="425" y="63" font-family="Open Sans" font-size="9" fill="#333">Handelswarenerlöse (4000)</text>
+                
+                <circle cx="410" cy="80" r="4" fill="#fbc92d"/>
+                <text x="425" y="83" font-family="Open Sans" font-size="9" fill="#333">Mieterträge</text>
+                
+                <circle cx="410" cy="100" r="4" fill="#fbc92d"/>
+                <text x="425" y="103" font-family="Open Sans" font-size="9" fill="#333">Provisionserträge</text>
+                
+                <circle cx="410" cy="120" r="4" fill="#fbc92d"/>
+                <text x="425" y="123" font-family="Open Sans" font-size="9" fill="#333">Zinserträge</text>
+                
+                <circle cx="410" cy="140" r="4" fill="#fbc92d"/>
+                <text x="425" y="143" font-family="Open Sans" font-size="9" fill="#333">Erlöse aus Anlagenabgang</text>
+                
+                <!-- Sum lines -->
+                <line x1="30" y1="320" x2="340" y2="320" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+                <line x1="360" y1="320" x2="670" y2="320" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+                
+                <text x="60" y="340" font-family="Open Sans" font-size="10" font-weight="bold" fill="#333">Summe Aufwände</text>
+                <text x="380" y="340" font-family="Open Sans" font-size="10" font-weight="bold" fill="#333">Summe Erträge</text>
+                
+                <!-- Profit/Loss Formula -->
+                <text x="350" y="370" text-anchor="middle" font-family="Open Sans" font-size="12" font-weight="bold" fill="#dc4ebf">GEWINN = Erträge - Aufwände (G↑ wenn Erträge > Aufwände)</text>
+            </svg>
+
+            <div class="bilingual">
+                <div class="bilingual-col">
+                    <h3>Profit Calculation</h3>
+                    <div class="formula">Profit = Revenues - Expenses</div>
+                    <p>If <strong>Revenues > Expenses</strong> → <span style="color:#27ae60; font-weight:bold;">Profit (Gewinn)</span></p>
+                    <p>If <strong>Expenses > Revenues</strong> → <span style="color:#e74c3c; font-weight:bold;">Loss (Verlust)</span></p>
+                </div>
+                <div class="bilingual-col">
+                    <h3>Gewinnermittlung</h3>
+                    <div class="formula">Gewinn = Erträge - Aufwände</div>
+                    <p>Wenn <strong>Erträge > Aufwände</strong> → <span style="color:#27ae60; font-weight:bold;">Gewinn</span></p>
+                    <p>Wenn <strong>Aufwände > Erträge</strong> → <span style="color:#e74c3c; font-weight:bold;">Verlust</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 7: EKR ACCOUNT CLASSES -->
+    <div class="page-break">
+        <div style="padding: 20px;">
+            <div class="section-header">
+                <h1 style="color: white; font-size: 18pt;">Kontenklassen (EKR) | Account Classes</h1>
+            </div>
+
+            <div class="callout callout-definition">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    DEFINITION
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p>The <strong>Austrian Standard Chart of Accounts (EKR)</strong> is a standardized framework for Austrian companies, providing 10 main account classes (0-9).</p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p>Der <strong>Österreichische Einheitskontenrahmen (EKR)</strong> ist ein standardisierter Rahmen für österreichische Unternehmen mit 10 Hauptkontenklassen (0-9).</p>
+                    </div>
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <th style="width:80px;">Klasse</th>
+                    <th>Bezeichnung | Name</th>
+                    <th>Inhalt | Content</th>
+                </tr>
+                <tr>
+                    <td><strong>0</strong></td>
+                    <td>Anlagevermögen<br><em>Fixed Assets</em></td>
+                    <td>Immaterielle VG, Sachanlagen, Finanzanlagen</td>
+                </tr>
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td>Vorräte<br><em>Inventories</em></td>
+                    <td>Handelswaren, Rohstoffe, Betriebsstoffe</td>
+                </tr>
+                <tr>
+                    <td><strong>2</strong></td>
+                    <td>Umlaufvermögen, RAP<br><em>Current Assets</em></td>
+                    <td>Forderungen, Kassa, Bank, aktive RAP</td>
+                </tr>
+                <tr>
+                    <td><strong>3</strong></td>
+                    <td>Rückstellungen, Verb.<br><em>Provisions, Liabilities</em></td>
+                    <td>Rückstellungen, Lieferverbindlichkeiten, passive RAP</td>
+                </tr>
+                <tr>
+                    <td><strong>4</strong></td>
+                    <td>Betriebliche Erträge<br><em>Operating Revenues</em></td>
+                    <td>Warenlöse, Mieterträge, Provisionserträge</td>
+                </tr>
+                <tr>
+                    <td><strong>5</strong></td>
+                    <td>Materialaufwand<br><em>Material Expenses</em></td>
+                    <td>Handelswareneinsatz, Bezugsnebenkosten</td>
+                </tr>
+                <tr>
+                    <td><strong>6</strong></td>
+                    <td>Personalaufwand<br><em>Personnel Expenses</em></td>
+                    <td>Gehälter, Löhne, Sozialversicherung</td>
+                </tr>
+                <tr>
+                    <td><strong>7</strong></td>
+                    <td>Abschr., sonst. Aufw.<br><em>Depreciation, Other</em></td>
+                    <td>Instandhaltung, Versicherung, Porto</td>
+                </tr>
+                <tr>
+                    <td><strong>8</strong></td>
+                    <td>Finanzergebnis, Steuern<br><em>Financial, Taxes</em></td>
+                    <td>Zinserträge, Zinsaufwand, Steuern</td>
+                </tr>
+                <tr>
+                    <td><strong>9</strong></td>
+                    <td>Eigenkapital, Abschluss<br><em>Equity, Closing</em></td>
+                    <td>Eigenkapital, Privat, Saldenvortrag</td>
+                </tr>
+            </table>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1e2e48" stroke-width="2">
+                        <path d="M9 18h6M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"></path>
+                    </svg>
+                    Wichtiger Hinweis | Important Note
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p>For the <strong>complete account plan</strong> with all 4-digit account numbers, see page 13.</p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p>Für den <strong>vollständigen Kontenplan</strong> mit allen vierstelligen Kontonummern, see Seite 13.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 8: BOOKING RULES -->
+    <div class="page-break">
+        <div style="padding: 20px;">
+            <div class="section-header">
+                <h1 style="color: white; font-size: 18pt;">Buchungsregeln | Booking Rules</h1>
+            </div>
+
+            <h2>Bestandskonten | Balance Sheet Accounts</h2>
+
+            <div class="callout callout-info">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    AKTIVE BESTANDSKONTEN | ACTIVE BALANCE SHEET ACCOUNTS
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p><strong>Examples:</strong> Kassa (2700), Bank (2800), Handelswarenvorrat (1000), Forderungen (2000)</p>
+                        <p><strong>Increases (Zugänge):</strong> Posted in <span class="mono">SOLL</span></p>
+                        <p><strong>Decreases (Abgänge):</strong> Posted in <span class="mono">HABEN</span></p>
+                        <p><strong>Normal Balance:</strong> Debit (Soll-Saldo)</p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p><strong>Beispiele:</strong> Kassa (2700), Bank (2800), Handelswarenvorrat (1000), Forderungen (2000)</p>
+                        <p><strong>Zugänge:</strong> Werden im <span class="mono">SOLL</span> gebucht</p>
+                        <p><strong>Abgänge:</strong> Werden im <span class="mono">HABEN</span> gebucht</p>
+                        <p><strong>Normalsaldo:</strong> Soll-Saldo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    PASSIVE BESTANDSKONTEN | PASSIVE BALANCE SHEET ACCOUNTS
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p><strong>Examples:</strong> Eigenkapital (9000), Darlehen (3100), Lieferverbindlichkeiten (3300), Umsatzsteuer (3500)</p>
+                        <p><strong>Increases (Zugänge):</strong> Posted in <span class="mono">HABEN</span></p>
+                        <p><strong>Decreases (Abgänge):</strong> Posted in <span class="mono">SOLL</span></p>
+                        <p><strong>Normal Balance:</strong> Credit (Haben-Saldo)</p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p><strong>Beispiele:</strong> Eigenkapital (9000), Darlehen (3100), Lieferverbindlichkeiten (3300), Umsatzsteuer (3500)</p>
+                        <p><strong>Zugänge:</strong> Werden im <span class="mono">HABEN</span> gebucht</p>
+                        <p><strong>Abgänge:</strong> Werden im <span class="mono">SOLL</span> gebucht</p>
+                        <p><strong>Normalsaldo:</strong> Haben-Saldo</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Erfolgskonten | Income Statement Accounts</h2>
+
+            <div class="callout callout-info">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    AUFWANDSKONTEN | EXPENSE ACCOUNTS
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p><strong>Examples:</strong> Handelswareneinsatz (5000), Mietaufwand, Zinsaufwand, Telefongebühren</p>
+                        <p><strong>Expenses (increases):</strong> Posted in <span class="mono">SOLL</span></p>
+                        <p><strong>Decreases/corrections:</strong> Posted in <span class="mono">HABEN</span></p>
+                        <p><strong>Normal Balance:</strong> Debit (Soll-Saldo)</p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p><strong>Beispiele:</strong> Handelswareneinsatz (5000), Mietaufwand, Zinsaufwand, Telefongebühren</p>
+                        <p><strong>Aufwände (Vermehrungen):</strong> Werden im <span class="mono">SOLL</span> gebucht</p>
+                        <p><strong>Verminderungen/Korrekturen:</strong> Werden im <span class="mono">HABEN</span> gebucht</p>
+                        <p><strong>Normalsaldo:</strong> Soll-Saldo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="callout callout-info">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    ERTRAGSKONTEN | REVENUE ACCOUNTS
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p><strong>Examples:</strong> Handelswarenerlöse (4000), Mieterträge, Provisionserträge, Zinserträge</p>
+                        <p><strong>Revenues (increases):</strong> Posted in <span class="mono">HABEN</span></p>
+                        <p><strong>Decreases/returns:</strong> Posted in <span class="mono">SOLL</span></p>
+                        <p><strong>Normal Balance:</strong> Credit (Haben-Saldo)</p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p><strong>Beispiele:</strong> Handelswarenerlöse (4000), Mieterträge, Provisionserträge, Zinserträge</p>
+                        <p><strong>Erträge (Vermehrungen):</strong> Werden im <span class="mono">HABEN</span> gebucht</p>
+                        <p><strong>Verminderungen/Retouren:</strong> Werden im <span class="mono">SOLL</span> gebucht</p>
+                        <p><strong>Normalsaldo:</strong> Haben-Saldo</p>
+                    </div>
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Kontotyp | Account Type</th>
+                    <th>Beispiel | Example</th>
+                    <th>Zugang (Soll) | Debit</th>
+                    <th>Abgang (Haben) | Credit</th>
+                    <th>Saldo | Balance</th>
+                </tr>
+                <tr>
+                    <td>Aktive Bestandskonten</td>
+                    <td class="mono">Kassa (2700)</td>
+                    <td>+ (Soll)</td>
+                    <td>- (Haben)</td>
+                    <td>Soll-Saldo</td>
+                </tr>
+                <tr>
+                    <td>Passive Bestandskonten</td>
+                    <td class="mono">EK (9000)</td>
+                    <td>- (Soll)</td>
+                    <td>+ (Haben)</td>
+                    <td>Haben-Saldo</td>
+                </tr>
+                <tr>
+                    <td>Aufwandskonten</td>
+                    <td class="mono">HW-Einsatz (5000)</td>
+                    <td>+ (Soll)</td>
+                    <td>- (Haben)</td>
+                    <td>Soll-Saldo</td>
+                </tr>
+                <tr>
+                    <td>Ertragskonten</td>
+                    <td class="mono">HW-Erlöse (4000)</td>
+                    <td>- (Soll)</td>
+                    <td>+ (Haben)</td>
+                    <td>Haben-Saldo</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- PAGE 9: VAT -->
+    <div class="page-break">
+        <div style="padding: 20px;">
+            <div class="section-header">
+                <h1 style="color: white; font-size: 18pt;">Umsatzsteuer (VAT)</h1>
+            </div>
+
+            <div class="two-col">
+                <div>
+                    <div class="callout callout-definition">
+                        <div class="callout-title">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            VORSTEUER | INPUT VAT
+                        </div>
+                        <div class="bilingual">
+                            <div class="bilingual-col">
+                                <p>VAT paid to suppliers on purchases. It's a <strong>claim against the tax authority</strong>.</p>
+                                <p><strong>Account:</strong> 2500 Vorsteuer</p>
+                                <p><strong>Type:</strong> Active Balance Sheet Account</p>
+                            </div>
+                            <div class="bilingual-col">
+                                <p>USt, die an Lieferanten bezahlt wird. Es ist eine <strong>Forderung gegenüber dem Finanzamt</strong>.</p>
+                                <p><strong>Konto:</strong> 2500 Vorsteuer</p>
+                                <p><strong>Typ:</strong> Aktives Bestandskonto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="callout callout-definition">
+                        <div class="callout-title">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            UMSATZSTEUER | OUTPUT VAT
+                        </div>
+                        <div class="bilingual">
+                            <div class="bilingual-col">
+                                <p>VAT charged to customers on sales. It's a <strong>liability to the tax authority</strong>.</p>
+                                <p><strong>Account:</strong> 3500 Umsatzsteuer</p>
+                                <p><strong>Type:</strong> Passive Balance Sheet Account</p>
+                            </div>
+                            <div class="bilingual-col">
+                                <p>USt, die an Kunden verrechnet wird. Es ist eine <strong>Verbindlichkeit gegenüber dem Finanzamt</strong>.</p>
+                                <p><strong>Konto:</strong> 3500 Umsatzsteuer</p>
+                                <p><strong>Typ:</strong> Passives Bestandskonto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="callout callout-definition">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    UST-ZAHLLAST | VAT PAYABLE/RECEIVABLE
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p>Account <strong>3520 USt-Zahllast</strong> is used at month-end to rebook Vorsteuer and Umsatzsteuer.</p>
+                        <p><strong>Result:</strong> If USt > Vorsteuer → Payment to tax authority</p>
+                        <p>If Vorsteuer > USt → Refund from tax authority</p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p>Konto <strong>3520 USt-Zahllast</strong> wird am Monatsende verwendet, um Vorsteuer und Umsatzsteuer umzubuchen.</p>
+                        <p><strong>Ergebnis:</strong> Wenn USt > Vorsteuer → Zahlung an Finanzamt</p>
+                        <p>Wenn Vorsteuer > USt → Rückerstattung vom Finanzamt</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>VAT Flow Diagram (see image3.png)</h3>
+            <div style="text-align: center; margin: 15px 0; border: 1px solid #ccc; padding: 10px;">
+                <img src="assets/image3.png" alt="VAT Flow Diagram" style="max-width: 100%; max-height: 200px;">
+            </div>
+
+            <h3>Umsatzsteuersätze | VAT Rates</h3>
+            <div class="vat-formula">
+                <div class="vat-formula-item">
+                    <div class="rate">20%</div>
+                    <div class="calc">Normalsteuersatz</div>
+                </div>
+                <div class="vat-formula-item">
+                    <div class="rate">10%</div>
+                    <div class="calc">Ermäßigter Satz</div>
+                </div>
+                <div class="vat-formula-item">
+                    <div class="rate">13%</div>
+                    <div class="calc">Sonstige Leistungen</div>
+                </div>
+            </div>
+
+            <h3>Kleinbetragsrechnungen | Small Invoices</h3>
+            <div class="callout callout-info">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    INFO
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p>For invoices ≤ €400 (gross), VAT is not shown separately. Calculate from gross:</p>
+                        <ul>
+                            <li>20% VAT: <span class="mono">VAT = Gross ÷ 6</span></li>
+                            <li>10% VAT: <span class="mono">VAT = Gross ÷ 11</span></li>
+                            <li>13% VAT: <span class="mono">VAT = Gross ÷ 13 × 0.13</span></li>
+                        </ul>
+                    </div>
+                    <div class="bilingual-col">
+                        <p>Bei Rechnungen ≤ €400 (brutto) wird die USt nicht gesondert ausgewiesen. Berechnung aus Brutto:</p>
+                        <ul>
+                            <li>20% USt: <span class="mono">USt = Brutto ÷ 6</span></li>
+                            <li>10% USt: <span class="mono">USt = Brutto ÷ 11</span></li>
+                            <li>13% USt: <span class="mono">USt = Brutto ÷ 13 × 0.13</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h4>Beispiel | Example: €332,- inkl. 20% USt</h4>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p><strong>Calculation:</strong></p>
+                        <p>Netto = 332 ÷ 1.20 = <strong>€276.67</strong></p>
+                        <p>VAT = 332 - 276.67 = <strong>€55.33</strong></p>
+                        <p class="mono">Or: VAT = 332 ÷ 6 = €55.33</p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p><strong>Berechnung:</strong></p>
+                        <p>Netto = 332 ÷ 1.20 = <strong>€276.67</strong></p>
+                        <p>USt = 332 - 276.67 = <strong>€55.33</strong></p>
+                        <p class="mono">Oder: USt = 332 ÷ 6 = €55.33</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 10: BUSINESS TRANSACTIONS -->
+    <div class="page-break">
+        <div style="padding: 20px;">
+            <div class="section-header">
+                <h1 style="color: white; font-size: 18pt;">Spezifische Geschäftsfälle | Specific Business Transactions</h1>
+            </div>
+
+            <h2>Einkauf und Verkauf | Purchase and Sale</h2>
+
+            <div class="two-col">
+                <div>
+                    <h3>Waren-Einkauf | Purchase</h3>
+                    <div class="example-box">
+                        <p><strong>Bsp: €3,136.80 inkl. 20% USt</strong></p>
+                        <div class="bilingual">
+                            <div class="bilingual-col">
+                                <p><strong>Calculation:</strong></p>
+                                <p>Netto = 3,136.80 ÷ 1.20 = <strong>€2,614.-</strong></p>
+                                <p>VAT = 3,136.80 - 2,614 = <strong>€522.80</strong></p>
+                            </div>
+                            <div class="bilingual-col">
+                                <p><strong>Berechnung:</strong></p>
+                                <p>Netto = 3,136.80 ÷ 1.20 = <strong>€2,614.-</strong></p>
+                                <p>USt = 3,136.80 - 2,614 = <strong>€522.80</strong></p>
+                            </div>
+                        </div>
+                        <div class="journal-entry">
+                            <strong>Buchungssatz | Journal Entry:</strong><br>
+                            5000 HW-Einsatz 2.614,- / 33039 Lieferanten 3.136,80<br>
+                            2500 Vorsteuer 522,80
+                        </div>
+                        <p><strong>Erfolg | Profit:</strong> G↓ (HW-Einsatz ist Aufwand)</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Waren-Verkauf | Sale</h3>
+                    <div class="example-box">
+                        <p><strong>Bsp: €586.80 inkl. 20% USt</strong></p>
+                        <div class="bilingual">
+                            <div class="bilingual-col">
+                                <p><strong>Calculation:</strong></p>
+                                <p>Netto = 586.80 ÷ 1.20 = <strong>€489.-</strong></p>
+                                <p>VAT = 586.80 - 489 = <strong>€97.80</strong></p>
+                            </div>
+                            <div class="bilingual-col">
+                                <p><strong>Berechnung:</strong></p>
+                                <p>Netto = 586.80 ÷ 1.20 = <strong>€489.-</strong></p>
+                                <p>USt = 586.80 - 489 = <strong>€97.80</strong></p>
+                            </div>
+                        </div>
+                        <div class="journal-entry">
+                            <strong>Buchungssatz | Journal Entry:</strong><br>
+                            20004 Kunde 586,80 / 4000 HW-Erlöse 489,-<br>
+                            3500 Umsatzsteuer 97,80
+                        </div>
+                        <p><strong>Erfolg | Profit:</strong> G↑ (HW-Erlöse sind Ertrag)</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Forderungen und Verbindlichkeiten | Receivables and Payables</h2>
+
+            <div class="two-col">
+                <div>
+                    <h3>Ausgleich AR | Settlement of AR</h3>
+                    <div class="example-box">
+                        <p>Kunde zahlt Rechnung</p>
+                        <div class="journal-entry">
+                            2800 Bank 586,80 / 20004 Kunde 586,80
+                        </div>
+                        <p><strong>Erfolg | Profit:</strong> GØ (neutral) - Aktivtausch</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Ausgleich ER | Settlement of ER</h3>
+                    <div class="example-box">
+                        <p>Lieferantenrechnung bezahlen</p>
+                        <div class="journal-entry">
+                            33039 Lieferanten 3.136,80 / 2800 Bank 3.136,80
+                        </div>
+                        <p><strong>Erfolg | Profit:</strong> GØ (neutral) - Aktivtausch</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Private Entnahmen | Private Withdrawals</h2>
+
+            <div class="two-col">
+                <div>
+                    <div class="example-box">
+                        <h4>Private Geldentnahme | Cash Withdrawal</h4>
+                        <div class="journal-entry">
+                            9600 Privat 1.500,- / 2700 Kassa 1.500,-
+                        </div>
+                        <p><strong>Erfolg | Profit:</strong> GØ (neutral) - betrifft EK direkt</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="example-box">
+                        <h4>Private Geldeinlage | Cash Deposit</h4>
+                        <div class="journal-entry">
+                            2700 Kassa 5.000,- / 9600 Privat 5.000,-
+                        </div>
+                        <p><strong>Erfolg | Profit:</strong> GØ (neutral) - betrifft EK direkt</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Erfolgswirkung | Impact on Profit</h2>
+            <table>
+                <tr>
+                    <th>Buchung | Entry</th>
+                    <th>Wirkung | Effect</th>
+                    <th>Erklärung | Explanation</th>
+                </tr>
+                <tr>
+                    <td>Aufwand im Soll | Expense in Debit</td>
+                    <td style="color:#e74c3c;">G↓</td>
+                    <td>Aufwand erhöht Gewinn mindert</td>
+                </tr>
+                <tr>
+                    <td>Ertrag im Haben | Revenue in Credit</td>
+                    <td style="color:#27ae60;">G↑</td>
+                    <td>Ertrag erhöht Gewinn erhöht</td>
+                </tr>
+                <tr>
+                    <td>Nur Bestandskonten | Only Balance Sheet</td>
+                    <td style="color:#2980b9;">GØ</td>
+                    <td>Erfolgsneutral</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- PAGE 11: GROSS PROFIT -->
+    <div class="page-break">
+        <div style="padding: 20px;">
+            <div class="section-header">
+                <h1 style="color: white; font-size: 18pt;">Bruttogewinn | Gross Profit</h1>
+            </div>
+
+            <div class="callout callout-definition">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    DEFINITION
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p><strong>Gross Profit</strong> is the difference between net sales revenue and cost of goods sold. It shows profitability of core business (buying/selling) before operating expenses.</p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p>Der <strong>Bruttogewinn</strong> ist die Differenz zwischen den Nettoerlösen aus Warenverkäufen und dem Wareneinsatz. Er zeigt die Profitabilität des Kerngeschäfts vor betrieblichen Aufwendungen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Formel | Formula</h2>
+            <div class="formula" style="font-size: 14pt;">Bruttogewinn = Handelswarenerlöse - Handelswareneinsatz</div>
+
+            <div class="example-box">
+                <h3>Beispiel | Example</h3>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p><strong>Given:</strong></p>
+                        <ul>
+                            <li>Sales Revenues: €15,000</li>
+                            <li>Cost of Goods Sold: €10,000</li>
+                        </ul>
+                        <p><strong>Calculation:</strong></p>
+                        <p style="font-size:14pt; font-weight:bold;">Gross Profit = €15,000 - €10,000 = <span style="color:#27ae60;">€5,000</span></p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p><strong>Gegeben:</strong></p>
+                        <ul>
+                            <li>Handelswarenerlöse: €15.000</li>
+                            <li>Handelswareneinsatz: €10.000</li>
+                        </ul>
+                        <p><strong>Berechnung:</strong></p>
+                        <p style="font-size:14pt; font-weight:bold;">Bruttogewinn = €15.000 - €10.000 = <span style="color:#27ae60;">€5.000</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="callout callout-tip">
+                <div class="callout-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1e2e48" stroke-width="2">
+                        <path d="M9 18h6M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"></path>
+                    </svg>
+                    Prüfungstipp | Exam Tip
+                </div>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <p>The <strong>gross profit margin</strong> is often calculated as a percentage:</p>
+                        <p class="mono">Gross Profit Margin = (Gross Profit ÷ Sales) × 100</p>
+                        <p>In our example: (€5,000 ÷ €15,000) × 100 = <strong>33.33%</strong></p>
+                    </div>
+                    <div class="bilingual-col">
+                        <p>Die <strong>Bruttogewinnmarge</strong> wird oft als Prozentsatz berechnet:</p>
+                        <p class="mono">Bruttogewinnmarge = (Bruttogewinn ÷ Erlöse) × 100</p>
+                        <p>Im Beispiel: (€5.000 ÷ €15.000) × 100 = <strong>33.33%</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 12: SHORT PRACTICE EXAMPLES -->
+    <div class="page-break">
+        <div style="padding: 20px;">
+            <div class="section-header">
+                <h1 style="color: white; font-size: 18pt;">Kurze Übungsbeispiele | Short Practice Examples</h1>
+            </div>
+
+            <h2>Übung 1: Buchungssätze mit USt | Journal Entries with VAT</h2>
+            <p style="font-style:italic; margin-bottom:15px;">Anton Bauer e.U. - Juni Geschäftsfälle</p>
+
+            <table>
+                <tr>
+                    <th style="width:50px;">#</th>
+                    <th>Geschäftsfall | Transaction</th>
+                    <th>Buchungssatz | Journal Entry</th>
+                    <th>Erfolg | Profit</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Steuerberater €1.020,- inkl. 20% USt<br><em>Tax consultant invoice paid</em></td>
+                    <td class="mono">7750 Rechtsberatung 850,- / 2800 Bank 1.020,-<br>2500 Vorsteuer 170,-</td>
+                    <td style="color:#e74c3c;">G↓</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Verkauf €586,80 inkl. USt<br><em>Sale of goods</em></td>
+                    <td class="mono">20004 Kunde 586,80 / 4000 HW-Erlöse 489,-<br>3500 USt 97,80</td>
+                    <td style="color:#27ae60;">G↑</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Einkauf €3.136,80 inkl. USt<br><em>Purchase on credit</em></td>
+                    <td class="mono">5000 HW-Einsatz 2.614,- / 33039 Lieferant 3.136,80<br>2500 Vorsteuer 522,80</td>
+                    <td style="color:#e74c3c;">G↓</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Barkauf €332,- inkl. 20% USt<br><em>Cash purchase</em></td>
+                    <td class="mono">5000 HW-Einsatz 276,67 / 2700 Kassa 332,-<br>2500 Vorsteuer 55,33</td>
+                    <td style="color:#e74c3c;">G↓</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>USt-Zahllast überweisen<br><em>VAT payment</em></td>
+                    <td class="mono">3520 USt-Zahllast 2.637,- / 2800 Bank 2.637,-</td>
+                    <td style="color:#2980b9;">GØ</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Privatentnahme €1.500,-<br><em>Private cash withdrawal</em></td>
+                    <td class="mono">9600 Privat 1.500,- / 2700 Kassa 1.500,-</td>
+                    <td style="color:#2980b9;">GØ</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>LKW-Kauf €27.600,- inkl. USt<br><em>Van purchase on credit</em></td>
+                    <td class="mono">0640 LKW 23.000,- / 33099 Ford-Huber 27.600,-<br>2500 Vorsteuer 4.600,-</td>
+                    <td style="color:#2980b9;">GØ</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Bankeingang Kunde<br><em>Customer payment received</em></td>
+                    <td class="mono">2800 Bank 586,80 / 20004 Kunde 586,80</td>
+                    <td style="color:#2980b9;">GØ</td>
+                </tr>
+            </table>
+
+            <h2>Übung 2: USt-Zahllast verbuchen | VAT Settlement</h2>
+
+            <div class="example-box">
+                <h4>Schritte | Steps:</h4>
+                <div class="bilingual">
+                    <div class="bilingual-col">
+                        <ol>
+                            <li>Vorsteuer umbuchen: <span class="mono">3520 USt-Zahllast / 2500 Vorsteuer</span></li>
+                            <li>Umsatzsteuer umbuchen: <span class="mono">3500 USt / 3520 USt-Zahllast</span></li>
+                            <li>Ausgleich: <span class="mono">3520 USt-Zahllast / 2800 Bank</span></li>
+                        </ol>
+                    </div>
+                    <div class="bilingual-col">
+                        <ol>
+                            <li>Rebook Input VAT: <span class="mono">3520 USt-Zahllast / 2500 Vorsteuer</span></li>
+                            <li>Rebook Output VAT: <span class="mono">3500 USt / 3520 USt-Zahllast</span></li>
+                            <li>Settle: <span class="mono">3520 USt-Zahllast / 2800 Bank</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Übung 3: Buchungsregeln | Booking Rules Summary</h2>
+
+            <table>
+                <tr>
+                    <th>Konto | Account</th>
+                    <th>Zugang | Increase</th>
+                    <th>Abgang | Decrease</th>
+                    <th>Saldo | Balance</th>
+                </tr>
+                <tr>
+                    <td>Aktive Bestandskonten</td>
+                    <td>Soll</td>
+                    <td>Haben</td>
+                    <td>Soll</td>
+                </tr>
+                <tr>
+                    <td>Passive Bestandskonten</td>
+                    <td>Haben</td>
+                    <td>Soll</td>
+                    <td>Haben</td>
+                </tr>
+                <tr>
+                    <td>Aufwandskonten</td>
+                    <td>Soll</td>
+                    <td>Haben</td>
+                    <td>Soll</td>
+                </tr>
+                <tr>
+                    <td>Ertragskonten</td>
+                    <td>Haben</td>
+                    <td>Soll</td>
+                    <td>Haben</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- PAGE 13: ACCOUNT PLAN -->
+    <div style="padding: 20px;">
+        <div class="section-header">
+            <h1 style="color: white; font-size: 18pt;">Kontenplan | Account Plan</h1>
+        </div>
+
+        <div style="text-align: center; margin: 20px 0;">
+            <p><strong>Vollständiger Kontenplan nach EKR | Complete Account Plan</strong></p>
+            <p style="font-style:italic; margin-top:10px;">Der detaillierte Kontenplan für Österreich | The detailed Austrian Chart of Accounts</p>
+        </div>
+
+        <div style="border: 2px solid #1e2e48; padding: 10px;">
+            <img src="assets/accountplan.jpeg" alt="Complete Account Plan (EKR)" style="max-width: 100%;">
+        </div>
+
+        <div class="callout callout-tip" style="margin-top:20px;">
+            <div class="callout-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1e2e48" stroke-width="2">
+                    <path d="M9 18h6M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"></path>
+                </svg>
+                Hinweis | Note
+            </div>
+            <div class="bilingual">
+                <div class="bilingual-col">
+                    <p>This page contains the complete account plan with all 4-digit account numbers used in Austrian bookkeeping. Refer to this when forming journal entries.</p>
+                </div>
+                <div class="bilingual-col">
+                    <p>Diese Seite enthält den vollständigen Kontenplan mit allen vierstelligen Kontonummern, die in der österreichischen Buchführung verwendet werden. Beim Bilden von Buchungssätzen hiernach richten.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
