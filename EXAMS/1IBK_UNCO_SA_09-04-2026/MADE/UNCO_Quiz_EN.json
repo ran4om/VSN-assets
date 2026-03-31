@@ -1,0 +1,399 @@
+{
+  "title": "UNCO Accounting Quiz - Exam Preparation",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What is one of the 3 characteristics of double-entry bookkeeping?",
+      "options": [
+        "Every amount is posted three times",
+        "Every transaction is only recorded in the journal",
+        "Every amount is posted twice (once in debit, once in credit)",
+        "Profit is only determined indirectly"
+      ],
+      "correctAnswer": "Every amount is posted twice (once in debit, once in credit)",
+      "points": 10,
+      "topic": "doppelte-buchfuehrung"
+    },
+    {
+      "type": "true-false",
+      "text": "In double-entry bookkeeping, profit is only determined indirectly through equity comparison.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "doppelte-buchfuehrung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does the balance sheet show?",
+      "options": [
+        "The profit of a company over a year",
+        "The asset and capital structure at a specific date",
+        "Monthly revenues and expenses",
+        "The VAT of a company"
+      ],
+      "correctAnswer": "The asset and capital structure at a specific date",
+      "points": 10,
+      "topic": "bilanz-definition"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which accounts belong to Fixed Assets (Class 0)?",
+      "options": [
+        "Merchandise inventory, receivables",
+        "Intangible assets, tangible assets, financial assets",
+        "Provisions, accounts payable",
+        "Cash, bank"
+      ],
+      "correctAnswer": "Intangible assets, tangible assets, financial assets",
+      "points": 10,
+      "topic": "bilanz-struktur"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which accounts belong to Current Assets?",
+      "options": [
+        "Land, buildings",
+        "Equity, loans",
+        "Merchandise inventory, receivables, cash, bank",
+        "Provisions"
+      ],
+      "correctAnswer": "Merchandise inventory, receivables, cash, bank",
+      "points": 10,
+      "topic": "bilanz-struktur"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the balance sheet equation?",
+      "options": [
+        "Assets = Liabilities - Equity",
+        "Assets = Equity + Liabilities",
+        "Equity = Assets + Liabilities",
+        "Liabilities = Equity - Assets"
+      ],
+      "correctAnswer": "Assets = Equity + Liabilities",
+      "points": 10,
+      "topic": "bilanz-gleichung"
+    },
+    {
+      "type": "true-false",
+      "text": "The balance sheet must always balance: Assets = Liabilities",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "bilanz-gleichung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "In an Asset Exchange (Aktivtausch):",
+      "options": [
+        "Assets and liabilities both increase",
+        "Only assets change, total balance remains the same",
+        "Assets and liabilities both decrease",
+        "Only liabilities change"
+      ],
+      "correctAnswer": "Only assets change, total balance remains the same",
+      "points": 10,
+      "topic": "bilanz-veraenderungen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Example of Balance Sheet Extension (Bilanzverlängerung):",
+      "options": [
+        "Cash withdrawal from bank",
+        "Loan repayment",
+        "Purchase of machine on credit",
+        "Conversion of short-term to long-term loan"
+      ],
+      "correctAnswer": "Purchase of machine on credit",
+      "points": 10,
+      "topic": "bilanz-veraenderungen"
+    },
+    {
+      "type": "true-false",
+      "text": "Only type 3 (Extension) and type 4 (Contraction) affect profit.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 10,
+      "topic": "bilanz-veraenderungen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "In Balance Sheet Contraction (Bilanzverkürzung):",
+      "options": [
+        "Total remains the same",
+        "Only liabilities change",
+        "Assets and liabilities both decrease",
+        "Assets and liabilities both increase"
+      ],
+      "correctAnswer": "Assets and liabilities both decrease",
+      "points": 10,
+      "topic": "bilanz-veraenderungen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the Income Statement (G&V)?",
+      "options": [
+        "A date-specific statement of assets",
+        "A period-specific comparison of revenues and expenses",
+        "A statement of cash balances",
+        "A calculation of VAT"
+      ],
+      "correctAnswer": "A period-specific comparison of revenues and expenses",
+      "points": 10,
+      "topic": "gev-definition"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Where are expenses recorded in the G&V?",
+      "options": [
+        "In credit (right side)",
+        "In debit (left side)",
+        "In the balance sheet",
+        "In the ledger"
+      ],
+      "correctAnswer": "In debit (left side)",
+      "points": 10,
+      "topic": "gev-struktur"
+    },
+    {
+      "type": "true-false",
+      "text": "If revenues > expenses, a loss is created.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "gev-berechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which account class belongs to Operating Revenues?",
+      "options": [
+        "Class 0",
+        "Class 4",
+        "Class 7",
+        "Class 9"
+      ],
+      "correctAnswer": "Class 4",
+      "points": 10,
+      "topic": "ekr-kontenklassen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which account class contains Personnel Expenses?",
+      "options": [
+        "Class 4",
+        "Class 5",
+        "Class 6",
+        "Class 8"
+      ],
+      "correctAnswer": "Class 6",
+      "points": 10,
+      "topic": "ekr-kontenklassen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "For active balance sheet accounts (e.g., cash): increases are posted in ___.",
+      "options": [
+        "Credit (Haben)",
+        "Debit (Soll)",
+        "Ledger",
+        "Journal"
+      ],
+      "correctAnswer": "Debit (Soll)",
+      "points": 10,
+      "topic": "buchungsregeln"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "For passive balance sheet accounts (e.g., loans): increases are posted in ___.",
+      "options": [
+        "Debit (Soll)",
+        "Credit (Haben)",
+        "Balance sheet",
+        "Income statement"
+      ],
+      "correctAnswer": "Credit (Haben)",
+      "points": 10,
+      "topic": "buchungsregeln"
+    },
+    {
+      "type": "true-false",
+      "text": "Expense accounts have a debit balance as their normal balance.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "buchungsregeln"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Revenue accounts (e.g., sales revenue) are posted in ___ to increase revenue.",
+      "options": [
+        "Debit (Soll)",
+        "Credit (Haben)",
+        "Journal",
+        "Ledger"
+      ],
+      "correctAnswer": "Credit (Haben)",
+      "points": 10,
+      "topic": "buchungsregeln"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is Input VAT (Vorsteuer), Account 2500?",
+      "options": [
+        "VAT on sales to customers",
+        "VAT on purchases - claim against tax authority",
+        "VAT on sales",
+        "A liability"
+      ],
+      "correctAnswer": "VAT on purchases - claim against tax authority",
+      "points": 10,
+      "topic": "umsatzsteuer"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is Output VAT (Umsatzsteuer), Account 3500?",
+      "options": [
+        "VAT on purchases",
+        "VAT on sales - liability to tax authority",
+        "A receivable",
+        "An expense"
+      ],
+      "correctAnswer": "VAT on sales - liability to tax authority",
+      "points": 10,
+      "topic": "umsatzsteuer"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Calculation of VAT from €332 (incl. 20%): VAT = ?",
+      "options": [
+        "332 × 0.20 = 66.40",
+        "332 ÷ 1.20 = 276.67",
+        "332 ÷ 6 = 55.33",
+        "332 - 276.67 = 55.33"
+      ],
+      "correctAnswer": "332 ÷ 6 = 55.33",
+      "points": 15,
+      "topic": "umsatzsteuer-berechnung"
+    },
+    {
+      "type": "true-false",
+      "text": "The VAT Payable/Receivable account (3520) is an active balance sheet account.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "umsatzsteuer"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "When selling goods with VAT, the output VAT is posted in ___.",
+      "options": [
+        "Debit (Soll)",
+        "Credit (Haben)",
+        "Debit and Credit",
+        "Neither"
+      ],
+      "correctAnswer": "Credit (Haben)",
+      "points": 10,
+      "topic": "geschaeftsfaelle"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A private withdrawal affects profit (G&V) as:",
+      "options": [
+        "G↑ (Profit increasing)",
+        "G↓ (Profit decreasing)",
+        "GØ (Profit neutral)",
+        "G↑ and G↓ simultaneously"
+      ],
+      "correctAnswer": "GØ (Profit neutral)",
+      "points": 10,
+      "topic": "geschaeftsfaelle"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is Gross Profit?",
+      "options": [
+        "Revenues - all expenses",
+        "Revenues - cost of goods sold",
+        "VAT input - VAT output",
+        "Equity - Liabilities"
+      ],
+      "correctAnswer": "Revenues - cost of goods sold",
+      "points": 10,
+      "topic": "bruttogewinn"
+    },
+    {
+      "type": "open-ended",
+      "text": "Explain the booking rules for active and passive balance sheet accounts.",
+      "options": [],
+      "correctAnswer": "Active balance sheet accounts (cash, bank): increase in debit (Soll), decrease in credit (Haben), debit balance. Passive balance sheet accounts (equity, liabilities): increase in credit (Haben), decrease in debit (Soll), credit balance.",
+      "points": 20,
+      "topic": "buchungsregeln"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which account numbers are for Cash (Kassa) and Bank?",
+      "options": [
+        "2700 Cash, 2800 Bank",
+        "2000 Cash, 2800 Bank",
+        "2700 Receivables, 2800 Payables",
+        "4000 Cash, 5000 Bank"
+      ],
+      "correctAnswer": "2700 Cash, 2800 Bank",
+      "points": 10,
+      "topic": "kontonummern"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which account numbers are for Sales Revenue (HW-Erlöse) and Cost of Goods Sold (HW-Einsatz)?",
+      "options": [
+        "4000 Sales, 5000 Cost",
+        "5000 Sales, 4000 Cost",
+        "4000 Sales, 6000 Cost",
+        "3000 Sales, 5000 Cost"
+      ],
+      "correctAnswer": "4000 Sales, 5000 Cost",
+      "points": 10,
+      "topic": "kontonummern"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which account numbers are for Input VAT (Vorsteuer) and Output VAT (Umsatzsteuer)?",
+      "options": [
+        "2500 Input VAT, 3500 Output VAT",
+        "3500 Input VAT, 2500 Output VAT",
+        "2000 Input VAT, 3000 Output VAT",
+        "2500 Output VAT, 3500 Input VAT"
+      ],
+      "correctAnswer": "2500 Input VAT, 3500 Output VAT",
+      "points": 10,
+      "topic": "kontonummern"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which account numbers are for Accounts Payable (Lieferverbindlichkeiten) and Accounts Receivable (Lieferforderungen)?",
+      "options": [
+        "2000 Receivables, 3300 Payables",
+        "3300 Receivables, 2000 Payables",
+        "2500 Receivables, 3500 Payables",
+        "2000 Payables, 3300 Receivables"
+      ],
+      "correctAnswer": "2000 Receivables, 3300 Payables",
+      "points": 10,
+      "topic": "kontonummern"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which assignment of EKR account classes is correct?",
+      "options": [
+        "0=Fixed Assets, 1-2=Current Assets, 3=Provisions/Liabilities, 4=Revenues, 5-7=Expenses, 8=Financial/Taxes, 9=Equity",
+        "0=Current Assets, 1-2=Fixed Assets, 3=Revenues, 4=Provisions, 5-7=Liabilities, 8=Equity, 9=Financial",
+        "0=Fixed Assets, 1=Provisions, 2=Liabilities, 3-4=Current Assets, 5=Revenues, 6-9=Expenses",
+        "0=Equity, 1-3=Current Assets, 4=Fixed Assets, 5-9=Revenues"
+      ],
+      "correctAnswer": "0=Fixed Assets, 1-2=Current Assets, 3=Provisions/Liabilities, 4=Revenues, 5-7=Expenses, 8=Financial/Taxes, 9=Equity",
+      "points": 15,
+      "topic": "ekr-kontenklassen"
+    }
+  ]
+}

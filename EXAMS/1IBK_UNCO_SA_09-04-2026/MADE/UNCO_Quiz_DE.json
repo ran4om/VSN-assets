@@ -1,0 +1,399 @@
+{
+  "title": "UNCO Unternehmensrechnung Quiz - Prüfungsvorbereitung",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Was ist eines der 3 Merkmale der doppelten Buchführung?",
+      "options": [
+        "Jeder Betrag wird dreimal verbucht",
+        "Jeder Geschäftsfall wird nur im Journal erfasst",
+        "Jeder Betrag wird zweimal verbucht (einmal Soll, einmal Haben)",
+        "Der Erfolg wird nur direkt ermittelt"
+      ],
+      "correctAnswer": "Jeder Betrag wird zweimal verbucht (einmal Soll, einmal Haben)",
+      "points": 10,
+      "topic": "doppelte-buchfuehrung"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei der doppelten Buchführung wird der Erfolg nur indirekt durch Eigenkapitalvergleich ermittelt.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "doppelte-buchfuehrung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was zeigt die Bilanz?",
+      "options": [
+        "Den Gewinn eines Unternehmens über ein Jahr",
+        "Die Vermögens- und Kapitalstruktur zu einem bestimmten Stichtag",
+        "Die Einnahmen und Ausgaben monatlich",
+        "Die Umsatzsteuer eines Unternehmens"
+      ],
+      "correctAnswer": "Die Vermögens- und Kapitalstruktur zu einem bestimmten Stichtag",
+      "points": 10,
+      "topic": "bilanz-definition"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Konten gehören zum Anlagevermögen (Klasse 0)?",
+      "options": [
+        "Handelswarenvorrat, Forderungen",
+        "Immaterielle Vermögensgegenstände, Sachanlagen, Finanzanlagen",
+        "Rückstellungen, Lieferverbindlichkeiten",
+        "Kassa, Bank"
+      ],
+      "correctAnswer": "Immaterielle Vermögensgegenstände, Sachanlagen, Finanzanlagen",
+      "points": 10,
+      "topic": "bilanz-struktur"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Konten gehören zum Umlaufvermögen?",
+      "options": [
+        "Grundstücke, Gebäude",
+        "Eigenkapital, Darlehen",
+        "Handelswarenvorrat, Forderungen, Kassa, Bank",
+        "Rückstellungen"
+      ],
+      "correctAnswer": "Handelswarenvorrat, Forderungen, Kassa, Bank",
+      "points": 10,
+      "topic": "bilanz-struktur"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie lautet die Bilanzgleichung?",
+      "options": [
+        "Aktiva = Passiva - Eigenkapital",
+        "Aktiva = Eigenkapital + Fremdkapital",
+        "Eigenkapital = Aktiva + Fremdkapital",
+        "Passiva = Eigenkapital - Fremdkapital"
+      ],
+      "correctAnswer": "Aktiva = Eigenkapital + Fremdkapital",
+      "points": 10,
+      "topic": "bilanz-gleichung"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Bilanz muss immer ausgeglichen sein: Aktiva = Passiva",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "bilanz-gleichung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei einem Aktivtausch gilt:",
+      "options": [
+        "Aktiva und Passiva nehmen zu",
+        "Nur Aktiva ändern sich, Bilanzsumme bleibt gleich",
+        "Aktiva und Passiva nehmen ab",
+        "Nur Passiva ändern sich"
+      ],
+      "correctAnswer": "Nur Aktiva ändern sich, Bilanzsumme bleibt gleich",
+      "points": 10,
+      "topic": "bilanz-veraenderungen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Beispiel für Bilanzverlängerung:",
+      "options": [
+        "Barabhebung vom Konto",
+        "Tilgung eines Darlehens",
+        "Kauf einer Maschine auf Kredit",
+        "Umwandlung kurzfristiges in langfristiges Darlehen"
+      ],
+      "correctAnswer": "Kauf einer Maschine auf Kredit",
+      "points": 10,
+      "topic": "bilanz-veraenderungen"
+    },
+    {
+      "type": "true-false",
+      "text": "Nur Typ 3 (Bilanzverlängerung) und Typ 4 (Bilanzverkürzung) beeinflussen den Erfolg.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 10,
+      "topic": "bilanz-veraenderungen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei Bilanzverkürzung gilt:",
+      "options": [
+        "Bilanzsumme bleibt gleich",
+        "Nur Passiva ändern sich",
+        "Aktiva und Passiva nehmen ab",
+        "Aktiva und Passiva nehmen zu"
+      ],
+      "correctAnswer": "Aktiva und Passiva nehmen ab",
+      "points": 10,
+      "topic": "bilanz-veraenderungen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist die Gewinn- und Verlustrechnung (G&V)?",
+      "options": [
+        "Eine stichtagsbezogene Aufstellung der Vermögenswerte",
+        "Eine periodspezifische Gegenüberstellung von Erträgen und Aufwänden",
+        "Eine Aufstellung der Kassenbestände",
+        "Eine Berechnung der Umsatzsteuer"
+      ],
+      "correctAnswer": "Eine periodspezifische Gegenüberstellung von Erträgen und Aufwänden",
+      "points": 10,
+      "topic": "gev-definition"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wo werden Aufwände in der G&V gebucht?",
+      "options": [
+        "Im Haben (rechte Seite)",
+        "Im Soll (linke Seite)",
+        "In der Bilanz",
+        "Im Hauptbuch"
+      ],
+      "correctAnswer": "Im Soll (linke Seite)",
+      "points": 10,
+      "topic": "gev struktur"
+    },
+    {
+      "type": "true-false",
+      "text": "Wenn Erträge > Aufwände, entsteht ein Verlust.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "gev-berechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Kontenklasse gehört zu den Betrieblichen Erträgen?",
+      "options": [
+        "Klasse 0",
+        "Klasse 4",
+        "Klasse 7",
+        "Klasse 9"
+      ],
+      "correctAnswer": "Klasse 4",
+      "points": 10,
+      "topic": "ekr-kontenklassen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Kontenklasse enthält Personalaufwand?",
+      "options": [
+        "Klasse 4",
+        "Klasse 5",
+        "Klasse 6",
+        "Klasse 8"
+      ],
+      "correctAnswer": "Klasse 6",
+      "points": 10,
+      "topic": "ekr-kontenklassen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei aktiven Bestandskonten (z.B. Kassa): Zugänge werden im ___ gebucht.",
+      "options": [
+        "Haben",
+        "Soll",
+        "Hauptbuch",
+        "Journal"
+      ],
+      "correctAnswer": "Soll",
+      "points": 10,
+      "topic": "buchungsregeln"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei passiven Bestandskonten (z.B. Darlehen): Zugänge werden im ___ gebucht.",
+      "options": [
+        "Soll",
+        "Haben",
+        "Bestandskonto",
+        "Erfolgskonto"
+      ],
+      "correctAnswer": "Haben",
+      "points": 10,
+      "topic": "buchungsregeln"
+    },
+    {
+      "type": "true-false",
+      "text": "Aufwandskonten haben einen Soll-Saldo als Normalsaldo.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "buchungsregeln"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ertragskonten (z.B. Handelswarenerlöse) werden im ___ gebucht, um den Ertrag zu erhöhen.",
+      "options": [
+        "Soll",
+        "Haben",
+        "Journal",
+        "Hauptbuch"
+      ],
+      "correctAnswer": "Haben",
+      "points": 10,
+      "topic": "buchungsregeln"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist Vorsteuer (Konto 2500)?",
+      "options": [
+        "Umsatzsteuer an Kunden",
+        "VAT auf Einkäufe - Forderung ans Finanzamt",
+        "Umsatzsteuer aus Verkäufen",
+        "Eine Verbindlichkeit"
+      ],
+      "correctAnswer": "VAT auf Einkäufe - Forderung ans Finanzamt",
+      "points": 10,
+      "topic": "umsatzsteuer"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist Umsatzsteuer (Konto 3500)?",
+      "options": [
+        "VAT auf Einkäufe",
+        "VAT auf Verkäufe - Verbindlichkeit ans Finanzamt",
+        "Eine Forderung",
+        "Ein Aufwand"
+      ],
+      "correctAnswer": "VAT auf Verkäufe - Verbindlichkeit ans Finanzamt",
+      "points": 10,
+      "topic": "umsatzsteuer"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Berechnung der USt aus €332 (inkl. 20%): USt = ?",
+      "options": [
+        "332 × 0,20 = 66,40",
+        "332 ÷ 1,20 = 276,67",
+        "332 ÷ 6 = 55,33",
+        "332 - 276,67 = 55,33"
+      ],
+      "correctAnswer": "332 ÷ 6 = 55,33",
+      "points": 15,
+      "topic": "umsatzsteuer-berechnung"
+    },
+    {
+      "type": "true-false",
+      "text": "Die USt-Zahllast (3520) ist ein aktives Bestandskonto.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "umsatzsteuer"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Beim Warenverkauf mit USt wird die Umsatzsteuer im ___ gebucht.",
+      "options": [
+        "Soll",
+        "Haben",
+        "Soll und Haben",
+        "Weder noch"
+      ],
+      "correctAnswer": "Haben",
+      "points": 10,
+      "topic": "geschaeftsfaelle"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine Privatentnahme beeinflusst den Erfolg (GuV):",
+      "options": [
+        "G↑ (Gewinn erhöhend)",
+        "G↓ (Gewinn mindernd)",
+        "GØ (Erfolgsneutral)",
+        "G↑ und G↓ gleichzeitig"
+      ],
+      "correctAnswer": "GØ (Erfolgsneutral)",
+      "points": 10,
+      "topic": "geschaeftsfaelle"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist der Bruttogewinn?",
+      "options": [
+        "Erlöse - alle Aufwände",
+        "Erlöse - Wareneinsatz",
+        "Umsatzsteuer - Vorsteuer",
+        "Eigenkapital - Fremdkapital"
+      ],
+      "correctAnswer": "Erlöse - Wareneinsatz",
+      "points": 10,
+      "topic": "bruttogewinn"
+    },
+    {
+      "type": "open-ended",
+      "text": "Erkläre die Buchungsregeln für aktive und passive Bestandskonten.",
+      "options": [],
+      "correctAnswer": "Aktive Bestandskonten (Kassa, Bank): Zugang im Soll, Abgang im Haben, Soll-Saldo. Passive Bestandskonten (Eigenkapital, Verbindlichkeiten): Zugang im Haben, Abgang im Soll, Haben-Saldo.",
+      "points": 20,
+      "topic": "buchungsregeln"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Kontonummern sind Kassa und Bank?",
+      "options": [
+        "2700 Kassa, 2800 Bank",
+        "2000 Kassa, 2800 Bank",
+        "2700 Forderungen, 2800 Verbindlichkeiten",
+        "4000 Kassa, 5000 Bank"
+      ],
+      "correctAnswer": "2700 Kassa, 2800 Bank",
+      "points": 10,
+      "topic": "kontonummern"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Kontonummern sind für Handelswaren-Erlöse und Waren-Einsatz?",
+      "options": [
+        "4000 Erlöse, 5000 Einsatz",
+        "5000 Erlöse, 4000 Einsatz",
+        "4000 Erlöse, 6000 Einsatz",
+        "3000 Erlöse, 5000 Einsatz"
+      ],
+      "correctAnswer": "4000 Erlöse, 5000 Einsatz",
+      "points": 10,
+      "topic": "kontonummern"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Kontonummern sind für Vorsteuer und Umsatzsteuer?",
+      "options": [
+        "2500 Vorsteuer, 3500 Umsatzsteuer",
+        "3500 Vorsteuer, 2500 Umsatzsteuer",
+        "2000 Vorsteuer, 3000 Umsatzsteuer",
+        "2500 Umsatzsteuer, 3500 Vorsteuer"
+      ],
+      "correctAnswer": "2500 Vorsteuer, 3500 Umsatzsteuer",
+      "points": 10,
+      "topic": "kontonummern"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Kontonummern sind für Lieferverbindlichkeiten und Lieferforderungen?",
+      "options": [
+        "2000 Forderungen, 3300 Verbindlichkeiten",
+        "3300 Forderungen, 2000 Verbindlichkeiten",
+        "2500 Forderungen, 3500 Verbindlichkeiten",
+        "2000 Verbindlichkeiten, 3300 Forderungen"
+      ],
+      "correctAnswer": "2000 Forderungen, 3300 Verbindlichkeiten",
+      "points": 10,
+      "topic": "kontonummern"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Zuordnung der EKR-Kontenklassen ist korrekt?",
+      "options": [
+        "0=AV, 1-2=UV, 3=Rückstellungen/Verb, 4=Erträge, 5-7=Aufwand, 8=Finanz/Steuern, 9=EK",
+        "0=UV, 1-2=AV, 3=Erträge, 4=Rückstellungen, 5-7=Verbindlichkeiten, 8=EK, 9=Finanzen",
+        "0=AV, 1=Rückstellungen, 2=Verbindlichkeiten, 3-4=UV, 5=Erträge, 6-9=Aufwand",
+        "0=Eigenkapital, 1-3=Umlaufvermögen, 4=Anlagevermögen, 5-9=Erträge"
+      ],
+      "correctAnswer": "0=AV, 1-2=UV, 3=Rückstellungen/Verb, 4=Erträge, 5-7=Aufwand, 8=Finanz/Steuern, 9=EK",
+      "points": 15,
+      "topic": "ekr-kontenklassen"
+    }
+  ]
+}
