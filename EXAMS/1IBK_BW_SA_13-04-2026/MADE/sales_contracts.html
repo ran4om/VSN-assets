@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Contracts & Preparation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e2e48;
+            --secondary: #fbc92d;
+            --complementary: #dc4ebf;
+            --text: #333;
+            --bg: #fff;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+        }
+
+        .page {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 50px 60px;
+            background: white;
+            box-sizing: border-box;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        @media print {
+            @page { size: A4; margin: 15mm; }
+            body { background: white; }
+            .page { margin: 0; padding: 0; width: 100%; box-shadow: none; }
+            .page-break { page-break-after: always; }
+            .avoid-break { page-break-inside: avoid; }
+            .callout { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            
+            /* Ensures no widows or orphans */
+            h2, h3, h4 { page-break-after: avoid; }
+            p { orphans: 3; widows: 3; }
+        }
+
+        header.brand-header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .brand-header img {
+            height: 60px;
+            object-fit: contain;
+        }
+        .brand-header .meta {
+            text-align: right;
+        }
+        .brand-header .meta h1 {
+            margin: 0 0 5px 0;
+            font-size: 24px;
+            color: var(--primary);
+            border: none;
+            padding: 0;
+        }
+        .brand-header .meta p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        h1, h2, h3, h4 { 
+            color: var(--primary); 
+            margin-top: 1.5em; 
+            margin-bottom: 0.5em;
+        }
+        h1 { font-size: 2.2rem; border-bottom: 3px solid var(--primary); padding-bottom: 10px; }
+        h2 { font-size: 1.8rem; border-bottom: 2px solid var(--secondary); padding-bottom: 8px; }
+        h3 { font-size: 1.3rem; color: var(--primary); }
+
+        .bilingual-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .bilingual-grid > div {
+            min-width: 0;
+        }
+
+        /* Subsections container to avoid awkward breaks entirely */
+        .subsection {
+            margin-bottom: 2rem;
+        }
+
+        .callout {
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 12px;
+            page-break-inside: avoid;
+            font-size: 0.95em;
+        }
+        .callout svg {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+        }
+        .callout-content { flex-grow: 1; }
+        .callout-content p { margin-top: 0; }
+        .callout-content p:last-child { margin-bottom: 0; }
+
+        .callout.definition { background-color: rgba(220, 78, 191, 0.7); color: white; }
+        .callout.info { background-color: rgba(41, 128, 185, 0.7); color: white; }
+        .callout.tip { background-color: rgba(251, 201, 45, 0.7); color: var(--primary); }
+
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        
+        .mono {
+            font-family: 'Roboto Mono', monospace;
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: var(--complementary);
+        }
+        code {
+            font-family: 'Roboto Mono', monospace;
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: var(--complementary);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            page-break-inside: avoid;
+            font-size: 0.9em;
+        }
+        table th {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .diagram-container {
+            margin: 20px 0;
+            text-align: center;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            page-break-inside: avoid;
+        }
+        
+        .toc {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+            margin-bottom: 30px;
+        }
+        .toc ul { list-style-type: none; padding-left: 0; }
+        .toc li { margin-bottom: 10px; }
+        .toc a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        .toc a:hover { text-decoration: underline; color: var(--complementary); }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="brand-header">
+            <img src="assets/VSN_new.png" alt="VSN Logo">
+            <div class="meta">
+                <h1>Sales Contracts & Preparation</h1>
+                <p>Curriculum Learning Material</p>
+                <p>Date: 2026-04-12</p>
+            </div>
+        </header>
+
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#sec1">1. Initiation of Sales Contracts / Anbahnung</a></li>
+                <li><a href="#sec2">2. Conclusion of Sales Contracts / Abschluss</a></li>
+                <li><a href="#sec3">3. Fulfillment of Sales Contracts / Erfüllung</a></li>
+                <li><a href="#sec4">4. Components of a Sales Contract / Bestandteile</a></li>
+                <li><a href="#sec5">5. The Inquiry / Die Anfrage</a></li>
+                <li><a href="#sec6">6. The Offer / Das Angebot</a></li>
+                <li><a href="#sec7">7. Comparing Offers / Angebote vergleichen</a></li>
+                <li><a href="#sec8">8. The Order and Order Confirmation</a></li>
+                <li><a href="#sec9">9. English Worksheet: Vocabulary & Concepts</a></li>
+            </ul>
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec1">1. Initiation of Sales Contracts (Anbahnung)</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p>The initiation phase is the first step in creating a sales contract. During this phase, the essential information about the product, price, and conditions is exchanged between the potential buyer and seller.</p>
+
+                </div>
+                <div class="lang-col">
+<p>Die Anbahnungsphase ist der erste Schritt bei der Entstehung eines Kaufvertrags. In dieser Phase werden die wesentlichsten Informationen über Produkt, Preis und Konditionen zwischen dem potenziellen Käufer und Verkäufer ausgetauscht.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+            <h3>1.1 Promotion (Anpreisung)</h3>
+
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: A promotion (Anpreisung) is a non-binding declaration of a seller's willingness to sell goods.</div></div></p>
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Promotions are directed at the general public rather than a specific individual. Because they lack a definitive intention to be legally bound (Bindungswille), the seller is not obligated to sell the items. Examples include catalogs, flyers, shop window displays, print advertisements, and online shop listings.</div></div></p>
+<p><div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: You can often recognize a promotion by explicit disclaimers such as &quot;while stocks last&quot; (solange der Vorrat reicht).</div></div></p>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: Eine Anpreisung ist eine rechtlich unverbindliche Erklärung der Verkaufsbereitschaft eines Verkäufers.</div></div></p>
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Anpreisungen richten sich an die Allgemeinheit und nicht an eine bestimmte Person. Da ihnen der Bindungswille fehlt, ist der Verkäufer nicht verpflichtet, die Ware zu verkaufen. Beispiele sind Kataloge, Flugblätter, Schaufensterauslagen, Zeitungsanzeigen und Onlineshops.</div></div></p>
+<p><div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: Eine Anpreisung erkennt man oft an Freizeichnungsklauseln wie „solange der Vorrat reicht“.</div></div></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+            <h3>1.2 Inquiry (Anfrage)</h3>
+
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: An inquiry (Anfrage) is a request for information made by a prospective buyer to a seller. It is legally non-binding and establishes no obligation to purchase.</div></div></p>
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Inquiries can be made verbally or in writing. There are two main types:</div></div></p>
+<ul>
+<li><strong>General Inquiry (Allgemeine Anfrage):</strong> The buyer requests general information, such as catalogs, price lists, or general brochures (e.g., &quot;Please send us your latest catalog&quot;).</li>
+<li><strong>Specific Inquiry (Spezielle Anfrage):</strong> The buyer asks for detailed information regarding a specific product, its price, delivery times, or payment conditions (e.g., &quot;What is the price for 50 laptops of model X?&quot;).</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: Eine Anfrage ist die rechtlich unverbindliche Informationsbeschaffung eines potenziellen Käufers an einen Verkäufer. Sie verpflichtet nicht zum Kauf.</div></div></p>
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Anfragen können mündlich oder schriftlich erfolgen. Es gibt zwei Hauptarten:</div></div></p>
+<ul>
+<li><strong>Allgemeine Anfrage:</strong> Der Käufer bittet um allgemeine Informationen wie Kataloge, Preislisten oder Prospekte (z. B. „Bitte senden Sie uns Ihren aktuellen Katalog“).</li>
+<li><strong>Spezielle Anfrage:</strong> Der Käufer bittet um detaillierte Informationen zu einem bestimmten Produkt, dessen Preis, Lieferzeiten oder Zahlungsbedingungen (z. B. „Was kosten 50 Laptops des Modells X?“).</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+            <h3>1.3 Offer (Angebot)</h3>
+
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: An offer (Angebot) is a declaration by the seller expressing their willingness to sell specific goods under specific conditions. If legally binding, it can lead directly to a contract if accepted by the buyer.</div></div></p>
+<p>
+    <div class="diagram-container">
+        <svg viewBox="0 0 600 300" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#1e2e48" />
+                </marker>
+            </defs>
+            <rect x="200" y="20" width="200" height="40" rx="8" fill="#1e2e48" />
+            <text x="300" y="45" font-family="Open Sans" font-size="14" font-weight="bold" fill="white" text-anchor="middle">OFFER (Angebot)</text>
+
+            <path d="M 300 60 L 300 90" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" />
+            <path d="M 300 90 L 150 90 L 150 110" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 300 90 L 450 90 L 450 110" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="50" y="110" width="200" height="40" rx="8" fill="#2980b9" />
+            <text x="150" y="135" font-family="Open Sans" font-size="14" fill="white" text-anchor="middle">Initiative</text>
+
+            <rect x="350" y="110" width="200" height="40" rx="8" fill="#fbc92d" />
+            <text x="450" y="135" font-family="Open Sans" font-size="14" fill="#1e2e48" text-anchor="middle">Binding Nature</text>
+
+            <path d="M 150 150 L 150 160 L 90 160 L 90 180" stroke="#2980b9" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 150 150 L 150 160 L 210 160 L 210 180" stroke="#2980b9" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="30" y="180" width="120" height="40" rx="8" fill="rgba(41, 128, 185, 0.2)" stroke="#2980b9" />
+            <text x="90" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Requested</text>
+            <text x="90" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Verlangt)</text>
+
+            <rect x="150" y="180" width="120" height="40" rx="8" fill="rgba(41, 128, 185, 0.2)" stroke="#2980b9" />
+            <text x="210" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Unsolicited</text>
+            <text x="210" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Unverlangt)</text>
+
+            <path d="M 450 150 L 450 160 L 390 160 L 390 180" stroke="#fbc92d" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 450 150 L 450 160 L 510 160 L 510 180" stroke="#fbc92d" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="330" y="180" width="120" height="40" rx="8" fill="rgba(251, 201, 45, 0.2)" stroke="#fbc92d" />
+            <text x="390" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Binding</text>
+            <text x="390" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Verbindlich)</text>
+
+            <rect x="450" y="180" width="120" height="40" rx="8" fill="rgba(251, 201, 45, 0.2)" stroke="#fbc92d" />
+            <text x="510" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Non-binding</text>
+            <text x="510" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Freibleibend)</text>
+        </svg>
+    </div>
+    </p>
+<p><strong>Requested vs. Unsolicited Offers:</strong></p>
+<ul>
+<li><strong>Requested Offer (Verlangtes Angebot):</strong> The offer is made in response to a specific inquiry from the buyer.</li>
+<li><strong>Unsolicited Offer (Unverlangtes Angebot):</strong> The seller takes the initiative and sends an offer without a prior inquiry from the buyer.</li>
+</ul>
+<p><strong>Binding vs. Non-binding Offers:</strong></p>
+<ul>
+<li><strong>Binding Offer (Verbindliches Angebot):</strong> The seller is legally bound to the offer for a certain period. For an offer to be binding, it must contain a clear intention to be bound (Bindungswille), be addressed to a specific person, and include the 5 mandatory contract components (Seller, Buyer, Quality, Quantity, Price).</li>
+<li><strong>Non-binding / Provisional Offer (Freibleibendes Angebot):</strong> The seller limits their legal obligation by using exemption clauses (Freizeichnungsklauseln).<ul>
+<li><em>Examples of clauses:</em> &quot;prices subject to change without notice&quot; (Preisänderungen vorbehalten), &quot;only while stocks last&quot; (solange der Vorrat reicht), &quot;this offer is not binding&quot; / &quot;without obligation&quot; (freibleibend / ohne Obligo).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Binding Duration (Bindungsdauer):</strong>
+If an offer is binding, how long does the commitment last?</p>
+<ol>
+<li><strong>Specified in the offer:</strong> E.g., &quot;This offer is valid until May 15th&quot; or &quot;Valid for 14 days.&quot;</li>
+<li><strong>Statutory binding period (Gesetzliche Bindungsdauer):</strong><ul>
+<li><em>Among present parties (Mündlich/Telefonisch):</em> Valid only for the duration of the conversation. There is no consideration period.</li>
+<li><em>Among absent parties (Schriftlich - Mail/Brief):</em> The duration consists of double the transport time (Hin- und Rückweg) plus an appropriate consideration period (angemessene Überlegungsfrist). For emails, the transport time is negligible, so only the consideration period applies. For letters, expect 4-6 days total.</li>
+</ul>
+</li>
+</ol>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: Ein Angebot ist die Erklärung des Verkäufers, bestimmte Waren zu bestimmten Bedingungen verkaufen zu wollen. Ist es rechtlich bindend, führt die Annahme durch den Käufer direkt zum Vertrag.</div></div></p>
+<p>
+    <div class="diagram-container">
+        <svg viewBox="0 0 600 300" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#1e2e48" />
+                </marker>
+            </defs>
+            <rect x="200" y="20" width="200" height="40" rx="8" fill="#1e2e48" />
+            <text x="300" y="45" font-family="Open Sans" font-size="14" font-weight="bold" fill="white" text-anchor="middle">OFFER (Angebot)</text>
+
+            <path d="M 300 60 L 300 90" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" />
+            <path d="M 300 90 L 150 90 L 150 110" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 300 90 L 450 90 L 450 110" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="50" y="110" width="200" height="40" rx="8" fill="#2980b9" />
+            <text x="150" y="135" font-family="Open Sans" font-size="14" fill="white" text-anchor="middle">Initiative</text>
+
+            <rect x="350" y="110" width="200" height="40" rx="8" fill="#fbc92d" />
+            <text x="450" y="135" font-family="Open Sans" font-size="14" fill="#1e2e48" text-anchor="middle">Binding Nature</text>
+
+            <path d="M 150 150 L 150 160 L 90 160 L 90 180" stroke="#2980b9" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 150 150 L 150 160 L 210 160 L 210 180" stroke="#2980b9" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="30" y="180" width="120" height="40" rx="8" fill="rgba(41, 128, 185, 0.2)" stroke="#2980b9" />
+            <text x="90" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Requested</text>
+            <text x="90" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Verlangt)</text>
+
+            <rect x="150" y="180" width="120" height="40" rx="8" fill="rgba(41, 128, 185, 0.2)" stroke="#2980b9" />
+            <text x="210" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Unsolicited</text>
+            <text x="210" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Unverlangt)</text>
+
+            <path d="M 450 150 L 450 160 L 390 160 L 390 180" stroke="#fbc92d" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 450 150 L 450 160 L 510 160 L 510 180" stroke="#fbc92d" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="330" y="180" width="120" height="40" rx="8" fill="rgba(251, 201, 45, 0.2)" stroke="#fbc92d" />
+            <text x="390" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Binding</text>
+            <text x="390" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Verbindlich)</text>
+
+            <rect x="450" y="180" width="120" height="40" rx="8" fill="rgba(251, 201, 45, 0.2)" stroke="#fbc92d" />
+            <text x="510" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Non-binding</text>
+            <text x="510" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Freibleibend)</text>
+        </svg>
+    </div>
+    </p>
+<p><strong>Verlangtes vs. Unverlangtes Angebot:</strong></p>
+<ul>
+<li><strong>Verlangtes Angebot:</strong> Das Angebot erfolgt als Antwort auf eine konkrete Anfrage des Käufers.</li>
+<li><strong>Unverlangtes Angebot:</strong> Der Verkäufer ergreift die Initiative und sendet ein Angebot ohne vorherige Anfrage.</li>
+</ul>
+<p><strong>Verbindliches vs. Unverbindliches Angebot:</strong></p>
+<ul>
+<li><strong>Verbindliches Angebot:</strong> Der Verkäufer ist für eine bestimmte Zeit rechtlich an das Angebot gebunden. Voraussetzung: Es muss ein erkennbarer Bindungswille vorliegen, sich an eine bestimmte Person richten und die 5 gesetzlichen Bestandteile (Verkäufer, Käufer, Qualität, Quantität, Preis) enthalten.</li>
+<li><strong>Unverbindliches / Freibleibendes Angebot:</strong> Der Verkäufer schränkt seine rechtliche Bindung durch Freizeichnungsklauseln ein.<ul>
+<li><em>Klauselbeispiele:</em> „Preisänderungen vorbehalten“, „solange der Vorrat reicht“, „freibleibend / ohne Obligo“.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Bindungsdauer:</strong>
+Wenn ein Angebot verbindlich ist, wie lange gilt die Bindung?</p>
+<ol>
+<li><strong>Im Angebot angegeben:</strong> Z. B. „Dieses Angebot gilt bis 15. Mai“ oder „14 Tage gültig“.</li>
+<li><strong>Gesetzliche Bindungsdauer (falls nicht angegeben):</strong><ul>
+<li><em>Unter Anwesenden (mündlich/telefonisch):</em> Gültig nur für die Dauer des Gesprächs. Es gibt keine Überlegungsfrist.</li>
+<li><em>Unter Abwesenden (schriftlich - Mail/Brief):</em> Setzt sich zusammen aus dem doppelten Transportweg plus einer angemessenen Überlegungsfrist. Bei E-Mails entfällt der Transportweg weitgehend. Bei Briefen rechnet man mit 4-6 Tagen.</li>
+</ul>
+</li>
+</ol>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec2">2. Conclusion of Sales Contracts (Abschluss)</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: The conclusion of the contract is the second phase. It occurs when two parties reach a mutual agreement (meeting of minds / übereinstimmende Willenserklärung).</div></div></p>
+<p><strong>The Order (Bestellung):</strong></p>
+<ul>
+<li>An order is the buyer's declaration to accept the seller's offer.</li>
+<li>If the buyer orders exactly according to a <em>binding offer</em> within the binding period, the sales contract is concluded immediately.</li>
+<li>If the order deviates from the offer, or if it is based on a <em>non-binding offer</em> (or just a promotion), the order legally acts as a new offer from the buyer. In this case, the seller must confirm it to close the contract.</li>
+</ul>
+<p><strong>The Order Confirmation (Auftragsbestätigung):</strong></p>
+<ul>
+<li>This is the seller's declaration that the order has been received and accepted.</li>
+<li>It is mandatory if:<ol>
+<li>The order deviates from the original offer.</li>
+<li>The order is based on a non-binding offer.</li>
+<li>The buyer placed an order without a prior offer.</li>
+</ol>
+</li>
+<li>In B2C e-commerce (online shopping), an electronic order confirmation is always legally required immediately after purchase.</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Der Vertragsabschluss ist die zweite Phase. Er kommt durch eine übereinstimmende Willenserklärung beider Parteien zustande (meeting of minds).</div></div></p>
+<p><strong>Die Bestellung:</strong></p>
+<ul>
+<li>Die Bestellung ist die Erklärung des Käufers, das Angebot des Verkäufers anzunehmen.</li>
+<li>Bestellt der Käufer rechtzeitig und unverändert auf Basis eines <em>verbindlichen Angebots</em>, ist der Kaufvertrag sofort abgeschlossen.</li>
+<li>Weicht die Bestellung vom Angebot ab oder basiert sie auf einem <em>unverbindlichen Angebot</em> (bzw. einer Anpreisung), gilt die Bestellung rechtlich als neues Angebot des Käufers. Der Verkäufer muss dann bestätigen.</li>
+</ul>
+<p><strong>Die Auftragsbestätigung:</strong></p>
+<ul>
+<li>Dies ist die Erklärung des Verkäufers, dass die Bestellung eingegangen ist und angenommen wird.</li>
+<li>Sie ist verpflichtend, wenn:<ol>
+<li>Die Bestellung vom Angebot abweicht.</li>
+<li>Die Bestellung auf einem freibleibenden Angebot basiert.</li>
+<li>Der Käufer ohne vorheriges Angebot bestellt hat.</li>
+</ol>
+</li>
+<li>Beim Online-Shopping (B2C) ist nach erfolgter Bestellung gesetzlich immer eine elektronische Auftragsbestätigung zwingend erforderlich.</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec3">3. Fulfillment of Sales Contracts (Erfüllung)</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Fulfillment represents the final stage where both parties meet their contractual obligations: The seller delivers the goods, and the buyer accepts and pays for them.</div></div></p>
+<p><strong>1. Delivery (Lieferung):</strong>
+The seller must deliver the goods as agreed. If delivered via a freight carrier, accompanying documents (Begleitpapiere) are issued:</p>
+<ul>
+<li><strong>Delivery Note (Lieferschein):</strong> Goes to the buyer detailing the shipment.</li>
+<li><strong>Counter-slip (Gegenschein):</strong> The buyer signs this to confirm receipt for the seller.</li>
+<li><strong>Freight Documents (Frachtdokumente):</strong> Used when external carriers (post, rail, logistics) transport the goods.</li>
+</ul>
+<p><strong>2. Invoicing (Rechnungslegung):</strong>
+The seller issues an invoice (Rechnung/Faktura). According to tax laws (UStG), an invoice must contain specific elements, including the names/addresses of both parties, date of issue, date of delivery, quantity, commercial description, net amount, tax rate, gross amount, and, for larger amounts, the VAT identification numbers (UID-Nummern).</p>
+<p><strong>3. Acceptance of Goods (Annahme):</strong>
+The buyer must inspect the goods upon receipt. This includes checking the delivery note against the order and checking for obvious defects. Acceptance is confirmed by signing the counter-slip.</p>
+<p><strong>4. Payment (Zahlung):</strong>
+The buyer must pay the invoice according to the agreed payment terms (e.g., prompt payment, advance, or within a credit period).</p>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Die Erfüllung ist die letzte Phase, in der beide Parteien ihren vertraglichen Pflichten nachkommen: Der Verkäufer liefert die Ware, der Käufer nimmt sie an und bezahlt.</div></div></p>
+<p><strong>1. Lieferung:</strong>
+Der Verkäufer übergibt die Ware wie vereinbart. Bei Lieferung durch einen Frachtführer werden Begleitpapiere ausgestellt:</p>
+<ul>
+<li><strong>Lieferschein:</strong> Geht an den Käufer und listet die gelieferten Waren auf.</li>
+<li><strong>Gegenschein:</strong> Wird vom Käufer als Empfangsbestätigung unterschrieben und geht an den Verkäufer zurück.</li>
+<li><strong>Frachtdokumente:</strong> Werden verwendet, wenn externe Transportunternehmen (Post, Bahn, Spedition) beauftragt werden.</li>
+</ul>
+<p><strong>2. Rechnungslegung:</strong>
+Der Verkäufer stellt eine Rechnung (Faktura) aus. Laut UStG muss eine Rechnung bestimmte Mindestbestandteile aufweisen, darunter Name/Anschrift von Käufer und Verkäufer, Ausstellungsdatum, Lieferdatum, Menge, handelsübliche Bezeichnung, Nettoentgelt, Umsatzsteuersatz, Bruttobetrag und bei höheren Beträgen die UID-Nummern.</p>
+<p><strong>3. Annahme der Ware:</strong>
+Der Käufer muss die Ware bei Erhalt prüfen. Dazu gehört der Abgleich von Lieferschein und Bestellung sowie die Prüfung auf offensichtliche Mängel. Die Annahme wird mit der Unterschrift auf dem Gegenschein bestätigt.</p>
+<p><strong>4. Zahlung:</strong>
+Der Käufer muss die Rechnung entsprechend den vereinbarten Zahlungsbedingungen begleichen (z. B. prompt, im Voraus oder mit Zahlungsziel).</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec4">4. Components of a Sales Contract (Bestandteile)</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p>A sales contract consists of legally required mandatory components and additional commercial components. (Note: Price calculations are excluded here).</p>
+
+                </div>
+                <div class="lang-col">
+<p>Ein Kaufvertrag besteht aus gesetzlich verpflichtenden Mindestbestandteilen und zusätzlichen kaufmännischen Bestandteilen. (Hinweis: Preiskalkulationen sind hier ausgenommen).</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+            <h3>4.1 Mandatory Components (Verpflichtende Bestandteile)</h3>
+
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p>To form a valid sales contract, five elements MUST be present:</p>
+<ol>
+<li><strong>Seller (Bestimmter Verkäufer)</strong></li>
+<li><strong>Buyer (Bestimmter Käufer)</strong></li>
+<li><strong>Quality / Product Type (Qualität / Produktart)</strong></li>
+<li><strong>Quantity (Quantität / Menge)</strong></li>
+<li><strong>Price (Preis)</strong></li>
+</ol>
+<p><strong>A. Quality Specification (Qualitätsfestlegung):</strong>
+How quality is defined depends on whether the goods are fungible or non-fungible.</p>
+<ul>
+<li><em>Fungible goods (Vertretbare Waren):</em> Standardized, interchangeable items (e.g., a specific smartphone model, A4 paper). Quality is defined by standards, norms, brands, or samples.</li>
+<li><em>Non-fungible goods (Nicht vertretbare Waren):</em> Unique items (e.g., original artwork, real estate, used cars). Quality is defined by detailed description or physical inspection.</li>
+</ul>
+<p><em>Methods of defining quality:</em></p>
+<ul>
+<li><strong>Inspection (Besichtigung):</strong> Typical for used goods or real estate.</li>
+<li><strong>Description and Illustration (Beschreibung und Abbildung):</strong> Crucial for online shopping.</li>
+<li><strong>Samples (Muster und Proben):</strong> E.g., paint swatches or fabric. Includes &quot;Sale by sample&quot; (Kauf nach Muster), &quot;Sale on approval&quot; (Kauf auf Probe - conditional), and &quot;Sale for testing&quot; (Kauf zur Probe - unconditional small purchase).</li>
+<li><strong>Brands and Types (Marken und Typen):</strong> Trademarks (Word, Image, Combined) ensure consistent quality (e.g., Apple, Coca-Cola).</li>
+<li><strong>Standards and Grades (Normen, Qualitätsklassen, Gütezeichen):</strong> General guidelines (like DIN A4), classes (Class 1 apples), or quality seals (AMA, Fairtrade).</li>
+<li><strong>Special Regulations:</strong> &quot;Sale by specification&quot; (Spezifikationskauf - buying a total quantity but specifying sizes/colors later) and &quot;Sale in bulk&quot; (Kauf in Bausch und Bogen - buying the whole lot without guaranteeing specific individual quality, e.g., a whole harvest).</li>
+</ul>
+<p><strong>B. Quantity Specification (Quantitätsfestlegung):</strong></p>
+<ul>
+<li><strong>Precise statement:</strong> E.g., 50 kg cement.</li>
+<li><strong>Approximate statement:</strong> &quot;Circa&quot; contracts (e.g., 3000 kg +/- 5%).</li>
+<li><strong>No statement:</strong> Sale in bulk (Bausch und Bogen).</li>
+<li><em>Packaging weights:</em> Gross weight (Product + Packaging), Net weight (Product only), Tare (Weight of packaging).</li>
+</ul>
+<p><strong>C. Price Specification (Preisfestsetzung):</strong>
+Prices can be fixed or subject to change.</p>
+<ul>
+<li><em>Cost Fluctuation Clause (Kostenschwankungsklausel):</em> Allows the seller to adjust the price if production or transport costs rise (common in construction).</li>
+<li><em>Index Clause (Wertsicherungsklausel):</em> Links the price to an economic index like inflation.</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p>Damit ein Kaufvertrag zustande kommt, müssen zwingend fünf Elemente vorhanden sein:</p>
+<ol>
+<li><strong>Bestimmter Verkäufer</strong></li>
+<li><strong>Bestimmter Käufer</strong></li>
+<li><strong>Qualität / Produktart</strong></li>
+<li><strong>Quantität / Menge</strong></li>
+<li><strong>Preis</strong></li>
+</ol>
+<p><strong>A. Qualitätsfestlegung:</strong>
+Wie die Qualität festgelegt wird, hängt davon ab, ob die Waren vertretbar (fungibel) oder nicht vertretbar sind.</p>
+<ul>
+<li><em>Vertretbare Waren (Fungible goods):</em> Standardisierte, austauschbare Güter (z. B. Serien-Smartphones, A4-Papier). Festlegung durch Normen, Marken oder Muster.</li>
+<li><em>Nicht vertretbare Waren (Non-fungible goods):</em> Einzigartige Güter (z. B. Kunstwerke, Grundstücke, Gebrauchtwagen). Festlegung durch genaue Beschreibung oder Besichtigung.</li>
+</ul>
+<p><em>Formen der Qualitätsfestlegung:</em></p>
+<ul>
+<li><strong>Besichtigung:</strong> Typisch bei Gebrauchtwaren oder Immobilien.</li>
+<li><strong>Beschreibung und Abbildung:</strong> Unerlässlich beim Online-Shopping.</li>
+<li><strong>Muster und Proben:</strong> Z. B. Farbmuster oder Stoffproben. Unterscheidung in &quot;Kauf nach Probe/Muster&quot;, &quot;Kauf auf Probe&quot; (bedingt, mit Rückgaberecht) und &quot;Kauf zur Probe&quot; (unbedingt, kleine Menge zum Testen).</li>
+<li><strong>Marken und Typen:</strong> Wort-, Bild- oder kombinierte Marken (z. B. Apple, Coca-Cola) garantieren gleichbleibende Qualität.</li>
+<li><strong>Normen, Qualitätsklassen, Gütezeichen:</strong> Richtlinien (wie DIN A4), Handelsklassen (Äpfel Klasse 1) oder Siegel (AMA, Fairtrade).</li>
+<li><strong>Sonderregelungen:</strong> &quot;Spezifikationskauf&quot; (Gesamtmenge wird gekauft, Details wie Farben/Größen werden später bestimmt) und &quot;Kauf in Bausch und Bogen&quot; (Kauf der Gesamtware ohne Rücksicht auf die Qualität einzelner Stücke, z. B. eine Ernte).</li>
+</ul>
+<p><strong>B. Quantitätsfestlegung (Menge):</strong></p>
+<ul>
+<li><strong>Genaue Angabe:</strong> Z. B. 50 kg Zement.</li>
+<li><strong>Ungefähre Angabe:</strong> Zirka-Verträge (z. B. 3000 kg +/- 5%).</li>
+<li><strong>Ohne Angabe:</strong> Kauf in Bausch und Bogen.</li>
+<li><em>Gewichtsabzüge:</em> Bruttogewicht (Produkt + Verpackung), Nettogewicht (nur Produkt), Tara (Gewicht der Verpackung).</li>
+</ul>
+<p><strong>C. Preisfestsetzung:</strong>
+Preise können fest oder freibleibend sein.</p>
+<ul>
+<li><em>Kostenschwankungsklausel:</em> Erlaubt dem Verkäufer, den Preis anzupassen, wenn z.B. Produktions- oder Transportkosten steigen (häufig im Bauwesen).</li>
+<li><em>Wertsicherungsklausel:</em> Bindet den Preis an einen Index (z.B. Verbraucherpreisindex/Inflation).</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+            <h3>4.2 Additional Components (Zusätzliche Bestandteile)</h3>
+
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p>If not explicitly negotiated, default legal provisions (Usancen or ABGB) apply. Parties usually define these in the contract or via General Terms &amp; Conditions (AGB).</p>
+<p><strong>A. Terms of Delivery (Lieferbedingungen):</strong>
+Determine Time, Place, and the Transfer of Risk/Costs.</p>
+<ul>
+<li><strong>Time of Delivery (Erfüllungszeit):</strong><ul>
+<li><em>Prompt delivery (Promptgeschäft):</em> Immediately after ordering.</li>
+<li><em>Fixed date (Fixgeschäft):</em> Exact date (&quot;Delivery on May 4th fixed&quot;). If missed, the contract is automatically broken.</li>
+<li><em>Scheduled (Termingeschäft):</em> Within a specific period (&quot;Delivery within 2 weeks&quot;).</li>
+</ul>
+</li>
+<li><strong>Place of Delivery &amp; Risk Transfer (Erfüllungsort &amp; Risiko-/Kostenübergang):</strong>
+Determines where risk (loss/damage) and freight costs shift from seller to buyer.<ul>
+<li><em>Ex works (ab Werk):</em> Buyer bears all costs and risks from the seller's factory. (One-point clause / Einpunktklausel).</li>
+<li><em>Free house / Free domicile (frei Haus):</em> Seller bears all costs and risks up to the buyer's address. (One-point clause).</li>
+<li><em>Carriage paid to... / Freight free (frachtfrei...):</em> Seller pays transport costs up to a named destination (e.g., a train station), but the risk transfers to the buyer as soon as the goods are handed to the first carrier. (Two-point clause / Zweipunktklausel).</li>
+</ul>
+</li>
+</ul>
+<p><strong>B. Terms of Payment (Zahlungsbedingungen):</strong>
+Determine when, where, and how payment is made.</p>
+<ul>
+<li><strong>Time of Payment (Erfüllungszeit der Zahlung):</strong><ul>
+<li><em>Payment in advance (Vorauszahlung):</em> Before delivery (e.g., online shopping).</li>
+<li><em>Prompt payment (Kassakauf):</em> Upon delivery or receipt of invoice.</li>
+<li><em>Deferred payment / Credit (Spätere Zahlung / Zielkauf):</em> E.g., &quot;30 days net&quot;.</li>
+</ul>
+</li>
+<li><strong>Discounts:</strong><ul>
+<li><em>Cash Discount (Skonto):</em> A percentage reduction (usually 2-3%) for paying earlier than the final deadline (e.g., &quot;Payable within 10 days at 2% skonto, or 30 days net&quot;).</li>
+<li><em>Quantity Discount (Mengenrabatt):</em> For buying in bulk.</li>
+<li><em>Trade/Annual Discount (Händlerrabatt / Umsatzbonus).</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>C. Other Contract Components (Sonstige Vertragsbestandteile):</strong></p>
+<ul>
+<li><strong>Reservation of Ownership (Eigentumsvorbehalt):</strong> &quot;The goods remain the property of the seller until full payment is received.&quot; Secures the seller in case of credit sales.</li>
+<li><strong>Penalty (Pönale):</strong> A pre-agreed financial penalty for late delivery. The seller must pay it and still deliver.</li>
+<li><strong>Cancellation Fee (Stornogebühr / Reuegeld):</strong> A fee paid by the buyer to withdraw from a valid contract.</li>
+<li><strong>Warranty &amp; Guarantee (Gewährleistung &amp; Garantie):</strong> Warranty is statutory (legal obligation for defects present at delivery). Guarantee is a voluntary service provided by the seller/manufacturer.</li>
+<li><strong>Right to Exchange (Umtauschrecht):</strong> Legally, there is NO automatic right to exchange non-defective goods bought in a physical store. It is purely voluntary (Kulanz) unless explicitly agreed.</li>
+<li><strong>Packaging (Verpackung):</strong> Protects goods, enables transport, advertises, and informs. Costs are usually borne by the buyer unless otherwise agreed.</li>
+</ul>
+<p><strong>D. General Terms &amp; Conditions (AGB):</strong>
+<div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: Pre-formulated standard contract terms created by the company to simplify mass contracts.</div></div>
+<div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: AGBs must be brought to the buyer's attention <em>before</em> the contract is signed. The law protects consumers from highly disadvantageous or completely incomprehensible clauses hidden in the fine print.</div></div></p>
+
+                </div>
+                <div class="lang-col">
+<p>Wenn nicht ausdrücklich verhandelt, gelten die gesetzlichen Bestimmungen (Usancen oder ABGB). Meistens definieren Parteien dies im Vertrag oder in den Allgemeinen Geschäftsbedingungen (AGB).</p>
+<p><strong>A. Lieferbedingungen:</strong>
+Bestimmen Zeit, Ort und den Risiko-/Kostenübergang.</p>
+<ul>
+<li><strong>Erfüllungszeit der Lieferung:</strong><ul>
+<li><em>Sofortige Lieferung (Promptgeschäft):</em> Unmittelbar nach der Bestellung.</li>
+<li><em>Fixgeschäft:</em> Genauer Termin (&quot;Lieferung am 4. Mai fix&quot;). Bei Verzug platzt der Vertrag sofort.</li>
+<li><em>Gewöhnliches Termingeschäft:</em> Innerhalb eines bestimmten Zeitraums (&quot;Lieferung innerhalb von 2 Wochen&quot;).</li>
+</ul>
+</li>
+<li><strong>Erfüllungsort &amp; Risiko-/Kostenübergang:</strong>
+Bestimmt, wo das Risiko (Verlust/Beschädigung) und die Transportkosten vom Verkäufer auf den Käufer übergehen.<ul>
+<li><em>Ab Werk (ex works):</em> Käufer trägt Risiko und Kosten ab dem Werk des Verkäufers. (Einpunktklausel).</li>
+<li><em>Frei Haus (free domicile):</em> Verkäufer trägt Risiko und Kosten bis zur Adresse des Käufers. (Einpunktklausel).</li>
+<li><em>Frachtfrei... (carriage paid to...):</em> Verkäufer zahlt die Kosten bis zu einem bestimmten Ort (z. B. Bahnhof), aber das Risiko geht bereits bei Übergabe an den ersten Frachtführer auf den Käufer über. (Zweipunktklausel).</li>
+</ul>
+</li>
+</ul>
+<p><strong>B. Zahlungsbedingungen:</strong>
+Bestimmen wann, wo und wie bezahlt wird.</p>
+<ul>
+<li><strong>Erfüllungszeit der Zahlung:</strong><ul>
+<li><em>Vorauszahlung:</em> Vor der Lieferung (z. B. im Online-Handel).</li>
+<li><em>Prompte Zahlung (Kassakauf):</em> Bei Übergabe oder Rechnungserhalt.</li>
+<li><em>Spätere Zahlung (Zielkauf):</em> Z. B. &quot;30 Tage netto&quot;.</li>
+</ul>
+</li>
+<li><strong>Preisabzüge:</strong><ul>
+<li><em>Skonto:</em> Ein prozentualer Abzug (meist 2-3%) als Belohnung für eine vorzeitige Zahlung vor dem eigentlichen Fälligkeitsdatum (z. B. &quot;Zahlbar innerhalb von 10 Tagen mit 2 % Skonto, oder 30 Tage netto&quot;).</li>
+<li><em>Mengenrabatt:</em> Preisnachlass für den Kauf großer Mengen.</li>
+<li><em>Händlerrabatt / Umsatzbonus:</em> Nachlass für Wiederverkäufer oder am Jahresende bei Erreichen einer Umsatzgrenze.</li>
+</ul>
+</li>
+</ul>
+<p><strong>C. Sonstige kaufmännische Bestandteile:</strong></p>
+<ul>
+<li><strong>Eigentumsvorbehalt:</strong> &quot;Bis zur vollständigen Bezahlung bleibt die Ware Eigentum des Verkäufers.&quot; Dient der Absicherung des Verkäufers bei Zielkäufen.</li>
+<li><strong>Pönale (Vertragsstrafe):</strong> Eine vorab vereinbarte Geldstrafe für verspätete Lieferung. Der Verkäufer muss zahlen und trotzdem erfüllen.</li>
+<li><strong>Stornogebühr (Reuegeld):</strong> Eine Gebühr, die der Käufer zahlt, um straffrei von einem gültigen Vertrag zurückzutreten.</li>
+<li><strong>Gewährleistung &amp; Garantie:</strong> Gewährleistung ist die gesetzliche Haftung für Mängel zum Zeitpunkt der Übergabe. Garantie ist eine freiwillige Zusatzleistung des Verkäufers oder Herstellers.</li>
+<li><strong>Umtauschrecht:</strong> Gesetzlich gibt es KEIN automatisches Recht auf Umtausch mangelfreier Ware im stationären Handel. Dies geschieht rein freiwillig (Kulanz), sofern nicht vertraglich vereinbart.</li>
+<li><strong>Verpackung:</strong> Dient dem Schutz, dem Transport, der Werbung und der Information. Die Kosten trägt in der Regel der Käufer, sofern nicht anders vereinbart.</li>
+</ul>
+<p><strong>D. Allgemeine Geschäftsbedingungen (AGB):</strong>
+<div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: Vorformulierte Standardvertragsbedingungen, die von Unternehmen erstellt werden, um Massenverträge zu vereinfachen.</div></div>
+<div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Der Konsument muss <em>vor</em> Vertragsabschluss auf die AGB hingewiesen werden und die Möglichkeit haben, sie einzusehen. Das Gesetz schützt Konsumenten vor grob benachteiligenden oder unverständlichen Klauseln im Kleingedruckten.</div></div></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+            <h3>4.3 E-Commerce and Special Withdrawal Rights (E-Commerce &amp; Rücktrittsrechte)</h3>
+
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Special rules apply when consumers (B2C) buy goods outside of traditional retail stores.</div></div></p>
+<ul>
+<li><strong>FAGG (Fern- und Auswärtsgeschäfte-Gesetz):</strong> Governs distance selling (Fernabsatzgeschäfte like online shopping, catalogs) and off-premises contracts (Auswärtsgeschäfte like door-to-door sales or street peddling).</li>
+<li><strong>Right of Withdrawal (Rücktrittsrecht):</strong> Consumers generally have the right to withdraw from a distance or off-premises contract within <strong>14 days</strong> of receiving the goods, <strong>without giving any reason</strong>.</li>
+<li>If the seller fails to properly inform the buyer about this withdrawal right, the period extends to 12 months and 14 days.</li>
+</ul>
+<p><div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: Always favor online shops within the EU, as they are subject to strict EU directives (e.g., the &quot;Button-Lösung&quot; where the final order button must clearly indicate a payment obligation, and mandatory legal information obligations via the ECG).</div></div></p>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Besondere Regeln gelten, wenn Konsumenten (B2C) Waren außerhalb klassischer Geschäftsräume kaufen.</div></div></p>
+<ul>
+<li><strong>FAGG (Fern- und Auswärtsgeschäfte-Gesetz):</strong> Regelt Fernabsatzgeschäfte (Onlineshops, Kataloge) und Auswärtsgeschäfte (Haustürgeschäfte, Werbefahrten).</li>
+<li><strong>Rücktrittsrecht:</strong> Konsumenten haben grundsätzlich das Recht, innerhalb von <strong>14 Tagen</strong> ab Erhalt der Ware <strong>ohne Angabe von Gründen</strong> vom Vertrag zurückzutreten.</li>
+<li>Wurde der Käufer nicht ordnungsgemäß über sein Rücktrittsrecht belehrt, verlängert sich diese Frist auf 12 Monate und 14 Tage.</li>
+</ul>
+<p><div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: Bevorzuge Onlineshops innerhalb der EU, da diese strengen EU-Richtlinien unterliegen (z.B. die &quot;Button-Lösung&quot;, bei der der Bestell-Button eindeutig auf eine Zahlungsverpflichtung hinweisen muss, sowie die gesetzliche Informationspflicht laut ECG/E-Commerce-Gesetz).</div></div></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec5">1. The Inquiry / Die Anfrage</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: An <strong>inquiry</strong> (or enquiry) is a request from a potential buyer to a seller. The buyer asks for information about goods or services. An inquiry is always legally non-binding. It can be made verbally (in person, by phone) or in writing (email, letter).</div></div></p>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: Eine <strong>Anfrage</strong> ist die rechtlich unverbindliche Aufforderung eines potenziellen Käufers an einen Verkäufer, Informationen über Waren oder Dienstleistungen zu übermitteln. Sie ist an keine Form gebunden und kann mündlich (persönlich, telefonisch) oder schriftlich (E-Mail, Brief) erfolgen.</div></div></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec6">1.1 Types of Inquiries / Arten der Anfrage</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: There are four main types of inquiries, depending on the buyer's intention:</div></div></p>
+<ol>
+<li><strong>General Inquiry (Allgemeine Anfrage):</strong> The buyer only wants general information, such as brochures, catalogs, or general price lists.</li>
+<li><strong>Special Inquiry (Spezielle Anfrage):</strong> The buyer requests precise information about specific product characteristics, exact prices, delivery terms, and payment conditions.</li>
+<li><strong>Follow-up Inquiry (Rückfrage):</strong> The buyer refers to information already received and requests additional details.</li>
+<li><strong>Counter-offer (Gegenangebot):</strong> The buyer wishes to modify specific conditions of an existing offer (e.g., requesting a lower price or faster delivery time).</li>
+</ol>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Je nach Absicht des Käufers unterscheidet man vier Arten der Anfrage:</div></div></p>
+<ol>
+<li><strong>Allgemeine Anfrage:</strong> Der Käufer möchte nur allgemeine Informationen, z. B. Prospekte, Kataloge oder Preislisten.</li>
+<li><strong>Spezielle Anfrage:</strong> Der Käufer benötigt genaue Informationen über bestimmte Eigenschaften, Preise, Liefer- und Zahlungsbedingungen.</li>
+<li><strong>Rückfrage:</strong> Der Käufer bezieht sich auf bereits erhaltene Informationen und wünscht Zusatzinformationen.</li>
+<li><strong>Gegenangebot:</strong> Der Käufer möchte bestimmte Bedingungen eines vorliegenden Angebots abändern (z. B. niedrigere Preise oder schnellere Lieferzeit verlangen).</li>
+</ol>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec7">1.2 How to Structure and Write an Inquiry / Struktur und Formulierung einer Anfrage</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: A well-structured written inquiry should include the following elements:</div></div></p>
+<ul>
+<li><strong>Subject Line:</strong> Clear statement of intent (e.g., &quot;Inquiry regarding [Product]&quot;).</li>
+<li><strong>Salutation:</strong> Formal greeting (e.g., &quot;Dear Sir or Madam,&quot; or &quot;Dear Mr./Ms. [Name]&quot;).</li>
+<li><strong>Introduction:</strong> State the reason for the inquiry (e.g., &quot;We are looking for...&quot;, &quot;We saw your advertisement...&quot;).</li>
+<li><strong>Main Body:</strong> Detail the exact requirements (quantity, specific product features, quality).</li>
+<li><strong>Questions/Conditions:</strong> Ask for prices, terms of delivery (Lieferbedingungen), and terms of payment (Zahlungsbedingungen).</li>
+<li><strong>Call to Action:</strong> Request an offer (e.g., &quot;Please send us a binding offer...&quot;).</li>
+<li><strong>Closing &amp; Signature:</strong> Formal sign-off (e.g., &quot;Yours sincerely,&quot;) followed by the sender's details.</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: Eine gut strukturierte schriftliche Anfrage sollte folgende Elemente enthalten:</div></div></p>
+<ul>
+<li><strong>Betreff:</strong> Klare Nennung des Anliegens (z. B. &quot;Anfrage bezüglich [Produkt]&quot;).</li>
+<li><strong>Anrede:</strong> Formelle Begrüßung (z. B. &quot;Sehr geehrte Damen und Herren,&quot; oder &quot;Sehr geehrte/r Herr/Frau [Name]&quot;).</li>
+<li><strong>Einleitung:</strong> Grund der Anfrage nennen (z. B. &quot;Wir sind auf der Suche nach...&quot;, &quot;Wir haben Ihre Anzeige gesehen...&quot;).</li>
+<li><strong>Hauptteil:</strong> Genaue Anforderungen auflisten (Menge, spezifische Eigenschaften, Qualität).</li>
+<li><strong>Fragen/Bedingungen:</strong> Nach Preisen, Lieferbedingungen und Zahlungsbedingungen fragen.</li>
+<li><strong>Aufforderung:</strong> Um ein Angebot bitten (z. B. &quot;Bitte senden Sie uns ein verbindliches Angebot...&quot;).</li>
+<li><strong>Schluss &amp; Unterschrift:</strong> Formelle Grußformel (z. B. &quot;Mit freundlichen Grüßen&quot;) und Kontaktdaten des Absenders.</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec8">2. The Offer / Das Angebot</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: With an <strong>offer</strong>, the seller declares their willingness to sell goods to a customer under specific conditions.</div></div>
+<div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Note the difference from <strong>Advertising (Anpreisung)</strong>: General advertisements (like a shop window display, a flyer, or a website) are addressed to the general public and are <em>not</em> legally binding offers. A valid offer must address a specific recipient.</div></div></p>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: Mit dem <strong>Angebot</strong> erklärt sich der Verkäufer bereit, dem Kunden Waren zu bestimmten Bedingungen zu verkaufen.</div></div>
+<div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Wichtiger Unterschied zur <strong>Werbung/Anpreisung</strong>: Allgemeine Werbung (wie Schaufenster, Flugblätter oder Webseiten) richtet sich an die Allgemeinheit und stellt <em>kein</em> rechtlich bindendes Angebot dar. Ein gültiges Angebot muss an einen bestimmten Empfänger gerichtet sein.</div></div></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec9">2.1 Statutory Components of an Offer / Gesetzliche Bestandteile eines Angebots</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: For an offer to be legally valid and binding, it must contain five statutory components (Kaufvertragsbestandteile):</div></div></p>
+<ol>
+<li><strong>Specific Seller</strong> (Bestimmter Verkäufer)</li>
+<li><strong>Specific Buyer</strong> (Bestimmter Käufer)</li>
+<li><strong>Quantity</strong> (Menge)</li>
+<li><strong>Quality</strong> (Qualität/Güte)</li>
+<li><strong>Price</strong> (Preis)</li>
+</ol>
+<p>Furthermore, the offer must show the <strong>intent to bind</strong> (Bindungswille) of both parties and must be <strong>received</strong> personally by the recipient (Zugang).</p>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Damit ein Angebot rechtlich gültig und verbindlich ist, muss es fünf gesetzliche Bestandteile enthalten:</div></div></p>
+<ol>
+<li><strong>Bestimmter Verkäufer</strong></li>
+<li><strong>Bestimmter Käufer</strong></li>
+<li><strong>Menge</strong></li>
+<li><strong>Qualität</strong></li>
+<li><strong>Preis</strong></li>
+</ol>
+<p>Außerdem muss das Angebot den <strong>Bindungswillen</strong> von Verkäufer und Käufer erkennen lassen und es muss dem Empfänger persönlich <strong>zugehen</strong> (Zugang).</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec10">2.2 Types of Offers / Angebotsarten</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p>
+    <div class="diagram-container">
+        <svg viewBox="0 0 600 300" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#1e2e48" />
+                </marker>
+            </defs>
+            <rect x="200" y="20" width="200" height="40" rx="8" fill="#1e2e48" />
+            <text x="300" y="45" font-family="Open Sans" font-size="14" font-weight="bold" fill="white" text-anchor="middle">OFFER (Angebot)</text>
+
+            <path d="M 300 60 L 300 90" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" />
+            <path d="M 300 90 L 150 90 L 150 110" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 300 90 L 450 90 L 450 110" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="50" y="110" width="200" height="40" rx="8" fill="#2980b9" />
+            <text x="150" y="135" font-family="Open Sans" font-size="14" fill="white" text-anchor="middle">Initiative</text>
+
+            <rect x="350" y="110" width="200" height="40" rx="8" fill="#fbc92d" />
+            <text x="450" y="135" font-family="Open Sans" font-size="14" fill="#1e2e48" text-anchor="middle">Binding Nature</text>
+
+            <path d="M 150 150 L 150 160 L 90 160 L 90 180" stroke="#2980b9" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 150 150 L 150 160 L 210 160 L 210 180" stroke="#2980b9" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="30" y="180" width="120" height="40" rx="8" fill="rgba(41, 128, 185, 0.2)" stroke="#2980b9" />
+            <text x="90" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Requested</text>
+            <text x="90" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Verlangt)</text>
+
+            <rect x="150" y="180" width="120" height="40" rx="8" fill="rgba(41, 128, 185, 0.2)" stroke="#2980b9" />
+            <text x="210" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Unsolicited</text>
+            <text x="210" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Unverlangt)</text>
+
+            <path d="M 450 150 L 450 160 L 390 160 L 390 180" stroke="#fbc92d" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 450 150 L 450 160 L 510 160 L 510 180" stroke="#fbc92d" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="330" y="180" width="120" height="40" rx="8" fill="rgba(251, 201, 45, 0.2)" stroke="#fbc92d" />
+            <text x="390" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Binding</text>
+            <text x="390" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Verbindlich)</text>
+
+            <rect x="450" y="180" width="120" height="40" rx="8" fill="rgba(251, 201, 45, 0.2)" stroke="#fbc92d" />
+            <text x="510" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Non-binding</text>
+            <text x="510" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Freibleibend)</text>
+        </svg>
+    </div>
+    </p>
+<p><strong>Based on Initiative:</strong></p>
+<ul>
+<li><strong>Demanded Offer (Verlangtes Angebot):</strong> The initiative comes from the buyer (an inquiry preceded it).</li>
+<li><strong>Unsolicited Offer (Unverlangtes Angebot):</strong> The initiative comes from the seller (sent without a prior inquiry).</li>
+</ul>
+<p><strong>Based on Binding Nature:</strong></p>
+<ul>
+<li><strong>Binding Offer (Verbindliches Angebot):</strong> Contains all statutory components, shows clear intent to bind, and has no exclusion clauses. If the buyer accepts it on time and without changes, a sales contract is immediately formed.</li>
+<li><strong>Provisional/Non-binding Offer (Freibleibendes/Unverbindliches Angebot):</strong> The seller restricts their binding commitment by using an exclusion clause.</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p>
+    <div class="diagram-container">
+        <svg viewBox="0 0 600 300" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#1e2e48" />
+                </marker>
+            </defs>
+            <rect x="200" y="20" width="200" height="40" rx="8" fill="#1e2e48" />
+            <text x="300" y="45" font-family="Open Sans" font-size="14" font-weight="bold" fill="white" text-anchor="middle">OFFER (Angebot)</text>
+
+            <path d="M 300 60 L 300 90" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" />
+            <path d="M 300 90 L 150 90 L 150 110" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 300 90 L 450 90 L 450 110" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="50" y="110" width="200" height="40" rx="8" fill="#2980b9" />
+            <text x="150" y="135" font-family="Open Sans" font-size="14" fill="white" text-anchor="middle">Initiative</text>
+
+            <rect x="350" y="110" width="200" height="40" rx="8" fill="#fbc92d" />
+            <text x="450" y="135" font-family="Open Sans" font-size="14" fill="#1e2e48" text-anchor="middle">Binding Nature</text>
+
+            <path d="M 150 150 L 150 160 L 90 160 L 90 180" stroke="#2980b9" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 150 150 L 150 160 L 210 160 L 210 180" stroke="#2980b9" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="30" y="180" width="120" height="40" rx="8" fill="rgba(41, 128, 185, 0.2)" stroke="#2980b9" />
+            <text x="90" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Requested</text>
+            <text x="90" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Verlangt)</text>
+
+            <rect x="150" y="180" width="120" height="40" rx="8" fill="rgba(41, 128, 185, 0.2)" stroke="#2980b9" />
+            <text x="210" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Unsolicited</text>
+            <text x="210" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Unverlangt)</text>
+
+            <path d="M 450 150 L 450 160 L 390 160 L 390 180" stroke="#fbc92d" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+            <path d="M 450 150 L 450 160 L 510 160 L 510 180" stroke="#fbc92d" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+            <rect x="330" y="180" width="120" height="40" rx="8" fill="rgba(251, 201, 45, 0.2)" stroke="#fbc92d" />
+            <text x="390" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Binding</text>
+            <text x="390" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Verbindlich)</text>
+
+            <rect x="450" y="180" width="120" height="40" rx="8" fill="rgba(251, 201, 45, 0.2)" stroke="#fbc92d" />
+            <text x="510" y="200" font-family="Open Sans" font-size="12" fill="#1e2e48" text-anchor="middle">Non-binding</text>
+            <text x="510" y="215" font-family="Open Sans" font-size="10" fill="#1e2e48" text-anchor="middle">(Freibleibend)</text>
+        </svg>
+    </div>
+    </p>
+<p><strong>Nach der Initiative:</strong></p>
+<ul>
+<li><strong>Verlangtes Angebot:</strong> Die Initiative geht vom Käufer aus (eine Anfrage ging voraus).</li>
+<li><strong>Unverlangtes Angebot:</strong> Die Initiative geht vom Verkäufer aus (wird ohne vorherige Anfrage gesendet).</li>
+</ul>
+<p><strong>Nach der Bindung:</strong></p>
+<ul>
+<li><strong>Verbindliches Angebot:</strong> Enthält alle gesetzlichen Bestandteile, zeigt erkennbaren Bindungswillen und hat keine Freizeichnungsklausel. Wird es rechtzeitig und unverändert angenommen, entsteht ein Kaufvertrag.</li>
+<li><strong>Freibleibendes/Unverbindliches Angebot:</strong> Der Verkäufer schränkt seine Bindung durch eine Freizeichnungsklausel ein.</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec11">2.3 Exclusion Clauses / Freizeichnungsklauseln</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: <strong>Exclusion clauses</strong> are phrases used by the seller to make an offer legally non-binding. This is advantageous for the seller because it allows them to react flexibly to market changes or find better buyers.
+Common clauses include:</div></div></p>
+<ul>
+<li>&quot;Without obligation&quot; (Unverbindlich / Ohne Obligo)</li>
+<li>&quot;Only while stocks last&quot; (Solange der Vorrat reicht)</li>
+<li>&quot;Subject to change&quot; (Freibleibend)</li>
+<li>&quot;Prices are subject to change without notice&quot; (Preisänderungen vorbehalten)</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: <strong>Freizeichnungsklauseln</strong> sind Formulierungen, die der Verkäufer nutzt, um ein Angebot rechtlich unverbindlich zu machen. Dies ist für den Verkäufer günstiger, da er so flexibel auf Marktsituationen reagieren oder bessere Käufer finden kann.
+Häufige Klauseln sind:</div></div></p>
+<ul>
+<li>&quot;Unverbindlich&quot; / &quot;Ohne Obligo&quot;</li>
+<li>&quot;Solange der Vorrat reicht&quot;</li>
+<li>&quot;Freibleibend&quot;</li>
+<li>&quot;Preisänderungen vorbehalten&quot;</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec12">2.4 Validity Period of Binding Offers / Bindungsdauer von verbindlichen Angeboten</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p>How long is a binding offer valid? There are two main scenarios:
+<strong>1. Validity specified in the offer:</strong>
+The specified time applies (e.g., &quot;This offer is valid for 14 days,&quot; or &quot;Valid until April 15&quot;).</p>
+<p><strong>2. No validity specified (Statutory binding period):</strong></p>
+<ul>
+<li><strong>Among present parties (Oral, Telephone):</strong> Valid only for the duration of the conversation. There is no consideration period.</li>
+<li><strong>Among absent parties (Email, Fax, Letter):</strong> Valid for: <em>Double the transport time + an appropriate consideration period.</em><ul>
+<li>Email/Fax transport time is immediate. Consideration period is a few days.</li>
+<li>Letter transport time is 4-6 days (round trip) plus consideration period (often resulting in approx. 7-14 days total).</li>
+<li><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: A consideration period is given because purchasing goods is not an everyday activity and requires time to think.</li>
+</ul>
+</li>
+</ul></div></div>
+
+                </div>
+                <div class="lang-col">
+<p>Wie lange ist ein verbindliches Angebot bindend? Es gibt zwei Fälle:
+<strong>1. Im Angebot angegebene Bindungsdauer:</strong>
+Es gilt die angegebene Frist (z. B. &quot;Dieses Angebot ist 14 Tage gültig&quot; oder &quot;Gültig bis 15. April&quot;).</p>
+<p><strong>2. Keine Angabe (Gesetzliche Bindungsdauer lt. ABGB):</strong></p>
+<ul>
+<li><strong>Unter Anwesenden (Mündlich, Telefonisch):</strong> Nur für die Dauer des Gesprächs gültig. Es gibt keine Überlegungsfrist.</li>
+<li><strong>Unter Abwesenden (E-Mail, Fax, Brief):</strong> Gültig für: <em>Doppelter Transportweg + angemessene Überlegungsfrist.</em><ul>
+<li>E-Mail/Fax: Transportweg ist sofort. Überlegungsfrist beträgt wenige Tage.</li>
+<li>Brief: Transportweg ca. 4-6 Tage (hin und zurück) + Überlegungsfrist (ergibt oft ca. 7-14 Tage gesamt).</li>
+<li><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Eine angemessene Überlegungsfrist wird gewährt, da ein Kauf im B2B-Bereich keine alltägliche Handlung ist und Bedenkzeit erfordert.</li>
+</ul>
+</li>
+</ul></div></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec13">2.5 How to Structure and Write an Offer / Struktur und Formulierung eines Angebots</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: A complete and legally sound offer should be structured as follows:</div></div></p>
+<ul>
+<li><strong>Subject Line:</strong> Reference the inquiry (e.g., &quot;Your inquiry regarding [Product]&quot;).</li>
+<li><strong>Salutation:</strong> Formal greeting.</li>
+<li><strong>Introduction:</strong> Thank the customer for their inquiry (e.g., &quot;Thank you for your inquiry. We are pleased to offer you...&quot;).</li>
+<li><strong>Detailed Specifications (The 5 statutory components):</strong><ul>
+<li>Exact description of the product (Quality).</li>
+<li>Quantity offered.</li>
+<li>Price (per unit and total), clearly stating if VAT is included or excluded.</li>
+</ul>
+</li>
+<li><strong>Terms of Delivery &amp; Payment:</strong> E.g., &quot;Delivery within 7 working days,&quot; &quot;14 days net without deduction.&quot;</li>
+<li><strong>Validity Period / Exclusion Clauses:</strong> State explicitly how long the offer is valid, or insert an exclusion clause if non-binding.</li>
+<li><strong>Closing &amp; Signature:</strong> Polite sign-off (e.g., &quot;We look forward to receiving your order&quot;).</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: Ein vollständiges und rechtssicheres Angebot sollte wie folgt strukturiert sein:</div></div></p>
+<ul>
+<li><strong>Betreff:</strong> Bezug auf die Anfrage (z. B. &quot;Angebot auf Ihre Anfrage bezüglich [Produkt]&quot;).</li>
+<li><strong>Anrede:</strong> Formelle Begrüßung.</li>
+<li><strong>Einleitung:</strong> Bedanken für die Anfrage (z. B. &quot;Vielen Dank für Ihre Anfrage. Gerne bieten wir Ihnen... an.&quot;).</li>
+<li><strong>Detailangaben (Die 5 gesetzlichen Bestandteile):</strong><ul>
+<li>Genaue Beschreibung der Ware (Qualität).</li>
+<li>Angebotene Menge.</li>
+<li>Preis (Stück- und Gesamtpreis), klare Angabe ob inkl. oder exkl. USt.</li>
+</ul>
+</li>
+<li><strong>Liefer- und Zahlungsbedingungen:</strong> Z. B. &quot;Lieferzeit: innerhalb von 7 Werktagen&quot;, &quot;Zahlung: 14 Tage netto ohne Abzug&quot;.</li>
+<li><strong>Bindungsfrist / Freizeichnungsklausel:</strong> Konkret angeben, bis wann das Angebot gültig ist, oder eine Klausel einbauen, falls es unverbindlich sein soll.</li>
+<li><strong>Schluss &amp; Unterschrift:</strong> Höfliche Grußformel (z. B. &quot;Wir freuen uns auf Ihre Bestellung&quot;).</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec14">3. Comparing Offers / Angebote vergleichen</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p>[CLARIFICATION NEEDED: The user requested &quot;comparing offers in detail&quot;, but the provided source materials do not contain deep instructions on this topic. The following information has been researched to fulfill the curriculum requirements for business administration at the requested level.]</p>
+<p>When a buyer receives multiple offers, they must compare them systematically. This is divided into <strong>quantitative</strong> (calculable) and <strong>qualitative</strong> (non-calculable) criteria.</p>
+<p><strong>1. Quantitative Comparison (Costing / Bezugskalkulation):</strong>
+The goal is to find the true cost of the goods (Einstandspreis/Bezugspreis) by neutralizing different discounts and shipping costs.
+<code>List Price (Listeneinkaufspreis)</code>
+<code>- Supplier Discount (Lieferantenrabatt)</code>
+<code>= Target Price (Zieleinkaufspreis)</code>
+<code>- Cash Discount (Lieferskonto)</code>
+<code>= Cash Price (Bareinkaufspreis)</code>
+<code>+ Delivery Costs / Freight (Bezugskosten)</code>
+<code>= Cost Price (Einstandspreis)</code></p>
+<p><strong>2. Qualitative Comparison:</strong>
+The cheapest offer is not always the best. Other crucial factors include:</p>
+<ul>
+<li>Quality of the goods</li>
+<li>Delivery time and reliability</li>
+<li>Payment terms (flexibility)</li>
+<li>Warranty and customer service</li>
+<li>Sustainability and environmental standards of the supplier</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p>[CLARIFICATION NEEDED: Der Benutzer hat &quot;Angebote vergleichen im Detail&quot; angefordert, die bereitgestellten Materialien enthalten jedoch keine tiefgehenden Informationen dazu. Die folgenden Informationen wurden ergänzt, um die Standardanforderungen im Bereich Betriebswirtschaft (BW) zu erfüllen.]</p>
+<p>Wenn ein Käufer mehrere Angebote erhält, muss er diese systematisch vergleichen. Man unterscheidet <strong>quantitative</strong> (rechnerische) und <strong>qualitative</strong> (nicht rechnerische) Kriterien.</p>
+<p><strong>1. Quantitativer Angebotsvergleich (Bezugskalkulation):</strong>
+Ziel ist es, den tatsächlichen Preis der Ware (Einstandspreis/Bezugspreis) zu ermitteln, indem unterschiedliche Rabatte, Skonti und Lieferkosten vergleichbar gemacht werden.
+<code>Listeneinkaufspreis</code>
+<code>- Lieferantenrabatt</code>
+<code>= Zieleinkaufspreis</code>
+<code>- Lieferskonto</code>
+<code>= Bareinkaufspreis</code>
+<code>+ Bezugskosten (Transport, Versicherung)</code>
+<code>= Einstandspreis (Bezugspreis)</code></p>
+<p><strong>2. Qualitativer Angebotsvergleich:</strong>
+Das billigste Angebot ist nicht zwingend das beste. Weitere entscheidende Faktoren sind:</p>
+<ul>
+<li>Qualität der Ware</li>
+<li>Lieferzeit und Zuverlässigkeit</li>
+<li>Zahlungsbedingungen (Flexibilität)</li>
+<li>Garantieleistungen und Kundenservice</li>
+<li>Nachhaltigkeit und Umweltstandards des Lieferanten</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec15">4. The Order and Order Confirmation / Bestellung und Auftragsbestätigung</h2>
+        <div class="subsection avoid-break">
+
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec16">4.1 How to Write an Order / Eine Bestellung schreiben</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: An order is a binding declaration by the buyer to purchase goods. If it is based on a valid, unchanged offer, the sales contract is concluded upon dispatch/receipt of the order.</div></div>
+<div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: Structure of an Order:</div></div></p>
+<ul>
+<li><strong>Subject Line:</strong> State &quot;Order&quot; and reference the offer date/number.</li>
+<li><strong>Salutation:</strong> Formal greeting.</li>
+<li><strong>Introduction:</strong> Refer to the previous offer (e.g., &quot;Thank you for your offer dated...&quot;).</li>
+<li><strong>Order Details:</strong> Explicitly list the items (Quantity, Exact model name/description, Specifications like storage, display, color).</li>
+<li><strong>Pricing &amp; Terms:</strong> Confirm the individual prices, total prices, discounts, and VAT. Explicitly repeat the agreed terms of delivery and payment (e.g., &quot;Delivery: free of charge within 14 days&quot;, &quot;Payment: 10 days 2% cash discount, 30 days net&quot;).</li>
+<li><strong>Legal clause:</strong> &quot;Your terms and conditions of offer apply, there are no deviations.&quot;</li>
+<li><strong>Closing:</strong> Request an order confirmation and sign off.</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: Eine Bestellung ist die verbindliche Erklärung des Käufers, Waren kaufen zu wollen. Basiert sie auf einem gültigen, unveränderten Angebot, kommt mit der Bestellung der Kaufvertrag zustande.</div></div>
+<div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: Struktur einer Bestellung:</div></div></p>
+<ul>
+<li><strong>Betreff:</strong> &quot;Bestellung&quot; und Bezug auf das Angebotsdatum/die Angebotsnummer.</li>
+<li><strong>Anrede:</strong> Formelle Begrüßung.</li>
+<li><strong>Einleitung:</strong> Bezugnahme auf das vorherige Angebot (z. B. &quot;Vielen Dank für Ihr Angebot vom... auf das wir uns hiermit beziehen.&quot;).</li>
+<li><strong>Bestelldetails:</strong> Genaue Auflistung der Artikel (Menge, genaue Modellbezeichnung, Spezifikationen wie Speicher, Display, Farbe).</li>
+<li><strong>Preise &amp; Konditionen:</strong> Bestätigung der Einzel- und Gesamtpreise, Rabatte und USt. Ausdrückliche Wiederholung der Liefer- und Zahlungsbedingungen (z. B. &quot;Lieferung: frei Haus innerhalb von 14 Tagen&quot;, &quot;Zahlung: 10 Tage 2 % Skonto, 30 Tage netto&quot;).</li>
+<li><strong>Klausel:</strong> &quot;Es gelten Ihre Angebotsbedingungen, Abweichungen bestehen keine.&quot;</li>
+<li><strong>Schluss:</strong> Bitte um eine schriftliche Auftragsbestätigung und formelle Grußformel.</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec17">4.2 How to Write an Order Confirmation / Eine Auftragsbestätigung schreiben</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: The order confirmation (Auftragsbestätigung) is sent by the seller to confirm receipt and acceptance of the order. It is especially necessary if the order deviates from the original offer, or if the offer was non-binding (unsolicited/provisional).</div></div>
+<div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: Structure of an Order Confirmation:</div></div></p>
+<ul>
+<li><strong>Subject Line:</strong> &quot;Order Confirmation&quot; and date of the customer's order.</li>
+<li><strong>Salutation:</strong> Formal greeting.</li>
+<li><strong>Introduction:</strong> Thank the customer and confirm receipt (e.g., &quot;Thank you for your order dated..., which we hereby confirm. The order has been received and will be processed as agreed.&quot;).</li>
+<li><strong>Delivery Assurance:</strong> &quot;We guarantee proper and timely delivery.&quot;</li>
+<li><strong>Itemized List:</strong> Detail exactly what will be delivered (Quantity, product name, weight/size).</li>
+<li><strong>Financial Summary:</strong> Confirm total price (gross/net) and note that conditions from the prior offer apply (including discounts).</li>
+<li><strong>Terms:</strong> Reiterate payment and delivery terms (e.g., &quot;Payment within 10 days with 2% discount&quot;, &quot;Delivery within two weeks free of charge&quot;).</li>
+<li><strong>Closing:</strong> Thank them for their trust and sign off.</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout definition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg><div class="callout-content"><strong>DEFINITION</strong>: Die Auftragsbestätigung wird vom Verkäufer gesendet, um den Eingang und die Annahme der Bestellung zu bestätigen. Sie ist besonders wichtig, wenn die Bestellung vom ursprünglichen Angebot abweicht oder wenn das Angebot freibleibend (unverbindlich) war.</div></div>
+<div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: Struktur einer Auftragsbestätigung:</div></div></p>
+<ul>
+<li><strong>Betreff:</strong> &quot;Auftragsbestätigung Ihrer Bestellung vom [Datum]&quot;.</li>
+<li><strong>Anrede:</strong> Formelle Begrüßung.</li>
+<li><strong>Einleitung:</strong> Dank und Bestätigung (z. B. &quot;Vielen Dank für Ihre Bestellung vom..., die wir hiermit bestätigen. Der Auftrag ist bei uns eingegangen und wird wie vereinbart bearbeitet.&quot;).</li>
+<li><strong>Lieferzusage:</strong> &quot;Eine ordnungsgemäße und termingerechte Lieferung sichern wir Ihnen zu.&quot;</li>
+<li><strong>Artikelliste:</strong> Genaue Auflistung der zu liefernden Artikel (Menge, Produktbezeichnung, Gewicht/Größe).</li>
+<li><strong>Finanzielle Zusammenfassung:</strong> Gesamtpreis (brutto/netto) bestätigen und auf Angebotsbedingungen (inkl. Rabatte) hinweisen.</li>
+<li><strong>Konditionen:</strong> Wiederholung der Zahlungs- und Lieferbedingungen (z. B. &quot;Zahlung innerhalb von 10 Tagen mit 2 % Skonto&quot;, &quot;Lieferung innerhalb von zwei Wochen frei Haus&quot;).</li>
+<li><strong>Schluss:</strong> Dank für das Vertrauen und formelle Grußformel.</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="subsection avoid-break">
+
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec18">5. English: Worksheet "Enquiry and Offer" / Englisch: Arbeitsblatt "Anfrage und Angebot"</h2>
+        <div class="subsection avoid-break">
+
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec19">5.1 Business Vocabulary / Fachwortschatz</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Essential English vocabulary for international trade based on the provided worksheets:</div></div></p>
+<p><strong>1. Parties to the Contract:</strong></p>
+<ul>
+<li><strong>buyer:</strong> The person/company purchasing goods.</li>
+<li><strong>seller:</strong> The person/company offering and selling goods.</li>
+</ul>
+<p><strong>2. Enquiry and Offer:</strong></p>
+<ul>
+<li><strong>enquiry:</strong> A request for information (Anfrage).</li>
+<li><strong>offer:</strong> A proposal to sell goods under specific terms (Angebot).</li>
+<li><strong>unsolicited offer:</strong> An offer made without a prior inquiry.</li>
+<li><strong>demanded offer:</strong> An offer made in response to an inquiry.</li>
+<li><strong>counteroffer:</strong> A response proposing changes to the original offer.</li>
+<li><strong>unaddressed mailing:</strong> Mass mailings not targeting a specific person (not legally binding).</li>
+</ul>
+<p><strong>3. Terms and Conditions:</strong></p>
+<ul>
+<li><strong>terms of delivery:</strong> Conditions detailing how goods are shipped.</li>
+<li><strong>terms of payment:</strong> Conditions detailing how and when to pay.</li>
+</ul>
+<p><strong>4. Conclusion of Contract and Legal Effect:</strong></p>
+<ul>
+<li><strong>conclusion of a sales contract:</strong> When buyer and seller agree to terms.</li>
+<li><strong>binding / not binding:</strong> Whether an offer carries a legal obligation.</li>
+<li><strong>legal binding period:</strong> The time frame during which an offer is valid.</li>
+<li><strong>provisional offer:</strong> A non-binding offer.</li>
+</ul>
+<p><strong>5. Other Important Terms:</strong></p>
+<ul>
+<li><strong>stocks:</strong> Inventory available (Vorräte).</li>
+<li><strong>Only while stocks last:</strong> Clause limiting availability.</li>
+<li><strong>Prices are subject to change without notice:</strong> Clause protecting seller from price fluctuations.</li>
+<li><strong>delivery time:</strong> Time taken to ship goods.</li>
+<li><strong>consideration period:</strong> Time given to the buyer to think about the offer.</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><div class="callout-content"><strong>INFO</strong>: Wichtiger englischer Fachwortschatz für den internationalen Handel basierend auf den bereitgestellten Arbeitsblättern:</div></div></p>
+<p><strong>1. Beteiligte am Kaufvertrag:</strong></p>
+<ul>
+<li><strong>buyer:</strong> Käufer, Abnehmer.</li>
+<li><strong>seller:</strong> Verkäufer, Anbieter.</li>
+</ul>
+<p><strong>2. Anfrage und Angebot:</strong></p>
+<ul>
+<li><strong>enquiry:</strong> Anfrage.</li>
+<li><strong>offer:</strong> Angebot.</li>
+<li><strong>unsolicited offer:</strong> unverlangtes Angebot.</li>
+<li><strong>demanded offer:</strong> verlangtes Angebot.</li>
+<li><strong>counteroffer:</strong> Gegenangebot.</li>
+<li><strong>unaddressed mailing:</strong> Postwurfsendung (nicht rechtlich bindend).</li>
+</ul>
+<p><strong>3. Bedingungen und Inhalte:</strong></p>
+<ul>
+<li><strong>terms of delivery:</strong> Lieferbedingungen.</li>
+<li><strong>terms of payment:</strong> Zahlungsbedingungen.</li>
+</ul>
+<p><strong>4. Vertragsabschluss und Rechtswirkung:</strong></p>
+<ul>
+<li><strong>conclusion of a sales contract:</strong> Abschluss eines Kaufvertrags.</li>
+<li><strong>binding / not binding:</strong> Verbindlich / unverbindlich.</li>
+<li><strong>legal binding period:</strong> gesetzliche Bindungsfrist.</li>
+<li><strong>provisional offer:</strong> freibleibendes Angebot.</li>
+</ul>
+<p><strong>5. Sonstige wichtige Begriffe:</strong></p>
+<ul>
+<li><strong>stocks:</strong> Vorräte, Lagerbestand.</li>
+<li><strong>Only while stocks last:</strong> Nur solange der Vorrat reicht.</li>
+<li><strong>Prices are subject to change without notice:</strong> Preisänderungen vorbehalten.</li>
+<li><strong>delivery time:</strong> Lieferzeit.</li>
+<li><strong>consideration period:</strong> Überlegungsfrist.</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+        <h2 id="sec20">5.2 Key Concepts from the Worksheet / Schlüsselkonzepte aus dem Arbeitsblatt</h2>
+        <div class="subsection avoid-break">
+            <div class="bilingual-grid">
+                <div class="lang-col">
+<p><div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: Summary of the grammatical and logical structures used in English business correspondence (from the &quot;Fill in the gaps&quot; exercises):</div></div></p>
+<ul>
+<li><strong>The Enquiry Process:</strong> The <strong>buyer</strong> asks the <strong>seller</strong> to make an offer. If the buyer wants to change conditions, they write a <strong>counteroffer</strong>. An enquiry generally concerns prices, <strong>terms of delivery or payment</strong>, or technical descriptions.</li>
+<li><strong>The Offer Process:</strong> An offer is made by the <strong>seller</strong> and should lead to the <strong>conclusion of a sales contract</strong>.</li>
+<li><strong>Binding Rules:</strong> A <strong>provisional offer</strong> is not <strong>legal/binding</strong> to the seller. Clauses like &quot;Only while <strong>stocks</strong> last&quot; are used. Unaddressed mailings are never binding.</li>
+<li><strong>Time limits:</strong> Under people present, there is no <strong>consideration period</strong>. For absent people, <strong>double</strong> delivery time and an appropriate consideration period are applied.</li>
+</ul>
+
+                </div>
+                <div class="lang-col">
+<p><div class="callout tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-3 3v-3m4.3-11.4a5 5 0 1 0-8.6 0 3.8 3.8 0 0 1-1.3 4.8 2 2 0 0 0-1 1.7v1.8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1.8a2 2 0 0 0-1-1.7 3.8 3.8 0 0 1-1.3-4.8z"></path></svg><div class="callout-content"><strong>TIP</strong>: Zusammenfassung der logischen Strukturen, die in der englischen Handelskorrespondenz verwendet werden (aus den Lückentext-Übungen):</div></div></p>
+<ul>
+<li><strong>Der Anfrageprozess:</strong> Der Käufer (<strong>buyer</strong>) bittet den Verkäufer (<strong>seller</strong>), ein Angebot zu legen. Will der Käufer Bedingungen ändern, schreibt er ein Gegenangebot (<strong>counteroffer</strong>). Eine Anfrage betrifft meist Preise, Liefer-/Zahlungsbedingungen (<strong>terms of delivery or payment</strong>) oder technische Details.</li>
+<li><strong>Der Angebotsprozess:</strong> Ein Angebot wird vom Verkäufer (<strong>seller</strong>) erstellt und soll zum Abschluss eines Kaufvertrags (<strong>conclusion of a sales contract</strong>) führen.</li>
+<li><strong>Bindungsregeln:</strong> Ein freibleibendes Angebot (<strong>provisional offer</strong>) ist für den Verkäufer nicht bindend (<strong>legal/binding</strong>). Hierfür werden Klauseln wie &quot;Nur solange der Vorrat reicht&quot; (<strong>Only while stocks last</strong>) genutzt. Postwurfsendungen sind nie bindend.</li>
+<li><strong>Fristen:</strong> Unter Anwesenden gibt es keine Überlegungsfrist (<strong>consideration period</strong>). Unter Abwesenden gilt die doppelte (<strong>double</strong>) Transportzeit plus eine angemessene Überlegungsfrist.</li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // Apply monospace font to code blocks
+        document.querySelectorAll('code').forEach(el => {
+            el.classList.add('mono');
+        });
+    </script>
+</body>
+</html>
