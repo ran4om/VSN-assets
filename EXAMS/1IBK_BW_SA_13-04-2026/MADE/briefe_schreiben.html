@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geschäftliche Briefe — VSN Lernunterlage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ===========================
+       VSN DESIGN SYSTEM — TOKENS
+       =========================== */
+    :root {
+      --vsn-primary:      #1e2e48;
+      --vsn-yellow:       #fbc92d;
+      --vsn-magenta:      #dc4ebf;
+      --vsn-blue:         #2980b9;
+      --vsn-white:        #ffffff;
+      --vsn-bg:           #f8f9fb;
+      --vsn-surface:      #ffffff;
+      --vsn-text:         #1a1a2e;
+      --vsn-text-muted:   #5a6a7e;
+      --vsn-border:       #e2e8f0;
+      --vsn-row-even:     #f0f4f9;
+
+      --callout-def-bg:   rgba(220, 78, 191, 0.12);
+      --callout-def-border: rgba(220, 78, 191, 0.7);
+      --callout-info-bg:  rgba(41, 128, 185, 0.10);
+      --callout-info-border: rgba(41, 128, 185, 0.65);
+      --callout-tip-bg:   rgba(251, 201, 45, 0.18);
+      --callout-tip-border: rgba(251, 201, 45, 0.85);
+
+      --font-body:        'Open Sans', sans-serif;
+      --font-mono:        'Roboto Mono', monospace;
+      --page-padding:     40px;
+      --section-gap:      40px;
+      --content-max:      1100px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 14px; }
+    body { font-family: var(--font-body); font-size: 14px; line-height: 1.7; color: var(--vsn-text); background: var(--vsn-bg); -webkit-font-smoothing: antialiased; }
+    .page-wrapper { max-width: var(--content-max); margin: 0 auto; padding: var(--page-padding); background: var(--vsn-surface); }
+
+    /* COVER */
+    .cover { min-height: 260px; background: var(--vsn-primary); border-radius: 12px; padding: 44px 48px 40px; display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; margin-bottom: 36px; position: relative; overflow: hidden; }
+    .cover::before { content: ''; position: absolute; bottom: -60px; right: -60px; width: 300px; height: 300px; background: rgba(251,201,45,0.08); border-radius: 50%; }
+    .cover::after { content: ''; position: absolute; top: -40px; right: 120px; width: 180px; height: 180px; background: rgba(220,78,191,0.06); border-radius: 50%; }
+    .cover-left { flex: 1; }
+    .cover-logo { height: 64px; width: auto; margin-bottom: 22px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.25); }
+    .cover-title { font-size: 28px; font-weight: 700; color: var(--vsn-white); line-height: 1.25; margin-bottom: 8px; letter-spacing: -0.3px; }
+    .cover-subtitle { font-size: 14px; font-weight: 400; color: var(--vsn-magenta); letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 18px; }
+    .cover-meta { display: flex; gap: 24px; flex-wrap: wrap; }
+    .cover-badge { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; padding: 6px 14px; font-size: 12px; color: rgba(255,255,255,0.8); font-weight: 600; }
+    .cover-badge span { color: var(--vsn-yellow); margin-right: 4px; }
+    .cover-accent-bar { width: 5px; background: linear-gradient(to bottom, var(--vsn-yellow), var(--vsn-magenta)); border-radius: 3px; align-self: stretch; min-height: 120px; flex-shrink: 0; }
+
+    /* PART HEADERS */
+    .part-header { background: linear-gradient(135deg, var(--vsn-primary) 0%, #2a3f5f 100%); border-radius: 10px; padding: 28px 36px; margin-top: 48px; margin-bottom: 32px; display: flex; align-items: center; gap: 20px; }
+    .part-header-icon { width: 48px; height: 48px; background: rgba(251,201,45,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .part-number { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--vsn-yellow); margin-bottom: 4px; }
+    .part-title { font-size: 22px; font-weight: 700; color: var(--vsn-white); line-height: 1.2; }
+    
+    /* SECTION HEADINGS */
+    .section-header { display: flex; align-items: center; gap: 14px; margin-top: 24px; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 2px solid var(--vsn-border); }
+    .section-num { background: var(--vsn-primary); color: var(--vsn-white); font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 5px; white-space: nowrap; }
+    .section-title { font-size: 18px; font-weight: 700; color: var(--vsn-primary); }
+    
+    /* PROSE */
+    p { margin-bottom: 10px; font-size: 13.5px; }
+    ul { padding-left: 22px; margin-bottom: 10px; font-size: 13.5px; list-style: none; }
+    ul li { margin-bottom: 5px; line-height: 1.6; }
+    ul li::before { content: ''; display: inline-block; width: 6px; height: 6px; background: var(--vsn-yellow); border-radius: 50%; margin-right: 10px; margin-left: -18px; vertical-align: middle; position: relative; top: -1px; }
+    strong { font-weight: 700; color: var(--vsn-primary); }
+
+    /* CALLOUT BOXES */
+    .callout { border-radius: 8px; padding: 14px 18px 14px 52px; margin: 14px 0; position: relative; box-shadow: 0 2px 8px rgba(0,0,0,0.06); page-break-inside: avoid; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .callout-icon { position: absolute; left: 14px; top: 14px; width: 24px; height: 24px; }
+    .callout-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 6px; }
+    .callout-info { background: var(--callout-info-bg); border-left: 4px solid var(--callout-info-border); }
+    .callout-info .callout-label { color: #1a6fa0; }
+    .callout-tip { background: var(--callout-tip-bg); border-left: 4px solid var(--callout-tip-border); }
+    .callout-tip .callout-label { color: #8a6800; }
+
+    /* LETTER TEMPLATE BOX */
+    .letter-box {
+      background: #fdfdfd;
+      border: 1px solid var(--vsn-border);
+      border-radius: 8px;
+      padding: 30px;
+      margin: 20px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+      position: relative;
+      page-break-inside: avoid;
+    }
+    .letter-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 4px; height: 100%;
+      background: var(--vsn-primary);
+      border-radius: 8px 0 0 8px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .letter-subject { font-weight: 700; margin-bottom: 24px; color: var(--vsn-primary); }
+    .letter-content { font-family: var(--font-body); font-size: 13.5px; line-height: 1.8; color: #222; white-space: pre-line; }
+    
+    /* EXERCISE BOX */
+    .exercise-box {
+      background: #eef2f7;
+      border-radius: 8px;
+      padding: 24px;
+      margin: 16px 0;
+      page-break-inside: avoid;
+    }
+    .exercise-title { font-size: 15px; font-weight: 700; color: var(--vsn-magenta); margin-bottom: 12px; }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 60px;
+      padding-top: 16px;
+      border-top: 1px solid var(--vsn-border);
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--vsn-text-muted);
+      font-family: var(--font-mono);
+    }
+    
+    /* PRINT */
+    .page-break { page-break-after: always; }
+    .page-break-before { page-break-before: always; }
+    .no-break { page-break-inside: avoid; }
+    @page { size: A4; margin: 16mm 18mm; }
+    @media print {
+      body { background: white; font-size: 11.5px; }
+      .page-wrapper { padding: 0; max-width: none; box-shadow: none; }
+      .cover { border-radius: 8px; padding-bottom: 40px; }
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <!-- ===================== COVER PAGE ===================== -->
+  <div class="cover" id="cover">
+    <div class="cover-left">
+      <img src="./assets/VSN_new.png" alt="VSN Logo" class="cover-logo">
+      <div class="cover-title">Geschäftliche Briefe</div>
+      <div class="cover-subtitle">Kaufvertrag — Schreibtraining &amp; Vorlagen</div>
+      <div class="cover-meta">
+        <div class="cover-badge"><span>Fach</span>BWL / BW</div>
+        <div class="cover-badge"><span>Klasse</span>1IBK</div>
+        <div class="cover-badge"><span>Sprache</span>Deutsch</div>
+      </div>
+    </div>
+    <div class="cover-accent-bar"></div>
+  </div>
+
+  <!-- ===================== PART I: Leitfaden ===================== -->
+  <div class="part-header" id="part1">
+    <div class="part-header-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" stroke="#fbc92d" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M14 2V8H20" stroke="#fbc92d" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M8 13H16M8 17H16M8 9H10" stroke="#fbc92d" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="part-header-text">
+      <div class="part-number">Teil I</div>
+      <div class="part-title">Leitfaden &amp; Vorlagen</div>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <span class="section-num">1</span>
+    <div class="section-title">Formale Anforderungen</div>
+  </div>
+  <p>Jeder geschäftliche Brief (E-Mail oder Papier) sollte bestimmte formale Kriterien erfüllen:</p>
+  <ul>
+    <li><strong>Absender &amp; Empfänger:</strong> Wer schreibt an wen? (Im Kopf der Nachricht)</li>
+    <li><strong>Betreff:</strong> Kurz, prägnant und aussagekräftig (ohne das Wort "Betreff" zu schreiben).</li>
+    <li><strong>Anrede:</strong> Formell (z.B. "Sehr geehrte Damen und Herren,"). Nach dem Komma wird klein weitergeschrieben.</li>
+    <li><strong>Einleitung:</strong> Bezug zum vorherigen Kontakt oder Anlass des Schreibens.</li>
+    <li><strong>Hauptteil:</strong> Klare Fakten (Menge, Qualität, Artikel, Preise, Konditionen).</li>
+    <li><strong>Schluss:</strong> Freundliche Aufforderung &amp; Grußformel (z.B. "Mit freundlichen Grüßen"). Nach der Grußformel steht <strong>kein</strong> Komma.</li>
+  </ul>
+
+  <!-- Vorlage 1 -->
+  <div class="section-header">
+    <span class="section-num">2</span>
+    <div class="section-title">Die Anfrage (Spezifisch)</div>
+  </div>
+  <div class="callout callout-info">
+    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#2980b9" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="8.5" stroke="#2980b9" stroke-width="2.5" stroke-linecap="round"/><line x1="12" y1="12" x2="12" y2="16" stroke="#2980b9" stroke-width="2" stroke-linecap="round"/></svg>
+    <div class="callout-label">Erinnerung</div>
+    <p>Die Anfrage ist rechtlich immer <strong>unverbindlich</strong>. Du bittest lediglich um ein Angebot, um Preise und Bedingungen vergleichen zu können.</p>
+  </div>
+  <div class="letter-box">
+    <div class="letter-subject">Anfrage bezüglich [Produkt/Artikel]</div>
+    <div class="letter-content">Sehr geehrte Damen und Herren,
+
+wir sind ein Unternehmen im Bereich [Branche] und haben großes Interesse an Ihren Produkten.
+Bitte senden Sie uns ein ausführliches und verbindliches Angebot für:
+
+- [Menge] Stück [Genaue Produktbezeichnung / Artikelnummer]
+
+Teilen Sie uns bitte in Ihrem Angebot auch Ihre aktuellsten Lieferbedingungen und Zahlungsbedingungen mit.
+
+Wir freuen uns auf Ihre baldige Rückmeldung.
+
+Mit freundlichen Grüßen
+
+[Dein Name / Deine Firma]</div>
+  </div>
+
+  <!-- Vorlage 2 -->
+  <div class="section-header">
+    <span class="section-num">3</span>
+    <div class="section-title">Das verbindliche Angebot</div>
+  </div>
+  <div class="callout callout-info">
+    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#2980b9" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="8.5" stroke="#2980b9" stroke-width="2.5" stroke-linecap="round"/><line x1="12" y1="12" x2="12" y2="16" stroke="#2980b9" stroke-width="2" stroke-linecap="round"/></svg>
+    <div class="callout-label">Erinnerung</div>
+    <p>Ein rechtsgültiges Angebot muss die 5 gesetzlichen Bestandteile enthalten: Bestimmter <strong>Käufer</strong>, bestimmter <strong>Verkäufer</strong>, <strong>Menge</strong>, <strong>Qualität</strong> und der <strong>Preis</strong>. Ist keine Frist gesetzt, gilt die gesetzliche Bindungsdauer.</p>
+  </div>
+  <div class="letter-box">
+    <div class="letter-subject">Angebot auf Ihre Anfrage bezüglich [Produkt]</div>
+    <div class="letter-content">Sehr geehrte Damen und Herren,
+
+vielen Dank für Ihre Anfrage und das Interesse an unseren Produkten. Gerne bieten wir Ihnen wie folgt an:
+
+- [Menge] Stück [Genaue Produktbezeichnung]
+  Preis je Stück: [Einzelpreis] EUR
+  Gesamtpreis: [Gesamtpreis] EUR (exkl. USt.)
+
+Lieferbedingungen: Lieferung frei Haus innerhalb von 14 Tagen.
+Zahlungsbedingungen: Zahlbar innerhalb von 10 Tagen mit 2 % Skonto oder 30 Tage netto.
+
+Dieses Angebot ist verbindlich gültig bis zum [Datum].
+
+Wir freuen uns auf Ihre Bestellung.
+
+Mit freundlichen Grüßen
+
+[Dein Name / Deine Firma]</div>
+  </div>
+
+  <div class="page-break-before"></div> <!-- New Page for Order/Confirm -->
+
+  <!-- Vorlage 3 -->
+  <div class="section-header">
+    <span class="section-num">4</span>
+    <div class="section-title">Die Bestellung</div>
+  </div>
+  <div class="callout callout-info">
+    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#2980b9" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="8.5" stroke="#2980b9" stroke-width="2.5" stroke-linecap="round"/><line x1="12" y1="12" x2="12" y2="16" stroke="#2980b9" stroke-width="2" stroke-linecap="round"/></svg>
+    <div class="callout-label">Erinnerung</div>
+    <p>Wenn du basierend auf einem verbindlichen Angebot unverändert bestellst, kommt <strong>sofort der Kaufvertrag zustande</strong>. Wiederhole zur Sicherheit die wichtigsten Konditionen im Text.</p>
+  </div>
+  <div class="letter-box">
+    <div class="letter-subject">Bestellung laut Ihrem Angebot vom [Angebotsdatum]</div>
+    <div class="letter-content">Sehr geehrte Damen und Herren,
+
+vielen Dank für Ihr Angebot vom [Angebotsdatum]. Hiermit bestellen wir verbindlich zu den im Angebot genannten Konditionen:
+
+- [Menge] Stück [Genaue Produktbezeichnung] zu je [Einzelpreis] EUR.
+
+Es gelten Ihre Liefer- und Zahlungsbedingungen (Lieferung frei Haus, Zahlung 10 Tage 2 % Skonto oder 30 Tage netto).
+
+Bitte senden Sie uns eine kurze, schriftliche Auftragsbestätigung.
+
+Mit freundlichen Grüßen
+
+[Dein Name / Deine Firma]</div>
+  </div>
+
+  <!-- Vorlage 4 -->
+  <div class="section-header">
+    <span class="section-num">5</span>
+    <div class="section-title">Die Auftragsbestätigung</div>
+  </div>
+  <div class="callout callout-tip">
+    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="#8a6800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="callout-label">Prüfungstipp</div>
+    <p>Eine Bestätigung ist zwingend nötig, wenn die Bestellung <strong>abweicht</strong>, <strong>unaufgefordert</strong> (ohne Angebot) erfolgt, oder wenn das vorherige Angebot <strong>freibleibend</strong> war.</p>
+  </div>
+  <div class="letter-box">
+    <div class="letter-subject">Auftragsbestätigung Ihrer Bestellung vom [Bestelldatum]</div>
+    <div class="letter-content">Sehr geehrte Damen und Herren,
+
+vielen Dank für Ihre Bestellung vom [Bestelldatum], die wir hiermit bestätigen. 
+Wir sichern Ihnen eine ordnungsgemäße und termingerechte Lieferung der folgenden Artikel zu:
+
+- [Menge] Stück [Genaue Produktbezeichnung]
+
+Es gelten die in unserem Angebot vereinbarten Zahlungs- und Lieferbedingungen. Wir bedanken uns für Ihr Vertrauen.
+
+Mit freundlichen Grüßen
+
+[Dein Name / Deine Firma]</div>
+  </div>
+
+  <div class="page-break-before"></div>
+
+  <!-- ===================== PART II: Übungen ===================== -->
+  <div class="part-header" id="part2">
+    <div class="part-header-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 5H6C4.89543 5 4 5.89543 4 7V19C4 20.1046 4.89543 21 6 21H18C19.1046 21 20 20.1046 20 19V14" stroke="#fbc92d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19.5 3.5L11 12V14.5H13.5L22 6L19.5 3.5Z" stroke="#fbc92d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="part-header-text">
+      <div class="part-number">Teil II</div>
+      <div class="part-title">Praktische Übungen</div>
+    </div>
+  </div>
+
+  <p>Bearbeite die folgenden Fallbeispiele. Formuliere die Briefe vollständig (inklusive Betreff, Anrede und Grußformel).</p>
+
+  <div class="exercise-box">
+    <div class="exercise-title">Übung 1: Die spezielle Anfrage</div>
+    <p>Du bist Einkäufer/in für das Sportgeschäft "Sneaker World" in Innsbruck. Du möchtest dein Sortiment um neue Laufschuhe erweitern.</p>
+    <ul>
+      <li><strong>Aufgabe:</strong> Schreibe eine spezielle Anfrage an die "SpeedX Sports GmbH".</li>
+      <li><strong>Inhalt:</strong> Du interessierst dich für 100 Paar des Modells "Runner Pro 2026".</li>
+      <li><strong>Details:</strong> Bitte um ein verbindliches Angebot, frage nach den Liefer- und Zahlungsbedingungen sowie nach einem Mengenrabatt.</li>
+    </ul>
+  </div>
+
+  <div class="exercise-box">
+    <div class="exercise-title">Übung 2: Das verbindliche Angebot</div>
+    <p>Du arbeitest im Vertrieb der "Holz &amp; Design Tischlerei". Eine IT-Firma ("TechNova GmbH") hat gestern nach 15 Schreibtischen angefragt.</p>
+    <ul>
+      <li><strong>Aufgabe:</strong> Erstelle ein verbindliches Angebot an die TechNova GmbH.</li>
+      <li><strong>Inhalt:</strong> 15 Büroschreibtische Modell "ErgoWood" (160x80cm). Preis: 350,00 EUR pro Stück (exkl. USt.).</li>
+      <li><strong>Bedingungen:</strong> Lieferung frei Haus innerhalb von 3 Wochen. Zahlung: 14 Tage netto.</li>
+      <li><strong>Bindung:</strong> Das Angebot soll bis zum 30. Mai 2026 verbindlich sein.</li>
+    </ul>
+  </div>
+
+  <div class="exercise-box">
+    <div class="exercise-title">Übung 3: Die Bestellung</div>
+    <p>Du bist Geschäftsführer/in der Bäckerei "Kruste &amp; Krümel". Du hast vor drei Tagen ein Angebot für Bio-Mehl der "Mühlen AG" erhalten (Angebot vom 10. April 2026).</p>
+    <ul>
+      <li><strong>Aufgabe:</strong> Schreibe die rechtsgültige Bestellung an die Mühlen AG.</li>
+      <li><strong>Inhalt:</strong> Bestelle unverändert 500 kg Bio-Weizenmehl, Type 700.</li>
+      <li><strong>Sicherheit:</strong> Bestätige die Konditionen (Preis: 1,20 EUR/kg, Lieferung frachtfrei, Zahlung prompt).</li>
+      <li><strong>Abschluss:</strong> Bitte um eine kurze Auftragsbestätigung.</li>
+    </ul>
+  </div>
+
+  <div class="exercise-box">
+    <div class="exercise-title">Übung 4: Die Auftragsbestätigung</div>
+    <p>Du bist Mitarbeiter/in der "Office-Technik GmbH". Herr Mustermann hat soeben in eurem B2B-Shop 5 Drucker ("LaserJet 3000") bestellt. Das Online-Angebot war freibleibend.</p>
+    <ul>
+      <li><strong>Aufgabe:</strong> Verfasse die rechtlich bindende Auftragsbestätigung.</li>
+      <li><strong>Inhalt:</strong> Bestätige den heutigen Rechnungs-/Bestelleingang.</li>
+      <li><strong>Zusage:</strong> Sichere die Lieferung der Drucker in den nächsten 5 Werktagen zu.</li>
+    </ul>
+  </div>
+
+  <div class="page-break-before"></div>
+
+  <!-- ===================== PART III: Lösungen ===================== -->
+  <div class="part-header" id="part3">
+    <div class="part-header-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="#fbc92d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M22 4L12 14.01L9 11.01" stroke="#fbc92d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="part-header-text">
+      <div class="part-number">Teil III</div>
+      <div class="part-title">Musterlösungen</div>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <span class="section-num">L1</span>
+    <div class="section-title">Lösung zu Übung 1 (Anfrage)</div>
+  </div>
+  <div class="letter-box">
+    <div class="letter-subject">Anfrage bezüglich Modell "Runner Pro 2026"</div>
+    <div class="letter-content">Sehr geehrte Damen und Herren,
+
+wir sind das Sportgeschäft "Sneaker World" in Innsbruck und möchten unser Sortiment im Bereich Laufschuhe erweitern. Da Ihre Marke bei unseren Kunden sehr beliebt ist, haben wir großes Interesse an Ihren Produkten.
+
+Bitte senden Sie uns ein ausführliches und verbindliches Angebot über:
+- 100 Paar Laufschuhe Modell "Runner Pro 2026"
+
+Teilen Sie uns in Ihrem Angebot bitte Ihre aktuellen Liefer- und Zahlungsbedingungen mit. Weiters bitten wir um Information, ob Sie bei dieser Bestellmenge einen Mengenrabatt gewähren.
+
+Wir freuen uns auf Ihre baldige Rückmeldung.
+
+Mit freundlichen Grüßen
+
+[Deine Unterschrift]
+Sneaker World Innsbruck</div>
+  </div>
+
+  <div class="section-header">
+    <span class="section-num">L2</span>
+    <div class="section-title">Lösung zu Übung 2 (Angebot)</div>
+  </div>
+  <div class="letter-box">
+    <div class="letter-subject">Angebot auf Ihre Anfrage bezüglich Büroschreibtische</div>
+    <div class="letter-content">Sehr geehrte Damen und Herren,
+
+vielen Dank für Ihre gestrige Anfrage. Gerne bieten wir Ihnen wie folgt an:
+
+- 15 Stück Büroschreibtische Modell "ErgoWood" (Maße: 160x80cm)
+  Preis je Stück: 350,00 EUR
+  Gesamtpreis: 5.250,00 EUR (exkl. USt.)
+
+Lieferbedingungen: Lieferung frei Haus innerhalb von 3 Wochen.
+Zahlungsbedingungen: Zahlbar innerhalb von 14 Tagen netto ohne Abzug.
+
+Dieses Angebot ist verbindlich gültig bis zum 30. Mai 2026.
+
+Wir hoffen, dass Ihnen unser Angebot zusagt, und freuen uns auf Ihre Bestellung.
+
+Mit freundlichen Grüßen
+
+[Deine Unterschrift]
+Vertrieb, Holz & Design Tischlerei</div>
+  </div>
+
+  <div class="section-header">
+    <span class="section-num">L3</span>
+    <div class="section-title">Lösung zu Übung 3 (Bestellung)</div>
+  </div>
+  <div class="letter-box">
+    <div class="letter-subject">Bestellung laut Ihrem Angebot vom 10. April 2026</div>
+    <div class="letter-content">Sehr geehrte Damen und Herren,
+
+vielen Dank für Ihr attraktives Angebot vom 10. April 2026. Hiermit bestellen wir verbindlich:
+
+- 500 kg Bio-Weizenmehl, Type 700 zu je 1,20 EUR/kg.
+
+Es gelten Ihre Liefer- und Zahlungsbedingungen (Lieferung frachtfrei, Zahlung prompt bei Erhalt). 
+
+Bitte senden Sie uns zur Sicherheit noch eine kurze schriftliche Auftragsbestätigung.
+
+Mit freundlichen Grüßen
+
+[Deine Unterschrift]
+Geschäftsführung, Bäckerei Kruste & Krümel</div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>VSN · Betriebswirtschaftslehre · 1IBK</div>
+    <div>Geschäftliche Briefe — Schreibtraining</div>
+    <div>14. April 2026</div>
+  </div>
+
+</div>
+</body>
+</html>

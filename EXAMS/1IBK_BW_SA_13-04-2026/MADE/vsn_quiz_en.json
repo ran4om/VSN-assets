@@ -1,0 +1,110 @@
+{
+  "title": "Sales Contract: Initiation, Conclusion & Components",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What is a promotion (Anpreisung)?",
+      "options": [
+        "A legally binding offer to a specific person",
+        "A legally non-binding declaration of willingness to sell directed at the general public",
+        "A legally valid order placed by the buyer",
+        "A binding order confirmation"
+      ],
+      "correctAnswer": "A legally non-binding declaration of willingness to sell directed at the general public",
+      "points": 10,
+      "topic": "initiation-promotion"
+    },
+    {
+      "type": "true-false",
+      "text": "An inquiry (Anfrage) legally obligates the buyer to purchase the requested goods.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "initiation-inquiry"
+    },
+    {
+      "type": "open-ended",
+      "text": "What are the 5 mandatory components that a sales contract must contain?",
+      "options": [],
+      "correctAnswer": "Specific seller, specific buyer, quality (product type), quantity, and price.",
+      "points": 15,
+      "topic": "contract-components"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which of the following clauses is an exemption clause that makes an offer non-binding (provisional)?",
+      "options": [
+        "Payable within 14 days",
+        "Delivery free domicile",
+        "Only while stocks last",
+        "Plus 20% value added tax"
+      ],
+      "correctAnswer": "Only while stocks last",
+      "points": 10,
+      "topic": "offer-binding"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How long is a binding oral offer (between present parties) valid if no specific time limit is given?",
+      "options": [
+        "14 days",
+        "Until the next business day",
+        "Only for the duration of the conversation",
+        "Exactly 24 hours"
+      ],
+      "correctAnswer": "Only for the duration of the conversation",
+      "points": 10,
+      "topic": "offer-binding"
+    },
+    {
+      "type": "open-ended",
+      "text": "When is an order confirmation (Auftragsbestätigung) strictly required from the seller?",
+      "options": [],
+      "correctAnswer": "When the order deviates from the offer, when the order is based on a non-binding offer, when the order was placed without a prior offer, or generally in B2C online shopping.",
+      "points": 20,
+      "topic": "contract-conclusion"
+    },
+    {
+      "type": "true-false",
+      "text": "The delivery term 'free domicile' (frei Haus) means that the buyer bears the transport costs and the risk of transport.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "delivery-terms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "what does cost price (Einstandspreis / Bezugspreis) refer to?",
+      "options": [
+        "The list price of the product without any deductions",
+        "The price including VAT for the end consumer",
+        "The actual price of the goods after deducting all discounts and adding any delivery costs",
+        "The price the seller paid for manufacturing"
+      ],
+      "correctAnswer": "The actual price of the goods after deducting all discounts and adding any delivery costs",
+      "points": 10,
+      "topic": "offer-comparison"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "According to the FAGG, how many days does a consumer (B2C) generally have to withdraw from an online purchase without providing a reason?",
+      "options": [
+        "7 days",
+        "10 days",
+        "14 days",
+        "30 days"
+      ],
+      "correctAnswer": "14 days",
+      "points": 10,
+      "topic": "ecommerce-law"
+    },
+    {
+      "type": "open-ended",
+      "text": "Briefly explain the difference between statutory warranty (Gewährleistung) and guarantee (Garantie).",
+      "options": [],
+      "correctAnswer": "Warranty is the seller's legal obligation to be liable for defects that already existed at the time of handover. Guarantee is a voluntary, additional promise of performance by the manufacturer or retailer.",
+      "points": 15,
+      "topic": "additional-components"
+    }
+  ]
+}
