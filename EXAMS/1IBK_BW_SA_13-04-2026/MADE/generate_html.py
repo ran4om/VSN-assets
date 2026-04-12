@@ -347,9 +347,7 @@ Bestimmen wann, wo und wie bezahlt wird.
 
 [TIP] Bevorzuge Onlineshops innerhalb der EU, da diese strengen EU-Richtlinien unterliegen (z.B. die "Button-Lösung", bei der der Bestell-Button eindeutig auf eine Zahlungsverpflichtung hinweisen muss, sowie die gesetzliche Informationspflicht laut ECG/E-Commerce-Gesetz).
 
-# Sales Contract Preparation: Inquiry, Offer, and Order / Anbahnung des Kaufvertrags: Anfrage, Angebot und Bestellung
-
-## 1. The Inquiry / Die Anfrage
+## 5. The Inquiry / Die Anfrage
 
 ### [English]
 [DEFINITION] An **inquiry** (or enquiry) is a request from a potential buyer to a seller. The buyer asks for information about goods or services. An inquiry is always legally non-binding. It can be made verbally (in person, by phone) or in writing (email, letter).
@@ -357,7 +355,7 @@ Bestimmen wann, wo und wie bezahlt wird.
 ### [German]
 [DEFINITION] Eine **Anfrage** ist die rechtlich unverbindliche Aufforderung eines potenziellen Käufers an einen Verkäufer, Informationen über Waren oder Dienstleistungen zu übermitteln. Sie ist an keine Form gebunden und kann mündlich (persönlich, telefonisch) oder schriftlich (E-Mail, Brief) erfolgen.
 
-## 1.1 Types of Inquiries / Arten der Anfrage
+### 5.1 Types of Inquiries / Arten der Anfrage
 
 ### [English]
 [INFO] There are four main types of inquiries, depending on the buyer's intention:
@@ -373,7 +371,7 @@ Bestimmen wann, wo und wie bezahlt wird.
 3. **Rückfrage:** Der Käufer bezieht sich auf bereits erhaltene Informationen und wünscht Zusatzinformationen.
 4. **Gegenangebot:** Der Käufer möchte bestimmte Bedingungen eines vorliegenden Angebots abändern (z. B. niedrigere Preise oder schnellere Lieferzeit verlangen).
 
-## 1.2 How to Structure and Write an Inquiry / Struktur und Formulierung einer Anfrage
+### 5.2 How to Structure and Write an Inquiry / Struktur und Formulierung einer Anfrage
 
 ### [English]
 [TIP] A well-structured written inquiry should include the following elements:
@@ -397,7 +395,7 @@ Bestimmen wann, wo und wie bezahlt wird.
 
 ---
 
-## 2. The Offer / Das Angebot
+## 6. The Offer / Das Angebot
 
 ### [English]
 [DEFINITION] With an **offer**, the seller declares their willingness to sell goods to a customer under specific conditions. 
@@ -407,7 +405,7 @@ Bestimmen wann, wo und wie bezahlt wird.
 [DEFINITION] Mit dem **Angebot** erklärt sich der Verkäufer bereit, dem Kunden Waren zu bestimmten Bedingungen zu verkaufen.
 [INFO] Wichtiger Unterschied zur **Werbung/Anpreisung**: Allgemeine Werbung (wie Schaufenster, Flugblätter oder Webseiten) richtet sich an die Allgemeinheit und stellt *kein* rechtlich bindendes Angebot dar. Ein gültiges Angebot muss an einen bestimmten Empfänger gerichtet sein.
 
-## 2.1 Statutory Components of an Offer / Gesetzliche Bestandteile eines Angebots
+### 6.1 Statutory Components of an Offer / Gesetzliche Bestandteile eines Angebots
 
 ### [English]
 [INFO] For an offer to be legally valid and binding, it must contain five statutory components (Kaufvertragsbestandteile):
@@ -429,7 +427,7 @@ Furthermore, the offer must show the **intent to bind** (Bindungswille) of both 
 
 Außerdem muss das Angebot den **Bindungswillen** von Verkäufer und Käufer erkennen lassen und es muss dem Empfänger persönlich **zugehen** (Zugang).
 
-## 2.2 Types of Offers / Angebotsarten
+### 6.2 Types of Offers / Angebotsarten
 
 ### [English]
 [DIAGRAM SUGGESTION: A flowchart showing the types of offers split by "Initiative" (Demanded vs. Undemanded) and by "Binding nature" (Binding vs. Non-binding).]
@@ -453,7 +451,7 @@ Außerdem muss das Angebot den **Bindungswillen** von Verkäufer und Käufer erk
 * **Verbindliches Angebot:** Enthält alle gesetzlichen Bestandteile, zeigt erkennbaren Bindungswillen und hat keine Freizeichnungsklausel. Wird es rechtzeitig und unverändert angenommen, entsteht ein Kaufvertrag.
 * **Freibleibendes/Unverbindliches Angebot:** Der Verkäufer schränkt seine Bindung durch eine Freizeichnungsklausel ein.
 
-## 2.3 Exclusion Clauses / Freizeichnungsklauseln
+### 6.3 Exclusion Clauses / Freizeichnungsklauseln
 
 ### [English]
 [DEFINITION] **Exclusion clauses** are phrases used by the seller to make an offer legally non-binding. This is advantageous for the seller because it allows them to react flexibly to market changes or find better buyers.
@@ -471,7 +469,7 @@ Häufige Klauseln sind:
 * "Freibleibend"
 * "Preisänderungen vorbehalten"
 
-## 2.4 Validity Period of Binding Offers / Bindungsdauer von verbindlichen Angeboten
+### 6.4 Validity Period of Binding Offers / Bindungsdauer von verbindlichen Angeboten
 
 ### [English]
 How long is a binding offer valid? There are two main scenarios:
@@ -497,7 +495,7 @@ Es gilt die angegebene Frist (z. B. "Dieses Angebot ist 14 Tage gültig" oder "G
   * Brief: Transportweg ca. 4-6 Tage (hin und zurück) + Überlegungsfrist (ergibt oft ca. 7-14 Tage gesamt).
   * [INFO] Eine angemessene Überlegungsfrist wird gewährt, da ein Kauf im B2B-Bereich keine alltägliche Handlung ist und Bedenkzeit erfordert.
 
-## 2.5 How to Structure and Write an Offer / Struktur und Formulierung eines Angebots
+### 6.5 How to Structure and Write an Offer / Struktur und Formulierung eines Angebots
 
 ### [English]
 [TIP] A complete and legally sound offer should be structured as follows:
@@ -527,7 +525,7 @@ Es gilt die angegebene Frist (z. B. "Dieses Angebot ist 14 Tage gültig" oder "G
 
 ---
 
-## 3. Comparing Offers / Angebote vergleichen
+## 7. Comparing Offers / Angebote vergleichen
 
 ### [English]
 [CLARIFICATION NEEDED: The user requested "comparing offers in detail", but the provided source materials do not contain deep instructions on this topic. The following information has been researched to fulfill the curriculum requirements for business administration at the requested level.]
@@ -577,9 +575,9 @@ Das billigste Angebot ist nicht zwingend das beste. Weitere entscheidende Faktor
 
 ---
 
-## 4. The Order and Order Confirmation / Bestellung und Auftragsbestätigung
+## 8. The Order and Order Confirmation / Bestellung und Auftragsbestätigung
 
-## 4.1 How to Write an Order / Eine Bestellung schreiben
+### 8.1 How to Write an Order / Eine Bestellung schreiben
 
 ### [English]
 [DEFINITION] An order is a binding declaration by the buyer to purchase goods. If it is based on a valid, unchanged offer, the sales contract is concluded upon dispatch/receipt of the order.
@@ -603,7 +601,7 @@ Das billigste Angebot ist nicht zwingend das beste. Weitere entscheidende Faktor
 * **Klausel:** "Es gelten Ihre Angebotsbedingungen, Abweichungen bestehen keine."
 * **Schluss:** Bitte um eine schriftliche Auftragsbestätigung und formelle Grußformel.
 
-## 4.2 How to Write an Order Confirmation / Eine Auftragsbestätigung schreiben
+### 8.2 How to Write an Order Confirmation / Eine Auftragsbestätigung schreiben
 
 ### [English]
 [DEFINITION] The order confirmation (Auftragsbestätigung) is sent by the seller to confirm receipt and acceptance of the order. It is especially necessary if the order deviates from the original offer, or if the offer was non-binding (unsolicited/provisional).
@@ -631,9 +629,9 @@ Das billigste Angebot ist nicht zwingend das beste. Weitere entscheidende Faktor
 
 ---
 
-## 5. English: Worksheet "Enquiry and Offer" / Englisch: Arbeitsblatt "Anfrage und Angebot"
+## 9. English: Worksheet "Enquiry and Offer" / Englisch: Arbeitsblatt "Anfrage und Angebot"
 
-## 5.1 Business Vocabulary / Fachwortschatz
+### 9.1 Business Vocabulary / Fachwortschatz
 
 ### [English]
 [INFO] Essential English vocabulary for international trade based on the provided worksheets:
@@ -699,7 +697,7 @@ Das billigste Angebot ist nicht zwingend das beste. Weitere entscheidende Faktor
 * **delivery time:** Lieferzeit.
 * **consideration period:** Überlegungsfrist.
 
-## 5.2 Key Concepts from the Worksheet / Schlüsselkonzepte aus dem Arbeitsblatt
+### 9.2 Key Concepts from the Worksheet / Schlüsselkonzepte aus dem Arbeitsblatt
 
 ### [English]
 [TIP] Summary of the grammatical and logical structures used in English business correspondence (from the "Fill in the gaps" exercises):
