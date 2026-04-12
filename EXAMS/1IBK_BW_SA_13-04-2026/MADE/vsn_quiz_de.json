@@ -1,0 +1,110 @@
+{
+  "title": "Kaufvertrag: Anbahnung, Abschluss & Bestandteile",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Was ist eine Anpreisung?",
+      "options": [
+        "Ein rechtlich bindendes Angebot an eine bestimmte Person",
+        "Eine rechtlich unverbindliche Erklärung der Verkaufsbereitschaft an die Allgemeinheit",
+        "Eine rechtsgültige Bestellung durch den Käufer",
+        "Eine verbindliche Auftragsbestätigung"
+      ],
+      "correctAnswer": "Eine rechtlich unverbindliche Erklärung der Verkaufsbereitschaft an die Allgemeinheit",
+      "points": 10,
+      "topic": "anbahnung-anpreisung"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine Anfrage verpflichtet den Käufer rechtlich zum Kauf der angefragten Ware.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "anbahnung-anfrage"
+    },
+    {
+      "type": "open-ended",
+      "text": "Welche 5 gesetzlichen Bestandteile muss ein Kaufvertrag zwingend enthalten?",
+      "options": [],
+      "correctAnswer": "Bestimmter Verkäufer, bestimmter Käufer, Qualität (Produktart), Quantität (Menge) und Preis.",
+      "points": 15,
+      "topic": "vertragsbestandteile"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche der folgenden Klauseln ist eine Freizeichnungsklausel, die ein Angebot unverbindlich (freibleibend) macht?",
+      "options": [
+        "Zahlbar innerhalb von 14 Tagen",
+        "Lieferung frei Haus",
+        "Solange der Vorrat reicht",
+        "Zuzüglich 20% Umsatzsteuer"
+      ],
+      "correctAnswer": "Solange der Vorrat reicht",
+      "points": 10,
+      "topic": "angebotsbindung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie lange ist ein verbindliches mündliches Angebot (unter Anwesenden) gültig, wenn keine Frist genannt wird?",
+      "options": [
+        "14 Tage",
+        "Bis zum nächsten Werktag",
+        "Nur für die Dauer des Gesprächs",
+        "Genau 24 Stunden"
+      ],
+      "correctAnswer": "Nur für die Dauer des Gesprächs",
+      "points": 10,
+      "topic": "angebotsbindung"
+    },
+    {
+      "type": "open-ended",
+      "text": "Wann ist eine Auftragsbestätigung seitens des Verkäufers zwingend erforderlich?",
+      "options": [],
+      "correctAnswer": "Wenn die Bestellung vom Angebot abweicht, wenn die Bestellung auf einem freibleibenden Angebot basiert, wenn ohne vorheriges Angebot bestellt wurde, oder beim Online-Shopping (B2C).",
+      "points": 20,
+      "topic": "vertragsabschluss"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Lieferbedingung 'frei Haus' bedeutet, dass der Käufer die Transportkosten und das Transportrisiko trägt.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "lieferbedingungen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was versteht man unter dem Einstandspreis (Bezugspreis)?",
+      "options": [
+        "Den Listenpreis des Produkts ohne jegliche Abzüge",
+        "Den Preis inklusive Umsatzsteuer für den Endkonsumenten",
+        "Den tatsächlichen Preis der Ware nach Abzug aller Rabatte und Skonti plus anfallende Bezugskosten",
+        "Den Preis, den der Verkäufer für die Herstellung bezahlt hat"
+      ],
+      "correctAnswer": "Den tatsächlichen Preis der Ware nach Abzug aller Rabatte und Skonti plus anfallende Bezugskosten",
+      "points": 10,
+      "topic": "angebotsvergleich"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie lange hat ein Konsument (B2C) laut FAGG grundsätzlich Zeit, um von einem Online-Kauf ohne Angabe von Gründen zurückzutreten?",
+      "options": [
+        "7 Tage",
+        "10 Tage",
+        "14 Tage",
+        "30 Tage"
+      ],
+      "correctAnswer": "14 Tage",
+      "points": 10,
+      "topic": "e-commerce-recht"
+    },
+    {
+      "type": "open-ended",
+      "text": "Erkläre kurz den Unterschied zwischen Gewährleistung und Garantie.",
+      "options": [],
+      "correctAnswer": "Gewährleistung ist die gesetzliche Pflicht des Verkäufers, für Mängel zu haften, die bereits bei Übergabe bestanden. Garantie ist eine freiwillige, zusätzliche Leistungszusage des Herstellers oder Händlers.",
+      "points": 15,
+      "topic": "sonstige-bestandteile"
+    }
+  ]
+}
