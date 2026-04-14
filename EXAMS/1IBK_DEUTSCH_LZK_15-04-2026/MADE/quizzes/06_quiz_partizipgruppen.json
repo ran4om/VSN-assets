@@ -1,0 +1,110 @@
+{
+  "quizzes": [
+    {
+      "language": "de",
+      "title": "Topic 6: Partizipgruppen (Partizipialsätze)",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "text": "Worum sind Partizipgruppen gebaut?",
+          "options": [
+            "Um ein Relativpronomen.",
+            "Um ein konjugiertes Verb.",
+            "Um ein Partizip (Partizip I oder Partizip II).",
+            "Um die Wörtchen 'um' oder 'ohne'."
+          ],
+          "correctAnswer": "Um ein Partizip (Partizip I oder Partizip II).",
+          "points": 10,
+          "topic": "partizipgruppe-aufbau"
+        },
+        {
+          "type": "true-false",
+          "text": "Einer Partizipgruppe fehlen das Subjekt und die Personalform des Verbs (Prädikat).",
+          "correctAnswer": "True",
+          "points": 5,
+          "topic": "partizipgruppe-merkmal"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Wie bildet man das Partizip I (Partizip Präsens)?",
+          "options": [
+            "Infinitiv + 'd' (z. B. laufend, singend).",
+            "Vorsilbe 'ge-' + Wortstamm + '-t' (z. B. gelacht).",
+            "Es gibt keine feste Regel.",
+            "Durch Anfügen von '-en' an den Wortstamm."
+          ],
+          "correctAnswer": "Infinitiv + 'd' (z. B. laufend, singend).",
+          "points": 10,
+          "topic": "partizip-1"
+        },
+        {
+          "type": "true-false",
+          "text": "Das Partizip II (Partizip Perfekt) drückt aktive und gleichzeitige Handlungen aus.",
+          "correctAnswer": "False",
+          "points": 5,
+          "topic": "partizip-2-bedeutung"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Welcher Satz enthält eine korrekte Partizipgruppe?",
+          "options": [
+            "Da er vom Auftritt beeindruckt war, klatschte er.",
+            "Vom Auftritt des Saxofonisten beeindruckt, holte er sich ein Autogramm.",
+            "Während er klatschte, beeindruckte ihn der Auftritt.",
+            "Beeindruckend war der Auftritt."
+          ],
+          "correctAnswer": "Vom Auftritt des Saxofonisten beeindruckt, holte er sich ein Autogramm.",
+          "points": 15,
+          "topic": "partizipgruppe-erkennen"
+        },
+        {
+          "type": "open-ended",
+          "text": "Erklären Sie die Ausnahmebezüglich der Hilfsverben 'sein' und 'haben' bei Partizipgruppen.",
+          "correctAnswer": "Das Partizip Präsens von 'sein' (seiend) und 'haben' (habend) darf niemals in einem Partizipialsatz stehen. Es wird bei der Verkürzung des Satzes ersatzlos weggelassen.",
+          "points": 20,
+          "topic": "ausnahme-hilfsverben"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Welcher dieser Sätze ist FALSCH formuliert?",
+          "options": [
+            "Der Besucher klatschte begeistert.",
+            "Singend liefen sie die Straße hinunter.",
+            "Den Hut in der Hand habend, bedankte er sich.",
+            "Der Besucher, den Hut in der Hand, bedankte sich."
+          ],
+          "correctAnswer": "Den Hut in der Hand habend, bedankte er sich.",
+          "points": 15,
+          "topic": "habend-fehler"
+        },
+        {
+          "type": "true-false",
+          "text": "Partizipgruppen ersetzen oft komplexe kausale (da/weil) Nebensätze oder Relativsätze.",
+          "correctAnswer": "True",
+          "points": 5,
+          "topic": "ersatzfunktion"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Das Wort 'geschrieben' ist ein Beispiel für ein...",
+          "options": [
+            "Partizip I",
+            "Partizip II",
+            "Infinitiv",
+            "Relativpronomen"
+          ],
+          "correctAnswer": "Partizip II",
+          "points": 10,
+          "topic": "partizip-2-beispiel"
+        },
+        {
+          "type": "true-false",
+          "text": "Die Wörter 'seiend' und 'habend' werden in modernen Partizipialsätzen besonders häufig verwendet.",
+          "correctAnswer": "False",
+          "points": 5,
+          "topic": "hilfsverben-häufigkeit"
+        }
+      ]
+    }
+  ]
+}

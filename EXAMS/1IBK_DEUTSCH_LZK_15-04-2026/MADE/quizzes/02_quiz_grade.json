@@ -1,0 +1,110 @@
+{
+  "quizzes": [
+    {
+      "language": "de",
+      "title": "Topic 2: Nebensätze gleichen und ungleichen Grades",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "text": "Was versteht man unter 'Nebensätzen gleichen Grades'?",
+          "options": [
+            "Zwei Hauptsätze, die durch 'und' verbunden sind.",
+            "Zwei oder mehrere Nebensätze, die sich auf denselben übergeordneten Satz (meist den Hauptsatz) beziehen.",
+            "Ein Nebensatz, der sich auf einen anderen Nebensatz bezieht.",
+            "Zwei Nebensätze mit exakt derselben Länge."
+          ],
+          "correctAnswer": "Zwei oder mehrere Nebensätze, die sich auf denselben übergeordneten Satz (meist den Hauptsatz) beziehen.",
+          "points": 10,
+          "topic": "gleicher-grad"
+        },
+        {
+          "type": "true-false",
+          "text": "Bei Nebensätzen ungleichen Grades bezieht sich ein Nebensatz oft auf einen anderen Nebensatz, der sich wiederum auf den Hauptsatz bezieht.",
+          "correctAnswer": "True",
+          "points": 5,
+          "topic": "ungleicher-grad-def"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Welcher Satz ist ein Beispiel für Nebensätze 1. und 2. Grades (ungleichen Grades)?",
+          "options": [
+            "Er freute sich, dass die Sonne schien und dass das Wasser sauber war.",
+            "Das Bergsteigen machte ihm Mühe, weil er sich den Fuß verstaucht hatte, während er hinuntergelaufen war.",
+            "Ich kam, ich sah, ich siegte.",
+            "Er lachte, aber sie weinte."
+          ],
+          "correctAnswer": "Das Bergsteigen machte ihm Mühe, weil er sich den Fuß verstaucht hatte, während er hinuntergelaufen war.",
+          "points": 15,
+          "topic": "ungleicher-grad-erkennen"
+        },
+        {
+          "type": "true-false",
+          "text": "Nebensätze ungleichen Grades werden umgangssprachlich auch 'Schachtelsätze' genannt.",
+          "correctAnswer": "True",
+          "points": 5,
+          "topic": "schachtelsaetze"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Betrachten Sie: 'Er lachte, weil das Buch lustig war (NS 1) und weil er sich wohlfühlte (NS 2)'. Welcher Grad liegt hier vor?",
+          "options": [
+            "Nebensätze ungleichen Grades",
+            "Hauptsätze",
+            "Nebensätze gleichen Grades",
+            "Relativsätze ungleichen Grades"
+          ],
+          "correctAnswer": "Nebensätze gleichen Grades",
+          "points": 10,
+          "topic": "gleicher-grad-beispiel"
+        },
+        {
+          "type": "open-ended",
+          "text": "Erklären Sie den Unterschied zwischen Nebensätzen gleichen Grades und ungleichen Grades in eigenen Worten.",
+          "correctAnswer": "Bei gleichem Grad beziehen sich beide Nebensätze parallel auf denselben Hauptsatz. Bei ungleichem Grad liegt eine Kettenstruktur vor: Ein Nebensatz (z.B. Grad 2) bezieht sich auf einen anderen Nebensatz (Grad 1), der vom Hauptsatz abhängt.",
+          "points": 20,
+          "topic": "unterschied-grade"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Gibt es Nebensätze dritten Grades (NS 3)?",
+          "options": [
+            "Nein, die Grammatik erlaubt maximal 2 Nebensätze.",
+            "Ja, wenn sich ein Nebensatz wieder auf den vorherigen Nebensatz zweiten Grades bezieht.",
+            "Nein, das nennt man dann Partizipgruppen.",
+            "Nur im Englischen, aber nicht im Deutschen."
+          ],
+          "correctAnswer": "Ja, wenn sich ein Nebensatz wieder auf den vorherigen Nebensatz zweiten Grades bezieht.",
+          "points": 15,
+          "topic": "hoehere-grade"
+        },
+        {
+          "type": "true-false",
+          "text": "Zwei Nebensätze gleichen Grades werden oft mit der Konjunktion 'und' oder 'oder' verbunden.",
+          "correctAnswer": "True",
+          "points": 5,
+          "topic": "verbindung-gleicher-grad"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Worauf bezieht sich der NS 2 im Satz: 'Ich glaube, dass es regnen wird, wenn wir ankommen.'?",
+          "options": [
+            "Auf das Subjekt 'Ich'.",
+            "Auf den Hauptsatz 'Ich glaube'.",
+            "Auf den Nebensatz 1 'dass es regnen wird'.",
+            "Auf gar keinen anderen Satz."
+          ],
+          "correctAnswer": "Auf den Nebensatz 1 'dass es regnen wird'.",
+          "points": 15,
+          "topic": "beispielanalyse"
+        },
+        {
+          "type": "true-false",
+          "text": "Ein Nebensatz gleichen Grades muss immer durch dasselbe Einleitewort (z.B. zweimal 'dass') gestartet werden.",
+          "correctAnswer": "False",
+          "points": 10,
+          "topic": "einleitewort-gleich"
+        }
+      ]
+    }
+  ]
+}
