@@ -1,110 +1,105 @@
 {
-  "quizzes": [
+  "title": "Topic 1: Grundlagen zu Nebensätzen",
+  "questions": [
     {
-      "language": "de",
-      "title": "Topic 1: Grundlagen zu Nebensätzen",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "text": "Was ist die Hauptfunktion eines Nebensatzes?",
-          "options": [
-            "Er bildet das Subjekt für ein Prädikat.",
-            "Er erweitert oder erklärt die Aussage eines Hauptsatzes genauer.",
-            "Er verbindet zwei Hauptsätze miteinander.",
-            "Er ersetzt das Verb im Hauptsatz."
-          ],
-          "correctAnswer": "Er erweitert oder erklärt die Aussage eines Hauptsatzes genauer.",
-          "points": 10,
-          "topic": "grundlagen-funktion"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Nebensatz kann auch völlig alleine stehen und grammatisch korrekt sein.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "grundlagen-selbststaendigkeit"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Wo steht die Personalform des Verbs (das konjugierte Verb) im Nebensatz normalerweise?",
-          "options": [
-            "An der ersten Stelle",
-            "An der zweiten Stelle",
-            "An der vorletzten Stelle",
-            "An der letzten Stelle"
-          ],
-          "correctAnswer": "An der letzten Stelle",
-          "points": 10,
-          "topic": "verbposition"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Satzgefüge besteht aus mindestens zwei Hauptsätzen.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "satzgefuege-definition"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Womit wird ein Nebensatz am häufigsten eingeleitet?",
-          "options": [
-            "Mit einem Vollverb oder einem Nomen.",
-            "Mit einer Präposition wie 'auf' oder 'unter'.",
-            "Durch ein Einleitewort wie eine unterordnende Konjunktion oder ein Relativpronomen.",
-            "Durch ein Komma ohne weitere Begleitwörter."
-          ],
-          "correctAnswer": "Durch ein Einleitewort wie eine unterordnende Konjunktion oder ein Relativpronomen.",
-          "points": 10,
-          "topic": "einleitewort"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Nebensatz wird immer durch ein Komma vom Hauptsatz abgetrennt.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "kommasetzung"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welcher dieser Beispielsätze ist ein korrektes Satzgefüge?",
-          "options": [
-            "Ich gehe ins Kino, weil der Film gut ist.",
-            "Ich gehe ins Kino und ich kaufe Popcorn.",
-            "Das Auto ist schnell, das Wetter ist schön.",
-            "Heute ist er müde, morgen ist er munter."
-          ],
-          "correctAnswer": "Ich gehe ins Kino, weil der Film gut ist.",
-          "points": 15,
-          "topic": "satzgefuege-erkennen"
-        },
-        {
-          "type": "open-ended",
-          "text": "Erklären Sie kurz, was ein 'Satzgefüge' ausmacht.",
-          "correctAnswer": "Ein Satzgefüge ist eine Kombination aus mindestens einem selbstständigen Hauptsatz und mindestens einem abhängigen Nebensatz.",
-          "points": 20,
-          "topic": "satzgefuege"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welche der folgenden Wörter sind typische Einleitewörter für Nebensätze?",
-          "options": [
-            "und, oder, aber",
-            "weil, dass, obwohl",
-            "ich, du, er",
-            "heute, morgen, gestern"
-          ],
-          "correctAnswer": "weil, dass, obwohl",
-          "points": 10,
-          "topic": "konjunktionen"
-        },
-        {
-          "type": "true-false",
-          "text": "In einem Nebensatz liefert der Satz oft Informationen über Zeit, Ort, Grund oder Folge der Handlung im Hauptsatz.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "nebensatz-inhalt"
-        }
-      ]
+      "type": "multiple-choice",
+      "text": "Was ist die Hauptfunktion eines Nebensatzes?",
+      "options": [
+        "Er bildet das Subjekt für ein Prädikat.",
+        "Er erweitert oder erklärt die Aussage eines Hauptsatzes genauer.",
+        "Er verbindet zwei Hauptsätze miteinander.",
+        "Er ersetzt das Verb im Hauptsatz."
+      ],
+      "correctAnswer": "Er erweitert oder erklärt die Aussage eines Hauptsatzes genauer.",
+      "points": 10,
+      "topic": "grundlagen-funktion"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Nebensatz kann auch völlig alleine stehen und grammatisch korrekt sein.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "grundlagen-selbststaendigkeit"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wo steht die Personalform des Verbs (das konjugierte Verb) im Nebensatz normalerweise?",
+      "options": [
+        "An der ersten Stelle",
+        "An der zweiten Stelle",
+        "An der vorletzten Stelle",
+        "An der letzten Stelle"
+      ],
+      "correctAnswer": "An der letzten Stelle",
+      "points": 10,
+      "topic": "verbposition"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Satzgefüge besteht aus mindestens zwei Hauptsätzen.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "satzgefuege-definition"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Womit wird ein Nebensatz am häufigsten eingeleitet?",
+      "options": [
+        "Mit einem Vollverb oder einem Nomen.",
+        "Mit einer Präposition wie 'auf' oder 'unter'.",
+        "Durch ein Einleitewort wie eine unterordnende Konjunktion oder ein Relativpronomen.",
+        "Durch ein Komma ohne weitere Begleitwörter."
+      ],
+      "correctAnswer": "Durch ein Einleitewort wie eine unterordnende Konjunktion oder ein Relativpronomen.",
+      "points": 10,
+      "topic": "einleitewort"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Nebensatz wird immer durch ein Komma vom Hauptsatz abgetrennt.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "kommasetzung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher dieser Beispielsätze ist ein korrektes Satzgefüge?",
+      "options": [
+        "Ich gehe ins Kino, weil der Film gut ist.",
+        "Ich gehe ins Kino und ich kaufe Popcorn.",
+        "Das Auto ist schnell, das Wetter ist schön.",
+        "Heute ist er müde, morgen ist er munter."
+      ],
+      "correctAnswer": "Ich gehe ins Kino, weil der Film gut ist.",
+      "points": 15,
+      "topic": "satzgefuege-erkennen"
+    },
+    {
+      "type": "open-ended",
+      "text": "Erklären Sie kurz, was ein 'Satzgefüge' ausmacht.",
+      "correctAnswer": "Ein Satzgefüge ist eine Kombination aus mindestens einem selbstständigen Hauptsatz und mindestens einem abhängigen Nebensatz.",
+      "points": 20,
+      "topic": "satzgefuege"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche der folgenden Wörter sind typische Einleitewörter für Nebensätze?",
+      "options": [
+        "und, oder, aber",
+        "weil, dass, obwohl",
+        "ich, du, er",
+        "heute, morgen, gestern"
+      ],
+      "correctAnswer": "weil, dass, obwohl",
+      "points": 10,
+      "topic": "konjunktionen"
+    },
+    {
+      "type": "true-false",
+      "text": "In einem Nebensatz liefert der Satz oft Informationen über Zeit, Ort, Grund oder Folge der Handlung im Hauptsatz.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "nebensatz-inhalt"
     }
   ]
 }

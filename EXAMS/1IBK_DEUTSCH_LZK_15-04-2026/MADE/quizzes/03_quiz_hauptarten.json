@@ -1,110 +1,105 @@
 {
-  "quizzes": [
+  "title": "Topic 3: Hauptarten von Nebensätzen (Subjekt, Objekt, Attribut)",
+  "questions": [
     {
-      "language": "de",
-      "title": "Topic 3: Hauptarten von Nebensätzen (Subjekt, Objekt, Attribut)",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "text": "Mit welcher Frage ermittelt man typischerweise einen Subjektsatz?",
-          "options": [
-            "Wann oder wo?",
-            "Welcher oder was für ein?",
-            "Wen oder was?",
-            "Wer oder was?"
-          ],
-          "correctAnswer": "Wer oder was?",
-          "points": 10,
-          "topic": "subjektsatz-frage"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Attributsatz (Relativsatz) ersetzt ein Nomen und steht an erster Stelle im Satz.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "attributsatz-falsch"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welche Art von Nebensatz liegt vor: 'Ich bedauerte, dass Havva fehlte.'?",
-          "options": [
-            "Subjektsatz",
-            "Objektsatz",
-            "Relativsatz",
-            "Temporalsatz"
-          ],
-          "correctAnswer": "Objektsatz",
-          "points": 15,
-          "topic": "objektsatz-beispiel"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Ein Attributsatz wird meistens durch welches Wort eingeleitet?",
-          "options": [
-            "Eine Konjunktion wie 'weil' oder 'dass'.",
-            "Ein Relativpronomen wie 'der, die, das' oder 'welcher'.",
-            "Ein Fragewort wie 'wann' oder 'wo'.",
-            "Eine Präposition wie 'auf' oder 'in'."
-          ],
-          "correctAnswer": "Ein Relativpronomen wie 'der, die, das' oder 'welcher'.",
-          "points": 10,
-          "topic": "attributsatz-einleitung"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Objektsatz kann ein Akkusativobjekt ersetzen.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "objektsatz-funktion"
-        },
-        {
-          "type": "open-ended",
-          "text": "Erklären Sie die Funktion eines Attributsatzes und nennen Sie das Fragewort, mit dem man ihn erfragt.",
-          "correctAnswer": "Ein Attributsatz bezieht sich näher auf ein Nomen oder Pronomen im Hauptsatz und übernimmt die Funktion eines Attributs. Das Fragewort ist 'Welcher?' oder 'Was für ein?'.",
-          "points": 20,
-          "topic": "attributsatz-erklaerung"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Bestimme den Nebensatz: 'Wer verliert, zahlt die nächste Runde!'",
-          "options": [
-            "Objektsatz",
-            "Relativsatz",
-            "Subjektsatz",
-            "Adverbialsatz"
-          ],
-          "correctAnswer": "Subjektsatz",
-          "points": 15,
-          "topic": "subjektsatz-erkennen"
-        },
-        {
-          "type": "true-false",
-          "text": "Die Frage zu einem Objektsatz kann auch 'Wem?' lauten (Dativobjekt).",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "objektsatz-dativ"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welcher Satz enthält einen eingeschobenen Attributsatz?",
-          "options": [
-            "Dass du kommst, freut mich.",
-            "Der Koch, der die Suppe versalzen hat, ist verliebt.",
-            "Er fragte sie, ob sie mitkommen wolle.",
-            "Weil es kalt war, machten wir ein Feuer."
-          ],
-          "correctAnswer": "Der Koch, der die Suppe versalzen hat, ist verliebt.",
-          "points": 15,
-          "topic": "attributsatz-erkennen"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Subjektsatz fragt nach dem direkten Objekt (Wen oder was?).",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "subjektsatz-falsch"
-        }
-      ]
+      "type": "multiple-choice",
+      "text": "Mit welcher Frage ermittelt man typischerweise einen Subjektsatz?",
+      "options": [
+        "Wann oder wo?",
+        "Welcher oder was für ein?",
+        "Wen oder was?",
+        "Wer oder was?"
+      ],
+      "correctAnswer": "Wer oder was?",
+      "points": 10,
+      "topic": "subjektsatz-frage"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Attributsatz (Relativsatz) ersetzt ein Nomen und steht an erster Stelle im Satz.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "attributsatz-falsch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Art von Nebensatz liegt vor: 'Ich bedauerte, dass Havva fehlte.'?",
+      "options": [
+        "Subjektsatz",
+        "Objektsatz",
+        "Relativsatz",
+        "Temporalsatz"
+      ],
+      "correctAnswer": "Objektsatz",
+      "points": 15,
+      "topic": "objektsatz-beispiel"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Attributsatz wird meistens durch welches Wort eingeleitet?",
+      "options": [
+        "Eine Konjunktion wie 'weil' oder 'dass'.",
+        "Ein Relativpronomen wie 'der, die, das' oder 'welcher'.",
+        "Ein Fragewort wie 'wann' oder 'wo'.",
+        "Eine Präposition wie 'auf' oder 'in'."
+      ],
+      "correctAnswer": "Ein Relativpronomen wie 'der, die, das' oder 'welcher'.",
+      "points": 10,
+      "topic": "attributsatz-einleitung"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Objektsatz kann ein Akkusativobjekt ersetzen.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "objektsatz-funktion"
+    },
+    {
+      "type": "open-ended",
+      "text": "Erklären Sie die Funktion eines Attributsatzes und nennen Sie das Fragewort, mit dem man ihn erfragt.",
+      "correctAnswer": "Ein Attributsatz bezieht sich näher auf ein Nomen oder Pronomen im Hauptsatz und übernimmt die Funktion eines Attributs. Das Fragewort ist 'Welcher?' oder 'Was für ein?'.",
+      "points": 20,
+      "topic": "attributsatz-erklaerung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bestimme den Nebensatz: 'Wer verliert, zahlt die nächste Runde!'",
+      "options": [
+        "Objektsatz",
+        "Relativsatz",
+        "Subjektsatz",
+        "Adverbialsatz"
+      ],
+      "correctAnswer": "Subjektsatz",
+      "points": 15,
+      "topic": "subjektsatz-erkennen"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Frage zu einem Objektsatz kann auch 'Wem?' lauten (Dativobjekt).",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "objektsatz-dativ"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Satz enthält einen eingeschobenen Attributsatz?",
+      "options": [
+        "Dass du kommst, freut mich.",
+        "Der Koch, der die Suppe versalzen hat, ist verliebt.",
+        "Er fragte sie, ob sie mitkommen wolle.",
+        "Weil es kalt war, machten wir ein Feuer."
+      ],
+      "correctAnswer": "Der Koch, der die Suppe versalzen hat, ist verliebt.",
+      "points": 15,
+      "topic": "attributsatz-erkennen"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Subjektsatz fragt nach dem direkten Objekt (Wen oder was?).",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "subjektsatz-falsch"
     }
   ]
 }

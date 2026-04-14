@@ -1,116 +1,111 @@
 {
-  "quizzes": [
+  "title": "Topic 8: Deklination der Relativpronomen",
+  "questions": [
     {
-      "language": "de",
-      "title": "Topic 8: Deklination der Relativpronomen",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "text": "Woran passt sich ein Relativpronomen im Hauptsatz an?",
-          "options": [
-            "An das Verb des Relativsatzes.",
-            "An Numerus (Einzahl/Mehrzahl) und Genus (Geschlecht) seines Bezugswortes.",
-            "An die Konjunktion im Nebensatz.",
-            "An den Kasus (Fall) des Hauptsatzsubjekts."
-          ],
-          "correctAnswer": "An Numerus (Einzahl/Mehrzahl) und Genus (Geschlecht) seines Bezugswortes.",
-          "points": 10,
-          "topic": "bezugswort-anpassung"
-        },
-        {
-          "type": "true-false",
-          "text": "Den Kasus (Fall) des Relativpronomens bestimmt man durch das Bezugswort im Hauptsatz.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "kasus-regel-falsch"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Wie lautet das Relativpronomen für 'Maskulin' im Nominativ?",
-          "options": [
-            "den",
-            "dem",
-            "der",
-            "dessen"
-          ],
-          "correctAnswer": "der",
-          "points": 10,
-          "topic": "deklination-nom-mask"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Wie lautet das Relativpronomen für 'Feminin' im Genitiv?",
-          "options": [
-            "der",
-            "deren",
-            "dessen",
-            "die"
-          ],
-          "correctAnswer": "deren",
-          "points": 15,
-          "topic": "deklination-gen-fem"
-        },
-        {
-          "type": "true-false",
-          "text": "Das Relativpronomen für 'Plural' im Dativ lautet 'denen'.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "deklination-dat-plur"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Wie lautet der Genitiv Maskulin des Relativpronomens?",
-          "options": [
-            "dem",
-            "dessen",
-            "deren",
-            "des"
-          ],
-          "correctAnswer": "dessen",
-          "points": 10,
-          "topic": "deklination-gen-mask"
-        },
-        {
-          "type": "open-ended",
-          "text": "Wie bestimmt sich der Kasus (Fall) eines Relativpronomens?",
-          "correctAnswer": "Der Kasus hängt von der Funktion ab, die das Relativpronomen INNERHALB des eigenen Relativsatzes übernimmt (z. B. als Subjekt = Nominativ, als Akkusativobjekt = Akkusativ).",
-          "points": 20,
-          "topic": "kasus-erklaerung"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welcher Satz enthält das richtige Relativpronomen? 'Das ist der Mann, ___ Auto gestohlen wurde.'",
-          "options": [
-            "deren",
-            "dem",
-            "dessen",
-            "der"
-          ],
-          "correctAnswer": "dessen",
-          "points": 15,
-          "topic": "lueckentext-dessen"
-        },
-        {
-          "type": "true-false",
-          "text": "Die Ersatz-Relativpronomen 'welcher, welche, welches' besitzen alle eine eigene Genitivform.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "welcher-genitiv-falsch"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Was muss verwendet werden, wenn man 'welcher/welche/welches' im Genitiv benötigt?",
-          "options": [
-            "welches / welcherer",
-            "man lässt es weg",
-            "dessen / deren",
-            "deren / derer"
-          ],
-          "correctAnswer": "dessen / deren",
-          "points": 10,
-          "topic": "ausweichpronomen-genitiv"
-        }
-      ]
+      "type": "multiple-choice",
+      "text": "Woran passt sich ein Relativpronomen im Hauptsatz an?",
+      "options": [
+        "An das Verb des Relativsatzes.",
+        "An Numerus (Einzahl/Mehrzahl) und Genus (Geschlecht) seines Bezugswortes.",
+        "An die Konjunktion im Nebensatz.",
+        "An den Kasus (Fall) des Hauptsatzsubjekts."
+      ],
+      "correctAnswer": "An Numerus (Einzahl/Mehrzahl) und Genus (Geschlecht) seines Bezugswortes.",
+      "points": 10,
+      "topic": "bezugswort-anpassung"
+    },
+    {
+      "type": "true-false",
+      "text": "Den Kasus (Fall) des Relativpronomens bestimmt man durch das Bezugswort im Hauptsatz.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kasus-regel-falsch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie lautet das Relativpronomen für 'Maskulin' im Nominativ?",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "dessen"
+      ],
+      "correctAnswer": "der",
+      "points": 10,
+      "topic": "deklination-nom-mask"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie lautet das Relativpronomen für 'Feminin' im Genitiv?",
+      "options": [
+        "der",
+        "deren",
+        "dessen",
+        "die"
+      ],
+      "correctAnswer": "deren",
+      "points": 15,
+      "topic": "deklination-gen-fem"
+    },
+    {
+      "type": "true-false",
+      "text": "Das Relativpronomen für 'Plural' im Dativ lautet 'denen'.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "deklination-dat-plur"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie lautet der Genitiv Maskulin des Relativpronomens?",
+      "options": [
+        "dem",
+        "dessen",
+        "deren",
+        "des"
+      ],
+      "correctAnswer": "dessen",
+      "points": 10,
+      "topic": "deklination-gen-mask"
+    },
+    {
+      "type": "open-ended",
+      "text": "Wie bestimmt sich der Kasus (Fall) eines Relativpronomens?",
+      "correctAnswer": "Der Kasus hängt von der Funktion ab, die das Relativpronomen INNERHALB des eigenen Relativsatzes übernimmt (z. B. als Subjekt = Nominativ, als Akkusativobjekt = Akkusativ).",
+      "points": 20,
+      "topic": "kasus-erklaerung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Satz enthält das richtige Relativpronomen? 'Das ist der Mann, ___ Auto gestohlen wurde.'",
+      "options": [
+        "deren",
+        "dem",
+        "dessen",
+        "der"
+      ],
+      "correctAnswer": "dessen",
+      "points": 15,
+      "topic": "lueckentext-dessen"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Ersatz-Relativpronomen 'welcher, welche, welches' besitzen alle eine eigene Genitivform.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "welcher-genitiv-falsch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was muss verwendet werden, wenn man 'welcher/welche/welches' im Genitiv benötigt?",
+      "options": [
+        "welches / welcherer",
+        "man lässt es weg",
+        "dessen / deren",
+        "deren / derer"
+      ],
+      "correctAnswer": "dessen / deren",
+      "points": 10,
+      "topic": "ausweichpronomen-genitiv"
     }
   ]
 }

@@ -1,510 +1,505 @@
 {
-  "quizzes": [
+  "title": "Master-Quiz: Satzgefüge & Nebensätze (Kombiniert)",
+  "questions": [
     {
-      "language": "de",
-      "title": "Master-Quiz: Satzgefüge & Nebensätze (Kombiniert)",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "text": "Was ist das wichtigste Merkmal für die Wortstellung im Nebensatz?",
-          "options": [
-            "Das Subjekt steht immer am Ende.",
-            "Die Personalform des Verbs steht an der letzten Stelle.",
-            "Es gibt kein Prädikat.",
-            "Die Konjunktion fehlt."
-          ],
-          "correctAnswer": "Die Personalform des Verbs steht an der letzten Stelle.",
-          "points": 10,
-          "topic": "grundlagen"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Nebensatz kann die Aussage eines Hauptsatzes nur zeitlich erklären.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "grundlagen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Wie bezeichnet man einen Nebensatz, der selbst von einem anderen Nebensatz abhängt?",
-          "options": [
-            "Partizipgruppe",
-            "Relativsatz",
-            "Nebensatz ungleichen Grades",
-            "Hauptsatz zweiten Grades"
-          ],
-          "correctAnswer": "Nebensatz ungleichen Grades",
-          "points": 15,
-          "topic": "grade"
-        },
-        {
-          "type": "true-false",
-          "text": "Nebensätze gleichen Grades beziehen sich stets auf denselben übergeordneten Satz.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "grade"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welcher Satzteil ersetzt der Objektsatz im folgenden Beispiel? 'Er hofft, dass er bald befördert wird.'",
-          "options": [
-            "Das Subjekt",
-            "Das Akkusativobjekt",
-            "Das Prädikat",
-            "Das Attribut"
-          ],
-          "correctAnswer": "Das Akkusativobjekt",
-          "points": 15,
-          "topic": "objektsatz"
-        },
-        {
-          "type": "true-false",
-          "text": "Die Frage für einen Subjektsatz lautet 'Welcher?' oder 'Was für ein?'.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "subjektsatz"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welche Nebensatzart gibt den Ort (Wo?, Wohin?) an?",
-          "options": [
-            "Modalsatz",
-            "Kausalsatz",
-            "Temporalsatz",
-            "Lokalsatz"
-          ],
-          "correctAnswer": "Lokalsatz",
-          "points": 10,
-          "topic": "adverbialsaetze"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Kausalsatz gibt einen Grund an und wird oft mit 'weil' oder 'da' eingeleitet.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "adverbialsaetze"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Wie bildet man eine klassische Infinitivgruppe?",
-          "options": [
-            "mit 'zu' und dem Infinitiv des Verbs am Ende",
-            "durch Anfügen von '-d' an den Wortstamm",
-            "mit einem Relativpronomen",
-            "mit einem Partizip II"
-          ],
-          "correctAnswer": "mit 'zu' und dem Infinitiv des Verbs am Ende",
-          "points": 10,
-          "topic": "infinitivgruppen"
-        },
-        {
-          "type": "true-false",
-          "text": "Wenn die Subjekte in Haupt- und Nebensatz gleich sind, sollte man einen 'dass'-Satz in eine Infinitivgruppe umwandeln.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "infinitivgruppen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welches Wort fehlt in einer Partizipgruppe?",
-          "options": [
-            "Ein Nomen",
-            "Ein Adjektiv",
-            "Die Personalform des Verbs",
-            "Eine Präposition"
-          ],
-          "correctAnswer": "Die Personalform des Verbs",
-          "points": 15,
-          "topic": "partizipgruppen"
-        },
-        {
-          "type": "true-false",
-          "text": "Partizip I bildet man meist durch Anhängen von 'd' an den Infinitiv (z.B. lachend).",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "partizipgruppen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welche Konjunktionen verändern die Wortstellung NICHT (das Verb bleibt auf Position 2)?",
-          "options": [
-            "dass, weil, da",
-            "und, oder, aber",
-            "obwohl, während, bevor",
-            "falls, wenn, ob"
-          ],
-          "correctAnswer": "und, oder, aber",
-          "points": 10,
-          "topic": "konjunktionen"
-        },
-        {
-          "type": "true-false",
-          "text": "Unterordnende Konjunktionen leiten immer einen Nebensatz ein.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "konjunktionen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welcher Fall (Kasus) muss nach 'Mit wem...?' für das Relativpronomen verwendet werden?",
-          "options": [
-            "Nominativ",
-            "Akkusativ",
-            "Dativ",
-            "Genitiv"
-          ],
-          "correctAnswer": "Dativ",
-          "points": 10,
-          "topic": "relativpronomen"
-        },
-        {
-          "type": "true-false",
-          "text": "'Dessen' und 'deren' sind Genitivformen von Relativpronomen.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "relativpronomen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Ein Satz, der in einen anderen Satz integriert ist und dessen Aussage erweitert, heißt...",
-          "options": [
-            "Gliedsatz (Nebensatz)",
-            "Hauptsatz",
-            "Wortgruppe",
-            "Konjunktiv"
-          ],
-          "correctAnswer": "Gliedsatz (Nebensatz)",
-          "points": 10,
-          "topic": "grundlagen"
-        },
-        {
-          "type": "true-false",
-          "text": "Nebensätze stehen stets hinter dem Hauptsatz, nie davor.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "grundlagen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Wenn drei Nebensätze nebeneinander stehen und sich alle auf den Hauptsatz beziehen, spricht man von...",
-          "options": [
-            "ungleichem Grad",
-            "drei Hauptsätzen",
-            "gleichem Grad",
-            "Partizipialsätzen"
-          ],
-          "correctAnswer": "gleichem Grad",
-          "points": 10,
-          "topic": "grade"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Attributsatz ist immer auch ein Nebensatz.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "attributsatz"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welche Konjunktion leitet einen Konsekutivsatz (Folge) ein?",
-          "options": [
-            "damit",
-            "sodass",
-            "weil",
-            "während"
-          ],
-          "correctAnswer": "sodass",
-          "points": 15,
-          "topic": "adverbialsaetze"
-        },
-        {
-          "type": "true-false",
-          "text": "Der Finalsatz drückt eine Absicht oder einen Zweck aus (Wozu?).",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "adverbialsaetze"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Mit welchem Wörtchen wird die Ersatzhandlung bei einer Infinitivgruppe ausgedrückt?",
-          "options": [
-            "um ... zu",
-            "ohne ... zu",
-            "anstatt ... zu",
-            "obwohl ... zu"
-          ],
-          "correctAnswer": "anstatt ... zu",
-          "points": 10,
-          "topic": "infinitivgruppen"
-        },
-        {
-          "type": "true-false",
-          "text": "Wenn eine Infinitivgruppe mit 'um, ohne, statt' eingeleitet wird, braucht sie KEIN Komma.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "infinitivgruppen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welche beiden Formen darf man bei der Verkürzung zum Partizipialsatz niemals verwenden?",
-          "options": [
-            "lachend und weinend",
-            "seiend und habend",
-            "gehend und kommend",
-            "lesend und schreibend"
-          ],
-          "correctAnswer": "seiend und habend",
-          "points": 15,
-          "topic": "partizipgruppen"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Partizip II beschreibt oft einen passiven Zustand oder eine abgeschlossene Handlung.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "partizipgruppen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welche ist eine unterordnende Konjunktion?",
-          "options": [
-            "denn",
-            "oder",
-            "obwohl",
-            "aber"
-          ],
-          "correctAnswer": "obwohl",
-          "points": 10,
-          "topic": "konjunktionen"
-        },
-        {
-          "type": "true-false",
-          "text": "Vor einer nebenordnenden Konjunktion wie 'und' oder 'oder' steht bei einer einfachen Aufzählung normalerweise kein Komma.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "konjunktionen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welches Relativpronomen verwendet man für 'das Kind' im Akkusativ?",
-          "options": [
-            "dem",
-            "das",
-            "dessen",
-            "den"
-          ],
-          "correctAnswer": "das",
-          "points": 15,
-          "topic": "relativpronomen"
-        },
-        {
-          "type": "true-false",
-          "text": "Relativpronomen übernehmen in ihrem Nebensatz die Rolle eines Satzglieds (z. B. Subjekt oder Objekt).",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "relativpronomen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "'Damit' leitet welche Art von Adverbialsatz ein?",
-          "options": [
-            "Temporalsatz",
-            "Kausalsatz",
-            "Finalsatz",
-            "Modalsatz"
-          ],
-          "correctAnswer": "Finalsatz",
-          "points": 10,
-          "topic": "adverbialsaetze"
-        },
-        {
-          "type": "true-false",
-          "text": "Das Einleitewort 'nachdem' signalisiert immer einen Konditionalsatz.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "adverbialsaetze"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welche Konstruktion kann einen Nebensatz mit 'dass' oft elegant verkürzen?",
-          "options": [
-            "Ein Hauptsatz",
-            "Eine Infinitivgruppe",
-            "Ein Relativpronomen",
-            "Eine nebenordnende Konjunktion"
-          ],
-          "correctAnswer": "Eine Infinitivgruppe",
-          "points": 15,
-          "topic": "infinitivgruppen"
-        },
-        {
-          "type": "true-false",
-          "text": "Infinitive enden auf '-d' (wie lachend).",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "infinitivgruppen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welcher Satz ist eine Partizipgruppe?",
-          "options": [
-            "Da sie glücklich war, sang sie.",
-            "Laut singend lief sie durch den Regen.",
-            "Um zu singen, lief sie hinaus.",
-            "Sie sang und sie tanzte."
-          ],
-          "correctAnswer": "Laut singend lief sie durch den Regen.",
-          "points": 15,
-          "topic": "partizipgruppen"
-        },
-        {
-          "type": "true-false",
-          "text": "Nebensätze ungleichen Grades können tief verschachtelt sein (Schachtelsätze).",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "grade"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Eine Bedingung (z. B. mit 'falls') nennt man in der Grammatik einen...",
-          "options": [
-            "Konditionalsatz",
-            "Konzessivsatz",
-            "Adversativsatz",
-            "Lokalsatz"
-          ],
-          "correctAnswer": "Konditionalsatz",
-          "points": 10,
-          "topic": "adverbialsaetze"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Konzessivsatz drückt einen Gegensatz (Trotz welchen Umstands?) aus.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "adverbialsaetze"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welcher Nebensatz wird durch 'welcher, welche, welches' eingeleitet?",
-          "options": [
-            "Relativsatz",
-            "Temporalsatz",
-            "Kausalsatz",
-            "Subjektsatz"
-          ],
-          "correctAnswer": "Relativsatz",
-          "points": 10,
-          "topic": "relativpronomen"
-        },
-        {
-          "type": "true-false",
-          "text": "Das Geschlecht (Genus) des Relativpronomens richtet sich immer nach dem Verb des Nebensatzes.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "relativpronomen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Wo steht im Hauptsatz in der Regel das konjugierte Verb (im Aussage-Satz)?",
-          "options": [
-            "Auf Position 1",
-            "Auf Position 2",
-            "Ganz hinten",
-            "Zusammen mit dem Komma"
-          ],
-          "correctAnswer": "Auf Position 2",
-          "points": 10,
-          "topic": "grundlagen"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Satzgefüge kombiniert Haupt- und Nebensätze.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "grundlagen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Was erfragt man mit 'Wessen?'",
-          "options": [
-            "Das Akkusativobjekt",
-            "Das Dativobjekt",
-            "Das Subjekt",
-            "Das Genitivobjekt"
-          ],
-          "correctAnswer": "Das Genitivobjekt",
-          "points": 10,
-          "topic": "objektsatz"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein Subjektsatz fragt nach 'Wer oder was?'.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "subjektsatz"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welcher Grad? (HS) Er ging, (NS1) weil es regnete (NS1) und es stürmte.",
-          "options": [
-            "Gleicher Grad",
-            "Ungleicher Grad",
-            "Es gibt hier keine Nebensätze.",
-            "Partizipialsatz"
-          ],
-          "correctAnswer": "Gleicher Grad",
-          "points": 10,
-          "topic": "grade"
-        },
-        {
-          "type": "true-false",
-          "text": "Ein adversativer Nebensatz stellt einen Gegensatz dar (z. B. mit 'während' eingeleitet).",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "adverbialsaetze"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welcher Satz drückt Art und Weise (Wie?) aus?",
-          "options": [
-            "Kausalsatz",
-            "Temporalsatz",
-            "Modalsatz",
-            "Relativsatz"
-          ],
-          "correctAnswer": "Modalsatz",
-          "points": 10,
-          "topic": "adverbialsaetze"
-        },
-        {
-          "type": "true-false",
-          "text": "Konjunktionen lenken den Satzbau nicht.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "konjunktionen"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Was muss bei der erweiterten Infinitivgruppe (z. B. um ... zu) im Satz oft fehlen?",
-          "options": [
-            "Das Objekt",
-            "Das Nomen",
-            "Das explizite Subjekt (das Pronomen)",
-            "Ein Präfix"
-          ],
-          "correctAnswer": "Das explizite Subjekt (das Pronomen)",
-          "points": 15,
-          "topic": "infinitivgruppen"
-        },
-        {
-          "type": "open-ended",
-          "text": "Beschreiben Sie kurz die Hauptregel zur Kommasetzung bei Nebensätzen.",
-          "correctAnswer": "Ein Nebensatz wird grundsätzlich immer durch ein Komma vom Hauptsatz abgetrennt.",
-          "points": 20,
-          "topic": "kommasetzung"
-        }
-      ]
+      "type": "multiple-choice",
+      "text": "Was ist das wichtigste Merkmal für die Wortstellung im Nebensatz?",
+      "options": [
+        "Das Subjekt steht immer am Ende.",
+        "Die Personalform des Verbs steht an der letzten Stelle.",
+        "Es gibt kein Prädikat.",
+        "Die Konjunktion fehlt."
+      ],
+      "correctAnswer": "Die Personalform des Verbs steht an der letzten Stelle.",
+      "points": 10,
+      "topic": "grundlagen"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Nebensatz kann die Aussage eines Hauptsatzes nur zeitlich erklären.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "grundlagen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie bezeichnet man einen Nebensatz, der selbst von einem anderen Nebensatz abhängt?",
+      "options": [
+        "Partizipgruppe",
+        "Relativsatz",
+        "Nebensatz ungleichen Grades",
+        "Hauptsatz zweiten Grades"
+      ],
+      "correctAnswer": "Nebensatz ungleichen Grades",
+      "points": 15,
+      "topic": "grade"
+    },
+    {
+      "type": "true-false",
+      "text": "Nebensätze gleichen Grades beziehen sich stets auf denselben übergeordneten Satz.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "grade"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Satzteil ersetzt der Objektsatz im folgenden Beispiel? 'Er hofft, dass er bald befördert wird.'",
+      "options": [
+        "Das Subjekt",
+        "Das Akkusativobjekt",
+        "Das Prädikat",
+        "Das Attribut"
+      ],
+      "correctAnswer": "Das Akkusativobjekt",
+      "points": 15,
+      "topic": "objektsatz"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Frage für einen Subjektsatz lautet 'Welcher?' oder 'Was für ein?'.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "subjektsatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Nebensatzart gibt den Ort (Wo?, Wohin?) an?",
+      "options": [
+        "Modalsatz",
+        "Kausalsatz",
+        "Temporalsatz",
+        "Lokalsatz"
+      ],
+      "correctAnswer": "Lokalsatz",
+      "points": 10,
+      "topic": "adverbialsaetze"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Kausalsatz gibt einen Grund an und wird oft mit 'weil' oder 'da' eingeleitet.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "adverbialsaetze"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie bildet man eine klassische Infinitivgruppe?",
+      "options": [
+        "mit 'zu' und dem Infinitiv des Verbs am Ende",
+        "durch Anfügen von '-d' an den Wortstamm",
+        "mit einem Relativpronomen",
+        "mit einem Partizip II"
+      ],
+      "correctAnswer": "mit 'zu' und dem Infinitiv des Verbs am Ende",
+      "points": 10,
+      "topic": "infinitivgruppen"
+    },
+    {
+      "type": "true-false",
+      "text": "Wenn die Subjekte in Haupt- und Nebensatz gleich sind, sollte man einen 'dass'-Satz in eine Infinitivgruppe umwandeln.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "infinitivgruppen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches Wort fehlt in einer Partizipgruppe?",
+      "options": [
+        "Ein Nomen",
+        "Ein Adjektiv",
+        "Die Personalform des Verbs",
+        "Eine Präposition"
+      ],
+      "correctAnswer": "Die Personalform des Verbs",
+      "points": 15,
+      "topic": "partizipgruppen"
+    },
+    {
+      "type": "true-false",
+      "text": "Partizip I bildet man meist durch Anhängen von 'd' an den Infinitiv (z.B. lachend).",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "partizipgruppen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Konjunktionen verändern die Wortstellung NICHT (das Verb bleibt auf Position 2)?",
+      "options": [
+        "dass, weil, da",
+        "und, oder, aber",
+        "obwohl, während, bevor",
+        "falls, wenn, ob"
+      ],
+      "correctAnswer": "und, oder, aber",
+      "points": 10,
+      "topic": "konjunktionen"
+    },
+    {
+      "type": "true-false",
+      "text": "Unterordnende Konjunktionen leiten immer einen Nebensatz ein.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "konjunktionen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Fall (Kasus) muss nach 'Mit wem...?' für das Relativpronomen verwendet werden?",
+      "options": [
+        "Nominativ",
+        "Akkusativ",
+        "Dativ",
+        "Genitiv"
+      ],
+      "correctAnswer": "Dativ",
+      "points": 10,
+      "topic": "relativpronomen"
+    },
+    {
+      "type": "true-false",
+      "text": "'Dessen' und 'deren' sind Genitivformen von Relativpronomen.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "relativpronomen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Satz, der in einen anderen Satz integriert ist und dessen Aussage erweitert, heißt...",
+      "options": [
+        "Gliedsatz (Nebensatz)",
+        "Hauptsatz",
+        "Wortgruppe",
+        "Konjunktiv"
+      ],
+      "correctAnswer": "Gliedsatz (Nebensatz)",
+      "points": 10,
+      "topic": "grundlagen"
+    },
+    {
+      "type": "true-false",
+      "text": "Nebensätze stehen stets hinter dem Hauptsatz, nie davor.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "grundlagen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wenn drei Nebensätze nebeneinander stehen und sich alle auf den Hauptsatz beziehen, spricht man von...",
+      "options": [
+        "ungleichem Grad",
+        "drei Hauptsätzen",
+        "gleichem Grad",
+        "Partizipialsätzen"
+      ],
+      "correctAnswer": "gleichem Grad",
+      "points": 10,
+      "topic": "grade"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Attributsatz ist immer auch ein Nebensatz.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "attributsatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Konjunktion leitet einen Konsekutivsatz (Folge) ein?",
+      "options": [
+        "damit",
+        "sodass",
+        "weil",
+        "während"
+      ],
+      "correctAnswer": "sodass",
+      "points": 15,
+      "topic": "adverbialsaetze"
+    },
+    {
+      "type": "true-false",
+      "text": "Der Finalsatz drückt eine Absicht oder einen Zweck aus (Wozu?).",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "adverbialsaetze"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Mit welchem Wörtchen wird die Ersatzhandlung bei einer Infinitivgruppe ausgedrückt?",
+      "options": [
+        "um ... zu",
+        "ohne ... zu",
+        "anstatt ... zu",
+        "obwohl ... zu"
+      ],
+      "correctAnswer": "anstatt ... zu",
+      "points": 10,
+      "topic": "infinitivgruppen"
+    },
+    {
+      "type": "true-false",
+      "text": "Wenn eine Infinitivgruppe mit 'um, ohne, statt' eingeleitet wird, braucht sie KEIN Komma.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "infinitivgruppen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche beiden Formen darf man bei der Verkürzung zum Partizipialsatz niemals verwenden?",
+      "options": [
+        "lachend und weinend",
+        "seiend und habend",
+        "gehend und kommend",
+        "lesend und schreibend"
+      ],
+      "correctAnswer": "seiend und habend",
+      "points": 15,
+      "topic": "partizipgruppen"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Partizip II beschreibt oft einen passiven Zustand oder eine abgeschlossene Handlung.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "partizipgruppen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche ist eine unterordnende Konjunktion?",
+      "options": [
+        "denn",
+        "oder",
+        "obwohl",
+        "aber"
+      ],
+      "correctAnswer": "obwohl",
+      "points": 10,
+      "topic": "konjunktionen"
+    },
+    {
+      "type": "true-false",
+      "text": "Vor einer nebenordnenden Konjunktion wie 'und' oder 'oder' steht bei einer einfachen Aufzählung normalerweise kein Komma.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "konjunktionen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches Relativpronomen verwendet man für 'das Kind' im Akkusativ?",
+      "options": [
+        "dem",
+        "das",
+        "dessen",
+        "den"
+      ],
+      "correctAnswer": "das",
+      "points": 15,
+      "topic": "relativpronomen"
+    },
+    {
+      "type": "true-false",
+      "text": "Relativpronomen übernehmen in ihrem Nebensatz die Rolle eines Satzglieds (z. B. Subjekt oder Objekt).",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "relativpronomen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "'Damit' leitet welche Art von Adverbialsatz ein?",
+      "options": [
+        "Temporalsatz",
+        "Kausalsatz",
+        "Finalsatz",
+        "Modalsatz"
+      ],
+      "correctAnswer": "Finalsatz",
+      "points": 10,
+      "topic": "adverbialsaetze"
+    },
+    {
+      "type": "true-false",
+      "text": "Das Einleitewort 'nachdem' signalisiert immer einen Konditionalsatz.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "adverbialsaetze"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Konstruktion kann einen Nebensatz mit 'dass' oft elegant verkürzen?",
+      "options": [
+        "Ein Hauptsatz",
+        "Eine Infinitivgruppe",
+        "Ein Relativpronomen",
+        "Eine nebenordnende Konjunktion"
+      ],
+      "correctAnswer": "Eine Infinitivgruppe",
+      "points": 15,
+      "topic": "infinitivgruppen"
+    },
+    {
+      "type": "true-false",
+      "text": "Infinitive enden auf '-d' (wie lachend).",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "infinitivgruppen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Satz ist eine Partizipgruppe?",
+      "options": [
+        "Da sie glücklich war, sang sie.",
+        "Laut singend lief sie durch den Regen.",
+        "Um zu singen, lief sie hinaus.",
+        "Sie sang und sie tanzte."
+      ],
+      "correctAnswer": "Laut singend lief sie durch den Regen.",
+      "points": 15,
+      "topic": "partizipgruppen"
+    },
+    {
+      "type": "true-false",
+      "text": "Nebensätze ungleichen Grades können tief verschachtelt sein (Schachtelsätze).",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "grade"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine Bedingung (z. B. mit 'falls') nennt man in der Grammatik einen...",
+      "options": [
+        "Konditionalsatz",
+        "Konzessivsatz",
+        "Adversativsatz",
+        "Lokalsatz"
+      ],
+      "correctAnswer": "Konditionalsatz",
+      "points": 10,
+      "topic": "adverbialsaetze"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Konzessivsatz drückt einen Gegensatz (Trotz welchen Umstands?) aus.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "adverbialsaetze"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Nebensatz wird durch 'welcher, welche, welches' eingeleitet?",
+      "options": [
+        "Relativsatz",
+        "Temporalsatz",
+        "Kausalsatz",
+        "Subjektsatz"
+      ],
+      "correctAnswer": "Relativsatz",
+      "points": 10,
+      "topic": "relativpronomen"
+    },
+    {
+      "type": "true-false",
+      "text": "Das Geschlecht (Genus) des Relativpronomens richtet sich immer nach dem Verb des Nebensatzes.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "relativpronomen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wo steht im Hauptsatz in der Regel das konjugierte Verb (im Aussage-Satz)?",
+      "options": [
+        "Auf Position 1",
+        "Auf Position 2",
+        "Ganz hinten",
+        "Zusammen mit dem Komma"
+      ],
+      "correctAnswer": "Auf Position 2",
+      "points": 10,
+      "topic": "grundlagen"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Satzgefüge kombiniert Haupt- und Nebensätze.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "grundlagen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was erfragt man mit 'Wessen?'",
+      "options": [
+        "Das Akkusativobjekt",
+        "Das Dativobjekt",
+        "Das Subjekt",
+        "Das Genitivobjekt"
+      ],
+      "correctAnswer": "Das Genitivobjekt",
+      "points": 10,
+      "topic": "objektsatz"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Subjektsatz fragt nach 'Wer oder was?'.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "subjektsatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Grad? (HS) Er ging, (NS1) weil es regnete (NS1) und es stürmte.",
+      "options": [
+        "Gleicher Grad",
+        "Ungleicher Grad",
+        "Es gibt hier keine Nebensätze.",
+        "Partizipialsatz"
+      ],
+      "correctAnswer": "Gleicher Grad",
+      "points": 10,
+      "topic": "grade"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein adversativer Nebensatz stellt einen Gegensatz dar (z. B. mit 'während' eingeleitet).",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "adverbialsaetze"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Satz drückt Art und Weise (Wie?) aus?",
+      "options": [
+        "Kausalsatz",
+        "Temporalsatz",
+        "Modalsatz",
+        "Relativsatz"
+      ],
+      "correctAnswer": "Modalsatz",
+      "points": 10,
+      "topic": "adverbialsaetze"
+    },
+    {
+      "type": "true-false",
+      "text": "Konjunktionen lenken den Satzbau nicht.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "konjunktionen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was muss bei der erweiterten Infinitivgruppe (z. B. um ... zu) im Satz oft fehlen?",
+      "options": [
+        "Das Objekt",
+        "Das Nomen",
+        "Das explizite Subjekt (das Pronomen)",
+        "Ein Präfix"
+      ],
+      "correctAnswer": "Das explizite Subjekt (das Pronomen)",
+      "points": 15,
+      "topic": "infinitivgruppen"
+    },
+    {
+      "type": "open-ended",
+      "text": "Beschreiben Sie kurz die Hauptregel zur Kommasetzung bei Nebensätzen.",
+      "correctAnswer": "Ein Nebensatz wird grundsätzlich immer durch ein Komma vom Hauptsatz abgetrennt.",
+      "points": 20,
+      "topic": "kommasetzung"
     }
   ]
 }

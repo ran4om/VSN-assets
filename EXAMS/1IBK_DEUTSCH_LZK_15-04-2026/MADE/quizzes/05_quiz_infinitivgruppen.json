@@ -1,110 +1,105 @@
 {
-  "quizzes": [
+  "title": "Topic 5: Infinitivgruppen",
+  "questions": [
     {
-      "language": "de",
-      "title": "Topic 5: Infinitivgruppen",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "text": "Woraus besteht eine satzwertige Infinitivgruppe grundlegend?",
-          "options": [
-            "Aus einem Subjekt und einem Prädikat.",
-            "Aus dem Wörtchen 'zu' und einem Verb im Infinitiv.",
-            "Aus einem Relativpronomen und einem konjugierten Verb.",
-            "Aus einem Partizip und einem Hilfsverb."
-          ],
-          "correctAnswer": "Aus dem Wörtchen 'zu' und einem Verb im Infinitiv.",
-          "points": 10,
-          "topic": "infinitivgruppe-aufbau"
-        },
-        {
-          "type": "true-false",
-          "text": "Einer Infinitivgruppe fehlt in der Regel das Subjekt und die Personalform des Verbs.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "infinitivgruppe-merkmal"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Unter welcher Bedingung sollte laut Faustregel ein 'dass'-Satz durch eine 'zu + Infinitiv'-Konstruktion ersetzt werden?",
-          "options": [
-            "Wenn der Hauptsatz in der Vergangenheit steht.",
-            "Wenn das Subjekt im Hauptsatz und im 'dass'-Satz gleich ist.",
-            "Wenn der Satz sonst zu kurz wäre.",
-            "Wenn der Nebensatz ein Relativpronomen enthält."
-          ],
-          "correctAnswer": "Wenn das Subjekt im Hauptsatz und im 'dass'-Satz gleich ist.",
-          "points": 15,
-          "topic": "faustregel"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welcher Satz ist eleganter und verendet die Infinitivgruppe korrekt?",
-          "options": [
-            "Die Köchin beschließt, dass sie kostet.",
-            "Die Köchin beschließt, zu kosten.",
-            "Die Köchin beschließt, um zu kosten.",
-            "Die Köchin beschließt, kostend."
-          ],
-          "correctAnswer": "Die Köchin beschließt, zu kosten.",
-          "points": 10,
-          "topic": "faustregel-beispiel"
-        },
-        {
-          "type": "true-false",
-          "text": "Eine erweiterte Infinitivgruppe mit 'um ... zu' ersetzt meistens einen Kausalsatz (mit 'weil').",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "um-zu-falsch"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Was drückt die Konstruktion 'ohne ... zu + Infinitiv' aus?",
-          "options": [
-            "Eine Absicht oder einen Zweck.",
-            "Eine Ersatzhandlung.",
-            "Dass eine eigentlich erwartete Handlung NICHT eintritt.",
-            "Einen zeitlichen Ablauf."
-          ],
-          "correctAnswer": "Dass eine eigentlich erwartete Handlung NICHT eintritt.",
-          "points": 10,
-          "topic": "ohne-zu"
-        },
-        {
-          "type": "open-ended",
-          "text": "Wann MUSS vor einer Infinitivgruppe ein Komma gesetzt werden? Nennen Sie eine der drei Hauptregeln.",
-          "correctAnswer": "1. Wenn sie mit um/ohne/statt/anstatt/außer/als eingeleitet wird. 2. Wenn sie sich auf ein Substantiv bezieht. 3. Wenn sie durch ein Verweiswort (z.B. 'es', 'darauf') im Hauptsatz angekündigt wird.",
-          "points": 20,
-          "topic": "kommaregeln"
-        },
-        {
-          "type": "true-false",
-          "text": "Vor 'um ... zu' muss immer ein Komma stehen.",
-          "correctAnswer": "True",
-          "points": 5,
-          "topic": "komma-um-zu"
-        },
-        {
-          "type": "multiple-choice",
-          "text": "Welche Infinitivkonstruktion liegt hier vor? 'Die Köchin würzt die Suppe, anstatt das Steak anzubraten.'",
-          "options": [
-            "um ... zu (Absicht)",
-            "ohne ... zu (fehlende Handlung)",
-            "anstatt ... zu (Ersatzhandlung)",
-            "als ... zu"
-          ],
-          "correctAnswer": "anstatt ... zu (Ersatzhandlung)",
-          "points": 10,
-          "topic": "anstatt-zu"
-        },
-        {
-          "type": "true-false",
-          "text": "Infinitivgruppen werden auch 'Schachtelsätze' genannt.",
-          "correctAnswer": "False",
-          "points": 5,
-          "topic": "begriff-falsch"
-        }
-      ]
+      "type": "multiple-choice",
+      "text": "Woraus besteht eine satzwertige Infinitivgruppe grundlegend?",
+      "options": [
+        "Aus einem Subjekt und einem Prädikat.",
+        "Aus dem Wörtchen 'zu' und einem Verb im Infinitiv.",
+        "Aus einem Relativpronomen und einem konjugierten Verb.",
+        "Aus einem Partizip und einem Hilfsverb."
+      ],
+      "correctAnswer": "Aus dem Wörtchen 'zu' und einem Verb im Infinitiv.",
+      "points": 10,
+      "topic": "infinitivgruppe-aufbau"
+    },
+    {
+      "type": "true-false",
+      "text": "Einer Infinitivgruppe fehlt in der Regel das Subjekt und die Personalform des Verbs.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "infinitivgruppe-merkmal"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unter welcher Bedingung sollte laut Faustregel ein 'dass'-Satz durch eine 'zu + Infinitiv'-Konstruktion ersetzt werden?",
+      "options": [
+        "Wenn der Hauptsatz in der Vergangenheit steht.",
+        "Wenn das Subjekt im Hauptsatz und im 'dass'-Satz gleich ist.",
+        "Wenn der Satz sonst zu kurz wäre.",
+        "Wenn der Nebensatz ein Relativpronomen enthält."
+      ],
+      "correctAnswer": "Wenn das Subjekt im Hauptsatz und im 'dass'-Satz gleich ist.",
+      "points": 15,
+      "topic": "faustregel"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Satz ist eleganter und verendet die Infinitivgruppe korrekt?",
+      "options": [
+        "Die Köchin beschließt, dass sie kostet.",
+        "Die Köchin beschließt, zu kosten.",
+        "Die Köchin beschließt, um zu kosten.",
+        "Die Köchin beschließt, kostend."
+      ],
+      "correctAnswer": "Die Köchin beschließt, zu kosten.",
+      "points": 10,
+      "topic": "faustregel-beispiel"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine erweiterte Infinitivgruppe mit 'um ... zu' ersetzt meistens einen Kausalsatz (mit 'weil').",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "um-zu-falsch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was drückt die Konstruktion 'ohne ... zu + Infinitiv' aus?",
+      "options": [
+        "Eine Absicht oder einen Zweck.",
+        "Eine Ersatzhandlung.",
+        "Dass eine eigentlich erwartete Handlung NICHT eintritt.",
+        "Einen zeitlichen Ablauf."
+      ],
+      "correctAnswer": "Dass eine eigentlich erwartete Handlung NICHT eintritt.",
+      "points": 10,
+      "topic": "ohne-zu"
+    },
+    {
+      "type": "open-ended",
+      "text": "Wann MUSS vor einer Infinitivgruppe ein Komma gesetzt werden? Nennen Sie eine der drei Hauptregeln.",
+      "correctAnswer": "1. Wenn sie mit um/ohne/statt/anstatt/außer/als eingeleitet wird. 2. Wenn sie sich auf ein Substantiv bezieht. 3. Wenn sie durch ein Verweiswort (z.B. 'es', 'darauf') im Hauptsatz angekündigt wird.",
+      "points": 20,
+      "topic": "kommaregeln"
+    },
+    {
+      "type": "true-false",
+      "text": "Vor 'um ... zu' muss immer ein Komma stehen.",
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "komma-um-zu"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Infinitivkonstruktion liegt hier vor? 'Die Köchin würzt die Suppe, anstatt das Steak anzubraten.'",
+      "options": [
+        "um ... zu (Absicht)",
+        "ohne ... zu (fehlende Handlung)",
+        "anstatt ... zu (Ersatzhandlung)",
+        "als ... zu"
+      ],
+      "correctAnswer": "anstatt ... zu (Ersatzhandlung)",
+      "points": 10,
+      "topic": "anstatt-zu"
+    },
+    {
+      "type": "true-false",
+      "text": "Infinitivgruppen werden auch 'Schachtelsätze' genannt.",
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "begriff-falsch"
     }
   ]
 }
