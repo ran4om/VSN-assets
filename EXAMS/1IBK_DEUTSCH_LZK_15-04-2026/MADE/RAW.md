@@ -1,4 +1,4 @@
-```markdown
+
 # German Grammar: Complex Sentences and Subordinate Clauses (Deutsche Grammatik: Satzgefüge und Nebensätze)
 
 ## 1. Introduction to Subordinate Clauses (Grundlagen zu Nebensätzen)
@@ -330,4 +330,3 @@ Relativsätze werden durch Relativpronomen eingeleitet. Das Pronomen passt sich 
 | **Akkusativ** | den | die | das | die |
 
 [INFO] Alternativ können auch *welcher, welche, welches* verwendet werden, um Wortwiederholungen zu vermeiden. Diese haben jedoch keine eigene Genitivform (hier muss auf *dessen/deren* zurückgegriffen werden).
-```
