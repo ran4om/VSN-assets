@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satzgefüge &amp; Nebensätze — VSN Deutsch 1IBK LZK 15-04-2026</title>
+  <meta name="description" content="VSN Lernunterlage: Deutsche Grammatik — Satzgefüge, Nebensätze, Konjunktionen und Relativpronomen für die LZK am 15. April 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* =====================================================
+       DESIGN TOKENS
+    ===================================================== */
+    :root {
+      --vsn-primary:   #1e2e48;
+      --vsn-secondary: #fbc92d;
+      --vsn-accent:    #dc4ebf;
+      --vsn-blue:      #2980b9;
+      --vsn-light-bg:  #f7f8fb;
+      --vsn-border:    #dde2ea;
+      --vsn-text:      #1a2236;
+      --vsn-muted:     #6b7a99;
+
+      --callout-def-bg:  rgba(220, 78, 191, 0.12);
+      --callout-def-border: #dc4ebf;
+      --callout-info-bg: rgba(41, 128, 185, 0.10);
+      --callout-info-border: #2980b9;
+      --callout-tip-bg:  rgba(251, 201, 45, 0.15);
+      --callout-tip-border: #d4a800;
+
+      --radius: 8px;
+      --shadow: 0 2px 8px rgba(30,46,72,0.08);
+      --shadow-md: 0 4px 16px rgba(30,46,72,0.12);
+    }
+
+    /* =====================================================
+       RESET & BASE
+    ===================================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 11pt; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: var(--vsn-text);
+      background: #fff;
+      line-height: 1.65;
+    }
+
+    code, .mono, kbd, samp, .formula {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(30,46,72,0.06);
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+
+    strong { font-weight: 700; }
+    em { font-style: italic; color: var(--vsn-primary); }
+
+    /* =====================================================
+       PAGE & PRINT SETUP
+    ===================================================== */
+    @page {
+      size: A4;
+      margin: 15mm 18mm 18mm 18mm;
+    }
+
+    @media print {
+      html { font-size: 10pt; }
+      body { background: #fff; }
+
+      .page-break {
+        page-break-after: always;
+        break-after: always;
+      }
+      .no-break {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      .no-break-before {
+        page-break-before: avoid;
+        break-before: avoid;
+      }
+
+      /* Preserve background colors, shadows, etc. */
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .cover { margin: -15mm -18mm -18mm -18mm; }
+      .callout-box, .table-wrap, .bilingual-grid { orphans: 3; widows: 3; }
+    }
+
+    /* =====================================================
+       COVER PAGE
+    ===================================================== */
+    .cover {
+      width: 100%;
+      min-height: 100vh;
+      background: var(--vsn-primary);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover-bg-pattern {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      opacity: 0.04;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          #fff 0,
+          #fff 1px,
+          transparent 0,
+          transparent 50%
+        );
+      background-size: 30px 30px;
+      z-index: 0;
+    }
+
+    .cover-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 40px 50px;
+    }
+
+    .cover-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    .cover-logo {
+      height: 50px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
+
+    .cover-badge {
+      background: var(--vsn-secondary);
+      color: var(--vsn-primary);
+      font-weight: 700;
+      font-size: 0.75em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    .cover-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cover-label {
+      font-size: 0.7em;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--vsn-secondary);
+      margin-bottom: 16px;
+    }
+
+    .cover-title {
+      font-family: 'Playfair Display', 'Open Sans', serif;
+      font-size: 3.4em;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+
+    .cover-title-de {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.6em;
+      font-weight: 300;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 40px;
+      letter-spacing: 0.01em;
+    }
+
+    .cover-divider {
+      width: 80px;
+      height: 4px;
+      background: var(--vsn-secondary);
+      border-radius: 2px;
+      margin-bottom: 32px;
+    }
+
+    .cover-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .cover-meta-item {
+      font-size: 0.82em;
+      color: rgba(255,255,255,0.65);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cover-meta-item::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+      flex-shrink: 0;
+    }
+
+    .cover-footer {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cover-footer-text {
+      font-size: 0.72em;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.05em;
+    }
+
+    .cover-accent-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--vsn-secondary) 0%, var(--vsn-accent) 100%);
+    }
+
+    /* =====================================================
+       TABLE OF CONTENTS
+    ===================================================== */
+    .toc-page {
+      padding: 48px 0 0;
+    }
+
+    .toc-header {
+      margin-bottom: 36px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid var(--vsn-secondary);
+    }
+
+    .toc-header h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.68em;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 6px;
+    }
+
+    .toc-header h1 {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .toc-item {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid var(--vsn-border);
+      padding: 12px 0;
+    }
+
+    .toc-num {
+      font-weight: 700;
+      font-size: 1.3em;
+      color: var(--vsn-secondary);
+      width: 36px;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+
+    .toc-content {
+      flex: 1;
+    }
+
+    .toc-title-en {
+      font-weight: 700;
+      color: var(--vsn-primary);
+      font-size: 1em;
+    }
+
+    .toc-title-de {
+      font-size: 0.85em;
+      color: var(--vsn-muted);
+      font-weight: 400;
+    }
+
+    /* =====================================================
+       SECTION STRUCTURE
+    ===================================================== */
+    .section {
+      padding: 36px 0 24px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid var(--vsn-secondary);
+    }
+
+    .section-num {
+      background: var(--vsn-primary);
+      color: var(--vsn-secondary);
+      font-weight: 700;
+      font-size: 1.1em;
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .section-title-block {}
+
+    .section-title-en {
+      font-size: 1.4em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+      line-height: 1.2;
+    }
+
+    .section-title-de {
+      font-size: 0.85em;
+      color: var(--vsn-accent);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* =====================================================
+       BILINGUAL GRID
+    ===================================================== */
+    .bilingual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .col-en {
+      padding-right: 22px;
+      border-right: 3px solid var(--vsn-secondary);
+    }
+
+    .col-de {
+      padding-left: 22px;
+    }
+
+    .col-label {
+      font-size: 0.65em;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .col-label-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+      display: inline-block;
+    }
+
+    /* =====================================================
+       CONTENT ELEMENTS
+    ===================================================== */
+    .content-text {
+      font-size: 0.92em;
+      line-height: 1.7;
+      color: var(--vsn-text);
+      margin-bottom: 12px;
+    }
+
+    h3.subsection-title {
+      font-size: 1em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+      margin: 18px 0 10px;
+      padding-left: 10px;
+      border-left: 3px solid var(--vsn-accent);
+    }
+
+    h4.subtype-title {
+      font-size: 0.92em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+      margin: 14px 0 6px;
+    }
+
+    ul.content-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 12px;
+    }
+
+    ul.content-list > li {
+      padding: 4px 0 4px 20px;
+      position: relative;
+      font-size: 0.9em;
+      line-height: 1.6;
+    }
+
+    ul.content-list > li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+    }
+
+    ol.content-list-num {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    ol.content-list-num > li {
+      font-size: 0.9em;
+      line-height: 1.6;
+      padding: 3px 0;
+      color: var(--vsn-text);
+    }
+
+    .example-block {
+      background: var(--vsn-light-bg);
+      border-left: 3px solid var(--vsn-primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 8px 12px;
+      margin: 8px 0;
+      font-size: 0.88em;
+    }
+
+    .example-block .example-label {
+      font-size: 0.75em;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 4px;
+    }
+
+    .example-block p {
+      margin: 3px 0;
+    }
+
+    .highlight-conj {
+      font-weight: 700;
+      background: rgba(251,201,45,0.35);
+      padding: 0 3px;
+      border-radius: 2px;
+    }
+
+    .wrong { color: #c0392b; }
+    .correct { color: #27ae60; }
+    .wrong::before { content: "✗ "; font-weight: 700; }
+    .correct::before { content: "✓ "; font-weight: 700; }
+
+    /* =====================================================
+       CALLOUT BOXES
+    ===================================================== */
+    .callout-box {
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      margin: 14px 0;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .callout-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      margin-top: 1px;
+    }
+
+    .callout-content {
+      flex: 1;
+    }
+
+    .callout-label {
+      font-size: 0.68em;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .callout-text {
+      font-size: 0.88em;
+      line-height: 1.6;
+    }
+
+    /* Definition — Magenta */
+    .callout-def {
+      background: var(--callout-def-bg);
+      border-left: 4px solid var(--callout-def-border);
+    }
+    .callout-def .callout-label { color: #c0359e; }
+    .callout-def .callout-text { color: var(--vsn-text); }
+
+    /* Supplemental Info — Blue */
+    .callout-info {
+      background: var(--callout-info-bg);
+      border-left: 4px solid var(--callout-info-border);
+    }
+    .callout-info .callout-label { color: #1a6a9a; }
+    .callout-info .callout-text { color: var(--vsn-text); }
+
+    /* Practical Tip — Yellow */
+    .callout-tip {
+      background: var(--callout-tip-bg);
+      border-left: 4px solid var(--callout-tip-border);
+    }
+    .callout-tip .callout-label { color: #8a6b00; }
+    .callout-tip .callout-text { color: var(--vsn-text); }
+
+    /* =====================================================
+       SVG ICON DEFINITIONS (inline)
+    ===================================================== */
+
+    /* =====================================================
+       TABLES
+    ===================================================== */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    table.vsn-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85em;
+    }
+
+    table.vsn-table th {
+      background: var(--vsn-primary);
+      color: #fff;
+      font-weight: 700;
+      padding: 9px 11px;
+      text-align: left;
+      letter-spacing: 0.03em;
+      font-size: 0.88em;
+    }
+
+    table.vsn-table th:first-child { border-radius: var(--radius) 0 0 0; }
+    table.vsn-table th:last-child  { border-radius: 0 var(--radius) 0 0; }
+
+    table.vsn-table td {
+      padding: 8px 11px;
+      border-bottom: 1px solid var(--vsn-border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    table.vsn-table tr:nth-child(even) td {
+      background: #f3f5f9;
+    }
+
+    table.vsn-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    table.vsn-table td.type-cell {
+      font-weight: 700;
+      color: var(--vsn-primary);
+      white-space: nowrap;
+    }
+
+    table.vsn-table td.conj-cell {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.82em;
+      color: #555;
+    }
+
+    table.vsn-table td.q-cell {
+      font-style: italic;
+      color: var(--vsn-muted);
+      font-size: 0.88em;
+    }
+
+    table.vsn-table td.ex-cell {
+      font-size: 0.85em;
+    }
+
+    table.vsn-table td.ex-cell em {
+      font-style: italic;
+      color: var(--vsn-primary);
+    }
+
+    /* Declension table specifics */
+    table.vsn-table td.case-cell {
+      font-weight: 700;
+      color: var(--vsn-primary);
+    }
+
+    table.vsn-table td.rel-cell {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+
+    table.vsn-table td.highlight-cell {
+      background: rgba(251,201,45,0.2) !important;
+      font-weight: 700;
+    }
+
+    /* =====================================================
+       SVG DIAGRAM
+    ===================================================== */
+    .diagram-wrap {
+      margin: 18px 0;
+      display: flex;
+      justify-content: center;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .diagram-caption {
+      text-align: center;
+      font-size: 0.75em;
+      color: var(--vsn-muted);
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    /* =====================================================
+       SECTION SPECIFIC STYLES
+    ===================================================== */
+    .conj-pill {
+      display: inline-block;
+      background: rgba(30,46,72,0.08);
+      border: 1px solid var(--vsn-border);
+      border-radius: 12px;
+      padding: 2px 8px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.80em;
+      margin: 2px 2px;
+      color: var(--vsn-primary);
+    }
+
+    .conj-pills {
+      margin: 6px 0;
+    }
+
+    .degree-example {
+      background: var(--vsn-light-bg);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      margin: 8px 0;
+      font-size: 0.88em;
+    }
+
+    .degree-example .ns-label {
+      display: inline-block;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.78em;
+      font-weight: 700;
+      background: var(--vsn-primary);
+      color: var(--vsn-secondary);
+      padding: 1px 6px;
+      border-radius: 3px;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+
+    .two-column-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 12px 0;
+    }
+
+    .grid-card {
+      background: var(--vsn-light-bg);
+      border: 1px solid var(--vsn-border);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+    }
+
+    .grid-card-title {
+      font-weight: 700;
+      font-size: 0.9em;
+      color: var(--vsn-primary);
+      margin-bottom: 6px;
+    }
+
+    /* =====================================================
+       PAGE NUMBERS / FOOTER
+    ===================================================== */
+    @media print {
+      @page {
+        @bottom-right {
+          content: counter(page);
+          font-family: 'Open Sans', sans-serif;
+          font-size: 9pt;
+          color: #999;
+        }
+        @bottom-left {
+          content: "VSN — Deutsche Grammatik: Satzgefüge & Nebensätze";
+          font-family: 'Open Sans', sans-serif;
+          font-size: 9pt;
+          color: #999;
+        }
+      }
+    }
+
+    /* =====================================================
+       UTILITY
+    ===================================================== */
+    .mt-4 { margin-top: 4px; }
+    .mt-8 { margin-top: 8px; }
+    .mt-12 { margin-top: 12px; }
+    .mt-16 { margin-top: 16px; }
+    .mb-8 { margin-bottom: 8px; }
+    .mb-12 { margin-bottom: 12px; }
+    .text-muted { color: var(--vsn-muted); font-size: 0.88em; }
+    .text-accent { color: var(--vsn-accent); }
+    .text-bold { font-weight: 700; }
+    .full-width-table { grid-column: 1 / -1; }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     PAGE 1: COVER
+============================================================ -->
+<div class="cover page-break">
+  <div class="cover-bg-pattern"></div>
+  <div class="cover-content">
+    <div class="cover-header">
+      <img class="cover-logo" src="assets/VSN_new.png" alt="VSN Logo">
+      <span class="cover-badge">1IBK · LZK · 15.04.2026</span>
+    </div>
+
+    <div class="cover-main">
+      <div class="cover-label">Deutsche Grammatik · German Grammar</div>
+      <div class="cover-title">Satzgefüge &amp;<br>Nebensätze</div>
+      <div class="cover-title-de">Complex Sentences &amp; Subordinate Clauses</div>
+      <div class="cover-divider"></div>
+      <div class="cover-meta">
+        <div class="cover-meta-item">8 Hauptkapitel · 8 Main Chapters</div>
+        <div class="cover-meta-item">Adverbialsätze · Infinitivgruppen · Partizipgruppen</div>
+        <div class="cover-meta-item">Konjunktionen · Relativpronomen</div>
+        <div class="cover-meta-item">Zweisprachig: Deutsch / Englisch</div>
+      </div>
+    </div>
+
+    <div class="cover-footer">
+      <span class="cover-footer-text">VSN Lernunterlage © 2026</span>
+      <span class="cover-footer-text">Klasse 1IBK · Deutsch</span>
+    </div>
+  </div>
+  <div class="cover-accent-bar"></div>
+</div>
+
+<!-- ============================================================
+     PAGE 2: TABLE OF CONTENTS
+============================================================ -->
+<div class="toc-page page-break">
+  <div class="toc-header">
+    <h2>Inhaltsverzeichnis · Table of Contents</h2>
+    <h1>Übersicht der Kapitel</h1>
+  </div>
+
+  <ul class="toc-list">
+    <li class="toc-item no-break">
+      <span class="toc-num">1</span>
+      <div class="toc-content">
+        <div class="toc-title-en">Introduction to Subordinate Clauses</div>
+        <div class="toc-title-de">Grundlagen zu Nebensätzen</div>
+      </div>
+    </li>
+    <li class="toc-item no-break">
+      <span class="toc-num">2</span>
+      <div class="toc-content">
+        <div class="toc-title-en">Degrees of Subordinate Clauses</div>
+        <div class="toc-title-de">Nebensätze gleichen und ungleichen Grades</div>
+      </div>
+    </li>
+    <li class="toc-item no-break">
+      <span class="toc-num">3</span>
+      <div class="toc-content">
+        <div class="toc-title-en">Main Types of Subordinate Clauses</div>
+        <div class="toc-title-de">Hauptarten von Nebensätzen (Subjekt-, Objekt-, Attributsatz)</div>
+      </div>
+    </li>
+    <li class="toc-item no-break">
+      <span class="toc-num">4</span>
+      <div class="toc-content">
+        <div class="toc-title-en">Adverbial Clauses (9 Types)</div>
+        <div class="toc-title-de">Adverbialsätze / Umstandssätze (9 Arten)</div>
+      </div>
+    </li>
+    <li class="toc-item no-break">
+      <span class="toc-num">5</span>
+      <div class="toc-content">
+        <div class="toc-title-en">Infinitive Constructions</div>
+        <div class="toc-title-de">Satzwertige Infinitivgruppen</div>
+      </div>
+    </li>
+    <li class="toc-item no-break">
+      <span class="toc-num">6</span>
+      <div class="toc-content">
+        <div class="toc-title-en">Participial Constructions</div>
+        <div class="toc-title-de">Partizipgruppen / Partizipialsätze</div>
+      </div>
+    </li>
+    <li class="toc-item no-break">
+      <span class="toc-num">7</span>
+      <div class="toc-content">
+        <div class="toc-title-en">Conjunctions</div>
+        <div class="toc-title-de">Konjunktionen</div>
+      </div>
+    </li>
+    <li class="toc-item no-break">
+      <span class="toc-num">8</span>
+      <div class="toc-content">
+        <div class="toc-title-en">Relative Pronouns Declension</div>
+        <div class="toc-title-de">Deklination der Relativpronomen</div>
+      </div>
+    </li>
+  </ul>
+
+  <div style="margin-top:32px; padding:18px; background:var(--vsn-light-bg); border-radius:var(--radius); border-left:4px solid var(--vsn-accent);">
+    <div style="font-size:0.72em;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--vsn-accent);margin-bottom:8px;">Legende der Lernboxen · Box Legend</div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;font-size:0.82em;">
+      <span style="display:flex;align-items:center;gap:6px;">
+        <span style="width:14px;height:14px;border-radius:3px;background:rgba(220,78,191,0.25);border:2px solid #dc4ebf;flex-shrink:0;"></span>
+        <strong>Definition</strong> — Schlüsselbegriffe &amp; Definitionen
+      </span>
+      <span style="display:flex;align-items:center;gap:6px;">
+        <span style="width:14px;height:14px;border-radius:3px;background:rgba(41,128,185,0.20);border:2px solid #2980b9;flex-shrink:0;"></span>
+        <strong>Info</strong> — Ergänzende Informationen &amp; Ausnahmen
+      </span>
+      <span style="display:flex;align-items:center;gap:6px;">
+        <span style="width:14px;height:14px;border-radius:3px;background:rgba(251,201,45,0.30);border:2px solid #d4a800;flex-shrink:0;"></span>
+        <strong>Tipp</strong> — Prüfungstipps &amp; Merkhilfen
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 1: Introduction to Subordinate Clauses
+============================================================ -->
+<div class="section page-break" id="s1">
+  <div class="section-header no-break">
+    <div class="section-num">1</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Introduction to Subordinate Clauses</div>
+      <div class="section-title-de">Grundlagen zu Nebensätzen</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <!-- EN -->
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">A <strong>subordinate clause</strong> (Nebensatz) is a <em>dependent clause</em> that expands or explains the statement made in a main clause (Hauptsatz). It provides additional information such as time, place, reason, or consequence.</div>
+        </div>
+      </div>
+
+      <div class="callout-box callout-info no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke="#2980b9" stroke-width="2"/>
+          <path d="M12 16v-4" stroke="#2980b9" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="8" r="1" fill="#2980b9"/>
+        </svg>
+        <div class="callout-content">
+          <div class="callout-label">Note</div>
+          <div class="callout-text">A <strong>complex sentence</strong> (Satzgefüge) combines at least one independent main clause with one or more dependent subordinate clauses. A subordinate clause <em>cannot stand alone</em> — it always relates to another clause.</div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Key Characteristics</h3>
+      <ul class="content-list">
+        <li>Always requires another sentence to which it refers.</li>
+        <li>Introduced by a <strong>subordinating conjunction</strong> (e.g., <code>weil, da, wenn, dass</code>) or a relative pronoun.</li>
+        <li>The <strong>conjugated verb</strong> (Personalform) is positioned at the <strong>very end</strong> of the clause.</li>
+        <li>Separated from the main clause by a <strong>comma</strong>.</li>
+      </ul>
+    </div>
+
+    <!-- DE -->
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Ein <strong>Nebensatz</strong> ist ein abhängiger Teilsatz, der die Aussage eines Hauptsatzes erweitert oder genauer erklärt. Er liefert zusätzliche Informationen wie Zeit, Ort, Grund oder Folge.</div>
+        </div>
+      </div>
+
+      <div class="callout-box callout-info no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke="#2980b9" stroke-width="2"/>
+          <path d="M12 16v-4" stroke="#2980b9" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="8" r="1" fill="#2980b9"/>
+        </svg>
+        <div class="callout-content">
+          <div class="callout-label">Hinweis</div>
+          <div class="callout-text">Ein <strong>Satzgefüge</strong> ist eine Kombination aus mindestens einem selbstständigen Hauptsatz und einem oder mehreren unselbstständigen Nebensätzen. Ein Nebensatz kann <em>nicht alleine stehen</em> und bezieht sich immer auf einen anderen Satz.</div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Merkmale eines Nebensatzes</h3>
+      <ul class="content-list">
+        <li>Er benötigt immer einen anderen Satz, auf den er sich bezieht.</li>
+        <li>Wird meist durch ein <strong>Einleitewort</strong> (unterordnende Konjunktion wie <code>weil, da, wenn, dass</code>) oder ein Relativpronomen eingeleitet.</li>
+        <li>Die <strong>Personalform des Verbs</strong> (konjugiertes Verb) steht im eingeleiteten Nebensatz an der <strong>letzten Stelle</strong>.</li>
+        <li>Er wird immer durch ein <strong>Komma</strong> vom Hauptsatz abgetrennt.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Full-width SVG Diagram -->
+  <div class="diagram-wrap no-break" style="margin-top:24px;">
+    <div style="width:100%;">
+      <svg viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:680px;height:auto;display:block;margin:0 auto;">
+        <defs>
+          <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#1e2e48"/>
+          </marker>
+          <marker id="arrow-yellow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#fbc92d"/>
+          </marker>
+        </defs>
+
+        <!-- Main Clause box -->
+        <rect x="20" y="60" width="190" height="80" rx="8" fill="#1e2e48"/>
+        <text x="115" y="92" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="11" font-weight="700" fill="white">HAUPTSATZ</text>
+        <text x="115" y="110" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="9.5" fill="rgba(255,255,255,0.7)">Main Clause</text>
+        <rect x="30" y="120" width="80" height="12" rx="3" fill="rgba(255,255,255,0.15)"/>
+        <text x="70" y="130" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="8" fill="rgba(255,255,255,0.9)">VERB Pos. 2</text>
+
+        <!-- Arrow from HS to NS -->
+        <line x1="210" y1="100" x2="258" y2="100" stroke="#1e2e48" stroke-width="2" marker-end="url(#arrow)"/>
+
+        <!-- Comma indicator -->
+        <text x="234" y="88" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="22" fill="#fbc92d" font-weight="700">,</text>
+
+        <!-- NS box -->
+        <rect x="260" y="40" width="400" height="120" rx="8" fill="rgba(30,46,72,0.06)" stroke="#1e2e48" stroke-width="2"/>
+
+        <!-- Conjunction box -->
+        <rect x="272" y="58" width="120" height="34" rx="6" fill="rgba(220,78,191,0.18)" stroke="#dc4ebf" stroke-width="1.5"/>
+        <text x="332" y="72" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="8.5" font-weight="700" fill="#c0359e">EINLEITEWORT</text>
+        <text x="332" y="84" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="8" fill="#dc4ebf">weil · dass · ob</text>
+
+        <!-- Arrow inside NS -->
+        <line x1="392" y1="75" x2="418" y2="75" stroke="#1e2e48" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="4,3"/>
+
+        <!-- Body text -->
+        <rect x="420" y="60" width="100" height="30" rx="4" fill="rgba(30,46,72,0.06)"/>
+        <text x="470" y="73" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="8.5" fill="#6b7a99">... Inhalt ...</text>
+        <text x="470" y="85" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="8.5" fill="#6b7a99">... Resteil ...</text>
+
+        <!-- Arrow to verb -->
+        <line x1="520" y1="75" x2="543" y2="75" stroke="#1e2e48" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="4,3"/>
+
+        <!-- Verb at END box -->
+        <rect x="545" y="58" width="100" height="34" rx="6" fill="rgba(251,201,45,0.22)" stroke="#fbc92d" stroke-width="2"/>
+        <text x="595" y="71" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="8.5" font-weight="700" fill="#8a6b00">PERSONALFORM</text>
+        <text x="595" y="83" text-anchor="middle" font-family="Roboto Mono, monospace" font-size="8" fill="#8a6b00">Verb — letzter!</text>
+
+        <!-- NS Label -->
+        <text x="460" y="148" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="9.5" font-weight="700" fill="#1e2e48">NEBENSATZ — verb always at the END</text>
+
+        <!-- Example at bottom -->
+        <text x="340" y="176" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="9.5" fill="#1a2236">
+          Ich bleibe zu Hause,
+        </text>
+        <text x="340" y="176" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="9.5" fill="#1a2236">
+          Ich bleibe zu Hause,
+        </text>
+        <text x="472" y="176" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="9.5" font-weight="700" fill="#dc4ebf">weil</text>
+        <text x="530" y="176" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="9.5" fill="#1a2236">es</text>
+        <text x="592" y="176" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="9.5" font-weight="700" fill="#d4a800">regnet.</text>
+      </svg>
+      <div class="diagram-caption">Aufbau eines Satzgefüges · Structure of a Complex Sentence</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 2: Degrees of Subordinate Clauses
+============================================================ -->
+<div class="section page-break" id="s2">
+  <div class="section-header no-break">
+    <div class="section-num">2</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Degrees of Subordinate Clauses</div>
+      <div class="section-title-de">Nebensätze gleichen und ungleichen Grades</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <!-- EN -->
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+
+      <p class="content-text">When multiple subordinate clauses appear in one sentence, they relate to the main clause in different ways:</p>
+
+      <h3 class="subsection-title">Same Degree (gleicher Grad)</h3>
+      <p class="content-text">Two or more subordinate clauses relate to the <strong>same superordinate clause</strong> (usually the main clause).</p>
+      <div class="degree-example no-break">
+        <div style="font-size:0.75em;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--vsn-muted);margin-bottom:6px;">Example</div>
+        <p>Er freute sich, dass die Sonne schien <span class="ns-label">NS 1</span> und dass das Wasser sauber war <span class="ns-label">NS 1</span>.</p>
+        <p style="margin-top:6px;font-size:0.88em;color:var(--vsn-muted);font-style:italic;">He was happy that the sun was shining and that the water was clean.</p>
+        <div style="margin-top:8px;display:flex;gap:8px;">
+          <div style="background:rgba(30,46,72,0.08);border-radius:4px;padding:4px 8px;font-size:0.78em;">HS → NS 1</div>
+          <div style="background:rgba(30,46,72,0.08);border-radius:4px;padding:4px 8px;font-size:0.78em;">HS → NS 1</div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Different Degree (ungleicher Grad)</h3>
+      <p class="content-text">A subordinate clause (NS 2) relates to <strong>another subordinate clause</strong> (NS 1), which in turn relates to the main clause — creating nested clauses (Schachtelsätze).</p>
+      <div class="degree-example no-break">
+        <div style="font-size:0.75em;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--vsn-muted);margin-bottom:6px;">Example</div>
+        <p>Das Bergsteigen machte ihm Mühe, weil er sich den Fuß verstaucht hatte <span class="ns-label">NS 1</span>, während er in zu hohem Tempo den Hang hinuntergelaufen war <span class="ns-label">NS 2</span>.</p>
+        <p style="margin-top:6px;font-size:0.88em;color:var(--vsn-muted);font-style:italic;">Mountain climbing was difficult for him because he had sprained his ankle while running down the slope too fast.</p>
+        <div style="margin-top:8px;display:flex;gap:8px;align-items:center;">
+          <div style="background:rgba(30,46,72,0.08);border-radius:4px;padding:4px 8px;font-size:0.78em;">HS → NS 1</div>
+          <span style="font-size:1.2em;">→</span>
+          <div style="background:rgba(220,78,191,0.1);border-radius:4px;padding:4px 8px;font-size:0.78em;border:1px solid rgba(220,78,191,0.3);">NS 1 → NS 2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DE -->
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+
+      <p class="content-text">Wenn mehrere Nebensätze in einem Satz verwendet werden, können sie auf unterschiedliche Weise miteinander verknüpft sein:</p>
+
+      <h3 class="subsection-title">Nebensätze gleichen Grades</h3>
+      <p class="content-text">Zwei oder mehrere Nebensätze beziehen sich auf <strong>denselben übergeordneten Satz</strong> (meist den Hauptsatz).</p>
+      <div class="degree-example no-break">
+        <div style="font-size:0.75em;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--vsn-muted);margin-bottom:6px;">Beispiel</div>
+        <p>Er freute sich, dass die Sonne schien <span class="ns-label">NS 1</span> und dass das Wasser sauber war <span class="ns-label">NS 1</span>.</p>
+        <div style="margin-top:8px;display:flex;gap:8px;">
+          <div style="background:rgba(30,46,72,0.08);border-radius:4px;padding:4px 8px;font-size:0.78em;">HS → NS 1</div>
+          <div style="background:rgba(30,46,72,0.08);border-radius:4px;padding:4px 8px;font-size:0.78em;">HS → NS 1</div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Nebensätze ungleichen Grades</h3>
+      <p class="content-text">Ein Nebensatz (NS 2) bezieht sich auf einen <strong>anderen Nebensatz</strong> (NS 1), der sich wiederum auf den Hauptsatz bezieht. Man nennt dies auch <em>Schachtelsätze</em>.</p>
+      <div class="degree-example no-break">
+        <div style="font-size:0.75em;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--vsn-muted);margin-bottom:6px;">Beispiel</div>
+        <p>Das Bergsteigen machte ihm Mühe, weil er sich den Fuß verstaucht hatte <span class="ns-label">NS 1</span>, während er in zu hohem Tempo den Hang hinuntergelaufen war <span class="ns-label">NS 2</span>.</p>
+        <div style="margin-top:8px;display:flex;gap:8px;align-items:center;">
+          <div style="background:rgba(30,46,72,0.08);border-radius:4px;padding:4px 8px;font-size:0.78em;">HS → NS 1</div>
+          <span style="font-size:1.2em;">→</span>
+          <div style="background:rgba(220,78,191,0.1);border-radius:4px;padding:4px 8px;font-size:0.78em;border:1px solid rgba(220,78,191,0.3);">NS 1 → NS 2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 3: Main Types of Subordinate Clauses
+============================================================ -->
+<div class="section page-break" id="s3">
+  <div class="section-header no-break">
+    <div class="section-num">3</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Main Types of Subordinate Clauses</div>
+      <div class="section-title-de">Hauptarten von Nebensätzen</div>
+    </div>
+  </div>
+
+  <p class="content-text" style="margin-bottom:18px;">Depending on their grammatical function, subordinate clauses can replace subjects, objects, or attributes. · Je nach Funktion ersetzen Nebensätze Subjekte, Objekte oder Attribute.</p>
+
+  <div class="bilingual-grid">
+    <!-- EN -->
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+
+      <h4 class="subtype-title">1. Subject Clause (Subjektsatz)</h4>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Replaces the <strong>subject</strong> of the sentence.<br>
+          Question: <em>Wer oder was?</em> (Who or what?)</div>
+        </div>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Example</div>
+        <p><strong>Wer verliert</strong>, zahlt die nächste Runde!</p>
+        <p style="color:var(--vsn-muted);font-size:0.88em;font-style:italic;">Who pays? → He who loses.</p>
+      </div>
+
+      <h4 class="subtype-title" style="margin-top:16px;">2. Object Clause (Objektsatz)</h4>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Replaces an <strong>object</strong> (Accusative, Genitive, Dative, or Prepositional).<br>
+          Question: <em>Wen/was? Wessen? Wem? Wonach?</em></div>
+        </div>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Example (Accusative)</div>
+        <p>Ich bedauerte, <strong>dass Havva fehlte</strong>.</p>
+        <p style="color:var(--vsn-muted);font-size:0.88em;font-style:italic;">What did I regret? → that Havva was missing.</p>
+      </div>
+
+      <h4 class="subtype-title" style="margin-top:16px;">3. Attributive Clause / Relative Clause (Attributsatz)</h4>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Provides detail about a <strong>noun or pronoun</strong> in the preceding clause. Introduced by a <strong>relative pronoun</strong> (der, die, das, welcher…).<br>
+          Question: <em>Welcher? Was für ein?</em></div>
+        </div>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Example</div>
+        <p>Der Koch, <strong>der die Suppe versalzen hat</strong>, ist verliebt.</p>
+        <p style="color:var(--vsn-muted);font-size:0.88em;font-style:italic;">Which cook? → The one who over-salted the soup.</p>
+      </div>
+    </div>
+
+    <!-- DE -->
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+
+      <h4 class="subtype-title">1. Subjektsatz</h4>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Ersetzt das <strong>Subjekt</strong> eines Satzes.<br>
+          Fragewort: <em>Wer oder was?</em></div>
+        </div>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Beispiel</div>
+        <p><strong>Wer verliert</strong>, zahlt die nächste Runde!</p>
+        <p style="color:var(--vsn-muted);font-size:0.88em;font-style:italic;">Wer zahlt die nächste Runde? → Wer verliert.</p>
+      </div>
+
+      <h4 class="subtype-title" style="margin-top:16px;">2. Objektsatz</h4>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Ersetzt ein <strong>Objekt</strong> (Akkusativ-, Genitiv-, Dativ- oder Präpositionalobjekt).<br>
+          Fragewort: <em>Wen oder was? Wessen? Wem? Wonach?</em></div>
+        </div>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Beispiel (Akkusativ)</div>
+        <p>Ich bedauerte, <strong>dass Havva fehlte</strong>. <em style="font-size:0.85em;">(Was bedauerte ich?)</em></p>
+      </div>
+
+      <h4 class="subtype-title" style="margin-top:16px;">3. Attributsatz (Relativsatz)</h4>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Bezieht sich näher auf ein <strong>Nomen oder Pronomen</strong> im vorhergehenden Satz. Wird meist durch ein <strong>Relativpronomen</strong> (der, die, das, welcher) eingeleitet.<br>
+          Fragewort: <em>Welcher? Was für ein?</em></div>
+        </div>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Beispiel</div>
+        <p>Der Koch, <strong>der die Suppe versalzen hat</strong>, ist verliebt. <em style="font-size:0.85em;">(Welcher Koch?)</em></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 4: Adverbial Clauses
+============================================================ -->
+<div class="section page-break" id="s4">
+  <div class="section-header no-break">
+    <div class="section-num">4</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Adverbial Clauses (9 Types)</div>
+      <div class="section-title-de">Adverbialsätze / Umstandssätze (9 Arten)</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid" style="margin-bottom:18px;">
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Adverbial clauses replace an <strong>adverbial phrase</strong>. They describe the circumstances of an action: time, manner, place, reason, etc. There are <strong>9 main types</strong>.</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Adverbialsätze übernehmen die Funktion einer <strong>adverbialen Bestimmung</strong>. Sie beschreiben die Umstände einer Handlung (Zeit, Art, Ort, Grund). Man unterscheidet <strong>9 Hauptarten</strong>.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full-width reference table -->
+  <div class="table-wrap no-break">
+    <table class="vsn-table">
+      <thead>
+        <tr>
+          <th style="width:14%">Type · Art</th>
+          <th style="width:14%">Question · Frage</th>
+          <th style="width:28%">Conjunctions · Konjunktionen</th>
+          <th style="width:44%">Example · Beispiel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="type-cell">1. Temporal<br><span style="font-weight:400;font-size:0.88em;color:var(--vsn-muted);">Time · Zeit</span></td>
+          <td class="q-cell">Wann? Wie lange?<br>When? How long?</td>
+          <td class="conj-cell">als, bevor, ehe, nachdem, während, bis, seitdem</td>
+          <td class="ex-cell"><em>Bevor sie einschläft,</em> liest sie noch ein paar Seiten.</td>
+        </tr>
+        <tr>
+          <td class="type-cell">2. Modal<br><span style="font-weight:400;font-size:0.88em;color:var(--vsn-muted);">Manner · Art</span></td>
+          <td class="q-cell">Wie? Auf welche Weise?</td>
+          <td class="conj-cell">indem, als ob, ohne dass, wie, dadurch dass</td>
+          <td class="ex-cell">Er verhielt sich, <em>als ob er unser Vorgesetzter wäre.</em></td>
+        </tr>
+        <tr>
+          <td class="type-cell">3. Lokal<br><span style="font-weight:400;font-size:0.88em;color:var(--vsn-muted);">Place · Ort</span></td>
+          <td class="q-cell">Wo? Wohin? Woher?</td>
+          <td class="conj-cell">wo, woher, wohin</td>
+          <td class="ex-cell">Er kehrte dorthin zurück, <em>woher er gekommen war.</em></td>
+        </tr>
+        <tr>
+          <td class="type-cell">4. Kausal<br><span style="font-weight:400;font-size:0.88em;color:var(--vsn-muted);">Reason · Grund</span></td>
+          <td class="q-cell">Warum? Weshalb?</td>
+          <td class="conj-cell">da, weil</td>
+          <td class="ex-cell">Sie sagte den Termin ab, <em>weil sie erkrankt war.</em></td>
+        </tr>
+        <tr>
+          <td class="type-cell">5. Konzessiv<br><span style="font-weight:400;font-size:0.88em;color:var(--vsn-muted);">Concession</span></td>
+          <td class="q-cell">Trotz welchen Umstands?<br>Despite what?</td>
+          <td class="conj-cell">obwohl, obgleich, wenn auch, auch wenn</td>
+          <td class="ex-cell"><em>Obwohl ich ihm alles erklärte,</em> begriff er nichts.</td>
+        </tr>
+        <tr>
+          <td class="type-cell">6. Konditional<br><span style="font-weight:400;font-size:0.88em;color:var(--vsn-muted);">Condition</span></td>
+          <td class="q-cell">Unter welcher Bedingung?<br>Under what condition?</td>
+          <td class="conj-cell">falls, sofern, wenn</td>
+          <td class="ex-cell"><em>Falls es morgen regnet,</em> findet der Bewerb nicht statt.</td>
+        </tr>
+        <tr>
+          <td class="type-cell">7. Konsekutiv<br><span style="font-weight:400;font-size:0.88em;color:var(--vsn-muted);">Consequence</span></td>
+          <td class="q-cell">Mit welcher Folge?<br>With what result?</td>
+          <td class="conj-cell">dass, sodass (so dass)</td>
+          <td class="ex-cell">Sie beleidigte ihn so sehr, <em>dass er fluchtartig das Lokal verließ.</em></td>
+        </tr>
+        <tr>
+          <td class="type-cell">8. Final<br><span style="font-weight:400;font-size:0.88em;color:var(--vsn-muted);">Purpose · Zweck</span></td>
+          <td class="q-cell">Wozu? Zu welchem Zweck?<br>For what purpose?</td>
+          <td class="conj-cell">damit, auf dass, um…zu + Infinitiv</td>
+          <td class="ex-cell">Ich muss mich beeilen, <em>damit ich pünktlich erscheine.</em></td>
+        </tr>
+        <tr>
+          <td class="type-cell">9. Adversativ<br><span style="font-weight:400;font-size:0.88em;color:var(--vsn-muted);">Contrast</span></td>
+          <td class="q-cell">Im Gegensatz wozu?<br>In contrast to what?</td>
+          <td class="conj-cell">anstatt dass, während, wohingegen</td>
+          <td class="ex-cell"><em>Während sie auf ihre Bestellung wartete,</em> schlug er sich den Bauch voll.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 5: Infinitive Constructions
+============================================================ -->
+<div class="section page-break" id="s5">
+  <div class="section-header no-break">
+    <div class="section-num">5</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Infinitive Constructions</div>
+      <div class="section-title-de">Satzwertige Infinitivgruppen</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <!-- EN -->
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Infinitive groups can take on the function of subordinate clauses. They consist of <code>zu</code> + an infinitive verb. They lack a conjugated verb and explicit subject, making sentences more elegant and concise.</div>
+        </div>
+      </div>
+
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2a7 7 0 0 1 7 7c0 3-1.7 5.5-4.2 6.8L14 18H10l-.8-2.2A7 7 0 0 1 12 2z" stroke="#8a6b00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 22h4" stroke="#8a6b00" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 18v4" stroke="#8a6b00" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="callout-content">
+          <div class="callout-label">Exam Tip</div>
+          <div class="callout-text"><strong>Rule of thumb:</strong> If the subject in the main clause and the "dass" clause is <strong>identical</strong>, replace the "dass" clause with a <code>zu + Infinitiv</code> construction.<br><br>
+          <span style="display:block;padding:6px 8px;background:rgba(251,201,45,0.3);border-radius:4px;margin-top:4px;">
+            <em>Dass-Satz:</em> Die Köchin beschließt, <strong>dass sie kostet.</strong><br>
+            <em>Infinitivgruppe:</em> Die Köchin beschließt, <strong>zu kosten.</strong>
+          </span></div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Extended Infinitive Groups</h3>
+      <p class="content-text" style="font-size:0.88em;">These express specific purposes or missing actions. A comma is <strong>mandatory</strong>.</p>
+
+      <div class="example-block no-break">
+        <div class="example-label">1. um … zu + Inf. (Purpose / Zweck)</div>
+        <p>Die Köchin kostet die Suppe, <strong>um den Salzgehalt zu prüfen</strong>.</p>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">2. ohne … zu + Inf. (Missing expected action)</div>
+        <p>Die Köchin serviert die Suppe, <strong>ohne sie gekostet zu haben</strong>.</p>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">3. (an)statt … zu + Inf. (Alternative action)</div>
+        <p>Die Köchin würzt die Suppe, <strong>anstatt das Steak anzubraten</strong>.</p>
+      </div>
+
+      <h3 class="subsection-title">Comma Rules</h3>
+      <p class="content-text" style="font-size:0.88em;">A comma <strong>must</strong> be used if the infinitive group:</p>
+      <ol class="content-list-num">
+        <li>Is introduced by <code>um, ohne, statt, anstatt, außer, als</code>.</li>
+        <li>Depends on a noun (e.g., <em>Er hatte den Mut, zu springen.</em>)</li>
+        <li>Is referred to by a signal word in the main clause (e.g., <code>es, daran, darauf</code>).</li>
+      </ol>
+    </div>
+
+    <!-- DE -->
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Satzwertige Infinitivgruppen können die Funktion von Nebensätzen übernehmen. Sie bestehen aus <code>zu</code> + Infinitiv. Ihnen fehlen das Subjekt und die Personalform des Verbs. Sie wirken sprachlich oft eleganter als lange Nebensätze.</div>
+        </div>
+      </div>
+
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2a7 7 0 0 1 7 7c0 3-1.7 5.5-4.2 6.8L14 18H10l-.8-2.2A7 7 0 0 1 12 2z" stroke="#8a6b00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 22h4" stroke="#8a6b00" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 18v4" stroke="#8a6b00" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="callout-content">
+          <div class="callout-label">Merkhilfe / Tipp</div>
+          <div class="callout-text"><strong>Faustregel:</strong> Wenn das Subjekt im Hauptsatz und im „dass"-Satz <strong>gleich</strong> ist, soll nach Möglichkeit ein <code>zu + Infinitiv</code>-Satz verwendet werden.<br><br>
+          <span style="display:block;padding:6px 8px;background:rgba(251,201,45,0.3);border-radius:4px;margin-top:4px;">
+            <em>Dass-Satz:</em> Die Köchin beschließt, <strong>dass sie kostet.</strong><br>
+            <em>Infinitivgruppe:</em> Die Köchin beschließt, <strong>zu kosten.</strong>
+          </span></div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Erweiterte Infinitivgruppen</h3>
+      <p class="content-text" style="font-size:0.88em;">Diese Konstruktionen drücken konkrete Absichten oder ersetzte Handlungen aus. Ein Komma ist hier <strong>Pflicht!</strong></p>
+
+      <div class="example-block no-break">
+        <div class="example-label">1. um … zu + Infinitiv (Absicht/Zweck)</div>
+        <p>Die Köchin kostet die Suppe, <strong>um den Salzgehalt zu prüfen</strong>.</p>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">2. ohne … zu + Infinitiv (Ausbleiben erwarteter Handlung)</div>
+        <p>Die Köchin serviert die Suppe, <strong>ohne sie gekostet zu haben</strong>.</p>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">3. (an)statt … zu + Infinitiv (Ersatzhandlung)</div>
+        <p>Die Köchin würzt die Suppe, <strong>(an)statt das Steak anzubraten</strong>.</p>
+      </div>
+
+      <h3 class="subsection-title">Kommaregeln bei Infinitivgruppen</h3>
+      <p class="content-text" style="font-size:0.88em;">Ein Komma <strong>muss</strong> gesetzt werden, wenn die Infinitivgruppe:</p>
+      <ol class="content-list-num">
+        <li>Mit <code>um, ohne, statt, anstatt, außer, als</code> eingeleitet wird.</li>
+        <li>Sich auf ein Substantiv bezieht (z. B. <em>Er hatte den Mut, zu springen.</em>)</li>
+        <li>Durch ein Verweiswort im Hauptsatz angekündigt wird (z. B. <code>es, daran, darauf</code>).</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 6: Participial Constructions
+============================================================ -->
+<div class="section page-break" id="s6">
+  <div class="section-header no-break">
+    <div class="section-num">6</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Participial Constructions</div>
+      <div class="section-title-de">Partizipgruppen / Partizipialsätze</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <!-- EN -->
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Participial groups are phrases built around a <strong>participle</strong>. Like infinitive groups, they function as shortened subordinate clauses (often replacing causal <em>da/weil</em> clauses or relative clauses). They lack a subject and conjugated verb.</div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Types of Participles</h3>
+      <div class="two-column-grid no-break">
+        <div class="grid-card">
+          <div class="grid-card-title">Partizip I<br><span style="font-weight:400;font-size:0.85em;color:var(--vsn-muted);">Present Participle</span></div>
+          <p style="font-size:0.85em;">Infinitiv + <code>-d</code><br>
+          Expresses <strong>active, simultaneous</strong> actions.<br>
+          E.g., <em>laufend, singend</em></p>
+        </div>
+        <div class="grid-card">
+          <div class="grid-card-title">Partizip II<br><span style="font-weight:400;font-size:0.85em;color:var(--vsn-muted);">Past Participle</span></div>
+          <p style="font-size:0.85em;"><code>ge-</code> + stem + <code>-t/-en</code><br>
+          Expresses <strong>passive or completed</strong> actions.<br>
+          E.g., <em>gelacht, geschrieben</em></p>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Conversion Example</h3>
+      <div class="example-block no-break">
+        <div class="example-label">Normal clause</div>
+        <p>Da er vom Auftritt des Saxofonisten beeindruckt war, holte er sich ein Autogramm.</p>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Participial group</div>
+        <p><strong>Vom Auftritt des Saxofonisten beeindruckt</strong>, holte er sich ein Autogramm.</p>
+      </div>
+
+      <div class="callout-box callout-info no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#2980b9" stroke-width="2"/><path d="M12 16v-4" stroke="#2980b9" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="8" r="1" fill="#2980b9"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Important Exception: Auxiliary Verbs</div>
+          <div class="callout-text">The present participles of <em>sein</em> (<code>seiend</code>) and <em>haben</em> (<code>habend</code>) are <strong>never</strong> used in a participial clause. They are simply omitted.<br><br>
+          <span class="wrong" style="display:block;margin:3px 0;">Den Hut in der Hand <code>habend</code>, bedankte er sich.</span>
+          <span class="correct" style="display:block;margin:3px 0;"><strong>Den Hut in der Hand</strong>, bedankte er sich für den schönen Abend.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DE -->
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Partizipgruppen übernehmen die Funktion von Nebensätzen (oft anstelle von <em>da/weil</em>-Sätzen oder Relativsätzen). Sie werden um ein Partizip herum gebaut. Man erkennt sie daran, dass ihnen Subjekt und Personalform (Prädikat) fehlen.</div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Arten von Partizipien</h3>
+      <div class="two-column-grid no-break">
+        <div class="grid-card">
+          <div class="grid-card-title">Partizip I<br><span style="font-weight:400;font-size:0.85em;color:var(--vsn-muted);">Partizip Präsens</span></div>
+          <p style="font-size:0.85em;">Infinitiv + <code>-d</code><br>
+          Drückt <strong>aktive und gleichzeitige</strong> Handlungen aus.<br>
+          z. B. <em>laufend, singend</em></p>
+        </div>
+        <div class="grid-card">
+          <div class="grid-card-title">Partizip II<br><span style="font-weight:400;font-size:0.85em;color:var(--vsn-muted);">Partizip Perfekt</span></div>
+          <p style="font-size:0.85em;"><code>ge-</code> + Stamm + <code>-t/-en</code><br>
+          Drückt <strong>passive Zustände oder abgeschlossene</strong> Handlungen aus.<br>
+          z. B. <em>gelacht, geschrieben</em></p>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Umformungsbeispiel</h3>
+      <div class="example-block no-break">
+        <div class="example-label">Satzgefüge</div>
+        <p>Da er vom Auftritt des Saxofonisten beeindruckt war, holte er sich ein Autogramm.</p>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Partizipialsatz</div>
+        <p><strong>Vom Auftritt des Saxofonisten beeindruckt</strong>, holte er sich ein Autogramm.</p>
+      </div>
+
+      <div class="callout-box callout-info no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#2980b9" stroke-width="2"/><path d="M12 16v-4" stroke="#2980b9" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="8" r="1" fill="#2980b9"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Wichtige Ausnahme: Hilfsverben</div>
+          <div class="callout-text">Das Partizip Präsens von <em>sein</em> (<code>seiend</code>) und <em>haben</em> (<code>habend</code>) steht <strong>niemals</strong> in einem Partizipialsatz. Es wird bei der Verkürzung ersatzlos weggelassen.<br><br>
+          <span class="wrong" style="display:block;margin:3px 0;">Den Hut in der Hand <code>habend</code>, bedankte er sich.</span>
+          <span class="correct" style="display:block;margin:3px 0;">Der Besucher, <strong>den Hut in der Hand</strong>, bedankte sich für den schönen Abend.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 7: Conjunctions
+============================================================ -->
+<div class="section page-break" id="s7">
+  <div class="section-header no-break">
+    <div class="section-num">7</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Conjunctions</div>
+      <div class="section-title-de">Konjunktionen</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <!-- EN -->
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Conjunctions are <strong>linking words</strong> that connect words, phrases, or entire clauses. They dictate sentence structure depending on whether they are coordinating or subordinating.</div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Subordinating Conjunctions</h3>
+      <p class="content-text" style="font-size:0.88em;">Connect a <strong>main clause to a subordinate clause</strong>. Force the conjugated verb to the <strong>very end</strong> of the subordinate clause. A comma is always required before them.</p>
+      <div class="conj-pills">
+        <span class="conj-pill">weil</span>
+        <span class="conj-pill">da</span>
+        <span class="conj-pill">dass</span>
+        <span class="conj-pill">ob</span>
+        <span class="conj-pill">wenn</span>
+        <span class="conj-pill">falls</span>
+        <span class="conj-pill">obwohl</span>
+        <span class="conj-pill">während</span>
+        <span class="conj-pill">bevor</span>
+        <span class="conj-pill">nachdem</span>
+        <span class="conj-pill">damit</span>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Example</div>
+        <p>Ich bleibe zu Hause, <span class="highlight-conj">weil</span> es regnet.</p>
+        <p style="color:var(--vsn-muted);font-size:0.85em;font-style:italic;">Verb "regnet" → end of subordinate clause.</p>
+      </div>
+
+      <h3 class="subsection-title">Coordinating Conjunctions</h3>
+      <p class="content-text" style="font-size:0.88em;">Connect clauses or phrases of <strong>equal rank</strong> (e.g., Main Clause + Main Clause). They do <em>not</em> change the word order — the verb stays in <strong>position 2</strong>.</p>
+      <div class="conj-pills">
+        <span class="conj-pill">und</span>
+        <span class="conj-pill">oder</span>
+        <span class="conj-pill">aber</span>
+        <span class="conj-pill">denn</span>
+        <span class="conj-pill">sondern</span>
+        <span class="conj-pill">doch</span>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Example</div>
+        <p>Es regnet, <span class="highlight-conj">aber</span> wir gehen trotzdem spazieren.</p>
+        <p style="color:var(--vsn-muted);font-size:0.85em;font-style:italic;">Verb "gehen" stays in position 2 after the conjunction.</p>
+      </div>
+    </div>
+
+    <!-- DE -->
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Definition</div>
+          <div class="callout-text">Konjunktionen sind <strong>Bindewörter</strong>, mit denen einzelne Wörter, Wortgruppen oder ganze Sätze miteinander verbunden werden. Je nach Art beeinflussen sie die Wortstellung (Satzbau) im nachfolgenden Satz.</div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Unterordnende Konjunktionen (Subjunktionen)</h3>
+      <p class="content-text" style="font-size:0.88em;">Verbinden einen <strong>Hauptsatz mit einem Nebensatz</strong>. Das konjugierte Verb rutscht im Nebensatz ans <strong>Satzende</strong>. Vor diesen Konjunktionen steht immer ein Komma.</p>
+      <div class="conj-pills">
+        <span class="conj-pill">weil</span>
+        <span class="conj-pill">da</span>
+        <span class="conj-pill">dass</span>
+        <span class="conj-pill">ob</span>
+        <span class="conj-pill">wenn</span>
+        <span class="conj-pill">falls</span>
+        <span class="conj-pill">obwohl</span>
+        <span class="conj-pill">während</span>
+        <span class="conj-pill">bevor</span>
+        <span class="conj-pill">nachdem</span>
+        <span class="conj-pill">damit</span>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Beispiel</div>
+        <p>Ich bleibe zu Hause, <span class="highlight-conj">weil</span> es regnet.</p>
+        <p style="color:var(--vsn-muted);font-size:0.85em;font-style:italic;">Verb „regnet" → an letzter Stelle im Nebensatz.</p>
+      </div>
+
+      <h3 class="subsection-title">Nebenordnende Konjunktionen</h3>
+      <p class="content-text" style="font-size:0.88em;">Verbinden <strong>gleichrangige Sätze</strong> (z. B. zwei Hauptsätze) oder Satzteile. Sie verändern die Wortstellung <em>nicht</em> — das Verb bleibt auf <strong>Position 2</strong>.</p>
+      <div class="conj-pills">
+        <span class="conj-pill">und</span>
+        <span class="conj-pill">oder</span>
+        <span class="conj-pill">aber</span>
+        <span class="conj-pill">denn</span>
+        <span class="conj-pill">sondern</span>
+        <span class="conj-pill">doch</span>
+      </div>
+      <div class="example-block no-break">
+        <div class="example-label">Beispiel</div>
+        <p>Es regnet, <span class="highlight-conj">aber</span> wir gehen trotzdem spazieren.</p>
+        <p style="color:var(--vsn-muted);font-size:0.85em;font-style:italic;">Verb „gehen" bleibt auf Position 2 nach der Konjunktion.</p>
+      </div>
+
+      <!-- Comparison table -->
+      <div class="table-wrap no-break" style="margin-top:16px;">
+        <table class="vsn-table">
+          <thead>
+            <tr>
+              <th>Typ</th>
+              <th>Wortstellung</th>
+              <th>Komma</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="font-weight:700;color:#dc4ebf;">Unterordnend</td>
+              <td>Verb ans <strong>Ende</strong></td>
+              <td>✔ Immer</td>
+            </tr>
+            <tr>
+              <td style="font-weight:700;color:#2980b9;">Nebenordnend</td>
+              <td>Verb bleibt auf <strong>Pos. 2</strong></td>
+              <td>Situationsabhängig</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     SECTION 8: Relative Pronouns Declension
+============================================================ -->
+<div class="section" id="s8">
+  <div class="section-header no-break">
+    <div class="section-num">8</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Relative Pronouns Declension</div>
+      <div class="section-title-de">Deklination der Relativpronomen</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <!-- EN -->
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+
+      <p class="content-text" style="font-size:0.88em;">Relative clauses are introduced by relative pronouns that must agree with the noun they refer to (the <strong>antecedent</strong>) in <em>gender</em> and <em>number</em>. The <strong>case</strong> is determined by the pronoun's grammatical function <em>within</em> the relative clause.</p>
+
+      <div class="table-wrap no-break">
+        <table class="vsn-table">
+          <thead>
+            <tr>
+              <th>Case (Fall)</th>
+              <th>Masculine</th>
+              <th>Feminine</th>
+              <th>Neuter</th>
+              <th>Plural</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="case-cell">Nominative</td>
+              <td class="rel-cell">der</td>
+              <td class="rel-cell">die</td>
+              <td class="rel-cell">das</td>
+              <td class="rel-cell">die</td>
+            </tr>
+            <tr>
+              <td class="case-cell">Genitive</td>
+              <td class="rel-cell highlight-cell">dessen</td>
+              <td class="rel-cell highlight-cell">deren</td>
+              <td class="rel-cell highlight-cell">dessen</td>
+              <td class="rel-cell highlight-cell">deren</td>
+            </tr>
+            <tr>
+              <td class="case-cell">Dative</td>
+              <td class="rel-cell">dem</td>
+              <td class="rel-cell">der</td>
+              <td class="rel-cell">dem</td>
+              <td class="rel-cell">denen</td>
+            </tr>
+            <tr>
+              <td class="case-cell">Accusative</td>
+              <td class="rel-cell">den</td>
+              <td class="rel-cell">die</td>
+              <td class="rel-cell">das</td>
+              <td class="rel-cell">die</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout-box callout-info no-break" style="margin-top:14px;">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#2980b9" stroke-width="2"/><path d="M12 16v-4" stroke="#2980b9" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="8" r="1" fill="#2980b9"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Note on Welcher/Welche/Welches</div>
+          <div class="callout-text"><em>Welcher, welche, welches</em> can also be used as relative pronouns to avoid repetition, but they have <strong>no genitive form</strong> — you must use <code>dessen / deren</code> instead.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DE -->
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+
+      <p class="content-text" style="font-size:0.88em;">Relativsätze werden durch Relativpronomen eingeleitet. Das Pronomen passt sich in <em>Numerus</em> (Einzahl/Mehrzahl) und <em>Genus</em> (männlich, weiblich, sächlich) an das Bezugswort im Hauptsatz an. Der <strong>Kasus</strong> hängt von der Funktion des Pronomens <em>innerhalb</em> des Relativsatzes ab.</p>
+
+      <div class="table-wrap no-break">
+        <table class="vsn-table">
+          <thead>
+            <tr>
+              <th>Kasus (Fall)</th>
+              <th>Maskulin</th>
+              <th>Feminin</th>
+              <th>Neutral</th>
+              <th>Plural</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="case-cell">Nominativ</td>
+              <td class="rel-cell">der</td>
+              <td class="rel-cell">die</td>
+              <td class="rel-cell">das</td>
+              <td class="rel-cell">die</td>
+            </tr>
+            <tr>
+              <td class="case-cell">Genitiv</td>
+              <td class="rel-cell highlight-cell">dessen</td>
+              <td class="rel-cell highlight-cell">deren</td>
+              <td class="rel-cell highlight-cell">dessen</td>
+              <td class="rel-cell highlight-cell">deren</td>
+            </tr>
+            <tr>
+              <td class="case-cell">Dativ</td>
+              <td class="rel-cell">dem</td>
+              <td class="rel-cell">der</td>
+              <td class="rel-cell">dem</td>
+              <td class="rel-cell">denen</td>
+            </tr>
+            <tr>
+              <td class="case-cell">Akkusativ</td>
+              <td class="rel-cell">den</td>
+              <td class="rel-cell">die</td>
+              <td class="rel-cell">das</td>
+              <td class="rel-cell">die</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout-box callout-info no-break" style="margin-top:14px;">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#2980b9" stroke-width="2"/><path d="M12 16v-4" stroke="#2980b9" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="8" r="1" fill="#2980b9"/></svg>
+        <div class="callout-content">
+          <div class="callout-label">Hinweis zu Welcher/Welche/Welches</div>
+          <div class="callout-text">Alternativ können auch <em>welcher, welche, welches</em> verwendet werden, um Wortwiederholungen zu vermeiden. Diese haben jedoch <strong>keine eigene Genitivform</strong> — hier muss auf <code>dessen / deren</code> zurückgegriffen werden.</div>
+        </div>
+      </div>
+
+      <!-- Quick reference: how to determine case -->
+      <div style="margin-top:16px;padding:14px;background:var(--vsn-light-bg);border-radius:var(--radius);border:1px solid var(--vsn-border);">
+        <div style="font-size:0.72em;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--vsn-muted);margin-bottom:8px;">Wie bestimme ich den Kasus?</div>
+        <ol style="padding-left:18px;font-size:0.85em;line-height:1.7;">
+          <li>Finde das <strong>Bezugswort</strong> (Nomen im Hauptsatz).</li>
+          <li>Das gibt <strong>Genus &amp; Numerus</strong> vor.</li>
+          <li>Bestimme die <strong>Funktion</strong> des Relativpronomens im Nebensatz (Subjekt, Objekt, …).</li>
+          <li>Daraus ergibt sich der <strong>Kasus</strong>.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer bar -->
+  <div style="margin-top:40px;padding:16px 20px;background:var(--vsn-primary);border-radius:var(--radius);display:flex;justify-content:space-between;align-items:center;page-break-inside:avoid;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <img src="assets/VSN_new.png" alt="VSN" style="height:28px;filter:brightness(0) invert(1);opacity:0.9;">
+      <div style="color:rgba(255,255,255,0.7);font-size:0.8em;">Deutsche Grammatik — Satzgefüge &amp; Nebensätze</div>
+    </div>
+    <div style="color:var(--vsn-secondary);font-size:0.8em;font-weight:700;">1IBK · LZK 15.04.2026</div>
+  </div>
+</div>
+
+</body>
+</html>
