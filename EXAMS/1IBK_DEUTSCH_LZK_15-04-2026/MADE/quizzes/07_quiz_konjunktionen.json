@@ -1,0 +1,110 @@
+{
+  "quizzes": [
+    {
+      "language": "de",
+      "title": "Topic 7: Konjunktionen",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "text": "Welche Funktion haben Konjunktionen im Satz?",
+          "options": [
+            "Sie ersetzen Nomen.",
+            "Sie konjugieren Verben.",
+            "Sie sind Bindewörter, die einzelne Wörter, Wortgruppen oder Sätze verbinden.",
+            "Sie stehen immer am Satzende."
+          ],
+          "correctAnswer": "Sie sind Bindewörter, die einzelne Wörter, Wortgruppen oder Sätze verbinden.",
+          "points": 10,
+          "topic": "konjunktion-funktion"
+        },
+        {
+          "type": "true-false",
+          "text": "Unterordnende Konjunktionen verändern die Wortstellung nicht.",
+          "correctAnswer": "False",
+          "points": 5,
+          "topic": "unterordnend-wortstellung-falsch"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Was bewirken unterordnende Konjunktionen (Subjunktionen) in einem Nebensatz?",
+          "options": [
+            "Das Subjekt rutscht ans Satzende.",
+            "Das konjugierte Verb rutscht an die 2. Stelle.",
+            "Das konjugierte Verb rutscht an das Satzende (letzte Stelle).",
+            "Das Verb wird in den Infinitiv gesetzt."
+          ],
+          "correctAnswer": "Das konjugierte Verb rutscht an das Satzende (letzte Stelle).",
+          "points": 15,
+          "topic": "subjunktion-effekt"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Welche der folgenden Gruppen enthält nur nebenordnende Konjunktionen?",
+          "options": [
+            "weil, dass, obwohl, wenn",
+            "und, oder, aber, denn",
+            "bevor, nachdem, während",
+            "ob, falls, damit"
+          ],
+          "correctAnswer": "und, oder, aber, denn",
+          "points": 10,
+          "topic": "nebenordnend-beispiele"
+        },
+        {
+          "type": "true-false",
+          "text": "Vor einer unterordnenden Konjunktion (wie 'weil' oder 'dass') steht immer ein Komma.",
+          "correctAnswer": "True",
+          "points": 5,
+          "topic": "komma-unterordnend"
+        },
+        {
+          "type": "open-ended",
+          "text": "Erklären Sie den Unterschied in der Wortstellung nach einer 'unterordnenden' und einer 'nebenordnenden' Konjunktion.",
+          "correctAnswer": "Unterordnende Konjunktionen zwingen das konjugierte Verb im folgenden Satz ans Satzende. Nebenordnende Konjunktionen verändern die Wortstellung nicht, das Verb bleibt an 2. Stelle (Subjekt - Verb - Objekt).",
+          "points": 20,
+          "topic": "vergleich-wortstellung"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "In welchem Satz liegt eine nebenordnende Konjunktion vor?",
+          "options": [
+            "Ich bleibe zu Hause, weil es regnet.",
+            "Es regnet, aber wir gehen trotzdem spazieren.",
+            "Er lacht, obwohl er traurig ist.",
+            "Frag ihn, ob er Zeit hat."
+          ],
+          "correctAnswer": "Es regnet, aber wir gehen trotzdem spazieren.",
+          "points": 10,
+          "topic": "nebenordnend-erkennen"
+        },
+        {
+          "type": "true-false",
+          "text": "Die Wörter 'sondern' und 'doch' zählen zu den unterordnenden Konjunktionen.",
+          "correctAnswer": "False",
+          "points": 5,
+          "topic": "sondern-doch"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Welche Konjunktion leitet hier den Nebensatz ein? 'Er fragte, ob der Test morgen stattfindet.'",
+          "options": [
+            "ob",
+            "Er",
+            "stattfindet",
+            "morgen"
+          ],
+          "correctAnswer": "ob",
+          "points": 10,
+          "topic": "konjunktion-identifizieren"
+        },
+        {
+          "type": "true-false",
+          "text": "Nebenordnende Konjunktionen verbinden meist gleichrangige Sätze, z. B. zwei Hauptsätze.",
+          "correctAnswer": "True",
+          "points": 5,
+          "topic": "nebenordnend-gleichrangig"
+        }
+      ]
+    }
+  ]
+}

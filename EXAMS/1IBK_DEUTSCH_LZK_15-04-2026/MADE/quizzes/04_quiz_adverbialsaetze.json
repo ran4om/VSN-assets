@@ -1,0 +1,116 @@
+{
+  "quizzes": [
+    {
+      "language": "de",
+      "title": "Topic 4: Adverbialsätze (Umstandssätze)",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "text": "Wie nennt man einen Adverbialsatz, der einen Grund (Warum?) angibt?",
+          "options": [
+            "Lokalsatz",
+            "Temporalsatz",
+            "Kausalsatz",
+            "Modalsatz"
+          ],
+          "correctAnswer": "Kausalsatz",
+          "points": 10,
+          "topic": "kausalsatz"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Welche Konjunktionen leiten typischerweise einen Temporalsatz ein?",
+          "options": [
+            "als, bevor, nachdem, während",
+            "weil, da",
+            "damit, um zu",
+            "obwohl, obgleich"
+          ],
+          "correctAnswer": "als, bevor, nachdem, während",
+          "points": 10,
+          "topic": "temporalsatz"
+        },
+        {
+          "type": "true-false",
+          "text": "Ein Konsekutivsatz beschreibt die Folge (Konsequenz) aus dem Hauptsatz.",
+          "correctAnswer": "True",
+          "points": 5,
+          "topic": "konsekutivsatz"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Welcher Nebensatz wird mit der Frage 'Unter welcher Bedingung?' erfragt?",
+          "options": [
+            "Konzessivsatz",
+            "Konditionalsatz",
+            "Finalsatz",
+            "Modalsatz"
+          ],
+          "correctAnswer": "Konditionalsatz",
+          "points": 10,
+          "topic": "konditionalsatz"
+        },
+        {
+          "type": "true-false",
+          "text": "Ein Konzessivsatz (Trotz welchen Umstands?) wird oft mit der Konjunktion 'obwohl' eingeleitet.",
+          "correctAnswer": "True",
+          "points": 5,
+          "topic": "konzessivsatz"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Was für ein Satz liegt vor: 'Ich muss mich beeilen, damit ich pünktlich erscheine.'?",
+          "options": [
+            "Temporalsatz",
+            "Adversativsatz",
+            "Finalsatz",
+            "Kausalsatz"
+          ],
+          "correctAnswer": "Finalsatz",
+          "points": 15,
+          "topic": "finalsatz"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "Wie nennt man den Satz, der mit 'indem' oder 'als ob' gebildet wird und nach der Art und Weise (Wie?) fragt?",
+          "options": [
+            "Lokalsatz",
+            "Modalsatz",
+            "Adversativsatz",
+            "Konsekutivsatz"
+          ],
+          "correctAnswer": "Modalsatz",
+          "points": 10,
+          "topic": "modalsatz"
+        },
+        {
+          "type": "open-ended",
+          "text": "Erklären Sie, was ein Adversativsatz ist und geben Sie zur Einleitung eine typische Konjunktion an.",
+          "correctAnswer": "Ein Adversativsatz stellt einen Gegensatz zum Hauptsatz dar (Im Gegensatz wozu?). Typische Einleitungen sind 'während' (im adversativen Sinne), 'wohingegen' oder 'anstatt dass'.",
+          "points": 20,
+          "topic": "adversativsatz"
+        },
+        {
+          "type": "true-false",
+          "text": "Der Lokalsatz fragt nach dem Zweck oder der Absicht (Wozu?).",
+          "correctAnswer": "False",
+          "points": 5,
+          "topic": "lokalsatz-falsch"
+        },
+        {
+          "type": "multiple-choice",
+          "text": "'Sie beleidigte ihn so sehr, dass er das Lokal verließ.' ist ein...",
+          "options": [
+            "Kausalsatz",
+            "Konsekutivsatz",
+            "Finalsatz",
+            "Modalsatz"
+          ],
+          "correctAnswer": "Konsekutivsatz",
+          "points": 15,
+          "topic": "konsekutivsatz-beispiel"
+        }
+      ]
+    }
+  ]
+}
