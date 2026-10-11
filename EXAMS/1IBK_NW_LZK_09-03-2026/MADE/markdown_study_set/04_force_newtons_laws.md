@@ -14,15 +14,14 @@
 
 ## English
 
-[DEFINITION] A **force (Kraft)** is a vector quantity recognised by its effects: it can change a body’s speed or direction (acceleration) or deform it. The mechanics equation is F=ma; force is measured in newtons: 1 N=1 kg · m/s². A body is matter with mass and occupies space.
+> **DEFINITION:** A **force (Kraft)** is a vector quantity recognised by its effects: it can change a body’s speed or direction (acceleration) or deform it. The mechanics equation is F=ma; force is measured in newtons: 1 N=1 kg · m/s². A body is matter with mass and occupies space.
 
-[INFO] Greater force produces greater acceleration for fixed mass; greater mass needs more force for the same acceleration. Acceleration includes any change in velocity, including direction change in circular motion. Force arrows show direction and, to scale, magnitude. Tools and machines (force converters) transfer or amplify force, e.g. pliers (leverage), cranes/excavators and compactors. The book’s force effects are acceleration, slowing (negative acceleration), direction change and deformation.
+> **INFO:** Greater force produces greater acceleration for fixed mass; greater mass needs more force for the same acceleration. Acceleration includes any change in velocity, including direction change in circular motion. Force arrows show direction and, to scale, magnitude. Tools and machines (force converters) transfer or amplify force, e.g. pliers (leverage), cranes/excavators and compactors. The book’s force effects are acceleration, slowing (negative acceleration), direction change and deformation.
 
-[DEFINITION] **Newton’s first law (inertia):** a body remains at rest or in uniform straight-line motion unless a net external force acts on it. **Second law:** net force causes acceleration in its direction, proportional to force and inversely proportional to mass; F=ma. **Third law (action–reaction):** interacting bodies exert equal and opposite forces on one another; they act on different bodies and therefore do not cancel each other on one body.
+> **DEFINITION:** **Newton’s first law (inertia):** a body remains at rest or in uniform straight-line motion unless a net external force acts on it. **Second law:** net force causes acceleration in its direction, proportional to force and inversely proportional to mass; F=ma. **Third law (action–reaction):** interacting bodies exert equal and opposite forces on one another; they act on different bodies and therefore do not cancel each other on one body.
 
-[DIAGRAM SUGGESTION: Show force arrows for speeding up, braking, turning and deformation; add equal-opposite action/reaction arrows on two interacting bodies.]
-
-[TIP] Convert the requested quantity algebraically: F=ma, a=F/m, m=F/a. Check that kg and m/s² give N. A “heavier” body means larger mass in physics, not necessarily a larger force in every location.
+📊 **Picture it:** Show force arrows for speeding up, braking, turning and deformation; add equal-opposite action/reaction arrows on two interacting bodies.
+⚡ **EXAM TIP:** Convert the requested quantity algebraically: F=ma, a=F/m, m=F/a. Check that kg and m/s² give N. A “heavier” body means larger mass in physics, not necessarily a larger force in every location.
 
 **Worked exercises (pp. 103–105; notes):**
 - **Ü 3.23 Bowling:** the bowler applies a force to the ball; the ball applies an equal opposite force to the hand. The ball’s motion changes; lane friction and gravity also act. The pins are pushed and move/deform. Different forces act on different bodies.
@@ -37,15 +36,14 @@
 
 ## Deutsch
 
-[DEFINITION] Eine **Kraft** ist eine vektorielle Größe, erkennbar an ihrer Wirkung: Sie kann Geschwindigkeit oder Richtung ändern (beschleunigen) oder einen Körper verformen. Grundgleichung der Mechanik: F=ma; Einheit Newton: 1 N=1 kg · m/s². Ein Körper besteht aus Materie, hat Masse und nimmt Raum ein.
+> **DEFINITION:** Eine **Kraft** ist eine vektorielle Größe, erkennbar an ihrer Wirkung: Sie kann Geschwindigkeit oder Richtung ändern (beschleunigen) oder einen Körper verformen. Grundgleichung der Mechanik: F=ma; Einheit Newton: 1 N=1 kg · m/s². Ein Körper besteht aus Materie, hat Masse und nimmt Raum ein.
 
-[INFO] Bei gleicher Masse bewirkt größere Kraft größere Beschleunigung; bei größerer Masse braucht man für gleiche Beschleunigung mehr Kraft. Beschleunigung bedeutet jede Änderung der Geschwindigkeit, auch eine Richtungsänderung bei Kreisbewegung. Kraftpfeile zeigen Richtung und maßstäblich die Größe. Werkzeuge und Maschinen (Kraftwandler) übertragen oder verstärken Kräfte: Zange (Hebel), Kran/Bagger, Müllpresse. Die Wirkungen im Buch sind Beschleunigen, Abbremsen (negative Beschleunigung), Richtungsänderung und Verformen.
+> **INFO:** Bei gleicher Masse bewirkt größere Kraft größere Beschleunigung; bei größerer Masse braucht man für gleiche Beschleunigung mehr Kraft. Beschleunigung bedeutet jede Änderung der Geschwindigkeit, auch eine Richtungsänderung bei Kreisbewegung. Kraftpfeile zeigen Richtung und maßstäblich die Größe. Werkzeuge und Maschinen (Kraftwandler) übertragen oder verstärken Kräfte: Zange (Hebel), Kran/Bagger, Müllpresse. Die Wirkungen im Buch sind Beschleunigen, Abbremsen (negative Beschleunigung), Richtungsänderung und Verformen.
 
-[DEFINITION] **1. Newtonsches Axiom (Trägheit):** Ein Körper bleibt in Ruhe oder gleichförmiger geradliniger Bewegung, solange keine resultierende äußere Kraft auf ihn wirkt. **2. Axiom:** Eine resultierende Kraft beschleunigt den Körper in Kraftrichtung; die Beschleunigung ist proportional zur Kraft und umgekehrt proportional zur Masse: F=ma. **3. Axiom (Wechselwirkung):** Zu jeder Aktion gibt es eine gleich große, entgegengesetzt gerichtete Reaktion. Die Kräfte wirken auf verschiedene Körper und heben einander daher nicht an einem einzelnen Körper auf.
+> **DEFINITION:** **1. Newtonsches Axiom (Trägheit):** Ein Körper bleibt in Ruhe oder gleichförmiger geradliniger Bewegung, solange keine resultierende äußere Kraft auf ihn wirkt. **2. Axiom:** Eine resultierende Kraft beschleunigt den Körper in Kraftrichtung; die Beschleunigung ist proportional zur Kraft und umgekehrt proportional zur Masse: F=ma. **3. Axiom (Wechselwirkung):** Zu jeder Aktion gibt es eine gleich große, entgegengesetzt gerichtete Reaktion. Die Kräfte wirken auf verschiedene Körper und heben einander daher nicht an einem einzelnen Körper auf.
 
-[DIAGRAM SUGGESTION: Kraftpfeile für Beschleunigen, Bremsen, Abbiegen und Verformen; zusätzlich gleich große Gegenpfeile auf zwei wechselwirkenden Körpern.]
-
-[TIP] Gesuchte Größe umstellen: F=ma, a=F/m, m=F/a. Mit kg und m/s² erhält man N. „Schwerer“ bedeutet in der Physik größere Masse; die Gewichtskraft kann sich je nach Ort ändern.
+📊 **Picture it:** Kraftpfeile für Beschleunigen, Bremsen, Abbiegen und Verformen; zusätzlich gleich große Gegenpfeile auf zwei wechselwirkenden Körpern.
+⚡ **EXAM TIP:** Gesuchte Größe umstellen: F=ma, a=F/m, m=F/a. Mit kg und m/s² erhält man N. „Schwerer“ bedeutet in der Physik größere Masse; die Gewichtskraft kann sich je nach Ort ändern.
 
 **Durchgerechnete Übungen (S. 103–105; Mitschrift):**
 - **Ü 3.23 Bowling:** Der Mensch übt eine Kraft auf die Kugel aus; die Kugel übt eine gleich große Gegenkraft auf die Hand aus. Die Bewegung der Kugel ändert sich; Reibung und Gravitation wirken ebenfalls. Die Kugel stößt Pins an. Kräftepaare wirken auf unterschiedliche Körper.

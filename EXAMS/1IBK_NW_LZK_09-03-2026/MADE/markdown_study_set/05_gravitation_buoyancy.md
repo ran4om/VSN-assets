@@ -14,15 +14,14 @@
 
 ## English
 
-[DEFINITION] **Gravitational force / weight force (Gravitationskraft, Schwerkraft, Gewichtskraft)** is attraction between masses. Earth’s gravity pulls bodies toward Earth’s centre. Near Earth’s surface, F_G=mg, with g=9.81 m/s²≈10 m/s²; F_G is in N and m in kg. Mass is an intrinsic property measured in kg; weight force depends on local gravitational acceleration and is measured in N.
+> **DEFINITION:** **Gravitational force / weight force (Gravitationskraft, Schwerkraft, Gewichtskraft)** is attraction between masses. Earth’s gravity pulls bodies toward Earth’s centre. Near Earth’s surface, F_G=mg, with g=9.81 m/s²≈10 m/s²; F_G is in N and m in kg. Mass is an intrinsic property measured in kg; weight force depends on local gravitational acceleration and is measured in N.
 
-[DEFINITION] **Buoyant force (Auftriebskraft)** acts opposite to gravity on a body in a liquid or gas. Archimedes’ principle states that it equals the weight of the displaced medium: F_A=ρ_{medium}V_{displaced}g=m_{displaced}g. Greater displaced volume or greater medium density gives greater buoyancy.
+> **DEFINITION:** **Buoyant force (Auftriebskraft)** acts opposite to gravity on a body in a liquid or gas. Archimedes’ principle states that it equals the weight of the displaced medium: F_A=ρ_{medium}V_{displaced}g=m_{displaced}g. Greater displaced volume or greater medium density gives greater buoyancy.
 
-[INFO] Floating/sinking compares F_A with F_G and body/medium densities: sink if F_A<F_G (body denser); neutral suspension if equal densities and forces; rise if F_A>F_G; a floating body at the surface has equilibrium forces and displaces enough fluid to balance its weight. A hot-air balloon rises because hot air inside is less dense than surrounding air. A submarine changes buoyancy by filling ballast spaces with water or air. A hydrometer floats deeper in lower-density liquid and its scale indicates density; at equilibrium F_A=F_G.
+> **INFO:** Floating/sinking compares F_A with F_G and body/medium densities: sink if F_A<F_G (body denser); neutral suspension if equal densities and forces; rise if F_A>F_G; a floating body at the surface has equilibrium forces and displaces enough fluid to balance its weight. A hot-air balloon rises because hot air inside is less dense than surrounding air. A submarine changes buoyancy by filling ballast spaces with water or air. A hydrometer floats deeper in lower-density liquid and its scale indicates density; at equilibrium F_A=F_G.
 
-[DIAGRAM SUGGESTION: Compare sink, neutral suspension, rise and surface float with force arrows and density inequalities; show displaced volume and an immersed hydrometer.]
-
-[TIP] Convert volume to m³ before using SI densities: 1 m³=1000 dm³=1 000 000 cm³=1 000 000 000 mm³; 1 dm³=1 L; 1 L=1000 ml. Use g≈10 when the exercise does. For a floating body, set F_A=F_G.
+📊 **Picture it:** Compare sink, neutral suspension, rise and surface float with force arrows and density inequalities; show displaced volume and an immersed hydrometer.
+⚡ **EXAM TIP:** Convert volume to m³ before using SI densities: 1 m³=1000 dm³=1 000 000 cm³=1 000 000 000 mm³; 1 dm³=1 L; 1 L=1000 ml. Use g≈10 when the exercise does. For a floating body, set F_A=F_G.
 
 **Worked exercises (pp. 107–116):**
 - **Ü 3.29:** research values vary slightly: Moon g≈1.62 m/s², Mars g≈3.71 m/s². To match Earth’s weight force for a person with Earth mass m_E, require m_Pg_P=m_Eg_E, so m_P=m_Eg_E/g_P. For m_E=60 kg and Earth g=9.81, equivalent mass would be about 363 kg on the Moon or 159 kg on Mars. Mass itself does not change; this is the mass needed there to produce the Earth weight-force reading.
@@ -44,15 +43,14 @@
 
 ## Deutsch
 
-[DEFINITION] **Gravitationskraft/Schwerkraft/Gewichtskraft** ist die Anziehung zwischen Massen. Die Erde zieht Körper zum Erdmittelpunkt. Nahe der Erdoberfläche gilt F_G=mg, mit g=9{,}81 m/s²≈10 m/s²; F_G in N, m in kg. Masse ist eine ortsunabhängige Eigenschaft in kg; Gewichtskraft hängt von der örtlichen Gravitationsbeschleunigung ab und wird in N gemessen.
+> **DEFINITION:** **Gravitationskraft/Schwerkraft/Gewichtskraft** ist die Anziehung zwischen Massen. Die Erde zieht Körper zum Erdmittelpunkt. Nahe der Erdoberfläche gilt F_G=mg, mit g=9{,}81 m/s²≈10 m/s²; F_G in N, m in kg. Masse ist eine ortsunabhängige Eigenschaft in kg; Gewichtskraft hängt von der örtlichen Gravitationsbeschleunigung ab und wird in N gemessen.
 
-[DEFINITION] Die **Auftriebskraft** wirkt in Flüssigkeiten und Gasen der Gewichtskraft entgegen. Nach dem archimedischen Prinzip entspricht sie der Gewichtskraft des verdrängten Mediums: F_A=ρ_{Medium}V_{verdrängt}g=m_{verdrängt}g. Je größer verdrängtes Volumen oder Mediendichte, desto größer der Auftrieb.
+> **DEFINITION:** Die **Auftriebskraft** wirkt in Flüssigkeiten und Gasen der Gewichtskraft entgegen. Nach dem archimedischen Prinzip entspricht sie der Gewichtskraft des verdrängten Mediums: F_A=ρ_{Medium}V_{verdrängt}g=m_{verdrängt}g. Je größer verdrängtes Volumen oder Mediendichte, desto größer der Auftrieb.
 
-[INFO] Sinken/Schweben/Steigen/Schwimmen ergibt sich aus dem Vergleich von F_A und F_G sowie Körper- und Mediendichte: Sinken bei F_A<F_G (Körper dichter); Schweben bei Gleichgewicht und gleicher Dichte; Steigen bei F_A>F_G; an der Oberfläche schwimmt ein Körper im Gleichgewicht und verdrängt so viel Flüssigkeit, dass deren Gewicht seinem eigenen entspricht. Ein Heißluftballon steigt, weil die heiße Innenluft weniger dicht als die Umgebungsluft ist. Ein U-Boot verändert den Auftrieb durch Füllen seiner Hohlräume mit Wasser oder Luft. Ein Aräometer taucht in einer Flüssigkeit kleinerer Dichte tiefer ein; im Gleichgewicht gilt F_A=F_G.
+> **INFO:** Sinken/Schweben/Steigen/Schwimmen ergibt sich aus dem Vergleich von F_A und F_G sowie Körper- und Mediendichte: Sinken bei F_A<F_G (Körper dichter); Schweben bei Gleichgewicht und gleicher Dichte; Steigen bei F_A>F_G; an der Oberfläche schwimmt ein Körper im Gleichgewicht und verdrängt so viel Flüssigkeit, dass deren Gewicht seinem eigenen entspricht. Ein Heißluftballon steigt, weil die heiße Innenluft weniger dicht als die Umgebungsluft ist. Ein U-Boot verändert den Auftrieb durch Füllen seiner Hohlräume mit Wasser oder Luft. Ein Aräometer taucht in einer Flüssigkeit kleinerer Dichte tiefer ein; im Gleichgewicht gilt F_A=F_G.
 
-[DIAGRAM SUGGESTION: Sinken, Schweben, Steigen und Schwimmen mit Kraftpfeilen und Dichtevergleichen darstellen; zusätzlich verdrängtes Volumen und Aräometer zeigen.]
-
-[TIP] Vor der Rechnung Volumen in m³ umrechnen: 1 m³=1000 dm³=1 000 000 cm³=1 000 000 000 mm³; 1 dm³=1 L; 1 L=1000 ml. Das Buch rechnet oft mit g≈10. Bei schwimmenden Körpern F_A=F_G setzen.
+📊 **Picture it:** Sinken, Schweben, Steigen und Schwimmen mit Kraftpfeilen und Dichtevergleichen darstellen; zusätzlich verdrängtes Volumen und Aräometer zeigen.
+⚡ **EXAM TIP:** Vor der Rechnung Volumen in m³ umrechnen: 1 m³=1000 dm³=1 000 000 cm³=1 000 000 000 mm³; 1 dm³=1 L; 1 L=1000 ml. Das Buch rechnet oft mit g≈10. Bei schwimmenden Körpern F_A=F_G setzen.
 
 **Durchgerechnete Übungen (S. 107–116):**
 - **Ü 3.29:** Recherchewerte schwanken leicht: Mond g≈1{,}62 m/s², Mars g≈3{,}71 m/s². Für gleiche Gewichtskraft wie auf der Erde gilt m_Pg_P=m_Eg_E, somit m_P=m_Eg_E/g_P. Für m_E=60 kg und g_E=9{,}81: erforderliche Masse etwa 363 kg am Mond bzw. 159 kg am Mars. Die Masse einer Person bleibt gleich; berechnet wird die Masse, die dort dieselbe Gewichtskraft erzeugen würde.

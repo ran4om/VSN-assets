@@ -14,7 +14,7 @@
 
 ## English
 
-[DEFINITION] A **state of matter (Aggregatzustand)** describes the form and volume a substance has under given conditions. The state depends mainly on temperature and pressure; adding or removing heat can change it.
+> **DEFINITION:** A **state of matter (Aggregatzustand)** describes the form and volume a substance has under given conditions. The state depends mainly on temperature and pressure; adding or removing heat can change it.
 
 | State | Shape | Volume | Particle picture |
 |---|---|---|---|
@@ -23,10 +23,9 @@
 | Gas (gasförmig) | adapts to container | variable; fills container | particles far apart and moving freely |
 | Plasma (plasmaförmig) | variable | variable | ionised gas; charged particles |
 
-[INFO] Changes of state: solid → liquid is **melting (Schmelzen)**; liquid → solid is **freezing/solidifying (Erstarren)**; liquid → gas is **vaporisation (Verdampfen)**; gas → liquid is **condensation (Kondensieren)**; solid → gas is **sublimation (Sublimieren)**; gas → solid is **deposition (Resublimieren)**. Temperature and pressure affect transition temperatures.
+> **INFO:** Changes of state: solid → liquid is **melting (Schmelzen)**; liquid → solid is **freezing/solidifying (Erstarren)**; liquid → gas is **vaporisation (Verdampfen)**; gas → liquid is **condensation (Kondensieren)**; solid → gas is **sublimation (Sublimieren)**; gas → solid is **deposition (Resublimieren)**. Temperature and pressure affect transition temperatures.
 
-[DIAGRAM SUGGESTION: Draw the four states with shape/volume labels and a circular state-transition diagram with all six named arrows; show particle spacing and ordering.]
-
+📊 **Picture it:** Draw the four states with shape/volume labels and a circular state-transition diagram with all six named arrows; show particle spacing and ordering.
 | Substance | Melting point (°C) | Boiling point (°C) |
 |---|---:|---:|
 | Helium [He] | — | −269 |
@@ -35,9 +34,9 @@
 | Lead [Pb] | 327 | 1749 |
 | Tungsten [W] | 3422 | 5555 |
 
-[INFO] At normal pressure on Earth’s surface (~1 bar), helium does not solidify; liquid helium is an important coolant. Water at normal air pressure, p_0=1013 hPa, melts at 0^°C and boils at 100^°C. These thresholds apply at that pressure. In ice, water molecules form an ordered hexagonal structure; in water they are close but mobile, and in vapour they move freely and rapidly.
+> **INFO:** At normal pressure on Earth’s surface (~1 bar), helium does not solidify; liquid helium is an important coolant. Water at normal air pressure, p_0=1013 hPa, melts at 0^°C and boils at 100^°C. These thresholds apply at that pressure. In ice, water molecules form an ordered hexagonal structure; in water they are close but mobile, and in vapour they move freely and rapidly.
 
-[TIP] Distinguish *boiling* from the general gas state: the state depends on both temperature and pressure. At exactly a phase-transition temperature, two phases may coexist; use the textbook’s stated conditions when classifying.
+⚡ **EXAM TIP:** Distinguish *boiling* from the general gas state: the state depends on both temperature and pressure. At exactly a phase-transition temperature, two phases may coexist; use the textbook’s stated conditions when classifying.
 
 **Worked exercises (book p. 99):**
 - **Ü 3.18 Water:** at −30°C water is solid; at 20°C it is liquid; at 100°C it is at its normal-pressure boiling point (liquid and vapour can coexist during boiling); at 130°C it is gaseous, assuming normal pressure.
@@ -47,7 +46,7 @@
 
 ## Deutsch
 
-[DEFINITION] Ein **Aggregatzustand** beschreibt, welche Form und welches Volumen ein Stoff unter bestimmten Bedingungen besitzt. Der Zustand hängt vor allem von Temperatur und Druck ab; durch Zufuhr oder Entzug von Wärme kann er verändert werden.
+> **DEFINITION:** Ein **Aggregatzustand** beschreibt, welche Form und welches Volumen ein Stoff unter bestimmten Bedingungen besitzt. Der Zustand hängt vor allem von Temperatur und Druck ab; durch Zufuhr oder Entzug von Wärme kann er verändert werden.
 
 | Zustand | Form | Volumen | Teilchenbild |
 |---|---|---|---|
@@ -56,10 +55,9 @@
 | Gasförmig | passt sich dem Gefäß an | variabel; füllt das Gefäß | Teilchen weit auseinander, frei und schnell beweglich |
 | Plasmaförmig | variabel | variabel | ionisiertes Gas mit geladenen Teilchen |
 
-[INFO] Zustandsübergänge: fest → flüssig = **Schmelzen**; flüssig → fest = **Erstarren**; flüssig → gasförmig = **Verdampfen**; gasförmig → flüssig = **Kondensieren**; fest → gasförmig = **Sublimieren**; gasförmig → fest = **Resublimieren**. Temperatur und Druck beeinflussen die Übergangstemperaturen.
+> **INFO:** Zustandsübergänge: fest → flüssig = **Schmelzen**; flüssig → fest = **Erstarren**; flüssig → gasförmig = **Verdampfen**; gasförmig → flüssig = **Kondensieren**; fest → gasförmig = **Sublimieren**; gasförmig → fest = **Resublimieren**. Temperatur und Druck beeinflussen die Übergangstemperaturen.
 
-[DIAGRAM SUGGESTION: Vier Aggregatzustände mit Form- und Volumenangaben sowie ein Kreislaufdiagramm mit allen sechs Übergängen und Teilchenbildern.]
-
+📊 **Picture it:** Vier Aggregatzustände mit Form- und Volumenangaben sowie ein Kreislaufdiagramm mit allen sechs Übergängen und Teilchenbildern.
 | Stoff | Schmelzpunkt (°C) | Siedepunkt (°C) |
 |---|---:|---:|
 | Helium [He] | — | −269 |
@@ -68,9 +66,9 @@
 | Blei [Pb] | 327 | 1749 |
 | Wolfram [W] | 3422 | 5555 |
 
-[INFO] Helium wird bei normalem Druck an der Erdoberfläche (~1 bar) als einziges Element nicht fest; flüssiges Helium ist ein wichtiges Kühlmittel. Wasser schmilzt bei normalem Luftdruck p_0=1013 hPa bei 0^°C und siedet bei 100^°C. Diese Werte gelten bei diesem Druck. Im Eis bilden Wassermoleküle eine geordnete hexagonale Struktur; im flüssigen Wasser sind sie nahe beieinander und beweglich, im Wasserdampf bewegen sie sich frei und schnell.
+> **INFO:** Helium wird bei normalem Druck an der Erdoberfläche (~1 bar) als einziges Element nicht fest; flüssiges Helium ist ein wichtiges Kühlmittel. Wasser schmilzt bei normalem Luftdruck p_0=1013 hPa bei 0^°C und siedet bei 100^°C. Diese Werte gelten bei diesem Druck. Im Eis bilden Wassermoleküle eine geordnete hexagonale Struktur; im flüssigen Wasser sind sie nahe beieinander und beweglich, im Wasserdampf bewegen sie sich frei und schnell.
 
-[TIP] Sieden ist nicht dasselbe wie der allgemeine gasförmige Zustand: Der Zustand hängt von Temperatur und Druck ab. Am Übergangspunkt können zwei Phasen gleichzeitig vorkommen; für Einordnungen gelten die im Buch genannten Bedingungen.
+⚡ **EXAM TIP:** Sieden ist nicht dasselbe wie der allgemeine gasförmige Zustand: Der Zustand hängt von Temperatur und Druck ab. Am Übergangspunkt können zwei Phasen gleichzeitig vorkommen; für Einordnungen gelten die im Buch genannten Bedingungen.
 
 **Durchgerechnete Übungen (Buch S. 99):**
 - **Ü 3.18 Wasser:** Bei −30°C ist Wasser fest; bei 20°C flüssig; bei 100°C liegt es am Siedepunkt (beim Sieden können Flüssigkeit und Dampf gleichzeitig vorkommen); bei 130°C ist es bei normalem Druck gasförmig.

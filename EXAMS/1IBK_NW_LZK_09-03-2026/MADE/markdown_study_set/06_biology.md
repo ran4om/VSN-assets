@@ -14,13 +14,13 @@
 
 ## English
 
-[DEFINITION] **Biology (Biologie)** is the natural-science discipline that studies living things. The word combines Greek *bíos* (“life”) and *-logie* (“study/teaching”). Living things are called **organisms (Organismen)**; biology studies their structure, development and relationships with their environment.
+> **DEFINITION:** **Biology (Biologie)** is the natural-science discipline that studies living things. The word combines Greek *bíos* (“life”) and *-logie* (“study/teaching”). Living things are called **organisms (Organismen)**; biology studies their structure, development and relationships with their environment.
 
-[INFO] Important subdisciplines include **zoology (Zoologie)**—animals; **botany (Botanik)**—plants; **microbiology (Mikrobiologie)**—microorganisms; and **ecology (Ökologie)**—relationships among organisms and their environment. Class notes additionally name anthropology/human biology, genetics/heredity and DNA, and palaeontology/fossils and extinct organisms. Methods include describing appearance, observing behaviour, microscopy and chemical analysis.
+> **INFO:** Important subdisciplines include **zoology (Zoologie)**—animals; **botany (Botanik)**—plants; **microbiology (Mikrobiologie)**—microorganisms; and **ecology (Ökologie)**—relationships among organisms and their environment. Class notes additionally name anthropology/human biology, genetics/heredity and DNA, and palaeontology/fossils and extinct organisms. Methods include describing appearance, observing behaviour, microscopy and chemical analysis.
 
-[DEFINITION] **Binomial nomenclature (binäre Nomenklatur)** gives an organism a two-part scientific name: the first word is the **genus (Gattung)** and the second the **species epithet (Art)**. Example: *Homo sapiens*—*Homo* is the genus (“human”), *sapiens* the species epithet (“wise”); *Vibrio cholerae* has genus *Vibrio* and epithet *cholerae*. If the species is unknown, use *sp.* after the genus, e.g. *Vibrio* sp. Scientific names are written in italics (or underlined when handwritten), with genus capitalised and epithet lower-case.
+> **DEFINITION:** **Binomial nomenclature (binäre Nomenklatur)** gives an organism a two-part scientific name: the first word is the **genus (Gattung)** and the second the **species epithet (Art)**. Example: *Homo sapiens*—*Homo* is the genus (“human”), *sapiens* the species epithet (“wise”); *Vibrio cholerae* has genus *Vibrio* and epithet *cholerae*. If the species is unknown, use *sp.* after the genus, e.g. *Vibrio* sp. Scientific names are written in italics (or underlined when handwritten), with genus capitalised and epithet lower-case.
 
-[DEFINITION] **Characteristics of life (Kennzeichen des Lebens)** distinguish organisms from inanimate matter: cellular organisation, metabolism, responsiveness to stimuli, independent reproduction and movement. Notes also identify growth as a characteristic.
+> **DEFINITION:** **Characteristics of life (Kennzeichen des Lebens)** distinguish organisms from inanimate matter: cellular organisation, metabolism, responsiveness to stimuli, independent reproduction and movement. Notes also identify growth as a characteristic.
 
 | Characteristic | Meaning / example |
 |---|---|
@@ -31,21 +31,20 @@
 | Movement (Bewegung) | All organisms show movement; plant growth toward light is an example. Some movements are microscopic. |
 | Growth (Wachstum) | In multicellular organisms, growth occurs through cell division. |
 
-[DIAGRAM SUGGESTION: Make a comparison table of zoology, botany, microbiology and ecology with their study objects and examples; beside it, place the five textbook life characteristics plus growth from class notes.]
-
-[TIP] Movement alone does not prove something is alive: a toy can move mechanically. Look for the full set of life characteristics. A real elephant and toy elephant may look similar, but only the organism has cells, metabolism, growth, stimulus responses and reproduction.
+📊 **Picture it:** Make a comparison table of zoology, botany, microbiology and ecology with their study objects and examples; beside it, place the five textbook life characteristics plus growth from class notes.
+⚡ **EXAM TIP:** Movement alone does not prove something is alive: a toy can move mechanically. Look for the full set of life characteristics. A real elephant and toy elephant may look similar, but only the organism has cells, metabolism, growth, stimulus responses and reproduction.
 
 **Worked exercise Ü 4.1 (p. 134):** propose distinguishing features for living and non-living examples, then compare with the criteria on p. 135. A real elephant is cellular, metabolises food/water and oxygen, grows, responds to stimuli, reproduces and moves; a toy elephant does none of these biologically, even if pushed. No single visible trait such as movement or appearance is sufficient by itself.
 
 ## Deutsch
 
-[DEFINITION] **Biologie** ist jener Teilbereich der Naturwissenschaften, der sich mit Lebewesen beschäftigt. Das Wort setzt sich aus griechisch *bíos* („Leben“) und *-logie* („Lehre“) zusammen. Lebewesen heißen fachsprachlich **Organismen**; untersucht werden etwa ihr Aufbau, ihre Entwicklung und ihre Beziehungen zur Umwelt.
+> **DEFINITION:** **Biologie** ist jener Teilbereich der Naturwissenschaften, der sich mit Lebewesen beschäftigt. Das Wort setzt sich aus griechisch *bíos* („Leben“) und *-logie* („Lehre“) zusammen. Lebewesen heißen fachsprachlich **Organismen**; untersucht werden etwa ihr Aufbau, ihre Entwicklung und ihre Beziehungen zur Umwelt.
 
-[INFO] Wichtige Teilgebiete: **Zoologie** – Tiere; **Botanik** – Pflanzen; **Mikrobiologie** – Kleinstlebewesen; **Ökologie** – Beziehungen zwischen Organismen und Umwelt. Die Mitschrift ergänzt Anthropologie/Humanbiologie, Genetik/Vererbung und DNA sowie Paläontologie/Fossilien und ausgestorbene Lebewesen. Methoden sind Beschreibung des Aussehens, Beobachtung des Verhaltens, mikroskopische und chemische Untersuchungen.
+> **INFO:** Wichtige Teilgebiete: **Zoologie** – Tiere; **Botanik** – Pflanzen; **Mikrobiologie** – Kleinstlebewesen; **Ökologie** – Beziehungen zwischen Organismen und Umwelt. Die Mitschrift ergänzt Anthropologie/Humanbiologie, Genetik/Vererbung und DNA sowie Paläontologie/Fossilien und ausgestorbene Lebewesen. Methoden sind Beschreibung des Aussehens, Beobachtung des Verhaltens, mikroskopische und chemische Untersuchungen.
 
-[DEFINITION] Die **binäre Nomenklatur** gibt Organismen einen zweiteiligen wissenschaftlichen Namen: Der erste Teil ist die **Gattung**, der zweite das **Art-Epitheton**. Beispiel *Homo sapiens*: *Homo* ist die Gattung („Mensch“), *sapiens* das Art-Epitheton („weise“); bei *Vibrio cholerae* ist *Vibrio* die Gattung und *cholerae* das Epitheton. Ist die Art nicht bekannt, schreibt man *sp.* nach der Gattung, z. B. *Vibrio* sp. Wissenschaftliche Namen werden kursiv geschrieben (handschriftlich unterstrichen), die Gattung groß-, das Epitheton kleingeschrieben.
+> **DEFINITION:** Die **binäre Nomenklatur** gibt Organismen einen zweiteiligen wissenschaftlichen Namen: Der erste Teil ist die **Gattung**, der zweite das **Art-Epitheton**. Beispiel *Homo sapiens*: *Homo* ist die Gattung („Mensch“), *sapiens* das Art-Epitheton („weise“); bei *Vibrio cholerae* ist *Vibrio* die Gattung und *cholerae* das Epitheton. Ist die Art nicht bekannt, schreibt man *sp.* nach der Gattung, z. B. *Vibrio* sp. Wissenschaftliche Namen werden kursiv geschrieben (handschriftlich unterstrichen), die Gattung groß-, das Epitheton kleingeschrieben.
 
-[DEFINITION] **Kennzeichen des Lebens** unterscheiden Organismen von unbelebter Materie: zellulärer Aufbau, Stoffwechsel, Reizbarkeit, eigenständige Fortpflanzung und Bewegung. Die Mitschrift nennt zusätzlich Wachstum.
+> **DEFINITION:** **Kennzeichen des Lebens** unterscheiden Organismen von unbelebter Materie: zellulärer Aufbau, Stoffwechsel, Reizbarkeit, eigenständige Fortpflanzung und Bewegung. Die Mitschrift nennt zusätzlich Wachstum.
 
 | Kennzeichen | Bedeutung / Beispiel |
 |---|---|
@@ -56,9 +55,8 @@
 | Bewegung | Alle Lebewesen zeigen Bewegung; Pflanzenbewegung zum Licht ist ein Beispiel. Manche Bewegungen sieht man nur mikroskopisch. |
 | Wachstum | Bei Vielzellern erfolgt Wachstum durch Zellteilung. |
 
-[DIAGRAM SUGGESTION: Zoologie, Botanik, Mikrobiologie und Ökologie mit Untersuchungsgegenstand und Beispiel gegenüberstellen; daneben fünf Buch-Kennzeichen plus Wachstum aus der Mitschrift aufführen.]
-
-[TIP] Bewegung allein beweist nicht, dass etwas lebt: Auch ein Spielzeug kann mechanisch bewegt werden. Prüfe mehrere Kennzeichen des Lebens. Echter Elefant und Spielzeugelefant können ähnlich aussehen, doch nur der Organismus hat Zellen, Stoffwechsel, Wachstum, Reizreaktionen, Fortpflanzung und Bewegungsvorgänge.
+📊 **Picture it:** Zoologie, Botanik, Mikrobiologie und Ökologie mit Untersuchungsgegenstand und Beispiel gegenüberstellen; daneben fünf Buch-Kennzeichen plus Wachstum aus der Mitschrift aufführen.
+⚡ **EXAM TIP:** Bewegung allein beweist nicht, dass etwas lebt: Auch ein Spielzeug kann mechanisch bewegt werden. Prüfe mehrere Kennzeichen des Lebens. Echter Elefant und Spielzeugelefant können ähnlich aussehen, doch nur der Organismus hat Zellen, Stoffwechsel, Wachstum, Reizreaktionen, Fortpflanzung und Bewegungsvorgänge.
 
 **Durchgerechnete Übung Ü 4.1 (S. 134):** Merkmale für lebendig/unbelebt sammeln und mit den Kriterien auf S. 135 vergleichen. Ein echter Elefant besteht aus Zellen, verarbeitet Nahrung/Wasser und Sauerstoff, wächst, reagiert auf Reize, pflanzt sich fort und bewegt sich. Ein Spielzeugelefant tut biologisch nichts davon, selbst wenn man ihn schiebt. Ein einzelnes sichtbares Merkmal wie Bewegung oder Aussehen reicht nicht aus.
 
