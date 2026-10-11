@@ -6,9 +6,9 @@
       "text": "What shape and volume does a liquid have?",
       "options": [
         "adapts to its container; constant volume",
-        "constant shape and volume; konstantes Volumen",
-        "variable shape and volume; variables Volumen",
-        "constant shape; variables Volumen"
+        "constant shape; constant volume",
+        "adapts to its container; variable volume",
+        "constant shape; variable volume"
       ],
       "correctAnswer": "adapts to its container; constant volume",
       "points": 10,
@@ -19,9 +19,9 @@
       "text": "Which change of state is condensation?",
       "options": [
         "gas to liquid",
-        "liquid to gas; flüssig zu gasförmig",
-        "solid to gas; fest zu gasförmig",
-        "gas to solid; gasförmig zu fest"
+        "liquid to gas",
+        "solid to gas",
+        "gas to solid"
       ],
       "correctAnswer": "gas to liquid",
       "points": 10,

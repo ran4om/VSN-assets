@@ -78,14 +78,9 @@
       "topic": "gravitation-buoyancy"
     },
     {
-      "type": "multiple-choice",
-      "text": "Ein Hydrometer taucht in einer dichteren Flüssigkeit im Vergleich tiefer ein.",
-      "options": [
-        "False",
-        "True",
-        "Only when the liquid is water",
-        "Only if its mass changes"
-      ],
+      "type": "true-false",
+      "text": "In a denser liquid, a hydrometer sinks deeper than in a less dense one.",
+      "options": [],
       "correctAnswer": "False",
       "points": 10,
       "topic": "gravitation-buoyancy"
