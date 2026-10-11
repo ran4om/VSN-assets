@@ -1,0 +1,94 @@
+{
+  "title": "Dichte – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Welche Gleichung definiert die Massendichte?",
+      "options": [
+        "ρ = m/V",
+        "ρ = V/m",
+        "ρ = m·V",
+        "ρ = F·m"
+      ],
+      "correctAnswer": "ρ = m/V",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "true-false",
+      "text": "1 g/cm³ entspricht 1000 kg/m³.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Masse hat die Luft in einem Raum von 226,8 m³ bei 1,2 kg/m³?",
+      "options": [
+        "272,16 kg",
+        "189 kg",
+        "226.8 kg",
+        "2,721.6 kg"
+      ],
+      "correctAnswer": "272,16 kg",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Körper hat 109 g Masse und 100 cm³ Volumen. Wie groß ist ρ?",
+      "options": [
+        "1,09 g/cm³",
+        "0.917 g/cm³",
+        "9.17 g/cm³",
+        "109 g/cm³"
+      ],
+      "correctAnswer": "1,09 g/cm³",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Dichte hat Wasser in kg/m³?",
+      "options": [
+        "1000 kg/m³",
+        "1 kg/m³",
+        "100 kg/m³",
+        "10 000 kg/m³"
+      ],
+      "correctAnswer": "1000 kg/m³",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ein Körper hat m = 2 kg und V = 0,001 m³. Berechne seine Dichte.",
+      "options": [],
+      "correctAnswer": "ρ = m/V = 2/0,001 = 2000 kg/m³.",
+      "points": 20,
+      "topic": "density"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine Waage misst die Gewichtskraft in Newton.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Aussage über ein gleich großes Stahl- und Styroporstück stimmt?",
+      "options": [
+        "Stahl hat wegen seiner höheren Dichte eine größere Masse.",
+        "Styropor hat mehr Masse.",
+        "Sie haben gleiche Masse.",
+        "Massen sind nicht vergleichbar."
+      ],
+      "correctAnswer": "Stahl hat wegen seiner höheren Dichte eine größere Masse.",
+      "points": 10,
+      "topic": "density"
+    }
+  ]
+}

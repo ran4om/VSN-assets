@@ -1,0 +1,94 @@
+{
+  "title": "Kraft und Newtonsche Axiome – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Welche Einheit hat die Kraft?",
+      "options": [
+        "Newton (N)",
+        "joule (J)",
+        "kilogram (kg)",
+        "siemens (S)"
+      ],
+      "correctAnswer": "Newton (N)",
+      "points": 10,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "true-false",
+      "text": "Kräfte nach dem dritten Newtonschen Gesetz wirken auf verschiedene Körper.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Kraft beschleunigt eine Masse von 3 kg mit 2 m/s²?",
+      "options": [
+        "6 N",
+        "1.5 N",
+        "5 N",
+        "9 N"
+      ],
+      "correctAnswer": "6 N",
+      "points": 15,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Beschleunigung erhält eine Masse von 12 kg bei 6 N?",
+      "options": [
+        "0,5 m/s²",
+        "2 m/s²",
+        "18 m/s²",
+        "72 m/s²"
+      ],
+      "correctAnswer": "0,5 m/s²",
+      "points": 10,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was besagt das Trägheitsgesetz?",
+      "options": [
+        "Ohne resultierende äußere Kraft bleibt Ruhe oder gleichförmige geradlinige Bewegung erhalten.",
+        "Kräfte heben sich am selben Körper immer auf.",
+        "Kraft ist Masse geteilt durch Beschleunigung.",
+        "Körper halten ohne Kraft an."
+      ],
+      "correctAnswer": "Ohne resultierende äußere Kraft bleibt Ruhe oder gleichförmige geradlinige Bewegung erhalten.",
+      "points": 10,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "open-ended",
+      "text": "Berechne die Kraft für m = 10 kg und a = 0,5 m/s².",
+      "options": [],
+      "correctAnswer": "F = ma = 10 × 0,5 = 5 N.",
+      "points": 20,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei gleicher Kraft wird die größere Masse stärker beschleunigt.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Wirkung kann eine Kraft haben?",
+      "options": [
+        "Geschwindigkeit oder Richtung ändern oder einen Körper verformen",
+        "Masse ändern",
+        "Materie erzeugen",
+        "Dichte ohne sonstige Änderung ändern"
+      ],
+      "correctAnswer": "Geschwindigkeit oder Richtung ändern oder einen Körper verformen",
+      "points": 10,
+      "topic": "force-newtons-laws"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "title": "Energie – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Was ist die SI-Einheit der Energie?",
+      "options": [
+        "Joule (J)",
+        "newton (N)",
+        "watt (W)",
+        "siemens (S)"
+      ],
+      "correctAnswer": "Joule (J)",
+      "points": 10,
+      "topic": "energy"
+    },
+    {
+      "type": "true-false",
+      "text": "In einem isolierten System wird Energie erhalten.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Energieform hat eine gespannte elastische Schnur hauptsächlich?",
+      "options": [
+        "mechanische Lage-/Spannenergie",
+        "Schallenergie",
+        "Kernenergie",
+        "magnetische Energie"
+      ],
+      "correctAnswer": "mechanische Lage-/Spannenergie",
+      "points": 10,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Windrad wandelt die Bewegungsenergie des Windes vor allem in welche Energieform um?",
+      "options": [
+        "elektrische Energie",
+        "Kernenergie",
+        "chemische Energie",
+        "Schallenergie"
+      ],
+      "correctAnswer": "elektrische Energie",
+      "points": 10,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie viel Energie entspricht 1 J?",
+      "options": [
+        "1 N·m",
+        "1 kg·m",
+        "1 N/s",
+        "1 W/m"
+      ],
+      "correctAnswer": "1 N·m",
+      "points": 10,
+      "topic": "energy"
+    },
+    {
+      "type": "open-ended",
+      "text": "Nenne drei Energieformen und beschreibe eine sinnvolle Umwandlung.",
+      "options": [],
+      "correctAnswer": "Beispiele: Bewegungs-/mechanische, Wärme-, elektrische, Strahlungs-, Schall-, Kern-, magnetische, chemische Energie; z. B. Windbewegung → elektrische Energie.",
+      "points": 20,
+      "topic": "energy"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Joule reicht ungefähr aus, um 1 kg Wasser um 1 °C zu erwärmen.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Energieform ist bei einer Kompassnadel für ihre Ausrichtung ausschlaggebend?",
+      "options": [
+        "magnetische Energie",
+        "Wärme",
+        "Kern",
+        "Schall"
+      ],
+      "correctAnswer": "magnetische Energie",
+      "points": 10,
+      "topic": "energy"
+    }
+  ]
+}

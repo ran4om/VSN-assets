@@ -1,0 +1,413 @@
+{
+  "title": "Naturwissenschaften LZK 09.03.2026 – Gesamtquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Welche Form und welches Volumen hat eine Flüssigkeit?",
+      "options": [
+        "passt sich dem Gefäß an; konstantes Volumen",
+        "constant shape and volume; konstantes Volumen",
+        "variable shape and volume; variables Volumen",
+        "constant shape; variables Volumen"
+      ],
+      "correctAnswer": "passt sich dem Gefäß an; konstantes Volumen",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Übergang ist Kondensation?",
+      "options": [
+        "gasförmig zu flüssig",
+        "liquid to gas; flüssig zu gasförmig",
+        "solid to gas; fest zu gasförmig",
+        "gas to solid; gasförmig zu fest"
+      ],
+      "correctAnswer": "gasförmig zu flüssig",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei normalem Luftdruck siedet Wasser bei 100 °C.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei welcher Temperatur siedet Stickstoff laut Tabelle?",
+      "options": [
+        "−196 °C",
+        "−210 °C",
+        "0 °C",
+        "100 °C"
+      ],
+      "correctAnswer": "−196 °C",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Warum wölbt sich eine Chipstüte am Berg?",
+      "options": [
+        "Der niedrigere Außendruck lässt das eingeschlossene Gas expandieren, bis sich die Drücke ausgleichen.",
+        "Die Chips erzeugen Gas.",
+        "Das Gas gefriert.",
+        "Die Schwerkraft komprimiert die Tüte."
+      ],
+      "correctAnswer": "Der niedrigere Außendruck lässt das eingeschlossene Gas expandieren, bis sich die Drücke ausgleichen.",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ordne Wasser bei −30 °C, 20 °C und 130 °C (Normaldruck) den Zuständen zu.",
+      "options": [],
+      "correctAnswer": "−30 °C fest; 20 °C flüssig; 130 °C gasförmig.",
+      "points": 15,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Gleichung definiert die Massendichte?",
+      "options": [
+        "ρ = m/V",
+        "ρ = V/m",
+        "ρ = m·V",
+        "ρ = F·m"
+      ],
+      "correctAnswer": "ρ = m/V",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "true-false",
+      "text": "1 g/cm³ entspricht 1000 kg/m³.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Masse hat die Luft in einem Raum von 226,8 m³ bei 1,2 kg/m³?",
+      "options": [
+        "272,16 kg",
+        "189 kg",
+        "226.8 kg",
+        "2,721.6 kg"
+      ],
+      "correctAnswer": "272,16 kg",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Körper hat 109 g Masse und 100 cm³ Volumen. Wie groß ist ρ?",
+      "options": [
+        "1,09 g/cm³",
+        "0.917 g/cm³",
+        "9.17 g/cm³",
+        "109 g/cm³"
+      ],
+      "correctAnswer": "1,09 g/cm³",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Dichte hat Wasser in kg/m³?",
+      "options": [
+        "1000 kg/m³",
+        "1 kg/m³",
+        "100 kg/m³",
+        "10 000 kg/m³"
+      ],
+      "correctAnswer": "1000 kg/m³",
+      "points": 10,
+      "topic": "density"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ein Körper hat m = 2 kg und V = 0,001 m³. Berechne seine Dichte.",
+      "options": [],
+      "correctAnswer": "ρ = m/V = 2/0,001 = 2000 kg/m³.",
+      "points": 15,
+      "topic": "density"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist die SI-Einheit der Energie?",
+      "options": [
+        "Joule (J)",
+        "newton (N)",
+        "watt (W)",
+        "siemens (S)"
+      ],
+      "correctAnswer": "Joule (J)",
+      "points": 10,
+      "topic": "energy"
+    },
+    {
+      "type": "true-false",
+      "text": "In einem isolierten System wird Energie erhalten.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Energieform hat eine gespannte elastische Schnur hauptsächlich?",
+      "options": [
+        "mechanische Lage-/Spannenergie",
+        "Schallenergie",
+        "Kernenergie",
+        "magnetische Energie"
+      ],
+      "correctAnswer": "mechanische Lage-/Spannenergie",
+      "points": 10,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Windrad wandelt die Bewegungsenergie des Windes vor allem in welche Energieform um?",
+      "options": [
+        "elektrische Energie",
+        "Kernenergie",
+        "chemische Energie",
+        "Schallenergie"
+      ],
+      "correctAnswer": "elektrische Energie",
+      "points": 10,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie viel Energie entspricht 1 J?",
+      "options": [
+        "1 N·m",
+        "1 kg·m",
+        "1 N/s",
+        "1 W/m"
+      ],
+      "correctAnswer": "1 N·m",
+      "points": 15,
+      "topic": "energy"
+    },
+    {
+      "type": "open-ended",
+      "text": "Nenne drei Energieformen und beschreibe eine sinnvolle Umwandlung.",
+      "options": [],
+      "correctAnswer": "Beispiele: Bewegungs-/mechanische, Wärme-, elektrische, Strahlungs-, Schall-, Kern-, magnetische, chemische Energie; z. B. Windbewegung → elektrische Energie.",
+      "points": 15,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Einheit hat die Kraft?",
+      "options": [
+        "Newton (N)",
+        "joule (J)",
+        "kilogram (kg)",
+        "siemens (S)"
+      ],
+      "correctAnswer": "Newton (N)",
+      "points": 10,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "true-false",
+      "text": "Kräfte nach dem dritten Newtonschen Gesetz wirken auf verschiedene Körper.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Kraft beschleunigt eine Masse von 3 kg mit 2 m/s²?",
+      "options": [
+        "6 N",
+        "1.5 N",
+        "5 N",
+        "9 N"
+      ],
+      "correctAnswer": "6 N",
+      "points": 15,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Beschleunigung erhält eine Masse von 12 kg bei 6 N?",
+      "options": [
+        "0,5 m/s²",
+        "2 m/s²",
+        "18 m/s²",
+        "72 m/s²"
+      ],
+      "correctAnswer": "0,5 m/s²",
+      "points": 15,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was besagt das Trägheitsgesetz?",
+      "options": [
+        "Ohne resultierende äußere Kraft bleibt Ruhe oder gleichförmige geradlinige Bewegung erhalten.",
+        "Kräfte heben sich am selben Körper immer auf.",
+        "Kraft ist Masse geteilt durch Beschleunigung.",
+        "Körper halten ohne Kraft an."
+      ],
+      "correctAnswer": "Ohne resultierende äußere Kraft bleibt Ruhe oder gleichförmige geradlinige Bewegung erhalten.",
+      "points": 10,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "open-ended",
+      "text": "Berechne die Kraft für m = 10 kg und a = 0,5 m/s².",
+      "options": [],
+      "correctAnswer": "F = ma = 10 × 0,5 = 5 N.",
+      "points": 15,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie lautet die Gewichtskraft nahe der Erdoberfläche?",
+      "options": [
+        "F_G = mg",
+        "F_G = m/g",
+        "F_G = ρ/V",
+        "F_G = ma²"
+      ],
+      "correctAnswer": "F_G = mg",
+      "points": 15,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Masse eines Körpers ändert sich, wenn er auf den Mond gebracht wird.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein vollständig eingetauchter Körper verdrängt 5 cm³ Wasser. Wie groß ist F_A bei ρ=1000 kg/m³ und g=10 m/s²?",
+      "options": [
+        "0,05 N",
+        "0.5 N",
+        "5 N",
+        "50 N"
+      ],
+      "correctAnswer": "0,05 N",
+      "points": 15,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Aussage beschreibt das Archimedische Prinzip?",
+      "options": [
+        "Der Auftrieb entspricht der Gewichtskraft des verdrängten Mediums.",
+        "Auftrieb entspricht der Masse des Körpers.",
+        "Auftrieb beträgt immer 1 N.",
+        "Auftrieb wirkt nach unten."
+      ],
+      "correctAnswer": "Der Auftrieb entspricht der Gewichtskraft des verdrängten Mediums.",
+      "points": 10,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Körper hat 50 kg Masse. Wie groß ist seine Gewichtskraft mit g≈10 m/s²?",
+      "options": [
+        "500 N",
+        "5 N",
+        "50 N",
+        "5000 N"
+      ],
+      "correctAnswer": "500 N",
+      "points": 15,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ein U-Boot verdrängt 0,5 m³ Wasser. Berechne den Auftrieb mit ρ=1000 kg/m³ und g=10 m/s².",
+      "options": [],
+      "correctAnswer": "F_A = ρVg = 1000 × 0,5 × 10 = 5000 N.",
+      "points": 15,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was untersucht die Ökologie?",
+      "options": [
+        "Beziehungen zwischen Organismen und ihrer Umwelt",
+        "nur Fossilien",
+        "nur Pflanzen",
+        "nur chemische Elemente"
+      ],
+      "correctAnswer": "Beziehungen zwischen Organismen und ihrer Umwelt",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "true-false",
+      "text": "In Homo sapiens ist Homo der Gattungsname.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "biology"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie wird ein wissenschaftlicher Artname üblicherweise geschrieben?",
+      "options": [
+        "Gattung groß, Art-Epitheton klein; beide kursiv",
+        "Beide groß und nicht kursiv",
+        "Gattung klein, Epitheton groß",
+        "Nur die Gattung kursiv"
+      ],
+      "correctAnswer": "Gattung groß, Art-Epitheton klein; beide kursiv",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Teilwissenschaft befasst sich mit Pflanzen?",
+      "options": [
+        "Botanik",
+        "Zoologie",
+        "Ökologie",
+        "Paläontologie"
+      ],
+      "correctAnswer": "Botanik",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Reaktion ist ein Beispiel für Reizbarkeit?",
+      "options": [
+        "Die Pupillen verengen sich bei hellem Licht.",
+        "Ein Stein fällt",
+        "Ein Spielzeug rollt",
+        "Wasser siedet"
+      ],
+      "correctAnswer": "Die Pupillen verengen sich bei hellem Licht.",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "open-ended",
+      "text": "Nenne drei Kennzeichen des Lebens und gib für eines ein Beispiel.",
+      "options": [],
+      "correctAnswer": "Drei davon: Zellen, Stoffwechsel, Reizbarkeit, Fortpflanzung, Bewegung, Wachstum; z. B. Pupillen verengen sich bei hellem Licht.",
+      "points": 15,
+      "topic": "biology"
+    }
+  ]
+}

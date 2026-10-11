@@ -1,0 +1,94 @@
+{
+  "title": "Aggregatzustände – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Welche Form und welches Volumen hat eine Flüssigkeit?",
+      "options": [
+        "passt sich dem Gefäß an; konstantes Volumen",
+        "constant shape and volume; konstantes Volumen",
+        "variable shape and volume; variables Volumen",
+        "constant shape; variables Volumen"
+      ],
+      "correctAnswer": "passt sich dem Gefäß an; konstantes Volumen",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Übergang ist Kondensation?",
+      "options": [
+        "gasförmig zu flüssig",
+        "liquid to gas; flüssig zu gasförmig",
+        "solid to gas; fest zu gasförmig",
+        "gas to solid; gasförmig zu fest"
+      ],
+      "correctAnswer": "gasförmig zu flüssig",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei normalem Luftdruck siedet Wasser bei 100 °C.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei welcher Temperatur siedet Stickstoff laut Tabelle?",
+      "options": [
+        "−196 °C",
+        "−210 °C",
+        "0 °C",
+        "100 °C"
+      ],
+      "correctAnswer": "−196 °C",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Warum wölbt sich eine Chipstüte am Berg?",
+      "options": [
+        "Der niedrigere Außendruck lässt das eingeschlossene Gas expandieren, bis sich die Drücke ausgleichen.",
+        "Die Chips erzeugen Gas.",
+        "Das Gas gefriert.",
+        "Die Schwerkraft komprimiert die Tüte."
+      ],
+      "correctAnswer": "Der niedrigere Außendruck lässt das eingeschlossene Gas expandieren, bis sich die Drücke ausgleichen.",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ordne Wasser bei −30 °C, 20 °C und 130 °C (Normaldruck) den Zuständen zu.",
+      "options": [],
+      "correctAnswer": "−30 °C fest; 20 °C flüssig; 130 °C gasförmig.",
+      "points": 20,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "true-false",
+      "text": "Helium erstarrt bei normalem Druck an der Erdoberfläche.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Beschreibung passt zu Plasma?",
+      "options": [
+        "Ionisiertes Gas mit geladenen Teilchen",
+        "eng angeordnete neutrale Teilchen",
+        "Flüssigkeit mit konstanter Form",
+        "Feststoff mit variablem Volumen"
+      ],
+      "correctAnswer": "Ionisiertes Gas mit geladenen Teilchen",
+      "points": 10,
+      "topic": "states-of-matter"
+    }
+  ]
+}

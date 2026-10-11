@@ -1,0 +1,94 @@
+{
+  "title": "Force and Newton’s Laws – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What is the unit of force?",
+      "options": [
+        "newton (N)",
+        "joule (J)",
+        "kilogram (kg)",
+        "siemens (S)"
+      ],
+      "correctAnswer": "newton (N)",
+      "points": 10,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "true-false",
+      "text": "The forces in Newton’s third law act on different bodies.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What force accelerates a 3 kg mass at 2 m/s²?",
+      "options": [
+        "6 N",
+        "1.5 N",
+        "5 N",
+        "9 N"
+      ],
+      "correctAnswer": "6 N",
+      "points": 15,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What acceleration does a 12 kg mass experience under a 6 N force?",
+      "options": [
+        "0.5 m/s²",
+        "2 m/s²",
+        "18 m/s²",
+        "72 m/s²"
+      ],
+      "correctAnswer": "0.5 m/s²",
+      "points": 15,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does the law of inertia state?",
+      "options": [
+        "Without a net external force, rest or uniform straight-line motion continues.",
+        "Every force has equal opposite force on same body.",
+        "Force equals mass divided by acceleration.",
+        "Bodies stop without force."
+      ],
+      "correctAnswer": "Without a net external force, rest or uniform straight-line motion continues.",
+      "points": 10,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "open-ended",
+      "text": "Calculate the force for m = 10 kg and a = 0.5 m/s².",
+      "options": [],
+      "correctAnswer": "F = ma = 10 × 0.5 = 5 N.",
+      "points": 15,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "true-false",
+      "text": "For the same force, the larger mass accelerates more.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "force-newtons-laws"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What effect can a force have?",
+      "options": [
+        "Change speed or direction, or deform a body",
+        "Change mass",
+        "Create matter",
+        "Change density without changing anything else"
+      ],
+      "correctAnswer": "Change speed or direction, or deform a body",
+      "points": 10,
+      "topic": "force-newtons-laws"
+    }
+  ]
+}

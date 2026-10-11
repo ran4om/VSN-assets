@@ -1,0 +1,94 @@
+{
+  "title": "Energy – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What is the SI unit of energy?",
+      "options": [
+        "joule (J)",
+        "newton (N)",
+        "watt (W)",
+        "siemens (S)"
+      ],
+      "correctAnswer": "joule (J)",
+      "points": 10,
+      "topic": "energy"
+    },
+    {
+      "type": "true-false",
+      "text": "In an isolated system, energy is conserved.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What form of energy is mainly stored in a stretched elastic cord?",
+      "options": [
+        "mechanical potential energy",
+        "acoustic energy",
+        "nuclear energy",
+        "magnetic energy"
+      ],
+      "correctAnswer": "mechanical potential energy",
+      "points": 10,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A wind turbine mainly converts the kinetic energy of wind into which form of energy?",
+      "options": [
+        "electrical energy",
+        "nuclear energy",
+        "chemical energy",
+        "acoustic energy"
+      ],
+      "correctAnswer": "electrical energy",
+      "points": 10,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is equivalent to 1 J of energy?",
+      "options": [
+        "1 N·m",
+        "1 kg·m",
+        "1 N/s",
+        "1 W/m"
+      ],
+      "correctAnswer": "1 N·m",
+      "points": 10,
+      "topic": "energy"
+    },
+    {
+      "type": "open-ended",
+      "text": "Name three forms of energy and describe a plausible transformation.",
+      "options": [],
+      "correctAnswer": "Examples: kinetic/mechanical, thermal, electrical, radiant, acoustic, nuclear, magnetic, chemical; e.g. wind kinetic energy → electrical energy.",
+      "points": 20,
+      "topic": "energy"
+    },
+    {
+      "type": "true-false",
+      "text": "About one joule heats 1 kg of water by 1 °C.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "energy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which form of energy is responsible for a compass needle’s alignment?",
+      "options": [
+        "magnetic energy",
+        "thermal",
+        "nuclear",
+        "acoustic"
+      ],
+      "correctAnswer": "magnetic energy",
+      "points": 10,
+      "topic": "energy"
+    }
+  ]
+}

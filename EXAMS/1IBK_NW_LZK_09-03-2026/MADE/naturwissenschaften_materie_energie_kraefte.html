@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naturwissenschaften — VSN NW 1IBK LZK 09.03.2026</title>
+<style>
+    /* =====================================================
+       DESIGN TOKENS
+    ===================================================== */
+    :root {
+      --vsn-primary:   #1e2e48;
+      --vsn-secondary: #fbc92d;
+      --vsn-accent:    #dc4ebf;
+      --vsn-blue:      #2980b9;
+      --vsn-light-bg:  #f7f8fb;
+      --vsn-border:    #dde2ea;
+      --vsn-text:      #1a2236;
+      --vsn-muted:     #6b7a99;
+
+      --callout-def-bg:  rgba(220, 78, 191, 0.12);
+      --callout-def-border: #dc4ebf;
+      --callout-info-bg: rgba(41, 128, 185, 0.10);
+      --callout-info-border: #2980b9;
+      --callout-tip-bg:  rgba(251, 201, 45, 0.15);
+      --callout-tip-border: #d4a800;
+
+      --radius: 8px;
+      --shadow: 0 2px 8px rgba(30,46,72,0.08);
+      --shadow-md: 0 4px 16px rgba(30,46,72,0.12);
+    }
+
+    /* =====================================================
+       RESET & BASE
+    ===================================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 11pt; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: var(--vsn-text);
+      background: #fff;
+      line-height: 1.65;
+    }
+
+    code, .mono, kbd, samp, .formula {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(30,46,72,0.06);
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+
+    strong { font-weight: 700; }
+    em { font-style: italic; color: var(--vsn-primary); }
+
+    /* =====================================================
+       PAGE & PRINT SETUP
+    ===================================================== */
+    /* All pages: standard A4 margins */
+    @page {
+      size: A4;
+      margin: 15mm 18mm 18mm 18mm;
+    }
+
+    /* Cover page (first): no margins so the dark bg fills edge-to-edge */
+    @page :first {
+      margin: 0;
+    }
+
+    @media print {
+      html { font-size: 10pt; }
+      body { background: #fff; }
+
+      .page-break {
+        page-break-after: always;
+        break-after: always;
+      }
+      .no-break {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      .no-break-before {
+        page-break-before: avoid;
+        break-before: avoid;
+      }
+
+      /* Preserve background colors, shadows, etc. */
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      /* Cover fills exactly one A4 page */
+      .cover {
+        height: 297mm;
+        width: 210mm;
+      }
+
+      /* TOC and section pages: compensate for the zero-margin first page
+         by adding top padding so content starts below the normal margin line */
+      .toc-page,
+      .section {
+        padding-top: 8mm;
+      }
+
+      .callout-box, .table-wrap, .diagram-wrap, figure, .example-block { page-break-inside: avoid; break-inside: avoid; }
+      tr, td, th { page-break-inside: avoid; break-inside: avoid; }
+    }
+
+    /* =====================================================
+       COVER PAGE
+    ===================================================== */
+    .cover {
+      width: 100%;
+      /* Screen: fills the viewport */
+      min-height: 100vh;
+      background: var(--vsn-primary);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover-bg-pattern {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      opacity: 0.04;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          #fff 0,
+          #fff 1px,
+          transparent 0,
+          transparent 50%
+        );
+      background-size: 30px 30px;
+      z-index: 0;
+    }
+
+    .cover-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 40px 50px;
+    }
+
+    .cover-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    .cover-logo {
+      height: 64px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .cover-badge {
+      background: var(--vsn-secondary);
+      color: var(--vsn-primary);
+      font-weight: 700;
+      font-size: 0.75em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    .cover-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cover-label {
+      font-size: 0.7em;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--vsn-secondary);
+      margin-bottom: 16px;
+    }
+
+    .cover-title {
+      font-family: 'Playfair Display', 'Open Sans', serif;
+      font-size: 3.4em;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+
+    .cover-title-de {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.6em;
+      font-weight: 300;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 40px;
+      letter-spacing: 0.01em;
+    }
+
+    .cover-divider {
+      width: 80px;
+      height: 4px;
+      background: var(--vsn-secondary);
+      border-radius: 2px;
+      margin-bottom: 32px;
+    }
+
+    .cover-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .cover-meta-item {
+      font-size: 0.82em;
+      color: rgba(255,255,255,0.65);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cover-meta-item::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+      flex-shrink: 0;
+    }
+
+    .cover-footer {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cover-footer-text {
+      font-size: 0.72em;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.05em;
+    }
+
+    .cover-accent-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--vsn-secondary) 0%, var(--vsn-accent) 100%);
+    }
+
+    /* =====================================================
+       TABLE OF CONTENTS
+    ===================================================== */
+    .toc-page {
+      padding: 48px 0 0;
+    }
+
+    .toc-header {
+      margin-bottom: 36px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid var(--vsn-secondary);
+    }
+
+    .toc-header h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.68em;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 6px;
+    }
+
+    .toc-header h1 {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .toc-item {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid var(--vsn-border);
+      padding: 12px 0;
+    }
+
+    .toc-num {
+      font-weight: 700;
+      font-size: 1.3em;
+      color: var(--vsn-secondary);
+      width: 36px;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+
+    .toc-content {
+      flex: 1;
+    }
+
+    .toc-title-en {
+      font-weight: 700;
+      color: var(--vsn-primary);
+      font-size: 1em;
+    }
+
+    .toc-title-de {
+      font-size: 0.85em;
+      color: var(--vsn-muted);
+      font-weight: 400;
+    }
+
+    /* =====================================================
+       SECTION STRUCTURE
+    ===================================================== */
+    .section {
+      padding: 36px 0 24px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid var(--vsn-secondary);
+    }
+
+    .section-num {
+      background: var(--vsn-primary);
+      color: var(--vsn-secondary);
+      font-weight: 700;
+      font-size: 1.1em;
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .section-title-block {}
+
+    .section-title-en {
+      font-size: 1.4em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+      line-height: 1.2;
+    }
+
+    .section-title-de {
+      font-size: 0.85em;
+      color: var(--vsn-accent);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* =====================================================
+       BILINGUAL GRID
+    ===================================================== */
+    .bilingual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .col-en {
+      padding-right: 22px;
+      border-right: 3px solid var(--vsn-secondary);
+    }
+
+    .col-de {
+      padding-left: 22px;
+    }
+
+    .col-label {
+      font-size: 0.65em;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .col-label-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+      display: inline-block;
+    }
+
+    /* =====================================================
+       CONTENT ELEMENTS
+    ===================================================== */
+    .content-text {
+      font-size: 0.92em;
+      line-height: 1.7;
+      color: var(--vsn-text);
+      margin-bottom: 12px;
+    }
+
+    h3.subsection-title {
+      font-size: 1em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+      margin: 18px 0 10px;
+      padding-left: 10px;
+      border-left: 3px solid var(--vsn-accent);
+    }
+
+    h4.subtype-title {
+      font-size: 0.92em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+      margin: 14px 0 6px;
+    }
+
+    ul.content-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 12px;
+    }
+
+    ul.content-list > li {
+      padding: 4px 0 4px 20px;
+      position: relative;
+      font-size: 0.9em;
+      line-height: 1.6;
+    }
+
+    ul.content-list > li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+    }
+
+    ol.content-list-num {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    ol.content-list-num > li {
+      font-size: 0.9em;
+      line-height: 1.6;
+      padding: 3px 0;
+      color: var(--vsn-text);
+    }
+
+    .example-block {
+      background: var(--vsn-light-bg);
+      border-left: 3px solid var(--vsn-primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 8px 12px;
+      margin: 8px 0;
+      font-size: 0.88em;
+    }
+
+    .example-block .example-label {
+      font-size: 0.75em;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 4px;
+    }
+
+    .example-block p {
+      margin: 3px 0;
+    }
+
+    .highlight-conj {
+      font-weight: 700;
+      background: rgba(251,201,45,0.35);
+      padding: 0 3px;
+      border-radius: 2px;
+    }
+
+    .wrong { color: #c0392b; }
+    .correct { color: #27ae60; }
+    .wrong::before { content: "✗ "; font-weight: 700; }
+    .correct::before { content: "✓ "; font-weight: 700; }
+
+    /* =====================================================
+       CALLOUT BOXES
+    ===================================================== */
+    .callout-box {
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      margin: 14px 0;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .callout-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      margin-top: 1px;
+    }
+
+    .callout-content {
+      flex: 1;
+    }
+
+    .callout-label {
+      font-size: 0.68em;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .callout-text {
+      font-size: 0.88em;
+      line-height: 1.6;
+    }
+
+    /* Definition — Magenta */
+    .callout-def {
+      background: var(--callout-def-bg);
+      border-left: 4px solid var(--callout-def-border);
+    }
+    .callout-def .callout-label { color: #c0359e; }
+    .callout-def .callout-text { color: var(--vsn-text); }
+
+    /* Supplemental Info — Blue */
+    .callout-info {
+      background: var(--callout-info-bg);
+      border-left: 4px solid var(--callout-info-border);
+    }
+    .callout-info .callout-label { color: #1a6a9a; }
+    .callout-info .callout-text { color: var(--vsn-text); }
+
+    /* Practical Tip — Yellow */
+    .callout-tip {
+      background: var(--callout-tip-bg);
+      border-left: 4px solid var(--callout-tip-border);
+    }
+    .callout-tip .callout-label { color: #8a6b00; }
+    .callout-tip .callout-text { color: var(--vsn-text); }
+
+    /* =====================================================
+       SVG ICON DEFINITIONS (inline)
+    ===================================================== */
+
+    /* =====================================================
+       TABLES
+    ===================================================== */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    table.vsn-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85em;
+    }
+
+    table.vsn-table th {
+      background: var(--vsn-primary);
+      color: #fff;
+      font-weight: 700;
+      padding: 9px 11px;
+      text-align: left;
+      letter-spacing: 0.03em;
+      font-size: 0.88em;
+    }
+
+    table.vsn-table th:first-child { border-radius: var(--radius) 0 0 0; }
+    table.vsn-table th:last-child  { border-radius: 0 var(--radius) 0 0; }
+
+    table.vsn-table td {
+      padding: 8px 11px;
+      border-bottom: 1px solid var(--vsn-border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    table.vsn-table tr:nth-child(even) td {
+      background: #f3f5f9;
+    }
+
+    table.vsn-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    table.vsn-table td.type-cell {
+      font-weight: 700;
+      color: var(--vsn-primary);
+      white-space: nowrap;
+    }
+
+    table.vsn-table td.conj-cell {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.82em;
+      color: #555;
+    }
+
+    table.vsn-table td.q-cell {
+      font-style: italic;
+      color: var(--vsn-muted);
+      font-size: 0.88em;
+    }
+
+    table.vsn-table td.ex-cell {
+      font-size: 0.85em;
+    }
+
+    table.vsn-table td.ex-cell em {
+      font-style: italic;
+      color: var(--vsn-primary);
+    }
+
+    /* Declension table specifics */
+    table.vsn-table td.case-cell {
+      font-weight: 700;
+      color: var(--vsn-primary);
+    }
+
+    table.vsn-table td.rel-cell {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+
+    table.vsn-table td.highlight-cell {
+      background: rgba(251,201,45,0.2) !important;
+      font-weight: 700;
+    }
+
+    /* =====================================================
+       SVG DIAGRAM
+    ===================================================== */
+    .diagram-wrap {
+      margin: 18px 0;
+      display: flex;
+      justify-content: center;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .diagram-caption {
+      text-align: center;
+      font-size: 0.75em;
+      color: var(--vsn-muted);
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    /* =====================================================
+       SECTION SPECIFIC STYLES
+    ===================================================== */
+    .conj-pill {
+      display: inline-block;
+      background: rgba(30,46,72,0.08);
+      border: 1px solid var(--vsn-border);
+      border-radius: 12px;
+      padding: 2px 8px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.80em;
+      margin: 2px 2px;
+      color: var(--vsn-primary);
+    }
+
+    .conj-pills {
+      margin: 6px 0;
+    }
+
+    .degree-example {
+      background: var(--vsn-light-bg);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      margin: 8px 0;
+      font-size: 0.88em;
+    }
+
+    .degree-example .ns-label {
+      display: inline-block;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.78em;
+      font-weight: 700;
+      background: var(--vsn-primary);
+      color: var(--vsn-secondary);
+      padding: 1px 6px;
+      border-radius: 3px;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+
+    .two-column-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 12px 0;
+    }
+
+    .grid-card {
+      background: var(--vsn-light-bg);
+      border: 1px solid var(--vsn-border);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+    }
+
+    .grid-card-title {
+      font-weight: 700;
+      font-size: 0.9em;
+      color: var(--vsn-primary);
+      margin-bottom: 6px;
+    }
+
+    /* =====================================================
+       PAGE NUMBERS / FOOTER
+    ===================================================== */
+    @media print {
+      @page {
+        @bottom-right {
+          content: counter(page);
+          font-family: 'Open Sans', sans-serif;
+          font-size: 9pt;
+          color: #999;
+        }
+        @bottom-left {
+          content: "VSN — Naturwissenschaften: Materie, Energie, Kräfte und Biologie";
+          font-family: 'Open Sans', sans-serif;
+          font-size: 9pt;
+          color: #999;
+        }
+      }
+    }
+
+    /* =====================================================
+       UTILITY
+    ===================================================== */
+    .mt-4 { margin-top: 4px; }
+    .mt-8 { margin-top: 8px; }
+    .mt-12 { margin-top: 12px; }
+    .mt-16 { margin-top: 16px; }
+    .mb-8 { margin-bottom: 8px; }
+    .mb-12 { margin-bottom: 12px; }
+    .text-muted { color: var(--vsn-muted); font-size: 0.88em; }
+    .text-accent { color: var(--vsn-accent); }
+    .text-bold { font-weight: 700; }
+    .full-width-table { grid-column: 1 / -1; }
+    /* figures (imagegen illustrations) */
+    figure { margin: 18px 0; text-align: center; page-break-inside: avoid; }
+    figure img { max-width: 100%; max-height: 120mm; border-radius: var(--radius, 8px); box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    figcaption { font-size: 0.8em; color: #5a6475; margin-top: 6px; font-style: italic; }
+    @media print {
+      /* Keep the Newton-axioms summary diagram with enough surrounding scale to avoid an orphaned tail page. */
+      #s4 > .full-width-table .diagram-wrap svg { height: 82mm !important; }
+      /* Compact the final biology comparison table so its rows stay with the preceding section content. */
+      #s6 .table-wrap { margin-top: 6px; margin-bottom: 6px; }
+      #s6 table.vsn-table { font-size: 0.76em; }
+      #s6 table.vsn-table th, #s6 table.vsn-table td { padding: 4px 6px; }
+    }
+  </style>
+</head>
+<body>
+<div class="cover page-break"><div class="cover-bg-pattern"></div><div class="cover-content"><div class="cover-header"><img class="cover-logo" src="assets/VSN_new.png" alt="VSN Logo"><span class="cover-badge">1IBK · LZK · 09.03.2026</span></div><div class="cover-main"><div class="cover-label">Naturwissenschaften · Natural Sciences</div><div class="cover-title">Materie, Energie, Kräfte und Biologie</div><div class="cover-title-de">Matter, Energy, Forces and Biology</div><div class="cover-divider"></div><div class="cover-meta"><div class="cover-meta-item">6 Kapitel · 6 Chapters</div><div class="cover-meta-item">Aggregatzustände · Dichte · Energie · Kräfte · Auftrieb · Leben</div><div class="cover-meta-item">Zweisprachig: Deutsch / Englisch</div></div></div><div class="cover-footer"><span class="cover-footer-text">VSN Lernunterlage © 2026</span><span class="cover-footer-text">Klasse 1IBK · Naturwissenschaften</span></div></div><div class="cover-accent-bar"></div></div>
+<div class="toc-page page-break"><div class="toc-header"><h2>Inhaltsverzeichnis · Table of Contents</h2><h1>Übersicht der Kapitel</h1></div><ul class="toc-list"><li class="toc-item no-break"><span class="toc-num">1</span><div class="toc-content"><div class="toc-title-en">States of matter (Aggregatzustände)</div><div class="toc-title-de">Aggregatzustände</div></div></li><li class="toc-item no-break"><span class="toc-num">2</span><div class="toc-content"><div class="toc-title-en">Density (Dichte)</div><div class="toc-title-de">Dichte</div></div></li><li class="toc-item no-break"><span class="toc-num">3</span><div class="toc-content"><div class="toc-title-en">Energy (Energie)</div><div class="toc-title-de">Energie</div></div></li><li class="toc-item no-break"><span class="toc-num">4</span><div class="toc-content"><div class="toc-title-en">Force and Newton’s axioms (Kraft und Newtonsche Axiome)</div><div class="toc-title-de">Kraft und Newtonsche Axiome</div></div></li><li class="toc-item no-break"><span class="toc-num">5</span><div class="toc-content"><div class="toc-title-en">Gravitation and buoyancy (Gravitationskraft und Auftriebskraft)</div><div class="toc-title-de">Gravitationskraft und Auftriebskraft</div></div></li><li class="toc-item no-break"><span class="toc-num">6</span><div class="toc-content"><div class="toc-title-en">Biology: subdisciplines, nomenclature and characteristics of life (Biologie: Teilgebiete, Nomenklatur, Kennzeichen des Lebens)</div><div class="toc-title-de">Biologie: Teilgebiete, Nomenklatur, Kennzeichen des Lebens</div></div></li></ul></div>
+<div class="section page-break" id="s1"><div class="section-header no-break"><div class="section-num">1</div><div class="section-title-block"><div class="section-title-en">States of matter (Aggregatzustände)</div><div class="section-title-de">Aggregatzustände</div></div></div><div class="bilingual-grid"><div class="col-en"><div class="col-label"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">A <strong>state of matter (Aggregatzustand)</strong> describes the form and volume a substance has under given conditions. The state depends mainly on temperature and pressure; adding or removing heat can change it.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Changes of state: solid → liquid is <strong>melting (Schmelzen)</strong>; liquid → solid is <strong>freezing/solidifying (Erstarren)</strong>; liquid → gas is <strong>vaporisation (Verdampfen)</strong>; gas → liquid is <strong>condensation (Kondensieren)</strong>; solid → gas is <strong>sublimation (Sublimieren)</strong>; gas → solid is <strong>deposition (Resublimieren)</strong>. Temperature and pressure affect transition temperatures.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">At normal pressure on Earth’s surface (~1 bar), helium does not solidify; liquid helium is an important coolant. Water at normal air pressure, <code>p_0=1013 hPa</code>, melts at <code>0°C</code> and boils at <code>100°C</code>. These thresholds apply at that pressure. In ice, water molecules form an ordered hexagonal structure; in water they are close but mobile, and in vapour they move freely and rapidly.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Distinguish <em>boiling</em> from the general gas state: the state depends on both temperature and pressure. At exactly a phase-transition temperature, two phases may coexist; use the textbook’s stated conditions when classifying.</div></div></div><h3 class="subsection-title">Worked exercises (book p. 99):</h3><div class="example-block no-break"><p><strong>Ü 3.18 Water:</strong> at −30°C water is solid; at 20°C it is liquid; at 100°C it is at its normal-pressure boiling point (liquid and vapour can coexist during boiling); at 130°C it is gaseous, assuming normal pressure.</p></div><div class="example-block no-break"><p><strong>Ü 3.19 Hydrogen:</strong> melting point −259°C and boiling point −253°C. At 20°C it is gaseous. Yes, liquid hydrogen exists between its melting and boiling points, approximately −259°C to −253°C at the stated pressure; below the melting point it is solid.</p></div><div class="example-block no-break"><p><strong>Ü 3.20 Chip packet on a mountain:</strong> as altitude increases, external air pressure decreases. Gas trapped in the packet expands until pressures balance, so the flexible packet bulges. This is a pressure/volume effect, not the chips producing gas.</p></div><div class="example-block no-break"><p><strong>Ü 3.7 Particle dance (p. 93, related exercise):</strong> represent H₂O molecules with body = O and arms = H. Vapour: fast, free, chaotic movement; condensing: particles move closer and slow, with some intermolecular attractions; freezing: particles settle into an ordered hexagonal arrangement like a honeycomb.</p></div></div><div class="col-de"><div class="col-label"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Ein <strong>Aggregatzustand</strong> beschreibt, welche Form und welches Volumen ein Stoff unter bestimmten Bedingungen besitzt. Der Zustand hängt vor allem von Temperatur und Druck ab; durch Zufuhr oder Entzug von Wärme kann er verändert werden.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Zustandsübergänge: fest → flüssig = <strong>Schmelzen</strong>; flüssig → fest = <strong>Erstarren</strong>; flüssig → gasförmig = <strong>Verdampfen</strong>; gasförmig → flüssig = <strong>Kondensieren</strong>; fest → gasförmig = <strong>Sublimieren</strong>; gasförmig → fest = <strong>Resublimieren</strong>. Temperatur und Druck beeinflussen die Übergangstemperaturen.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Helium wird bei normalem Druck an der Erdoberfläche (~1 bar) als einziges Element nicht fest; flüssiges Helium ist ein wichtiges Kühlmittel. Wasser schmilzt bei normalem Luftdruck <code>p_0=1013 hPa</code> bei <code>0°C</code> und siedet bei <code>100°C</code>. Diese Werte gelten bei diesem Druck. Im Eis bilden Wassermoleküle eine geordnete hexagonale Struktur; im flüssigen Wasser sind sie nahe beieinander und beweglich, im Wasserdampf bewegen sie sich frei und schnell.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Sieden ist nicht dasselbe wie der allgemeine gasförmige Zustand: Der Zustand hängt von Temperatur und Druck ab. Am Übergangspunkt können zwei Phasen gleichzeitig vorkommen; für Einordnungen gelten die im Buch genannten Bedingungen.</div></div></div><h3 class="subsection-title">Durchgerechnete Übungen (Buch S. 99):</h3><div class="example-block no-break"><p><strong>Ü 3.18 Wasser:</strong> Bei −30°C ist Wasser fest; bei 20°C flüssig; bei 100°C liegt es am Siedepunkt (beim Sieden können Flüssigkeit und Dampf gleichzeitig vorkommen); bei 130°C ist es bei normalem Druck gasförmig.</p></div><div class="example-block no-break"><p><strong>Ü 3.19 Wasserstoff:</strong> Schmelztemperatur −259°C, Siedetemperatur −253°C. Bei 20°C ist Wasserstoff gasförmig. Ja, flüssigen Wasserstoff gibt es ungefähr zwischen −259°C und −253°C beim angegebenen Druck; unterhalb des Schmelzpunktes ist er fest.</p></div><div class="example-block no-break"><p><strong>Ü 3.20 Volumen von Gasen:</strong> Auf einem hohen Berg ist der äußere Luftdruck geringer. Das Gas in der Chipspackung dehnt sich aus, bis sich die Drücke ausgleichen; dadurch bläht sich die flexible Packung auf. Das ist ein Druck-Volumen-Effekt.</p></div><div class="example-block no-break"><p><strong>Ü 3.7 Tanz der Teilchen (S. 93):</strong> Körper = O, Arme = H. Wasserdampf: schnelle, freie, ungeordnete Bewegung; beim Kondensieren rücken Teilchen näher zusammen und werden langsamer, erste Anziehungen entstehen; beim Gefrieren ordnen sie sich hexagonal wie eine Bienenwabe.</p></div></div><div class="full-width-table"><div class="table-wrap no-break"><table class="vsn-table"><thead><tr><th>State / Zustand</th><th>Shape / Form</th><th>Volume / Volumen</th><th>Particle picture / Teilchenbild</th></tr></thead><tbody><tr><td>Solid (fest) / Fest</td><td>constant / konstant</td><td>constant / konstant</td><td>particles closely arranged; strong attractions / Teilchen dicht angeordnet; starke Anziehung</td></tr><tr><td>Liquid (flüssig) / Flüssig</td><td>adapts to container / passt sich dem Gefäß an</td><td>constant / konstant</td><td>particles close together, able to move past one another / Teilchen liegen nahe beieinander und können aneinander vorbeigleiten</td></tr><tr><td>Gas (gasförmig) / Gasförmig</td><td>adapts to container / passt sich dem Gefäß an</td><td>variable; fills container / variabel; füllt das Gefäß</td><td>particles far apart and moving freely / Teilchen weit auseinander, frei und schnell beweglich</td></tr><tr><td>Plasma (plasmaförmig) / Plasmaförmig</td><td>variable / variabel</td><td>variable / variabel</td><td>ionised gas; charged particles / ionisiertes Gas mit geladenen Teilchen</td></tr></tbody></table></div></div><div class="full-width-table"><div class="table-wrap no-break"><table class="vsn-table"><thead><tr><th>Substance / Stoff</th><th>Melting point (°C) / Schmelzpunkt (°C)</th><th>Boiling point (°C) / Siedepunkt (°C)</th></tr></thead><tbody><tr><td>Helium [He] / Helium [He]</td><td>— / —</td><td>−269 / −269</td></tr><tr><td>Nitrogen [N] / Stickstoff [N]</td><td>−210 / −210</td><td>−196 / −196</td></tr><tr><td>Water [H₂O] / Wasser [H₂O]</td><td>0 / 0</td><td>100 / 100</td></tr><tr><td>Lead [Pb] / Blei [Pb]</td><td>327 / 327</td><td>1749 / 1749</td></tr><tr><td>Tungsten [W] / Wolfram [W]</td><td>3422 / 3422</td><td>5555 / 5555</td></tr></tbody></table></div></div><div class="full-width-table"><div class="diagram-wrap no-break"><svg viewBox="0 0 680 260" style="width:100%;height:auto"><g fill="#f7f8fb" stroke="#1e2e48" stroke-width="2"><rect x="15" y="30" width="145" height="80" rx="10"/><rect x="185" y="30" width="145" height="80" rx="10"/><rect x="355" y="30" width="145" height="80" rx="10"/><rect x="525" y="30" width="140" height="80" rx="10"/></g><g fill="#1e2e48" font-size="14" font-family="sans-serif" text-anchor="middle"><text x="87" y="55">Solid · fest</text><text x="257" y="55">Liquid · flüssig</text><text x="427" y="55">Gas · gasförmig</text><text x="595" y="55">Plasma</text><text x="87" y="83">fixed shape &amp; volume</text><text x="257" y="83">shape adapts; fixed V</text><text x="427" y="83">fills container; variable V</text><text x="595" y="83">ionised, charged</text></g><g stroke="#dc4ebf" stroke-width="2" fill="none" marker-end="url(#a)"><path d="M160 145H520M520 160H160M160 190H520M520 205H160"/></g><g fill="#1e2e48" font-size="12" font-family="sans-serif" text-anchor="middle"><text x="340" y="140">melting / Schmelzen · vaporisation / Verdampfen · ionisation</text><text x="340" y="222">freezing / Erstarren · condensation / Kondensieren · recombination</text><text x="340" y="250">Sublimation / Sublimieren ↔ deposition / Resublimieren</text></g><defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#dc4ebf"/></marker></defs></svg><div class="diagram-caption">Figure 1 · States of matter (Aggregatzustände) · Aggregatzustände</div></div></div><div class="full-width-table"><figure><img src="assets/matter_particles.png" alt="Particle arrangements in solid, liquid, gas and plasma."><figcaption>Particle arrangements in solid, liquid, gas and plasma. · Aggregatzustände</figcaption></figure></div></div></div>
+<div class="section page-break" id="s2"><div class="section-header no-break"><div class="section-num">2</div><div class="section-title-block"><div class="section-title-en">Density (Dichte)</div><div class="section-title-de">Dichte</div></div></div><div class="bilingual-grid"><div class="col-en"><div class="col-label"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Mass density (Massendichte)</strong> is the ratio of a body’s mass <code>m</code> to its volume <code>V</code>: <code>ρ=m/V</code>. The SI unit is <code>kg/m³</code>; common alternatives include <code>g/cm³</code> and <code>kg/dm³</code>. Density increases when mass increases at fixed volume or volume decreases at fixed mass.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Density is distinct from population density (people per area) and particle density (particles per volume). Different materials can have different densities at the same volume; most materials become denser as they cool because their particles move closer. Exceptions exist, notably water near freezing. Measured examples: air at 20°C and sea level <code>0.0012 g/cm³=1.2 kg/m³</code>; spruce <code>0.5 g/cm³=500 kg/m³</code>; water <code>1.00 g/cm³=1000 kg/m³</code>; platinum <code>21.45 g/cm³=21 450 kg/m³</code>.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Make units consistent before using <code>ρ=m/V</code>. Useful conversions: <code>1 g/cm³=1000 kg/m³</code> and <code>1 dm³=1 L</code>. Volume of a rectangular solid is length × width × height. A scale measures mass; convert to weight force with <code>F_G=mg</code> only when force is needed.</div></div></div><h3 class="subsection-title">Worked exercises:</h3><div class="example-block no-break"><p><strong>Ü 3.8 Measuring regular bodies (p. 93):</strong> measure matchbox dimensions, calculate <code>V=lwh</code>, weigh each filled box, subtract the empty box’s mass if appropriate, and calculate <code>ρ=m/V</code> for soil, sand, sugar and flour. Record repeated measurements and units; the source provides no numerical measurements, so no unique numerical answers exist.</p></div><div class="example-block no-break"><p><strong>Ü 3.9 Room-air mass:</strong> <code>V=9 · 7 · 3.6=226.8 m³</code>. <code>m=ρ V=1.2 · 226.8=272.16 kg</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.10 Steel and polystyrene:</strong> steel cube volume <code>10³=1000 cm³=1 dm³</code>; mass <code>=7.85 kg</code>. Polystyrene density <code>0.02 g/cm³=20 kg/m³</code>, so equal mass occupies <code>7.85/20=0.3925 m³</code>. Plate base area <code>2 · 1=2 m²</code>, hence height <code>0.3925/2=0.19625 m=19.625 cm</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.39 (p. 114), salt solution:</strong> (a) <code>100 ml=100 cm³</code>, so <code>ρ=109/100=1.09 g/cm³</code> (also <code>1090 kg/m³</code>). (b) <code>1 kg=1000 g</code>; <code>V=m/ρ=1000/19=52.63 cm³</code> approximately. (c) <code>1000 kg/m³=1 g/cm³</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.41 (p. 114), compare densities:</strong> stone <code>4 t/1 m³=4000 kg/m³</code>; oil is printed as “0.2 grams per cubic decimetre,” giving literally <code>0.2 g/dm³=0.2 kg/m³</code> (the unusually tiny value may be a source typo; do not silently change it); wood <code>70/0.1=700 kg/m³</code>; polyethylene <code>0.86 kg/dm³=860 kg/m³</code>; glass <code>2200 kg/m³</code>; cork: cylinder <code>V=π(0.5 cm)²(5 cm)=3.927 cm³</code>, so <code>ρ≈0.204 g/cm³=204 kg/m³</code>; iron rod: cross-section <code>10 cm²</code>, length <code>100 cm</code> gives <code>V=1000 cm³=0.001 m³</code>, and <code>ρ=89 000 kg/m³</code>. Lowest to highest by the literal data: oil, cork, wood, polyethylene, glass, stone, iron. (b) For a fully submerged object in water use <code>F_A=ρ_w Vg</code> with <code>g≈10 m/s²</code>: stone <code>40 N</code>; oil sample volume <code>1 dm³</code>: <code>10 N</code>; wood <code>1 N</code>; polyethylene <code>0.0004 N</code>; glass <code>0.001 N</code>; cork about <code>0.0393 N</code>; iron <code>10 N</code>. (c) Materials with density below water float: oil (if the intended value is the printed one), cork, wood and polyethylene; denser materials sink. These results depend on the given values and full-submersion assumption.</p></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text"><strong>Conductivity (Leitfähigkeit), p. 94:</strong> a conductor transports energy or particles; electrical conductance <code>G</code> measures how well current flows, with unit Siemens, <code>[G]=S</code>. Metals conduct through mobile electrons; silver conducts best, while copper and aluminium are lighter/cheaper and widely used in cables. Insulators (e.g. rubber, glass, porcelain, diamond, distilled water, air) conduct very poorly. Semiconductor conductivity lies between these extremes; silicon and germanium conduct better as temperature releases charge carriers. Electrolytes conduct through ions. For <strong>Ü 3.11</strong>, insert each test object into a circuit gap: bright lamp = good conductor, dim = moderate conductor, dark = insulator. Classify the named objects experimentally; the source gives no observations, so individual test results are not specified.</div></div></div></div><div class="col-de"><div class="col-label"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Die <strong>Massendichte</strong> ist das Verhältnis der Masse <code>m</code> eines Körpers zu seinem Volumen <code>V</code>: <code>ρ=m/V</code>. Die SI-Einheit ist <code>kg/m³</code>; häufig sind auch <code>g/cm³</code> und <code>kg/dm³</code>. Bei gleichem Volumen bedeutet größere Masse größere Dichte; bei gleicher Masse bedeutet kleineres Volumen größere Dichte.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Dichte ist nicht dasselbe wie Bevölkerungsdichte (Menschen pro Fläche) oder Teilchendichte (Teilchen pro Volumen). Verschiedene Stoffe können bei gleichem Volumen unterschiedliche Dichten haben; die meisten Stoffe werden beim Abkühlen dichter, weil die Teilchen näher zusammenrücken. Es gibt Ausnahmen, insbesondere Wasser nahe dem Gefrierpunkt. Beispiele: Luft bei 20°C auf Meereshöhe <code>0{,}0012 g/cm³=1{,}2 kg/m³</code>; Fichtenholz <code>0{,}5 g/cm³=500 kg/m³</code>; Wasser <code>1{,}00 g/cm³=1000 kg/m³</code>; Platin <code>21{,}45 g/cm³=21 450 kg/m³</code>.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Vor <code>ρ=m/V</code> die Einheiten vereinheitlichen. Nützlich: <code>1 g/cm³=1000 kg/m³</code> und <code>1 dm³=1 L</code>. Quader-Volumen = Länge × Breite × Höhe. Eine Waage misst Masse; nur bei benötigter Kraft wird mit <code>F_G=mg</code> in Gewichtskraft umgerechnet.</div></div></div><h3 class="subsection-title">Durchgerechnete Übungen:</h3><div class="example-block no-break"><p><strong>Ü 3.8 Dichtemessung regelmäßiger Körper (S. 93):</strong> Zündholzschachtel-Abmessungen messen, <code>V=lbh</code> berechnen, gefüllte Schachtel wiegen, gegebenenfalls Leermasse abziehen und für Erde, Sand, Zucker und Mehl jeweils <code>ρ=m/V</code> berechnen. Wiederholungen und Einheiten protokollieren. Da keine Messwerte angegeben sind, gibt es keine eindeutigen Zahlenlösungen.</p></div><div class="example-block no-break"><p><strong>Ü 3.9 Masse der Raumluft:</strong> <code>V=9 · 7 · 3{,}6=226{,}8 m³</code>. <code>m=ρ V=1{,}2 · 226{,}8=272{,}16 kg</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.10 Stahl und Styropor:</strong> Stahlwürfelvolumen <code>10³=1000 cm³=1 dm³</code>; Masse <code>7{,}85 kg</code>. Styropordichte <code>0{,}02 g/cm³=20 kg/m³</code>, gleich schwere Platte: <code>V=7{,}85/20=0{,}3925 m³</code>. Grundfläche <code>2 · 1=2 m²</code>, daher Höhe <code>0{,}3925/2=0{,}19625 m=19{,}625 cm</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.39 (S. 114), Salzlösung:</strong> (a) <code>100 ml=100 cm³</code>, also <code>ρ=109/100=1{,}09 g/cm³=1090 kg/m³</code>. (b) <code>1 kg=1000 g</code>; <code>V=1000/19=52{,}63 cm³</code> ungefähr. (c) <code>1000 kg/m³=1 g/cm³</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.41 (S. 114), Dichteunterschiede:</strong> Stein <code>4 t/1 m³=4000 kg/m³</code>; Öl laut gedruckter Angabe „0,2 Gramm pro Kubikdezimeter“ = <code>0{,}2 g/dm³=0{,}2 kg/m³</code> (ungewöhnlich klein, möglicherweise Druckfehler; nicht stillschweigend ändern); Holz <code>70/0{,}1=700 kg/m³</code>; Polyethylen <code>0{,}86 kg/dm³=860 kg/m³</code>; Glas <code>2200 kg/m³</code>; Kork: Zylindervolumen <code>V=π(0{,}5 cm)²(5 cm)=3{,}927 cm³</code>, daher <code>ρ≈0{,}204 g/cm³=204 kg/m³</code>; Eisenstange: <code>10 cm² · 100 cm=1000 cm³=0{,}001 m³</code>, <code>ρ=89 000 kg/m³</code>. Aufsteigend nach den wörtlichen Daten: Öl, Kork, Holz, Polyethylen, Glas, Stein, Eisen. (b) Vollständig eingetaucht in Wasser mit <code>F_A=ρ_wVg</code> und <code>g≈10</code>: Stein <code>40 N</code>; Ölprobe mit Volumen <code>1 dm³</code>: <code>10 N</code>; Holz <code>1 N</code>; Polyethylen <code>0{,}0004 N</code>; Glas <code>0{,}001 N</code>; Kork etwa <code>0{,}0393 N</code>; Eisen <code>10 N</code>. (c) Stoffe mit geringerer Dichte als Wasser schwimmen: laut gedrucktem Wert Öl, Kork, Holz und Polyethylen; dichtere Stoffe sinken. Die Ergebnisse hängen von den angegebenen Werten und der Annahme vollständigen Eintauchens ab.</p></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text"><strong>Leitfähigkeit (S. 94):</strong> Ein Leiter transportiert Energie oder Teilchen. Der elektrische Leitwert <code>G</code> beschreibt die Stromleitung; Einheit Siemens, <code>[G]=S</code>. Metalle leiten durch frei bewegliche Elektronen; Silber leitet am besten, Kupfer und Aluminium sind leichter und günstiger und werden für Kabel verwendet. Nichtleiter/Isolatoren (z. B. Gummi, Glas, Porzellan, Diamant, destilliertes Wasser, Luft) leiten sehr schlecht. Halbleiter liegen dazwischen; Silizium und Germanium leiten bei höherer Temperatur besser, weil Ladungsträger freigesetzt werden. Elektrolyte leiten durch Ionen. <strong>Ü 3.11:</strong> Stoff in eine Unterbrechung des Stromkreises einsetzen: helles Lämpchen = guter Leiter, schwaches = mäßiger Leiter, kein Licht = Isolator. Armband, Büroklammer, Alufolie, Schokolade, Milch, Holz, Schuhe, Kaugummi und Pflanze experimentell testen. Die Quelle gibt keine Testergebnisse vor.</div></div></div></div><div class="full-width-table"><div class="diagram-wrap no-break"><svg viewBox="0 0 680 210" style="width:100%;height:auto"><g font-family="sans-serif" fill="#1e2e48" text-anchor="middle"><text x="160" y="25" font-size="16">Equal volume · gleiches Volumen</text><rect x="80" y="50" width="160" height="100" fill="#2980b9"/><rect x="420" y="50" width="160" height="100" fill="#fbc92d"/><text x="160" y="180" font-size="14">Steel · Stahl: larger mass, higher ρ</text><text x="500" y="180" font-size="14">Polystyrene · Styropor: lower mass, lower ρ</text><text x="340" y="205" font-size="13">Cooling usually packs particles closer → density rises (water is an exception near freezing)</text></g></svg><div class="diagram-caption">Figure 2 · Density (Dichte) · Dichte</div></div></div><div class="full-width-table"><figure><img src="assets/density_particles.png" alt="Equal-volume comparison and particle density."><figcaption>Equal-volume comparison and particle density. · Dichte</figcaption></figure></div></div></div>
+<div class="section page-break" id="s3"><div class="section-header no-break"><div class="section-num">3</div><div class="section-title-block"><div class="section-title-en">Energy (Energie)</div><div class="section-title-de">Energie</div></div></div><div class="bilingual-grid"><div class="col-en"><div class="col-label"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Energy (Energie)</strong> is the ability to do work. Its symbol is <code>E</code>, and its SI unit is the joule (J), the same unit as work <code>W</code>: <code>1 J=1 Nm=1 Ws</code>. One joule is small: heating <code>1 kg</code> of water by <code>1°C</code> requires about <code>4190 J</code>.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Energy forms include mechanical (kinetic/motion and potential/position), acoustic, electrical, thermal, nuclear, radiant/light and magnetic energy; the class notes also list chemical energy. Energy can be transformed between forms; in an isolated system it is conserved, not created or destroyed. James Prescott Joule (1818–1889) studied the equivalence of mechanical work and heat, heating in current-carrying conductors and cooling of expanding gases.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Identify the physical process, not the everyday setting, when naming an energy form. One situation can involve several forms and transformations.</div></div></div><h3 class="subsection-title">Worked exercises (p. 99):</h3><div class="example-block no-break"><p><strong>Ü 3.15 Which energy form?</strong> Compass needle aligns north—magnetic; thunder—acoustic; wind turbine turns—mechanical (wind’s kinetic energy, with electrical output); X-ray image—radiant; stretched bungee cord—mechanical potential/elastic; vase at shelf edge—gravitational potential; two people collide—mechanical kinetic; fission—nuclear; smartphone without battery—electrical energy supply absent; global warming—thermal energy increase (driven by absorbed radiation and greenhouse processes).</p></div><div class="example-block no-break"><p><strong>Ü 3.16 Properties of materials:</strong> examples beyond the listed properties: hardness (resistance to scratching/indentation), electrical conductivity (ability to carry current), solubility (ability to dissolve), viscosity (resistance to flow). Each is a characteristic that can help identify or select a material.</p></div><div class="example-block no-break"><p><strong>Ü 3.17 Hardening:</strong> wet clay is hardened by drying and firing in a kiln, which removes water and changes the material irreversibly. Iron/steel can be hardened by heat treatment—heating and controlled rapid cooling (quenching); exact procedure depends on alloy.</p></div><div class="example-block no-break"><p><strong>Ü 3.18 and Ü 3.19:</strong> see the fully worked state classifications in the states-of-matter section above; these are the same p. 99 exercises.</p></div><div class="example-block no-break"><p><strong>Ü 3.20:</strong> see the pressure-and-volume explanation for the puffed chip packet in the states-of-matter section.</p></div></div><div class="col-de"><div class="col-label"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Energie</strong> ist die Fähigkeit, Arbeit zu verrichten. Formelzeichen <code>E</code>, SI-Einheit Joule (J), dieselbe Einheit wie für Arbeit <code>W</code>: <code>1 J=1 Nm=1 Ws</code>. Ein Joule ist klein: Um <code>1 kg</code> Wasser um <code>1°C</code> zu erwärmen, braucht man etwa <code>4190 J</code>.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Energieformen: mechanische (Bewegungs- und Lageenergie), akustische, elektrische, thermische, Kern-, Strahlungs- und magnetische Energie; die Mitschrift nennt zusätzlich chemische Energie. Energie kann umgewandelt werden; in einem abgeschlossenen System wird sie erhalten und nicht erzeugt oder vernichtet. James Prescott Joule (1818–1889) untersuchte die Gleichwertigkeit mechanischer Arbeit und Wärme, Erwärmung in stromdurchflossenen Leitern und Abkühlung expandierender Gase.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Für die Zuordnung die physikalische Wirkung betrachten, nicht nur den Alltag. Ein Vorgang kann mehrere Energieformen und Umwandlungen enthalten.</div></div></div><h3 class="subsection-title">Durchgerechnete Übungen (S. 99):</h3><div class="example-block no-break"><p><strong>Ü 3.15 Welche Energieform?</strong> Kompassnadel richtet sich nach Norden – magnetisch; Donner – akustisch; Windrad dreht – mechanisch (Windbewegung, mit elektrischer Ausgabe); Röntgenaufnahme – Strahlungsenergie; gedehntes Bungeeseil – mechanische Lage-/elastische Energie; Vase an Regalkante – gravitative Lageenergie; Zusammenstoß zweier Personen – mechanische Bewegungsenergie; Kernspaltung – Kernenergie; Smartphone ohne Akku – elektrische Energiezufuhr fehlt; Erderwärmung – Zunahme thermischer Energie (angetrieben durch Strahlungsaufnahme und Treibhauseffekte).</p></div><div class="example-block no-break"><p><strong>Ü 3.16 Stoffeigenschaften:</strong> weitere Beispiele: Härte (Widerstand gegen Ritzen/Eindrücken), elektrische Leitfähigkeit (Strom transportieren), Löslichkeit (sich lösen können), Viskosität (Fließwiderstand). Jeweils in 1–2 Sätzen erklären; Eigenschaften helfen Stoffe zu erkennen und auszuwählen.</p></div><div class="example-block no-break"><p><strong>Ü 3.17 Härtung:</strong> Feuchter Ton wird durch Trocknen und Brennen im Ofen hart; Wasser entweicht und der Stoff verändert sich dauerhaft. Eisen/Stahl lässt sich durch Wärmebehandlung härten: Erhitzen und kontrolliertes rasches Abkühlen (Abschrecken); das genaue Verfahren hängt von der Legierung ab.</p></div><div class="example-block no-break"><p><strong>Ü 3.18 und Ü 3.19:</strong> siehe die vollständigen Zustandslösungen im Abschnitt Aggregatzustände; es sind dieselben Übungen auf S. 99.</p></div><div class="example-block no-break"><p><strong>Ü 3.20:</strong> siehe Erklärung des aufgeblähten Chipspackung durch Druck und Volumen im Abschnitt Aggregatzustände.</p></div></div><div class="full-width-table"><div class="diagram-wrap no-break"><svg viewBox="0 0 680 250" style="width:100%;height:auto"><g fill="#f7f8fb" stroke="#1e2e48" stroke-width="2"><rect x="20" y="35" width="145" height="65" rx="10"/><rect x="185" y="35" width="145" height="65" rx="10"/><rect x="355" y="35" width="145" height="65" rx="10"/><rect x="525" y="35" width="140" height="65" rx="10"/></g><g fill="#1e2e48" font-family="sans-serif" text-anchor="middle" font-size="14"><text x="92" y="62">Mechanical</text><text x="257" y="62">Acoustic</text><text x="427" y="62">Electrical</text><text x="595" y="62">Thermal</text><text x="92" y="85">motion / position</text><text x="257" y="85">sound</text><text x="427" y="85">current</text><text x="595" y="85">heat</text><text x="105" y="145" font-size="16">Potential energy · Lageenergie</text><text x="340" y="145" font-size="20">↓</text><text x="565" y="145" font-size="16">Kinetic + rotational · Bewegung + Drehung</text><text x="340" y="215" font-size="13">Also: nuclear · Kern | radiant · Strahlung | magnetic · magnetisch | chemical · chemisch</text></g><path d="M120 165H560" stroke="#dc4ebf" stroke-width="4" marker-end="url(#e)"/><defs><marker id="e" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0L0 6L7 3z" fill="#dc4ebf"/></marker></defs></svg><div class="diagram-caption">Figure 3 · Energy (Energie) · Energie</div></div></div></div></div>
+<div class="section page-break" id="s4"><div class="section-header no-break"><div class="section-num">4</div><div class="section-title-block"><div class="section-title-en">Force and Newton’s axioms (Kraft und Newtonsche Axiome)</div><div class="section-title-de">Kraft und Newtonsche Axiome</div></div></div><div class="bilingual-grid"><div class="col-en"><div class="col-label"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">A <strong>force (Kraft)</strong> is a vector quantity recognised by its effects: it can change a body’s speed or direction (acceleration) or deform it. The mechanics equation is <code>F=ma</code>; force is measured in newtons: <code>1 N=1 kg · m/s²</code>. A body is matter with mass and occupies space.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Greater force produces greater acceleration for fixed mass; greater mass needs more force for the same acceleration. Acceleration includes any change in velocity, including direction change in circular motion. Force arrows show direction and, to scale, magnitude. Tools and machines (force converters) transfer or amplify force, e.g. pliers (leverage), cranes/excavators and compactors. The book’s force effects are acceleration, slowing (negative acceleration), direction change and deformation.</div></div></div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Newton’s first law (inertia):</strong> a body remains at rest or in uniform straight-line motion unless a net external force acts on it. <strong>Second law:</strong> net force causes acceleration in its direction, proportional to force and inversely proportional to mass; <code>F=ma</code>. <strong>Third law (action–reaction):</strong> interacting bodies exert equal and opposite forces on one another; they act on different bodies and therefore do not cancel each other on one body.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Convert the requested quantity algebraically: <code>F=ma</code>, <code>a=F/m</code>, <code>m=F/a</code>. Check that kg and m/s² give N. A “heavier” body means larger mass in physics, not necessarily a larger force in every location.</div></div></div><h3 class="subsection-title">Worked exercises (pp. 103–105; notes):</h3><div class="example-block no-break"><p><strong>Ü 3.23 Bowling:</strong> the bowler applies a force to the ball; the ball applies an equal opposite force to the hand. The ball’s motion changes; lane friction and gravity also act. The pins are pushed and move/deform. Different forces act on different bodies.</p></div><div class="example-block no-break"><p><strong>Ü 3.24 Car sensations:</strong> (a) accelerating: body tends to remain in its previous state; relative to car you feel pushed back. (b) braking: body tends to continue forward, so you lurch forward. (c) turning: inertia makes you feel pushed toward the outside; the car’s inward force changes direction.</p></div><div class="example-block no-break"><p><strong>Ü 3.25:</strong> (a) <code>F=3 · 2=6 N</code>. (b) <code>a=6/12=0.5 m/s²</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.26, <code>m=10 kg</code>:</strong> (a) <code>a=0.1 m/s²</code>; (b) <code>0.5 m/s²</code>; (c) <code>1 m/s²</code>; (d) <code>2 m/s²</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.27, <code>a=1 m/s²</code>:</strong> (a) <code>800 N</code>; (b) <code>1200 N</code>; (c) <code>1600 N</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.28:</strong> (a) True: double mass needs double force for the same acceleration. (b) False: at equal force, the smaller mass accelerates more. (c) True under the same braking force and other conditions: half the mass gives twice the deceleration magnitude.</p></div><div class="example-block no-break"><p><strong>Ü 3.34:</strong> force is a vector, measured in N, and can accelerate, decelerate, change direction or deform a body; represent it by an arrow whose direction is the force direction and whose length indicates magnitude using a chosen scale.</p></div><div class="example-block no-break"><p><strong>Ü 3.35:</strong> speeding up, slowing down, and changing direction are three motion effects; force may also deform a body.</p></div><div class="example-block no-break"><p><strong>V 3.5 two spring balances in series (p. 107):</strong> with a steady pull of <code>5 N</code>, both balances ideally show <code>5 N</code>, not <code>2.5</code> or <code>10 N</code>; tension is transmitted through the series connection. Real readings may differ slightly from friction/calibration.</p></div></div><div class="col-de"><div class="col-label"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Eine <strong>Kraft</strong> ist eine vektorielle Größe, erkennbar an ihrer Wirkung: Sie kann Geschwindigkeit oder Richtung ändern (beschleunigen) oder einen Körper verformen. Grundgleichung der Mechanik: <code>F=ma</code>; Einheit Newton: <code>1 N=1 kg · m/s²</code>. Ein Körper besteht aus Materie, hat Masse und nimmt Raum ein.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Bei gleicher Masse bewirkt größere Kraft größere Beschleunigung; bei größerer Masse braucht man für gleiche Beschleunigung mehr Kraft. Beschleunigung bedeutet jede Änderung der Geschwindigkeit, auch eine Richtungsänderung bei Kreisbewegung. Kraftpfeile zeigen Richtung und maßstäblich die Größe. Werkzeuge und Maschinen (Kraftwandler) übertragen oder verstärken Kräfte: Zange (Hebel), Kran/Bagger, Müllpresse. Die Wirkungen im Buch sind Beschleunigen, Abbremsen (negative Beschleunigung), Richtungsänderung und Verformen.</div></div></div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>1. Newtonsches Axiom (Trägheit):</strong> Ein Körper bleibt in Ruhe oder gleichförmiger geradliniger Bewegung, solange keine resultierende äußere Kraft auf ihn wirkt. <strong>2. Axiom:</strong> Eine resultierende Kraft beschleunigt den Körper in Kraftrichtung; die Beschleunigung ist proportional zur Kraft und umgekehrt proportional zur Masse: <code>F=ma</code>. <strong>3. Axiom (Wechselwirkung):</strong> Zu jeder Aktion gibt es eine gleich große, entgegengesetzt gerichtete Reaktion. Die Kräfte wirken auf verschiedene Körper und heben einander daher nicht an einem einzelnen Körper auf.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Gesuchte Größe umstellen: <code>F=ma</code>, <code>a=F/m</code>, <code>m=F/a</code>. Mit kg und m/s² erhält man N. „Schwerer“ bedeutet in der Physik größere Masse; die Gewichtskraft kann sich je nach Ort ändern.</div></div></div><h3 class="subsection-title">Durchgerechnete Übungen (S. 103–105; Mitschrift):</h3><div class="example-block no-break"><p><strong>Ü 3.23 Bowling:</strong> Der Mensch übt eine Kraft auf die Kugel aus; die Kugel übt eine gleich große Gegenkraft auf die Hand aus. Die Bewegung der Kugel ändert sich; Reibung und Gravitation wirken ebenfalls. Die Kugel stößt Pins an. Kräftepaare wirken auf unterschiedliche Körper.</p></div><div class="example-block no-break"><p><strong>Ü 3.24 Kräfte spüren:</strong> (a) Beim Beschleunigen möchte der Körper seinen bisherigen Bewegungszustand beibehalten; relativ zum Auto fühlt man sich nach hinten gedrückt. (b) Beim Bremsen bewegt sich der Körper aufgrund der Trägheit weiter nach vorne. (c) In der Kurve fühlt man sich nach außen gedrückt; die nach innen gerichtete Kraft ändert die Bewegungsrichtung.</p></div><div class="example-block no-break"><p><strong>Ü 3.25:</strong> (a) <code>F=3 · 2=6 N</code>. (b) <code>a=6/12=0{,}5 m/s²</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.26, <code>m=10 kg</code>:</strong> (a) <code>a=0{,}1 m/s²</code>; (b) <code>0{,}5 m/s²</code>; (c) <code>1 m/s²</code>; (d) <code>2 m/s²</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.27, <code>a=1 m/s²</code>:</strong> (a) <code>800 N</code>; (b) <code>1200 N</code>; (c) <code>1600 N</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.28:</strong> (a) Richtig: doppelte Masse braucht bei gleicher Beschleunigung doppelte Kraft. (b) Falsch: Bei gleicher Kraft wird die kleinere Masse stärker beschleunigt. (c) Richtig, sofern Bremskraft und Bedingungen gleich sind: halbe Masse bedeutet doppelte Verzögerung.</p></div><div class="example-block no-break"><p><strong>Ü 3.34:</strong> Kräfte sind vektorielle Größen, werden in N gemessen und können beschleunigen, abbremsen, die Richtung ändern oder verformen. Darstellung als Pfeil: Richtung entspricht der Kraft, Länge ihrer Größe (mit gewähltem Maßstab).</p></div><div class="example-block no-break"><p><strong>Ü 3.35:</strong> Drei Bewegungswirkungen: schneller werden, langsamer werden und Richtung ändern; zusätzlich kann eine Kraft verformen.</p></div><div class="example-block no-break"><p><strong>V 3.5 Federwaagen in Serie (S. 107):</strong> Bei gleichmäßigem Zug mit <code>5 N</code> zeigen im Idealfall beide Waagen <code>5 N</code> an, nicht <code>2{,}5</code> oder <code>10 N</code>; die Zugspannung wird übertragen. Kleine Abweichungen durch Reibung/Kalibrierung sind möglich.</p></div></div><div class="full-width-table"><div class="diagram-wrap no-break"><svg viewBox="0 0 680 240" style="width:100%;height:auto"><g font-family="sans-serif" fill="#1e2e48" text-anchor="middle" font-size="14"><text x="100" y="35">Speed up</text><text x="260" y="35">Brake</text><text x="420" y="35">Turn</text><text x="580" y="35">Deform</text><g stroke="#fbc92d" stroke-width="5" marker-end="url(#f)"><path d="M45 80H150"/><path d="M310 80H205"/><path d="M385 105Q420 55 460 95"/><path d="M530 80H630"/></g><text x="100" y="125">F along motion</text><text x="260" y="125">F opposite motion</text><text x="420" y="125">F changes direction</text><text x="580" y="125">force changes shape</text><circle cx="260" cy="190" r="22" fill="#2980b9"/><circle cx="420" cy="190" r="22" fill="#dc4ebf"/><path d="M285 190H385M395 205H295" stroke="#1e2e48" stroke-width="3" marker-end="url(#g)"/><text x="340" y="232">Action ↔ reaction · equal and opposite on different bodies</text></g><defs><marker id="f" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0L0 6L7 3z" fill="#fbc92d"/></marker><marker id="g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L0 6L6 3z" fill="#1e2e48"/></marker></defs></svg><div class="diagram-caption">Figure 4 · Force and Newton’s axioms (Kraft und Newtonsche Axiome) · Kraft und Newtonsche Axiome</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Key idea · Kerngedanke</div><div class="callout-text">A force changes motion or shape; Newton’s laws describe inertia, acceleration and interactions. Action–reaction forces are equal and opposite but act on different bodies. / Eine Kraft verändert Bewegung oder Form; Newtons Axiome beschreiben Trägheit, Beschleunigung und Wechselwirkungen. Kräftepaare sind gleich groß und entgegengesetzt, wirken aber auf verschiedene Körper.</div></div></div></div>
+<div class="section page-break" id="s5"><div class="section-header no-break"><div class="section-num">5</div><div class="section-title-block"><div class="section-title-en">Gravitation and buoyancy (Gravitationskraft und Auftriebskraft)</div><div class="section-title-de">Gravitationskraft und Auftriebskraft</div></div></div><div class="bilingual-grid"><div class="col-en"><div class="col-label"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Gravitational force / weight force (Gravitationskraft, Schwerkraft, Gewichtskraft)</strong> is attraction between masses. Earth’s gravity pulls bodies toward Earth’s centre. Near Earth’s surface, <code>F_G=mg</code>, with <code>g=9.81 m/s²≈10 m/s²</code>; <code>F_G</code> is in N and <code>m</code> in kg. Mass is an intrinsic property measured in kg; weight force depends on local gravitational acceleration and is measured in N.</div></div></div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Buoyant force (Auftriebskraft)</strong> acts opposite to gravity on a body in a liquid or gas. Archimedes’ principle states that it equals the weight of the displaced medium: <code>F_A=ρ_{medium}V_{displaced}g=m_{displaced}g</code>. Greater displaced volume or greater medium density gives greater buoyancy.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Floating/sinking compares <code>F_A</code> with <code>F_G</code> and body/medium densities: sink if <code>F_A&lt;F_G</code> (body denser); neutral suspension if equal densities and forces; rise if <code>F_A&gt;F_G</code>; a floating body at the surface has equilibrium forces and displaces enough fluid to balance its weight. A hot-air balloon rises because hot air inside is less dense than surrounding air. A submarine changes buoyancy by filling ballast spaces with water or air. A hydrometer floats deeper in lower-density liquid and its scale indicates density; at equilibrium <code>F_A=F_G</code>.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Convert volume to m³ before using SI densities: <code>1 m³=1000 dm³=1 000 000 cm³=1 000 000 000 mm³</code>; <code>1 dm³=1 L</code>; <code>1 L=1000 ml</code>. Use <code>g≈10</code> when the exercise does. For a floating body, set <code>F_A=F_G</code>.</div></div></div><h3 class="subsection-title">Worked exercises (pp. 107–116):</h3><div class="example-block no-break"><p><strong>Ü 3.29:</strong> research values vary slightly: Moon <code>g≈1.62 m/s²</code>, Mars <code>g≈3.71 m/s²</code>. To match Earth’s weight force for a person with Earth mass <code>m_E</code>, require <code>m_Pg_P=m_Eg_E</code>, so <code>m_P=m_Eg_E/g_P</code>. For <code>m_E=60 kg</code> and Earth <code>g=9.81</code>, equivalent mass would be about <code>363 kg</code> on the Moon or <code>159 kg</code> on Mars. Mass itself does not change; this is the mass needed there to produce the Earth weight-force reading.</p></div><div class="example-block no-break"><p><strong>Ü 3.30 / K 3.20 experiment:</strong> the scale’s mass increase corresponds to a downward force on the water equal to buoyancy (multiply mass increment by <code>g</code>). As immersion/displaced volume increases, the increase grows; salt solution’s greater density produces greater force at equal displaced volume. Record two trials for each volume and average the force readings, then calculate <code>ρ=F_A/(Vg)</code> for each volume and average the five densities. No readings are supplied, so numerical water/salt-solution densities cannot be computed from the OCR alone.</p></div><div class="example-block no-break"><p><strong>13.1 worked example:</strong> <code>5 cm³=0.000005 m³</code>. <code>F_A=Vρ g=0.000005 · 1000 · 10=0.05 N</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.31:</strong> use <code>g=10 m/s²</code>. (a) <code>10 dm³=0.01 m³</code>, water buoyancy <code>=1000 · 0.01 · 10=100 N</code>. (b) A <code>10 dm³</code> ball: water <code>100 N</code>; mercury density <code>13.5 kg/dm³=13 500 kg/m³</code>, so <code>1350 N</code>. (c) Boje: <code>F_G=50 · 10=500 N</code>; <code>80 L=0.08 m³</code>, so <code>F_A=1000 · 0.08 · 10=800 N</code>. Since fully submerged buoyancy exceeds weight, it rises; at the surface it can float with only enough volume submerged to displace 50 L.</p></div><div class="example-block no-break"><p><strong>Ü 3.32 submarine:</strong> <code>F_G=500 · 10=5000 N</code>. To hover, <code>F_A=5000 N</code>. Required displaced volume <code>V=F_A/(ρ g)=5000/(1000 · 10)=0.5 m³</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.34–3.37:</strong> force description and three motion effects as above; <code>g=9.81 m/s²≈10 m/s²</code>; buoyancy points upward against weight and equals displaced-medium weight.</p></div><div class="example-block no-break"><p><strong>Ü 3.38 conversions:</strong> <code>300 dm³=0.3 m³</code>; <code>3 000 000 cm³=3000 dm³</code>; <code>2 L=2 dm³</code>; <code>0.02 L=20 cm³</code>; <code>300 ml=0.3 L</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.40:</strong> with <code>g=10</code>: <code>1 kg→10 N</code>; <code>1 g=0.001 kg→0.01 N</code>; <code>1 dag=0.01 kg→0.1 N</code>; <code>10 dag=0.1 kg→1 N</code>.</p></div><div class="example-block no-break"><p><strong>K 3.12 hydrometer:</strong> its weight is <code>0.9 N</code>, so displaced-fluid volume <code>V=F_G/(ρ g)</code>. In water: <code>0.9/(1000 · 10)=0.00009 m³=90 cm³</code>, or 90% of its <code>100 cm³</code> volume submerged; 10% protrudes. In sugar water at <code>1050 kg/m³</code>: <code>V=0.9/(1050 · 10)=85.714 cm³</code>, about 85.7% submerged and 14.3% above.</p></div><div class="example-block no-break"><p><strong>K 3.13 force and motion:</strong> from 2–3 s the body speeds up, so net force points along motion; 3–4 s uniform motion means net force is zero; 4–5 s it slows, so net force opposes motion. The graph’s curve outside those intervals is not described sufficiently for extra numerical conclusions.</p></div><div class="example-block no-break"><p><strong>K 3.14 hydrometers:</strong> for the same hydrometer, the one that sinks deepest is in the least dense liquid; the one that sits highest is in the most dense liquid. Exact ordering/values are absent from the image description.</p></div><div class="example-block no-break"><p><strong>K 3.15:</strong> a body sinks when weight exceeds buoyancy; floats at the surface when the displaced water provides buoyancy equal to its weight. A body denser than water generally sinks; less dense generally floats.</p></div><div class="example-block no-break"><p><strong>K 3.16 polystyrene:</strong> upon release underwater, weight acts downward and buoyancy upward; because polystyrene density is below water density, buoyancy exceeds weight and accelerates it upward.</p></div><div class="example-block no-break"><p><strong>K 3.17 coin:</strong> gravity acts downward, buoyancy upward; a metal coin denser than water has <code>F_G&gt;F_A</code> and accelerates downward.</p></div><div class="example-block no-break"><p><strong>K 3.18 driftwood:</strong> cube volume <code>0.1³=0.001 m³</code>. Mass <code>=700 · 0.001=0.7 kg</code>; weight <code>=7 N</code> with <code>g=10</code>. At float equilibrium displaced volume <code>=m/ρ_w=0.0007 m³</code>; base area <code>0.1 · 0.1=0.01 m²</code>, submerged height <code>=0.0007/0.01=0.07 m=7 cm</code>.</p></div><div class="example-block no-break"><p><strong>K 3.19 balloon:</strong> net lift per cubic metre is <code>(1-0.9) · 10=1 N/m³</code>. To support <code>200 kg</code>, weight is about <code>2000 N</code>; required volume <code>=2000/1=2000 m³</code>. This ideal calculation neglects the balloon envelope and other displaced structures, consistent with the given data.</p></div></div><div class="col-de"><div class="col-label"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Gravitationskraft/Schwerkraft/Gewichtskraft</strong> ist die Anziehung zwischen Massen. Die Erde zieht Körper zum Erdmittelpunkt. Nahe der Erdoberfläche gilt <code>F_G=mg</code>, mit <code>g=9{,}81 m/s²≈10 m/s²</code>; <code>F_G</code> in N, <code>m</code> in kg. Masse ist eine ortsunabhängige Eigenschaft in kg; Gewichtskraft hängt von der örtlichen Gravitationsbeschleunigung ab und wird in N gemessen.</div></div></div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Die <strong>Auftriebskraft</strong> wirkt in Flüssigkeiten und Gasen der Gewichtskraft entgegen. Nach dem archimedischen Prinzip entspricht sie der Gewichtskraft des verdrängten Mediums: <code>F_A=ρ_{Medium}V_{verdrängt}g=m_{verdrängt}g</code>. Je größer verdrängtes Volumen oder Mediendichte, desto größer der Auftrieb.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Sinken/Schweben/Steigen/Schwimmen ergibt sich aus dem Vergleich von <code>F_A</code> und <code>F_G</code> sowie Körper- und Mediendichte: Sinken bei <code>F_A&lt;F_G</code> (Körper dichter); Schweben bei Gleichgewicht und gleicher Dichte; Steigen bei <code>F_A&gt;F_G</code>; an der Oberfläche schwimmt ein Körper im Gleichgewicht und verdrängt so viel Flüssigkeit, dass deren Gewicht seinem eigenen entspricht. Ein Heißluftballon steigt, weil die heiße Innenluft weniger dicht als die Umgebungsluft ist. Ein U-Boot verändert den Auftrieb durch Füllen seiner Hohlräume mit Wasser oder Luft. Ein Aräometer taucht in einer Flüssigkeit kleinerer Dichte tiefer ein; im Gleichgewicht gilt <code>F_A=F_G</code>.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Vor der Rechnung Volumen in m³ umrechnen: <code>1 m³=1000 dm³=1 000 000 cm³=1 000 000 000 mm³</code>; <code>1 dm³=1 L</code>; <code>1 L=1000 ml</code>. Das Buch rechnet oft mit <code>g≈10</code>. Bei schwimmenden Körpern <code>F_A=F_G</code> setzen.</div></div></div><h3 class="subsection-title">Durchgerechnete Übungen (S. 107–116):</h3><div class="example-block no-break"><p><strong>Ü 3.29:</strong> Recherchewerte schwanken leicht: Mond <code>g≈1{,}62 m/s²</code>, Mars <code>g≈3{,}71 m/s²</code>. Für gleiche Gewichtskraft wie auf der Erde gilt <code>m_Pg_P=m_Eg_E</code>, somit <code>m_P=m_Eg_E/g_P</code>. Für <code>m_E=60 kg</code> und <code>g_E=9{,}81</code>: erforderliche Masse etwa <code>363 kg</code> am Mond bzw. <code>159 kg</code> am Mars. Die Masse einer Person bleibt gleich; berechnet wird die Masse, die dort dieselbe Gewichtskraft erzeugen würde.</p></div><div class="example-block no-break"><p><strong>Ü 3.30 / K 3.20 Versuch:</strong> Die Massenzunahme auf der Waage entspricht einer nach unten wirkenden Kraft auf das Wasser und damit dem Auftrieb (Massendifferenz mit <code>g</code> multiplizieren). Mit größerem verdrängtem Volumen wächst die Kraft; bei gleicher Eintauchtiefe erzeugt die dichtere Salzlösung mehr Auftrieb. Zwei Messungen je Volumen durchführen und Kraftmittelwerte bilden; dann <code>ρ=F_A/(Vg)</code> für jedes Volumen berechnen und die fünf Dichtewerte mitteln. Messwerte fehlen, daher sind keine Zahlenwerte für Wasser/Salzlösung aus der OCR berechenbar.</p></div><div class="example-block no-break"><p><strong>Rechenbeispiel 13.1:</strong> <code>5 cm³=0{,}000005 m³</code>. <code>F_A=Vρ g=0{,}000005 · 1000 · 10=0{,}05 N</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.31:</strong> mit <code>g=10 m/s²</code>. (a) <code>10 dm³=0{,}01 m³</code>, Wasserauftrieb <code>=1000 · 0{,}01 · 10=100 N</code>. (b) Wasserball mit <code>10 dm³</code>: Wasser <code>100 N</code>; Quecksilber <code>13{,}5 kg/dm³=13 500 kg/m³</code>, Auftrieb <code>1350 N</code>. (c) Boje: <code>F_G=50 · 10=500 N</code>; <code>80 L=0{,}08 m³</code>, <code>F_A=1000 · 0{,}08 · 10=800 N</code>. Vollständig untergetaucht steigt sie, da Auftrieb größer ist; an der Oberfläche reichen 50 L verdrängtes Wasser zum Schwimmen.</p></div><div class="example-block no-break"><p><strong>Ü 3.32 U-Boot:</strong> <code>F_G=500 · 10=5000 N</code>. Zum Schweben <code>F_A=5000 N</code>. Benötigtes Volumen <code>V=F_A/(ρ g)=5000/(1000 · 10)=0{,}5 m³</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.34–3.37:</strong> Kraftmerkmale und drei Bewegungswirkungen wie oben; <code>g=9{,}81 m/s²≈10 m/s²</code>; Auftrieb wirkt nach oben entgegen der Gewichtskraft und ist gleich der Gewichtskraft des verdrängten Mediums.</p></div><div class="example-block no-break"><p><strong>Ü 3.38 Umrechnungen:</strong> <code>300 dm³=0{,}3 m³</code>; <code>3 000 000 cm³=3000 dm³</code>; <code>2 L=2 dm³</code>; <code>0{,}02 L=20 cm³</code>; <code>300 ml=0{,}3 L</code>.</p></div><div class="example-block no-break"><p><strong>Ü 3.40:</strong> mit <code>g=10</code>: <code>1 kg→10 N</code>; <code>1 g=0{,}001 kg→0{,}01 N</code>; <code>1 dag=0{,}01 kg→0{,}1 N</code>; <code>10 dag=0{,}1 kg→1 N</code>.</p></div><div class="example-block no-break"><p><strong>K 3.12 Aräometer:</strong> Gewichtskraft <code>0{,}9 N</code>, daher verdrängtes Volumen <code>V=F_G/(ρ g)</code>. In Wasser: <code>0{,}9/(1000 · 10)=0{,}00009 m³=90 cm³</code>, also 90% eingetaucht und 10% herausragend. In Zuckerwasser mit <code>1050 kg/m³</code>: <code>V=0{,}9/(1050 · 10)=85{,}714 cm³</code>, etwa 85,7% eingetaucht und 14,3% herausragend.</p></div><div class="example-block no-break"><p><strong>K 3.13 Kraft und Bewegung:</strong> Von 2–3 s wird der Körper schneller, die resultierende Kraft zeigt in Bewegungsrichtung; 3–4 s gleichförmige Bewegung bedeutet resultierende Kraft null; 4–5 s wird er langsamer, die Kraft wirkt entgegen der Bewegung. Für andere Zeitbereiche liefert die Beschreibung keine hinreichenden Zusatzwerte.</p></div><div class="example-block no-break"><p><strong>K 3.14 Aräometer:</strong> Beim gleichen Aräometer liegt die geringste Flüssigkeitsdichte dort vor, wo es am tiefsten eintaucht; die größte dort, wo es am höchsten schwimmt. Exakte Reihenfolge/Werte sind in der Bildbeschreibung nicht enthalten.</p></div><div class="example-block no-break"><p><strong>K 3.15:</strong> Ein Körper sinkt, wenn Gewichtskraft größer als Auftrieb ist; er schwimmt an der Oberfläche, wenn verdrängtes Wasser eine gleich große Auftriebskraft erzeugt. Dichtere Körper sinken im Allgemeinen, weniger dichte schwimmen.</p></div><div class="example-block no-break"><p><strong>K 3.16 Styroporwürfel:</strong> Beim Loslassen wirken Gewichtskraft nach unten und Auftrieb nach oben. Da Styropor weniger dicht als Wasser ist, ist der Auftrieb größer und beschleunigt den Würfel nach oben.</p></div><div class="example-block no-break"><p><strong>K 3.17 Münze:</strong> Gewichtskraft wirkt nach unten, Auftrieb nach oben. Eine Metal­l münze ist dichter als Wasser, daher <code>F_G&gt;F_A</code> und sie beschleunigt nach unten.</p></div><div class="example-block no-break"><p><strong>K 3.18 Treibholz:</strong> Würfelvolumen <code>0{,}1³=0{,}001 m³</code>. Masse <code>700 · 0{,}001=0{,}7 kg</code>; Gewichtskraft <code>7 N</code> mit <code>g=10</code>. Beim Schwimmen verdrängtes Volumen <code>m/ρ_w=0{,}0007 m³</code>; Grundfläche <code>0{,}1 · 0{,}1=0{,}01 m²</code>, Eintauchtiefe <code>0{,}0007/0{,}01=0{,}07 m=7 cm</code>.</p></div><div class="example-block no-break"><p><strong>K 3.19 Heißluftballon:</strong> Nettoauftrieb je Kubikmeter <code>(1-0{,}9) · 10=1 N/m³</code>. Für <code>200 kg</code> Last beträgt die Gewichtskraft etwa <code>2000 N</code>; benötigtes Volumen <code>2000/1=2000 m³</code>. Idealisierte Rechnung; Hülle und sonstige verdrängte Teile werden mit den gegebenen Angaben nicht berücksichtigt.</p></div></div><div class="full-width-table"><div class="diagram-wrap no-break"><svg viewBox="0 0 680 250" style="width:100%;height:auto"><g font-family="sans-serif" fill="#1e2e48" text-anchor="middle" font-size="13"><text x="80" y="25">Sink · Sinken</text><text x="245" y="25">Neutral · Schweben</text><text x="410" y="25">Rise · Steigen</text><text x="575" y="25">Float · Schwimmen</text><g fill="#d9effa" stroke="#2980b9"><rect x="15" y="40" width="130" height="165"/><rect x="180" y="40" width="130" height="165"/><rect x="345" y="40" width="130" height="165"/><rect x="510" y="40" width="155" height="165"/></g><g fill="#dc4ebf"><circle cx="80" cy="160" r="16"/><circle cx="245" cy="120" r="16"/><circle cx="410" cy="105" r="16"/><circle cx="585" cy="75" r="16"/></g><g stroke="#1e2e48" stroke-width="3"><path d="M80 135V95M245 95V70M245 145V175M410 130V75M585 95V145"/></g><g fill="#1e2e48"><text x="80" y="225">ρbody &gt; ρmedium</text><text x="245" y="225">ρ equal; FA = FG</text><text x="410" y="225">FA &gt; FG</text><text x="585" y="225">FA = FG at surface</text></g><text x="340" y="245">Buoyancy up · Auftrieb ↑ | Weight down · Gewicht ↓ | displaced volume = Vverdrängt</text></g></svg><div class="diagram-caption">Figure 5 · Gravitation and buoyancy (Gravitationskraft und Auftriebskraft) · Gravitationskraft und Auftriebskraft</div></div></div><div class="full-width-table"><figure><img src="assets/buoyancy_hydrometer.png" alt="Hydrometers displace more liquid in lower-density media."><figcaption>Hydrometers displace more liquid in lower-density media. · Gravitationskraft und Auftriebskraft</figcaption></figure></div></div></div>
+<div class="section page-break" id="s6"><div class="section-header no-break"><div class="section-num">6</div><div class="section-title-block"><div class="section-title-en">Biology: subdisciplines, nomenclature and characteristics of life (Biologie: Teilgebiete, Nomenklatur, Kennzeichen des Lebens)</div><div class="section-title-de">Biologie: Teilgebiete, Nomenklatur, Kennzeichen des Lebens</div></div></div><div class="bilingual-grid"><div class="col-en"><div class="col-label"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Biology (Biologie)</strong> is the natural-science discipline that studies living things. The word combines Greek <em>bíos</em> (“life”) and <em>-logie</em> (“study/teaching”). Living things are called <strong>organisms (Organismen)</strong>; biology studies their structure, development and relationships with their environment.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Important subdisciplines include <strong>zoology (Zoologie)</strong>—animals; <strong>botany (Botanik)</strong>—plants; <strong>microbiology (Mikrobiologie)</strong>—microorganisms; and <strong>ecology (Ökologie)</strong>—relationships among organisms and their environment. Class notes additionally name anthropology/human biology, genetics/heredity and DNA, and palaeontology/fossils and extinct organisms. Methods include describing appearance, observing behaviour, microscopy and chemical analysis.</div></div></div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Binomial nomenclature (binäre Nomenklatur)</strong> gives an organism a two-part scientific name: the first word is the <strong>genus (Gattung)</strong> and the second the <strong>species epithet (Art)</strong>. Example: <em>Homo sapiens</em>—<em>Homo</em> is the genus (“human”), <em>sapiens</em> the species epithet (“wise”); <em>Vibrio cholerae</em> has genus <em>Vibrio</em> and epithet <em>cholerae</em>. If the species is unknown, use <em>sp.</em> after the genus, e.g. <em>Vibrio</em> sp. Scientific names are written in italics (or underlined when handwritten), with genus capitalised and epithet lower-case.</div></div></div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Characteristics of life (Kennzeichen des Lebens)</strong> distinguish organisms from inanimate matter: cellular organisation, metabolism, responsiveness to stimuli, independent reproduction and movement. Notes also identify growth as a characteristic.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Movement alone does not prove something is alive: a toy can move mechanically. Look for the full set of life characteristics. A real elephant and toy elephant may look similar, but only the organism has cells, metabolism, growth, stimulus responses and reproduction.</div></div></div><h3 class="subsection-title">Worked exercise Ü 4.1 (p. 134): propose distinguishing features for living and non-living examples, then compare with the criteria on p. 135. A real elephant is cellular, metabolises food/water and oxygen, grows, responds to stimuli, reproduces and moves; a toy elephant does none of these biologically, even if pushed. No single visible trait such as movement or appearance is sufficient by itself.</h3></div><div class="col-de"><div class="col-label"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Biologie</strong> ist jener Teilbereich der Naturwissenschaften, der sich mit Lebewesen beschäftigt. Das Wort setzt sich aus griechisch <em>bíos</em> („Leben“) und <em>-logie</em> („Lehre“) zusammen. Lebewesen heißen fachsprachlich <strong>Organismen</strong>; untersucht werden etwa ihr Aufbau, ihre Entwicklung und ihre Beziehungen zur Umwelt.</div></div></div><div class="callout-box callout-info no-break"><div class="callout-content"><div class="callout-label">Note</div><div class="callout-text">Wichtige Teilgebiete: <strong>Zoologie</strong> – Tiere; <strong>Botanik</strong> – Pflanzen; <strong>Mikrobiologie</strong> – Kleinstlebewesen; <strong>Ökologie</strong> – Beziehungen zwischen Organismen und Umwelt. Die Mitschrift ergänzt Anthropologie/Humanbiologie, Genetik/Vererbung und DNA sowie Paläontologie/Fossilien und ausgestorbene Lebewesen. Methoden sind Beschreibung des Aussehens, Beobachtung des Verhaltens, mikroskopische und chemische Untersuchungen.</div></div></div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Die <strong>binäre Nomenklatur</strong> gibt Organismen einen zweiteiligen wissenschaftlichen Namen: Der erste Teil ist die <strong>Gattung</strong>, der zweite das <strong>Art-Epitheton</strong>. Beispiel <em>Homo sapiens</em>: <em>Homo</em> ist die Gattung („Mensch“), <em>sapiens</em> das Art-Epitheton („weise“); bei <em>Vibrio cholerae</em> ist <em>Vibrio</em> die Gattung und <em>cholerae</em> das Epitheton. Ist die Art nicht bekannt, schreibt man <em>sp.</em> nach der Gattung, z. B. <em>Vibrio</em> sp. Wissenschaftliche Namen werden kursiv geschrieben (handschriftlich unterstrichen), die Gattung groß-, das Epitheton kleingeschrieben.</div></div></div><div class="callout-box callout-def no-break"><div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Kennzeichen des Lebens</strong> unterscheiden Organismen von unbelebter Materie: zellulärer Aufbau, Stoffwechsel, Reizbarkeit, eigenständige Fortpflanzung und Bewegung. Die Mitschrift nennt zusätzlich Wachstum.</div></div></div><div class="callout-box callout-tip no-break"><div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Bewegung allein beweist nicht, dass etwas lebt: Auch ein Spielzeug kann mechanisch bewegt werden. Prüfe mehrere Kennzeichen des Lebens. Echter Elefant und Spielzeugelefant können ähnlich aussehen, doch nur der Organismus hat Zellen, Stoffwechsel, Wachstum, Reizreaktionen, Fortpflanzung und Bewegungsvorgänge.</div></div></div><h3 class="subsection-title">Durchgerechnete Übung Ü 4.1 (S. 134): Merkmale für lebendig/unbelebt sammeln und mit den Kriterien auf S. 135 vergleichen. Ein echter Elefant besteht aus Zellen, verarbeitet Nahrung/Wasser und Sauerstoff, wächst, reagiert auf Reize, pflanzt sich fort und bewegt sich. Ein Spielzeugelefant tut biologisch nichts davon, selbst wenn man ihn schiebt. Ein einzelnes sichtbares Merkmal wie Bewegung oder Aussehen reicht nicht aus.</h3></div><div class="full-width-table"><div class="table-wrap no-break"><table class="vsn-table"><thead><tr><th>Characteristic / Kennzeichen</th><th>Meaning / example / Bedeutung / Beispiel</th></tr></thead><tbody><tr><td>Cells (Zellen) / Zellen</td><td>All organisms consist of one or more cells; bacteria, paramecia and amoebae are unicellular; humans, animals, fungi and plants are multicellular. / Alle Lebewesen bestehen aus einer oder mehreren Zellen; Bakterien, Pantoffeltierchen und Amöben sind Einzeller; Menschen, Tiere, Pilze und Pflanzen Vielzeller.</td></tr><tr><td>Metabolism (Stoffwechsel) / Stoffwechsel</td><td>Take in substances, chemically transform them/build body substances and release waste. Plants use water and carbon dioxide in photosynthesis and release oxygen. / Stoffe aufnehmen, chemisch umwandeln/körpereigene Stoffe aufbauen und Abfallstoffe abgeben. Pflanzen verwenden bei der Fotosynthese Wasser und Kohlenstoffdioxid und geben Sauerstoff ab.</td></tr><tr><td>Responsiveness/irritability (Reizbarkeit) / Reizbarkeit</td><td>Detect environmental stimuli and respond; pupils constrict in bright light. / Umweltreize wahrnehmen und darauf reagieren; bei hellem Licht verengen sich die Pupillen.</td></tr><tr><td>Reproduction (Fortpflanzung) / Fortpflanzung</td><td>Produce offspring independently and pass on hereditary material. / Selbstständig Nachkommen erzeugen und Erbmaterial weitergeben.</td></tr><tr><td>Movement (Bewegung) / Bewegung</td><td>All organisms show movement; plant growth toward light is an example. Some movements are microscopic. / Alle Lebewesen zeigen Bewegung; Pflanzenbewegung zum Licht ist ein Beispiel. Manche Bewegungen sieht man nur mikroskopisch.</td></tr><tr><td>Growth (Wachstum) / Wachstum</td><td>In multicellular organisms, growth occurs through cell division. / Bei Vielzellern erfolgt Wachstum durch Zellteilung.</td></tr></tbody></table></div></div><div class="full-width-table"><div class="diagram-wrap no-break"><svg viewBox="0 0 680 265" style="width:100%;height:auto"><g font-family="sans-serif" fill="#1e2e48"><text x="10" y="22" font-size="16" font-weight="bold">Biology fields · Teilgebiete</text><g font-size="13"><text x="20" y="55">Zoology / Zoologie → animals · Tiere (e.g. mammals)</text><text x="20" y="80">Botany / Botanik → plants · Pflanzen (e.g. trees)</text><text x="20" y="105">Microbiology / Mikrobiologie → microorganisms · Mikroorganismen</text><text x="20" y="130">Ecology / Ökologie → organism–environment relations · Umweltbeziehungen</text><text x="20" y="167" font-size="16" font-weight="bold">Life characteristics · Kennzeichen des Lebens</text><text x="20" y="196">Cells / Zellen · Metabolism / Stoffwechsel · Responsiveness / Reizbarkeit</text><text x="20" y="220">Independent reproduction / Fortpflanzung · Movement / Bewegung · Growth / Wachstum</text><text x="20" y="250">No single trait proves life: compare the full set.</text></g></g></svg><div class="diagram-caption">Figure 6 · Biology: subdisciplines, nomenclature and characteristics of life (Biologie: Teilgebiete, Nomenklatur, Kennzeichen des Lebens) · Biologie: Teilgebiete, Nomenklatur, Kennzeichen des Lebens</div></div></div></div></div>
+</body>
+</html>

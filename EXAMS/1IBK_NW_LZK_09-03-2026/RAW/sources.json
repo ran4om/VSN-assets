@@ -1,0 +1,33 @@
+{
+  "vault": "/home/kiarad/.cache/vsn/school-vault",
+  "examNotes": [],
+  "linkedNotes": [],
+  "lessons": [],
+  "books": [
+    {
+      "file": "02 Subjects/NW/Naturwissenschaften-HAK-II.pdf",
+      "lfsBytes": 44705712
+    },
+    {
+      "file": "02 Subjects/NW/Periodensystem-der-Elemente-NIST-2024.pdf",
+      "lfsBytes": 3721876
+    }
+  ],
+  "subjectIndex": [
+    "02 Subjects/NW/Inhaltsverzeichnis.md",
+    "02 Subjects/NW/NW.md"
+  ],
+  "pageRefs": [],
+  "existingVsnAssetsRaw": [
+    "/home/kiarad/VSN/EXAMS/1IBK_NW_LZK_09-03-2026/RAW/1IBK_NW_LZK_09-03-2026.pdf",
+    "/home/kiarad/VSN/EXAMS/1IBK_NW_LZK_09-03-2026/RAW/STOFF.png"
+  ],
+  "window": {
+    "since": "2026-01-26",
+    "until": "2026-03-09"
+  },
+  "missing": [
+    "no exam note for this date/subject in 04 Exams — ask the user for the Stoff (topics/pages)",
+    "no lesson notes in the window"
+  ]
+}

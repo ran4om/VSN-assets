@@ -1,0 +1,94 @@
+{
+  "title": "Biology – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What does ecology study?",
+      "options": [
+        "Relationships among organisms and their environment",
+        "fossils only",
+        "plants only",
+        "chemical elements only"
+      ],
+      "correctAnswer": "Relationships among organisms and their environment",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "true-false",
+      "text": "In Homo sapiens, Homo is the genus.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "biology"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How is a scientific species name conventionally written?",
+      "options": [
+        "Genus capitalised, species epithet lower-case; both italicised",
+        "Both words capitalised and not italicised",
+        "Genus lower-case, epithet capitalised",
+        "Only the genus italicised"
+      ],
+      "correctAnswer": "Genus capitalised, species epithet lower-case; both italicised",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which branch of biology studies plants?",
+      "options": [
+        "botany",
+        "zoology",
+        "ecology",
+        "palaeontology"
+      ],
+      "correctAnswer": "botany",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which response is an example of responsiveness to a stimulus?",
+      "options": [
+        "Pupils constrict in bright light.",
+        "A stone falls",
+        "A toy rolls",
+        "Water boils"
+      ],
+      "correctAnswer": "Pupils constrict in bright light.",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "open-ended",
+      "text": "Name three characteristics of life and give an example for one.",
+      "options": [],
+      "correctAnswer": "Any three: cells, metabolism, responsiveness, reproduction, movement, growth; e.g. pupils constrict in bright light.",
+      "points": 20,
+      "topic": "biology"
+    },
+    {
+      "type": "true-false",
+      "text": "Movement alone proves that something is alive.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "biology"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does Vibrio sp. mean?",
+      "options": [
+        "The species is not specified; genus is Vibrio.",
+        "It names a specific species.",
+        "Vibrio is the species epithet.",
+        "It means a plant."
+      ],
+      "correctAnswer": "The species is not specified; genus is Vibrio.",
+      "points": 10,
+      "topic": "biology"
+    }
+  ]
+}

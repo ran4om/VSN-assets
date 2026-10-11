@@ -1,75 +1,21 @@
-# 📑 Master Study Guide
+# Naturwissenschaften / Natural Sciences — Study Guide / Lernleitfaden
 
-## Naturwissenschaften: Materie, Energie und Kräfte
-### Natural Sciences: Matter, Energy and Forces
+**Exam:** 1IBK · NW (Naturwissenschaften / Natural Sciences) · LZK · 09.03.2026  
+**Made by VSN**
 
----
+📑 **Contents / Inhalt**
 
-## 📋 Overview / Übersicht
+| # | File | Covers / Inhalt |
+|---:|---|---|
+| 1 | `01_states_of_matter.md` | States of matter / Aggregatzustände |
+| 2 | `02_density.md` | Density, conductivity / Dichte, Leitfähigkeit |
+| 3 | `03_energy.md` | Energy / Energie |
+| 4 | `04_force_newtons_laws.md` | Force and Newton’s axioms / Kraft und Newtonsche Axiome |
+| 5 | `05_gravitation_buoyancy.md` | Gravitation and buoyancy / Gravitation und Auftrieb |
+| 6 | `06_biology.md` | Biology / Biologie |
 
-This study set contains **5 numbered modules** covering the fundamental topics in natural sciences (physics and biology). Each file is designed for self-study and exam preparation.
+## How to use this set / So verwendest du dieses Set
+Open each topic file in order. Read both language sections, study the worked exercises, then complete the self-check. Open the next or previous file using its filename in the navigation block.
 
-Dieser Lernsatz enthält **5 nummerierte Module** zu den Grundlagen der Naturwissenschaften (Physik und Biologie). Jede Datei ist für Selbststudium und Prüfungsvorbereitung konzipiert.
-
----
-
-## 📁 File Structure / Dateistruktur
-
-| File | Topic | Thema |
-|------|-------|-------|
-| `01_States_of_Matter.md` | States of Matter & Properties | Aggregatzustände und Stoffeigenschaften |
-| `02_Energy.md` | Energy | Energie |
-| `03_Forces.md` | Forces | Kräfte |
-| `04_Gravitational_Force_Buoyancy.md` | Gravitational Force & Buoyancy | Gravitationskraft und Auftrieb |
-| `05_Fundamentals_of_Biology.md` | Fundamentals of Biology | Grundlagen der Biologie |
-
----
-
-## 🎯 How to Use / Verwendung
-
-### For Students (Learning Mode)
-1. **Start here** - Read this Master Guide to understand the structure
-2. **Open file 01_States_of_Matter.md** - Begin with the first topic
-3. **Follow the navigation** at the top and bottom of each file
-4. **Complete all 5 modules** in order for comprehensive coverage
-
-### For Exam Preparation
-- Focus on **DEFINITION** blocks (marked with 💡)
-- Review all **formulas** in each section
-- Practice the **EXAM TIPS** (marked with ⚡)
-- Use the **Practice Problems** at the end of each section
-
----
-
-## 📊 Emoji Legend
-
-| Emoji | Meaning |
-|-------|---------|
-| 📑 | Table of Contents |
-| 🎯 | Goals/Objectives |
-| 💡 | Key Points / Definitions |
-| ⚡ | Exam Tips |
-| 📊 | Data/Tables/Formulas |
-
----
-
-## 🔄 Navigation / Navigation
-
-**Start your study journey by opening file:**
-```
-Open file 01_States_of_Matter.md
-```
-
----
-
-## ✅ Progress Checklist
-
-- [ ] 01 - States of Matter
-- [ ] 02 - Energy  
-- [ ] 03 - Forces
-- [ ] 04 - Gravitational Force & Buoyancy
-- [ ] 05 - Fundamentals of Biology
-
----
-
-*Generated for VSN Exam Preparation*
+## Legend / Legende
+📑 contents / Inhalt · 🎯 goals / Lernziele · 💡 key point / Merksatz · ⚡ exam tip / Prüfungstipp · 📊 data / Daten

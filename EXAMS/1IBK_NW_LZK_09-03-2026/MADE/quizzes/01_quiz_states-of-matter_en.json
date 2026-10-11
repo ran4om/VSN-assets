@@ -1,0 +1,94 @@
+{
+  "title": "States of Matter – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What shape and volume does a liquid have?",
+      "options": [
+        "adapts to its container; constant volume",
+        "constant shape and volume; konstantes Volumen",
+        "variable shape and volume; variables Volumen",
+        "constant shape; variables Volumen"
+      ],
+      "correctAnswer": "adapts to its container; constant volume",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which change of state is condensation?",
+      "options": [
+        "gas to liquid",
+        "liquid to gas; flüssig zu gasförmig",
+        "solid to gas; fest zu gasförmig",
+        "gas to solid; gasförmig zu fest"
+      ],
+      "correctAnswer": "gas to liquid",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "true-false",
+      "text": "At normal air pressure, water boils at 100 °C.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "At what temperature does nitrogen boil according to the table?",
+      "options": [
+        "−196 °C",
+        "−210 °C",
+        "0 °C",
+        "100 °C"
+      ],
+      "correctAnswer": "−196 °C",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Why does a packet of chips bulge on a mountain?",
+      "options": [
+        "Lower external air pressure lets the trapped gas expand until pressures balance.",
+        "The chips produce gas.",
+        "The gas freezes.",
+        "Gravity compresses the packet."
+      ],
+      "correctAnswer": "Lower external air pressure lets the trapped gas expand until pressures balance.",
+      "points": 10,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "open-ended",
+      "text": "Classify water at −30 °C, 20 °C and 130 °C (normal pressure).",
+      "options": [],
+      "correctAnswer": "−30 °C solid; 20 °C liquid; 130 °C gas.",
+      "points": 15,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "true-false",
+      "text": "Helium solidifies at normal pressure at Earth’s surface.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "states-of-matter"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Beschreibung passt zu Plasma?",
+      "options": [
+        "Ionised gas with charged particles",
+        "closely arranged neutral particles",
+        "liquid with constant shape",
+        "solid with variable volume"
+      ],
+      "correctAnswer": "Ionised gas with charged particles",
+      "points": 10,
+      "topic": "states-of-matter"
+    }
+  ]
+}

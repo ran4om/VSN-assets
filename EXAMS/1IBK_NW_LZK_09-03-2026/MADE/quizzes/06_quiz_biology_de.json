@@ -1,0 +1,94 @@
+{
+  "title": "Biologie – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Was untersucht die Ökologie?",
+      "options": [
+        "Beziehungen zwischen Organismen und ihrer Umwelt",
+        "nur Fossilien",
+        "nur Pflanzen",
+        "nur chemische Elemente"
+      ],
+      "correctAnswer": "Beziehungen zwischen Organismen und ihrer Umwelt",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "true-false",
+      "text": "In Homo sapiens ist Homo der Gattungsname.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "biology"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie wird ein wissenschaftlicher Artname üblicherweise geschrieben?",
+      "options": [
+        "Gattung groß, Art-Epitheton klein; beide kursiv",
+        "Beide groß und nicht kursiv",
+        "Gattung klein, Epitheton groß",
+        "Nur die Gattung kursiv"
+      ],
+      "correctAnswer": "Gattung groß, Art-Epitheton klein; beide kursiv",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Teilwissenschaft befasst sich mit Pflanzen?",
+      "options": [
+        "Botanik",
+        "Zoologie",
+        "Ökologie",
+        "Paläontologie"
+      ],
+      "correctAnswer": "Botanik",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Reaktion ist ein Beispiel für Reizbarkeit?",
+      "options": [
+        "Die Pupillen verengen sich bei hellem Licht.",
+        "Ein Stein fällt",
+        "Ein Spielzeug rollt",
+        "Wasser siedet"
+      ],
+      "correctAnswer": "Die Pupillen verengen sich bei hellem Licht.",
+      "points": 10,
+      "topic": "biology"
+    },
+    {
+      "type": "open-ended",
+      "text": "Nenne drei Kennzeichen des Lebens und gib für eines ein Beispiel.",
+      "options": [],
+      "correctAnswer": "Drei davon: Zellen, Stoffwechsel, Reizbarkeit, Fortpflanzung, Bewegung, Wachstum; z. B. Pupillen verengen sich bei hellem Licht.",
+      "points": 20,
+      "topic": "biology"
+    },
+    {
+      "type": "true-false",
+      "text": "Bewegung allein beweist, dass etwas lebt.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "biology"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was bedeutet Vibrio sp.?",
+      "options": [
+        "Die Art ist nicht angegeben; die Gattung ist Vibrio.",
+        "Es bezeichnet eine bestimmte Art.",
+        "Vibrio ist das Art-Epitheton.",
+        "Es bedeutet Pflanze."
+      ],
+      "correctAnswer": "Die Art ist nicht angegeben; die Gattung ist Vibrio.",
+      "points": 10,
+      "topic": "biology"
+    }
+  ]
+}

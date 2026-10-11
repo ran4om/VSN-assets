@@ -1,0 +1,94 @@
+{
+  "title": "Gravitation and Buoyancy – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What is the equation for weight force near Earth’s surface?",
+      "options": [
+        "F_G = mg",
+        "F_G = m/g",
+        "F_G = ρ/V",
+        "F_G = ma²"
+      ],
+      "correctAnswer": "F_G = mg",
+      "points": 10,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "true-false",
+      "text": "An object’s mass changes when it is taken to the Moon.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An object displaces 5 cm³ of water. What is F_A for ρ=1000 kg/m³ and g=10 m/s²?",
+      "options": [
+        "0.05 N",
+        "0.5 N",
+        "5 N",
+        "50 N"
+      ],
+      "correctAnswer": "0.05 N",
+      "points": 15,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which statement describes Archimedes’ principle?",
+      "options": [
+        "Buoyancy equals the weight of the displaced medium.",
+        "Buoyancy equals the body’s mass.",
+        "Buoyancy always equals 1 N.",
+        "Buoyancy acts downward."
+      ],
+      "correctAnswer": "Buoyancy equals the weight of the displaced medium.",
+      "points": 10,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the weight force of a 50 kg object when g≈10 m/s²?",
+      "options": [
+        "500 N",
+        "5 N",
+        "50 N",
+        "5000 N"
+      ],
+      "correctAnswer": "500 N",
+      "points": 15,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "open-ended",
+      "text": "A submarine displaces 0.5 m³ of water. Calculate buoyancy using ρ=1000 kg/m³ and g=10 m/s².",
+      "options": [],
+      "correctAnswer": "F_A = ρVg = 1000 × 0.5 × 10 = 5000 N.",
+      "points": 15,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "true-false",
+      "text": "An object rises in a liquid when F_A is greater than F_G.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Hydrometer taucht in einer dichteren Flüssigkeit im Vergleich tiefer ein.",
+      "options": [
+        "False",
+        "True",
+        "Only when the liquid is water",
+        "Only if its mass changes"
+      ],
+      "correctAnswer": "False",
+      "points": 10,
+      "topic": "gravitation-buoyancy"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "title": "Gravitationskraft und Auftriebskraft – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Wie lautet die Gewichtskraft nahe der Erdoberfläche?",
+      "options": [
+        "F_G = mg",
+        "F_G = m/g",
+        "F_G = ρ/V",
+        "F_G = ma²"
+      ],
+      "correctAnswer": "F_G = mg",
+      "points": 10,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Masse eines Körpers ändert sich, wenn er auf den Mond gebracht wird.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein vollständig eingetauchter Körper verdrängt 5 cm³ Wasser. Wie groß ist F_A bei ρ=1000 kg/m³ und g=10 m/s²?",
+      "options": [
+        "0,05 N",
+        "0.5 N",
+        "5 N",
+        "50 N"
+      ],
+      "correctAnswer": "0,05 N",
+      "points": 15,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Aussage beschreibt das Archimedische Prinzip?",
+      "options": [
+        "Der Auftrieb entspricht der Gewichtskraft des verdrängten Mediums.",
+        "Auftrieb entspricht der Masse des Körpers.",
+        "Auftrieb beträgt immer 1 N.",
+        "Auftrieb wirkt nach unten."
+      ],
+      "correctAnswer": "Der Auftrieb entspricht der Gewichtskraft des verdrängten Mediums.",
+      "points": 10,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Körper hat 50 kg Masse. Wie groß ist seine Gewichtskraft mit g≈10 m/s²?",
+      "options": [
+        "500 N",
+        "5 N",
+        "50 N",
+        "5000 N"
+      ],
+      "correctAnswer": "500 N",
+      "points": 15,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ein U-Boot verdrängt 0,5 m³ Wasser. Berechne den Auftrieb mit ρ=1000 kg/m³ und g=10 m/s².",
+      "options": [],
+      "correctAnswer": "F_A = ρVg = 1000 × 0,5 × 10 = 5000 N.",
+      "points": 20,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Körper steigt in einer Flüssigkeit, wenn F_A größer als F_G ist.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "gravitation-buoyancy"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Hydrometer taucht in einer dichteren Flüssigkeit im Vergleich tiefer ein.",
+      "options": [
+        "False",
+        "True",
+        "Nur bei Wasser",
+        "Nur wenn sich seine Masse ändert"
+      ],
+      "correctAnswer": "False",
+      "points": 10,
+      "topic": "gravitation-buoyancy"
+    }
+  ]
+}
