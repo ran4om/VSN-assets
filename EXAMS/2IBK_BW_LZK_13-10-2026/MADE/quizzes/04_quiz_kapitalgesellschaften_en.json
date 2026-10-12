@@ -1,0 +1,130 @@
+{
+  "title": "Corporations – LZK 13.10.2026",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What is the premium (Agio) per share if par value is EUR 2 and issue price is EUR 3?",
+      "options": [
+        "EUR 2",
+        "EUR 1",
+        "EUR 3",
+        "EUR 5"
+      ],
+      "correctAnswer": "EUR 1",
+      "points": 15,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the minimum GmbH share capital, and how much must be paid in cash immediately?",
+      "options": [
+        "EUR 10,000; one half",
+        "EUR 70,000; one quarter",
+        "EUR 10,000; one quarter",
+        "EUR 70,000; one half"
+      ],
+      "correctAnswer": "EUR 10,000; one half",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the minimum AG share capital, and what portion must be paid at formation?",
+      "options": [
+        "EUR 70,000; one half",
+        "EUR 10,000; one quarter",
+        "EUR 10,000; one half",
+        "EUR 70,000; one quarter"
+      ],
+      "correctAnswer": "EUR 70,000; one quarter",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How is an AG’s share capital calculated?",
+      "options": [
+        "Number of shares + par value per share",
+        "Annual profit ÷ number of shares",
+        "Number of shares × par value per share",
+        "Issue price × annual profit"
+      ],
+      "correctAnswer": "Number of shares × par value per share",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which statement about issuing shares and par value is correct?",
+      "options": [
+        "Issuing below par is allowed; the smallest par value is EUR 0.50.",
+        "Issuing below par is prohibited; the smallest par value is EUR 1.",
+        "Issuing below par is allowed; the smallest par value is EUR 10.",
+        "Issuing below par is prohibited; the smallest par value is EUR 2."
+      ],
+      "correctAnswer": "Issuing below par is prohibited; the smallest par value is EUR 1.",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How is the AG legal reserve calculated before it reaches 10% of share capital?",
+      "options": [
+        "5% of annual profit",
+        "One half of share capital",
+        "5% of share capital",
+        "One quarter of annual profit"
+      ],
+      "correctAnswer": "5% of annual profit",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An AG has EUR 7,000,000 share capital, 70,000 shares and EUR 900,000 profit after corporate tax. The reserve is not yet full. What is the dividend per share after the 5% reserve?",
+      "options": [
+        "EUR 45.00",
+        "EUR 5.70",
+        "EUR 12.86",
+        "EUR 12.21"
+      ],
+      "correctAnswer": "EUR 12.21",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "With EUR 3,000,000 share capital, 50,000 shares and EUR 400,000 annual profit, what is distributed after a 5% reserve?",
+      "options": [
+        "EUR 8.00 per share and 13.33%",
+        "EUR 7.60 per share and 5.00%",
+        "EUR 7.60 per share and 12.67%",
+        "EUR 6.80 per share and 11.33%"
+      ],
+      "correctAnswer": "EUR 7.60 per share and 12.67%",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "A GmbH requires minimum share capital of EUR 70,000, with one quarter paid in cash.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "With EUR 8,000,000 share capital, 150,000 shares, EUR 900,000 profit and an opening reserve of EUR 600,000, what follows from the reserve check?",
+      "options": [
+        "The 10% cap is EUR 800,000; EUR 45,000 is reserved, leaving EUR 5.70 per share or 10.69%; a 15% holder receives EUR 128,250.",
+        "The cap is EUR 800,000; EUR 60,000 is reserved, leaving EUR 5.60 per share or 10.50%; a 15% holder receives EUR 126,000.",
+        "The cap is EUR 600,000; nothing is reserved, leaving EUR 6.00 per share or 11.25%; a 15% holder receives EUR 135,000.",
+        "The cap is EUR 800,000; EUR 45,000 is reserved, leaving EUR 6.00 per share or 11.25%; a 15% holder receives EUR 135,000."
+      ],
+      "correctAnswer": "The 10% cap is EUR 800,000; EUR 45,000 is reserved, leaving EUR 5.70 per share or 10.69%; a 15% holder receives EUR 128,250.",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    }
+  ]
+}

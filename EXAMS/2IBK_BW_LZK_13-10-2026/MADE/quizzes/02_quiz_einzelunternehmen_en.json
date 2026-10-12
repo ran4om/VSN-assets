@@ -1,0 +1,120 @@
+{
+  "title": "Sole Proprietorship – LZK 13.10.2026",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "How many owners does a sole proprietorship have?",
+      "options": [
+        "At least one general and one limited partner",
+        "One sole owner",
+        "Any number of shareholders",
+        "At least two partners"
+      ],
+      "correctAnswer": "One sole owner",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How is a sole proprietorship established?",
+      "options": [
+        "By registering the trade",
+        "By registering as a GmbH",
+        "By issuing shares",
+        "By a notarised partnership agreement"
+      ],
+      "correctAnswer": "By registering the trade",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What statutory minimum capital does a sole proprietorship require?",
+      "options": [
+        "At least EUR 70",
+        "EUR 10,000",
+        "EUR 70,000",
+        "None"
+      ],
+      "correctAnswer": "None",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How is a sole trader liable for business debts?",
+      "options": [
+        "Jointly and severally with at least one partner",
+        "Only up to the capital contributed",
+        "Personally and without limit, with business and private assets",
+        "Only with business assets"
+      ],
+      "correctAnswer": "Personally and without limit, with business and private assets",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which tax does a sole trader pay on profit?",
+      "options": [
+        "Tax on distributed profits",
+        "Income tax",
+        "No income tax",
+        "Corporate income tax"
+      ],
+      "correctAnswer": "Income tax",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which name suits an unregistered sole trader?",
+      "options": [
+        "First and last name, with an optional activity description",
+        "Only the surname with “AG”",
+        "Register number and business activity",
+        "A freely chosen core name with “GmbH”"
+      ],
+      "correctAnswer": "First and last name, with an optional activity description",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What applies to profit and loss?",
+      "options": [
+        "The bank receives the profit and the owner bears the loss",
+        "Profit is taxed as corporate income and loss is shared",
+        "Profit is always shared equally with employees",
+        "The owner keeps the profit and bears the loss alone"
+      ],
+      "correctAnswer": "The owner keeps the profit and bears the loss alone",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "true-false",
+      "text": "A sole trader can hire employees.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "true-false",
+      "text": "A sole trader is liable only with business assets, not private assets.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "open-ended",
+      "text": "Name two features of a sole proprietorship and one typical challenge.",
+      "options": [],
+      "correctAnswer": "For example: one person owns and manages the business; no minimum capital; the owner keeps all profit. Challenge: personal unlimited liability, including private assets.",
+      "points": 15,
+      "topic": "einzelunternehmen"
+    }
+  ]
+}

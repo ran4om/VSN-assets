@@ -1,0 +1,525 @@
+{
+  "title": "Business Administration LZK 13.10.2026 – Full Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Who counts as an entrepreneur under the UGB?",
+      "options": [
+        "Only someone who owns a GmbH or AG",
+        "Anyone who runs a business alone or with others",
+        "Only someone who runs a business for profit",
+        "Only someone registered in the commercial register"
+      ],
+      "correctAnswer": "Anyone who runs a business alone or with others",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "When does an entrepreneur have a registered business name (Firma)?",
+      "options": [
+        "Only after entry in the commercial register",
+        "As soon as a trading name is chosen",
+        "Only when forming a corporation",
+        "As soon as a trade is registered"
+      ],
+      "correctAnswer": "Only after entry in the commercial register",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What makes up a business name?",
+      "options": [
+        "First name and register number",
+        "Legal-form suffix and business activity",
+        "Legal form and registered office",
+        "Core name and legal-form suffix"
+      ],
+      "correctAnswer": "Core name and legal-form suffix",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which rule bans a name that misleads people about the actual business?",
+      "options": [
+        "Suitability to identify",
+        "Duty to register",
+        "Ban on misleading names",
+        "Distinctiveness"
+      ],
+      "correctAnswer": "Ban on misleading names",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Where are key business details such as legal form and register number recorded?",
+      "options": [
+        "In the document collection",
+        "In the main register",
+        "Only on EVI",
+        "Only in the Ediktsdatei"
+      ],
+      "correctAnswer": "In the main register",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "When must a sole trader register because of turnover?",
+      "options": [
+        "Above EUR 1 million in one year or above EUR 700,000 in each of two consecutive years",
+        "At EUR 1 million in two consecutive years or above EUR 700,000 in total",
+        "Whenever turnover exceeds EUR 10,000",
+        "Above EUR 700,000 in one year or above EUR 1 million combined over two years"
+      ],
+      "correctAnswer": "Above EUR 1 million in one year or above EUR 700,000 in each of two consecutive years",
+      "points": 15,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which legal form must be registered regardless of turnover?",
+      "options": [
+        "A sole farmer or forester",
+        "A freelance doctor",
+        "A small unregistered sole trader",
+        "KG"
+      ],
+      "correctAnswer": "KG",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "true-false",
+      "text": "A GmbH must keep double-entry accounts even with very low turnover.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "true-false",
+      "text": "For the EUR 700,000 turnover threshold, it is enough for the two years combined to exceed that amount.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "open-ended",
+      "text": "A sole trader has turnover of EUR 820,000 and then EUR 730,000 in two consecutive years. Is registration compulsory? Briefly explain.",
+      "options": [],
+      "correctAnswer": "Compulsory: each of the two consecutive financial years is above EUR 700,000.",
+      "points": 15,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How many owners does a sole proprietorship have?",
+      "options": [
+        "At least one general and one limited partner",
+        "At least two partners",
+        "Any number of shareholders",
+        "One sole owner"
+      ],
+      "correctAnswer": "One sole owner",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How is a sole proprietorship established?",
+      "options": [
+        "By issuing shares",
+        "By a notarised partnership agreement",
+        "By registering the trade",
+        "By registering as a GmbH"
+      ],
+      "correctAnswer": "By registering the trade",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What statutory minimum capital does a sole proprietorship require?",
+      "options": [
+        "EUR 70,000",
+        "None",
+        "At least EUR 70",
+        "EUR 10,000"
+      ],
+      "correctAnswer": "None",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How is a sole trader liable for business debts?",
+      "options": [
+        "Personally and without limit, with business and private assets",
+        "Jointly and severally with at least one partner",
+        "Only up to the capital contributed",
+        "Only with business assets"
+      ],
+      "correctAnswer": "Personally and without limit, with business and private assets",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which tax does a sole trader pay on profit?",
+      "options": [
+        "Tax on distributed profits",
+        "No income tax",
+        "Corporate income tax",
+        "Income tax"
+      ],
+      "correctAnswer": "Income tax",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which name suits an unregistered sole trader?",
+      "options": [
+        "A freely chosen core name with “GmbH”",
+        "Only the surname with “AG”",
+        "First and last name, with an optional activity description",
+        "Register number and business activity"
+      ],
+      "correctAnswer": "First and last name, with an optional activity description",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What applies to profit and loss?",
+      "options": [
+        "The bank receives the profit and the owner bears the loss",
+        "The owner keeps the profit and bears the loss alone",
+        "Profit is always shared equally with employees",
+        "Profit is taxed as corporate income and loss is shared"
+      ],
+      "correctAnswer": "The owner keeps the profit and bears the loss alone",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "true-false",
+      "text": "A sole trader can hire employees.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "true-false",
+      "text": "A sole trader is liable only with business assets, not private assets.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "open-ended",
+      "text": "Name two features of a sole proprietorship and one typical challenge.",
+      "options": [],
+      "correctAnswer": "For example: one person owns and manages the business; no minimum capital; the owner keeps all profit. Challenge: personal unlimited liability, including private assets.",
+      "points": 15,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the minimum number of partners in an OG?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Seven"
+      ],
+      "correctAnswer": "Two",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How are OG partners liable?",
+      "options": [
+        "Personally without limit, directly, jointly and severally",
+        "Only with company assets and never personally",
+        "Only up to the registered liability amount",
+        "Limited to their own capital contribution"
+      ],
+      "correctAnswer": "Personally without limit, directly, jointly and severally",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Who may generally manage and represent an OG?",
+      "options": [
+        "Only the partner with the largest capital share",
+        "Only an appointed managing director",
+        "Only a supervisory board",
+        "Each partner individually"
+      ],
+      "correctAnswer": "Each partner individually",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Who has unlimited liability in a KG?",
+      "options": [
+        "The limited partner (Kommanditist)",
+        "The silent partner",
+        "The general partner",
+        "Both only up to the liability amount"
+      ],
+      "correctAnswer": "The general partner",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the role of a limited partner (Kommanditist)?",
+      "options": [
+        "Unlimited liability and sole management",
+        "Liability up to the registered amount, no management, usually control rights",
+        "No contribution and no control rights",
+        "Unlimited liability and representation like every OG partner"
+      ],
+      "correctAnswer": "Liability up to the registered amount, no management, usually control rights",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which statement about a silent partnership is correct?",
+      "options": [
+        "It is a contractual stake and is not entered in the commercial register",
+        "The silent partner must manage the business alone",
+        "The silent partner is listed as a partner in the register",
+        "It is a separate legal form with its own legal personality"
+      ],
+      "correctAnswer": "It is a contractual stake and is not entered in the commercial register",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An OG partner signs a contract despite an internal rule that only another partner may sign. What applies externally?",
+      "options": [
+        "The contract is automatically void",
+        "The contract is valid only after supervisory-board approval",
+        "The contract binds only the signing partner",
+        "The contract is generally valid externally"
+      ],
+      "correctAnswer": "The contract is generally valid externally",
+      "points": 15,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "An OG and a KG pay income tax themselves on their profits.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "A silent partner generally has no right to manage the business.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "open-ended",
+      "text": "An OG has failed to repay a EUR 70,000 loan. What may the bank demand from one individual OG partner?",
+      "options": [],
+      "correctAnswer": "The bank may demand the full EUR 70,000 from one partner; liability is personal, unlimited, direct, joint and several.",
+      "points": 15,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is a GmbH or AG in legal terms?",
+      "options": [
+        "A silent contractual investment",
+        "A partnership without its own legal personality",
+        "A sole proprietorship with several owners",
+        "A legal person with its own legal personality"
+      ],
+      "correctAnswer": "A legal person with its own legal personality",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the minimum GmbH share capital, and how much must be paid in cash immediately?",
+      "options": [
+        "EUR 70,000; one half",
+        "EUR 70,000; one quarter",
+        "EUR 10,000; one half",
+        "EUR 10,000; one quarter"
+      ],
+      "correctAnswer": "EUR 10,000; one half",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the minimum AG share capital, and what portion must be paid at formation?",
+      "options": [
+        "EUR 10,000; one quarter",
+        "EUR 70,000; one quarter",
+        "EUR 10,000; one half",
+        "EUR 70,000; one half"
+      ],
+      "correctAnswer": "EUR 70,000; one quarter",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Who calls the ordinary general meeting of an AG?",
+      "options": [
+        "The management board",
+        "The supervisory board",
+        "The auditor",
+        "The shareholders individually"
+      ],
+      "correctAnswer": "The management board",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Who appoints and supervises the management board?",
+      "options": [
+        "The GmbH general meeting",
+        "The management board itself",
+        "The general meeting directly",
+        "The supervisory board"
+      ],
+      "correctAnswer": "The supervisory board",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How is the AG legal reserve calculated before it reaches 10% of share capital?",
+      "options": [
+        "5% of share capital",
+        "One half of share capital",
+        "5% of annual profit",
+        "One quarter of annual profit"
+      ],
+      "correctAnswer": "5% of annual profit",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An AG has EUR 7,000,000 share capital, 70,000 shares and EUR 900,000 profit after corporate tax. The reserve is not yet full. What is the dividend per share after the 5% reserve?",
+      "options": [
+        "EUR 5.70",
+        "EUR 12.21",
+        "EUR 45.00",
+        "EUR 12.86"
+      ],
+      "correctAnswer": "EUR 12.21",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "The total tax burden for a GmbH shareholder when profits are distributed is 44.175%.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "A GmbH requires minimum share capital of EUR 70,000, with one quarter paid in cash.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "open-ended",
+      "text": "Calculate the total tax on EUR 100,000 of GmbH profit when fully distributed, and state what the shareholder keeps.",
+      "options": [],
+      "correctAnswer": "Corporate tax: EUR 23,000, leaving EUR 77,000. Capital gains tax: 27.5% of EUR 77,000 = EUR 21,175. Total tax EUR 44,175 (44.175%); the shareholder keeps EUR 55,825.",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A share has a EUR 2 par value and is issued for EUR 3. What is the premium (Agio) per share?",
+      "options": [
+        "EUR 2",
+        "EUR 1",
+        "EUR 3",
+        "EUR 5"
+      ],
+      "correctAnswer": "EUR 1",
+      "points": 15,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How is share capital calculated from the number of shares and their par value?",
+      "options": [
+        "Number of shares × par value per share",
+        "Number of shares + par value per share",
+        "Annual profit ÷ number of shares",
+        "Issue price × annual profit"
+      ],
+      "correctAnswer": "Number of shares × par value per share",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "Shares may be issued below their par value.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "With EUR 3,000,000 share capital, 50,000 shares and EUR 400,000 annual profit (reserve not yet full), what are the dividend per share and dividend percentage after the reserve?",
+      "options": [
+        "EUR 8.00 and 13.33%",
+        "EUR 7.60 and 5.00%",
+        "EUR 7.60 and 12.67%",
+        "EUR 6.80 and 11.33%"
+      ],
+      "correctAnswer": "EUR 7.60 and 12.67%",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which statement about shareholder rights and the market price is correct?",
+      "options": [
+        "Subscription rights apply only to board members; each share gives ten votes; the market price always equals par value.",
+        "Subscription rights preserve an ownership percentage after a capital increase; each share gives one vote; the market price is set by supply and demand.",
+        "Shareholders have no subscription rights; votes depend on profit; the supervisory board sets the market price.",
+        "Subscription rights replace dividends; each share gives one vote; the market price equals share capital."
+      ],
+      "correctAnswer": "Subscription rights preserve an ownership percentage after a capital increase; each share gives one vote; the market price is set by supply and demand.",
+      "points": 15,
+      "topic": "kapitalgesellschaften"
+    }
+  ]
+}

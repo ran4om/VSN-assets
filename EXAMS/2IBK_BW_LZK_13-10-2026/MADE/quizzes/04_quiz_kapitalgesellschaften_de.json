@@ -1,0 +1,130 @@
+{
+  "title": "Kapitalgesellschaften – LZK 13.10.2026",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Wie hoch ist das Agio je Aktie bei 2 EUR Nennwert und 3 EUR Ausgabepreis?",
+      "options": [
+        "2 EUR",
+        "1 EUR",
+        "3 EUR",
+        "5 EUR"
+      ],
+      "correctAnswer": "1 EUR",
+      "points": 15,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie hoch ist das Mindeststammkapital einer GmbH, und wie viel muss sofort bar eingezahlt werden?",
+      "options": [
+        "10.000 EUR; die Hälfte",
+        "70.000 EUR; ein Viertel",
+        "10.000 EUR; ein Viertel",
+        "70.000 EUR; die Hälfte"
+      ],
+      "correctAnswer": "10.000 EUR; die Hälfte",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie hoch ist das Mindestgrundkapital einer AG, und welcher Teil ist bei Gründung einzuzahlen?",
+      "options": [
+        "70.000 EUR; die Hälfte",
+        "10.000 EUR; ein Viertel",
+        "10.000 EUR; die Hälfte",
+        "70.000 EUR; ein Viertel"
+      ],
+      "correctAnswer": "70.000 EUR; ein Viertel",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie berechnet sich das Grundkapital einer AG?",
+      "options": [
+        "Anzahl der Aktien + Nennwert je Aktie",
+        "Jahresgewinn ÷ Anzahl der Aktien",
+        "Anzahl der Aktien × Nennwert je Aktie",
+        "Ausgabepreis × Jahresgewinn"
+      ],
+      "correctAnswer": "Anzahl der Aktien × Nennwert je Aktie",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Aussage über Ausgabe und Nennwert von Aktien stimmt?",
+      "options": [
+        "Unter pari ist erlaubt; der kleinste Nennwert beträgt 0,50 EUR.",
+        "Unter pari ist verboten; der kleinste Nennwert beträgt 1 EUR.",
+        "Unter pari ist erlaubt; der kleinste Nennwert beträgt 10 EUR.",
+        "Unter pari ist verboten; der kleinste Nennwert beträgt 2 EUR."
+      ],
+      "correctAnswer": "Unter pari ist verboten; der kleinste Nennwert beträgt 1 EUR.",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie berechnet sich die gesetzliche Rücklage der AG, solange sie noch nicht 10 % des Grundkapitals erreicht hat?",
+      "options": [
+        "5 % des Jahresgewinns",
+        "Die Hälfte des Grundkapitals",
+        "5 % des Grundkapitals",
+        "Ein Viertel des Jahresgewinns"
+      ],
+      "correctAnswer": "5 % des Jahresgewinns",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine AG hat 7.000.000 EUR Grundkapital, 70.000 Aktien und 900.000 EUR Gewinn nach KöSt. Die Rücklage ist noch nicht voll. Wie hoch ist die Dividende je Aktie nach 5 % Rücklage?",
+      "options": [
+        "45,00 EUR",
+        "5,70 EUR",
+        "12,86 EUR",
+        "12,21 EUR"
+      ],
+      "correctAnswer": "12,21 EUR",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei 3.000.000 EUR Grundkapital, 50.000 Aktien und 400.000 EUR Jahresgewinn: Welche Ausschüttung ergibt sich nach 5 % Rücklage?",
+      "options": [
+        "8,00 EUR je Aktie und 13,33 %",
+        "7,60 EUR je Aktie und 5,00 %",
+        "7,60 EUR je Aktie und 12,67 %",
+        "6,80 EUR je Aktie und 11,33 %"
+      ],
+      "correctAnswer": "7,60 EUR je Aktie und 12,67 %",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "Für eine GmbH beträgt das Mindeststammkapital 70.000 EUR, wovon ein Viertel bar einzuzahlen ist.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei 8.000.000 EUR Grundkapital, 150.000 Aktien, 900.000 EUR Gewinn und 600.000 EUR Anfangsrücklage: Was gilt nach der Rücklagenprüfung?",
+      "options": [
+        "Die 10%-Grenze beträgt 800.000 EUR; es werden 45.000 EUR zurückgelegt, 5,70 EUR je Aktie bzw. 10,69 % ausgeschüttet; bei 15 % Anteil sind es 128.250 EUR.",
+        "Die Grenze beträgt 800.000 EUR; es werden 60.000 EUR zurückgelegt, 5,60 EUR je Aktie bzw. 10,50 % ausgeschüttet; bei 15 % Anteil sind es 126.000 EUR.",
+        "Die Grenze beträgt 600.000 EUR; es wird nichts zurückgelegt, 6,00 EUR je Aktie bzw. 11,25 % ausgeschüttet; bei 15 % Anteil sind es 135.000 EUR.",
+        "Die Grenze beträgt 800.000 EUR; es werden 45.000 EUR zurückgelegt, 6,00 EUR je Aktie bzw. 11,25 % ausgeschüttet; bei 15 % Anteil sind es 135.000 EUR."
+      ],
+      "correctAnswer": "Die 10%-Grenze beträgt 800.000 EUR; es werden 45.000 EUR zurückgelegt, 5,70 EUR je Aktie bzw. 10,69 % ausgeschüttet; bei 15 % Anteil sind es 128.250 EUR.",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    }
+  ]
+}

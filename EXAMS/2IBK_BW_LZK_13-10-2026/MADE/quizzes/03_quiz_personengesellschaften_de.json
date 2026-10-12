@@ -1,0 +1,120 @@
+{
+  "title": "Personengesellschaften – LZK 13.10.2026",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Wie viele Gesellschafter braucht eine OG mindestens?",
+      "options": [
+        "Drei",
+        "Zwei",
+        "Sieben",
+        "Einen"
+      ],
+      "correctAnswer": "Zwei",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie haften OG-Gesellschafter?",
+      "options": [
+        "Persönlich unbeschränkt, unmittelbar und solidarisch",
+        "Nur mit Gesellschaftsvermögen und nie privat",
+        "Nur bis zur eingetragenen Haftsumme",
+        "Beschränkt auf die eigene Kapitaleinlage"
+      ],
+      "correctAnswer": "Persönlich unbeschränkt, unmittelbar und solidarisch",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wer darf eine OG grundsätzlich leiten und vertreten?",
+      "options": [
+        "Nur ein bestellter Geschäftsführer",
+        "Nur der Gesellschafter mit dem höchsten Kapitalanteil",
+        "Nur ein Aufsichtsrat",
+        "Jeder Gesellschafter allein"
+      ],
+      "correctAnswer": "Jeder Gesellschafter allein",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wer haftet in einer KG unbeschränkt?",
+      "options": [
+        "Der stille Gesellschafter",
+        "Der Kommanditist",
+        "Der Komplementär",
+        "Beide nur bis zur Haftsumme"
+      ],
+      "correctAnswer": "Der Komplementär",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wer entscheidet im Fall Hobel & Leim OG über die Einstellung einer Buchhalterin?",
+      "options": [
+        "Hobel allein, weil er die Werkstatt führt.",
+        "Leim, weil er für das Kaufmännische zuständig ist.",
+        "Die Bank, weil sie Gläubigerin ist.",
+        "Nur das Firmenbuchgericht."
+      ],
+      "correctAnswer": "Leim, weil er für das Kaufmännische zuständig ist.",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Aussage über die Stille Gesellschaft stimmt?",
+      "options": [
+        "Sie ist eine vertragliche Beteiligung und wird nicht ins Firmenbuch eingetragen",
+        "Der Stille steht als Gesellschafter im Firmenbuch",
+        "Sie ist eine eigene Rechtsform mit eigener Rechtspersönlichkeit",
+        "Der Stille muss die Gesellschaft allein leiten"
+      ],
+      "correctAnswer": "Sie ist eine vertragliche Beteiligung und wird nicht ins Firmenbuch eingetragen",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was gilt für einen OG-Vertragspartner, wenn ein Gesellschafter intern nicht unterschriftsberechtigt ist, aber dennoch unterschreibt?",
+      "options": [
+        "Der Vertrag bindet nur den unterschreibenden Gesellschafter",
+        "Der Vertrag ist automatisch nichtig",
+        "Der Vertrag gilt nur nach Genehmigung des Aufsichtsrats",
+        "Der Vertrag ist nach außen grundsätzlich gültig"
+      ],
+      "correctAnswer": "Der Vertrag ist nach außen grundsätzlich gültig",
+      "points": 15,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "Die OG und die KG zahlen als Gesellschaft selbst Einkommensteuer auf den Gewinn.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "Für die Gründung einer Rechtsform ist ein Mindestnettoumsatz erforderlich.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "open-ended",
+      "text": "Eine OG hat einen Kredit über 70.000 EUR nicht bezahlt. Was kann die Bank von einem einzelnen OG-Gesellschafter verlangen?",
+      "options": [],
+      "correctAnswer": "Die Bank kann von einem einzelnen Gesellschafter die gesamten 70.000 EUR verlangen; die Haftung ist persönlich, unbeschränkt, unmittelbar und solidarisch.",
+      "points": 15,
+      "topic": "personengesellschaften"
+    }
+  ]
+}

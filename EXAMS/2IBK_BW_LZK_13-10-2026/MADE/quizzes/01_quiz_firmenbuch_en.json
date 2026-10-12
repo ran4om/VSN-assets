@@ -1,0 +1,120 @@
+{
+  "title": "Commercial Register – LZK 13.10.2026",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Who counts as an entrepreneur under the UGB?",
+      "options": [
+        "Only someone registered in the commercial register",
+        "Anyone who runs a business alone or with others",
+        "Only someone who runs a business for profit",
+        "Only someone who owns a GmbH or AG"
+      ],
+      "correctAnswer": "Anyone who runs a business alone or with others",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "When does an entrepreneur have a registered business name (Firma)?",
+      "options": [
+        "Only after entry in the commercial register",
+        "As soon as a trade is registered",
+        "Only when forming a corporation",
+        "As soon as a trading name is chosen"
+      ],
+      "correctAnswer": "Only after entry in the commercial register",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What makes up a business name?",
+      "options": [
+        "Legal form and registered office",
+        "First name and register number",
+        "Legal-form suffix and business activity",
+        "Core name and legal-form suffix"
+      ],
+      "correctAnswer": "Core name and legal-form suffix",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which rule bans a name that misleads people about the actual business?",
+      "options": [
+        "Distinctiveness",
+        "Suitability to identify",
+        "Ban on misleading names",
+        "Duty to register"
+      ],
+      "correctAnswer": "Ban on misleading names",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Where are key business details such as legal form and register number recorded?",
+      "options": [
+        "In the document collection",
+        "In the main register",
+        "Only in the Ediktsdatei",
+        "Only on EVI"
+      ],
+      "correctAnswer": "In the main register",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "When must a sole trader register because of turnover?",
+      "options": [
+        "Above EUR 1 million in one year or above EUR 700,000 in each of two consecutive years",
+        "Whenever turnover exceeds EUR 10,000",
+        "At EUR 1 million in two consecutive years or above EUR 700,000 in total",
+        "Above EUR 700,000 in one year or above EUR 1 million combined over two years"
+      ],
+      "correctAnswer": "Above EUR 1 million in one year or above EUR 700,000 in each of two consecutive years",
+      "points": 15,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which legal form must be registered regardless of turnover?",
+      "options": [
+        "A small unregistered sole trader",
+        "A sole farmer or forester",
+        "A freelance doctor",
+        "KG"
+      ],
+      "correctAnswer": "KG",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "true-false",
+      "text": "A GmbH must keep double-entry accounts even with very low turnover.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "true-false",
+      "text": "For the EUR 700,000 turnover threshold, it is enough for the two years combined to exceed that amount.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "open-ended",
+      "text": "A sole trader has turnover of EUR 820,000 and then EUR 730,000 in two consecutive years. Is registration compulsory? Briefly explain.",
+      "options": [],
+      "correctAnswer": "Compulsory: each of the two consecutive financial years is above EUR 700,000.",
+      "points": 15,
+      "topic": "unternehmer-firma-firmenbuch"
+    }
+  ]
+}

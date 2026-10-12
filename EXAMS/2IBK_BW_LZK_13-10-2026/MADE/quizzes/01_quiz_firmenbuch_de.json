@@ -1,0 +1,120 @@
+{
+  "title": "Firmenbuch – LZK 13.10.2026",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Wer gilt nach UGB als Unternehmer?",
+      "options": [
+        "Nur wer im Firmenbuch eingetragen ist",
+        "Wer allein oder mit anderen ein Unternehmen betreibt",
+        "Nur wer ein Unternehmen mit Gewinn betreibt",
+        "Nur wer eine GmbH oder AG besitzt"
+      ],
+      "correctAnswer": "Wer allein oder mit anderen ein Unternehmen betreibt",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wann führt ein Unternehmer eine Firma?",
+      "options": [
+        "Erst nach der Eintragung ins Firmenbuch",
+        "Sobald er eine Gewerbeanmeldung abgibt",
+        "Nur wenn er eine Kapitalgesellschaft gründet",
+        "Sobald er einen Handelsnamen auswählt"
+      ],
+      "correctAnswer": "Erst nach der Eintragung ins Firmenbuch",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Woraus besteht der Firmenname?",
+      "options": [
+        "Rechtsform und Firmensitz",
+        "Vorname und Firmenbuchnummer",
+        "Firmenzusatz und Geschäftszweig",
+        "Firmenkern und Firmenzusatz"
+      ],
+      "correctAnswer": "Firmenkern und Firmenzusatz",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Regel verbietet einen Namen, der über die tatsächliche Tätigkeit täuscht?",
+      "options": [
+        "Unterscheidungskraft",
+        "Kennzeichnungseignung",
+        "Irreführungsverbot",
+        "Eintragungspflicht"
+      ],
+      "correctAnswer": "Irreführungsverbot",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wo stehen wesentliche Unternehmensdaten wie Rechtsform und Firmenbuchnummer?",
+      "options": [
+        "In der Urkundensammlung",
+        "Im Hauptbuch",
+        "Nur in der Ediktsdatei",
+        "Ausschließlich auf EVI"
+      ],
+      "correctAnswer": "Im Hauptbuch",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wann muss ein Einzelunternehmen wegen Umsatzes eingetragen werden?",
+      "options": [
+        "Über 1 Mio. EUR in einem Jahr oder jeweils über 700.000 EUR in zwei Folgejahren",
+        "Bei jedem Umsatz über 10.000 EUR",
+        "Ab 1 Mio. EUR in zwei Folgejahren oder über 700.000 EUR insgesamt",
+        "Über 700.000 EUR in einem Jahr oder zusammen über 1 Mio. EUR in zwei Jahren"
+      ],
+      "correctAnswer": "Über 1 Mio. EUR in einem Jahr oder jeweils über 700.000 EUR in zwei Folgejahren",
+      "points": 15,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Rechtsform ist unabhängig vom Umsatz eintragungspflichtig?",
+      "options": [
+        "Nicht eingetragener kleiner Einzelunternehmer",
+        "Einzelunternehmer in der Land- und Forstwirtschaft",
+        "Freiberuflicher Arzt",
+        "KG"
+      ],
+      "correctAnswer": "KG",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine GmbH muss auch bei sehr kleinem Umsatz doppelte Buchführung führen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "true-false",
+      "text": "Für die Umsatzgrenze von 700.000 EUR genügt es, wenn die Umsätze der zwei Jahre zusammen diesen Betrag übersteigen.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ein Einzelunternehmer erzielt 820.000 EUR und danach 730.000 EUR in zwei aufeinanderfolgenden Jahren. Muss er sich eintragen? Begründe kurz.",
+      "options": [],
+      "correctAnswer": "Verpflichtend: Beide aufeinanderfolgenden Geschäftsjahre liegen jeweils über 700.000 EUR.",
+      "points": 15,
+      "topic": "unternehmer-firma-firmenbuch"
+    }
+  ]
+}

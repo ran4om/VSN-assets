@@ -1,0 +1,120 @@
+{
+  "title": "Partnerships – LZK 13.10.2026",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "What is the minimum number of partners in an OG?",
+      "options": [
+        "Three",
+        "Two",
+        "Seven",
+        "One"
+      ],
+      "correctAnswer": "Two",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How are OG partners liable?",
+      "options": [
+        "Personally without limit, directly, jointly and severally",
+        "Only with company assets and never personally",
+        "Only up to the registered liability amount",
+        "Limited to their own capital contribution"
+      ],
+      "correctAnswer": "Personally without limit, directly, jointly and severally",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Who may generally manage and represent an OG?",
+      "options": [
+        "Only an appointed managing director",
+        "Only the partner with the largest capital share",
+        "Only a supervisory board",
+        "Each partner individually"
+      ],
+      "correctAnswer": "Each partner individually",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Who has unlimited liability in a KG?",
+      "options": [
+        "The silent partner",
+        "The limited partner (Kommanditist)",
+        "The general partner",
+        "Both only up to the liability amount"
+      ],
+      "correctAnswer": "The general partner",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "In the Hobel & Leim OG case, who decides to hire a bookkeeper?",
+      "options": [
+        "Hobel alone, because he runs the workshop.",
+        "Leim, because he is responsible for the commercial side.",
+        "The bank, because it is a creditor.",
+        "Only the commercial register court."
+      ],
+      "correctAnswer": "Leim, because he is responsible for the commercial side.",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which statement about a silent partnership is correct?",
+      "options": [
+        "It is a contractual stake and is not entered in the commercial register",
+        "The silent partner is listed as a partner in the register",
+        "It is a separate legal form with its own legal personality",
+        "The silent partner must manage the business alone"
+      ],
+      "correctAnswer": "It is a contractual stake and is not entered in the commercial register",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An OG partner signs a contract despite an internal rule that only another partner may sign. What applies externally?",
+      "options": [
+        "The contract binds only the signing partner",
+        "The contract is automatically void",
+        "The contract is valid only after supervisory-board approval",
+        "The contract is generally valid externally"
+      ],
+      "correctAnswer": "The contract is generally valid externally",
+      "points": 15,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "An OG and a KG pay income tax themselves on their profits.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "A minimum net turnover is required to establish a legal form.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "open-ended",
+      "text": "An OG has failed to repay a EUR 70,000 loan. What may the bank demand from one individual OG partner?",
+      "options": [],
+      "correctAnswer": "The bank may demand the full EUR 70,000 from one partner; liability is personal, unlimited, direct, joint and several.",
+      "points": 15,
+      "topic": "personengesellschaften"
+    }
+  ]
+}

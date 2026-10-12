@@ -1,0 +1,120 @@
+{
+  "title": "Einzelunternehmen – LZK 13.10.2026",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Wie viele Eigentümer hat ein Einzelunternehmen?",
+      "options": [
+        "Mindestens einen Komplementär und einen Kommanditisten",
+        "Eine Person als Alleineigentümer",
+        "Eine beliebige Zahl an Aktionären",
+        "Mindestens zwei Gesellschafter"
+      ],
+      "correctAnswer": "Eine Person als Alleineigentümer",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wodurch entsteht ein Einzelunternehmen?",
+      "options": [
+        "Durch die Gewerbeanmeldung",
+        "Durch die Eintragung als GmbH",
+        "Durch die Ausgabe von Aktien",
+        "Durch einen notariellen Gesellschaftsvertrag"
+      ],
+      "correctAnswer": "Durch die Gewerbeanmeldung",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches gesetzliche Mindestkapital braucht ein Einzelunternehmen?",
+      "options": [
+        "Mindestens 70 EUR",
+        "10.000 EUR",
+        "70.000 EUR",
+        "Keines"
+      ],
+      "correctAnswer": "Keines",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie haftet der Einzelunternehmer für betriebliche Schulden?",
+      "options": [
+        "Gemeinsam und solidarisch mit mindestens einem Partner",
+        "Nur bis zur Höhe des eingebrachten Kapitals",
+        "Persönlich und unbeschränkt mit Betriebs- und Privatvermögen",
+        "Nur mit dem Betriebsvermögen"
+      ],
+      "correctAnswer": "Persönlich und unbeschränkt mit Betriebs- und Privatvermögen",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Steuer zahlt der Einzelunternehmer auf den Gewinn?",
+      "options": [
+        "Kapitalertragsteuer (KESt)",
+        "Einkommensteuer (ESt)",
+        "Keine Ertragsteuer",
+        "Körperschaftsteuer (KöSt)"
+      ],
+      "correctAnswer": "Einkommensteuer (ESt)",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Bezeichnung passt zu einem nicht eingetragenen Einzelunternehmer?",
+      "options": [
+        "Vor- und Zuname, ergänzt um die Tätigkeit",
+        "Nur der Familienname mit „AG“",
+        "Firmenbuchnummer mit Geschäftszweig",
+        "Frei gewählter Firmenkern mit „GmbH“"
+      ],
+      "correctAnswer": "Vor- und Zuname, ergänzt um die Tätigkeit",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was trifft auf Gewinn und Verlust zu?",
+      "options": [
+        "Der Gewinn gehört der Bank, der Inhaber trägt den Verlust",
+        "Der Gewinn wird als KöSt besteuert und der Verlust gemeinsam getragen",
+        "Der Gewinn wird immer gleichmäßig mit Mitarbeitern geteilt",
+        "Der Gewinn gehört dem Inhaber, und er trägt den Verlust allein"
+      ],
+      "correctAnswer": "Der Gewinn gehört dem Inhaber, und er trägt den Verlust allein",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Einzelunternehmer kann Mitarbeiter einstellen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Einzelunternehmer haftet nur mit dem Betriebsvermögen, nicht mit Privatvermögen.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "open-ended",
+      "text": "Nenne zwei passende Merkmale des Einzelunternehmens und eine typische Herausforderung.",
+      "options": [],
+      "correctAnswer": "Zum Beispiel: eine Person besitzt und leitet den Betrieb; kein Mindestkapital; der Gewinn gehört ihr allein. Herausforderung: persönliche, unbeschränkte Haftung (auch Privatvermögen).",
+      "points": 15,
+      "topic": "einzelunternehmen"
+    }
+  ]
+}

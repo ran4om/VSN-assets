@@ -1,0 +1,525 @@
+{
+  "title": "Betriebswirtschaft LZK 13.10.2026 – Gesamtquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Wer gilt nach UGB als Unternehmer?",
+      "options": [
+        "Nur wer eine GmbH oder AG besitzt",
+        "Wer allein oder mit anderen ein Unternehmen betreibt",
+        "Nur wer ein Unternehmen mit Gewinn betreibt",
+        "Nur wer im Firmenbuch eingetragen ist"
+      ],
+      "correctAnswer": "Wer allein oder mit anderen ein Unternehmen betreibt",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wann führt ein Unternehmer eine Firma?",
+      "options": [
+        "Erst nach der Eintragung ins Firmenbuch",
+        "Sobald er einen Handelsnamen auswählt",
+        "Nur wenn er eine Kapitalgesellschaft gründet",
+        "Sobald er eine Gewerbeanmeldung abgibt"
+      ],
+      "correctAnswer": "Erst nach der Eintragung ins Firmenbuch",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Woraus besteht der Firmenname?",
+      "options": [
+        "Vorname und Firmenbuchnummer",
+        "Firmenzusatz und Geschäftszweig",
+        "Rechtsform und Firmensitz",
+        "Firmenkern und Firmenzusatz"
+      ],
+      "correctAnswer": "Firmenkern und Firmenzusatz",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Regel verbietet einen Namen, der über die tatsächliche Tätigkeit täuscht?",
+      "options": [
+        "Kennzeichnungseignung",
+        "Eintragungspflicht",
+        "Irreführungsverbot",
+        "Unterscheidungskraft"
+      ],
+      "correctAnswer": "Irreführungsverbot",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wo stehen wesentliche Unternehmensdaten wie Rechtsform und Firmenbuchnummer?",
+      "options": [
+        "In der Urkundensammlung",
+        "Im Hauptbuch",
+        "Ausschließlich auf EVI",
+        "Nur in der Ediktsdatei"
+      ],
+      "correctAnswer": "Im Hauptbuch",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wann muss ein Einzelunternehmen wegen Umsatzes eingetragen werden?",
+      "options": [
+        "Über 1 Mio. EUR in einem Jahr oder jeweils über 700.000 EUR in zwei Folgejahren",
+        "Ab 1 Mio. EUR in zwei Folgejahren oder über 700.000 EUR insgesamt",
+        "Bei jedem Umsatz über 10.000 EUR",
+        "Über 700.000 EUR in einem Jahr oder zusammen über 1 Mio. EUR in zwei Jahren"
+      ],
+      "correctAnswer": "Über 1 Mio. EUR in einem Jahr oder jeweils über 700.000 EUR in zwei Folgejahren",
+      "points": 15,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Rechtsform ist unabhängig vom Umsatz eintragungspflichtig?",
+      "options": [
+        "Einzelunternehmer in der Land- und Forstwirtschaft",
+        "Freiberuflicher Arzt",
+        "Nicht eingetragener kleiner Einzelunternehmer",
+        "KG"
+      ],
+      "correctAnswer": "KG",
+      "points": 10,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine GmbH muss auch bei sehr kleinem Umsatz doppelte Buchführung führen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "true-false",
+      "text": "Für die Umsatzgrenze von 700.000 EUR genügt es, wenn die Umsätze der zwei Jahre zusammen diesen Betrag übersteigen.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ein Einzelunternehmer erzielt 820.000 EUR und danach 730.000 EUR in zwei aufeinanderfolgenden Jahren. Muss er sich eintragen? Begründe kurz.",
+      "options": [],
+      "correctAnswer": "Verpflichtend: Beide aufeinanderfolgenden Geschäftsjahre liegen jeweils über 700.000 EUR.",
+      "points": 15,
+      "topic": "unternehmer-firma-firmenbuch"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie viele Eigentümer hat ein Einzelunternehmen?",
+      "options": [
+        "Mindestens einen Komplementär und einen Kommanditisten",
+        "Mindestens zwei Gesellschafter",
+        "Eine beliebige Zahl an Aktionären",
+        "Eine Person als Alleineigentümer"
+      ],
+      "correctAnswer": "Eine Person als Alleineigentümer",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wodurch entsteht ein Einzelunternehmen?",
+      "options": [
+        "Durch die Ausgabe von Aktien",
+        "Durch einen notariellen Gesellschaftsvertrag",
+        "Durch die Gewerbeanmeldung",
+        "Durch die Eintragung als GmbH"
+      ],
+      "correctAnswer": "Durch die Gewerbeanmeldung",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches gesetzliche Mindestkapital braucht ein Einzelunternehmen?",
+      "options": [
+        "70.000 EUR",
+        "Keines",
+        "Mindestens 70 EUR",
+        "10.000 EUR"
+      ],
+      "correctAnswer": "Keines",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie haftet der Einzelunternehmer für betriebliche Schulden?",
+      "options": [
+        "Persönlich und unbeschränkt mit Betriebs- und Privatvermögen",
+        "Gemeinsam und solidarisch mit mindestens einem Partner",
+        "Nur bis zur Höhe des eingebrachten Kapitals",
+        "Nur mit dem Betriebsvermögen"
+      ],
+      "correctAnswer": "Persönlich und unbeschränkt mit Betriebs- und Privatvermögen",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Steuer zahlt der Einzelunternehmer auf den Gewinn?",
+      "options": [
+        "Kapitalertragsteuer (KESt)",
+        "Keine Ertragsteuer",
+        "Körperschaftsteuer (KöSt)",
+        "Einkommensteuer (ESt)"
+      ],
+      "correctAnswer": "Einkommensteuer (ESt)",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Bezeichnung passt zu einem nicht eingetragenen Einzelunternehmer?",
+      "options": [
+        "Frei gewählter Firmenkern mit „GmbH“",
+        "Nur der Familienname mit „AG“",
+        "Vor- und Zuname, ergänzt um die Tätigkeit",
+        "Firmenbuchnummer mit Geschäftszweig"
+      ],
+      "correctAnswer": "Vor- und Zuname, ergänzt um die Tätigkeit",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was trifft auf Gewinn und Verlust zu?",
+      "options": [
+        "Der Gewinn gehört der Bank, der Inhaber trägt den Verlust",
+        "Der Gewinn gehört dem Inhaber, und er trägt den Verlust allein",
+        "Der Gewinn wird immer gleichmäßig mit Mitarbeitern geteilt",
+        "Der Gewinn wird als KöSt besteuert und der Verlust gemeinsam getragen"
+      ],
+      "correctAnswer": "Der Gewinn gehört dem Inhaber, und er trägt den Verlust allein",
+      "points": 10,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Einzelunternehmer kann Mitarbeiter einstellen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Einzelunternehmer haftet nur mit dem Betriebsvermögen, nicht mit Privatvermögen.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "open-ended",
+      "text": "Nenne zwei passende Merkmale des Einzelunternehmens und eine typische Herausforderung.",
+      "options": [],
+      "correctAnswer": "Zum Beispiel: eine Person besitzt und leitet den Betrieb; kein Mindestkapital; der Gewinn gehört ihr allein. Herausforderung: persönliche, unbeschränkte Haftung (auch Privatvermögen).",
+      "points": 15,
+      "topic": "einzelunternehmen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie viele Gesellschafter braucht eine OG mindestens?",
+      "options": [
+        "Einen",
+        "Zwei",
+        "Drei",
+        "Sieben"
+      ],
+      "correctAnswer": "Zwei",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie haften OG-Gesellschafter?",
+      "options": [
+        "Persönlich unbeschränkt, unmittelbar und solidarisch",
+        "Nur mit Gesellschaftsvermögen und nie privat",
+        "Nur bis zur eingetragenen Haftsumme",
+        "Beschränkt auf die eigene Kapitaleinlage"
+      ],
+      "correctAnswer": "Persönlich unbeschränkt, unmittelbar und solidarisch",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wer darf eine OG grundsätzlich leiten und vertreten?",
+      "options": [
+        "Nur der Gesellschafter mit dem höchsten Kapitalanteil",
+        "Nur ein bestellter Geschäftsführer",
+        "Nur ein Aufsichtsrat",
+        "Jeder Gesellschafter allein"
+      ],
+      "correctAnswer": "Jeder Gesellschafter allein",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wer haftet in einer KG unbeschränkt?",
+      "options": [
+        "Der Kommanditist",
+        "Der stille Gesellschafter",
+        "Der Komplementär",
+        "Beide nur bis zur Haftsumme"
+      ],
+      "correctAnswer": "Der Komplementär",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Rolle hat der Kommanditist?",
+      "options": [
+        "Unbeschränkte Haftung und alleinige Geschäftsführung",
+        "Haftung bis zur Haftsumme, keine Geschäftsführung, meist Kontrollrecht",
+        "Keine Einlage und keine Kontrollrechte",
+        "Unbeschränkte Haftung und Vertretung wie jeder OG-Gesellschafter"
+      ],
+      "correctAnswer": "Haftung bis zur Haftsumme, keine Geschäftsführung, meist Kontrollrecht",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Aussage über die Stille Gesellschaft stimmt?",
+      "options": [
+        "Sie ist eine vertragliche Beteiligung und wird nicht ins Firmenbuch eingetragen",
+        "Der Stille muss die Gesellschaft allein leiten",
+        "Der Stille steht als Gesellschafter im Firmenbuch",
+        "Sie ist eine eigene Rechtsform mit eigener Rechtspersönlichkeit"
+      ],
+      "correctAnswer": "Sie ist eine vertragliche Beteiligung und wird nicht ins Firmenbuch eingetragen",
+      "points": 10,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was gilt für einen OG-Vertragspartner, wenn ein Gesellschafter intern nicht unterschriftsberechtigt ist, aber dennoch unterschreibt?",
+      "options": [
+        "Der Vertrag ist automatisch nichtig",
+        "Der Vertrag gilt nur nach Genehmigung des Aufsichtsrats",
+        "Der Vertrag bindet nur den unterschreibenden Gesellschafter",
+        "Der Vertrag ist nach außen grundsätzlich gültig"
+      ],
+      "correctAnswer": "Der Vertrag ist nach außen grundsätzlich gültig",
+      "points": 15,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "Die OG und die KG zahlen als Gesellschaft selbst Einkommensteuer auf den Gewinn.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein stiller Gesellschafter darf die Gesellschaft grundsätzlich nicht leiten.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "open-ended",
+      "text": "Eine OG hat einen Kredit über 70.000 EUR nicht bezahlt. Was kann die Bank von einem einzelnen OG-Gesellschafter verlangen?",
+      "options": [],
+      "correctAnswer": "Die Bank kann von einem einzelnen Gesellschafter die gesamten 70.000 EUR verlangen; die Haftung ist persönlich, unbeschränkt, unmittelbar und solidarisch.",
+      "points": 15,
+      "topic": "personengesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was ist eine GmbH oder AG rechtlich?",
+      "options": [
+        "Ein stiller Beteiligungsvertrag",
+        "Eine Personengesellschaft ohne eigene Rechtspersönlichkeit",
+        "Ein Einzelunternehmen mit mehreren Eigentümern",
+        "Eine juristische Person mit eigener Rechtspersönlichkeit"
+      ],
+      "correctAnswer": "Eine juristische Person mit eigener Rechtspersönlichkeit",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie hoch ist das Mindeststammkapital einer GmbH, und wie viel muss sofort bar eingezahlt werden?",
+      "options": [
+        "70.000 EUR; die Hälfte",
+        "70.000 EUR; ein Viertel",
+        "10.000 EUR; die Hälfte",
+        "10.000 EUR; ein Viertel"
+      ],
+      "correctAnswer": "10.000 EUR; die Hälfte",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie hoch ist das Mindestgrundkapital einer AG, und welcher Teil ist bei Gründung einzuzahlen?",
+      "options": [
+        "10.000 EUR; ein Viertel",
+        "70.000 EUR; ein Viertel",
+        "10.000 EUR; die Hälfte",
+        "70.000 EUR; die Hälfte"
+      ],
+      "correctAnswer": "70.000 EUR; ein Viertel",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wer beruft die ordentliche Hauptversammlung einer AG ein?",
+      "options": [
+        "Der Vorstand",
+        "Der Aufsichtsrat",
+        "Der Abschlussprüfer",
+        "Die Aktionäre einzeln"
+      ],
+      "correctAnswer": "Der Vorstand",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wer bestellt den Vorstand und kontrolliert ihn?",
+      "options": [
+        "Die Generalversammlung",
+        "Der Vorstand selbst",
+        "Die Hauptversammlung unmittelbar",
+        "Der Aufsichtsrat"
+      ],
+      "correctAnswer": "Der Aufsichtsrat",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie berechnet sich die gesetzliche Rücklage der AG, solange sie noch nicht 10 % des Grundkapitals erreicht hat?",
+      "options": [
+        "5 % des Grundkapitals",
+        "Die Hälfte des Grundkapitals",
+        "5 % des Jahresgewinns",
+        "Ein Viertel des Jahresgewinns"
+      ],
+      "correctAnswer": "5 % des Jahresgewinns",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine AG hat 7.000.000 EUR Grundkapital, 70.000 Aktien und 900.000 EUR Gewinn nach KöSt. Die Rücklage ist noch nicht voll. Wie hoch ist die Dividende je Aktie nach 5 % Rücklage?",
+      "options": [
+        "5,70 EUR",
+        "12,21 EUR",
+        "45,00 EUR",
+        "12,86 EUR"
+      ],
+      "correctAnswer": "12,21 EUR",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Gesamtsteuerbelastung eines GmbH-Gesellschafters bei Ausschüttung beträgt 44,175 %.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "Für eine GmbH beträgt das Mindeststammkapital 70.000 EUR, wovon ein Viertel bar einzuzahlen ist.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "open-ended",
+      "text": "Berechne die Gesamtsteuer auf 100.000 EUR GmbH-Gewinn bei vollständiger Ausschüttung und nenne den Betrag, der dem Gesellschafter bleibt.",
+      "options": [],
+      "correctAnswer": "KöSt: 23.000 EUR; verbleiben 77.000 EUR. KESt: 27,5 % von 77.000 = 21.175 EUR. Gesamtsteuer 44.175 EUR (44,175 %); dem Gesellschafter bleiben 55.825 EUR.",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei einem Nennwert von 2 EUR und einem Ausgabepreis von 3 EUR: Wie hoch ist das Agio je Aktie?",
+      "options": [
+        "2 EUR",
+        "1 EUR",
+        "3 EUR",
+        "5 EUR"
+      ],
+      "correctAnswer": "1 EUR",
+      "points": 15,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie berechnet sich das Grundkapital aus Aktienzahl und Nennwert?",
+      "options": [
+        "Anzahl der Aktien × Nennwert je Aktie",
+        "Anzahl der Aktien + Nennwert je Aktie",
+        "Jahresgewinn ÷ Anzahl der Aktien",
+        "Ausgabepreis × Jahresgewinn"
+      ],
+      "correctAnswer": "Anzahl der Aktien × Nennwert je Aktie",
+      "points": 10,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "true-false",
+      "text": "Aktien dürfen unter ihrem Nennwert ausgegeben werden.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei 3.000.000 EUR Grundkapital, 50.000 Aktien und 400.000 EUR Jahresgewinn (Rücklage noch nicht voll): Wie hoch sind Dividende je Aktie und Dividende in Prozent nach der Rücklage?",
+      "options": [
+        "8,00 EUR und 13,33 %",
+        "7,60 EUR und 5,00 %",
+        "7,60 EUR und 12,67 %",
+        "6,80 EUR und 11,33 %"
+      ],
+      "correctAnswer": "7,60 EUR und 12,67 %",
+      "points": 20,
+      "topic": "kapitalgesellschaften"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Aussage zu Aktionärsrechten und Börsenkurs ist richtig?",
+      "options": [
+        "Bezugsrecht gilt nur für Vorstandsmitglieder; jede Aktie gibt zehn Stimmen; der Kurs entspricht stets dem Nennwert.",
+        "Bezugsrecht erhält den Anteil bei Kapitalerhöhungen; jede Aktie gibt eine Stimme; der Kurs entsteht durch Angebot und Nachfrage.",
+        "Aktionäre haben kein Bezugsrecht; Stimmen richten sich nach dem Gewinn; der Kurs wird vom Aufsichtsrat festgelegt.",
+        "Bezugsrecht ersetzt die Dividende; jede Aktie gibt eine Stimme; der Kurs entspricht dem Grundkapital."
+      ],
+      "correctAnswer": "Bezugsrecht erhält den Anteil bei Kapitalerhöhungen; jede Aktie gibt eine Stimme; der Kurs entsteht durch Angebot und Nachfrage.",
+      "points": 15,
+      "topic": "kapitalgesellschaften"
+    }
+  ]
+}

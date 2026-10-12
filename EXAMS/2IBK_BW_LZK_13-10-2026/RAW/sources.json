@@ -1,0 +1,176 @@
+{
+  "vault": "/home/kiarad/.cache/vsn/school-vault",
+  "examNotes": [],
+  "linkedNotes": [],
+  "lessons": [
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 1 - 2026-09-08/Lesson 1 - BW - 2026-09-08.md",
+      "date": "2026-09-08",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 2 - 2026-09-09/Lesson 2 - BW - 2026-09-09.md",
+      "date": "2026-09-09",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 3 - 2026-09-14/Einzelunternehmung Hobel - Antworten.pdf",
+      "date": "2026-09-14",
+      "lfsBytes": 160284
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 3 - 2026-09-14/Einzelunternehmung Hobel.doc",
+      "date": "2026-09-14",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 3 - 2026-09-14/Einzelunternehmung Hobel.pdf",
+      "date": "2026-09-14",
+      "lfsBytes": 165338
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 3 - 2026-09-14/Lesson 3 - BW - 2026-09-14.md",
+      "date": "2026-09-14",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 4 - 2026-09-15/BW - Fallbeispiel Hobel - 2026-09-15.pdf",
+      "date": "2026-09-15",
+      "lfsBytes": 252863
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 4 - 2026-09-15/BW - Fallbeispiel Hobel - 2026-09-15.pdf.annot.json",
+      "date": "2026-09-15",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 4 - 2026-09-15/Lesson 4 - BW - 2026-09-15.md",
+      "date": "2026-09-15",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 4 - 2026-09-15/OG Hobel.doc",
+      "date": "2026-09-15",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 5 - 2026-09-16/KG Hobel und Leim.doc",
+      "date": "2026-09-16",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 5 - 2026-09-16/KG Hobel und Leim.pdf",
+      "date": "2026-09-16",
+      "lfsBytes": 206920
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 5 - 2026-09-16/KG Hobel und Leim.pdf.annot.json",
+      "date": "2026-09-16",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 5 - 2026-09-16/Lesson 5 - BW - 2026-09-16.md",
+      "date": "2026-09-16",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 6 - 2026-09-21/Lesson 6 - BW - 2026-09-21.md",
+      "date": "2026-09-21",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 6 - 2026-09-21/Stille Gesellschaft Hobel und Leim.doc",
+      "date": "2026-09-21",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 6 - 2026-09-21/Stille Gesellschaft Hobel und Leim.pdf",
+      "date": "2026-09-21",
+      "lfsBytes": 185427
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 7 - 2026-09-28/GmbH Hobel.doc",
+      "date": "2026-09-28",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 7 - 2026-09-28/GmbH Hobel.pdf",
+      "date": "2026-09-28",
+      "lfsBytes": 234244
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 7 - 2026-09-28/Lesson 7 - BW - 2026-09-28.md",
+      "date": "2026-09-28",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/BW/Lessons/Lesson 8 - 2026-09-29/Lesson 8 - BW - 2026-09-29.md",
+      "date": "2026-09-29",
+      "lfsBytes": null
+    }
+  ],
+  "books": [
+    {
+      "file": "02 Subjects/BW/2026-09-28 - BW - Hausaufgabe S. 38-40.pdf",
+      "lfsBytes": 6108
+    },
+    {
+      "file": "02 Subjects/BW/Praxisblicke-BWL-II-HAK.pdf",
+      "lfsBytes": 78243881
+    }
+  ],
+  "subjectIndex": [
+    "02 Subjects/BW/Inhaltsverzeichnis.md",
+    "02 Subjects/BW/BW.md"
+  ],
+  "pageRefs": [
+    {
+      "in": "02 Subjects/BW/Lessons/Lesson 3 - 2026-09-14/Lesson 3 - BW - 2026-09-14.md",
+      "ref": "S. 21"
+    },
+    {
+      "in": "02 Subjects/BW/Lessons/Lesson 3 - 2026-09-14/Lesson 3 - BW - 2026-09-14.md",
+      "ref": "S. 25-26"
+    },
+    {
+      "in": "02 Subjects/BW/Lessons/Lesson 4 - 2026-09-15/Lesson 4 - BW - 2026-09-15.md",
+      "ref": "Seiten 28-29"
+    },
+    {
+      "in": "02 Subjects/BW/Lessons/Lesson 4 - 2026-09-15/Lesson 4 - BW - 2026-09-15.md",
+      "ref": "Seite 30"
+    },
+    {
+      "in": "02 Subjects/BW/Lessons/Lesson 5 - 2026-09-16/Lesson 5 - BW - 2026-09-16.md",
+      "ref": "pages 32-33"
+    },
+    {
+      "in": "02 Subjects/BW/Lessons/Lesson 6 - 2026-09-21/Lesson 6 - BW - 2026-09-21.md",
+      "ref": "pages 34–35"
+    },
+    {
+      "in": "02 Subjects/BW/Lessons/Lesson 6 - 2026-09-21/Lesson 6 - BW - 2026-09-21.md",
+      "ref": "pages 32–33"
+    },
+    {
+      "in": "02 Subjects/BW/Lessons/Lesson 7 - 2026-09-28/Lesson 7 - BW - 2026-09-28.md",
+      "ref": "S. 39–40"
+    },
+    {
+      "in": "02 Subjects/BW/Lessons/Lesson 7 - 2026-09-28/Lesson 7 - BW - 2026-09-28.md",
+      "ref": "S. 41–42"
+    },
+    {
+      "in": "02 Subjects/BW/Lessons/Lesson 7 - 2026-09-28/Lesson 7 - BW - 2026-09-28.md",
+      "ref": "pages 39–40"
+    }
+  ],
+  "existingVsnAssetsRaw": [],
+  "window": {
+    "since": "2026-09-01",
+    "until": "2026-10-13"
+  },
+  "missing": [
+    "no exam note for this date/subject in 04 Exams — ask the user for the Stoff (topics/pages)"
+  ]
+}
