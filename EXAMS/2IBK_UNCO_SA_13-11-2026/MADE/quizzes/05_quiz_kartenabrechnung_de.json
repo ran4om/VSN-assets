@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Kartenabrechnung",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Ein Debitkartenverkauf beträgt 1.985 € netto plus 397 € USt. Welcher Satz erfasst die Forderung?",
+      "options": [
+        "2885 2.382 / 4000 1.985 + 3500 397",
+        "2800 2.382 / 4000 1.985 + 3500 397",
+        "2880 2.382 / 4000 1.985 + 3500 397",
+        "4000 1.985 + 3500 397 / 2885 2.382"
+      ],
+      "correctAnswer": "2885 2.382 / 4000 1.985 + 3500 397",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine bereits gebuchte Kreditkartenforderung beträgt 8.320 €. Das Kartenunternehmen behält 2,5 % Provision und 3,90 € Fixentgelt zuzüglich 20 % abzugsfähiger USt ein. Wie viel geht auf dem Bankkonto ein?",
+      "options": [
+        "8.108,10 €",
+        "8.066,10 €",
+        "8.111,90 €",
+        "8.065,72 €"
+      ],
+      "correctAnswer": "8.065,72 €",
+      "points": 20,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Erfolgswirkung hat allein die Abrechnung der bereits gebuchten Forderung über 8.320 €, wenn die Nettogebühr 211,90 € und die darauf entfallende abzugsfähige Vorsteuer 42,38 € beträgt?",
+      "options": [
+        "+8.065,72 €",
+        "0 €",
+        "−211,90 €",
+        "−254,28 €"
+      ],
+      "correctAnswer": "−211,90 €",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine Debitkartenforderung von 2.382 € wird ohne Abzüge auf Bank überwiesen. Welche Buchung gleicht sie aus?",
+      "options": [
+        "2880 2.382 / 2800 2.382",
+        "2800 2.382 / 2885 2.382",
+        "2885 2.382 / 2800 2.382",
+        "2800 2.382 / 4000 2.382"
+      ],
+      "correctAnswer": "2800 2.382 / 2885 2.382",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine Kartenforderung ist bereits Bankguthaben, sobald der Verkauf erfasst ist.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches Konto bezeichnet die Forderung gegenüber einem Kreditkartenunternehmen?",
+      "options": [
+        "2885",
+        "3180",
+        "3190",
+        "2880"
+      ],
+      "correctAnswer": "2880",
+      "points": 5,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Unternehmen bezahlt einen Einkauf mit Debitkarte. Welches Verbindlichkeitskonto sieht das Buch dafür vor?",
+      "options": [
+        "2885",
+        "2880",
+        "3190",
+        "3180"
+      ],
+      "correctAnswer": "3190",
+      "points": 5,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine Kartengebühr beträgt 140,16 € netto plus 28,03 € abzugsfähige Vorsteuer und wird von Bank abgebucht. Welche Buchung gilt?",
+      "options": [
+        "7792 140,16 + 3500 28,03 / 2800 168,19",
+        "7792 140,16 + 2500 28,03 / 2800 168,19",
+        "7792 168,19 / 2800 168,19",
+        "2800 168,19 / 7792 140,16 + 2500 28,03"
+      ],
+      "correctAnswer": "7792 140,16 + 2500 28,03 / 2800 168,19",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "true-false",
+      "text": "Beim Ausgleich einer bereits gebuchten Kartenforderung wird der ursprüngliche Verkauf nochmals als Erlös erfasst.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "open-ended",
+      "text": "Eine bereits erfasste Kreditkartenforderung beträgt 8.320 €. Die Provision beträgt 2,5 %, das Fixentgelt 3,90 € netto. Auf beide fallen 20 % abzugsfähige USt an. Berechne Gebühr, Vorsteuer und Bankeingang und nenne den Buchungssatz.",
+      "options": [],
+      "correctAnswer": "Provision 208 €, Nettogebühr 211,90 €, Vorsteuer 42,38 €, Bankeingang 8.065,72 €. Buchung: 2800 8.065,72 + 7792 211,90 + 2500 42,38 / 2880 8.320.",
+      "points": 20,
+      "topic": "kartenabrechnung"
+    }
+  ]
+}

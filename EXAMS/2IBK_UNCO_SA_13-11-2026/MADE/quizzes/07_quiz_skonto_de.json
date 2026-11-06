@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Zahlung mit Skonto",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Eine Warenrechnung über 8.400 € brutto enthält 20 % USt. Bei fristgerechter Zahlung sind 3 % Skonto auf den gesamten Bruttobetrag vereinbart. Wie hoch ist die Bankzahlung?",
+      "options": [
+        "8.148 €",
+        "8.190 €",
+        "8.232 €",
+        "8.400 €"
+      ],
+      "correctAnswer": "8.148 €",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Das Bruttoskonto beträgt 252 € bei 20 % USt. Wie teilen sich Nettoskonto und Vorsteuerkorrektur auf?",
+      "options": [
+        "201,60 € und 50,40 €",
+        "252 € und 50,40 €",
+        "240 € und 12 €",
+        "210 € und 42 €"
+      ],
+      "correctAnswer": "210 € und 42 €",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Kunde bezahlt eine Warenrechnung von 4.680 € brutto mit 2 % Skonto. Wie hoch ist der Bankeingang?",
+      "options": [
+        "4.588,20 €",
+        "4.773,60 €",
+        "4.586,40 €",
+        "4.602,00 €"
+      ],
+      "correctAnswer": "4.586,40 €",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Für die Kundenskontobuchung wurden 78 € netto und 15,60 € USt ermittelt. Welcher Satz gleicht die restliche Forderung aus?",
+      "options": [
+        "4410 93,60 / 20048 93,60",
+        "4410 78 + 3500 15,60 / 20048 93,60",
+        "20048 93,60 / 4410 78 + 3500 15,60",
+        "5880 78 + 2500 15,60 / 20048 93,60"
+      ],
+      "correctAnswer": "4410 78 + 3500 15,60 / 20048 93,60",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei einer Rechnung mit 20 % USt entspricht die Steuerkorrektur einem Sechstel des Bruttoskonto-Betrags.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine Lieferantenrechnung ist 8.400 € brutto. Der Bruttoskonto beträgt 252 €. Wie viel der Verbindlichkeit tilgen Zahlung und Skonto zusammen?",
+      "options": [
+        "8.148 €",
+        "252 €",
+        "8.652 €",
+        "8.400 €"
+      ],
+      "correctAnswer": "8.400 €",
+      "points": 10,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie wirkt das separat gebuchte Lieferantenskonto von 210 € netto bei einem Wareneinkauf auf den Erfolg?",
+      "options": [
+        "Erfolg +252 €",
+        "Erfolg 0 €",
+        "Erfolg +210 €",
+        "Erfolg −210 €"
+      ],
+      "correctAnswer": "Erfolg +210 €",
+      "points": 10,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie wirkt das separat gebuchte Kundenskonto von 78 € netto auf den Erfolg?",
+      "options": [
+        "Erfolg 0 €",
+        "Erfolg −78 €",
+        "Erfolg +78 €",
+        "Erfolg −93,60 €"
+      ],
+      "correctAnswer": "Erfolg −78 €",
+      "points": 10,
+      "topic": "skonto"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein vereinbartes Skonto setzt die Zahlung innerhalb der vereinbarten Frist voraus.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "skonto"
+    },
+    {
+      "type": "open-ended",
+      "text": "Eine Warenrechnung lautet 7.000 € netto plus 20 % USt. Bei rechtzeitiger Zahlung gelten 3 % Skonto auf den Bruttobetrag. Berechne Bruttoskonto, Nettoskonto, Vorsteuerkorrektur und Zahlung. Gib die zwei Buchungen an Lieferant 33008 an.",
+      "options": [],
+      "correctAnswer": "Brutto 8.400 €; Skonto 252 € = 210 € netto + 42 € Vorsteuer; Zahlung 8.148 €. Buchungen: 33008 8.148 / 2800 8.148 und 33008 252 / 5880 210 + 2500 42.",
+      "points": 20,
+      "topic": "skonto"
+    }
+  ]
+}

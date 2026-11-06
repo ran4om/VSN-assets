@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Cash discounts",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "A goods invoice of €8,400 gross includes 20% VAT. Timely payment qualifies for a 3% discount on the full gross amount. What is the bank payment?",
+      "options": [
+        "€8,148",
+        "€8,190",
+        "€8,232",
+        "€8,400"
+      ],
+      "correctAnswer": "€8,148",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "The gross cash discount is €252 at 20% VAT. What are the net discount and input VAT correction?",
+      "options": [
+        "€201.60 and €50.40",
+        "€252 and €50.40",
+        "€240 and €12",
+        "€210 and €42"
+      ],
+      "correctAnswer": "€210 and €42",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A customer pays a €4,680 gross goods invoice with a 2% cash discount. What is the bank receipt?",
+      "options": [
+        "€4,588.20",
+        "€4,773.60",
+        "€4,586.40",
+        "€4,602.00"
+      ],
+      "correctAnswer": "€4,586.40",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A customer cash discount has been calculated as €78 net plus €15.60 VAT. Which entry clears the remaining claim?",
+      "options": [
+        "4410 93.60 / 20048 93.60",
+        "4410 78 + 3500 15.60 / 20048 93.60",
+        "20048 93.60 / 4410 78 + 3500 15.60",
+        "5880 78 + 2500 15.60 / 20048 93.60"
+      ],
+      "correctAnswer": "4410 78 + 3500 15.60 / 20048 93.60",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "true-false",
+      "text": "For an invoice with 20% VAT, the VAT correction is one sixth of the gross cash discount.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A supplier invoice is €8,400 gross. The gross cash discount is €252. How much of the liability is cleared by payment and discount together?",
+      "options": [
+        "€8,148",
+        "€252",
+        "€8,652",
+        "€8,400"
+      ],
+      "correctAnswer": "€8,400",
+      "points": 10,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How does a separately posted €210 net supplier cash discount on goods affect profit?",
+      "options": [
+        "Profit +€252",
+        "Profit €0",
+        "Profit +€210",
+        "Profit −€210"
+      ],
+      "correctAnswer": "Profit +€210",
+      "points": 10,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How does a separately posted €78 net customer cash discount affect profit?",
+      "options": [
+        "Profit €0",
+        "Profit −€78",
+        "Profit +€78",
+        "Profit −€93.60"
+      ],
+      "correctAnswer": "Profit −€78",
+      "points": 10,
+      "topic": "skonto"
+    },
+    {
+      "type": "true-false",
+      "text": "An agreed cash discount requires payment within the agreed period.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "skonto"
+    },
+    {
+      "type": "open-ended",
+      "text": "A goods invoice is €7,000 net plus 20% VAT. Timely payment qualifies for 3% cash discount on the gross amount. Calculate the gross and net discounts, input VAT correction and payment. Give both entries for supplier 33008.",
+      "options": [],
+      "correctAnswer": "Gross €8,400; discount €252 = €210 net + €42 input VAT; payment €8,148. Entries: 33008 8,148 / 2800 8,148 and 33008 252 / 5880 210 + 2500 42.",
+      "points": 20,
+      "topic": "skonto"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Fixed assets and depreciation",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "An iPad commissioned on 2 October 2026 costs €1,200 net with full input VAT deduction. Its useful life is ten years. What is 2026 depreciation under the tax half-year convention?",
+      "options": [
+        "€60",
+        "€120",
+        "€30",
+        "€100"
+      ],
+      "correctAnswer": "€60",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the iPad carrying amount on 31 December 2026 with €1,200 cost and €60 depreciation?",
+      "options": [
+        "€1,200",
+        "€1,080",
+        "€1,380",
+        "€1,140"
+      ],
+      "correctAnswer": "€1,140",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A dishwasher costing €1,160 has annual depreciation of €145 and was commissioned on 18 May 2023. The asset-register exercise specifies eight months. What is 2023 depreciation?",
+      "options": [
+        "€72.50",
+        "€84.58",
+        "€96.67",
+        "€145.00"
+      ],
+      "correctAnswer": "€96.67",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "The same dishwasher was commissioned on 18 May and has annual depreciation of €145. What depreciation applies instead under the tax half-year convention?",
+      "options": [
+        "€0",
+        "€145",
+        "€96.67",
+        "€72.50"
+      ],
+      "correctAnswer": "€145",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "true-false",
+      "text": "Depreciation reduces profit but does not cause another payment.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which entry records €60 straight-line depreciation on equipment capitalised in account 0620?",
+      "options": [
+        "0620 60 / 7010 60",
+        "7010 60 / 2800 60",
+        "7060 60 / 2800 60",
+        "7010 60 / 0620 60"
+      ],
+      "correctAnswer": "7010 60 / 0620 60",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which statement describes the textbook low-value asset limit?",
+      "options": [
+        "Any value if the item is paid for in cash",
+        "Annual business turnover up to €1,000",
+        "Acquisition cost up to €1,000 excluding deductible VAT and independently usable",
+        "Sale price up to €1,000 including all VAT"
+      ],
+      "correctAnswer": "Acquisition cost up to €1,000 excluding deductible VAT and independently usable",
+      "points": 5,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A computer, monitor and printer together cost €629 gross or €524.17 net. Individual prices are missing. What must be assumed for an immediate write-off as one low-value unit?",
+      "options": [
+        "None of the VAT is deductible",
+        "One eligible low-value unit and deductible input VAT",
+        "Each item demonstrably costs exactly €209.67 gross",
+        "None of the items may be used for business"
+      ],
+      "correctAnswer": "One eligible low-value unit and deductible input VAT",
+      "points": 10,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "true-false",
+      "text": "The eight-month asset-register example and the tax half-year convention give the same dishwasher depreciation.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "open-ended",
+      "text": "Equipment costs €1,200 net, is capitalised and commissioned on 2 October 2026, and has a ten-year useful life. Input VAT is fully deductible. Using the tax half-year convention, calculate the rate, full-year depreciation, 2026 depreciation and carrying amount on 31 December.",
+      "options": [],
+      "correctAnswer": "10%; €1,200 / 10 = €120 per year; second-half commissioning gives €60 in 2026; carrying amount €1,200 − €60 = €1,140.",
+      "points": 20,
+      "topic": "anlagen-abschreibung"
+    }
+  ]
+}

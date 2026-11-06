@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Bankabschluss",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Ein Einzelunternehmen erhält 12,32 € Habenzinsen auf Bankkonto 2804. Wie lautet die Buchung?",
+      "options": [
+        "2804 12,32 / 8050 12,32",
+        "8050 12,32 / 2804 12,32",
+        "2804 12,32 / 8310 12,32",
+        "9600 12,32 / 2804 12,32"
+      ],
+      "correctAnswer": "2804 12,32 / 8050 12,32",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei einem Einzelunternehmen werden 3,08 € private KESt vom Bankkonto abgezogen. Welche Wirkung hat diese Buchung?",
+      "options": [
+        "Erfolg −3,08 €, Liquidität −3,08 €",
+        "Erfolg +3,08 €, Liquidität 0 €",
+        "Erfolg 0 €, Liquidität +3,08 €",
+        "Erfolg 0 €, Liquidität −3,08 €"
+      ],
+      "correctAnswer": "Erfolg 0 €, Liquidität −3,08 €",
+      "points": 10,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bankspesen bestehen aus 64,62 € und 173,50 €. Wie hoch ist der gesamte Spesenaufwand?",
+      "options": [
+        "108,88 €",
+        "248,12 €",
+        "238,12 €",
+        "237,12 €"
+      ],
+      "correctAnswer": "238,12 €",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein bereits überzogenes Bankkonto 3120 wird mit 1.516,93 € Sollzinsen belastet. Welche Buchung gilt?",
+      "options": [
+        "3120 1.516,93 / 8310 1.516,93",
+        "8310 1.516,93 / 3120 1.516,93",
+        "3120 1.516,93 / 8050 1.516,93",
+        "9600 1.516,93 / 3120 1.516,93"
+      ],
+      "correctAnswer": "8310 1.516,93 / 3120 1.516,93",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei einem Einzelunternehmen werden Bruttohabenzinsen und private KESt getrennt gebucht.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Kontonummer verwendet das Buch für Bankspesen?",
+      "options": [
+        "8050",
+        "9600",
+        "2500",
+        "7790"
+      ],
+      "correctAnswer": "7790",
+      "points": 5,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Spesen von 185,50 €, 50 € und 24,80 € belasten das Bankkonto. Wie hoch sind die Gesamtspesen?",
+      "options": [
+        "260,80 €",
+        "210,30 €",
+        "260,30 €",
+        "250,30 €"
+      ],
+      "correctAnswer": "260,30 €",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Habenzinsen von 12,32 €, private KESt von 3,08 € und Spesen von 238,12 € werden getrennt gebucht. Wie verändert sich der Erfolg insgesamt?",
+      "options": [
+        "+9,24 €",
+        "−225,80 €",
+        "−228,88 €",
+        "−241,20 €"
+      ],
+      "correctAnswer": "−225,80 €",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine zusätzliche Belastung des überzogenen Kontos 3120 erhöht die Bankschuld.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ein Einzelunternehmen erhält 12,32 € Habenzinsen; die Bank zieht 3,08 € private KESt und 238,12 € Spesen ab. Berechne die gesamte Erfolgs- und Liquiditätswirkung.",
+      "options": [],
+      "correctAnswer": "Erfolg 12,32 − 238,12 = −225,80 €. Liquidität 12,32 − 3,08 − 238,12 = −228,88 €. Die private KESt ist kein Aufwand.",
+      "points": 20,
+      "topic": "bankabschluss"
+    }
+  ]
+}

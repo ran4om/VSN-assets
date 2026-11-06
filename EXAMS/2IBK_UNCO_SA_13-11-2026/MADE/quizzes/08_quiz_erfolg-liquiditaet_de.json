@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Erfolg und Liquidität",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Waren werden um 10.000 € netto plus 2.000 € abzugsfähige Vorsteuer auf Ziel gekauft. Das Buch erfasst den Warenaufwand unmittelbar. Welche Wirkung hat die Rechnung?",
+      "options": [
+        "Erfolg −10.000 €, Liquidität 0 €",
+        "Erfolg −12.000 €, Liquidität 0 €",
+        "Erfolg 0 €, Liquidität −12.000 €",
+        "Erfolg −10.000 €, Liquidität −12.000 €"
+      ],
+      "correctAnswer": "Erfolg −10.000 €, Liquidität 0 €",
+      "points": 15,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine bereits gebuchte Lieferantenschuld von 12.000 € wird ohne Skonto über Bank bezahlt. Welche Wirkung hat die Zahlung?",
+      "options": [
+        "Erfolg −12.000 €, Liquidität −12.000 €",
+        "Erfolg +12.000 €, Liquidität 0 €",
+        "Erfolg 0 €, Liquidität +12.000 €",
+        "Erfolg 0 €, Liquidität −12.000 €"
+      ],
+      "correctAnswer": "Erfolg 0 €, Liquidität −12.000 €",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Einzelunternehmen bezahlt 180 € private Grundsteuer über Bank. Wie ändern sich Erfolg, Liquidität und Eigenkapital?",
+      "options": [
+        "Erfolg 0 €, Liquidität 0 €, Eigenkapital 0 €",
+        "Erfolg +180 €, Liquidität −180 €, Eigenkapital +180 €",
+        "Erfolg 0 €, Liquidität −180 €, Eigenkapital −180 €",
+        "Erfolg −180 €, Liquidität −180 €, Eigenkapital −180 €"
+      ],
+      "correctAnswer": "Erfolg 0 €, Liquidität −180 €, Eigenkapital −180 €",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein aktiviertes Gerät wird um 60 € abgeschrieben. Welche unmittelbare Wirkung hat die Abschreibungsbuchung?",
+      "options": [
+        "Erfolg +60 €, Liquidität 0 €",
+        "Erfolg −60 €, Liquidität 0 €",
+        "Erfolg 0 €, Liquidität −60 €",
+        "Erfolg −60 €, Liquidität −60 €"
+      ],
+      "correctAnswer": "Erfolg −60 €, Liquidität 0 €",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine höhere Kontoüberziehung zählt in dieser Liquiditätsdefinition als negative Bankliquidität.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Verkauf auf Ziel beträgt 1.400 € netto plus 280 € USt. Welche Wirkung hat die Verkaufsbuchung vor Zahlung?",
+      "options": [
+        "Erfolg +1.680 €, Liquidität 0 €",
+        "Erfolg 0 €, Liquidität +1.680 €",
+        "Erfolg +1.400 €, Liquidität +1.680 €",
+        "Erfolg +1.400 €, Liquidität 0 €"
+      ],
+      "correctAnswer": "Erfolg +1.400 €, Liquidität 0 €",
+      "points": 15,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine bereits erfasste Kundenforderung von 1.680 € geht vollständig auf Bank ein. Welche Wirkung hat der Zahlungseingang?",
+      "options": [
+        "Erfolg +1.680 €, Liquidität 0 €",
+        "Erfolg 0 €, Liquidität −1.680 €",
+        "Erfolg 0 €, Liquidität +1.680 €",
+        "Erfolg +1.400 €, Liquidität +1.680 €"
+      ],
+      "correctAnswer": "Erfolg 0 €, Liquidität +1.680 €",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Drucker wird um 1.320 € netto plus 264 € abzugsfähige Vorsteuer auf Ziel aktiviert. Welche Wirkung hat die Anschaffungsbuchung vor Zahlung?",
+      "options": [
+        "Erfolg −1.584 €, Liquidität −1.584 €",
+        "Erfolg 0 €, Liquidität 0 €",
+        "Erfolg −1.320 €, Liquidität 0 €",
+        "Erfolg 0 €, Liquidität −1.584 €"
+      ],
+      "correctAnswer": "Erfolg 0 €, Liquidität 0 €",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "true-false",
+      "text": "Erfolgswirkung 0 bedeutet bei einer Privatentnahme, dass auch das Eigenkapital unverändert bleibt.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ein Einzelunternehmen zahlt über Bank 8.130 € private Einkommensteuer, 64,20 € KU1 und 3.142 € bereits gebuchte USt-Zahllast. Berechne die Wirkung auf Erfolg, Liquidität und Eigenkapital.",
+      "options": [],
+      "correctAnswer": "Erfolg −64,20 €; Liquidität −11.336,20 €; Eigenkapital −8.194,20 € aus Privatentnahme 8.130 € und Aufwand 64,20 €. Die Zahlung der USt-Schuld wirkt nicht nochmals auf den Erfolg.",
+      "points": 20,
+      "topic": "erfolg-liquiditaet"
+    }
+  ]
+}

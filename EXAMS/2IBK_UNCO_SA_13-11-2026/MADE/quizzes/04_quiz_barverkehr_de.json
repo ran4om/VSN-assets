@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Barverkehr mit Banken",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Bei einer Bankabhebung über 1.500 € wird zuerst der Kassenbeleg gebucht. Welcher Satz gilt?",
+      "options": [
+        "2700 1.500 / 2870 1.500",
+        "2870 1.500 / 2700 1.500",
+        "2800 1.500 / 2870 1.500",
+        "2870 1.500 / 2800 1.500"
+      ],
+      "correctAnswer": "2700 1.500 / 2870 1.500",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Bankauszugssatz vervollständigt dieselbe Abhebung von 1.500 €?",
+      "options": [
+        "2800 1.500 / 2870 1.500",
+        "2700 1.500 / 2870 1.500",
+        "2870 1.500 / 2700 1.500",
+        "2870 1.500 / 2800 1.500"
+      ],
+      "correctAnswer": "2870 1.500 / 2800 1.500",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine Bareinzahlung von 2.300 € wird zuerst anhand des Kassenbelegs erfasst. Welcher Satz ist richtig?",
+      "options": [
+        "2800 2.300 / 2870 2.300",
+        "2870 2.300 / 2800 2.300",
+        "2870 2.300 / 2700 2.300",
+        "2700 2.300 / 2870 2.300"
+      ],
+      "correctAnswer": "2870 2.300 / 2700 2.300",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Wirkung hat eine vollständig gebuchte Umbuchung von Kassa auf Bank auf Erfolg und Kassa plus Bank zusammen?",
+      "options": [
+        "Erfolg +2.300 €, Liquidität −2.300 €",
+        "Erfolg 0 €, Liquidität 0 €",
+        "Erfolg −2.300 €, Liquidität 0 €",
+        "Erfolg 0 €, Liquidität +2.300 €"
+      ],
+      "correctAnswer": "Erfolg 0 €, Liquidität 0 €",
+      "points": 10,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "true-false",
+      "text": "Nach beiden zugehörigen Buchungen einer Umbuchung ist das Verrechnungskonto 2870 ausgeglichen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Bankauszugssatz vervollständigt eine Einzahlung von 2.300 €?",
+      "options": [
+        "2870 2.300 / 2800 2.300",
+        "2700 2.300 / 2870 2.300",
+        "2870 2.300 / 2700 2.300",
+        "2800 2.300 / 2870 2.300"
+      ],
+      "correctAnswer": "2800 2.300 / 2870 2.300",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche vorübergehende Wirkung auf Kassa plus Bank hat allein der Kassenbeleg einer Einzahlung über 2.300 €?",
+      "options": [
+        "0 €",
+        "−4.600 €",
+        "−2.300 €",
+        "+2.300 €"
+      ],
+      "correctAnswer": "−2.300 €",
+      "points": 10,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bankspesen bestehen aus 36,22 € und 4,36 €. Welcher Gesamtbetrag wird auf 7790 gebucht?",
+      "options": [
+        "36,22 €",
+        "40,58 €",
+        "31,86 €",
+        "40,68 €"
+      ],
+      "correctAnswer": "40,58 €",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "true-false",
+      "text": "Für dieselbe Abhebung sollen sowohl die Direktbuchung 2700 / 2800 als auch beide Buchungen über 2870 erfolgen.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "open-ended",
+      "text": "Eine Einzahlung von 2.300 € wird zuerst mit dem Kassenbeleg und am nächsten Tag mit dem Bankauszug gebucht. Nenne beide Buchungssätze und die gesamte Liquiditätswirkung.",
+      "options": [],
+      "correctAnswer": "Kassenbeleg: 2870 2.300 / 2700 2.300. Bankauszug: 2800 2.300 / 2870 2.300. Insgesamt 0 € Liquiditätswirkung und 0 € Erfolgswirkung.",
+      "points": 20,
+      "topic": "barverkehr"
+    }
+  ]
+}

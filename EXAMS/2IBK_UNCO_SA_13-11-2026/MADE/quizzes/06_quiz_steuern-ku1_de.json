@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Steuern und KU1",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Nach dem vereinfachten Lehrbuchmodell ist ein Unternehmen nicht von KU1 befreit. Die definierte Bemessungsgrundlage für das Quartal beträgt 21.400 €. Der Satz beträgt 3 ‰. Wie hoch ist die KU1?",
+      "options": [
+        "64,20 €",
+        "642,00 €",
+        "71,33 €",
+        "6,42 €"
+      ],
+      "correctAnswer": "64,20 €",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Am Jahresende wird die KU1 für das vierte Quartal mit 420 € als Schuld erfasst. Wie lautet die Buchung?",
+      "options": [
+        "3540 420 / 7780 420",
+        "7780 420 / 2800 420",
+        "9600 420 / 3540 420",
+        "7780 420 / 3540 420"
+      ],
+      "correctAnswer": "7780 420 / 3540 420",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Buchung gilt bei der späteren Bankzahlung der bereits als Aufwand erfassten KU1-Schuld von 420 €?",
+      "options": [
+        "2800 420 / 3540 420",
+        "9600 420 / 2800 420",
+        "3540 420 / 2800 420",
+        "7780 420 / 2800 420"
+      ],
+      "correctAnswer": "3540 420 / 2800 420",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Einzelunternehmen zahlt 180 € Grundsteuer für das Privatgrundstück des Inhabers und 220 € Grundsteuer für das Betriebsgrundstück. Wie hoch ist die Erfolgswirkung?",
+      "options": [
+        "0 €",
+        "−220 €",
+        "−400 €",
+        "−180 €"
+      ],
+      "correctAnswer": "−220 €",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "true-false",
+      "text": "Das KU1-Lehrbuchmodell verwendet eine jährliche Umsatzfreigrenze von 150.000 €; für echte Abrechnungen sind aktuelle Ausnahmen und Tarifstufen zu prüfen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Einzelunternehmen zahlt 8.130 € private Einkommensteuer, 64,20 € KU1 und 3.142 € USt-Zahllast über Bank. Wie hoch ist der gesamte Bankabfluss?",
+      "options": [
+        "11.272,00 €",
+        "3.206,20 €",
+        "8.194,20 €",
+        "11.336,20 €"
+      ],
+      "correctAnswer": "11.336,20 €",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Grunderwerbsteuer von 7.000 € gehört bei der Anschaffung eines unbebauten betrieblichen Grundstücks zu den Anschaffungsnebenkosten. Welches Konto wird belastet?",
+      "options": [
+        "9600 Privat",
+        "7780 KU1",
+        "0200 Grundstücke",
+        "7100 Grundsteuer"
+      ],
+      "correctAnswer": "0200 Grundstücke",
+      "points": 10,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Nach dem vereinfachten Lehrbuchmodell ist KU1 vierteljährlich bis zum 15. des zweitfolgenden Monats zu zahlen. Wann ist das erste Quartal grundsätzlich fällig?",
+      "options": [
+        "31. März",
+        "15. Mai",
+        "15. April",
+        "15. Juni"
+      ],
+      "correctAnswer": "15. Mai",
+      "points": 10,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Zahlung einer bereits gebuchten USt-Zahllast verursacht nochmals einen Aufwand.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "open-ended",
+      "text": "Im vereinfachten Lehrbuchmodell übersteigt der Jahresumsatz die Freigrenze. Für das vierte Quartal beträgt die bereits nach den Lehrbuchregeln ermittelte KU1-Bemessungsgrundlage 140.000 €. Der Satz ist 3 ‰. Berechne die KU1 und zeige Jahresabschlussbuchung und spätere Zahlung sowie deren jeweilige Erfolgswirkung.",
+      "options": [],
+      "correctAnswer": "140.000 × 0,003 = 420 €. Jahresende: 7780 420 / 3540 420, Erfolg −420 €. Zahlung: 3540 420 / 2800 420, Erfolg 0 €. Das Modell ersetzt nicht die Prüfung aktueller gesetzlicher Ausnahmen und Tarifstufen.",
+      "points": 20,
+      "topic": "steuern-ku1"
+    }
+  ]
+}

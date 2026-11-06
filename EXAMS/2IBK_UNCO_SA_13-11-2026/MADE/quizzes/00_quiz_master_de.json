@@ -1,0 +1,465 @@
+{
+  "title": "UNCO SA 13.11.2026 – Gesamtquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Eine Warenrechnung auf Ziel lautet 10.000 € netto plus 20 % USt. Wie lautet der Buchungssatz?",
+      "options": [
+        "5000 10.000 + 2500 2.000 / 33030 12.000",
+        "33030 12.000 / 5000 10.000 + 2500 2.000",
+        "5000 12.000 / 33030 12.000",
+        "5000 10.000 + 3500 2.000 / 33030 12.000"
+      ],
+      "correctAnswer": "5000 10.000 + 2500 2.000 / 33030 12.000",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Nettolistenpreis von 2.000 € wird sofort um 30 % reduziert. Dazu kommen 20 % USt. Wie hoch ist die Rechnung?",
+      "options": [
+        "1.400 €",
+        "1.800 €",
+        "2.100 €",
+        "1.680 €"
+      ],
+      "correctAnswer": "1.680 €",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Waren kosten 9.875 € netto. Fracht, Treibstoffzuschlag und Maut betragen netto 137,80 €, 10,40 € und 4,89 €. Die Vorsteuer ist abzugsfähig. Wie hoch ist der Nettoeinstandspreis?",
+      "options": [
+        "10.012,80 €",
+        "9.905,62 €",
+        "10.028,09 €",
+        "10.058,71 €"
+      ],
+      "correctAnswer": "10.028,09 €",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Lieferant schreibt von einer offenen Rechnung 180 € netto plus 36 € Vorsteuer gut. Welche Buchung korrigiert den ursprünglichen Wareneinkauf?",
+      "options": [
+        "33030 216 / 4000 180 + 3500 36",
+        "33030 216 / 5000 180 + 2500 36",
+        "5000 180 + 2500 36 / 33030 216",
+        "33030 180 / 5000 180"
+      ],
+      "correctAnswer": "33030 216 / 5000 180 + 2500 36",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "true-false",
+      "text": "Direkt zurechenbare Lieferkosten einer Maschine gehören zu ihrem Anschaffungswert.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein vorsteuerabzugsberechtigter Lkw kostet 75.000 € brutto bei 20 % USt. Wie hoch sind Anschaffungswert und Vorsteuer?",
+      "options": [
+        "60.000 € und 15.000 €",
+        "75.000 € und 15.000 €",
+        "72.500 € und 2.500 €",
+        "62.500 € und 12.500 €"
+      ],
+      "correctAnswer": "62.500 € und 12.500 €",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Lieferant mahnt eine Schuld von 540 € zuzüglich 10 € Spesen und 15 € Zinsen. Das Buch verrechnet dafür keine USt. Wie viel ist insgesamt zu zahlen?",
+      "options": [
+        "555 €",
+        "570 €",
+        "565 €",
+        "540 €"
+      ],
+      "correctAnswer": "565 €",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein am 2. Oktober 2026 in Betrieb genommenes iPad kostet bei vollem Vorsteuerabzug 1.200 € netto. Die Nutzungsdauer beträgt zehn Jahre. Welche AfA ergibt die steuerliche Halbjahresregel 2026?",
+      "options": [
+        "100 €",
+        "60 €",
+        "120 €",
+        "30 €"
+      ],
+      "correctAnswer": "60 €",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie hoch ist der Buchwert dieses iPads am 31. Dezember 2026 bei 1.200 € Anschaffungswert und 60 € AfA?",
+      "options": [
+        "1.140 €",
+        "1.200 €",
+        "1.080 €",
+        "1.380 €"
+      ],
+      "correctAnswer": "1.140 €",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Geschirrspüler zu 1.160 € hat eine Jahres-AfA von 145 € und wurde am 18. Mai 2023 in Betrieb genommen. Das AVZ-Blatt schreibt acht Monate vor. Wie hoch ist die AfA 2023?",
+      "options": [
+        "145,00 €",
+        "72,50 €",
+        "84,58 €",
+        "96,67 €"
+      ],
+      "correctAnswer": "96,67 €",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Für denselben am 18. Mai in Betrieb genommenen Geschirrspüler beträgt die Jahres-AfA 145 €. Welche AfA gilt stattdessen nach der steuerlichen Halbjahresregel?",
+      "options": [
+        "72,50 €",
+        "0 €",
+        "145 €",
+        "96,67 €"
+      ],
+      "correctAnswer": "145 €",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine Abschreibung vermindert den Erfolg, verursacht aber keine weitere Zahlung.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Einzelunternehmen erhält 12,32 € Habenzinsen auf Bankkonto 2804. Wie lautet die Buchung?",
+      "options": [
+        "2804 12,32 / 8050 12,32",
+        "8050 12,32 / 2804 12,32",
+        "2804 12,32 / 8310 12,32",
+        "9600 12,32 / 2804 12,32"
+      ],
+      "correctAnswer": "2804 12,32 / 8050 12,32",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei einem Einzelunternehmen werden 3,08 € private KESt vom Bankkonto abgezogen. Welche Wirkung hat diese Buchung?",
+      "options": [
+        "Erfolg −3,08 €, Liquidität −3,08 €",
+        "Erfolg +3,08 €, Liquidität 0 €",
+        "Erfolg 0 €, Liquidität +3,08 €",
+        "Erfolg 0 €, Liquidität −3,08 €"
+      ],
+      "correctAnswer": "Erfolg 0 €, Liquidität −3,08 €",
+      "points": 10,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bankspesen bestehen aus 64,62 € und 173,50 €. Wie hoch ist der gesamte Spesenaufwand?",
+      "options": [
+        "108,88 €",
+        "248,12 €",
+        "238,12 €",
+        "237,12 €"
+      ],
+      "correctAnswer": "238,12 €",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei einem Einzelunternehmen werden Bruttohabenzinsen und private KESt getrennt gebucht.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei einer Bankabhebung über 1.500 € wird zuerst der Kassenbeleg gebucht. Welcher Satz gilt?",
+      "options": [
+        "2700 1.500 / 2870 1.500",
+        "2870 1.500 / 2700 1.500",
+        "2800 1.500 / 2870 1.500",
+        "2870 1.500 / 2800 1.500"
+      ],
+      "correctAnswer": "2700 1.500 / 2870 1.500",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Bankauszugssatz vervollständigt dieselbe Abhebung von 1.500 €?",
+      "options": [
+        "2800 1.500 / 2870 1.500",
+        "2700 1.500 / 2870 1.500",
+        "2870 1.500 / 2700 1.500",
+        "2870 1.500 / 2800 1.500"
+      ],
+      "correctAnswer": "2870 1.500 / 2800 1.500",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine Bareinzahlung von 2.300 € wird zuerst anhand des Kassenbelegs erfasst. Welcher Satz ist richtig?",
+      "options": [
+        "2800 2.300 / 2870 2.300",
+        "2870 2.300 / 2800 2.300",
+        "2870 2.300 / 2700 2.300",
+        "2700 2.300 / 2870 2.300"
+      ],
+      "correctAnswer": "2870 2.300 / 2700 2.300",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "true-false",
+      "text": "Nach beiden zugehörigen Buchungen einer Umbuchung ist das Verrechnungskonto 2870 ausgeglichen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Debitkartenverkauf beträgt 1.985 € netto plus 397 € USt. Welcher Satz erfasst die Forderung?",
+      "options": [
+        "2885 2.382 / 4000 1.985 + 3500 397",
+        "2800 2.382 / 4000 1.985 + 3500 397",
+        "2880 2.382 / 4000 1.985 + 3500 397",
+        "4000 1.985 + 3500 397 / 2885 2.382"
+      ],
+      "correctAnswer": "2885 2.382 / 4000 1.985 + 3500 397",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine bereits gebuchte Kreditkartenforderung beträgt 8.320 €. Das Kartenunternehmen behält 2,5 % Provision und 3,90 € Fixentgelt zuzüglich 20 % abzugsfähiger USt ein. Wie viel geht auf dem Bankkonto ein?",
+      "options": [
+        "8.108,10 €",
+        "8.066,10 €",
+        "8.111,90 €",
+        "8.065,72 €"
+      ],
+      "correctAnswer": "8.065,72 €",
+      "points": 20,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Erfolgswirkung hat allein die Abrechnung der bereits gebuchten Forderung über 8.320 €, wenn die Nettogebühr 211,90 € und die darauf entfallende abzugsfähige Vorsteuer 42,38 € beträgt?",
+      "options": [
+        "+8.065,72 €",
+        "0 €",
+        "−211,90 €",
+        "−254,28 €"
+      ],
+      "correctAnswer": "−211,90 €",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine Kartenforderung ist bereits Bankguthaben, sobald der Verkauf erfasst ist.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "open-ended",
+      "text": "Eine bereits erfasste Kreditkartenforderung beträgt 8.320 €. Die Provision beträgt 2,5 %, das Fixentgelt 3,90 € netto. Auf beide fallen 20 % abzugsfähige USt an. Berechne Gebühr, Vorsteuer und Bankeingang und nenne den Buchungssatz.",
+      "options": [],
+      "correctAnswer": "Provision 208 €, Nettogebühr 211,90 €, Vorsteuer 42,38 €, Bankeingang 8.065,72 €. Buchung: 2800 8.065,72 + 7792 211,90 + 2500 42,38 / 2880 8.320.",
+      "points": 20,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Nach dem vereinfachten Lehrbuchmodell ist ein Unternehmen nicht von KU1 befreit. Die definierte Bemessungsgrundlage für das Quartal beträgt 21.400 €. Der Satz beträgt 3 ‰. Wie hoch ist die KU1?",
+      "options": [
+        "642,00 €",
+        "71,33 €",
+        "6,42 €",
+        "64,20 €"
+      ],
+      "correctAnswer": "64,20 €",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Am Jahresende wird die KU1 für das vierte Quartal mit 420 € als Schuld erfasst. Wie lautet die Buchung?",
+      "options": [
+        "7780 420 / 2800 420",
+        "9600 420 / 3540 420",
+        "7780 420 / 3540 420",
+        "3540 420 / 7780 420"
+      ],
+      "correctAnswer": "7780 420 / 3540 420",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Buchung gilt bei der späteren Bankzahlung der bereits als Aufwand erfassten KU1-Schuld von 420 €?",
+      "options": [
+        "9600 420 / 2800 420",
+        "3540 420 / 2800 420",
+        "7780 420 / 2800 420",
+        "2800 420 / 3540 420"
+      ],
+      "correctAnswer": "3540 420 / 2800 420",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "true-false",
+      "text": "Das KU1-Lehrbuchmodell verwendet eine jährliche Umsatzfreigrenze von 150.000 €; für echte Abrechnungen sind aktuelle Ausnahmen und Tarifstufen zu prüfen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "open-ended",
+      "text": "Im vereinfachten Lehrbuchmodell übersteigt der Jahresumsatz die Freigrenze. Für das vierte Quartal beträgt die bereits nach den Lehrbuchregeln ermittelte KU1-Bemessungsgrundlage 140.000 €. Der Satz ist 3 ‰. Berechne die KU1 und zeige Jahresabschlussbuchung und spätere Zahlung sowie deren jeweilige Erfolgswirkung.",
+      "options": [],
+      "correctAnswer": "140.000 × 0,003 = 420 €. Jahresende: 7780 420 / 3540 420, Erfolg −420 €. Zahlung: 3540 420 / 2800 420, Erfolg 0 €. Das Modell ersetzt nicht die Prüfung aktueller gesetzlicher Ausnahmen und Tarifstufen.",
+      "points": 20,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine Warenrechnung über 8.400 € brutto enthält 20 % USt. Bei fristgerechter Zahlung sind 3 % Skonto auf den gesamten Bruttobetrag vereinbart. Wie hoch ist die Bankzahlung?",
+      "options": [
+        "8.232 €",
+        "8.400 €",
+        "8.148 €",
+        "8.190 €"
+      ],
+      "correctAnswer": "8.148 €",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Das Bruttoskonto beträgt 252 € bei 20 % USt. Wie teilen sich Nettoskonto und Vorsteuerkorrektur auf?",
+      "options": [
+        "240 € und 12 €",
+        "210 € und 42 €",
+        "201,60 € und 50,40 €",
+        "252 € und 50,40 €"
+      ],
+      "correctAnswer": "210 € und 42 €",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Kunde bezahlt eine Warenrechnung von 4.680 € brutto mit 2 % Skonto. Wie hoch ist der Bankeingang?",
+      "options": [
+        "4.586,40 €",
+        "4.602,00 €",
+        "4.588,20 €",
+        "4.773,60 €"
+      ],
+      "correctAnswer": "4.586,40 €",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei einer Rechnung mit 20 % USt entspricht die Steuerkorrektur einem Sechstel des Bruttoskonto-Betrags.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "skonto"
+    },
+    {
+      "type": "open-ended",
+      "text": "Eine Warenrechnung lautet 7.000 € netto plus 20 % USt. Bei rechtzeitiger Zahlung gelten 3 % Skonto auf den Bruttobetrag. Berechne Bruttoskonto, Nettoskonto, Vorsteuerkorrektur und Zahlung. Gib die zwei Buchungen an Lieferant 33008 an.",
+      "options": [],
+      "correctAnswer": "Brutto 8.400 €; Skonto 252 € = 210 € netto + 42 € Vorsteuer; Zahlung 8.148 €. Buchungen: 33008 8.148 / 2800 8.148 und 33008 252 / 5880 210 + 2500 42.",
+      "points": 20,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Waren werden um 10.000 € netto plus 2.000 € abzugsfähige Vorsteuer auf Ziel gekauft. Das Buch erfasst den Warenaufwand unmittelbar. Welche Wirkung hat die Rechnung?",
+      "options": [
+        "Erfolg −10.000 €, Liquidität −12.000 €",
+        "Erfolg −10.000 €, Liquidität 0 €",
+        "Erfolg −12.000 €, Liquidität 0 €",
+        "Erfolg 0 €, Liquidität −12.000 €"
+      ],
+      "correctAnswer": "Erfolg −10.000 €, Liquidität 0 €",
+      "points": 15,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine bereits gebuchte Lieferantenschuld von 12.000 € wird ohne Skonto über Bank bezahlt. Welche Wirkung hat die Zahlung?",
+      "options": [
+        "Erfolg 0 €, Liquidität −12.000 €",
+        "Erfolg −12.000 €, Liquidität −12.000 €",
+        "Erfolg +12.000 €, Liquidität 0 €",
+        "Erfolg 0 €, Liquidität +12.000 €"
+      ],
+      "correctAnswer": "Erfolg 0 €, Liquidität −12.000 €",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Einzelunternehmen bezahlt 180 € private Grundsteuer über Bank. Wie ändern sich Erfolg, Liquidität und Eigenkapital?",
+      "options": [
+        "Erfolg −180 €, Liquidität −180 €, Eigenkapital −180 €",
+        "Erfolg 0 €, Liquidität 0 €, Eigenkapital 0 €",
+        "Erfolg +180 €, Liquidität −180 €, Eigenkapital +180 €",
+        "Erfolg 0 €, Liquidität −180 €, Eigenkapital −180 €"
+      ],
+      "correctAnswer": "Erfolg 0 €, Liquidität −180 €, Eigenkapital −180 €",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine höhere Kontoüberziehung zählt in dieser Liquiditätsdefinition als negative Bankliquidität.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ein Einzelunternehmen zahlt über Bank 8.130 € private Einkommensteuer, 64,20 € KU1 und 3.142 € bereits gebuchte USt-Zahllast. Berechne die Wirkung auf Erfolg, Liquidität und Eigenkapital.",
+      "options": [],
+      "correctAnswer": "Erfolg −64,20 €; Liquidität −11.336,20 €; Eigenkapital −8.194,20 € aus Privatentnahme 8.130 € und Aufwand 64,20 €. Die Zahlung der USt-Schuld wirkt nicht nochmals auf den Erfolg.",
+      "points": 20,
+      "topic": "erfolg-liquiditaet"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Card settlement",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "A debit-card sale is €1,985 net plus €397 VAT. Which entry records the claim?",
+      "options": [
+        "2885 2,382 / 4000 1,985 + 3500 397",
+        "2800 2,382 / 4000 1,985 + 3500 397",
+        "2880 2,382 / 4000 1,985 + 3500 397",
+        "4000 1,985 + 3500 397 / 2885 2,382"
+      ],
+      "correctAnswer": "2885 2,382 / 4000 1,985 + 3500 397",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An already recorded credit-card claim is €8,320. The processor withholds 2.5% commission and a €3.90 fixed fee plus 20% deductible VAT. How much reaches the bank?",
+      "options": [
+        "€8,108.10",
+        "€8,066.10",
+        "€8,111.90",
+        "€8,065.72"
+      ],
+      "correctAnswer": "€8,065.72",
+      "points": 20,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the profit effect of settling an already recorded €8,320 claim when the net fee is €211.90 and deductible input VAT on it is €42.38?",
+      "options": [
+        "+€8,065.72",
+        "€0",
+        "−€211.90",
+        "−€254.28"
+      ],
+      "correctAnswer": "−€211.90",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A €2,382 debit-card claim is transferred to the bank without deductions. Which entry clears it?",
+      "options": [
+        "2880 2,382 / 2800 2,382",
+        "2800 2,382 / 2885 2,382",
+        "2885 2,382 / 2800 2,382",
+        "2800 2,382 / 4000 2,382"
+      ],
+      "correctAnswer": "2800 2,382 / 2885 2,382",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "true-false",
+      "text": "A card processor claim is already bank cash as soon as the sale is recorded.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which account represents a claim against a credit-card processor?",
+      "options": [
+        "2885",
+        "3180",
+        "3190",
+        "2880"
+      ],
+      "correctAnswer": "2880",
+      "points": 5,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A business pays for a purchase by debit card. Which liability account does the textbook use?",
+      "options": [
+        "2885",
+        "2880",
+        "3190",
+        "3180"
+      ],
+      "correctAnswer": "3190",
+      "points": 5,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A card fee is €140.16 net plus €28.03 deductible input VAT and is debited from bank. Which entry applies?",
+      "options": [
+        "7792 140.16 + 3500 28.03 / 2800 168.19",
+        "7792 140.16 + 2500 28.03 / 2800 168.19",
+        "7792 168.19 / 2800 168.19",
+        "2800 168.19 / 7792 140.16 + 2500 28.03"
+      ],
+      "correctAnswer": "7792 140.16 + 2500 28.03 / 2800 168.19",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "true-false",
+      "text": "When an already recorded card claim is settled, the original sale is recorded as revenue again.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "open-ended",
+      "text": "An already recorded credit-card claim is €8,320. Commission is 2.5% and the fixed fee is €3.90 net. Both attract 20% deductible VAT. Calculate the fee, input VAT and bank receipt, and give the entry.",
+      "options": [],
+      "correctAnswer": "Commission €208, net fee €211.90, input VAT €42.38, bank receipt €8,065.72. Entry: 2800 8,065.72 + 7792 211.90 + 2500 42.38 / 2880 8,320.",
+      "points": 20,
+      "topic": "kartenabrechnung"
+    }
+  ]
+}

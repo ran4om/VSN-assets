@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Profit and cash effects",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Goods are bought on credit for €10,000 net plus €2,000 deductible input VAT. The textbook records merchandise expense immediately. What is the invoice effect?",
+      "options": [
+        "Profit −€10,000, cash €0",
+        "Profit −€12,000, cash €0",
+        "Profit €0, cash −€12,000",
+        "Profit −€10,000, cash −€12,000"
+      ],
+      "correctAnswer": "Profit −€10,000, cash €0",
+      "points": 15,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An already recorded supplier liability of €12,000 is paid by bank without a discount. What is the payment effect?",
+      "options": [
+        "Profit −€12,000, cash −€12,000",
+        "Profit +€12,000, cash €0",
+        "Profit €0, cash +€12,000",
+        "Profit €0, cash −€12,000"
+      ],
+      "correctAnswer": "Profit €0, cash −€12,000",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A sole proprietor pays €180 private property tax by bank. How do profit, cash and equity change?",
+      "options": [
+        "Profit €0, cash €0, equity €0",
+        "Profit +€180, cash −€180, equity +€180",
+        "Profit €0, cash −€180, equity −€180",
+        "Profit −€180, cash −€180, equity −€180"
+      ],
+      "correctAnswer": "Profit €0, cash −€180, equity −€180",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Capitalised equipment is depreciated by €60. What is the immediate effect of the depreciation entry?",
+      "options": [
+        "Profit +€60, cash €0",
+        "Profit −€60, cash €0",
+        "Profit €0, cash −€60",
+        "Profit −€60, cash −€60"
+      ],
+      "correctAnswer": "Profit −€60, cash €0",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "true-false",
+      "text": "Under this cash definition, an increased bank overdraft counts as negative bank cash.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A credit sale is €1,400 net plus €280 VAT. What is the effect of the sale entry before payment?",
+      "options": [
+        "Profit +€1,680, cash €0",
+        "Profit €0, cash +€1,680",
+        "Profit +€1,400, cash +€1,680",
+        "Profit +€1,400, cash €0"
+      ],
+      "correctAnswer": "Profit +€1,400, cash €0",
+      "points": 15,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An already recorded customer claim of €1,680 is collected in full by bank. What is the effect of receipt?",
+      "options": [
+        "Profit +€1,680, cash €0",
+        "Profit €0, cash −€1,680",
+        "Profit €0, cash +€1,680",
+        "Profit +€1,400, cash +€1,680"
+      ],
+      "correctAnswer": "Profit €0, cash +€1,680",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A printer is capitalised on credit for €1,320 net plus €264 deductible input VAT. What is the acquisition entry effect before payment?",
+      "options": [
+        "Profit −€1,584, cash −€1,584",
+        "Profit €0, cash €0",
+        "Profit −€1,320, cash €0",
+        "Profit €0, cash −€1,584"
+      ],
+      "correctAnswer": "Profit €0, cash €0",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "true-false",
+      "text": "A profit effect of zero on owner drawings means equity is also unchanged.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "open-ended",
+      "text": "A sole proprietor pays €8,130 private income tax, €64.20 KU1 and a previously recorded €3,142 VAT liability by bank. Calculate the effects on profit, cash and equity.",
+      "options": [],
+      "correctAnswer": "Profit −€64.20; cash −€11,336.20; equity −€8,194.20 from €8,130 drawings and €64.20 expense. Payment of the VAT liability has no new profit effect.",
+      "points": 20,
+      "topic": "erfolg-liquiditaet"
+    }
+  ]
+}

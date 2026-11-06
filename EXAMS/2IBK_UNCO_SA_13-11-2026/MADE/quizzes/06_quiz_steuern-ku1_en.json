@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Taxes and KU1",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Under the simplified textbook model, a business is not exempt from KU1. Its defined quarterly assessment base is €21,400 and the rate is 3 per mille. What is the levy?",
+      "options": [
+        "€64.20",
+        "€642.00",
+        "€71.33",
+        "€6.42"
+      ],
+      "correctAnswer": "€64.20",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "At year end, €420 of fourth-quarter KU1 is recorded as a liability. What is the entry?",
+      "options": [
+        "3540 420 / 7780 420",
+        "7780 420 / 2800 420",
+        "9600 420 / 3540 420",
+        "7780 420 / 3540 420"
+      ],
+      "correctAnswer": "7780 420 / 3540 420",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which entry applies when the €420 KU1 liability already recognised as an expense is later paid by bank?",
+      "options": [
+        "2800 420 / 3540 420",
+        "9600 420 / 2800 420",
+        "3540 420 / 2800 420",
+        "7780 420 / 2800 420"
+      ],
+      "correctAnswer": "3540 420 / 2800 420",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A sole proprietor pays €180 property tax on the owner’s private land and €220 on business land. What is the profit effect?",
+      "options": [
+        "€0",
+        "−€220",
+        "−€400",
+        "−€180"
+      ],
+      "correctAnswer": "−€220",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "true-false",
+      "text": "The KU1 textbook model uses an annual turnover exemption threshold of €150,000; current exclusions and graduated rates must be checked for real filings.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A sole proprietor pays €8,130 private income tax, €64.20 KU1 and €3,142 VAT liability by bank. What is the total bank outflow?",
+      "options": [
+        "€11,272.00",
+        "€3,206.20",
+        "€8,194.20",
+        "€11,336.20"
+      ],
+      "correctAnswer": "€11,336.20",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Land transfer tax of €7,000 is an acquisition cost of undeveloped business land. Which account is debited?",
+      "options": [
+        "9600 Drawings",
+        "7780 KU1",
+        "0200 Land",
+        "7100 Property tax"
+      ],
+      "correctAnswer": "0200 Land",
+      "points": 10,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Under the simplified textbook model KU1 is calculated quarterly and due on the 15th of the second following month. When is the first quarter generally due?",
+      "options": [
+        "31 March",
+        "15 May",
+        "15 April",
+        "15 June"
+      ],
+      "correctAnswer": "15 May",
+      "points": 10,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "true-false",
+      "text": "Payment of an already recorded VAT liability creates another expense.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "open-ended",
+      "text": "In the simplified textbook model, annual turnover exceeds the exemption threshold. The fourth-quarter KU1 base already determined under textbook rules is €140,000 and the rate is 3 per mille. Calculate KU1 and give the year-end entry, later payment and profit effect of each.",
+      "options": [],
+      "correctAnswer": "€140,000 × 0.003 = €420. Year end: 7780 420 / 3540 420, profit −€420. Payment: 3540 420 / 2800 420, profit €0. The model does not replace checking current legal exclusions and graduated rates.",
+      "points": 20,
+      "topic": "steuern-ku1"
+    }
+  ]
+}

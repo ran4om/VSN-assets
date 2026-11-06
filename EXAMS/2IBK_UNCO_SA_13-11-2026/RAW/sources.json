@@ -1,0 +1,91 @@
+{
+  "vault": "/home/kiarad/.cache/vsn/school-vault",
+  "examNotes": [],
+  "linkedNotes": [],
+  "lessons": [
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 1 - 2026-09-08/Lesson 1 - UNCO - 2026-09-08.md",
+      "date": "2026-09-08",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 2 - 2026-09-10/Lesson 2 - UNCO - 2026-09-10.md",
+      "date": "2026-09-10",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 3 - 2026-09-14/Drawing 2026-09-14 10.57.15.excalidraw.md",
+      "date": "2026-09-14",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 3 - 2026-09-14/Lesson 3 - UNCO - 2026-09-14.md",
+      "date": "2026-09-14",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 4 - 2026-09-16/Lesson 4 - UNCO - 2026-09-16.md",
+      "date": "2026-09-16",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 4 - 2026-09-16/UNCO Homework - U1.3.pdf",
+      "date": "2026-09-16",
+      "lfsBytes": 135875
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 5 - 2026-09-18/AVZ.pdf",
+      "date": "2026-09-18",
+      "lfsBytes": 243109
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 5 - 2026-09-18/AVZ.xlsx",
+      "date": "2026-09-18",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 5 - 2026-09-18/Lesson 5 - UNCO - 2026-09-18.md",
+      "date": "2026-09-18",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 6 - 2026-09-24/Drawing 2026-09-24 12.06.06.excalidraw.md",
+      "date": "2026-09-24",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 6 - 2026-09-24/Lesson 6 - UNCO - 2026-09-24.md",
+      "date": "2026-09-24",
+      "lfsBytes": null
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 6 - 2026-09-24/UNCO Homework - Anlageverzeichnis Paragraph 13 EStG.pdf",
+      "date": "2026-09-24",
+      "lfsBytes": 893267
+    },
+    {
+      "file": "02 Subjects/UNCO/Lessons/Lesson 7 - 2026-09-29/Lesson 7 - UNCO - 2026-09-29.md",
+      "date": "2026-09-29",
+      "lfsBytes": null
+    }
+  ],
+  "books": [
+    {
+      "file": "02 Subjects/UNCO/Unternehmensrechnung-HAK-II-H-cropped.pdf",
+      "lfsBytes": 309676610
+    }
+  ],
+  "subjectIndex": [
+    "02 Subjects/UNCO/Inhaltsverzeichnis.md",
+    "02 Subjects/UNCO/UNCO.md"
+  ],
+  "pageRefs": [],
+  "existingVsnAssetsRaw": [],
+  "window": {
+    "since": "2026-09-01",
+    "until": "2026-11-13"
+  },
+  "missing": [
+    "no exam note for this date/subject in 04 Exams — ask the user for the Stoff (topics/pages)"
+  ]
+}

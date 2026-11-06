@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Procurement and sales",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "A credit purchase of goods is €10,000 net plus 20% VAT. What is the journal entry?",
+      "options": [
+        "5000 10,000 + 2500 2,000 / 33030 12,000",
+        "33030 12,000 / 5000 10,000 + 2500 2,000",
+        "5000 12,000 / 33030 12,000",
+        "5000 10,000 + 3500 2,000 / 33030 12,000"
+      ],
+      "correctAnswer": "5000 10,000 + 2500 2,000 / 33030 12,000",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A net list price of €2,000 is immediately reduced by 30%, then 20% VAT is added. What is the invoice total?",
+      "options": [
+        "€1,400",
+        "€1,800",
+        "€2,100",
+        "€1,680"
+      ],
+      "correctAnswer": "€1,680",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Goods cost €9,875 net. Freight, fuel surcharge and toll are €137.80, €10.40 and €4.89 net. Input VAT is deductible. What is the net landed cost?",
+      "options": [
+        "€10,012.80",
+        "€9,905.62",
+        "€10,028.09",
+        "€10,058.71"
+      ],
+      "correctAnswer": "€10,028.09",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A supplier credits €180 net plus €36 input VAT against an outstanding invoice. Which entry corrects the original goods purchase?",
+      "options": [
+        "33030 216 / 4000 180 + 3500 36",
+        "33030 216 / 5000 180 + 2500 36",
+        "5000 180 + 2500 36 / 33030 216",
+        "33030 180 / 5000 180"
+      ],
+      "correctAnswer": "33030 216 / 5000 180 + 2500 36",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "true-false",
+      "text": "Delivery costs directly attributable to a machine form part of its acquisition cost.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A truck qualifies for input VAT deduction and costs €75,000 gross at 20% VAT. What are its acquisition cost and input VAT?",
+      "options": [
+        "€60,000 and €15,000",
+        "€75,000 and €15,000",
+        "€72,500 and €2,500",
+        "€62,500 and €12,500"
+      ],
+      "correctAnswer": "€62,500 and €12,500",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A supplier adds €10 in reminder fees and €15 interest to a €540 debt. The textbook charges no VAT on these items. What is the total due?",
+      "options": [
+        "€555",
+        "€570",
+        "€565",
+        "€540"
+      ],
+      "correctAnswer": "€565",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A business buys a diesel car for €33,000 gross on credit. Input VAT is not deductible. Which entry applies?",
+      "options": [
+        "33160 33,000 / 0630 33,000",
+        "0630 33,000 / 33160 33,000",
+        "0630 27,500 + 2500 5,500 / 33160 33,000",
+        "7320 33,000 / 33160 33,000"
+      ],
+      "correctAnswer": "0630 33,000 / 33160 33,000",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "true-false",
+      "text": "An immediate discount is recorded only after posting the unreduced price.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "open-ended",
+      "text": "A goods invoice is €12,000 gross. The supplier credits €216 gross; a separate freight invoice is €753 net. What are the remaining goods liability and net landed cost if the original goods cost €10,000 net and the credit is €180 net?",
+      "options": [],
+      "correctAnswer": "Remaining goods liability: €12,000 − €216 = €11,784. Net landed cost: €10,000 − €180 + €753 = €10,573. Freight is a separate liability.",
+      "points": 20,
+      "topic": "beschaffung-absatz"
+    }
+  ]
+}

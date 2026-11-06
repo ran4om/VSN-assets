@@ -1,0 +1,465 @@
+{
+  "title": "UNCO SA 13.11.2026 – Master quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "A credit purchase of goods is €10,000 net plus 20% VAT. What is the journal entry?",
+      "options": [
+        "5000 10,000 + 2500 2,000 / 33030 12,000",
+        "33030 12,000 / 5000 10,000 + 2500 2,000",
+        "5000 12,000 / 33030 12,000",
+        "5000 10,000 + 3500 2,000 / 33030 12,000"
+      ],
+      "correctAnswer": "5000 10,000 + 2500 2,000 / 33030 12,000",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A net list price of €2,000 is immediately reduced by 30%, then 20% VAT is added. What is the invoice total?",
+      "options": [
+        "€1,400",
+        "€1,800",
+        "€2,100",
+        "€1,680"
+      ],
+      "correctAnswer": "€1,680",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Goods cost €9,875 net. Freight, fuel surcharge and toll are €137.80, €10.40 and €4.89 net. Input VAT is deductible. What is the net landed cost?",
+      "options": [
+        "€10,012.80",
+        "€9,905.62",
+        "€10,028.09",
+        "€10,058.71"
+      ],
+      "correctAnswer": "€10,028.09",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A supplier credits €180 net plus €36 input VAT against an outstanding invoice. Which entry corrects the original goods purchase?",
+      "options": [
+        "33030 216 / 4000 180 + 3500 36",
+        "33030 216 / 5000 180 + 2500 36",
+        "5000 180 + 2500 36 / 33030 216",
+        "33030 180 / 5000 180"
+      ],
+      "correctAnswer": "33030 216 / 5000 180 + 2500 36",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "true-false",
+      "text": "Delivery costs directly attributable to a machine form part of its acquisition cost.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A truck qualifies for input VAT deduction and costs €75,000 gross at 20% VAT. What are its acquisition cost and input VAT?",
+      "options": [
+        "€60,000 and €15,000",
+        "€75,000 and €15,000",
+        "€72,500 and €2,500",
+        "€62,500 and €12,500"
+      ],
+      "correctAnswer": "€62,500 and €12,500",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A supplier adds €10 in reminder fees and €15 interest to a €540 debt. The textbook charges no VAT on these items. What is the total due?",
+      "options": [
+        "€555",
+        "€570",
+        "€565",
+        "€540"
+      ],
+      "correctAnswer": "€565",
+      "points": 15,
+      "topic": "beschaffung-absatz"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An iPad commissioned on 2 October 2026 costs €1,200 net with full input VAT deduction. Its useful life is ten years. What is 2026 depreciation under the tax half-year convention?",
+      "options": [
+        "€100",
+        "€60",
+        "€120",
+        "€30"
+      ],
+      "correctAnswer": "€60",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the iPad carrying amount on 31 December 2026 with €1,200 cost and €60 depreciation?",
+      "options": [
+        "€1,140",
+        "€1,200",
+        "€1,080",
+        "€1,380"
+      ],
+      "correctAnswer": "€1,140",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A dishwasher costing €1,160 has annual depreciation of €145 and was commissioned on 18 May 2023. The asset-register exercise specifies eight months. What is 2023 depreciation?",
+      "options": [
+        "€145.00",
+        "€72.50",
+        "€84.58",
+        "€96.67"
+      ],
+      "correctAnswer": "€96.67",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "The same dishwasher was commissioned on 18 May and has annual depreciation of €145. What depreciation applies instead under the tax half-year convention?",
+      "options": [
+        "€72.50",
+        "€0",
+        "€145",
+        "€96.67"
+      ],
+      "correctAnswer": "€145",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "true-false",
+      "text": "Depreciation reduces profit but does not cause another payment.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A sole proprietor receives €12.32 credit interest in bank account 2804. What is the entry?",
+      "options": [
+        "2804 12.32 / 8050 12.32",
+        "8050 12.32 / 2804 12.32",
+        "2804 12.32 / 8310 12.32",
+        "9600 12.32 / 2804 12.32"
+      ],
+      "correctAnswer": "2804 12.32 / 8050 12.32",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A sole proprietor has €3.08 private capital income tax deducted from the bank account. What is the effect of this entry?",
+      "options": [
+        "Profit −€3.08, cash −€3.08",
+        "Profit +€3.08, cash €0",
+        "Profit €0, cash +€3.08",
+        "Profit €0, cash −€3.08"
+      ],
+      "correctAnswer": "Profit €0, cash −€3.08",
+      "points": 10,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bank charges consist of €64.62 and €173.50. What is the total expense?",
+      "options": [
+        "€108.88",
+        "€248.12",
+        "€238.12",
+        "€237.12"
+      ],
+      "correctAnswer": "€238.12",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "true-false",
+      "text": "A sole proprietor posts gross credit interest and private capital income tax separately.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "For a €1,500 bank withdrawal, the cash voucher is posted first. Which entry applies?",
+      "options": [
+        "2700 1,500 / 2870 1,500",
+        "2870 1,500 / 2700 1,500",
+        "2800 1,500 / 2870 1,500",
+        "2870 1,500 / 2800 1,500"
+      ],
+      "correctAnswer": "2700 1,500 / 2870 1,500",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which bank-statement entry completes the same €1,500 withdrawal?",
+      "options": [
+        "2800 1,500 / 2870 1,500",
+        "2700 1,500 / 2870 1,500",
+        "2870 1,500 / 2700 1,500",
+        "2870 1,500 / 2800 1,500"
+      ],
+      "correctAnswer": "2870 1,500 / 2800 1,500",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A €2,300 cash deposit is first recorded from the cash voucher. Which entry is correct?",
+      "options": [
+        "2800 2,300 / 2870 2,300",
+        "2870 2,300 / 2800 2,300",
+        "2870 2,300 / 2700 2,300",
+        "2700 2,300 / 2870 2,300"
+      ],
+      "correctAnswer": "2870 2,300 / 2700 2,300",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "true-false",
+      "text": "After both corresponding transfer entries, clearing account 2870 has a zero balance.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A debit-card sale is €1,985 net plus €397 VAT. Which entry records the claim?",
+      "options": [
+        "2885 2,382 / 4000 1,985 + 3500 397",
+        "2800 2,382 / 4000 1,985 + 3500 397",
+        "2880 2,382 / 4000 1,985 + 3500 397",
+        "4000 1,985 + 3500 397 / 2885 2,382"
+      ],
+      "correctAnswer": "2885 2,382 / 4000 1,985 + 3500 397",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An already recorded credit-card claim is €8,320. The processor withholds 2.5% commission and a €3.90 fixed fee plus 20% deductible VAT. How much reaches the bank?",
+      "options": [
+        "€8,108.10",
+        "€8,066.10",
+        "€8,111.90",
+        "€8,065.72"
+      ],
+      "correctAnswer": "€8,065.72",
+      "points": 20,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the profit effect of settling an already recorded €8,320 claim when the net fee is €211.90 and deductible input VAT on it is €42.38?",
+      "options": [
+        "+€8,065.72",
+        "€0",
+        "−€211.90",
+        "−€254.28"
+      ],
+      "correctAnswer": "−€211.90",
+      "points": 15,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "true-false",
+      "text": "A card processor claim is already bank cash as soon as the sale is recorded.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "open-ended",
+      "text": "An already recorded credit-card claim is €8,320. Commission is 2.5% and the fixed fee is €3.90 net. Both attract 20% deductible VAT. Calculate the fee, input VAT and bank receipt, and give the entry.",
+      "options": [],
+      "correctAnswer": "Commission €208, net fee €211.90, input VAT €42.38, bank receipt €8,065.72. Entry: 2800 8,065.72 + 7792 211.90 + 2500 42.38 / 2880 8,320.",
+      "points": 20,
+      "topic": "kartenabrechnung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Under the simplified textbook model, a business is not exempt from KU1. Its defined quarterly assessment base is €21,400 and the rate is 3 per mille. What is the levy?",
+      "options": [
+        "€642.00",
+        "€71.33",
+        "€6.42",
+        "€64.20"
+      ],
+      "correctAnswer": "€64.20",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "At year end, €420 of fourth-quarter KU1 is recorded as a liability. What is the entry?",
+      "options": [
+        "7780 420 / 2800 420",
+        "9600 420 / 3540 420",
+        "7780 420 / 3540 420",
+        "3540 420 / 7780 420"
+      ],
+      "correctAnswer": "7780 420 / 3540 420",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which entry applies when the €420 KU1 liability already recognised as an expense is later paid by bank?",
+      "options": [
+        "9600 420 / 2800 420",
+        "3540 420 / 2800 420",
+        "7780 420 / 2800 420",
+        "2800 420 / 3540 420"
+      ],
+      "correctAnswer": "3540 420 / 2800 420",
+      "points": 15,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "true-false",
+      "text": "The KU1 textbook model uses an annual turnover exemption threshold of €150,000; current exclusions and graduated rates must be checked for real filings.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "open-ended",
+      "text": "In the simplified textbook model, annual turnover exceeds the exemption threshold. The fourth-quarter KU1 base already determined under textbook rules is €140,000 and the rate is 3 per mille. Calculate KU1 and give the year-end entry, later payment and profit effect of each.",
+      "options": [],
+      "correctAnswer": "€140,000 × 0.003 = €420. Year end: 7780 420 / 3540 420, profit −€420. Payment: 3540 420 / 2800 420, profit €0. The model does not replace checking current legal exclusions and graduated rates.",
+      "points": 20,
+      "topic": "steuern-ku1"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A goods invoice of €8,400 gross includes 20% VAT. Timely payment qualifies for a 3% discount on the full gross amount. What is the bank payment?",
+      "options": [
+        "€8,232",
+        "€8,400",
+        "€8,148",
+        "€8,190"
+      ],
+      "correctAnswer": "€8,148",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "The gross cash discount is €252 at 20% VAT. What are the net discount and input VAT correction?",
+      "options": [
+        "€240 and €12",
+        "€210 and €42",
+        "€201.60 and €50.40",
+        "€252 and €50.40"
+      ],
+      "correctAnswer": "€210 and €42",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A customer pays a €4,680 gross goods invoice with a 2% cash discount. What is the bank receipt?",
+      "options": [
+        "€4,586.40",
+        "€4,602.00",
+        "€4,588.20",
+        "€4,773.60"
+      ],
+      "correctAnswer": "€4,586.40",
+      "points": 15,
+      "topic": "skonto"
+    },
+    {
+      "type": "true-false",
+      "text": "For an invoice with 20% VAT, the VAT correction is one sixth of the gross cash discount.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "skonto"
+    },
+    {
+      "type": "open-ended",
+      "text": "A goods invoice is €7,000 net plus 20% VAT. Timely payment qualifies for 3% cash discount on the gross amount. Calculate the gross and net discounts, input VAT correction and payment. Give both entries for supplier 33008.",
+      "options": [],
+      "correctAnswer": "Gross €8,400; discount €252 = €210 net + €42 input VAT; payment €8,148. Entries: 33008 8,148 / 2800 8,148 and 33008 252 / 5880 210 + 2500 42.",
+      "points": 20,
+      "topic": "skonto"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Goods are bought on credit for €10,000 net plus €2,000 deductible input VAT. The textbook records merchandise expense immediately. What is the invoice effect?",
+      "options": [
+        "Profit −€10,000, cash −€12,000",
+        "Profit −€10,000, cash €0",
+        "Profit −€12,000, cash €0",
+        "Profit €0, cash −€12,000"
+      ],
+      "correctAnswer": "Profit −€10,000, cash €0",
+      "points": 15,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An already recorded supplier liability of €12,000 is paid by bank without a discount. What is the payment effect?",
+      "options": [
+        "Profit €0, cash −€12,000",
+        "Profit −€12,000, cash −€12,000",
+        "Profit +€12,000, cash €0",
+        "Profit €0, cash +€12,000"
+      ],
+      "correctAnswer": "Profit €0, cash −€12,000",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A sole proprietor pays €180 private property tax by bank. How do profit, cash and equity change?",
+      "options": [
+        "Profit −€180, cash −€180, equity −€180",
+        "Profit €0, cash €0, equity €0",
+        "Profit +€180, cash −€180, equity +€180",
+        "Profit €0, cash −€180, equity −€180"
+      ],
+      "correctAnswer": "Profit €0, cash −€180, equity −€180",
+      "points": 10,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "true-false",
+      "text": "Under this cash definition, an increased bank overdraft counts as negative bank cash.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "erfolg-liquiditaet"
+    },
+    {
+      "type": "open-ended",
+      "text": "A sole proprietor pays €8,130 private income tax, €64.20 KU1 and a previously recorded €3,142 VAT liability by bank. Calculate the effects on profit, cash and equity.",
+      "options": [],
+      "correctAnswer": "Profit −€64.20; cash −€11,336.20; equity −€8,194.20 from €8,130 drawings and €64.20 expense. Payment of the VAT liability has no new profit effect.",
+      "points": 20,
+      "topic": "erfolg-liquiditaet"
+    }
+  ]
+}

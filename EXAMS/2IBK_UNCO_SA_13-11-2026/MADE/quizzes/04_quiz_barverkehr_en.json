@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Cash transfers with banks",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "For a €1,500 bank withdrawal, the cash voucher is posted first. Which entry applies?",
+      "options": [
+        "2700 1,500 / 2870 1,500",
+        "2870 1,500 / 2700 1,500",
+        "2800 1,500 / 2870 1,500",
+        "2870 1,500 / 2800 1,500"
+      ],
+      "correctAnswer": "2700 1,500 / 2870 1,500",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which bank-statement entry completes the same €1,500 withdrawal?",
+      "options": [
+        "2800 1,500 / 2870 1,500",
+        "2700 1,500 / 2870 1,500",
+        "2870 1,500 / 2700 1,500",
+        "2870 1,500 / 2800 1,500"
+      ],
+      "correctAnswer": "2870 1,500 / 2800 1,500",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A €2,300 cash deposit is first recorded from the cash voucher. Which entry is correct?",
+      "options": [
+        "2800 2,300 / 2870 2,300",
+        "2870 2,300 / 2800 2,300",
+        "2870 2,300 / 2700 2,300",
+        "2700 2,300 / 2870 2,300"
+      ],
+      "correctAnswer": "2870 2,300 / 2700 2,300",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the effect of a fully posted transfer from cash to bank on profit and cash plus bank combined?",
+      "options": [
+        "Profit +€2,300, cash effect −€2,300",
+        "Profit €0, cash effect €0",
+        "Profit −€2,300, cash effect €0",
+        "Profit €0, cash effect +€2,300"
+      ],
+      "correctAnswer": "Profit €0, cash effect €0",
+      "points": 10,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "true-false",
+      "text": "After both corresponding transfer entries, clearing account 2870 has a zero balance.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which bank-statement entry completes a €2,300 deposit?",
+      "options": [
+        "2870 2,300 / 2800 2,300",
+        "2700 2,300 / 2870 2,300",
+        "2870 2,300 / 2700 2,300",
+        "2800 2,300 / 2870 2,300"
+      ],
+      "correctAnswer": "2800 2,300 / 2870 2,300",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What temporary effect on cash plus bank does the cash voucher alone have for a €2,300 deposit?",
+      "options": [
+        "€0",
+        "−€4,600",
+        "−€2,300",
+        "+€2,300"
+      ],
+      "correctAnswer": "−€2,300",
+      "points": 10,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bank charges consist of €36.22 and €4.36. What total is posted to account 7790?",
+      "options": [
+        "€36.22",
+        "€40.58",
+        "€31.86",
+        "€40.68"
+      ],
+      "correctAnswer": "€40.58",
+      "points": 15,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "true-false",
+      "text": "The same withdrawal should be posted both directly as 2700 / 2800 and through both 2870 entries.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "barverkehr"
+    },
+    {
+      "type": "open-ended",
+      "text": "A €2,300 deposit is recorded first from the cash voucher and the next day from the bank statement. Give both entries and the total cash effect.",
+      "options": [],
+      "correctAnswer": "Cash voucher: 2870 2,300 / 2700 2,300. Bank statement: 2800 2,300 / 2870 2,300. Total cash effect €0 and profit effect €0.",
+      "points": 20,
+      "topic": "barverkehr"
+    }
+  ]
+}

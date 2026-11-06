@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accounting — VSN UNCO 2IBK SA 13.11.2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* =====================================================
+       DESIGN TOKENS
+    ===================================================== */
+    :root {
+      --vsn-primary:   #1e2e48;
+      --vsn-secondary: #fbc92d;
+      --vsn-accent:    #dc4ebf;
+      --vsn-blue:      #2980b9;
+      --vsn-light-bg:  #f7f8fb;
+      --vsn-border:    #dde2ea;
+      --vsn-text:      #1a2236;
+      --vsn-muted:     #6b7a99;
+
+      --callout-def-bg:  rgba(220, 78, 191, 0.12);
+      --callout-def-border: #dc4ebf;
+      --callout-info-bg: rgba(41, 128, 185, 0.10);
+      --callout-info-border: #2980b9;
+      --callout-tip-bg:  rgba(251, 201, 45, 0.15);
+      --callout-tip-border: #d4a800;
+
+      --radius: 8px;
+      --shadow: 0 2px 8px rgba(30,46,72,0.08);
+      --shadow-md: 0 4px 16px rgba(30,46,72,0.12);
+    }
+
+    /* =====================================================
+       RESET & BASE
+    ===================================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 11pt; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: var(--vsn-text);
+      background: #fff;
+      line-height: 1.65;
+    }
+
+    code, .mono, kbd, samp, .formula {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(30,46,72,0.06);
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+
+    strong { font-weight: 700; }
+    em { font-style: italic; color: var(--vsn-primary); }
+
+    /* =====================================================
+       PAGE & PRINT SETUP
+    ===================================================== */
+    /* All pages: standard A4 margins */
+    @page {
+      size: A4;
+      margin: 15mm 18mm 18mm 18mm;
+    }
+
+    /* Cover page (first): no margins so the dark bg fills edge-to-edge */
+    @page :first {
+      margin: 0;
+    }
+
+    @media print {
+      html { font-size: 10pt; }
+      body { background: #fff; }
+
+      .page-break {
+        page-break-after: always;
+        break-after: always;
+      }
+      .no-break {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      .no-break-before {
+        page-break-before: avoid;
+        break-before: avoid;
+      }
+
+      /* Preserve background colors, shadows, etc. */
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      /* Cover fills exactly one A4 page */
+      .cover {
+        height: 297mm;
+        width: 210mm;
+      }
+
+      /* TOC and section pages: compensate for the zero-margin first page
+         by adding top padding so content starts below the normal margin line */
+      .toc-page,
+      .section {
+        padding-top: 8mm;
+      }
+
+      .callout-box, .table-wrap, .bilingual-grid { orphans: 3; widows: 3; }
+    }
+
+    /* =====================================================
+       COVER PAGE
+    ===================================================== */
+    .cover {
+      width: 100%;
+      /* Screen: fills the viewport */
+      min-height: 100vh;
+      background: var(--vsn-primary);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover-bg-pattern {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      opacity: 0.04;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          #fff 0,
+          #fff 1px,
+          transparent 0,
+          transparent 50%
+        );
+      background-size: 30px 30px;
+      z-index: 0;
+    }
+
+    .cover-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 40px 50px;
+    }
+
+    .cover-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    .cover-logo {
+      height: 64px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .cover-badge {
+      background: var(--vsn-secondary);
+      color: var(--vsn-primary);
+      font-weight: 700;
+      font-size: 0.75em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    .cover-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cover-label {
+      font-size: 0.7em;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--vsn-secondary);
+      margin-bottom: 16px;
+    }
+
+    .cover-title {
+      font-family: 'Playfair Display', 'Open Sans', serif;
+      font-size: 3.4em;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+
+    .cover-title-de {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.6em;
+      font-weight: 300;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 40px;
+      letter-spacing: 0.01em;
+    }
+
+    .cover-divider {
+      width: 80px;
+      height: 4px;
+      background: var(--vsn-secondary);
+      border-radius: 2px;
+      margin-bottom: 32px;
+    }
+
+    .cover-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .cover-meta-item {
+      font-size: 0.82em;
+      color: rgba(255,255,255,0.65);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cover-meta-item::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+      flex-shrink: 0;
+    }
+
+    .cover-footer {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cover-footer-text {
+      font-size: 0.72em;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.05em;
+    }
+
+    .cover-accent-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--vsn-secondary) 0%, var(--vsn-accent) 100%);
+    }
+
+    /* =====================================================
+       TABLE OF CONTENTS
+    ===================================================== */
+    .toc-page {
+      padding: 48px 0 0;
+    }
+
+    .toc-header {
+      margin-bottom: 36px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid var(--vsn-secondary);
+    }
+
+    .toc-header h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.68em;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 6px;
+    }
+
+    .toc-header h1 {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .toc-item {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid var(--vsn-border);
+      padding: 12px 0;
+    }
+
+    .toc-num {
+      font-weight: 700;
+      font-size: 1.3em;
+      color: var(--vsn-secondary);
+      width: 36px;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+
+    .toc-content {
+      flex: 1;
+    }
+
+    .toc-title-en {
+      font-weight: 700;
+      color: var(--vsn-primary);
+      font-size: 1em;
+    }
+
+    .toc-title-de {
+      font-size: 0.85em;
+      color: var(--vsn-muted);
+      font-weight: 400;
+    }
+
+    /* =====================================================
+       SECTION STRUCTURE
+    ===================================================== */
+    .section {
+      padding: 36px 0 24px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid var(--vsn-secondary);
+    }
+
+    .section-num {
+      background: var(--vsn-primary);
+      color: var(--vsn-secondary);
+      font-weight: 700;
+      font-size: 1.1em;
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .section-title-block {}
+
+    .section-title-en {
+      font-size: 1.4em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+      line-height: 1.2;
+    }
+
+    .section-title-de {
+      font-size: 0.85em;
+      color: var(--vsn-accent);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* =====================================================
+       BILINGUAL GRID
+    ===================================================== */
+    .bilingual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .col-en {
+      padding-right: 22px;
+      border-right: 3px solid var(--vsn-secondary);
+    }
+
+    .col-de {
+      padding-left: 22px;
+    }
+
+    .col-label {
+      font-size: 0.65em;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .col-label-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+      display: inline-block;
+    }
+
+    /* =====================================================
+       CONTENT ELEMENTS
+    ===================================================== */
+    .content-text {
+      font-size: 0.92em;
+      line-height: 1.7;
+      color: var(--vsn-text);
+      margin-bottom: 12px;
+    }
+
+    h3.subsection-title {
+      font-size: 1em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+      margin: 18px 0 10px;
+      padding-left: 10px;
+      border-left: 3px solid var(--vsn-accent);
+    }
+
+    h4.subtype-title {
+      font-size: 0.92em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+      margin: 14px 0 6px;
+    }
+
+    ul.content-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 12px;
+    }
+
+    ul.content-list > li {
+      padding: 4px 0 4px 20px;
+      position: relative;
+      font-size: 0.9em;
+      line-height: 1.6;
+    }
+
+    ul.content-list > li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+    }
+
+    ol.content-list-num {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    ol.content-list-num > li {
+      font-size: 0.9em;
+      line-height: 1.6;
+      padding: 3px 0;
+      color: var(--vsn-text);
+    }
+
+    .example-block {
+      background: var(--vsn-light-bg);
+      border-left: 3px solid var(--vsn-primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 8px 12px;
+      margin: 8px 0;
+      font-size: 0.88em;
+    }
+
+    .example-block .example-label {
+      font-size: 0.75em;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 4px;
+    }
+
+    .example-block p {
+      margin: 3px 0;
+    }
+
+    .highlight-conj {
+      font-weight: 700;
+      background: rgba(251,201,45,0.35);
+      padding: 0 3px;
+      border-radius: 2px;
+    }
+
+    .wrong { color: #c0392b; }
+    .correct { color: #27ae60; }
+    .wrong::before { content: "✗ "; font-weight: 700; }
+    .correct::before { content: "✓ "; font-weight: 700; }
+
+    /* =====================================================
+       CALLOUT BOXES
+    ===================================================== */
+    .callout-box {
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      margin: 14px 0;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .callout-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      margin-top: 1px;
+    }
+
+    .callout-content {
+      flex: 1;
+    }
+
+    .callout-label {
+      font-size: 0.68em;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .callout-text {
+      font-size: 0.88em;
+      line-height: 1.6;
+    }
+
+    /* Definition — Magenta */
+    .callout-def {
+      background: var(--callout-def-bg);
+      border-left: 4px solid var(--callout-def-border);
+    }
+    .callout-def .callout-label { color: #c0359e; }
+    .callout-def .callout-text { color: var(--vsn-text); }
+
+    /* Supplemental Info — Blue */
+    .callout-info {
+      background: var(--callout-info-bg);
+      border-left: 4px solid var(--callout-info-border);
+    }
+    .callout-info .callout-label { color: #1a6a9a; }
+    .callout-info .callout-text { color: var(--vsn-text); }
+
+    /* Practical Tip — Yellow */
+    .callout-tip {
+      background: var(--callout-tip-bg);
+      border-left: 4px solid var(--callout-tip-border);
+    }
+    .callout-tip .callout-label { color: #8a6b00; }
+    .callout-tip .callout-text { color: var(--vsn-text); }
+
+    /* =====================================================
+       SVG ICON DEFINITIONS (inline)
+    ===================================================== */
+
+    /* =====================================================
+       TABLES
+    ===================================================== */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    table.vsn-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85em;
+    }
+
+    table.vsn-table th {
+      background: var(--vsn-primary);
+      color: #fff;
+      font-weight: 700;
+      padding: 9px 11px;
+      text-align: left;
+      letter-spacing: 0.03em;
+      font-size: 0.88em;
+    }
+
+    table.vsn-table th:first-child { border-radius: var(--radius) 0 0 0; }
+    table.vsn-table th:last-child  { border-radius: 0 var(--radius) 0 0; }
+
+    table.vsn-table td {
+      padding: 8px 11px;
+      border-bottom: 1px solid var(--vsn-border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    table.vsn-table tr:nth-child(even) td {
+      background: #f3f5f9;
+    }
+
+    table.vsn-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    table.vsn-table td.type-cell {
+      font-weight: 700;
+      color: var(--vsn-primary);
+      white-space: nowrap;
+    }
+
+    table.vsn-table td.conj-cell {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.82em;
+      color: #555;
+    }
+
+    table.vsn-table td.q-cell {
+      font-style: italic;
+      color: var(--vsn-muted);
+      font-size: 0.88em;
+    }
+
+    table.vsn-table td.ex-cell {
+      font-size: 0.85em;
+    }
+
+    table.vsn-table td.ex-cell em {
+      font-style: italic;
+      color: var(--vsn-primary);
+    }
+
+    /* Declension table specifics */
+    table.vsn-table td.case-cell {
+      font-weight: 700;
+      color: var(--vsn-primary);
+    }
+
+    table.vsn-table td.rel-cell {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+
+    table.vsn-table td.highlight-cell {
+      background: rgba(251,201,45,0.2) !important;
+      font-weight: 700;
+    }
+
+    /* =====================================================
+       SVG DIAGRAM
+    ===================================================== */
+    .diagram-wrap {
+      margin: 18px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .diagram-caption {
+      text-align: center;
+      font-size: 0.75em;
+      color: var(--vsn-muted);
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    /* =====================================================
+       SECTION SPECIFIC STYLES
+    ===================================================== */
+    .conj-pill {
+      display: inline-block;
+      background: rgba(30,46,72,0.08);
+      border: 1px solid var(--vsn-border);
+      border-radius: 12px;
+      padding: 2px 8px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.80em;
+      margin: 2px 2px;
+      color: var(--vsn-primary);
+    }
+
+    .conj-pills {
+      margin: 6px 0;
+    }
+
+    .degree-example {
+      background: var(--vsn-light-bg);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      margin: 8px 0;
+      font-size: 0.88em;
+    }
+
+    .degree-example .ns-label {
+      display: inline-block;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.78em;
+      font-weight: 700;
+      background: var(--vsn-primary);
+      color: var(--vsn-secondary);
+      padding: 1px 6px;
+      border-radius: 3px;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+
+    .two-column-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 12px 0;
+    }
+
+    .grid-card {
+      background: var(--vsn-light-bg);
+      border: 1px solid var(--vsn-border);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+    }
+
+    .grid-card-title {
+      font-weight: 700;
+      font-size: 0.9em;
+      color: var(--vsn-primary);
+      margin-bottom: 6px;
+    }
+
+    /* =====================================================
+       PAGE NUMBERS / FOOTER
+    ===================================================== */
+    @media print {
+      @page {
+        @bottom-right {
+          content: counter(page);
+          font-family: 'Open Sans', sans-serif;
+          font-size: 9pt;
+          color: #999;
+        }
+        @bottom-left {
+          content: "VSN — UNCO: Beschaffung, Absatz und Anlagen";
+          font-family: 'Open Sans', sans-serif;
+          font-size: 9pt;
+          color: #999;
+        }
+      }
+    }
+
+    /* =====================================================
+       UTILITY
+    ===================================================== */
+    .mt-4 { margin-top: 4px; }
+    .mt-8 { margin-top: 8px; }
+    .mt-12 { margin-top: 12px; }
+    .mt-16 { margin-top: 16px; }
+    .mb-8 { margin-bottom: 8px; }
+    .mb-12 { margin-bottom: 12px; }
+    .text-muted { color: var(--vsn-muted); font-size: 0.88em; }
+    .text-accent { color: var(--vsn-accent); }
+    .text-bold { font-weight: 700; }
+    .full-width-table { grid-column: 1 / -1; }
+    /* figures (imagegen illustrations) */
+    figure { margin: 18px 0; text-align: center; page-break-inside: avoid; }
+    figure img { max-width: 100%; max-height: 120mm; border-radius: var(--radius, 8px); box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    figcaption { font-size: 0.8em; color: #5a6475; margin-top: 6px; font-style: italic; }
+  </style>
+</head>
+<body><div class="cover page-break"><div class="cover-bg-pattern"></div><div class="cover-content"><div class="cover-header"><img class="cover-logo" src="assets/VSN_new.png" alt="VSN"><span class="cover-badge">2IBK · SA · 13.11.2026</span></div><div class="cover-main"><div class="cover-label">UNCO · ACCOUNTING</div><div class="cover-title">Beschaffung,<br>Absatz und Anlagen</div><div class="cover-title-de">Purchases, sales and fixed assets</div><div class="cover-divider"></div><div class="cover-meta"><div class="cover-meta-item">8 Kapitel · 8 chapters</div><div class="cover-meta-item">Buchungen · AVZ · Bank · Skonto</div><div class="cover-meta-item">Deutsch / English</div></div></div><div class="cover-footer"><span class="cover-footer-text">VSN Lernunterlage © 2026</span><span class="cover-footer-text">2IBK · UNCO</span></div></div><div class="cover-accent-bar"></div></div><div class="toc-page page-break"><div class="toc-header"><h2>Inhaltsverzeichnis · Table of contents</h2><h1>Übersicht der Kapitel</h1></div><ul class="toc-list"><li class="toc-item no-break"><span class="toc-num">1</span><div class="toc-content"><div class="toc-title-en">Documents, purchases and sales</div><div class="toc-title-de">Belegverbuchung: Einkauf und Verkauf</div></div></li><li class="toc-item no-break"><span class="toc-num">2</span><div class="toc-content"><div class="toc-title-en">Fixed assets and depreciation</div><div class="toc-title-de">Anlagenverzeichnis und Abschreibung</div></div></li><li class="toc-item no-break"><span class="toc-num">3</span><div class="toc-content"><div class="toc-title-en">Bank closing items</div><div class="toc-title-de">Abschlussposten am Bankkonto</div></div></li><li class="toc-item no-break"><span class="toc-num">4</span><div class="toc-content"><div class="toc-title-en">Cash transfers with banks</div><div class="toc-title-de">Barverkehr mit Banken</div></div></li><li class="toc-item no-break"><span class="toc-num">5</span><div class="toc-content"><div class="toc-title-en">Card sales and settlements</div><div class="toc-title-de">Debit- und Kreditkartenabrechnung</div></div></li><li class="toc-item no-break"><span class="toc-num">6</span><div class="toc-content"><div class="toc-title-en">Taxes and chamber levy</div><div class="toc-title-de">Steuern und Kammerumlage KU1</div></div></li><li class="toc-item no-break"><span class="toc-num">7</span><div class="toc-content"><div class="toc-title-en">Cash discount</div><div class="toc-title-de">Zahlung mit Skontoabzug</div></div></li><li class="toc-item no-break"><span class="toc-num">8</span><div class="toc-content"><div class="toc-title-en">Profit and liquidity</div><div class="toc-title-de">Erfolg und Liquidität</div></div></li></ul></div><div class="section page-break" style="padding-top:4mm;padding-bottom:0" id="s1"><div class="section-header no-break" style="margin-bottom:5px;padding-bottom:5px"><div class="section-num">1</div><div class="section-title-block"><div class="section-title-en">Documents, purchases and sales</div><div class="section-title-de">Belegverbuchung: Einkauf und Verkauf</div></div></div><figure style="margin:2px 0"><img src="assets/trading.jpg" alt="Documents, purchases and sales" style="max-height:40mm;box-shadow:none"></figure><div class="diagram-wrap" style="margin:2px 0"><svg viewBox="0 0 680 75" style="width:100%;max-width:680px;height:auto" role="img" aria-label="Purchase / Einkauf → Invoice / Rechnung → Liability / Schuld → Bank payment"><rect x="2" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="74" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Purchase / Einkauf</text><path d="M150 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="172" y="12" width="145" height="42" rx="8" fill="#2980b9"/><text x="244" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Invoice / Rechnung</text><path d="M320 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="342" y="12" width="145" height="42" rx="8" fill="#dc4ebf"/><text x="414" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Liability / Schuld</text><path d="M490 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="512" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="584" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Bank payment</text></svg></div><div class="bilingual-grid"><div class="col-en"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Key idea</div><div class="callout-text">A journal entry balances debit and credit. An incoming invoice creates a supplier liability; an outgoing invoice creates a customer claim. Input VAT 2500 belongs to qualifying purchases; output VAT 3500 belongs to sales.</div></div></div><p style="font-size:.9em;line-height:1.4">Capitalisation records a fixed asset and directly attributable transport and installation.</p><p style="font-size:.9em;line-height:1.4">A low-value asset (GWG) up to € 1.000 may be written off immediately.</p><p style="font-size:.9em;line-height:1.4">Ordinary cars normally have no input VAT deduction; qualifying trucks and zero-emission cars can differ.</p><p style="font-size:.9em;line-height:1.4">Incoming freight raises net landed cost; outward freight is an expense.</p><p style="font-size:.9em;line-height:1.4">Reminder fees and default interest are posted separately.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Exam tip</div><div class="callout-text">Returns reverse the original entry. Immediate discounts reduce the invoice before posting; later discounts need a separate credit note.</div></div></div></div><div class="col-de"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Grundidee</div><div class="callout-text">Ein Buchungssatz hat gleich hohe Soll- und Habenbeträge. Eine Eingangsrechnung erzeugt eine Lieferverbindlichkeit, eine Ausgangsrechnung eine Kundenforderung. Vorsteuer 2500 steht beim berechtigten Einkauf, Umsatzsteuer 3500 beim Verkauf.</div></div></div><p style="font-size:.9em;line-height:1.4">Anlagegüter samt direkt zurechenbarem Transport und Montage aktivieren.</p><p style="font-size:.9em;line-height:1.4">Ein GWG bis € 1.000 kann sofort abgeschrieben werden.</p><p style="font-size:.9em;line-height:1.4">Beim Pkw besteht grundsätzlich kein Vorsteuerabzug; beim berechtigten Lkw und E-Auto gelten andere Regeln.</p><p style="font-size:.9em;line-height:1.4">Bezugskosten erhöhen den Einstandspreis; Versandkosten sind Aufwand.</p><p style="font-size:.9em;line-height:1.4">Buchungen und Ausnahmen stehen im Lerntext.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Rücksendungen kehren die ursprüngliche Buchung um. Sofortrabatte stehen schon auf der Rechnung, spätere Rabatte brauchen eine eigene Gutschrift.</div></div></div></div></div><div class="table-wrap no-break" style="margin:5px 0"><table class="vsn-table"><thead><tr><th style="padding:4px 8px">Event · Geschäftsfall</th><th style="padding:4px 8px">Entry · Buchung</th></tr></thead><tbody><tr><td style="padding:3px 8px">Goods bought on credit</td><td style="padding:3px 8px"><code>5000 + 2500 / 33…</code></td></tr><tr><td style="padding:3px 8px">Goods sold on credit</td><td style="padding:3px 8px"><code>20… / 4000 + 3500</code></td></tr><tr><td style="padding:3px 8px">Supplier return</td><td style="padding:3px 8px"><code>33… / 5000 + 2500</code></td></tr><tr><td style="padding:3px 8px">Customer return</td><td style="padding:3px 8px"><code>4000 + 3500 / 20…</code></td></tr><tr><td style="padding:3px 8px">Reminder / Mahnung</td><td style="padding:3px 8px"><code>8321 + 8320 / 33…; 20… / 4890 + 8055</code></td></tr></tbody></table></div><div style="break-before:page;padding-top:4mm"><div class="section-header" style="margin-bottom:5px;padding-bottom:5px"><div class="section-num">1</div><div class="section-title-block"><div class="section-title-en">Assets, freight and corrections</div><div class="section-title-de">Anlagen, Fracht und Korrekturen</div></div></div><figure style="margin:2px 0"><img src="assets/assets.jpg" alt="Office assets and a calculator" style="max-height:40mm;box-shadow:none"></figure><div class="diagram-wrap" style="margin:2px 0"><svg viewBox="0 0 680 75" style="width:100%;max-width:680px;height:auto" role="img" aria-label="Purchase price → + Freight → + Installation → Asset cost"><rect x="2" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="74" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Purchase price</text><path d="M150 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="172" y="12" width="145" height="42" rx="8" fill="#2980b9"/><text x="244" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">+ Freight</text><path d="M320 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="342" y="12" width="145" height="42" rx="8" fill="#dc4ebf"/><text x="414" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">+ Installation</text><path d="M490 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="512" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="584" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Asset cost</text></svg></div><div class="bilingual-grid"><div class="col-en"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Key idea</div><div class="callout-text">Capitalise directly attributable acquisition costs on the asset account. Deductible VAT is separate; a normal car without input VAT deduction is recorded gross.</div></div></div><p style="font-size:.9em;line-height:1.4">A qualifying GWG may be expensed immediately.</p><p style="font-size:.9em;line-height:1.4">Inward freight on goods belongs in landed cost; outward freight is a selling expense.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Exam tip</div><div class="callout-text">A return or later discount corrects the original entry and VAT.</div></div></div></div><div class="col-de"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Grundidee</div><div class="callout-text">Direkt zurechenbare Anschaffungsnebenkosten auf dem Anlagenkonto aktivieren. Abzugsfähige Vorsteuer wird gesondert gebucht; ein Pkw ohne Vorsteuerabzug wird brutto aktiviert.</div></div></div><p style="font-size:.9em;line-height:1.4">Ein berechtigtes GWG kann sofort Aufwand sein.</p><p style="font-size:.9em;line-height:1.4">Warenbezugskosten gehören zum Einstandspreis; Versandkosten sind Vertriebsaufwand.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Eine Rücksendung oder ein späterer Rabatt korrigiert ursprüngliche Buchung und Steuer.</div></div></div></div></div><div class="table-wrap" style="margin:5px 0"><table class="vsn-table"><thead><tr><th>Situation · Geschäftsfall</th><th>Entry · Buchung</th></tr></thead><tbody><tr><td style="padding:3px 8px">GWG, immediate / sofort</td><td style="padding:3px 8px"><code>7060 + 2500 / 33…</code></td></tr><tr><td style="padding:3px 8px">Car without input VAT / Pkw</td><td style="padding:3px 8px"><code>0630 gross / 33…</code></td></tr><tr><td style="padding:3px 8px">Truck with input VAT / Lkw</td><td style="padding:3px 8px"><code>0640 + 2500 / 33…</code></td></tr><tr><td style="padding:3px 8px">Goods freight / Bezugskosten</td><td style="padding:3px 8px"><code>5000 + 2500 / 33…</code></td></tr><tr><td style="padding:3px 8px">Outward freight / Ausgangsfracht</td><td style="padding:3px 8px"><code>7300 + 2500 / 33…</code></td></tr><tr><td style="padding:3px 8px">Customer reminder / Mahnung</td><td style="padding:3px 8px"><code>20… / 4890 + 8055</code></td></tr></tbody></table></div><div class="example-block"><strong>Landed cost · Einstandspreis</strong><br>Goods / Waren € 9.875 + freight / Bezugskosten € 153,09 = landed cost / Einstandspreis € 10.028,09 net. Deductible VAT is separate / Vorsteuer ist gesondert.</div><div class="example-block no-break" style="margin:4px 0;padding:6px 10px"><strong>Worked example · Beispiel</strong><br>At 20 % VAT: € 1.000 net + € 200 VAT = € 1.200 gross. Purchase: 5000 1.000 + 2500 200 / 33… 1.200. Profit −1.000; cash 0.<br>Bei 20 % USt: € 1.000 netto + € 200 USt = € 1.200 brutto. Einkauf: 5000 1.000 + 2500 200 / 33… 1.200. Erfolg −1.000; Liquidität 0.</div></div></div><div class="section page-break" style="padding-top:4mm;padding-bottom:0" id="s2"><div class="section-header no-break" style="margin-bottom:5px;padding-bottom:5px"><div class="section-num">2</div><div class="section-title-block"><div class="section-title-en">Fixed assets and depreciation</div><div class="section-title-de">Anlagenverzeichnis und Abschreibung</div></div></div><figure style="margin:2px 0"><img src="assets/register.jpg" alt="Fixed assets and depreciation" style="max-height:40mm;box-shadow:none"></figure><div class="diagram-wrap" style="margin:2px 0"><svg viewBox="0 0 680 75" style="width:100%;max-width:680px;height:auto" role="img" aria-label="Cost / Wert → Register / AVZ → AfA expense → Book value"><rect x="2" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="74" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Cost / Wert</text><path d="M150 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="172" y="12" width="145" height="42" rx="8" fill="#2980b9"/><text x="244" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Register / AVZ</text><path d="M320 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="342" y="12" width="145" height="42" rx="8" fill="#dc4ebf"/><text x="414" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">AfA expense</text><path d="M490 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="512" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="584" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Book value</text></svg></div><div class="bilingual-grid"><div class="col-en"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Key idea</div><div class="callout-text">The fixed asset register lists acquisition cost, commissioning date, useful life, depreciation and book value. Straight-line depreciation allocates cost evenly over useful life.</div></div></div><p style="font-size:.9em;line-height:1.4">Tax half-year rule: full annual AfA for commissioning in the first half, half in the second.</p><p style="font-size:.9em;line-height:1.4">A € 1 memory value is used while the asset remains in use where the exercise specifies it.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Exam tip</div><div class="callout-text">The supplied worksheet also shows a monthly method. Follow the method specified in the exercise; do not mix schedules.</div></div></div></div><div class="col-de"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Grundidee</div><div class="callout-text">Das Anlagenverzeichnis enthält Anschaffungswert, Inbetriebnahme, Nutzungsdauer, Abschreibung und Buchwert. Die lineare AfA verteilt die Kosten gleichmäßig auf die Nutzungsdauer.</div></div></div><p style="font-size:.9em;line-height:1.4">Steuerliche Halbjahresregel: volle Jahres-AfA bei Inbetriebnahme im ersten Halbjahr, halbe im zweiten.</p><p style="font-size:.9em;line-height:1.4">Einen Erinnerungswert von € 1 belassen, wenn die Aufgabe diese Konvention vorgibt.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Das AVZ-Blatt zeigt auch eine Monatsmethode. Verwende die in der Aufgabe verlangte Methode und vermische die Zeitpläne nicht.</div></div></div></div></div><div class="table-wrap no-break" style="margin:5px 0"><table class="vsn-table"><thead><tr><th style="padding:4px 8px">Event · Geschäftsfall</th><th style="padding:4px 8px">Entry · Buchung</th></tr></thead><tbody><tr><td style="padding:3px 8px">Annual rate / Satz</td><td style="padding:3px 8px"><code>100 % ÷ useful life / Nutzungsdauer</code></td></tr><tr><td style="padding:3px 8px">Annual AfA</td><td style="padding:3px 8px"><code>acquisition cost ÷ useful life</code></td></tr><tr><td style="padding:3px 8px">Book value / Buchwert</td><td style="padding:3px 8px"><code>opening value + additions − AfA</code></td></tr><tr><td style="padding:3px 8px">Closing entry</td><td style="padding:3px 8px"><code>7010 / relevant asset account</code></td></tr></tbody></table></div><div class="example-block no-break" style="margin:4px 0;padding:6px 10px"><strong>Worked example · Beispiel</strong><br>€ 1.200 ÷ 10 years = € 120 annual AfA. Commissioned in October: tax half-year AfA € 60; closing book value € 1.140. 7010 60 / 0620 60. Profit −60; cash 0.<br>€ 1.200 ÷ 10 Jahre = € 120 Jahres-AfA. Inbetriebnahme im Oktober: steuerliche Halbjahres-AfA € 60; Buchwert € 1.140. 7010 60 / 0620 60. Erfolg −60; Liquidität 0.</div></div><div class="section page-break" style="padding-top:4mm;padding-bottom:0" id="s3"><div class="section-header no-break" style="margin-bottom:5px;padding-bottom:5px"><div class="section-num">3</div><div class="section-title-block"><div class="section-title-en">Bank closing items</div><div class="section-title-de">Abschlussposten am Bankkonto</div></div></div><figure style="margin:2px 0"><img src="assets/interest.jpg" alt="Bank closing items" style="max-height:40mm;box-shadow:none"></figure><div class="diagram-wrap" style="margin:2px 0"><svg viewBox="0 0 680 75" style="width:100%;max-width:680px;height:auto" role="img" aria-label="Bank statement → Gross interest → Tax / KESt → Bank balance"><rect x="2" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="74" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Bank statement</text><path d="M150 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="172" y="12" width="145" height="42" rx="8" fill="#2980b9"/><text x="244" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Gross interest</text><path d="M320 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="342" y="12" width="145" height="42" rx="8" fill="#dc4ebf"/><text x="414" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Tax / KESt</text><path d="M490 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="512" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="584" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Bank balance</text></svg></div><div class="bilingual-grid"><div class="col-en"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Key idea</div><div class="callout-text">Credit interest is revenue. Debit interest and bank fees are expenses. In the textbook examples for sole proprietors, capital income tax is a private withdrawal, not an expense.</div></div></div><p style="font-size:.9em;line-height:1.4">Profit: +12,32 −238,12.</p><p style="font-size:.9em;line-height:1.4">Cash: +12,32 −3,08 −238,12.</p><p style="font-size:.9em;line-height:1.4">KESt also reduces equity as a private withdrawal.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Exam tip</div><div class="callout-text">Post gross interest and tax separately. An overdraft becoming larger is a negative cash effect.</div></div></div></div><div class="col-de"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Grundidee</div><div class="callout-text">Habenzinsen sind Ertrag. Sollzinsen und Bankspesen sind Aufwand. Die KESt ist in den Buchbeispielen für Einzelunternehmen eine Privatentnahme und kein Aufwand.</div></div></div><p style="font-size:.9em;line-height:1.4">Erfolg: +12,32 −238,12.</p><p style="font-size:.9em;line-height:1.4">Liquidität: +12,32 −3,08 −238,12.</p><p style="font-size:.9em;line-height:1.4">Die KESt vermindert als Privatentnahme auch das Eigenkapital.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Bruttozinsen und KESt getrennt buchen. Eine steigende Kontoüberziehung wirkt negativ auf die Liquidität.</div></div></div></div></div><div class="table-wrap no-break" style="margin:5px 0"><table class="vsn-table"><thead><tr><th style="padding:4px 8px">Event · Geschäftsfall</th><th style="padding:4px 8px">Entry · Buchung</th></tr></thead><tbody><tr><td style="padding:3px 8px">Credit interest / Habenzinsen</td><td style="padding:3px 8px"><code>2800 / 8050</code></td></tr><tr><td style="padding:3px 8px">Debit interest / Sollzinsen</td><td style="padding:3px 8px"><code>8310 / 2800</code></td></tr><tr><td style="padding:3px 8px">Charges / Spesen</td><td style="padding:3px 8px"><code>7790 / 2800</code></td></tr><tr><td style="padding:3px 8px">Private KESt</td><td style="padding:3px 8px"><code>9600 / 2800</code></td></tr></tbody></table></div><div class="example-block no-break" style="margin:4px 0;padding:6px 10px"><strong>Worked example · Beispiel</strong><br>Ü 2.3: interest € 12,32; KESt € 3,08; fees € 238,12. 2804 / 8050 12,32; 9600 / 2804 3,08; 7790 / 2804 238,12.<br>Ü 2.3: Habenzinsen € 12,32; KESt € 3,08; Spesen € 238,12. Buchungen: 2804 / 8050 12,32; 9600 / 2804 3,08; 7790 / 2804 238,12.</div></div><div class="section page-break" style="padding-top:4mm;padding-bottom:0" id="s4"><div class="section-header no-break" style="margin-bottom:5px;padding-bottom:5px"><div class="section-num">4</div><div class="section-title-block"><div class="section-title-en">Cash transfers with banks</div><div class="section-title-de">Barverkehr mit Banken</div></div></div><figure style="margin:2px 0"><img src="assets/bank.jpg" alt="Cash transfers with banks" style="max-height:40mm;box-shadow:none"></figure><div class="diagram-wrap" style="margin:2px 0"><svg viewBox="0 0 680 75" style="width:100%;max-width:680px;height:auto" role="img" aria-label="Cash / Kassa → Transit / 2870 → Bank / 2800 → 2870 clears"><rect x="2" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="74" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Cash / Kassa</text><path d="M150 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="172" y="12" width="145" height="42" rx="8" fill="#2980b9"/><text x="244" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Transit / 2870</text><path d="M320 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="342" y="12" width="145" height="42" rx="8" fill="#dc4ebf"/><text x="414" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Bank / 2800</text><path d="M490 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="512" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="584" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">2870 clears</text></svg></div><div class="bilingual-grid"><div class="col-en"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Key idea</div><div class="callout-text">Cash in transit with banks uses account 2870 to bridge the cash voucher and bank statement. The completed transfer changes the location of cash, not total cash plus bank or profit.</div></div></div><p style="font-size:.9em;line-height:1.4">Before the second leg arrives, the individual voucher temporarily changes cash plus bank; 2870 carries the amount in transit.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Exam tip</div><div class="callout-text">Use both legs exactly once. After both documents are recorded, account 2870 clears.</div></div></div></div><div class="col-de"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Grundidee</div><div class="callout-text">Das Konto 2870 überbrückt Kassenbeleg und Kontoauszug. Die vollständige Umbuchung ändert den Ort des Geldes, aber weder Kassa plus Bank noch den Erfolg.</div></div></div><p style="font-size:.9em;line-height:1.4">Vor der zweiten Buchung verändert der einzelne Beleg Kassa plus Bank vorübergehend.</p><p style="font-size:.9em;line-height:1.4">2870 hält den Zwischenbetrag.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Beide Belege genau einmal buchen. Danach ist das Konto 2870 ausgeglichen.</div></div></div></div></div><div class="table-wrap no-break" style="margin:5px 0"><table class="vsn-table"><thead><tr><th style="padding:4px 8px">Event · Geschäftsfall</th><th style="padding:4px 8px">Entry · Buchung</th></tr></thead><tbody><tr><td style="padding:3px 8px">Withdrawal: cash voucher</td><td style="padding:3px 8px"><code>2700 / 2870</code></td></tr><tr><td style="padding:3px 8px">Withdrawal: bank statement</td><td style="padding:3px 8px"><code>2870 / 2800</code></td></tr><tr><td style="padding:3px 8px">Deposit: cash voucher</td><td style="padding:3px 8px"><code>2870 / 2700</code></td></tr><tr><td style="padding:3px 8px">Deposit: bank statement</td><td style="padding:3px 8px"><code>2800 / 2870</code></td></tr></tbody></table></div><div class="example-block no-break" style="margin:4px 0;padding:6px 10px"><strong>Worked example · Beispiel</strong><br>Withdraw € 1.500: 2700 1.500 / 2870 1.500, then 2870 1.500 / 2800 1.500. Combined cash effect 0; profit 0.<br>Abhebung € 1.500: 2700 1.500 / 2870 1.500, danach 2870 1.500 / 2800 1.500. Insgesamt Liquiditätswirkung 0 und Erfolgswirkung 0.</div></div><div class="section page-break" style="padding-top:4mm;padding-bottom:0" id="s5"><div class="section-header no-break" style="margin-bottom:5px;padding-bottom:5px"><div class="section-num">5</div><div class="section-title-block"><div class="section-title-en">Card sales and settlements</div><div class="section-title-de">Debit- und Kreditkartenabrechnung</div></div></div><figure style="margin:2px 0"><img src="assets/cards.jpg" alt="Card sales and settlements" style="max-height:40mm;box-shadow:none"></figure><div class="diagram-wrap" style="margin:2px 0"><svg viewBox="0 0 680 75" style="width:100%;max-width:680px;height:auto" role="img" aria-label="Sale / Verkauf → Claim / Forderung → Fee / Gebühr → Bank receipt"><rect x="2" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="74" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Sale / Verkauf</text><path d="M150 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="172" y="12" width="145" height="42" rx="8" fill="#2980b9"/><text x="244" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Claim / Forderung</text><path d="M320 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="342" y="12" width="145" height="42" rx="8" fill="#dc4ebf"/><text x="414" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Fee / Gebühr</text><path d="M490 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="512" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="584" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Bank receipt</text></svg></div><div class="bilingual-grid"><div class="col-en"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Key idea</div><div class="callout-text">A card sale first creates a gross claim against the processor. Account 2885 is used for debit-card claims and 2880 for credit-card claims. Bank settlement clears the claim.</div></div></div><p style="font-size:.9em;line-height:1.4">The original credit-card sale date and its VAT split are not given in this exercise.</p><p style="font-size:.9em;line-height:1.4">The € 8.320 claim is assumed to have been recorded already.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Exam tip</div><div class="callout-text">A withheld fee is an expense; deductible VAT on that fee is not. Do not post the sale a second time.</div></div></div></div><div class="col-de"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Grundidee</div><div class="callout-text">Ein Kartenverkauf erzeugt zuerst eine Bruttoforderung gegenüber dem Kartenunternehmen. 2885 erfasst Debitkarten-, 2880 Kreditkartenforderungen. Die Bankabrechnung gleicht sie aus.</div></div></div><p style="font-size:.9em;line-height:1.4">Datum und USt-Aufteilung des ursprünglichen Kreditkartenverkaufs sind nicht angegeben.</p><p style="font-size:.9em;line-height:1.4">Die Forderung von € 8.320 ist bereits verbucht.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Eine einbehaltene Nettogebühr ist Aufwand; abzugsfähige Vorsteuer darauf nicht. Den Verkauf nicht ein zweites Mal buchen.</div></div></div></div></div><div class="table-wrap no-break" style="margin:5px 0"><table class="vsn-table"><thead><tr><th style="padding:4px 8px">Event · Geschäftsfall</th><th style="padding:4px 8px">Entry · Buchung</th></tr></thead><tbody><tr><td style="padding:3px 8px">Sale / Verkauf</td><td style="padding:3px 8px"><code>2880 or 2885 / 4000 + 3500</code></td></tr><tr><td style="padding:3px 8px">Debit-card settlement</td><td style="padding:3px 8px"><code>2800 / 2885</code></td></tr><tr><td style="padding:3px 8px">Credit-card settlement</td><td style="padding:3px 8px"><code>2800 + 7792 + 2500 / 2880</code></td></tr><tr><td style="padding:3px 8px">Buyer: card liability</td><td style="padding:3px 8px"><code>3180 credit; 3190 debit</code></td></tr></tbody></table></div><div class="example-block no-break" style="margin:4px 0;padding:6px 10px"><strong>Worked example · Beispiel</strong><br>Ü 1.20: claim € 8.320; fee € 208 + € 3,90; VAT € 42,38. Bank receives € 8.065,72. 2800 8.065,72 + 7792 211,90 + 2500 42,38 / 2880 8.320.<br>Ü 1.20: Forderung € 8.320; Gebühr € 208 + € 3,90; USt € 42,38. Bankeingang € 8.065,72. Buchung: 2800 8.065,72 + 7792 211,90 + 2500 42,38 / 2880 8.320.</div></div><div class="section page-break" style="padding-top:4mm;padding-bottom:0" id="s6"><div class="section-header no-break" style="margin-bottom:5px;padding-bottom:5px"><div class="section-num">6</div><div class="section-title-block"><div class="section-title-en">Taxes and chamber levy</div><div class="section-title-de">Steuern und Kammerumlage KU1</div></div></div><figure style="margin:2px 0"><img src="assets/tax.jpg" alt="Taxes and chamber levy" style="max-height:40mm;box-shadow:none"></figure><div class="diagram-wrap" style="margin:2px 0"><svg viewBox="0 0 680 75" style="width:100%;max-width:680px;height:auto" role="img" aria-label="Tax / Abgabe → Classify / Art → Entry / Buchung → Payment"><rect x="2" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="74" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Tax / Abgabe</text><path d="M150 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="172" y="12" width="145" height="42" rx="8" fill="#2980b9"/><text x="244" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Classify / Art</text><path d="M320 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="342" y="12" width="145" height="42" rx="8" fill="#dc4ebf"/><text x="414" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Entry / Buchung</text><path d="M490 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="512" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="584" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Payment</text></svg></div><div class="bilingual-grid"><div class="col-en"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Key idea</div><div class="callout-text">Classify the tax first. Business property tax is an expense; an owner’s income tax is private. Paying an existing VAT liability has no new profit effect. Chamber levy 1 finances the chamber.</div></div></div><p style="font-size:.9em;line-height:1.4">A tax directly attributable to acquiring undeveloped land increases its asset cost.</p><p style="font-size:.9em;line-height:1.4">KU1 is calculated quarterly on the defined assessment base.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Exam tip</div><div class="callout-text">The book uses 3 ‰ and a € 150.000 turnover exemption in its KU1 teaching model. Real rules include exceptions and graduated rates.</div></div></div></div><div class="col-de"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Grundidee</div><div class="callout-text">Bestimme zuerst die Abgabe. Betriebliche Grundsteuer ist Aufwand, Einkommensteuer des Inhabers privat. Die Zahlung einer bestehenden USt-Zahllast ändert den Erfolg nicht erneut.</div></div></div><p style="font-size:.9em;line-height:1.4">Eine direkt zurechenbare Grunderwerbsteuer erhöht den Anschaffungswert des unbebauten Grundstücks.</p><p style="font-size:.9em;line-height:1.4">KU1 wird vierteljährlich auf die definierte Grundlage berechnet.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Das Buchmodell verwendet 3 ‰ und eine Umsatzfreigrenze von € 150.000. In der Praxis gelten Ausnahmen und Tarifstufen.</div></div></div></div></div><div class="table-wrap no-break" style="margin:5px 0"><table class="vsn-table"><thead><tr><th style="padding:4px 8px">Event · Geschäftsfall</th><th style="padding:4px 8px">Entry · Buchung</th></tr></thead><tbody><tr><td style="padding:3px 8px">Business property tax</td><td style="padding:3px 8px"><code>7100 / 2800</code></td></tr><tr><td style="padding:3px 8px">Owner income tax</td><td style="padding:3px 8px"><code>9600 / 2800</code></td></tr><tr><td style="padding:3px 8px">VAT liability</td><td style="padding:3px 8px"><code>3520 / 2800</code></td></tr><tr><td style="padding:3px 8px">KU1 quarter 4</td><td style="padding:3px 8px"><code>7780 / 3540; then 3540 / 2800</code></td></tr></tbody></table></div><div class="example-block no-break" style="margin:4px 0;padding:6px 10px"><strong>Worked example · Beispiel</strong><br>Ü 2.6: year-end KU1 € 420: 7780 420 / 3540 420. Next February: 3540 420 / 2800 420. Profit −420, then 0; cash 0, then −420.<br>Ü 2.6: KU1 € 420 am Jahresende: 7780 420 / 3540 420. Im Februar: 3540 420 / 2800 420. Erfolg −420, danach 0; Liquidität 0, danach −420.</div></div><div class="section page-break" style="padding-top:4mm;padding-bottom:0" id="s7"><div class="section-header no-break" style="margin-bottom:5px;padding-bottom:5px"><div class="section-num">7</div><div class="section-title-block"><div class="section-title-en">Cash discount</div><div class="section-title-de">Zahlung mit Skontoabzug</div></div></div><figure style="margin:2px 0"><img src="assets/discount.jpg" alt="Cash discount" style="max-height:40mm;box-shadow:none"></figure><div class="diagram-wrap" style="margin:2px 0"><svg viewBox="0 0 680 75" style="width:100%;max-width:680px;height:auto" role="img" aria-label="Gross invoice → Discount % → Net + VAT → Payment"><rect x="2" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="74" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Gross invoice</text><path d="M150 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="172" y="12" width="145" height="42" rx="8" fill="#2980b9"/><text x="244" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Discount %</text><path d="M320 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="342" y="12" width="145" height="42" rx="8" fill="#dc4ebf"/><text x="414" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Net + VAT</text><path d="M490 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="512" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="584" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Payment</text></svg></div><div class="bilingual-grid"><div class="col-en"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Key idea</div><div class="callout-text">Cash discount rewards payment within the agreed period. Calculate the discount from the eligible gross amount, split it into net discount and VAT correction, then clear the personal account.</div></div></div><p style="font-size:.9em;line-height:1.4">Customer example: € 4.680 × 2 % = € 93,60 gross = € 78 net + € 15,60 VAT.</p><p style="font-size:.9em;line-height:1.4">Bank receives € 4.586,40; the discount reduces profit by € 78.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Exam tip</div><div class="callout-text">The test requires two entries: payment and discount. The payment plus gross discount equals the original claim or liability.</div></div></div></div><div class="col-de"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Grundidee</div><div class="callout-text">Skonto ist ein Nachlass für rasche Zahlung. Berechne es vom skontofähigen Bruttobetrag, trenne Nettoskonto und Steuerkorrektur und gleiche das Personenkonto aus.</div></div></div><p style="font-size:.9em;line-height:1.4">Kundenbeispiel: € 4.680 × 2 % = € 93,60 brutto = € 78 netto + € 15,60 USt.</p><p style="font-size:.9em;line-height:1.4">Die Bank erhält € 4.586,40; das Skonto senkt den Erfolg um € 78.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Für die Schularbeit zwei Buchungssätze bilden: Zahlung und Skonto. Zahlung plus Bruttoskonto ergibt den ursprünglichen offenen Betrag.</div></div></div></div></div><div class="table-wrap no-break" style="margin:5px 0"><table class="vsn-table"><thead><tr><th style="padding:4px 8px">Event · Geschäftsfall</th><th style="padding:4px 8px">Entry · Buchung</th></tr></thead><tbody><tr><td style="padding:3px 8px">Supplier payment</td><td style="padding:3px 8px"><code>33… / 2800</code></td></tr><tr><td style="padding:3px 8px">Supplier discount</td><td style="padding:3px 8px"><code>33… / 5880 + 2500</code></td></tr><tr><td style="padding:3px 8px">Customer payment</td><td style="padding:3px 8px"><code>2800 / 20…</code></td></tr><tr><td style="padding:3px 8px">Customer discount</td><td style="padding:3px 8px"><code>4410 + 3500 / 20…</code></td></tr></tbody></table></div><div class="example-block no-break" style="margin:4px 0;padding:6px 10px"><strong>Worked example · Beispiel</strong><br>Supplier: € 8.400 × 3 % = € 252 gross = € 210 net + € 42 VAT. Pay € 8.148. 33… 8.148 / 2800 8.148; 33… 252 / 5880 210 + 2500 42.<br>Lieferant: € 8.400 × 3 % = € 252 brutto = € 210 netto + € 42 Vorsteuer. Zahlung € 8.148. Buchungen: 33… 8.148 / 2800 8.148; 33… 252 / 5880 210 + 2500 42.</div></div><div class="section page-break" style="padding-top:4mm;padding-bottom:0" id="s8"><div class="section-header no-break" style="margin-bottom:5px;padding-bottom:5px"><div class="section-num">8</div><div class="section-title-block"><div class="section-title-en">Profit and liquidity</div><div class="section-title-de">Erfolg und Liquidität</div></div></div><figure style="margin:2px 0"><img src="assets/profit.jpg" alt="Profit and liquidity" style="max-height:40mm;box-shadow:none"></figure><div class="diagram-wrap" style="margin:2px 0"><svg viewBox="0 0 680 75" style="width:100%;max-width:680px;height:auto" role="img" aria-label="Document → Revenue / expense → Cash / bank → Two effects"><rect x="2" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="74" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Document</text><path d="M150 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="172" y="12" width="145" height="42" rx="8" fill="#2980b9"/><text x="244" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Revenue / expense</text><path d="M320 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="342" y="12" width="145" height="42" rx="8" fill="#dc4ebf"/><text x="414" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Cash / bank</text><path d="M490 33 h14 m-5 -5 5 5 -5 5" stroke="#d4a800" stroke-width="3" fill="none"/><rect x="512" y="12" width="145" height="42" rx="8" fill="#1e2e48"/><text x="584" y="38" text-anchor="middle" font-size="12" font-family="sans-serif" fill="white">Two effects</text></svg></div><div class="bilingual-grid"><div class="col-en"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>English</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Key idea</div><div class="callout-text">Profit changes through revenue and expense. Liquidity here tracks cash plus bank, including bank overdrafts. A claim or liability alone is not cash.</div></div></div><p style="font-size:.9em;line-height:1.4">Private withdrawals reduce equity even though they do not reduce profit.</p><p style="font-size:.9em;line-height:1.4">Deductible input VAT and output VAT normally have no profit effect.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Exam tip</div><div class="callout-text">Ask two questions for every entry: is there revenue or expense? Does cash or the bank balance change?</div></div></div></div><div class="col-de"><div class="col-label" style="margin-bottom:2px"><span class="col-label-dot"></span>Deutsch</div><div class="callout-box callout-def" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Grundidee</div><div class="callout-text">Der Erfolg ändert sich durch Ertrag und Aufwand. Liquidität meint hier Kassa plus Bank einschließlich Überziehung. Eine Forderung oder Schuld allein ist kein Zahlungsmittel.</div></div></div><p style="font-size:.9em;line-height:1.4">Privatentnahmen senken das Eigenkapital, aber nicht den Erfolg.</p><p style="font-size:.9em;line-height:1.4">Abzugsfähige Vorsteuer und Umsatzsteuer wirken normalerweise nicht auf den Erfolg.</p><div class="callout-box callout-tip" style="padding:7px 10px;margin:5px 0"><div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Stelle bei jedem Buchungssatz zwei Fragen: Entsteht Ertrag oder Aufwand? Ändert sich Kassa oder Bank?</div></div></div></div></div><div class="table-wrap no-break" style="margin:5px 0"><table class="vsn-table"><thead><tr><th style="padding:4px 8px">Event · Geschäftsfall</th><th style="padding:4px 8px">Entry · Buchung</th></tr></thead><tbody><tr><td style="padding:3px 8px">Credit purchase / Einkauf auf Ziel</td><td style="padding:3px 8px"><code>profit −net; cash 0</code></td></tr><tr><td style="padding:3px 8px">Later supplier payment</td><td style="padding:3px 8px"><code>profit 0; cash −gross</code></td></tr><tr><td style="padding:3px 8px">Depreciation / AfA</td><td style="padding:3px 8px"><code>profit −AfA; cash 0</code></td></tr><tr><td style="padding:3px 8px">Customer payment</td><td style="padding:3px 8px"><code>profit 0; cash +gross</code></td></tr><tr><td style="padding:3px 8px">Private tax / Privatsteuer</td><td style="padding:3px 8px"><code>profit 0; cash decreases</code></td></tr></tbody></table></div><div class="example-block no-break" style="margin:4px 0;padding:6px 10px"><strong>Worked example · Beispiel</strong><br>Buy goods on credit for € 1.000 + € 200 VAT: profit −€ 1.000, cash 0. Pay later: profit 0, cash −€ 1.200.<br>Wareneinkauf auf Ziel um € 1.000 + € 200 USt: Erfolg −€ 1.000, Liquidität 0. Spätere Zahlung: Erfolg 0, Liquidität −€ 1.200.</div></div></body></html>

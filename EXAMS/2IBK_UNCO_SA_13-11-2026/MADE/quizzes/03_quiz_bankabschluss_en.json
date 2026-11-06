@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Bank closing items",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "A sole proprietor receives €12.32 credit interest in bank account 2804. What is the entry?",
+      "options": [
+        "2804 12.32 / 8050 12.32",
+        "8050 12.32 / 2804 12.32",
+        "2804 12.32 / 8310 12.32",
+        "9600 12.32 / 2804 12.32"
+      ],
+      "correctAnswer": "2804 12.32 / 8050 12.32",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A sole proprietor has €3.08 private capital income tax deducted from the bank account. What is the effect of this entry?",
+      "options": [
+        "Profit −€3.08, cash −€3.08",
+        "Profit +€3.08, cash €0",
+        "Profit €0, cash +€3.08",
+        "Profit €0, cash −€3.08"
+      ],
+      "correctAnswer": "Profit €0, cash −€3.08",
+      "points": 10,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bank charges consist of €64.62 and €173.50. What is the total expense?",
+      "options": [
+        "€108.88",
+        "€248.12",
+        "€238.12",
+        "€237.12"
+      ],
+      "correctAnswer": "€238.12",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An already overdrawn bank account 3120 is charged €1,516.93 debit interest. Which entry applies?",
+      "options": [
+        "3120 1,516.93 / 8310 1,516.93",
+        "8310 1,516.93 / 3120 1,516.93",
+        "3120 1,516.93 / 8050 1,516.93",
+        "9600 1,516.93 / 3120 1,516.93"
+      ],
+      "correctAnswer": "8310 1,516.93 / 3120 1,516.93",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "true-false",
+      "text": "A sole proprietor posts gross credit interest and private capital income tax separately.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which account number does the textbook use for bank charges?",
+      "options": [
+        "8050",
+        "9600",
+        "2500",
+        "7790"
+      ],
+      "correctAnswer": "7790",
+      "points": 5,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Charges of €185.50, €50 and €24.80 are deducted from the bank account. What are total charges?",
+      "options": [
+        "€260.80",
+        "€210.30",
+        "€260.30",
+        "€250.30"
+      ],
+      "correctAnswer": "€260.30",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Credit interest of €12.32, private tax of €3.08 and charges of €238.12 are posted separately. What is the total profit effect?",
+      "options": [
+        "+€9.24",
+        "−€225.80",
+        "−€228.88",
+        "−€241.20"
+      ],
+      "correctAnswer": "−€225.80",
+      "points": 15,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "true-false",
+      "text": "An additional charge to overdrawn account 3120 increases the bank debt.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "bankabschluss"
+    },
+    {
+      "type": "open-ended",
+      "text": "A sole proprietor receives €12.32 credit interest; the bank deducts €3.08 private tax and €238.12 charges. Calculate the total profit and cash effects.",
+      "options": [],
+      "correctAnswer": "Profit: €12.32 − €238.12 = −€225.80. Cash: €12.32 − €3.08 − €238.12 = −€228.88. Private tax is not an expense.",
+      "points": 20,
+      "topic": "bankabschluss"
+    }
+  ]
+}

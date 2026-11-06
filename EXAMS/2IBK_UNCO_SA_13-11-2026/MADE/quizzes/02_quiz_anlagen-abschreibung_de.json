@@ -1,0 +1,120 @@
+{
+  "title": "UNCO SA 13.11.2026 – Anlagen und Abschreibung",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Ein am 2. Oktober 2026 in Betrieb genommenes iPad kostet bei vollem Vorsteuerabzug 1.200 € netto. Die Nutzungsdauer beträgt zehn Jahre. Welche AfA ergibt die steuerliche Halbjahresregel 2026?",
+      "options": [
+        "60 €",
+        "120 €",
+        "30 €",
+        "100 €"
+      ],
+      "correctAnswer": "60 €",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie hoch ist der Buchwert dieses iPads am 31. Dezember 2026 bei 1.200 € Anschaffungswert und 60 € AfA?",
+      "options": [
+        "1.200 €",
+        "1.080 €",
+        "1.380 €",
+        "1.140 €"
+      ],
+      "correctAnswer": "1.140 €",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Geschirrspüler zu 1.160 € hat eine Jahres-AfA von 145 € und wurde am 18. Mai 2023 in Betrieb genommen. Das AVZ-Blatt schreibt acht Monate vor. Wie hoch ist die AfA 2023?",
+      "options": [
+        "72,50 €",
+        "84,58 €",
+        "96,67 €",
+        "145,00 €"
+      ],
+      "correctAnswer": "96,67 €",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Für denselben am 18. Mai in Betrieb genommenen Geschirrspüler beträgt die Jahres-AfA 145 €. Welche AfA gilt stattdessen nach der steuerlichen Halbjahresregel?",
+      "options": [
+        "0 €",
+        "145 €",
+        "96,67 €",
+        "72,50 €"
+      ],
+      "correctAnswer": "145 €",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine Abschreibung vermindert den Erfolg, verursacht aber keine weitere Zahlung.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Buchung erfasst 60 € planmäßige AfA auf ein aktiviertes Gerät auf 0620?",
+      "options": [
+        "0620 60 / 7010 60",
+        "7010 60 / 2800 60",
+        "7060 60 / 2800 60",
+        "7010 60 / 0620 60"
+      ],
+      "correctAnswer": "7010 60 / 0620 60",
+      "points": 15,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Aussage beschreibt die GWG-Grenze im Lehrbuch?",
+      "options": [
+        "Beliebiger Wert, sofern das Gut in bar bezahlt wird",
+        "Bis 1.000 € Jahresumsatz des Unternehmens",
+        "Bis 1.000 € Anschaffungswert ohne abzugsfähige USt und selbstständig nutzbar",
+        "Bis 1.000 € Verkaufspreis einschließlich jeder USt"
+      ],
+      "correctAnswer": "Bis 1.000 € Anschaffungswert ohne abzugsfähige USt und selbstständig nutzbar",
+      "points": 5,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Computer, Monitor und Drucker kosten gemeinsam 629 € brutto bzw. 524,17 € netto. Ihre Einzelpreise fehlen. Was ist für eine gemeinsame GWG-Sofortabschreibung vorauszusetzen?",
+      "options": [
+        "Die gesamte USt ist nicht abzugsfähig",
+        "Gemeinsame GWG-fähige Einheit und abzugsfähige Vorsteuer",
+        "Jedes Teil kostet nachweislich exakt 209,67 € brutto",
+        "Keines der Teile darf betrieblich genutzt werden"
+      ],
+      "correctAnswer": "Gemeinsame GWG-fähige Einheit und abzugsfähige Vorsteuer",
+      "points": 10,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "true-false",
+      "text": "Das achtmonatige AVZ-Beispiel und die steuerliche Halbjahresregel ergeben für den Geschirrspüler dieselbe AfA.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "anlagen-abschreibung"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ein Gerät kostet 1.200 € netto, wird am 2. Oktober 2026 aktiviert und sofort in Betrieb genommen. Volle Vorsteuer ist abzugsfähig, die Nutzungsdauer beträgt zehn Jahre. Berechne mit der steuerlichen Halbjahresregel Satz, Jahres-AfA, AfA 2026 und Buchwert zum 31. Dezember.",
+      "options": [],
+      "correctAnswer": "10 %; 1.200 / 10 = 120 € jährlich; im zweiten Halbjahr 60 €; Buchwert 1.200 − 60 = 1.140 €.",
+      "points": 20,
+      "topic": "anlagen-abschreibung"
+    }
+  ]
+}
