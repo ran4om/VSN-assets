@@ -1,0 +1,120 @@
+{
+  "title": "Places, location, directions and transport – quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Complete: El libro está ___ la mesa. (under)",
+      "options": [
+        "al lado de",
+        "delante de",
+        "encima de",
+        "debajo de"
+      ],
+      "correctAnswer": "debajo de",
+      "points": 10,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: La farmacia está al lado ___ banco.",
+      "options": [
+        "de la",
+        "a la",
+        "del",
+        "al"
+      ],
+      "correctAnswer": "del",
+      "points": 10,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Voy ___ museo.",
+      "options": [
+        "en el",
+        "del",
+        "al",
+        "a la"
+      ],
+      "correctAnswer": "al",
+      "points": 10,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which instruction means “continue straight”?",
+      "options": [
+        "seguir todo recto",
+        "tomar la segunda calle",
+        "girar a la derecha",
+        "cruzar la plaza"
+      ],
+      "correctAnswer": "seguir todo recto",
+      "points": 10,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "true-false",
+      "text": "You say “voy a pie”, but “voy en tren”.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "open-ended",
+      "text": "Give polite directions in Spanish: cross the square, continue straight and turn right.",
+      "options": [],
+      "correctAnswer": "Tiene que cruzar la plaza, seguir todo recto y girar a la derecha.",
+      "points": 20,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Hay ___ tiendas en el barrio.",
+      "options": [
+        "muchos",
+        "muchas",
+        "mucho",
+        "mucha"
+      ],
+      "correctAnswer": "muchas",
+      "points": 10,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which question asks whether there is a pharmacy nearby?",
+      "options": [
+        "¿Hay una farmacia por aquí?",
+        "¿Dónde está la farmacia?",
+        "¿Cuándo abre la farmacia?",
+        "¿Cómo es la farmacia?"
+      ],
+      "correctAnswer": "¿Hay una farmacia por aquí?",
+      "points": 10,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "true-false",
+      "text": "“Enfrente de” means “behind”.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: La mesa está ___ la cama y la ventana.",
+      "options": [
+        "debajo",
+        "entre",
+        "enfrente",
+        "cerca"
+      ],
+      "correctAnswer": "entre",
+      "points": 10,
+      "topic": "lugares-y-direcciones"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "title": "Housing, ser, estar and hay – quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Complete: En la habitación ___ dos ventanas.",
+      "options": [
+        "están",
+        "hay",
+        "son",
+        "está"
+      ],
+      "correctAnswer": "hay",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: La cama ___ en el dormitorio.",
+      "options": [
+        "hay",
+        "es",
+        "está",
+        "son"
+      ],
+      "correctAnswer": "está",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Describe a feature of the apartment. El piso ___ luminoso.",
+      "options": [
+        "es",
+        "está",
+        "están",
+        "hay"
+      ],
+      "correctAnswer": "es",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Mi hermana ___ profesora.",
+      "options": [
+        "es",
+        "hay",
+        "están",
+        "está"
+      ],
+      "correctAnswer": "es",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "true-false",
+      "text": "A building at a fixed location still takes estar when stating its location.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "open-ended",
+      "text": "Describe in Spanish: There is a table in the room. The table is next to the window.",
+      "options": [],
+      "correctAnswer": "En la habitación hay una mesa. La mesa está al lado de la ventana.",
+      "points": 20,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Las ventanas ___ en la cocina.",
+      "options": [
+        "son",
+        "es",
+        "están",
+        "hay"
+      ],
+      "correctAnswer": "están",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete the state: El piso ___ amueblado.",
+      "options": [
+        "son",
+        "hay",
+        "es",
+        "está"
+      ],
+      "correctAnswer": "está",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "true-false",
+      "text": "Hay changes to “hayan” in the plural.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Hoy estoy ___.",
+      "options": [
+        "de Viena",
+        "cansado",
+        "profesor",
+        "un piso"
+      ],
+      "correctAnswer": "cansado",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    }
+  ]
+}

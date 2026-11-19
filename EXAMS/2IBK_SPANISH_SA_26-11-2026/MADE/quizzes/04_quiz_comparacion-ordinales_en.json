@@ -1,0 +1,115 @@
+{
+  "title": "Comparisons and ordinal numbers – quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Complete: La cocina es más pequeña ___ el salón.",
+      "options": [
+        "tan",
+        "como",
+        "que",
+        "de"
+      ],
+      "correctAnswer": "que",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: El salón es tan luminoso ___ la cocina.",
+      "options": [
+        "como",
+        "de",
+        "más",
+        "que"
+      ],
+      "correctAnswer": "como",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Este piso es ___ que el otro.",
+      "options": [
+        "más bueno mejor",
+        "mejor",
+        "mejores",
+        "más mejor"
+      ],
+      "correctAnswer": "mejor",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: el ___ piso y el ___ libro. (1st, 3rd)",
+      "options": [
+        "primera, tercera",
+        "primero, tercero",
+        "primeros, terceros",
+        "primer, tercer"
+      ],
+      "correctAnswer": "primer, tercer",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "true-false",
+      "text": "Ordinal numbers agree with the noun in gender and number.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "open-ended",
+      "text": "Write in Spanish: the eighth floor, the first three rooms and the first two floors.",
+      "options": [],
+      "correctAnswer": "la octava planta, las tres primeras habitaciones y las dos primeras plantas",
+      "points": 20,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: la ___ planta and las ___ habitaciones (3rd, 8th).",
+      "options": [
+        "tercera, octavas",
+        "tercero, octavas",
+        "terceras, octava",
+        "tercer, octavos"
+      ],
+      "correctAnswer": "tercera, octavas",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Choose the relative superlative: the prettiest room in the house.",
+      "options": [
+        "la habitación mejor bonita de la casa",
+        "la habitación más bonita de la casa",
+        "la habitación más bonita que la casa",
+        "la habitación tan bonita como la casa"
+      ],
+      "correctAnswer": "la habitación más bonita de la casa",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "true-false",
+      "text": "“Más mejor” is the standard form for “better”.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "open-ended",
+      "text": "Write the ordinal numbers 1 to 10 in the feminine singular in Spanish.",
+      "options": [],
+      "correctAnswer": "primera, segunda, tercera, cuarta, quinta, sexta, séptima, octava, novena, décima",
+      "points": 20,
+      "topic": "comparacion-ordinales"
+    }
+  ]
+}

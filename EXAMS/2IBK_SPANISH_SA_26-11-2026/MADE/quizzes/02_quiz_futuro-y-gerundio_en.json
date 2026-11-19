@@ -1,0 +1,120 @@
+{
+  "title": "Near future and gerund – quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Elena y yo ___ a visitar el museo.",
+      "options": [
+        "vais",
+        "vamos",
+        "van",
+        "voy"
+      ],
+      "correctAnswer": "vamos",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Ahora estoy ___ un libro.",
+      "options": [
+        "leyendo",
+        "leyendo a",
+        "leer",
+        "leendo"
+      ],
+      "correctAnswer": "leyendo",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Choose the correct form: Mis amigos están ___.",
+      "options": [
+        "dormiendo",
+        "duermen",
+        "durmiendo",
+        "dormir"
+      ],
+      "correctAnswer": "durmiendo",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which sentence describes a plan?",
+      "options": [
+        "Ahora estoy en el cine.",
+        "Estoy yendo al cine ahora.",
+        "Voy al cine todos los días.",
+        "Voy a ir al cine mañana."
+      ],
+      "correctAnswer": "Voy a ir al cine mañana.",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "true-false",
+      "text": "The gerund does not change its ending for the person.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "open-ended",
+      "text": "Write in Spanish: Normally I read; now I am reading.",
+      "options": [],
+      "correctAnswer": "Normalmente leo; ahora estoy leyendo.",
+      "points": 20,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Tú y tus padres ___ a cenar. Use vosotros.",
+      "options": [
+        "van",
+        "vamos",
+        "vais",
+        "vas"
+      ],
+      "correctAnswer": "vais",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which reflexive form is correct?",
+      "options": [
+        "Me estoy ducharse.",
+        "Estoy duchándome.",
+        "Estoy ducharme.",
+        "Me estoy duchándome."
+      ],
+      "correctAnswer": "Estoy duchándome.",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "true-false",
+      "text": "The near future consists of estar + gerund.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Ahora estamos ___ al parque.",
+      "options": [
+        "yendo",
+        "iendo",
+        "vamos",
+        "ir"
+      ],
+      "correctAnswer": "yendo",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    }
+  ]
+}

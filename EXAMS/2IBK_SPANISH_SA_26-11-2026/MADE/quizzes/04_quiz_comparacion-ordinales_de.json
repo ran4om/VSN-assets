@@ -1,0 +1,115 @@
+{
+  "title": "Vergleich und Ordnungszahlen – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: La cocina es más pequeña ___ el salón.",
+      "options": [
+        "tan",
+        "como",
+        "que",
+        "de"
+      ],
+      "correctAnswer": "que",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: El salón es tan luminoso ___ la cocina.",
+      "options": [
+        "como",
+        "de",
+        "más",
+        "que"
+      ],
+      "correctAnswer": "como",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: Este piso es ___ que el otro.",
+      "options": [
+        "más bueno mejor",
+        "mejor",
+        "mejores",
+        "más mejor"
+      ],
+      "correctAnswer": "mejor",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: el ___ piso y el ___ libro. (1., 3.)",
+      "options": [
+        "primera, tercera",
+        "primero, tercero",
+        "primeros, terceros",
+        "primer, tercer"
+      ],
+      "correctAnswer": "primer, tercer",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "true-false",
+      "text": "Ordnungszahlen richten sich in Geschlecht und Zahl nach dem Nomen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "open-ended",
+      "text": "Schreibe auf Spanisch: die achte Etage, die ersten drei Zimmer und die ersten zwei Etagen.",
+      "options": [],
+      "correctAnswer": "la octava planta, las tres primeras habitaciones y las dos primeras plantas",
+      "points": 20,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: la ___ planta und las ___ habitaciones (3., 8.).",
+      "options": [
+        "tercera, octavas",
+        "tercero, octavas",
+        "terceras, octava",
+        "tercer, octavos"
+      ],
+      "correctAnswer": "tercera, octavas",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wähle den relativen Superlativ: das schönste Zimmer des Hauses.",
+      "options": [
+        "la habitación mejor bonita de la casa",
+        "la habitación más bonita de la casa",
+        "la habitación más bonita que la casa",
+        "la habitación tan bonita como la casa"
+      ],
+      "correctAnswer": "la habitación más bonita de la casa",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "true-false",
+      "text": "„Más mejor“ ist die reguläre Form für „besser“.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "open-ended",
+      "text": "Schreibe die Ordnungszahlen 1 bis 10 im weiblichen Singular auf Spanisch.",
+      "options": [],
+      "correctAnswer": "primera, segunda, tercera, cuarta, quinta, sexta, séptima, octava, novena, décima",
+      "points": 20,
+      "topic": "comparacion-ordinales"
+    }
+  ]
+}

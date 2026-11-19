@@ -1,0 +1,120 @@
+{
+  "title": "Free time and review – quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Complete: A mí me ___ las películas.",
+      "options": [
+        "gustan",
+        "interesa",
+        "gusta",
+        "encanta"
+      ],
+      "correctAnswer": "gustan",
+      "points": 10,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete the reply: ¿Os interesa el fútbol? Sí, ___.",
+      "options": [
+        "me interesa",
+        "os interesa",
+        "nos interesan",
+        "nos interesa"
+      ],
+      "correctAnswer": "nos interesa",
+      "points": 10,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Choose the form: Nosotros ___ al baloncesto.",
+      "options": [
+        "jugamos",
+        "juego",
+        "juegan",
+        "juegamos"
+      ],
+      "correctAnswer": "jugamos",
+      "points": 10,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which question asks about frequency?",
+      "options": [
+        "¿Adónde?",
+        "¿Cuánto tiempo?",
+        "¿Con qué frecuencia?",
+        "¿De dónde?"
+      ],
+      "correctAnswer": "¿Con qué frecuencia?",
+      "points": 10,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "true-false",
+      "text": "In “Me gusta nadar”, an infinitive expresses the activity that is liked.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "open-ended",
+      "text": "Reply in Spanish to “Me gusta leer”: you like reading too.",
+      "options": [],
+      "correctAnswer": "A mí también.",
+      "points": 20,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Yo ___ que estudiar.",
+      "options": [
+        "tenemos",
+        "tengo",
+        "tienes",
+        "tiene"
+      ],
+      "correctAnswer": "tengo",
+      "points": 10,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which form means “I get up”?",
+      "options": [
+        "te levantas",
+        "nos levantamos",
+        "me levanto",
+        "se levanta"
+      ],
+      "correctAnswer": "me levanto",
+      "points": 10,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "true-false",
+      "text": "“Nunca” means “always”.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: ¿___ eres? Soy de Viena.",
+      "options": [
+        "Cuánto",
+        "De dónde",
+        "Adónde",
+        "Cuándo"
+      ],
+      "correctAnswer": "De dónde",
+      "points": 10,
+      "topic": "freizeit-und-vorwissen"
+    }
+  ]
+}

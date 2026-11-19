@@ -1,0 +1,115 @@
+{
+  "title": "Lesen, Hören und Schreiben – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Lies: Marta vive en las afueras. Normalmente lee con su hermana. El sábado van a visitar un museo en metro. Mit wem liest Marta normalerweise?",
+      "options": [
+        "Con su madre.",
+        "Con sus amigos.",
+        "Con su profesor.",
+        "Con su hermana."
+      ],
+      "correctAnswer": "Con su hermana.",
+      "points": 10,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Lies: Marta vive en las afueras. El sábado van a visitar un museo en metro. Wie fahren sie?",
+      "options": [
+        "En metro.",
+        "A pie.",
+        "En tren.",
+        "En coche."
+      ],
+      "correctAnswer": "En metro.",
+      "points": 10,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Höre den SPANISH LISTENING POD mit Ana und Pablo. Spiele ihn bei Bedarf erneut ab. Wo steht Pablos Tisch?",
+      "options": [
+        "Al lado de la ventana.",
+        "Debajo de la cama.",
+        "Enfrente de la ventana.",
+        "Entre dos sillas."
+      ],
+      "correctAnswer": "Al lado de la ventana.",
+      "points": 10,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Höre den SPANISH LISTENING POD mit Ana und Pablo und spiele ihn bei Bedarf erneut ab. Was macht Ana am Samstagvormittag?",
+      "options": [
+        "Va a montar en bicicleta.",
+        "Va a estudiar.",
+        "Va a comprar pan.",
+        "Va a preparar la cena."
+      ],
+      "correctAnswer": "Va a estudiar.",
+      "points": 10,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "true-false",
+      "text": "Lies „Normalmente leo con mi hermana. El sábado vamos al museo.“ Die erzählende Person liest normalerweise allein.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "open-ended",
+      "text": "Schreibe 80–100 spanische Wörter: Beschreibe deine Lieblingsaktivität zu Hause, das Zimmer und mit wem du gern Freizeit verbringst. Verwende presente und futuro próximo und nenne einen konkreten Plan. Die Wortzahl ist eine Übungsvorgabe. Vergleiche deinen Text mit der Musterlösung.",
+      "options": [],
+      "correctAnswer": "Beispiel · En casa mi actividad favorita es escuchar música. Normalmente escucho música en mi habitación porque es tranquila. Mi habitación es pequeña pero luminosa. Hay una cama, un armario y un escritorio. El escritorio está al lado de la ventana y la cama está enfrente del armario. Me gusta pasar mi tiempo libre con mi hermana y mis amigos. A veces jugamos a las cartas o vamos al parque. El sábado voy a escuchar música en casa. Después voy a ir al parque con mis amigos y vamos a montar en bicicleta.",
+      "points": 20,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Höre den SPANISH LISTENING POD mit Ana und Pablo und spiele ihn bei Bedarf erneut ab. Was macht Pablo jetzt gerade?",
+      "options": [
+        "Está estudiando en casa.",
+        "Está preparando la cena.",
+        "Está jugando al baloncesto.",
+        "Está comprando pan."
+      ],
+      "correctAnswer": "Está preparando la cena.",
+      "points": 10,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Höre den SPANISH LISTENING POD mit Ana und Pablo und spiele ihn bei Bedarf erneut ab. Was liegt gegenüber von Pablos Gebäude?",
+      "options": [
+        "Una panadería.",
+        "Un museo.",
+        "Un parque.",
+        "Una farmacia."
+      ],
+      "correctAnswer": "Un parque.",
+      "points": 10,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "true-false",
+      "text": "Der Schreibauftrag verlangt, alle drei Inhaltspunkte zu behandeln und Präsens sowie futuro próximo zu verwenden.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "open-ended",
+      "text": "Höre den SPANISH LISTENING POD mit Ana und Pablo erneut. Was macht Pablo normalerweise und was macht er gerade? Antworte auf Spanisch.",
+      "options": [],
+      "correctAnswer": "Normalmente juega al baloncesto con sus amigos; ahora está preparando la cena para su hermana.",
+      "points": 20,
+      "topic": "leer-escuchar-escribir"
+    }
+  ]
+}

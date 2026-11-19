@@ -1,0 +1,120 @@
+{
+  "title": "Wohnen, ser, estar und hay – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: En la habitación ___ dos ventanas.",
+      "options": [
+        "están",
+        "hay",
+        "son",
+        "está"
+      ],
+      "correctAnswer": "hay",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: La cama ___ en el dormitorio.",
+      "options": [
+        "hay",
+        "es",
+        "está",
+        "son"
+      ],
+      "correctAnswer": "está",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Beschreibe eine Eigenschaft der Wohnung. El piso ___ luminoso.",
+      "options": [
+        "es",
+        "está",
+        "están",
+        "hay"
+      ],
+      "correctAnswer": "es",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: Mi hermana ___ profesora.",
+      "options": [
+        "es",
+        "hay",
+        "están",
+        "está"
+      ],
+      "correctAnswer": "es",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "true-false",
+      "text": "Auch ein Gebäude an einem festen Ort steht bei einer Ortsangabe mit estar.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "open-ended",
+      "text": "Beschreibe auf Spanisch: Im Zimmer gibt es einen Tisch. Der Tisch steht neben dem Fenster.",
+      "options": [],
+      "correctAnswer": "En la habitación hay una mesa. La mesa está al lado de la ventana.",
+      "points": 20,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: Las ventanas ___ en la cocina.",
+      "options": [
+        "son",
+        "es",
+        "están",
+        "hay"
+      ],
+      "correctAnswer": "están",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze den Zustand: El piso ___ amueblado.",
+      "options": [
+        "son",
+        "hay",
+        "es",
+        "está"
+      ],
+      "correctAnswer": "está",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "true-false",
+      "text": "Hay ändert sich im Plural zu „hayan“.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: Hoy estoy ___.",
+      "options": [
+        "de Viena",
+        "cansado",
+        "profesor",
+        "un piso"
+      ],
+      "correctAnswer": "cansado",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    }
+  ]
+}

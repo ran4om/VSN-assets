@@ -1,0 +1,120 @@
+{
+  "title": "Vocabulary by unit – quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 6: Which word means “video game”?",
+      "options": [
+        "el portátil",
+        "el mensaje",
+        "el videojuego",
+        "el partido"
+      ],
+      "correctAnswer": "el videojuego",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 7: Which word means “bedside table”?",
+      "options": [
+        "la mesilla de noche",
+        "el escritorio",
+        "el armario",
+        "la estantería"
+      ],
+      "correctAnswer": "la mesilla de noche",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 8: Which word means “bookshop”?",
+      "options": [
+        "la farmacia",
+        "la librería",
+        "la zapatería",
+        "la panadería"
+      ],
+      "correctAnswer": "la librería",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 6: Which phrase means “to hike”?",
+      "options": [
+        "jugar a las cartas",
+        "montar en bicicleta",
+        "ir en bicicleta",
+        "hacer senderismo"
+      ],
+      "correctAnswer": "hacer senderismo",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "true-false",
+      "text": "Unidad 7: “el alquiler” means “the lift”.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "open-ended",
+      "text": "Translate into Spanish with articles: the railway station, the bus stop and the bridge.",
+      "options": [],
+      "correctAnswer": "la estación de trenes, la parada de autobús y el puente",
+      "points": 20,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 7: Which group contains only rooms?",
+      "options": [
+        "el banco, la iglesia, el museo",
+        "la cocina, el baño, el dormitorio",
+        "el parque, la calle, la plaza",
+        "la cama, el sofá, la lámpara"
+      ],
+      "correctAnswer": "la cocina, el baño, el dormitorio",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 8: Which word means “town hall”?",
+      "options": [
+        "el parque",
+        "el museo",
+        "el Ayuntamiento",
+        "la iglesia"
+      ],
+      "correctAnswer": "el Ayuntamiento",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "true-false",
+      "text": "Unidad 6: “quedar” can mean “to meet up”.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 7: Which adjective means “furnished”?",
+      "options": [
+        "amueblado",
+        "oscuro",
+        "ruidoso",
+        "céntrico"
+      ],
+      "correctAnswer": "amueblado",
+      "points": 10,
+      "topic": "vocabulario"
+    }
+  ]
+}

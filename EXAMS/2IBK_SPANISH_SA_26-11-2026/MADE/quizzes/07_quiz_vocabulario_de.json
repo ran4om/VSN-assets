@@ -1,0 +1,120 @@
+{
+  "title": "Wortschatz nach Einheiten – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 6: Welches Wort bedeutet „Videospiel“?",
+      "options": [
+        "el portátil",
+        "el mensaje",
+        "el videojuego",
+        "el partido"
+      ],
+      "correctAnswer": "el videojuego",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 7: Welches Wort bedeutet „Nachttisch“?",
+      "options": [
+        "la mesilla de noche",
+        "el escritorio",
+        "el armario",
+        "la estantería"
+      ],
+      "correctAnswer": "la mesilla de noche",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 8: Welches Wort bedeutet „Buchhandlung“?",
+      "options": [
+        "la farmacia",
+        "la librería",
+        "la zapatería",
+        "la panadería"
+      ],
+      "correctAnswer": "la librería",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 6: Welche Wendung bedeutet „wandern“?",
+      "options": [
+        "jugar a las cartas",
+        "montar en bicicleta",
+        "ir en bicicleta",
+        "hacer senderismo"
+      ],
+      "correctAnswer": "hacer senderismo",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "true-false",
+      "text": "Unidad 7: „el alquiler“ bedeutet „der Aufzug“.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "open-ended",
+      "text": "Übersetze ins Spanische mit Artikel: der Bahnhof, die Bushaltestelle und die Brücke.",
+      "options": [],
+      "correctAnswer": "la estación de trenes, la parada de autobús y el puente",
+      "points": 20,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 7: Welche Reihe enthält nur Räume?",
+      "options": [
+        "el banco, la iglesia, el museo",
+        "la cocina, el baño, el dormitorio",
+        "el parque, la calle, la plaza",
+        "la cama, el sofá, la lámpara"
+      ],
+      "correctAnswer": "la cocina, el baño, el dormitorio",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 8: Welches Wort bedeutet „Rathaus“?",
+      "options": [
+        "el parque",
+        "el museo",
+        "el Ayuntamiento",
+        "la iglesia"
+      ],
+      "correctAnswer": "el Ayuntamiento",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "true-false",
+      "text": "Unidad 6: „quedar“ kann „sich verabreden“ bedeuten.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 7: Welches Adjektiv bedeutet „möbliert“?",
+      "options": [
+        "amueblado",
+        "oscuro",
+        "ruidoso",
+        "céntrico"
+      ],
+      "correctAnswer": "amueblado",
+      "points": 10,
+      "topic": "vocabulario"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "title": "Futuro próximo und Gerundio – Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: Elena y yo ___ a visitar el museo.",
+      "options": [
+        "vais",
+        "vamos",
+        "van",
+        "voy"
+      ],
+      "correctAnswer": "vamos",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: Ahora estoy ___ un libro.",
+      "options": [
+        "leyendo",
+        "leyendo a",
+        "leer",
+        "leendo"
+      ],
+      "correctAnswer": "leyendo",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wähle die korrekte Form: Mis amigos están ___.",
+      "options": [
+        "dormiendo",
+        "duermen",
+        "durmiendo",
+        "dormir"
+      ],
+      "correctAnswer": "durmiendo",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Satz bezeichnet einen Plan?",
+      "options": [
+        "Ahora estoy en el cine.",
+        "Estoy yendo al cine ahora.",
+        "Voy al cine todos los días.",
+        "Voy a ir al cine mañana."
+      ],
+      "correctAnswer": "Voy a ir al cine mañana.",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "true-false",
+      "text": "Das Gerundio verändert seine Endung nicht nach der Person.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "open-ended",
+      "text": "Schreibe auf Spanisch: Normalerweise lese ich; jetzt lese ich gerade.",
+      "options": [],
+      "correctAnswer": "Normalmente leo; ahora estoy leyendo.",
+      "points": 20,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: Tú y tus padres ___ a cenar. Verwende vosotros.",
+      "options": [
+        "van",
+        "vamos",
+        "vais",
+        "vas"
+      ],
+      "correctAnswer": "vais",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche reflexive Form ist korrekt?",
+      "options": [
+        "Me estoy ducharse.",
+        "Estoy duchándome.",
+        "Estoy ducharme.",
+        "Me estoy duchándome."
+      ],
+      "correctAnswer": "Estoy duchándome.",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "true-false",
+      "text": "Futuro próximo besteht aus estar + Gerundio.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ergänze: Ahora estamos ___ al parque.",
+      "options": [
+        "yendo",
+        "iendo",
+        "vamos",
+        "ir"
+      ],
+      "correctAnswer": "yendo",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    }
+  ]
+}

@@ -1,0 +1,481 @@
+{
+  "title": "Spanish SA 26.11.2026 – Master quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Complete: A mí me ___ las películas.",
+      "options": [
+        "gustan",
+        "encanta",
+        "interesa",
+        "gusta"
+      ],
+      "correctAnswer": "gustan",
+      "points": 10,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete the reply: ¿Os interesa el fútbol? Sí, ___.",
+      "options": [
+        "nos interesan",
+        "me interesa",
+        "nos interesa",
+        "os interesa"
+      ],
+      "correctAnswer": "nos interesa",
+      "points": 10,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Choose the form: Nosotros ___ al baloncesto.",
+      "options": [
+        "juegan",
+        "jugamos",
+        "juegamos",
+        "juego"
+      ],
+      "correctAnswer": "jugamos",
+      "points": 10,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which question asks about frequency?",
+      "options": [
+        "¿Cuánto tiempo?",
+        "¿Adónde?",
+        "¿Con qué frecuencia?",
+        "¿De dónde?"
+      ],
+      "correctAnswer": "¿Con qué frecuencia?",
+      "points": 10,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "true-false",
+      "text": "In “Me gusta nadar”, an infinitive expresses the activity that is liked.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "open-ended",
+      "text": "Reply in Spanish to “Me gusta leer”: you like reading too.",
+      "options": [],
+      "correctAnswer": "A mí también.",
+      "points": 20,
+      "topic": "freizeit-und-vorwissen"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Elena y yo ___ a visitar el museo.",
+      "options": [
+        "voy",
+        "vais",
+        "van",
+        "vamos"
+      ],
+      "correctAnswer": "vamos",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Ahora estoy ___ un libro.",
+      "options": [
+        "leyendo",
+        "leyendo a",
+        "leer",
+        "leendo"
+      ],
+      "correctAnswer": "leyendo",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Choose the correct form: Mis amigos están ___.",
+      "options": [
+        "duermen",
+        "durmiendo",
+        "dormiendo",
+        "dormir"
+      ],
+      "correctAnswer": "durmiendo",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which sentence describes a plan?",
+      "options": [
+        "Estoy yendo al cine ahora.",
+        "Voy al cine todos los días.",
+        "Voy a ir al cine mañana.",
+        "Ahora estoy en el cine."
+      ],
+      "correctAnswer": "Voy a ir al cine mañana.",
+      "points": 10,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "true-false",
+      "text": "In “estoy leyendo” and “estamos leyendo”, the gerund changes with the person.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "open-ended",
+      "text": "Write in Spanish: Normally I read; now I am reading.",
+      "options": [],
+      "correctAnswer": "Normalmente leo; ahora estoy leyendo.",
+      "points": 20,
+      "topic": "futuro-y-gerundio"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: En la habitación ___ dos ventanas.",
+      "options": [
+        "hay",
+        "son",
+        "está",
+        "están"
+      ],
+      "correctAnswer": "hay",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: La cama ___ en el dormitorio.",
+      "options": [
+        "está",
+        "hay",
+        "son",
+        "es"
+      ],
+      "correctAnswer": "está",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Describe a feature of the apartment. El piso ___ luminoso.",
+      "options": [
+        "hay",
+        "es",
+        "está",
+        "están"
+      ],
+      "correctAnswer": "es",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Mi hermana ___ profesora.",
+      "options": [
+        "hay",
+        "es",
+        "están",
+        "está"
+      ],
+      "correctAnswer": "es",
+      "points": 10,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "true-false",
+      "text": "A building at a fixed location still takes estar when stating its location.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "open-ended",
+      "text": "Describe in Spanish: There is a table in the room. The table is next to the window.",
+      "options": [],
+      "correctAnswer": "En la habitación hay una mesa. La mesa está al lado de la ventana.",
+      "points": 20,
+      "topic": "vivienda-ser-estar-hay"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: La cocina es más pequeña ___ el salón.",
+      "options": [
+        "como",
+        "que",
+        "de",
+        "tan"
+      ],
+      "correctAnswer": "que",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: El salón es tan luminoso ___ la cocina.",
+      "options": [
+        "que",
+        "de",
+        "como",
+        "más"
+      ],
+      "correctAnswer": "como",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Este piso es ___ que el otro.",
+      "options": [
+        "mejores",
+        "más bueno mejor",
+        "más mejor",
+        "mejor"
+      ],
+      "correctAnswer": "mejor",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: el ___ piso y el ___ libro. (1st, 3rd)",
+      "options": [
+        "primer, tercer",
+        "primeros, terceros",
+        "primera, tercera",
+        "primero, tercero"
+      ],
+      "correctAnswer": "primer, tercer",
+      "points": 10,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "true-false",
+      "text": "In “la tercera planta”, you can replace “tercera” with “tercer” and keep the same meaning and correct grammar.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "open-ended",
+      "text": "Write in Spanish: the eighth floor, the first three rooms and the first two floors.",
+      "options": [],
+      "correctAnswer": "la octava planta, las tres primeras habitaciones y las dos primeras plantas",
+      "points": 20,
+      "topic": "comparacion-ordinales"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: El libro está ___ la mesa. (under)",
+      "options": [
+        "al lado de",
+        "encima de",
+        "delante de",
+        "debajo de"
+      ],
+      "correctAnswer": "debajo de",
+      "points": 10,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: La farmacia está al lado ___ banco.",
+      "options": [
+        "al",
+        "del",
+        "a la",
+        "de la"
+      ],
+      "correctAnswer": "del",
+      "points": 10,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Complete: Voy ___ museo.",
+      "options": [
+        "del",
+        "en el",
+        "a la",
+        "al"
+      ],
+      "correctAnswer": "al",
+      "points": 10,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which instruction means “continue straight”?",
+      "options": [
+        "girar a la derecha",
+        "tomar la segunda calle",
+        "cruzar la plaza",
+        "seguir todo recto"
+      ],
+      "correctAnswer": "seguir todo recto",
+      "points": 10,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "true-false",
+      "text": "You say “voy a pie”, but “voy en tren”.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "open-ended",
+      "text": "Give polite directions in Spanish: cross the square, continue straight and turn right.",
+      "options": [],
+      "correctAnswer": "Tiene que cruzar la plaza, seguir todo recto y girar a la derecha.",
+      "points": 20,
+      "topic": "lugares-y-direcciones"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Read: Marta vive en las afueras. Normalmente lee con su hermana. El sábado van a visitar un museo en metro. Who does Marta normally read with?",
+      "options": [
+        "Con su profesor.",
+        "Con su madre.",
+        "Con su hermana.",
+        "Con sus amigos."
+      ],
+      "correctAnswer": "Con su hermana.",
+      "points": 10,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Read: Marta vive en las afueras. El sábado van a visitar un museo en metro. How do they travel?",
+      "options": [
+        "En tren.",
+        "En coche.",
+        "En metro.",
+        "A pie."
+      ],
+      "correctAnswer": "En metro.",
+      "points": 10,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Listen to the SPANISH LISTENING POD with Ana and Pablo. Replay it if needed. Where is Pablo’s table?",
+      "options": [
+        "Enfrente de la ventana.",
+        "Debajo de la cama.",
+        "Entre dos sillas.",
+        "Al lado de la ventana."
+      ],
+      "correctAnswer": "Al lado de la ventana.",
+      "points": 10,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Listen to the SPANISH LISTENING POD with Ana and Pablo and replay it if needed. What does Ana do on Saturday morning?",
+      "options": [
+        "Va a montar en bicicleta.",
+        "Va a preparar la cena.",
+        "Va a comprar pan.",
+        "Va a estudiar."
+      ],
+      "correctAnswer": "Va a estudiar.",
+      "points": 10,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "true-false",
+      "text": "Read: Normalmente leo con mi hermana. El sábado vamos al museo. The museum visit is a plan for Saturday.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "open-ended",
+      "text": "Write 80–100 Spanish words: describe your favourite activity at home, the room, and who you like spending free time with. Use the present and near future and include a concrete plan. This is a practice word count. Use the model answer to self-check.",
+      "options": [],
+      "correctAnswer": "Example · En casa mi actividad favorita es escuchar música. Normalmente escucho música en mi habitación porque es tranquila. Mi habitación es pequeña pero luminosa. Hay una cama, un armario y un escritorio. El escritorio está al lado de la ventana y la cama está enfrente del armario. Me gusta pasar mi tiempo libre con mi hermana y mis amigos. A veces jugamos a las cartas o vamos al parque. El sábado voy a escuchar música en casa. Después voy a ir al parque con mis amigos y vamos a montar en bicicleta.",
+      "points": 20,
+      "topic": "leer-escuchar-escribir"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 6: Which word means “video game”?",
+      "options": [
+        "el videojuego",
+        "el mensaje",
+        "el portátil",
+        "el partido"
+      ],
+      "correctAnswer": "el videojuego",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 7: Which word means “bedside table”?",
+      "options": [
+        "el armario",
+        "la estantería",
+        "la mesilla de noche",
+        "el escritorio"
+      ],
+      "correctAnswer": "la mesilla de noche",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 8: Which word means “bookshop”?",
+      "options": [
+        "la zapatería",
+        "la librería",
+        "la farmacia",
+        "la panadería"
+      ],
+      "correctAnswer": "la librería",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unidad 6: Which phrase means “to hike”?",
+      "options": [
+        "hacer senderismo",
+        "montar en bicicleta",
+        "ir en bicicleta",
+        "jugar a las cartas"
+      ],
+      "correctAnswer": "hacer senderismo",
+      "points": 10,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "true-false",
+      "text": "Unidad 7: “el alquiler” means “the lift”.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "vocabulario"
+    },
+    {
+      "type": "open-ended",
+      "text": "Translate into Spanish with articles: the railway station, the bus stop and the bridge.",
+      "options": [],
+      "correctAnswer": "la estación de trenes, la parada de autobús y el puente",
+      "points": 20,
+      "topic": "vocabulario"
+    }
+  ]
+}
