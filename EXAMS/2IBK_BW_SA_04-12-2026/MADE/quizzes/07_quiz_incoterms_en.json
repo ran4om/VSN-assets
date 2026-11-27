@@ -1,0 +1,120 @@
+{
+  "title": "07 Incoterms 2020 - Topic Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Which aspects are NOT regulated by Incoterms 2020?",
+      "options": [
+        "Transfer of risk and transfer of costs between seller and buyer",
+        "Breaches of contract and consequences, payment modes, and applicable law",
+        "Procurement of means of transport and transport documents",
+        "Export, transit, and import customs formalities"
+      ],
+      "correctAnswer": "Breaches of contract and consequences, payment modes, and applicable law",
+      "points": 10,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which four Incoterms 2020 rules are the blue rules that apply exclusively to sea and inland waterway transport?",
+      "options": [
+        "EXW, FCA, CPT, CIP",
+        "DAP, DPU, DDP, EXW",
+        "FAS, FOB, CFR, CIF",
+        "FCA, CIP, DPU, FOB"
+      ],
+      "correctAnswer": "FAS, FOB, CFR, CIF",
+      "points": 5,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What characterizes Group C rules (CPT, CIP, CFR, CIF) as two-point rules?",
+      "options": [
+        "Risk and costs transfer together only at the buyer's warehouse",
+        "Risk and costs transfer together right at the seller's premises",
+        "The buyer pays main carriage costs, while the seller bears transit risk",
+        "Risk transfers early at dispatch, while the seller pays costs to the destination"
+      ],
+      "correctAnswer": "Risk transfers early at dispatch, while the seller pays costs to the destination",
+      "points": 10,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which Incoterms 2020 rule is the only one under which the seller is responsible for unloading the goods at the named destination?",
+      "options": [
+        "DPU (Delivered at Place Unloaded)",
+        "DAP (Delivered at Place)",
+        "DDP (Delivered Duty Paid)",
+        "CIF (Cost Insurance Freight)"
+      ],
+      "correctAnswer": "DPU (Delivered at Place Unloaded)",
+      "points": 10,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "BMW (Munich) ships cars by rail to Autohaus Robinson (Graz) under CPT Bahnhof Graz. Where does transport risk transfer to Autohaus Robinson?",
+      "options": [
+        "Only after full unloading at Graz station",
+        "At the Austrian border near Kufstein",
+        "Already at Munich station upon handover to the first rail carrier",
+        "Inside Autohaus Robinson's showroom in Graz"
+      ],
+      "correctAnswer": "Already at Munich station upon handover to the first rail carrier",
+      "points": 15,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "BWT ships water filters under CFR Port of Manila via Hamburg to Seda Hotels. Seawater damages the cargo during the ocean voyage. Who bears this risk?",
+      "options": [
+        "BWT AG, because BWT paid the sea freight to Manila",
+        "Seda Hotels, because risk transferred on board the vessel in Hamburg",
+        "The freight forwarder in Hamburg for 100 percent of the loss",
+        "The Manila port authority as the destination port"
+      ],
+      "correctAnswer": "Seda Hotels, because risk transferred on board the vessel in Hamburg",
+      "points": 15,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which rule represents the minimum obligation and which represents the maximum obligation for the seller?",
+      "options": [
+        "Minimum obligation: EXW; maximum obligation: DDP",
+        "Minimum obligation: DDP; maximum obligation: EXW",
+        "Minimum obligation: FOB; maximum obligation: CIF",
+        "Minimum obligation: FCA; maximum obligation: CPT"
+      ],
+      "correctAnswer": "Minimum obligation: EXW; maximum obligation: DDP",
+      "points": 5,
+      "topic": "incoterms"
+    },
+    {
+      "type": "true-false",
+      "text": "Under CIP Bahnhof Wels from Milan, the Italian seller pays for transport insurance, yet the buyer in Wels must handle any transit damage claim with the insurer.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "incoterms"
+    },
+    {
+      "type": "true-false",
+      "text": "Incoterms 2020 apply automatically to every international sales contract even if they are not incorporated into the contract.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "incoterms"
+    },
+    {
+      "type": "open-ended",
+      "text": "Explain the difference between one-point and two-point rules across the four Incoterms groups (E, F, C, D) and name the two rules that require the seller to arrange insurance.",
+      "options": [],
+      "correctAnswer": "In one-point rules (Groups E, F, and D), risk and costs transfer at the same place (e.g., EXW at seller's premises, FOB on board at shipment port, DAP at destination). In two-point rules (Group C: CPT, CIP, CFR, CIF), risk and costs transfer at two different places: risk passes early upon handover to the first carrier or on board, while the seller pays costs up to the named destination. The two rules requiring seller-arranged insurance are CIP and CIF.",
+      "points": 20,
+      "topic": "incoterms"
+    }
+  ]
+}

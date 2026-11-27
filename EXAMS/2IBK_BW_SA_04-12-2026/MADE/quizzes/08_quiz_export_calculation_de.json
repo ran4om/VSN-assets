@@ -1,0 +1,120 @@
+{
+  "title": "08 Exportkalkulation – Themenquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Biofit (Wiener Neustadt) kalkuliert Bio-Sneaker (EXW 80,00 EUR, Lkw über Wien nach Salzburg 2,50 EUR, Lkw Salzburg-Amsterdam 10,00 EUR, Verladung Amsterdam 5,00 EUR, Vorlaufversicherung 0,50 EUR, Seefracht 20,00 EUR, Seeversicherung 8,00 EUR). Wie hoch ist der Preis FOB Amsterdam pro Paar?",
+      "options": [
+        "93,00 EUR",
+        "98,00 EUR",
+        "118,00 EUR",
+        "126,00 EUR"
+      ],
+      "correctAnswer": "98,00 EUR",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welchen Preis pro Paar kalkuliert Biofit im selben Fall für CIF New York (inkl. 20,00 EUR Seefracht und 8,00 EUR Seeversicherung, ohne 5,00 EUR Landing, 12,00 EUR Zoll und 2,00 EUR Lkw Long Island)?",
+      "options": [
+        "126,00 EUR",
+        "118,00 EUR",
+        "131,00 EUR",
+        "143,00 EUR"
+      ],
+      "correctAnswer": "126,00 EUR",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Good4U Cosmetics (Düsseldorf) kalkuliert für Top Beauty (Lissabon): EXW 10.000 EUR, Lkw nach Rotterdam 300 EUR, Verladung Rotterdam 200 EUR, Seefracht 1.500 EUR, Seeversicherung 100 EUR. Wie hoch ist der Preis FAS Rotterdam?",
+      "options": [
+        "10.000 EUR",
+        "10.500 EUR",
+        "10.300 EUR",
+        "12.100 EUR"
+      ],
+      "correctAnswer": "10.300 EUR",
+      "points": 10,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Warum ergibt sich bei Good4U Cosmetics sowohl für CIF Lissabon als auch für DAP Lissabon Hafen ein Verkaufspreis von 12.100 EUR (bei versichertem Seetransport), und welche Klausel ist für Top Beauty dennoch besser?",
+      "options": [
+        "CIF Lissabon ist besser, weil Good4U bei CIF die Entladung in Lissabon zahlt",
+        "Beide Klauseln sind völlig identisch für Top Beauty",
+        "FAS Rotterdam ist besser, weil Top Beauty dort gar nichts zahlen muss",
+        "DAP Lissabon Hafen ist besser, weil Good4U das Seerisiko bis Lissabon Hafen trägt"
+      ],
+      "correctAnswer": "DAP Lissabon Hafen ist besser, weil Good4U das Seerisiko bis Lissabon Hafen trägt",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "PureFruit GmbH (Wien) liefert 1.000 Flaschen Sirup an Delicia Market (Barcelona): EXW 4.500 EUR, Lkw Wien-Hamburg 480 EUR, Verladung Hamburg 120 EUR, Seefracht 650 EUR, Seeversicherung 70 EUR, Landing Barcelona 100 EUR, Lkw zu Delicia Market 80 EUR. Wie hoch ist der Preis FOB Hamburg?",
+      "options": [
+        "4.980 EUR",
+        "5.100 EUR",
+        "5.820 EUR",
+        "6.000 EUR"
+      ],
+      "correctAnswer": "5.100 EUR",
+      "points": 10,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie hoch sind bei PureFruit GmbH die Verkaufspreise für CIF Barcelona und DDP Barcelona (innerhalb der EU, 0 EUR Zoll)?",
+      "options": [
+        "CIF Barcelona: 5.750 EUR und DDP Barcelona: 5.920 EUR",
+        "CIF Barcelona: 5.920 EUR und DDP Barcelona: 6.000 EUR",
+        "CIF Barcelona: 5.820 EUR und DDP Barcelona: 6.000 EUR",
+        "CIF Barcelona: 5.100 EUR und DDP Barcelona: 5.820 EUR"
+      ],
+      "correctAnswer": "CIF Barcelona: 5.820 EUR und DDP Barcelona: 6.000 EUR",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Kostenposition muss in der Exportkalkulation bei FOB einberechnet werden, bei FAS jedoch NICHT?",
+      "options": [
+        "Verladungskosten aufs Schiff im Verschiffungshafen",
+        "Entladungskosten (Landing) im Bestimmungshafen",
+        "Seefracht bis zum Bestimmungshafen",
+        "Einfuhrzölle im Land des Importeurs"
+      ],
+      "correctAnswer": "Verladungskosten aufs Schiff im Verschiffungshafen",
+      "points": 5,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei einer CIF-Kalkulation werden die Entladungskosten (Landing Charges) im Bestimmungshafen nicht zum Verkaufspreis des Exporteurs addiert.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei Lieferungen innerhalb der EU (z. B. Düsseldorf nach Lissabon oder Wien nach Barcelona) müssen bei DDP hohe Einfuhrzölle einkalkuliert werden.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "open-ended",
+      "text": "Berechne schrittweise die Preise für PureFruit GmbH (EXW 4.500 EUR, Lkw Wien-Hamburg 480 EUR, Verladung Hamburg 120 EUR, Seefracht 650 EUR, Seeversicherung 70 EUR, Landing Barcelona 100 EUR, Lkw Barcelona 80 EUR) für FOB Hamburg, CIF Barcelona und DDP Barcelona und nenne die beste Klausel für Verkäufer und Käufer.",
+      "options": [],
+      "correctAnswer": "FOB Hamburg: 4.500 + 480 + 120 = 5.100 EUR. CIF Barcelona: 5.100 + 650 + 70 = 5.820 EUR (ohne Landing). DDP Barcelona: 5.820 + 100 + 80 = 6.000 EUR (0 EUR Zoll innerhalb der EU). Beste Klausel für PureFruit (Exporteur): FOB Hamburg (geringste Kosten und frühester Risikoübergang). Beste Klausel für Delicia Market (Importeur): DDP Barcelona (komplette Haus-zu-Haus-Lieferung auf Kosten und Risiko von PureFruit).",
+      "points": 20,
+      "topic": "export-calculation"
+    }
+  ]
+}

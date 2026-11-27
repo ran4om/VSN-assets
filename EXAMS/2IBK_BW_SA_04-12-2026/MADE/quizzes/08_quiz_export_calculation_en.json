@@ -1,0 +1,120 @@
+{
+  "title": "08 Export Calculation - Topic Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Biofit (Wiener Neustadt) quotes organic sneakers (EXW EUR 80.00, road via Vienna to Salzburg EUR 2.50, road Salzburg-Amsterdam EUR 10.00, loading Amsterdam EUR 5.00, pre-carriage insurance EUR 0.50, sea freight EUR 20.00, marine insurance EUR 8.00). What is the FOB Amsterdam price per pair?",
+      "options": [
+        "EUR 93.00",
+        "EUR 98.00",
+        "EUR 118.00",
+        "EUR 126.00"
+      ],
+      "correctAnswer": "EUR 98.00",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "In the same Biofit case, what selling price per pair applies for CIF New York (including EUR 20.00 sea freight and EUR 8.00 marine insurance, excluding EUR 5.00 landing, EUR 12.00 duties, and EUR 2.00 Long Island road transport)?",
+      "options": [
+        "EUR 126.00",
+        "EUR 118.00",
+        "EUR 131.00",
+        "EUR 143.00"
+      ],
+      "correctAnswer": "EUR 126.00",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Good4U Cosmetics (Dusseldorf) quotes Top Beauty (Lisbon): EXW EUR 10,000, road to Rotterdam EUR 300, loading Rotterdam EUR 200, sea transport EUR 1,500, sea insurance EUR 100. What is the FAS Rotterdam price?",
+      "options": [
+        "EUR 10,000",
+        "EUR 10,500",
+        "EUR 10,300",
+        "EUR 12,100"
+      ],
+      "correctAnswer": "EUR 10,300",
+      "points": 10,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Why do both CIF Lisbon and DAP Lisbon port yield EUR 12,100 for Good4U Cosmetics (with sea insurance included), yet which clause is better for Top Beauty?",
+      "options": [
+        "CIF Lisbon is better because Good4U pays landing charges in Lisbon under CIF",
+        "Both clauses are completely identical in risk and cost for Top Beauty",
+        "FAS Rotterdam is better because Top Beauty pays no transport costs at all",
+        "DAP Lisbon port is better because Good4U bears the sea risk all the way to Lisbon port"
+      ],
+      "correctAnswer": "DAP Lisbon port is better because Good4U bears the sea risk all the way to Lisbon port",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "PureFruit GmbH (Vienna) supplies 1,000 syrup bottles to Delicia Market (Barcelona): EXW EUR 4,500, road Vienna-Hamburg EUR 480, loading Hamburg EUR 120, sea freight EUR 650, marine insurance EUR 70, landing Barcelona EUR 100, road to Delicia Market EUR 80. What is the FOB Hamburg price?",
+      "options": [
+        "EUR 4,980",
+        "EUR 5,100",
+        "EUR 5,820",
+        "EUR 6,000"
+      ],
+      "correctAnswer": "EUR 5,100",
+      "points": 10,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "For PureFruit GmbH, what are the calculated selling prices for CIF Barcelona and DDP Barcelona (intra-EU, EUR 0 import duties)?",
+      "options": [
+        "CIF Barcelona: EUR 5,750 and DDP Barcelona: EUR 5,920",
+        "CIF Barcelona: EUR 5,920 and DDP Barcelona: EUR 6,000",
+        "CIF Barcelona: EUR 5,820 and DDP Barcelona: EUR 6,000",
+        "CIF Barcelona: EUR 5,100 and DDP Barcelona: EUR 5,820"
+      ],
+      "correctAnswer": "CIF Barcelona: EUR 5,820 and DDP Barcelona: EUR 6,000",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which cost component is included in an FOB export calculation but excluded from an FAS calculation?",
+      "options": [
+        "Loading charges onto the vessel at the port of shipment",
+        "Landing charges for unloading at the destination port",
+        "Ocean sea freight to the destination port",
+        "Import customs duties in the buyer's country"
+      ],
+      "correctAnswer": "Loading charges onto the vessel at the port of shipment",
+      "points": 5,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "true-false",
+      "text": "In a CIF export calculation, landing charges at the destination port are excluded from the exporter's selling price.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "true-false",
+      "text": "For intra-EU shipments (such as Dusseldorf to Lisbon or Vienna to Barcelona), high import customs duties must be added under DDP.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "open-ended",
+      "text": "Calculate step by step the PureFruit GmbH selling prices (EXW EUR 4,500, road Vienna-Hamburg EUR 480, loading Hamburg EUR 120, sea freight EUR 650, marine insurance EUR 70, landing Barcelona EUR 100, road Barcelona EUR 80) for FOB Hamburg, CIF Barcelona, and DDP Barcelona, and state the best clause for seller and buyer.",
+      "options": [],
+      "correctAnswer": "FOB Hamburg: 4,500 + 480 + 120 = EUR 5,100. CIF Barcelona: 5,100 + 650 + 70 = EUR 5,820 (excludes landing). DDP Barcelona: 5,820 + 100 + 80 = EUR 6,000 (EUR 0 duties intra-EU). Best for PureFruit (exporter): FOB Hamburg (lowest cost and earliest risk transfer). Best for Delicia Market (importer): DDP Barcelona (full door-to-door delivery with all costs and risks borne by PureFruit).",
+      "points": 20,
+      "topic": "export-calculation"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "title": "10 Dokumenteninkasso & Dokumentenakkreditiv – Themenquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Wer ist beim Dokumentenakkreditiv der Auftraggeber und wer ist beim Dokumenteninkasso der Auftraggeber (Einreicher)?",
+      "options": [
+        "Beim Akkreditiv der Exporteur; beim Inkasso der Importeur",
+        "Beim Akkreditiv der Importeur; beim Inkasso der Exporteur",
+        "Bei beiden Verfahren immer der Importeur",
+        "Bei beiden Verfahren immer die Spedition"
+      ],
+      "correctAnswer": "Beim Akkreditiv der Importeur; beim Inkasso der Exporteur",
+      "points": 10,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches Restrisiko bleibt für den Importeur sowohl beim Dokumentenakkreditiv als auch beim Dokumenteninkasso bestehen?",
+      "options": [
+        "Dass die Banken niemals Versanddokumente prüfen",
+        "Dass die Ware mangelhaft ist, weil Banken nur Dokumente und nie die physische Ware prüfen",
+        "Dass das Akkreditiv einseitig vom Exporteur ohne Zustimmung geändert wird",
+        "Dass der Importeur vor Versand der Ware bar bezahlen muss"
+      ],
+      "correctAnswer": "Dass die Ware mangelhaft ist, weil Banken nur Dokumente und nie die physische Ware prüfen",
+      "points": 10,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie unterscheiden sich ein unbestätigtes und ein bestätigtes Dokumentenakkreditiv hinsichtlich der Bankenhaftung?",
+      "options": [
+        "Beim unbestätigten haftet nur die Akkreditivbank des Käufers; beim bestätigten haftet zusätzlich auch die Bank des Verkäufers",
+        "Beim unbestätigten haftet keine Bank; beim bestätigten haftet nur die Bank des Käufers",
+        "Beim unbestätigten haftet nur die Bank des Verkäufers; beim bestätigten haftet die Spedition",
+        "Bei beiden Formen haften beide Banken automatisch zu gleichen Teilen"
+      ],
+      "correctAnswer": "Beim unbestätigten haftet nur die Akkreditivbank des Käufers; beim bestätigten haftet zusätzlich auch die Bank des Verkäufers",
+      "points": 10,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie viele Tage nach dem Versanddatum dürfen Transportdokumente bei einem Akkreditiv maximal alt sein, wenn keine abweichende Vorlagefrist vereinbart wurde?",
+      "options": [
+        "7 Tage",
+        "10 Tage",
+        "30 Tage",
+        "21 Tage"
+      ],
+      "correctAnswer": "21 Tage",
+      "points": 5,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Warum ist das Dokumenteninkasso für den Exporteur deutlich risikoreicher als ein Dokumentenakkreditiv?",
+      "options": [
+        "Weil beim Inkasso keine Bankgarantie besteht und Annahme- sowie Transferrisiko beim Exporteur bleiben",
+        "Weil der Exporteur beim Inkasso alle Bankgebühren gesetzlich allein tragen muss",
+        "Weil der Importeur die Dokumente ohne Zahlung oder Wechselakzept erhält",
+        "Weil das Inkasso nur für Geschäfte über 100.000 EUR zulässig ist"
+      ],
+      "correctAnswer": "Weil beim Inkasso keine Bankgarantie besteht und Annahme- sowie Transferrisiko beim Exporteur bleiben",
+      "points": 15,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Worin besteht der Unterschied zwischen den Inkassoformen D/P und D/A?",
+      "options": [
+        "D/P bedeutet Zahlungsziel per Wechsel; D/A bedeutet sofortige Barzahlung",
+        "D/P ist ein bestätigtes Akkreditiv; D/A ist ein unbestätigtes Akkreditiv",
+        "D/P gilt nur für Luftfracht; D/A gilt nur für Seefracht",
+        "D/P bedeutet Zug-um-Zug-Übergabe gegen Zahlung; D/A bedeutet Übergabe gegen Akzept eines Wechsels mit Zahlungsziel"
+      ],
+      "correctAnswer": "D/P bedeutet Zug-um-Zug-Übergabe gegen Zahlung; D/A bedeutet Übergabe gegen Akzept eines Wechsels mit Zahlungsziel",
+      "points": 10,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Honigmayr GmbH liefert Honig um 8.500,00 EUR an die bekannte Hotelkette Novotel in Berlin (EU). Welche Zahlungsform ist hier am sinnvollsten?",
+      "options": [
+        "Ein bestätigtes Akkreditiv wegen sehr hohem Länderrisiko",
+        "Vollständige Vorauszahlung vor Produktion wegen mangelndem Vertrauen",
+        "Dokumenteninkasso D/P, da ein bekannter Partner, geringes Länderrisiko und ein moderater Betrag vorliegen",
+        "Ein Treuhandkonto außerhalb der EU"
+      ],
+      "correctAnswer": "Dokumenteninkasso D/P, da ein bekannter Partner, geringes Länderrisiko und ein moderater Betrag vorliegen",
+      "points": 15,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "true-false",
+      "text": "Nach den ERA/UCP-Regeln der IHK Paris ist jedes Dokumentenakkreditiv unwiderruflich und zeitlich befristet.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei einem Dokumentenakkreditiv prüfen die beteiligten Banken im Hafen persönlich die Qualität und Menge der gelieferten Ware.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "open-ended",
+      "text": "Vergleiche Dokumentenakkreditiv und Dokumenteninkasso anhand von Auftraggeber, Bankgarantie, Annahmerisiko des Exporteurs und typischem Einsatzgebiet.",
+      "options": [],
+      "correctAnswer": "Auftraggeber: Akkreditiv = Importeur (Käufer), Inkasso = Exporteur (Verkäufer). Bankgarantie: Akkreditiv bietet ein unwiderrufliches Zahlungsversprechen der Akkreditivbank (bei Bestätigung auch der avisierenden Bank); Inkasso hat keine Bankgarantie. Annahmerisiko: Beim Akkreditiv ist der Exporteur geschützt; beim Inkasso bleibt das Annahmerisiko (und Transferrisiko) beim Exporteur. Einsatzgebiet: Akkreditiv für Neukunden, hohe Beträge und höheres Länderrisiko; Inkasso für bekannte, vertrauenswürdige Partner und geringes Länderrisiko (günstiger und einfacher).",
+      "points": 20,
+      "topic": "documentary-payments"
+    }
+  ]
+}

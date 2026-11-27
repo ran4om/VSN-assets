@@ -1,0 +1,120 @@
+{
+  "title": "01 Prokura – Themenquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Welche Unternehmen dürfen nach österreichischem Unternehmensrecht (§§ 48-53 UGB) eine Prokura erteilen?",
+      "options": [
+        "Alle Einzelunternehmen unabhängig von ihrer Größe",
+        "Nur Unternehmen, die im Firmenbuch eingetragen sind",
+        "Ausschließlich börsennotierte Aktiengesellschaften",
+        "Jeder Unternehmer und jeder Handlungsbevollmächtigte"
+      ],
+      "correctAnswer": "Nur Unternehmen, die im Firmenbuch eingetragen sind",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Auf welche Weise muss eine Prokura rechtswirksam erteilt werden?",
+      "options": [
+        "Durch ausdrückliche Erklärung, entweder schriftlich oder mündlich",
+        "Durch schlüssiges Handeln bei wiederholter Rechnungsfreigabe",
+        "Durch automatische Beförderung nach fünf Dienstjahren",
+        "Ausschließlich durch notariellen Vertrag vor Gericht"
+      ],
+      "correctAnswer": "Durch ausdrückliche Erklärung, entweder schriftlich oder mündlich",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches Geschäft darf ein Prokurist im Rahmen der gesetzlichen Prokura NICHT durchführen?",
+      "options": [
+        "Mitarbeiterinnen und Mitarbeiter einstellen oder kündigen",
+        "Einen Bankkredit für den laufenden Betrieb aufnehmen",
+        "Das Unternehmen in einem Rechtsstreit vor Gericht vertreten",
+        "Ein Grundstück des Unternehmens verkaufen oder belasten"
+      ],
+      "correctAnswer": "Ein Grundstück des Unternehmens verkaufen oder belasten",
+      "points": 10,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Die Geschäftsführung verbietet Prokuristin Nesrin Kaya intern Käufe über 9.500,00 EUR. Sie kauft dennoch einen Lieferwagen um 65.000,00 EUR. Welche Rechtsfolge tritt ein?",
+      "options": [
+        "Der Kaufvertrag ist gegenüber dem Autohändler ungültig und wird rückabgewickelt",
+        "Der Kaufvertrag gilt erst, wenn der Autohändler im Firmenbuch nachfragt",
+        "Der Kaufvertrag ist im Außenverhältnis gültig; intern drohen Schadenersatz und Kündigung",
+        "Die Prokura erlischt automatisch vor Abschluss des Kaufvertrags"
+      ],
+      "correctAnswer": "Der Kaufvertrag ist im Außenverhältnis gültig; intern drohen Schadenersatz und Kündigung",
+      "points": 15,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Art der Prokura zwingt einen Prokuristen dazu, nur gemeinsam mit einem Geschäftsführer oder Vorstandsmitglied zu handeln?",
+      "options": [
+        "Einzelprokura",
+        "Gesamtprokura",
+        "Filialprokura",
+        "Gemischte Prokura"
+      ],
+      "correctAnswer": "Gemischte Prokura",
+      "points": 10,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie unterschreibt Prokurist Günter Eibensteiner korrekt für die ATZ Sonnenschutztechnik e. U.?",
+      "options": [
+        "ATZ Sonnenschutztechnik e. U. / i. A. Günter Eibensteiner",
+        "ATZ Sonnenschutztechnik e. U. / ppa. Günter Eibensteiner",
+        "ATZ Sonnenschutztechnik e. U. / i. V. Günter Eibensteiner",
+        "ATZ Sonnenschutztechnik e. U. / p. A. Günter Eibensteiner"
+      ],
+      "correctAnswer": "ATZ Sonnenschutztechnik e. U. / ppa. Günter Eibensteiner",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Sabine Mitterlehner ist Einzelprokuristin der Kaboom Elektrotechnik GmbH. Welche der folgenden Handlungen ist ihr gesetzlich erlaubt?",
+      "options": [
+        "Die jährliche Bilanz des Unternehmens unterschreiben",
+        "Den Firmennamen der GmbH eigenständig ändern",
+        "Ihrer Kollegin Karin Kofler eine Spezialvollmacht erteilen",
+        "Ihre eigene Prokura auf einen Stellvertreter übertragen"
+      ],
+      "correctAnswer": "Ihrer Kollegin Karin Kofler eine Spezialvollmacht erteilen",
+      "points": 10,
+      "topic": "prokura"
+    },
+    {
+      "type": "true-false",
+      "text": "Jede Erteilung und Aufhebung einer Prokura muss im Firmenbuch eingetragen und über die Plattform EVI verlautbart werden.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Prokurist darf bei Bedarf weitere Prokuristen ernennen, solange die Geschäftsführung nicht widerspricht.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "open-ended",
+      "text": "Nenne die vier Arten der Prokura und erkläre kurz, warum Unternehmen häufig eine Gesamtprokura einsetzen.",
+      "options": [],
+      "correctAnswer": "Die vier Arten sind Einzelprokura, Gesamtprokura, Gemischte Prokura und Filialprokura. Unternehmen setzen die Gesamtprokura ein, weil der Prokurist nur gemeinsam mit einem oder mehreren anderen Prokuristen handeln darf; dadurch wird das Vier-Augen-Prinzip (geteilte Verantwortung und gegenseitige Kontrolle) sichergestellt.",
+      "points": 20,
+      "topic": "prokura"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "title": "03 Echter Arbeitsvertrag & Sonderformen – Themenquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Welches Merkmal ist typisch für einen Arbeitnehmer mit einem \"echten\" Arbeitsvertrag?",
+      "options": [
+        "Er trägt das volle wirtschaftliche Risiko des Unternehmens",
+        "Er darf sich jederzeit frei durch Dritte vertreten lassen",
+        "Er stellt seine persönliche Arbeitskraft weisungsgebunden zur Verfügung",
+        "Er meldet sich selbstständig bei der SVS an"
+      ],
+      "correctAnswer": "Er stellt seine persönliche Arbeitskraft weisungsgebunden zur Verfügung",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Stelle ist beim \"echten\" Arbeitsvertrag für die Anmeldung zur Sozialversicherung zuständig und bei welcher Kasse erfolgt sie?",
+      "options": [
+        "Der Arbeitgeber meldet den Arbeitnehmer bei der ÖGK an",
+        "Der Arbeitnehmer meldet sich selbst bei der ÖGK an",
+        "Der Arbeitgeber meldet den Arbeitnehmer bei der SVS an",
+        "Der Arbeitnehmer meldet sich selbst bei der SVS an"
+      ],
+      "correctAnswer": "Der Arbeitgeber meldet den Arbeitnehmer bei der ÖGK an",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie wird die Einkommensteuer beim \"echten\" Arbeitsvertrag grundsätzlich abgeführt?",
+      "options": [
+        "Der Arbeitnehmer reicht verpflichtend eine eigene Einkommensteuererklärung ein",
+        "Der Arbeitgeber behält die Lohnsteuer ein und überweist sie ans Finanzamt",
+        "Es fallen bei unselbstständiger Arbeit keine Steuern an",
+        "Die ÖGK zieht die Lohnsteuer direkt vom Arbeitgeberkonto ab"
+      ],
+      "correctAnswer": "Der Arbeitgeber behält die Lohnsteuer ein und überweist sie ans Finanzamt",
+      "points": 10,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie viele Stunden Pflichtpraktikum müssen HAK-Schülerinnen und -Schüler zwischen dem II. und vor Eintritt in den V. Jahrgang absolvieren?",
+      "options": [
+        "150 Stunden während der regulären Unterrichtszeit",
+        "200 Stunden ausschließlich im letzten Schuljahr",
+        "400 Stunden aufgeteilt auf zwei Betriebe",
+        "300 Stunden in der unterrichtsfreien Zeit"
+      ],
+      "correctAnswer": "300 Stunden in der unterrichtsfreien Zeit",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Amara Hadic arbeitet samstags bei H&M und verdient monatlich unter der Geringfügigkeitsgrenze. Welche Versicherung schließt der Arbeitgeber für sie ab?",
+      "options": [
+        "Nur die Unfallversicherung",
+        "Kranken-, Pensions- und Arbeitslosenversicherung",
+        "Nur die Kranken- und Pensionsversicherung",
+        "Gar keine gesetzliche Sozialversicherung"
+      ],
+      "correctAnswer": "Nur die Unfallversicherung",
+      "points": 10,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Ansprüche haben geringfügig Beschäftigte gegenüber ihrem Arbeitgeber?",
+      "options": [
+        "Nur den vereinbarten Stundenlohn ohne weitere Ansprüche",
+        "Bezahlten Urlaub, aber weder Krankenstand-Fortzahlung noch Sonderzahlungen",
+        "Bezahlten Urlaub, Entgeltfortzahlung im Krankheitsfall und Sonderzahlungen",
+        "Nur Sonderzahlungen, aber keinen Anspruch auf bezahlten Urlaub"
+      ],
+      "correctAnswer": "Bezahlten Urlaub, Entgeltfortzahlung im Krankheitsfall und Sonderzahlungen",
+      "points": 15,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Eine Buchhalterin arbeitet täglich im Büro einer Tischlerei mit Firmencomputer, hält fixe Arbeitszeiten ein und befolgt Weisungen der Chefin. Welcher Vertrag liegt vor?",
+      "options": [
+        "Freier Dienstvertrag",
+        "\"Echter\" Arbeitsvertrag",
+        "Werkvertrag",
+        "Geringfügiger Werkauftrag"
+      ],
+      "correctAnswer": "\"Echter\" Arbeitsvertrag",
+      "points": 10,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Ferialjob ist immer ein \"echter\" Arbeitsvertrag mit vollem Anspruch auf bezahlten Urlaub, Entgeltfortzahlung im Krankheitsfall und Sonderzahlungen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein \"echter\" Arbeitsvertrag ist in Österreich nur dann rechtsgültig, wenn er schriftlich abgeschlossen wird.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "open-ended",
+      "text": "Erkläre die fünf wichtigsten Merkmale eines Arbeitnehmers im \"echten\" Arbeitsvertrag und nenne seine drei zentralen gesetzlichen Nebenansprüche neben Lohn/Gehalt.",
+      "options": [],
+      "correctAnswer": "Fünf Merkmale: (1) schuldet persönliche Arbeitskraft, (2) ist an Weisungen gebunden, (3) hält fixe Arbeitszeiten und Arbeitsort ein, (4) nutzt Arbeitsmittel des Arbeitgebers, (5) trägt kein wirtschaftliches Risiko. Drei zentrale Nebenansprüche: bezahlter Urlaub, Entgeltfortzahlung im Krankheitsfall und Sonderzahlungen (Urlaubszuschuss und Weihnachtsgeld).",
+      "points": 20,
+      "topic": "employment-contract"
+    }
+  ]
+}

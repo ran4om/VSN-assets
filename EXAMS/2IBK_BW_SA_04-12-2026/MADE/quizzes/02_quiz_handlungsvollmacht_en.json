@@ -1,0 +1,120 @@
+{
+  "title": "02 Commercial Power of Attorney & Comparison - Topic Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Which transactions does a Commercial Power of Attorney (sections 54-58 UGB) generally cover?",
+      "options": [
+        "All ordinary and extraordinary transactions of any business",
+        "Only real estate sales and corporate restructurings",
+        "Exclusively ordinary transactions of a specific business",
+        "Only representing the company in court proceedings"
+      ],
+      "correctAnswer": "Exclusively ordinary transactions of a specific business",
+      "points": 5,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Massimo Blardone orders coffee beans four times for his cafe without asking, and his boss pays every invoice. How was his Commercial Power of Attorney granted?",
+      "options": [
+        "By implied conduct",
+        "By entry in the Commercial Register",
+        "By a court decision",
+        "By Mixed Prokura"
+      ],
+      "correctAnswer": "By implied conduct",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which two actions are allowed for a Prokurist but legally forbidden for a holder of a Commercial Power of Attorney?",
+      "options": [
+        "Buying merchandise and paying salaries",
+        "Taking out loans and representing the company in court",
+        "Advising customers and agreeing on delivery dates",
+        "Selling goods and checking supplier invoices"
+      ],
+      "correctAnswer": "Taking out loans and representing the company in court",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ricarda Egger manages a C&A branch and may carry out all ordinary transactions of the branch. Which type of authority and signature prefix apply?",
+      "options": [
+        "Special Power of Attorney with the prefix i. A.",
+        "Category Power of Attorney with the prefix pp.",
+        "Branch Prokura with the prefix i. V.",
+        "General Power of Attorney with the prefix i. V."
+      ],
+      "correctAnswer": "General Power of Attorney with the prefix i. V.",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Florian Neuhaus receives a one-time task to buy one new mirror for a C&A fitting room. Which type of Commercial Power of Attorney is this?",
+      "options": [
+        "Special Power of Attorney",
+        "General Power of Attorney",
+        "Category Power of Attorney",
+        "Sole Prokura"
+      ],
+      "correctAnswer": "Special Power of Attorney",
+      "points": 5,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "When do internal restrictions on a Commercial Power of Attorney take legal effect against third parties?",
+      "options": [
+        "Never, because internal limits cannot bind external parties",
+        "Only if they were published in the Commercial Register via EVI",
+        "If the third party knows or ought to know about the restriction",
+        "Only for contract amounts exceeding EUR 40,000.00"
+      ],
+      "correctAnswer": "If the third party knows or ought to know about the restriction",
+      "points": 15,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Under what condition may Fadil Berisha transfer his Commercial Power of Attorney to another person?",
+      "options": [
+        "At any time without asking during vacation or illness",
+        "Only with the consent of the entrepreneur or a Prokurist",
+        "Never, because any transfer is strictly forbidden by law",
+        "As soon as the recipient is listed in the Commercial Register"
+      ],
+      "correctAnswer": "Only with the consent of the entrepreneur or a Prokurist",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "true-false",
+      "text": "Just like Prokura, a Commercial Power of Attorney must be entered in the Commercial Register.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "true-false",
+      "text": "Both Category Power of Attorney and Special Power of Attorney are signed with the prefix i. A.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "open-ended",
+      "text": "State four major differences between Prokura and a Commercial Power of Attorney.",
+      "options": [],
+      "correctAnswer": "1. Who may grant it: Prokura only by Commercial Register companies; Commercial Power of Attorney by any entrepreneur or Prokurist. 2. Registration: Prokura requires Commercial Register entry plus EVI publication; Commercial Power of Attorney is not registered. 3. Scope: Prokura covers all business transactions including loans and court representation; Commercial Power of Attorney covers only ordinary transactions of that business, excluding loans and court. 4. Internal caps, signature, transfer: Internal limits on Prokura do not bind third parties (pp./ppa., non-transferable); on Commercial Power of Attorney they bind if known or ought to be known (i. V. or i. A., transferable with consent).",
+      "points": 20,
+      "topic": "handlungsvollmacht"
+    }
+  ]
+}

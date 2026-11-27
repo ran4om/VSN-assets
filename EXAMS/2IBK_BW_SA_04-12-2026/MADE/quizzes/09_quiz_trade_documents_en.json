@@ -1,0 +1,120 @@
+{
+  "title": "09 Documents in Foreign Trade - Topic Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Which transport document is issued for ocean shipping by container vessel (such as Shanghai to Rotterdam)?",
+      "options": [
+        "Road Consignment Note (CMR)",
+        "Air Waybill (AWB)",
+        "Bill of Lading (B/L)",
+        "Rail Consignment Note (CIM)"
+      ],
+      "correctAnswer": "Bill of Lading (B/L)",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A company ships goods by truck from Innsbruck to Switzerland. Which transport document is required?",
+      "options": [
+        "Road Consignment Note (CMR)",
+        "Inland Waterway Bill of Lading",
+        "FIATA Multimodal Transport Bill of Lading (FIATA MTD)",
+        "Ocean Bill of Lading (B/L)"
+      ],
+      "correctAnswer": "Road Consignment Note (CMR)",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which document is used when goods travel combined by truck from Klagenfurt to Trieste and then onward by sea vessel?",
+      "options": [
+        "Air Waybill (AWB)",
+        "FIATA Multimodal Transport Bill of Lading (FIATA MTD)",
+        "Rail Consignment Note (CIM)",
+        "Movement Certificate A.TR"
+      ],
+      "correctAnswer": "FIATA Multimodal Transport Bill of Lading (FIATA MTD)",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What clearly distinguishes a Pro Forma Invoice from a Commercial Invoice?",
+      "options": [
+        "A Pro Forma Invoice is issued after payment and replaces the Certificate of Origin",
+        "A Commercial Invoice is used only for customs valuation without payment obligation",
+        "Both invoices create the exact same legally binding payment obligation",
+        "A Pro Forma Invoice is issued before shipment with no payment obligation for customs or permit purposes"
+      ],
+      "correctAnswer": "A Pro Forma Invoice is issued before shipment with no payment obligation for customs or permit purposes",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the purpose of a Movement Certificate (EUR.1 or A.TR) under free trade agreements such as EU-Mexico?",
+      "options": [
+        "It confirms marine insurance coverage at 110 percent of value",
+        "It grants duty-free entry or reduced import tariffs in the partner country",
+        "It authorizes exports of military drones by the government ministry",
+        "It replaces the consignment note for international rail shipments"
+      ],
+      "correctAnswer": "It grants duty-free entry or reduced import tariffs in the partner country",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Under standard bank documentation rules (RLB Upper Austria), what insured amount must a negotiable insurance policy typically cover for CIF/CIP shipments?",
+      "options": [
+        "110% of the CIF or CIP value",
+        "80% of the EXW value",
+        "100% of sea freight charges only",
+        "150% of customs duty value"
+      ],
+      "correctAnswer": "110% of the CIF or CIP value",
+      "points": 15,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Schiebel (Wiener Neustadt) exports its Camcopter S-100 helicopter drone. Which document must it obtain from Austria's Federal Ministry of Labour and Economy for each export?",
+      "options": [
+        "A preferential Certificate of Origin GSP Form A",
+        "A packing list showing package weights",
+        "An export license for military or dual-use high-tech goods",
+        "A Forwarders Certificate of Receipt (FCR)"
+      ],
+      "correctAnswer": "An export license for military or dual-use high-tech goods",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "true-false",
+      "text": "International railway shipments (such as a freight train from Romania to Poland) use the Rail Consignment Note (CIM).",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "true-false",
+      "text": "A freight forwarder always performs the physical transport itself and never hires external carriers.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "open-ended",
+      "text": "Name all six transport modes in foreign trade together with their matching transport document, and briefly explain the purpose of a Certificate of Origin.",
+      "options": [],
+      "correctAnswer": "Sea vessel: Bill of Lading (B/L); Inland waterway vessel: Inland Waterway Bill of Lading; Aircraft: Air Waybill (AWB); Railway: Rail Consignment Note (CIM); Truck: Road Consignment Note (CMR); Combined/multimodal transport: FIATA Multimodal Transport Bill of Lading (FIATA MTD). A Certificate of Origin (issued by a Chamber of Commerce) proves the country of manufacture for export and import trade control.",
+      "points": 20,
+      "topic": "trade-documents"
+    }
+  ]
+}

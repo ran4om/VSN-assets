@@ -1,0 +1,120 @@
+{
+  "title": "05 Globalisierung & Außenhandel – Themenquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Welche beiden technologischen Entwicklungen gelten als zentrale Treiber der modernen Globalisierung?",
+      "options": [
+        "Dampflokomotiven und gedruckte Tageszeitungen",
+        "Transporttechnologie (Massengut- und Containerschiffe) sowie Kommunikationstechnologie (Internet und E-Mail)",
+        "Ausschließlich Luftpost und lokale Handwerksbetriebe",
+        "Nationale Zollschranken und Papierarchive"
+      ],
+      "correctAnswer": "Transporttechnologie (Massengut- und Containerschiffe) sowie Kommunikationstechnologie (Internet und E-Mail)",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Rauch Fruchtsäfte kauft Orangensaftkonzentrat in Brasilien, produziert \"Happy Day\" in Österreich und verkauft den Saft nach Katar. Welche Rollen übernimmt Rauch dabei?",
+      "options": [
+        "Gegenüber Brasilien Exporteur und gegenüber Katar Importeur",
+        "In beiden Ländern ausschließlich Importeur",
+        "Gegenüber Brasilien Importeur und gegenüber Katar Exporteur",
+        "In beiden Ländern ausschließlich Exporteur"
+      ],
+      "correctAnswer": "Gegenüber Brasilien Importeur und gegenüber Katar Exporteur",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches Beispiel verdeutlicht die Außenhandelsursache \"starkes internationales Markenimage\"?",
+      "options": [
+        "Kaffee aus Brasilien und Erdöl aus der Nordsee",
+        "Käseüberschuss aus Holland",
+        "Skiproduktion in Österreich",
+        "Swarovski und Red Bull"
+      ],
+      "correctAnswer": "Swarovski und Red Bull",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie hoch war der österreichische Exportwert im Jahr 2024 laut WKO und wie viele Unternehmen exportieren aus Österreich?",
+      "options": [
+        "203 Mrd. EUR Exportwert bei mehr als 63.000 Exportunternehmen",
+        "63 Mrd. EUR Exportwert bei rund 20.000 Exportunternehmen",
+        "450 Mrd. EUR Exportwert bei weniger als 10.000 Exportunternehmen",
+        "120 Mrd. EUR Exportwert bei genau 100.000 Exportunternehmen"
+      ],
+      "correctAnswer": "203 Mrd. EUR Exportwert bei mehr als 63.000 Exportunternehmen",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche vier Länder zählen zu Österreichs wichtigsten Handelspartnern im Export?",
+      "options": [
+        "Frankreich, Spanien, Brasilien und Katar",
+        "Deutschland, USA, Italien und Schweiz",
+        "China, Japan, Polen und Schweden",
+        "Ungarn, Griechenland, Portugal und Kanada"
+      ],
+      "correctAnswer": "Deutschland, USA, Italien und Schweiz",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher typische Nachteil der Globalisierung betrifft vor allem Entwicklungsländer?",
+      "options": [
+        "Abwanderung hochbezahlter Forschungszentren ins Inland",
+        "Zu hohe Importpreise für heimische Rohstoffe",
+        "Ausbeutung von Arbeitskräften, Umweltschäden, Gewinnabfluss an TNCs und Brain Drain",
+        "Verlust der Möglichkeit, ausländische Direktinvestitionen anzuziehen"
+      ],
+      "correctAnswer": "Ausbeutung von Arbeitskräften, Umweltschäden, Gewinnabfluss an TNCs und Brain Drain",
+      "points": 15,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was misst die volkswirtschaftliche bzw. betriebswirtschaftliche Exportquote?",
+      "options": [
+        "Den Anteil der Exporte an der Wirtschaftsleistung (BIP) bzw. am Unternehmensumsatz",
+        "Die Anzahl der Länder, in die ein Unternehmen Waren importiert",
+        "Die Differenz zwischen Wechselkurs und Einfuhrzoll",
+        "Den Prozentsatz der ausländischen Mitarbeiter in einem Konzern"
+      ],
+      "correctAnswer": "Den Anteil der Exporte an der Wirtschaftsleistung (BIP) bzw. am Unternehmensumsatz",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "true-false",
+      "text": "Fernhandel ist kein rein modernes Phänomen, wie etwa die Seidenstraße zwischen China und Europa im Mittelalter zeigt.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "true-false",
+      "text": "Transnationale Konzerne (TNCs) operieren ausschließlich innerhalb ihres Heimatlandes, damit Entscheidungen andere Länder nicht beeinflussen.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "open-ended",
+      "text": "Warum ist der Außenhandel für Österreich wirtschaftlich unverzichtbar? Nenne zentrale Gründe, aktuelle Kennzahlen und zwei Herausforderungen beim Markteintritt im Ausland.",
+      "options": [],
+      "correctAnswer": "Österreich hat einen kleinen Inlandsmarkt und begrenzte Rohstoffe. Über 63.000 Exportunternehmen liefern Waren im Wert von 203 Mrd. EUR (2024) in über 200 Länder (Hauptpartner: Deutschland, USA, Italien, Schweiz; Top-Branchen: Maschinenbau, Chemie, Fahrzeugbau, Stahl/Metall, Nahrungsmittel/Getränke) und sichern Arbeitsplätze und Wohlstand. Herausforderungen beim Going International: z. B. Sprachbarrieren, kulturelle Unterschiede, fremde Rechtssysteme, Wechselkursschwankungen, lange Transportwege/Zoll, politische Instabilität und lokale Konkurrenz.",
+      "points": 20,
+      "topic": "globalisation"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "title": "04 Freelance Service Contract & Contract for Work - Topic Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "How does a Freelance Service Contract fundamentally differ from a Regular Employment Contract?",
+      "options": [
+        "The freelance worker is not bound by instructions, fixed working hours, or workplace",
+        "The freelance worker is legally required to supply their own work equipment",
+        "The freelance worker registers independently with the SVS",
+        "The freelance worker receives paid vacation and special payments"
+      ],
+      "correctAnswer": "The freelance worker is not bound by instructions, fixed working hours, or workplace",
+      "points": 5,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Who provides the work equipment under a Freelance Service Contract and who registers the worker with the OeGK?",
+      "options": [
+        "The freelance worker uses own equipment and registers with the OeGK",
+        "The employer provides the work equipment and registers the worker with the OeGK",
+        "The employer provides the work equipment and registers the worker with the SVS",
+        "The freelance worker uses own equipment and the employer registers with the SVS"
+      ],
+      "correctAnswer": "The employer provides the work equipment and registers the worker with the OeGK",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Johannes Hackl redesigns the Sport4U GmbH website at home on his own laptop for a EUR 12,000.00 fee payable upon defect-free completion. Which contract applies?",
+      "options": [
+        "Regular Employment Contract",
+        "Freelance Service Contract",
+        "Contract for Work",
+        "Marginal Employment Contract"
+      ],
+      "correctAnswer": "Contract for Work",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "With which social insurance institution must a contractor under a Contract for Work register independently in Austria?",
+      "options": [
+        "With the OeGK for health and unemployment insurance",
+        "With the tax office via monthly wage tax deduction",
+        "With the AUVA exclusively for accident insurance",
+        "With the SVS for health, pension, and accident insurance"
+      ],
+      "correctAnswer": "With the SVS for health, pension, and accident insurance",
+      "points": 5,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Lisa Wenig writes three regional articles per week for Kronen Zeitung on an ongoing basis with free choice of time and place and no instructions. Which contract applies?",
+      "options": [
+        "Contract for Work",
+        "Freelance Service Contract",
+        "Regular Employment Contract",
+        "Mandatory Internship"
+      ],
+      "correctAnswer": "Freelance Service Contract",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Thea Brandt builds a customer database for AT&S for EUR 18,900.00 payable on completion. May she delegate parts of the work to a programmer friend?",
+      "options": [
+        "No, because she must perform all work strictly in person",
+        "Only if AT&S first registers the friend with the OeGK",
+        "Yes, because there is no personal duty; she remains liable for warranty",
+        "Yes, and full warranty liability transfers immediately to AT&S"
+      ],
+      "correctAnswer": "Yes, because there is no personal duty; she remains liable for warranty",
+      "points": 15,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How do both freelance service workers and contractors pay income tax to the tax office?",
+      "options": [
+        "Independently by filing an income tax return",
+        "Automatically through wage tax deducted by the client",
+        "Through monthly deductions processed by the OeGK",
+        "Not at all as long as fees remain below EUR 20,000.00"
+      ],
+      "correctAnswer": "Independently by filing an income tax return",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "true-false",
+      "text": "Neither freelance service workers nor contractors are entitled to paid vacation, sick pay, or special payments.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "true-false",
+      "text": "Just like a contractor under a Contract for Work, a freelance service worker bears the full economic risk.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "open-ended",
+      "text": "Compare the Freelance Service Contract and the Contract for Work by naming two similarities and three clear differences.",
+      "options": [],
+      "correctAnswer": "Similarities: no personal dependency (free in time, place, and instructions), no paid vacation, sick pay, or special payments, and self-taxation via income tax return. Differences: (1) Object: ongoing labor vs. a concrete finished result; (2) Equipment and risk: employer supplies equipment and bears risk vs. contractor uses own equipment, bears own economic risk, and has warranty liability; (3) Social insurance: employer registers with OeGK vs. contractor registers independently with SVS.",
+      "points": 20,
+      "topic": "freelance-work-contract"
+    }
+  ]
+}

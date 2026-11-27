@@ -1,0 +1,120 @@
+{
+  "title": "05 Globalisation & International Business - Topic Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Which two technological developments are considered key drivers of modern globalisation?",
+      "options": [
+        "Steam locomotives and printed daily newspapers",
+        "Transport technology (bulk carriers and container ships) and communications technology (Internet and email)",
+        "Exclusively airmail and local craft workshops",
+        "National tariff barriers and paper archives"
+      ],
+      "correctAnswer": "Transport technology (bulk carriers and container ships) and communications technology (Internet and email)",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Rauch Fruit Juices buys orange juice concentrate in Brazil, produces Happy Day in Austria, and sells the juice to Qatar. Which roles does Rauch perform?",
+      "options": [
+        "Exporter toward Brazil and importer toward Qatar",
+        "Exclusively an importer in both countries",
+        "Importer toward Brazil and exporter toward Qatar",
+        "Exclusively an exporter in both countries"
+      ],
+      "correctAnswer": "Importer toward Brazil and exporter toward Qatar",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which example illustrates a strong international brand image as a cause of foreign trade?",
+      "options": [
+        "Coffee from Brazil and crude oil from the North Sea",
+        "Domestic cheese surplus from Holland",
+        "Ski manufacturing specialization in Austria",
+        "Swarovski and Red Bull"
+      ],
+      "correctAnswer": "Swarovski and Red Bull",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "According to WKO data, what was Austria's export volume in 2024 and how many companies export from Austria?",
+      "options": [
+        "EUR 203 billion export volume with more than 63,000 exporting companies",
+        "EUR 63 billion export volume with around 20,000 exporting companies",
+        "EUR 450 billion export volume with fewer than 10,000 exporting companies",
+        "EUR 120 billion export volume with exactly 100,000 exporting companies"
+      ],
+      "correctAnswer": "EUR 203 billion export volume with more than 63,000 exporting companies",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which four countries are Austria's main export trading partners?",
+      "options": [
+        "France, Spain, Brazil, and Qatar",
+        "Germany, the USA, Italy, and Switzerland",
+        "China, Japan, Poland, and Sweden",
+        "Hungary, Greece, Portugal, and Canada"
+      ],
+      "correctAnswer": "Germany, the USA, Italy, and Switzerland",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which typical disadvantage of globalisation affects developing countries in particular?",
+      "options": [
+        "Offshoring of high-paid domestic research centers",
+        "Excessively high import prices for domestic commodities",
+        "Labor exploitation, environmental pollution, profit outflow to TNCs, and brain drain",
+        "Loss of the ability to attract foreign direct investment"
+      ],
+      "correctAnswer": "Labor exploitation, environmental pollution, profit outflow to TNCs, and brain drain",
+      "points": 15,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What does the export ratio measure for a country or a company?",
+      "options": [
+        "The exported share of a country's GDP or a company's output",
+        "The number of countries from which a company imports commodities",
+        "The difference between the exchange rate and import customs duties",
+        "The percentage of foreign staff employed by a corporation"
+      ],
+      "correctAnswer": "The exported share of a country's GDP or a company's output",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "true-false",
+      "text": "Long-distance trade is not purely a modern phenomenon, as illustrated by the Silk Road linking China and Europe in the Middle Ages.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "true-false",
+      "text": "Transnational Corporations (TNCs) operate solely inside their home country so that their decisions do not affect people in other nations.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "open-ended",
+      "text": "Why is foreign trade essential for Austria's economy? Include key figures and name two challenges companies face when going international.",
+      "options": [],
+      "correctAnswer": "Austria has a small domestic market and limited natural resources. Over 63,000 companies export EUR 203 billion (2024) to 200+ countries (main partners: Germany, USA, Italy, Switzerland; key sectors: mechanical engineering, chemicals, vehicles, steel/metal goods, food/beverages), securing jobs and prosperity. Going international challenges include language barriers, cultural differences, unfamiliar legal systems, exchange rate volatility, long transport routes and customs, political instability, and local competition.",
+      "points": 20,
+      "topic": "globalisation"
+    }
+  ]
+}

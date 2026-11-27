@@ -1,0 +1,120 @@
+{
+  "title": "01 Prokura - Topic Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Which companies are legally permitted to grant Prokura under Austrian business law (sections 48-53 UGB)?",
+      "options": [
+        "All sole proprietorships regardless of their size",
+        "Only companies entered in the Commercial Register",
+        "Exclusively publicly listed stock corporations",
+        "Any entrepreneur and any commercial agent"
+      ],
+      "correctAnswer": "Only companies entered in the Commercial Register",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How must Prokura be legally granted?",
+      "options": [
+        "By express declaration, either in writing or orally",
+        "By implied conduct through repeated invoice approval",
+        "By automatic promotion after five years of service",
+        "Exclusively through a notarized contract in court"
+      ],
+      "correctAnswer": "By express declaration, either in writing or orally",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which transaction is a holder of Prokura NOT allowed to carry out under statutory Prokura?",
+      "options": [
+        "Hiring or dismissing company employees",
+        "Taking out a bank loan for business operations",
+        "Representing the company in a dispute in court",
+        "Selling or encumbering company real estate"
+      ],
+      "correctAnswer": "Selling or encumbering company real estate",
+      "points": 10,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Management internally bans Prokurist Nesrin Kaya from purchases above EUR 9,500.00. She still buys a delivery van for EUR 65,000.00. What is the legal consequence?",
+      "options": [
+        "The purchase contract with the car dealer is void and must be reversed",
+        "The purchase contract applies only if the dealer checks the register first",
+        "The contract is valid externally; internally she faces damages and dismissal",
+        "Her Prokura terminates automatically before the contract is signed"
+      ],
+      "correctAnswer": "The contract is valid externally; internally she faces damages and dismissal",
+      "points": 15,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which type of Prokura requires the holder to act only jointly with a managing director or board member?",
+      "options": [
+        "Sole Prokura",
+        "Joint Prokura",
+        "Branch Prokura",
+        "Mixed Prokura"
+      ],
+      "correctAnswer": "Mixed Prokura",
+      "points": 10,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How does Prokurist Gunter Eibensteiner correctly sign for ATZ Sonnenschutztechnik e. U.?",
+      "options": [
+        "ATZ Sonnenschutztechnik e. U. / i. A. Gunter Eibensteiner",
+        "ATZ Sonnenschutztechnik e. U. / ppa. Gunter Eibensteiner",
+        "ATZ Sonnenschutztechnik e. U. / i. V. Gunter Eibensteiner",
+        "ATZ Sonnenschutztechnik e. U. / p. A. Gunter Eibensteiner"
+      ],
+      "correctAnswer": "ATZ Sonnenschutztechnik e. U. / ppa. Gunter Eibensteiner",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Sabine Mitterlehner holds Sole Prokura at Kaboom Elektrotechnik GmbH. Which of the following actions is she legally allowed to perform?",
+      "options": [
+        "Signing the company's annual balance sheet",
+        "Changing the company name on her own",
+        "Granting a special power of attorney to Karin Kofler",
+        "Transferring her own Prokura to a deputy"
+      ],
+      "correctAnswer": "Granting a special power of attorney to Karin Kofler",
+      "points": 10,
+      "topic": "prokura"
+    },
+    {
+      "type": "true-false",
+      "text": "Every grant and revocation of Prokura must be entered in the Commercial Register and published via the EVI platform.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "true-false",
+      "text": "A holder of Prokura may appoint additional Prokurists whenever needed, provided management does not object.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "open-ended",
+      "text": "Name the four types of Prokura and briefly explain why companies often use Joint Prokura.",
+      "options": [],
+      "correctAnswer": "The four types are Sole Prokura, Joint Prokura, Mixed Prokura, and Branch Prokura. Companies use Joint Prokura because the holder may act only together with one or more other Prokurists, enforcing the four-eyes principle for shared responsibility and mutual control.",
+      "points": 20,
+      "topic": "prokura"
+    }
+  ]
+}

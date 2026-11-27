@@ -1,0 +1,120 @@
+{
+  "title": "09 Dokumente im Außenhandel – Themenquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Welches Transportdokument wird für den Seetransport per Containerschiff (z. B. Shanghai nach Rotterdam) ausgestellt?",
+      "options": [
+        "Straßenfrachtbrief (CMR)",
+        "Luftfrachtbrief (Air Waybill)",
+        "Seekonnossement (Bill of Lading / B/L)",
+        "Internationaler Eisenbahnfrachtbrief (CIM)"
+      ],
+      "correctAnswer": "Seekonnossement (Bill of Lading / B/L)",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Unternehmen transportiert Güter per Lkw von Innsbruck in die Schweiz. Welches Transportdokument ist dafür erforderlich?",
+      "options": [
+        "Straßenfrachtbrief (CMR)",
+        "Flusskonnossement (Inland Waterway Bill of Lading)",
+        "Spediteurzertifikat (FIATA MTD)",
+        "Seekonnossement (B/L)"
+      ],
+      "correctAnswer": "Straßenfrachtbrief (CMR)",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches Dokument kommt zum Einsatz, wenn Waren kombiniert per Lkw von Klagenfurt nach Triest und anschließend per Schiff weitertransportiert werden?",
+      "options": [
+        "Luftfrachtbrief (AWB)",
+        "Spediteurzertifikat für den kombinierten Transport (FIATA Multimodal Transport Bill of Lading)",
+        "Internationaler Eisenbahnfrachtbrief (CIM)",
+        "Warenverkehrsbescheinigung A.TR"
+      ],
+      "correctAnswer": "Spediteurzertifikat für den kombinierten Transport (FIATA Multimodal Transport Bill of Lading)",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was unterscheidet eine Pro-Forma-Rechnung eindeutig von einer Handelsrechnung (Faktura)?",
+      "options": [
+        "Die Pro-Forma-Rechnung wird nach Zahlung ausgestellt und ersetzt das Ursprungszeugnis",
+        "Die Handelsrechnung dient nur der Zollbewertung ohne Zahlungspflicht",
+        "Beide Rechnungen lösen dieselbe verbindliche Zahlungspflicht aus",
+        "Die Pro-Forma-Rechnung wird vor Lieferung ausgestellt, löst keine Zahlungspflicht aus und dient Zoll- bzw. Genehmigungszwecken"
+      ],
+      "correctAnswer": "Die Pro-Forma-Rechnung wird vor Lieferung ausgestellt, löst keine Zahlungspflicht aus und dient Zoll- bzw. Genehmigungszwecken",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wozu dient eine Warenverkehrsbescheinigung (EUR.1 oder A.TR) im Rahmen von Freihandelsabkommen wie EU-Mexiko?",
+      "options": [
+        "Sie bestätigt den Abschluss einer Seeversicherung über 110 Prozent",
+        "Sie ermöglicht Zollfreiheit oder begünstigte Einfuhrzölle im Partnerland",
+        "Sie genehmigt den Export militärischer Drohnen durch das Ministerium",
+        "Sie ersetzt den Frachtbrief bei internationalen Eisenbahntransporten"
+      ],
+      "correctAnswer": "Sie ermöglicht Zollfreiheit oder begünstigte Einfuhrzölle im Partnerland",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Über welchen Versicherungswert muss eine begebbare Transportversicherungspolizze gemäß Bankenstandard (RLB OÖ) bei CIF/CIP-Geschäften üblicherweise lauten?",
+      "options": [
+        "110 % des CIF- bzw. CIP-Werts",
+        "80 % des EXW-Werts",
+        "100 % der reinen Seefrachtkosten",
+        "150 % des Zollwerts"
+      ],
+      "correctAnswer": "110 % des CIF- bzw. CIP-Werts",
+      "points": 15,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Die Firma Schiebel (Wiener Neustadt) exportiert ihre Hubschrauberdrohne Camcopter S-100. Welches Dokument benötigt sie für jede Ausfuhr vom Bundesministerium für Arbeit und Wirtschaft?",
+      "options": [
+        "Ein Präferenz-Ursprungszeugnis GSP Form A",
+        "Eine Packliste mit Gewichtsangaben",
+        "Eine Ausfuhrgenehmigung für militärische bzw. technisch hochentwickelte Güter",
+        "Eine Spediteurübernahmebestätigung (FCR)"
+      ],
+      "correctAnswer": "Eine Ausfuhrgenehmigung für militärische bzw. technisch hochentwickelte Güter",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "true-false",
+      "text": "Für internationale Bahntransporte (z. B. Güterzug von Rumänien nach Polen) wird der Internationale Eisenbahnfrachtbrief (CIM) verwendet.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine Spedition führt den physischen Transport grundsätzlich selbst durch und beauftragt niemals Frachtführer.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "open-ended",
+      "text": "Nenne alle sechs Transportmittel im Außenhandel zusammen mit dem jeweils zugehörigen Transportdokument und erkläre kurz den Zweck eines Ursprungszeugnisses.",
+      "options": [],
+      "correctAnswer": "Seeschiff: Seekonnossement (Bill of Lading / B/L); Binnenschiff: Flusskonnossement (Inland Waterway B/L); Flugzeug: Luftfrachtbrief (Air Waybill / AWB); Eisenbahn: Internationaler Eisenbahnfrachtbrief (CIM); Lkw: Straßenfrachtbrief (CMR); Kombinierter Transport: Spediteurzertifikat für den kombinierten Transport (FIATA MTD). Das Ursprungszeugnis (ausgestellt von der Handelskammer) weist das Herstellungsland der Ware zur Export- und Importkontrolle nach.",
+      "points": 20,
+      "topic": "trade-documents"
+    }
+  ]
+}

@@ -1,0 +1,465 @@
+{
+  "title": "Betriebswirtschaft SA 04.12.2026 – Gesamtquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Die Fashion Factory OG möchte Carmen Schwaiger eine Prokura erteilen. Darf sie das, und darf Carmen Schwaiger danach eine Teilzeitstelle ausschreiben?",
+      "options": [
+        "Nein, weil eine OG nicht im Firmenbuch eingetragen ist",
+        "Ja, eine OG steht im Firmenbuch und darf Prokura erteilen; Personal einstellen ist Prokuristen erlaubt",
+        "Ja zur Prokura, aber das Einstellen von Personal ist ausschließlich Eigentümern vorbehalten",
+        "Nein, weil nur eine GmbH oder AG Personal über Prokuristen suchen darf"
+      ],
+      "correctAnswer": "Ja, eine OG steht im Firmenbuch und darf Prokura erteilen; Personal einstellen ist Prokuristen erlaubt",
+      "points": 10,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Sabine Mitterlehner hat Einzelprokura bei der Kaboom Elektrotechnik GmbH, darf intern aber nur Kredite bis 10.000,00 EUR aufnehmen. Sie nimmt dennoch einen Bankkredit über 15.000,00 EUR auf. Was gilt rechtlich?",
+      "options": [
+        "Der Kreditvertrag ist sowohl gegenüber der Bank als auch intern vollständig ungültig",
+        "Die Bank muss die Differenz von 5.000,00 EUR selbst übernehmen",
+        "Gegenüber der Bank ist der Kredit gültig; intern liegt ein Weisungsverstoß vor (Schadenersatz/Kündigung)",
+        "Der Kredit wird automatisch in eine Handlungsvollmacht umgewandelt"
+      ],
+      "correctAnswer": "Gegenüber der Bank ist der Kredit gültig; intern liegt ein Weisungsverstoß vor (Schadenersatz/Kündigung)",
+      "points": 15,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Lena Truppe soll die neue Cocktailbar Mixologie in Ischgl leiten, ohne für andere Standorte zeichnungsberechtigt zu sein. Welche Prokura-Art passt am besten (bei Firmenbucheintrag)?",
+      "options": [
+        "Filialprokura",
+        "Einzelprokura für den gesamten Konzern",
+        "Artvollmacht",
+        "Spezialvollmacht"
+      ],
+      "correctAnswer": "Filialprokura",
+      "points": 10,
+      "topic": "prokura"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Prokurist darf im Namen des Unternehmens die jährliche Bilanz unterzeichnen und Grundstücke des Betriebs verkaufen.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Biona Ibrahimi darf bei C&A Waren bis 40.000,00 EUR bestellen, aber keine sonstigen Filialgeschäfte abwickeln. Welche Vollmacht und welcher Unterschriftszusatz gelten?",
+      "options": [
+        "Generalvollmacht mit i. V.",
+        "Filialprokura mit ppa.",
+        "Spezialvollmacht mit pp.",
+        "Artvollmacht mit i. A."
+      ],
+      "correctAnswer": "Artvollmacht mit i. A.",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Fadil Berisha hat bei MediaMarkt eine Generalvollmacht. Darf er Elektronikwaren um 50.000,00 EUR einkaufen (sofern dem Lieferanten keine interne Grenze bekannt ist)?",
+      "options": [
+        "Ja, denn der Einkauf von Elektronikwaren ist bei MediaMarkt ein gewöhnliches Geschäft",
+        "Nein, denn Einkäufe über 10.000,00 EUR erfordern immer eine Prokura",
+        "Nein, denn ein Generalbevollmächtigter darf nur Löhne auszahlen",
+        "Ja, aber erst nach Veröffentlichung des Auftrags über EVI"
+      ],
+      "correctAnswer": "Ja, denn der Einkauf von Elektronikwaren ist bei MediaMarkt ein gewöhnliches Geschäft",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ein Mitarbeiter eines Reifenhändlers besitzt eine Handlungsvollmacht. Welches Geschäft darf er damit rechtlich NICHT abschließen?",
+      "options": [
+        "Winterreifen beim Großhändler nachbestellen",
+        "Gehälter an die Werkstättenmitarbeiter überweisen",
+        "Einen Bankkredit aufnehmen oder Autobatterien als branchenfremde Ware einkaufen",
+        "Sommerreifen an Privatkunden verkaufen"
+      ],
+      "correctAnswer": "Einen Bankkredit aufnehmen oder Autobatterien als branchenfremde Ware einkaufen",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "open-ended",
+      "text": "Erkläre den Unterschied zwischen Prokura und Handlungsvollmacht anhand von Firmenbucheintrag, Erteilungsform, Krediten/Gericht, Wirkung interner Beschränkungen und Unterschriftszusatz.",
+      "options": [],
+      "correctAnswer": "Prokura: Eintragungspflicht im Firmenbuch + EVI; nur ausdrückliche Erklärung; erlaubt Kredite und Gerichtsvertretung; interne Grenzen wirken nicht gegen Dritte; Unterschrift pp. oder ppa. Handlungsvollmacht: kein Firmenbucheintrag; ausdrücklich oder durch schlüssige Handlung; Kredite und Gericht verboten; interne Grenzen wirken gegen Dritte, wenn diese davon wissen oder wissen müssten; Unterschrift i. V. (Generalvollmacht) bzw. i. A. (Art-/Spezialvollmacht).",
+      "points": 20,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Sascha Seidel arbeitet als Vollzeit-Ingenieur bei AT&S in Leoben mit fixen Arbeitszeiten, Firmenarbeitsmitteln und Weisungsbindung. Welche Kombination aus Vertrag, Versicherung und Steuer gilt?",
+      "options": [
+        "Werkvertrag, SVS-Selbstmeldung und Einkommensteuererklärung",
+        "\"Echter\" Arbeitsvertrag, ÖGK-Anmeldung und Lohnsteuerabzug durch den Arbeitgeber",
+        "Freier Dienstvertrag, ÖGK-Anmeldung und Einkommensteuererklärung",
+        "Geringfügige Beschäftigung, nur Unfallversicherung und keine Lohnsteuer"
+      ],
+      "correctAnswer": "\"Echter\" Arbeitsvertrag, ÖGK-Anmeldung und Lohnsteuerabzug durch den Arbeitgeber",
+      "points": 10,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Aussage über ein geringfügiges Beschäftigungsverhältnis (z. B. Samstagskraft im Handel unter der Geringfügigkeitsgrenze) ist richtig?",
+      "options": [
+        "Es besteht kein Anspruch auf bezahlten Urlaub und keine Entgeltfortzahlung im Krankheitsfall",
+        "Der Arbeitnehmer muss Lohnsteuer sowie Kranken- und Pensionsversicherung voll selbst zahlen",
+        "Der Arbeitgeber meldet zur Kranken-, Pensions- und Arbeitslosenversicherung an",
+        "Es besteht Anspruch auf Urlaub, Krankenstand-Fortzahlung und Sonderzahlungen; der Arbeitgeber deckt nur die Unfallversicherung ab"
+      ],
+      "correctAnswer": "Es besteht Anspruch auf Urlaub, Krankenstand-Fortzahlung und Sonderzahlungen; der Arbeitgeber deckt nur die Unfallversicherung ab",
+      "points": 15,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Regelung gilt für das Pflichtpraktikum von HAK-Schülerinnen und -Schülern in Österreich?",
+      "options": [
+        "300 Stunden in der unterrichtsfreien Zeit zwischen dem II. und vor Eintritt in den V. Jahrgang",
+        "120 Stunden ausschließlich in den Sommerferien nach dem IV. Jahrgang",
+        "500 Stunden innerhalb eines verpflichtenden Werkvertrags",
+        "60 Stunden während der regulären Unterrichtswochen im I. Jahrgang"
+      ],
+      "correctAnswer": "300 Stunden in der unterrichtsfreien Zeit zwischen dem II. und vor Eintritt in den V. Jahrgang",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein Ferialjob begründet immer einen \"echten\" Arbeitsvertrag mit Anspruch auf bezahlten Urlaub, Krankenstand-Fortzahlung und Sonderzahlungen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei der Kronen Zeitung ist Sharif Salah angestellter Journalist, Lisa Wenig liefert drei Artikel pro Woche bei freier Zeiteinteilung, und Pascal Geiger erstellt einmalig eine Illustration. Welche Vertragszuordnung stimmt?",
+      "options": [
+        "Sharif: Freier Dienstvertrag; Lisa: Werkvertrag; Pascal: \"Echter\" Arbeitsvertrag",
+        "Sharif: \"Echter\" Arbeitsvertrag; Lisa: Werkvertrag; Pascal: Freier Dienstvertrag",
+        "Sharif: \"Echter\" Arbeitsvertrag; Lisa: Freier Dienstvertrag; Pascal: Werkvertrag",
+        "Sharif: Werkvertrag; Lisa: \"Echter\" Arbeitsvertrag; Pascal: Freier Dienstvertrag"
+      ],
+      "correctAnswer": "Sharif: \"Echter\" Arbeitsvertrag; Lisa: Freier Dienstvertrag; Pascal: Werkvertrag",
+      "points": 15,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Tobias Krain arbeitet laufend von zu Hause auf dem Laptop eines Verlags ohne fixe Arbeitszeiten und ohne Weisungen. Wie ist er sozialversichert und wie versteuert er sein Einkommen?",
+      "options": [
+        "SVS durch Selbstmeldung und Lohnsteuer durch den Verlag",
+        "ÖGK-Anmeldung durch den Verlag und selbstständige Versteuerung per Einkommensteuererklärung",
+        "Nur Unfallversicherung und keine Einkommensteuer",
+        "ÖGK-Anmeldung durch den Verlag und Lohnsteuerabzug durch den Verlag"
+      ],
+      "correctAnswer": "ÖGK-Anmeldung durch den Verlag und selbstständige Versteuerung per Einkommensteuererklärung",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Christoph Wurm repariert für eine Firma einen defekten Laptop mit eigenem Werkzeug gegen ein fixes Honorar im Erfolgsfall. Welche Pflicht trifft ihn bei mangelhafter Reparatur?",
+      "options": [
+        "Keine Haftung, weil das wirtschaftliche Risiko beim Auftraggeber liegt",
+        "Nur die Meldung an die ÖGK innerhalb von 14 Tagen",
+        "Anspruch auf bezahlten Krankenstand während der Nachbesserung",
+        "Gewährleistungspflicht für Mängel im Rahmen seines Werkvertrags"
+      ],
+      "correctAnswer": "Gewährleistungspflicht für Mängel im Rahmen seines Werkvertrags",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "open-ended",
+      "text": "Ordne folgende zwei AT&S-Fälle dem richtigen Vertrag zu und begründe kurz mit Arbeitsmitteln, Risiko, Sozialversicherung und Urlaubsanspruch: (a) Helena Kickert fertigt gegen Honorar eine fertige Gebäudeskizze an; (b) Eva Brandstätter erstellt laufend Datenberichte bei freier Zeit- und Ortseinteilung mit Firmenmitteln.",
+      "options": [],
+      "correctAnswer": "(a) Helena Kickert: Werkvertrag (konkreter Erfolg/fertiges Werk, eigene Arbeitsmittel, eigenes wirtschaftliches Risiko + Gewährleistung, meldet sich selbst bei SVS an, versteuert selbst, kein Anspruch auf bezahlten Urlaub/Krankengeld). (b) Eva Brandstätter: Freier Dienstvertrag (laufende Arbeitskraft ohne persönliche Abhängigkeit, Arbeitsmittel vom Arbeitgeber, kein wirtschaftliches Risiko, ÖGK-Anmeldung durch Arbeitgeber, versteuert selbst, kein Anspruch auf bezahlten Urlaub/Krankengeld).",
+      "points": 20,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches der folgenden Länderpaare enthält ausschließlich Länder aus Österreichs vier wichtigsten Exporthandelspartnern?",
+      "options": [
+        "Deutschland, USA, Italien und Schweiz",
+        "Deutschland, Frankreich, China und Spanien",
+        "Schweiz, Polen, Brasilien und Katar",
+        "Italien, Ungarn, Japan und USA"
+      ],
+      "correctAnswer": "Deutschland, USA, Italien und Schweiz",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Ursache des Außenhandels wird durch das Lehrbuchbeispiel \"Käse aus Holland\" bzw. \"Skiproduktion in Österreich\" veranschaulicht?",
+      "options": [
+        "Beide Beispiele zeigen fehlende Rohstoffe im Inland",
+        "Käse aus Holland zeigt Markenimage; Skiproduktion zeigt Preisdumping",
+        "Käse aus Holland zeigt Produktionsüberschuss im Inland; Skiproduktion in Österreich zeigt Länderspezialisierung",
+        "Beide Beispiele zeigen staatliche Exportverbote"
+      ],
+      "correctAnswer": "Käse aus Holland zeigt Produktionsüberschuss im Inland; Skiproduktion in Österreich zeigt Länderspezialisierung",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welcher Vorteil entsteht durch die Globalisierung typischerweise für österreichische Unternehmen?",
+      "options": [
+        "Wegfall jeder internationalen Konkurrenz und höherer Zollschutz",
+        "Größere Absatzmärkte, Skaleneffekte, günstigere Lieferanten und Know-how-Transfer",
+        "Garantierter Schutz vor Wechselkurs- und Lieferkettenrisiken",
+        "Verzicht auf Marktforschung bei fremden Kulturen"
+      ],
+      "correctAnswer": "Größere Absatzmärkte, Skaleneffekte, günstigere Lieferanten und Know-how-Transfer",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "true-false",
+      "text": "Laut WKO (2025) exportieren mehr als 63.000 österreichische Unternehmen Waren und Dienstleistungen im Wert von 203 Mrd. EUR (2024) in über 200 Länder.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "BWT AG schließt ein Akkreditiv über 250.000,00 USD ab (bei Abschluss 245.000,00 EUR wert). Bei Auszahlung erhält BWT wegen des gesunkenen USD-Kurses nur 233.000,00 EUR. Welches Risiko hat sich in welcher Höhe verwirklicht?",
+      "options": [
+        "Transportrisiko mit 17.000,00 EUR Schaden",
+        "Transferrisiko mit 250.000,00 EUR Ausfall",
+        "Produktionsrisiko mit 5.000,00 EUR Mehrkosten",
+        "Wechselkursrisiko mit 12.000,00 EUR Kursverlust"
+      ],
+      "correctAnswer": "Wechselkursrisiko mit 12.000,00 EUR Kursverlust",
+      "points": 15,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Lenz Moser liefert 7.000 Flaschen Wein nach Taiwan in USD mit 3 Monaten Zahlungsziel. Welches Risiko entsteht speziell durch das lange Zahlungsziel und wie lässt es sich absichern?",
+      "options": [
+        "Kredit-/Refinanzierungsrisiko; Absicherung durch geförderte Exportfinanzierung (Exportfonds/OeKB), Factoring oder Forfaitierung",
+        "Marktrisiko; Absicherung ausschließlich durch eine Transportversicherung",
+        "Gewährleistungsrisiko; Absicherung durch eine Preisschwankungsklausel",
+        "Zinsrisiko; Absicherung durch ein Ursprungszeugnis"
+      ],
+      "correctAnswer": "Kredit-/Refinanzierungsrisiko; Absicherung durch geförderte Exportfinanzierung (Exportfonds/OeKB), Factoring oder Forfaitierung",
+      "points": 15,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Womit sichert sich ein Importeur gegen das Gewährleistungsrisiko ab, falls der Exporteur nach der Lieferung Mängel an den gelieferten Anlagen nicht behebt?",
+      "options": [
+        "Durch Vorauszahlung des gesamten Kaufpreises",
+        "Durch eine Exportfinanzierung bei der eigenen Hausbank",
+        "Durch eine Bankgarantie von der Bank des Exporteurs",
+        "Durch einen Verzicht auf schriftliche Verträge"
+      ],
+      "correctAnswer": "Durch eine Bankgarantie von der Bank des Exporteurs",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein politisches Risiko (z. B. Krieg, Streiks oder Unruhen im Importland) lässt sich vollständig durch normale Marktforschung ausschließen.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Andritz (Graz) liefert Maschinen über Triest an Asmidal (Algier) unter \"CIF Port Algier\". Wer zahlt Seefracht und Versicherung, und wer regelt einen Seeschaden mit der Versicherung?",
+      "options": [
+        "Asmidal zahlt Seefracht und Versicherung; Andritz regelt den Schaden",
+        "Andritz zahlt Seefracht und Versicherung; Asmidal regelt den Schaden, weil das Risiko in Triest an Bord überging",
+        "Andritz zahlt Seefracht und Versicherung und trägt auch das volle Seerisiko bis Algier",
+        "Asmidal zahlt nur die Versicherung; die Hafenbehörde Triest trägt das Seerisiko"
+      ],
+      "correctAnswer": "Andritz zahlt Seefracht und Versicherung; Asmidal regelt den Schaden, weil das Risiko in Triest an Bord überging",
+      "points": 15,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Honigmayr (Salzburg) liefert Honig an Novotel Berlin unter \"CPT München Frachtbahnhof\". Auf der Zugfahrt gehen 10 % der Gläser zu Bruch. Wer klärt den Schaden?",
+      "options": [
+        "Honigmayr, weil München der genannte Kostenort ist",
+        "Honigmayr, weil CPT eine Ankunftsklausel der Gruppe D ist",
+        "Das Finanzamt Salzburg über die Exportgarantie",
+        "Novotel Berlin, weil das Risiko bei Übergabe an die Bahn in Salzburg überging"
+      ],
+      "correctAnswer": "Novotel Berlin, weil das Risiko bei Übergabe an die Bahn in Salzburg überging",
+      "points": 15,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Incoterm-2020-Klausel verpflichtet den Verkäufer, sowohl die Ausfuhr- als auch die Einfuhrverzollung durchzuführen und die Ware entladebereit am Bestimmungsort anzuliefern?",
+      "options": [
+        "DDP (Delivered Duty Paid)",
+        "DPU (Delivered at Place Unloaded)",
+        "DAP (Delivered at Place)",
+        "FCA (Free Carrier)"
+      ],
+      "correctAnswer": "DDP (Delivered Duty Paid)",
+      "points": 10,
+      "topic": "incoterms"
+    },
+    {
+      "type": "true-false",
+      "text": "Die vier Klauseln FAS, FOB, CFR und CIF dürfen ausschließlich für den See- und Binnenschiffstransport verwendet werden.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Biofit (Wiener Neustadt) kalkuliert Sneaker für Happy Living (USA): EXW 80,00 EUR, Lkw bis Salzburg 2,50 EUR, Lkw Salzburg-Amsterdam 10,00 EUR, Verladung Amsterdam 5,00 EUR, Versicherung WN-Salzburg 0,50 EUR, Seefracht 20,00 EUR, Seeversicherung 8,00 EUR, Landing NY 5,00 EUR, Zoll 12,00 EUR. Wie lauten die Preise für FOB Amsterdam und CIF New York?",
+      "options": [
+        "FOB Amsterdam: 93,00 EUR; CIF New York: 121,00 EUR",
+        "FOB Amsterdam: 98,00 EUR; CIF New York: 131,00 EUR",
+        "FOB Amsterdam: 98,00 EUR; CIF New York: 126,00 EUR",
+        "FOB Amsterdam: 103,00 EUR; CIF New York: 143,00 EUR"
+      ],
+      "correctAnswer": "FOB Amsterdam: 98,00 EUR; CIF New York: 126,00 EUR",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Good4U Cosmetics (Düsseldorf) kalkuliert für Top Beauty (Lissabon): EXW 10.000 EUR, Lkw nach Rotterdam 300 EUR, Verladung Rotterdam 200 EUR, Seetransport 1.500 EUR, Seeversicherung 100 EUR, Landing Lissabon 170 EUR, Lkw zu Top Beauty 80 EUR. Wie hoch sind die Preise für FAS Rotterdam und CIF Lissabon?",
+      "options": [
+        "FAS Rotterdam: 10.500 EUR; CIF Lissabon: 12.270 EUR",
+        "FAS Rotterdam: 10.300 EUR; CIF Lissabon: 12.100 EUR",
+        "FAS Rotterdam: 10.300 EUR; CIF Lissabon: 12.000 EUR",
+        "FAS Rotterdam: 10.000 EUR; CIF Lissabon: 12.350 EUR"
+      ],
+      "correctAnswer": "FAS Rotterdam: 10.300 EUR; CIF Lissabon: 12.100 EUR",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "true-false",
+      "text": "Im Fall Good4U Cosmetics (Düsseldorf nach Lissabon) übernimmt der Exporteur unter DAP Lissabon Hafen auch die Entladungskosten (170 EUR) und den Lkw-Weitertransport zu Top Beauty (80 EUR).",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "open-ended",
+      "text": "Berechne für PureFruit GmbH (Wien nach Barcelona, innerhalb der EU) aus EXW 4.500 EUR, Lkw Wien-Hamburg 480 EUR, Verladung Hamburg 120 EUR, Seefracht 650 EUR, Seeversicherung 70 EUR, Landing Barcelona 100 EUR und Lkw zu Delicia Market 80 EUR die Verkaufspreise für FOB Hamburg, CIF Barcelona und DDP Barcelona und gib jeweils den Risikoübergang an.",
+      "options": [],
+      "correctAnswer": "FOB Hamburg: 4.500 + 480 + 120 = 5.100 EUR (Risiko an Bord in Hamburg). CIF Barcelona: 5.100 + 650 + 70 = 5.820 EUR (Risiko bereits an Bord in Hamburg, Zweipunktklausel; ohne Landing). DDP Barcelona: 5.820 + 100 + 80 = 6.000 EUR bei 0 EUR EU-Zoll (Risiko bei Delicia Market in Barcelona, entladebereit).",
+      "points": 20,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches Transportdokument gehört zum Luftfrachttransport und welches zum internationalen Eisenbahntransport?",
+      "options": [
+        "Luftfracht: CMR; Eisenbahn: Bill of Lading (B/L)",
+        "Luftfracht: FIATA MTD; Eisenbahn: Flusskonnossement",
+        "Luftfracht: Seekonnossement; Eisenbahn: CMR",
+        "Luftfracht: Luftfrachtbrief (Air Waybill / AWB); Eisenbahn: Internationaler Eisenbahnfrachtbrief (CIM)"
+      ],
+      "correctAnswer": "Luftfracht: Luftfrachtbrief (Air Waybill / AWB); Eisenbahn: Internationaler Eisenbahnfrachtbrief (CIM)",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wofür stellt ein Exporteur vor dem Versand eine Pro-Forma-Rechnung aus?",
+      "options": [
+        "Für zollrechtliche Zwecke (z. B. Wertnachweis oder Importgenehmigung) ohne Zahlungspflicht",
+        "Als verbindliche Mahnung nach Ablauf des Zahlungsziels",
+        "Als Ersatz für das Seekonnossement bei einem Dokumentenakkreditiv",
+        "Als Nachweis, dass die Seeversicherung bereits ausbezahlt wurde"
+      ],
+      "correctAnswer": "Für zollrechtliche Zwecke (z. B. Wertnachweis oder Importgenehmigung) ohne Zahlungspflicht",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welches Dokument benötigen Unternehmen beim Handel mit einem Freihandelspartner (z. B. EU-Mexiko), um Zollfreiheit oder ermäßigte Zölle zu erhalten?",
+      "options": [
+        "Eine Spediteurübernahmebestätigung (FCR)",
+        "Eine Warenverkehrsbescheinigung (EUR.1 oder A.TR)",
+        "Einen Straßenfrachtbrief (CMR)",
+        "Eine Ausfuhrgenehmigung für militärische Güter"
+      ],
+      "correctAnswer": "Eine Warenverkehrsbescheinigung (EUR.1 oder A.TR)",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "true-false",
+      "text": "Die Handelsrechnung (Faktura) bescheinigt den tatsächlichen Verkauf, begründet die Zahlungspflicht des Käufers und dient der Zollabfertigung.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Mayer Schokoladen importiert erstmals Kakaobohnen von Pacari aus Ecuador per Dokumentenakkreditiv. Welches Risiko bleibt trotz Akkreditiv bei Mayer Schokoladen?",
+      "options": [
+        "Dass Pacari gar keine Versanddokumente einreicht und trotzdem Geld erhält",
+        "Dass die Banken keine Fristen prüfen",
+        "Dass die gelieferten Kakaobohnen mangelhaft sind, weil Banken nur Dokumente und nicht die Ware prüfen",
+        "Dass das Akkreditiv einseitig widerrufen werden kann"
+      ],
+      "correctAnswer": "Dass die gelieferten Kakaobohnen mangelhaft sind, weil Banken nur Dokumente und nicht die Ware prüfen",
+      "points": 10,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A. Pöhli GmbH (Weißkirchen) eröffnet über die RLB OÖ ein unbestätigtes Akkreditiv über 10.250,00 USD für Creation Private Ltd. (Bangladesch), avisiert durch N.C.C. Bank Ltd. (Dhaka). Wo reicht der Exporteur die Dokumente ein?",
+      "options": [
+        "Direkt beim Zollamt Linz",
+        "Direkt bei der A. Pöhli GmbH in Weißkirchen",
+        "Bei der Spedition Panalpina in Hörsching",
+        "Bei seiner avisierenden Bank N.C.C. Bank Ltd. in Dhaka"
+      ],
+      "correctAnswer": "Bei seiner avisierenden Bank N.C.C. Bank Ltd. in Dhaka",
+      "points": 15,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "true-false",
+      "text": "Beim Dokumenteninkasso übernimmt die Inkassobank eine unwiderrufliche Zahlungsgarantie zugunsten des Exporteurs.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "open-ended",
+      "text": "Erkläre den Unterschied zwischen D/P und D/A beim Dokumenteninkasso und nenne drei Voraussetzungen, unter denen ein Dokumenteninkasso überhaupt empfehlenswert ist.",
+      "options": [],
+      "correctAnswer": "Bei D/P (Documents against Payment) erhält der Importeur die Versanddokumente Zug um Zug gegen sofortige Zahlung. Bei D/A (Documents against Acceptance) gewährt der Exporteur ein Zahlungsziel, und der Importeur erhält die Dokumente gegen Akzept eines Wechsels (der zurückgesandt, bis Fälligkeit verwahrt oder diskontiert werden kann). Drei Voraussetzungen für Inkasso: (1) Geschäftspartner kennen und vertrauen einander, (2) Zahlungswille und Bonität des Käufers stehen außer Zweifel, (3) geringes Länderrisiko im Importland.",
+      "points": 20,
+      "topic": "documentary-payments"
+    }
+  ]
+}

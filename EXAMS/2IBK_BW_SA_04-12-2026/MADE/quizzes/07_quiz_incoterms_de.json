@@ -1,0 +1,120 @@
+{
+  "title": "07 Incoterms 2020 – Themenquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Welche Punkte werden durch die Incoterms 2020 NICHT geregelt?",
+      "options": [
+        "Risikoübergang und Kostenübergang zwischen Verkäufer und Käufer",
+        "Vertragsverletzungen und Folgen, Zahlungsmodalitäten sowie anwendbares Recht",
+        "Beschaffung von Transportmitteln und Transportdokumenten",
+        "Ausfuhr-, Durchfuhr- und Einfuhrzollformalitäten"
+      ],
+      "correctAnswer": "Vertragsverletzungen und Folgen, Zahlungsmodalitäten sowie anwendbares Recht",
+      "points": 10,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche vier Incoterms 2020 gehören zu den \"blauen Klauseln\" und gelten ausschließlich für See- und Binnenschifffahrt?",
+      "options": [
+        "EXW, FCA, CPT, CIP",
+        "DAP, DPU, DDP, EXW",
+        "FAS, FOB, CFR, CIF",
+        "FCA, CIP, DPU, FOB"
+      ],
+      "correctAnswer": "FAS, FOB, CFR, CIF",
+      "points": 5,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was kennzeichnet die Gruppe C (CPT, CIP, CFR, CIF) als Zweipunktklauseln?",
+      "options": [
+        "Risiko und Kosten gehen gemeinsam erst im Lager des Käufers über",
+        "Risiko und Kosten gehen gemeinsam bereits am Werk des Verkäufers über",
+        "Der Käufer trägt die Haupttransportkosten, aber der Verkäufer trägt das Risiko",
+        "Risiko geht früh beim Versand über, Kosten trägt der Verkäufer bis zum Bestimmungsort"
+      ],
+      "correctAnswer": "Risiko geht früh beim Versand über, Kosten trägt der Verkäufer bis zum Bestimmungsort",
+      "points": 10,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Incoterm-2020-Klausel ist die einzige, bei der der Verkäufer die Ware am benannten Bestimmungsort auch entladen muss?",
+      "options": [
+        "DPU (Geliefert, entladen)",
+        "DAP (Geliefert benannter Ort)",
+        "DDP (Geliefert verzollt)",
+        "CIF (Kosten, Versicherung, Fracht)"
+      ],
+      "correctAnswer": "DPU (Geliefert, entladen)",
+      "points": 10,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "BMW (München) liefert Fahrzeuge an Autohaus Robinson (Graz) per Bahn unter \"CPT Bahnhof Graz\". Wo geht das Transportrisiko auf Autohaus Robinson über?",
+      "options": [
+        "Erst nach vollständiger Entladung am Bahnhof Graz",
+        "An der österreichischen Staatsgrenze bei Kufstein",
+        "Bereits am Bahnhof München bei Übergabe an die ÖBB (erster Frachtführer)",
+        "Im Ausstellungsraum von Autohaus Robinson in Graz"
+      ],
+      "correctAnswer": "Bereits am Bahnhof München bei Übergabe an die ÖBB (erster Frachtführer)",
+      "points": 15,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "BWT liefert Wasserfilter unter \"CFR Port of Manila\" über Hamburg an Seda Hotels. Auf dem Seeweg entsteht ein Salzwasserschaden. Wer trägt dieses Risiko?",
+      "options": [
+        "BWT AG, weil BWT die Seefracht bis Manila bezahlt hat",
+        "Seda Hotels, weil das Risiko bereits an Bord des Schiffes in Hamburg überging",
+        "Die Spedition in Hamburg zu 100 Prozent",
+        "Das Hafenamt Manila als Zielhafen"
+      ],
+      "correctAnswer": "Seda Hotels, weil das Risiko bereits an Bord des Schiffes in Hamburg überging",
+      "points": 15,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Klausel stellt die Minimalklausel (geringste Pflichten) und welche die Maximalklausel (höchste Pflichten) für den Verkäufer dar?",
+      "options": [
+        "Minimalklausel: EXW; Maximalklausel: DDP",
+        "Minimalklausel: DDP; Maximalklausel: EXW",
+        "Minimalklausel: FOB; Maximalklausel: CIF",
+        "Minimalklausel: FCA; Maximalklausel: CPT"
+      ],
+      "correctAnswer": "Minimalklausel: EXW; Maximalklausel: DDP",
+      "points": 5,
+      "topic": "incoterms"
+    },
+    {
+      "type": "true-false",
+      "text": "Bei einem Kauf unter CIP Bahnhof Wels aus Mailand bezahlt der italienische Verkäufer zwar die Transportversicherung, doch bei Transportschäden muss der Welser Käufer den Schaden mit der Versicherung klären.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "incoterms"
+    },
+    {
+      "type": "true-false",
+      "text": "Incoterms 2020 gelten bei internationalen Kaufverträgen automatisch, auch wenn sie im Vertrag nicht vereinbart wurden.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "incoterms"
+    },
+    {
+      "type": "open-ended",
+      "text": "Erkläre den Unterschied zwischen Einpunktklauseln und Zweipunktklauseln anhand der vier Incoterms-Gruppen (E, F, C, D) und nenne die beiden Klauseln mit Versicherungspflicht des Verkäufers.",
+      "options": [],
+      "correctAnswer": "Bei Einpunktklauseln (Gruppen E, F und D) gehen Risiko und Kosten am selben Ort über (z. B. EXW am Werk, FOB an Bord im Verschiffungshafen, DAP am Bestimmungsort). Bei Zweipunktklauseln (Gruppe C: CPT, CIP, CFR, CIF) gehen Risiko und Kosten an zwei verschiedenen Orten über: Das Risiko geht schon früh bei Übergabe an den ersten Frachtführer bzw. an Bord über, während der Verkäufer die Kosten bis zum Bestimmungsort trägt. Die beiden Klauseln mit Versicherungspflicht des Verkäufers sind CIP und CIF.",
+      "points": 20,
+      "topic": "incoterms"
+    }
+  ]
+}

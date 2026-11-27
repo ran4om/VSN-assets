@@ -1,0 +1,120 @@
+{
+  "title": "04 Freier Dienstvertrag & Werkvertrag – Themenquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Wodurch unterscheidet sich ein freier Dienstvertrag grundsätzlich von einem \"echten\" Arbeitsvertrag?",
+      "options": [
+        "Der freie Dienstnehmer ist nicht an Weisungen, fixe Arbeitszeiten oder Arbeitsort gebunden",
+        "Der freie Dienstnehmer verwendet verpflichtend seine eigenen Arbeitsmittel",
+        "Der freie Dienstnehmer meldet sich selbstständig bei der SVS an",
+        "Der freie Dienstnehmer erhält bezahlten Urlaub und Sonderzahlungen"
+      ],
+      "correctAnswer": "Der freie Dienstnehmer ist nicht an Weisungen, fixe Arbeitszeiten oder Arbeitsort gebunden",
+      "points": 5,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wer stellt die Arbeitsmittel beim freien Dienstvertrag zur Verfügung und wer meldet den freien Dienstnehmer bei der ÖGK an?",
+      "options": [
+        "Der freie Dienstnehmer nutzt eigene Mittel und meldet sich selbst bei der ÖGK an",
+        "Der Arbeitgeber stellt die Arbeitsmittel bereit und meldet bei der ÖGK an",
+        "Der Arbeitgeber stellt die Arbeitsmittel bereit und meldet bei der SVS an",
+        "Der freie Dienstnehmer nutzt eigene Mittel und der Arbeitgeber meldet bei der SVS an"
+      ],
+      "correctAnswer": "Der Arbeitgeber stellt die Arbeitsmittel bereit und meldet bei der ÖGK an",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Johannes Hackl gestaltet die Website der Sport4U GmbH auf seinem eigenen Laptop von zu Hause aus neu und erhält 12.000,00 EUR Honorar bei mängelfreier Fertigstellung. Welcher Vertrag liegt vor?",
+      "options": [
+        "\"Echter\" Arbeitsvertrag",
+        "Freier Dienstvertrag",
+        "Werkvertrag",
+        "Geringfügiges Beschäftigungsverhältnis"
+      ],
+      "correctAnswer": "Werkvertrag",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Bei welcher Sozialversicherungsanstalt muss sich ein Werkvertragsnehmer in Österreich selbstständig anmelden?",
+      "options": [
+        "Bei der ÖGK für Kranken- und Arbeitslosenversicherung",
+        "Beim Finanzamt über die monatliche Lohnsteuer",
+        "Bei der AUVA ausschließlich für die Unfallversicherung",
+        "Bei der SVS für Kranken-, Pensions- und Unfallversicherung"
+      ],
+      "correctAnswer": "Bei der SVS für Kranken-, Pensions- und Unfallversicherung",
+      "points": 5,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Lisa Wenig schreibt für die Kronen Zeitung laufend drei Regionalbeiträge pro Woche bei freier Zeit- und Ortseinteilung ohne Weisungsbindung. Welche Vertragsart trifft zu?",
+      "options": [
+        "Werkvertrag",
+        "Freier Dienstvertrag",
+        "\"Echter\" Arbeitsvertrag",
+        "Pflichtpraktikum"
+      ],
+      "correctAnswer": "Freier Dienstvertrag",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Thea Brandt erstellt für AT&S eine Kundendatenbank gegen 18.900,00 EUR Honorar im Erfolgsfall. Darf sie Teilaufgaben an einen befreundeten Programmierer delegieren?",
+      "options": [
+        "Nein, weil sie ihre Arbeitsleistung höchstpersönlich erbringen muss",
+        "Nur wenn AT&S den Programmierer zuerst bei der ÖGK anmeldet",
+        "Ja, weil keine persönliche Arbeitspflicht besteht; die Gewährleistung bleibt bei ihr",
+        "Ja, und gleichzeitig geht die gesamte Gewährleistungspflicht auf AT&S über"
+      ],
+      "correctAnswer": "Ja, weil keine persönliche Arbeitspflicht besteht; die Gewährleistung bleibt bei ihr",
+      "points": 15,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wie versteuern sowohl freie Dienstnehmer als auch Werkvertragsnehmer ihr Einkommen beim Finanzamt?",
+      "options": [
+        "Selbstständig über eine Einkommensteuererklärung",
+        "Automatisch über den Lohnsteuerabzug durch den Auftraggeber",
+        "Über die monatliche Abrechnung der ÖGK",
+        "Gar nicht, solange das Honorar unter 20.000,00 EUR bleibt"
+      ],
+      "correctAnswer": "Selbstständig über eine Einkommensteuererklärung",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "true-false",
+      "text": "Weder freie Dienstnehmer noch Werkvertragsnehmer haben Anspruch auf bezahlten Urlaub, Entgeltfortzahlung im Krankheitsfall oder Sonderzahlungen.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "true-false",
+      "text": "Ein freier Dienstnehmer trägt genau wie ein Werkvertragsnehmer das volle wirtschaftliche Risiko für seine Tätigkeit.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "open-ended",
+      "text": "Vergleiche den freien Dienstvertrag mit dem Werkvertrag anhand von zwei Gemeinsamkeiten und drei klaren Unterschieden.",
+      "options": [],
+      "correctAnswer": "Gemeinsamkeiten: keine persönliche Abhängigkeit (frei in Zeit, Ort, Weisungen), kein Anspruch auf bezahlten Urlaub, Krankenstand-Fortzahlung oder Sonderzahlungen, selbstständige Versteuerung (Einkommensteuererklärung). Unterschiede: (1) Gegenstand: laufende Arbeitskraft vs. konkreter Erfolg/fertiges Werk; (2) Arbeitsmittel & Risiko: Arbeitgeber stellt Mittel und trägt Risiko vs. Werkvertragsnehmer nutzt eigene Mittel, trägt eigenes Risiko und haftet für Gewährleistung; (3) Sozialversicherung: Arbeitgeber meldet bei ÖGK an vs. Werkvertragsnehmer meldet sich selbst bei SVS an.",
+      "points": 20,
+      "topic": "freelance-work-contract"
+    }
+  ]
+}

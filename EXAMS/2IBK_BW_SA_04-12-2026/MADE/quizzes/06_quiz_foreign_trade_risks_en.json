@@ -1,0 +1,120 @@
+{
+  "title": "06 Foreign Trade Risks & Risk Management - Topic Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "In which phase does the risk of non-acceptance occur for an exporter, and why is it especially high for custom-made orders?",
+      "options": [
+        "Before delivery, because commodity costs may increase",
+        "After delivery, because foreign exchange rates may fluctuate strongly",
+        "During delivery, because custom-made goods are very hard to resell if refused",
+        "After warranty expiry, because buyers demand free repairs"
+      ],
+      "correctAnswer": "During delivery, because custom-made goods are very hard to resell if refused",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Palfinger AG quotes an order for USD 10,000.00 at 1 EUR = 1 USD. At payment, the USD drops to 0.90 EUR. What is the unhedged outcome?",
+      "options": [
+        "Palfinger receives EUR 9,000.00 and suffers an exchange rate loss of EUR 1,000.00",
+        "Palfinger receives EUR 11,000.00 and makes an exchange rate gain of EUR 1,000.00",
+        "Palfinger still receives exactly EUR 10,000.00 with no difference",
+        "Palfinger receives EUR 9,900.00 and loses EUR 100.00"
+      ],
+      "correctAnswer": "Palfinger receives EUR 9,000.00 and suffers an exchange rate loss of EUR 1,000.00",
+      "points": 15,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which Austrian institution refinances subsidized export loans via house banks for SMEs, and which does so for large enterprises?",
+      "options": [
+        "OeKB for SMEs and OeGK for large enterprises",
+        "Austrian Export Fund (Exportfonds) for SMEs and Oesterreichische Kontrollbank AG (OeKB) for large enterprises",
+        "SVS for SMEs and the Chamber of Commerce for large enterprises",
+        "The tax office for SMEs and the ICC Paris for large enterprises"
+      ],
+      "correctAnswer": "Austrian Export Fund (Exportfonds) for SMEs and Oesterreichische Kontrollbank AG (OeKB) for large enterprises",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which contractual tool specifically protects a company against price change risk from rising global commodity prices?",
+      "options": [
+        "A forward exchange contract with the house bank",
+        "Market research in the target export country",
+        "Marine transport insurance for the sea leg",
+        "A price fluctuation clause or cost fluctuation clause in the contract"
+      ],
+      "correctAnswer": "A price fluctuation clause or cost fluctuation clause in the contract",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is meant by transfer risk in international trade?",
+      "options": [
+        "The danger that cargo is damaged during transshipment at a port",
+        "The danger that money cannot be transferred out of the importer's country",
+        "The danger that a freight forwarder picks the wrong shipping route",
+        "The danger that an exporter uses unsuitable transport packaging"
+      ],
+      "correctAnswer": "The danger that money cannot be transferred out of the importer's country",
+      "points": 5,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which safeguards protect an importer against delivery and performance risk (wrong quality, wrong quantity, or delay)?",
+      "options": [
+        "High payment in advance and invoicing in foreign currency",
+        "Export financing through the Export Fund and local market research",
+        "Omitting Incoterms and paying in full before production begins",
+        "Low down payment, credit purchase, contractual penalty, test certificate, and bank guarantee"
+      ],
+      "correctAnswer": "Low down payment, credit purchase, contractual penalty, test certificate, and bank guarantee",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Tridonic delivers LED lighting from Austria to AC Milan in Italy. Which risk is fundamentally eliminated in this export deal?",
+      "options": [
+        "Exchange rate risk, because both countries use the euro",
+        "Transport risk, because cargo damage does not occur within the EU",
+        "Default risk, because Italian clubs are state-guaranteed",
+        "Warranty risk, because defect liability does not apply inside the EU"
+      ],
+      "correctAnswer": "Exchange rate risk, because both countries use the euro",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "true-false",
+      "text": "With a forward exchange contract, an exporter can lock in the exchange rate for a future foreign-currency payment in advance.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "true-false",
+      "text": "There is no difference between a down payment and payment in advance, because both require paying the full purchase price upfront.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "open-ended",
+      "text": "Explain the classic conflict of interest between exporter and importer regarding payment terms and name the payment method that balances both sides.",
+      "options": [],
+      "correctAnswer": "The exporter prefers a high down payment or full payment in advance to minimize production, non-acceptance, and default risks. The importer prefers a low down payment and credit purchase (paying after delivery) to reduce delivery risk and avoid tying up liquidity. A Letter of Credit balances both interests because the importer's bank pays only upon timely presentation of contract-compliant shipping documents.",
+      "points": 20,
+      "topic": "foreign-trade-risks"
+    }
+  ]
+}

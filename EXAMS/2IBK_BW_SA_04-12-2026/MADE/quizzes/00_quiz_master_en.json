@@ -1,0 +1,465 @@
+{
+  "title": "Business Administration SA 04.12.2026 - Master Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Fashion Factory OG wants to grant Prokura to Carmen Schwaiger. May the company do so, and may Carmen Schwaiger advertise a part-time position afterward?",
+      "options": [
+        "No, because an OG is not entered in the Commercial Register",
+        "Yes, an OG is in the Commercial Register and may grant Prokura; hiring staff is permitted for Prokurists",
+        "Yes to Prokura, but hiring employees is reserved strictly for company owners",
+        "No, because only a GmbH or AG may recruit staff through Prokurists"
+      ],
+      "correctAnswer": "Yes, an OG is in the Commercial Register and may grant Prokura; hiring staff is permitted for Prokurists",
+      "points": 10,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Sabine Mitterlehner holds Sole Prokura at Kaboom Elektrotechnik GmbH with an internal loan cap of EUR 10,000.00. She still takes out a EUR 15,000.00 bank loan. What applies legally?",
+      "options": [
+        "The loan contract is completely void both externally and internally",
+        "The bank must absorb the EUR 5,000.00 difference itself",
+        "Externally the loan is valid toward the bank; internally she breached instructions and risks damages or dismissal",
+        "The loan automatically converts into a Commercial Power of Attorney"
+      ],
+      "correctAnswer": "Externally the loan is valid toward the bank; internally she breached instructions and risks damages or dismissal",
+      "points": 15,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Lena Truppe is to manage the new Mixologie Cocktailbar in Ischgl without signing authority for other locations. Which type of Prokura fits best (assuming Commercial Register entry)?",
+      "options": [
+        "Branch Prokura",
+        "Sole Prokura for the entire group",
+        "Category Power of Attorney",
+        "Special Power of Attorney"
+      ],
+      "correctAnswer": "Branch Prokura",
+      "points": 10,
+      "topic": "prokura"
+    },
+    {
+      "type": "true-false",
+      "text": "A holder of Prokura is legally permitted to sign the company's annual balance sheet and sell company real estate.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "prokura"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Biona Ibrahimi is authorized at C&A to order merchandise up to EUR 40,000.00, but not to conduct other branch transactions. Which authority and signature prefix apply?",
+      "options": [
+        "General Power of Attorney with i. V.",
+        "Branch Prokura with ppa.",
+        "Special Power of Attorney with pp.",
+        "Category Power of Attorney with i. A."
+      ],
+      "correctAnswer": "Category Power of Attorney with i. A.",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Fadil Berisha holds a General Power of Attorney at MediaMarkt. May he purchase EUR 50,000.00 worth of electronics if the supplier knows of no internal limit?",
+      "options": [
+        "Yes, because purchasing electronics is an ordinary transaction for MediaMarkt",
+        "No, because purchases above EUR 10,000.00 always require Prokura",
+        "No, because a General Power of Attorney only covers paying wages",
+        "Yes, but only after publishing the purchase order via EVI"
+      ],
+      "correctAnswer": "Yes, because purchasing electronics is an ordinary transaction for MediaMarkt",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An employee of a tire retailer holds a Commercial Power of Attorney. Which transaction is legally NOT permitted under this authority?",
+      "options": [
+        "Ordering winter tires from a wholesaler",
+        "Paying monthly salaries to workshop staff",
+        "Taking out a bank loan or buying car batteries outside the tire business",
+        "Selling summer tires to retail customers"
+      ],
+      "correctAnswer": "Taking out a bank loan or buying car batteries outside the tire business",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "open-ended",
+      "text": "Explain the difference between Prokura and a Commercial Power of Attorney regarding Commercial Register entry, form of grant, loans and court representation, external effect of internal caps, and signature prefix.",
+      "options": [],
+      "correctAnswer": "Prokura: mandatory Commercial Register entry plus EVI publication; express declaration only; allows bank loans and court representation; internal limits have no effect against third parties; signed with pp. or ppa. Commercial Power of Attorney: not entered in the Commercial Register; express declaration or implied conduct; loans and court representation are forbidden; internal limits bind third parties if they know or ought to know; signed with i. V. (General Power of Attorney) or i. A. (Category/Special Power of Attorney).",
+      "points": 20,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Sascha Seidel works as a full-time engineer at AT&S in Leoben with fixed hours, company equipment, and employer instructions. Which combination of contract, insurance, and tax applies?",
+      "options": [
+        "Contract for Work, SVS self-registration, and income tax return",
+        "Regular Employment Contract, OeGK registration, and wage tax deducted by the employer",
+        "Freelance Service Contract, OeGK registration, and income tax return",
+        "Marginal Employment, accident insurance only, and no wage tax"
+      ],
+      "correctAnswer": "Regular Employment Contract, OeGK registration, and wage tax deducted by the employer",
+      "points": 10,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which statement about marginal employment (such as Saturday retail work below the marginal earnings threshold) is correct?",
+      "options": [
+        "There is no entitlement to paid vacation and no sick pay",
+        "The employee pays full wage tax plus health and pension insurance",
+        "The employer provides health, pension, and unemployment insurance",
+        "The worker gets paid vacation, sick pay, and special payments, while the employer covers only accident insurance"
+      ],
+      "correctAnswer": "The worker gets paid vacation, sick pay, and special payments, while the employer covers only accident insurance",
+      "points": 15,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which mandatory internship rule applies to HAK students in Austria?",
+      "options": [
+        "300 hours in lesson-free time between Year II and before entering Year V",
+        "120 hours exclusively during summer break after Year IV",
+        "500 hours under a mandatory Contract for Work",
+        "60 hours during regular school weeks in Year I"
+      ],
+      "correctAnswer": "300 hours in lesson-free time between Year II and before entering Year V",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "true-false",
+      "text": "A holiday job always constitutes a Regular Employment Contract with full entitlement to paid vacation, sick pay, and special payments.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "At Kronen Zeitung, Sharif Salah is a staff journalist, Lisa Wenig submits three articles per week with flexible hours, and Pascal Geiger creates one illustration. Which contract mapping is correct?",
+      "options": [
+        "Sharif: Freelance Service Contract; Lisa: Contract for Work; Pascal: Regular Employment Contract",
+        "Sharif: Regular Employment Contract; Lisa: Contract for Work; Pascal: Freelance Service Contract",
+        "Sharif: Regular Employment Contract; Lisa: Freelance Service Contract; Pascal: Contract for Work",
+        "Sharif: Contract for Work; Lisa: Regular Employment Contract; Pascal: Freelance Service Contract"
+      ],
+      "correctAnswer": "Sharif: Regular Employment Contract; Lisa: Freelance Service Contract; Pascal: Contract for Work",
+      "points": 15,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Tobias Krain works continuously from home using a publisher's laptop with free hours and no instructions. How are his social insurance and income tax handled?",
+      "options": [
+        "SVS self-registration and wage tax deducted by the publisher",
+        "OeGK registration by the publisher and self-taxation via income tax return",
+        "Accident insurance only and no income tax",
+        "OeGK registration by the publisher and wage tax deducted by the publisher"
+      ],
+      "correctAnswer": "OeGK registration by the publisher and self-taxation via income tax return",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Christoph Wurm repairs a company laptop using his own tools for a fixed fee payable upon successful repair. Which obligation applies if the repair is defective?",
+      "options": [
+        "No liability, because the client carries the full economic risk",
+        "Only a duty to notify the OeGK within 14 days",
+        "Entitlement to paid sick leave during re-repair",
+        "Warranty liability for defects under his Contract for Work"
+      ],
+      "correctAnswer": "Warranty liability for defects under his Contract for Work",
+      "points": 10,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "open-ended",
+      "text": "Assign the right contract type to these two AT&S cases and justify briefly using equipment, risk, social insurance, and vacation rights: (a) Helena Kickert creates a finished building sketch for a fee; (b) Eva Brandstatter prepares ongoing data reports with free time and place using company equipment.",
+      "options": [],
+      "correctAnswer": "(a) Helena Kickert: Contract for Work (concrete finished result, own work equipment, own economic risk and warranty liability, registers independently with SVS, self-taxed, no paid vacation or sick pay). (b) Eva Brandstatter: Freelance Service Contract (ongoing labor without personal dependency, employer's equipment, no economic risk, registered at OeGK by employer, self-taxed, no paid vacation or sick pay).",
+      "points": 20,
+      "topic": "freelance-work-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which group contains exclusively Austria's four most important export trading partners?",
+      "options": [
+        "Germany, the USA, Italy, and Switzerland",
+        "Germany, France, China, and Spain",
+        "Switzerland, Poland, Brazil, and Qatar",
+        "Italy, Hungary, Japan, and the USA"
+      ],
+      "correctAnswer": "Germany, the USA, Italy, and Switzerland",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which causes of foreign trade are illustrated by the examples of cheese from Holland and ski production in Austria?",
+      "options": [
+        "Both examples show unavailable domestic natural resources",
+        "Cheese from Holland shows brand image; ski production shows price dumping",
+        "Cheese from Holland shows a domestic production surplus; ski production in Austria shows country specialization",
+        "Both examples show government export bans"
+      ],
+      "correctAnswer": "Cheese from Holland shows a domestic production surplus; ski production in Austria shows country specialization",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which advantage does globalisation typically bring to Austrian companies?",
+      "options": [
+        "Elimination of all international competition and higher tariff protection",
+        "Larger markets and sales, economies of scale, cheaper inputs, and know-how transfer",
+        "Guaranteed immunity from exchange rate and supply-chain risks",
+        "No need for market research when entering unfamiliar cultures"
+      ],
+      "correctAnswer": "Larger markets and sales, economies of scale, cheaper inputs, and know-how transfer",
+      "points": 10,
+      "topic": "globalisation"
+    },
+    {
+      "type": "true-false",
+      "text": "According to WKO (2025), more than 63,000 Austrian companies export goods and services worth EUR 203 billion (2024) to over 200 countries.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "globalisation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "BWT AG concludes a USD 250,000.00 Letter of Credit worth EUR 245,000.00 at signing. At payout, due to a weaker USD, BWT receives only EUR 233,000.00. Which risk materialized and how large was the loss?",
+      "options": [
+        "Transport risk with a EUR 17,000.00 damage loss",
+        "Transfer risk with a EUR 250,000.00 freeze",
+        "Production risk with EUR 5,000.00 extra cost",
+        "Exchange rate risk with a EUR 12,000.00 currency loss"
+      ],
+      "correctAnswer": "Exchange rate risk with a EUR 12,000.00 currency loss",
+      "points": 15,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Lenz Moser ships 7,000 bottles of wine to Taiwan invoiced in USD with a 3-month payment term. Which risk arises specifically from the long payment term, and how can it be managed?",
+      "options": [
+        "Credit/refinancing risk; managed via subsidized export financing (Exportfonds/OeKB), factoring, or forfaiting",
+        "Market risk; managed exclusively through marine transport insurance",
+        "Warranty risk; managed through a price fluctuation clause",
+        "Interest rate risk; managed through a Certificate of Origin"
+      ],
+      "correctAnswer": "Credit/refinancing risk; managed via subsidized export financing (Exportfonds/OeKB), factoring, or forfaiting",
+      "points": 15,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How can an importer protect itself against warranty risk if the exporter fails to fix defects in delivered equipment after delivery?",
+      "options": [
+        "By paying the entire purchase price in advance",
+        "By taking out export financing at its own house bank",
+        "By obtaining a bank guarantee from the exporter's bank",
+        "By avoiding written sales contracts"
+      ],
+      "correctAnswer": "By obtaining a bank guarantee from the exporter's bank",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "true-false",
+      "text": "Political risk (such as war, strikes, or riots in the importing country) can be completely eliminated through standard market research.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Andritz (Graz) ships machinery via Trieste to Asmidal (Algiers) under CIF Port Algier. Who pays sea freight and insurance, and who files an insurance claim for ocean damage?",
+      "options": [
+        "Asmidal pays sea freight and insurance; Andritz files the claim",
+        "Andritz pays sea freight and insurance; Asmidal files the claim because risk passed on board in Trieste",
+        "Andritz pays sea freight and insurance and also bears full ocean risk until Algiers",
+        "Asmidal pays only insurance; the port of Trieste bears the ocean risk"
+      ],
+      "correctAnswer": "Andritz pays sea freight and insurance; Asmidal files the claim because risk passed on board in Trieste",
+      "points": 15,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Honigmayr (Salzburg) ships honey to Novotel Berlin under CPT Munich Freight Station. During the rail journey, 10% of the jars break. Who handles the damage claim?",
+      "options": [
+        "Honigmayr, because Munich is the named place of cost transfer",
+        "Honigmayr, because CPT is a Group D arrival rule",
+        "The Salzburg tax office through the state export guarantee",
+        "Novotel Berlin, because risk passed upon handover to the rail carrier in Salzburg"
+      ],
+      "correctAnswer": "Novotel Berlin, because risk passed upon handover to the rail carrier in Salzburg",
+      "points": 15,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which Incoterms 2020 rule obligates the seller to clear both export and import customs and deliver the goods ready for unloading at the named destination?",
+      "options": [
+        "DDP (Delivered Duty Paid)",
+        "DPU (Delivered at Place Unloaded)",
+        "DAP (Delivered at Place)",
+        "FCA (Free Carrier)"
+      ],
+      "correctAnswer": "DDP (Delivered Duty Paid)",
+      "points": 10,
+      "topic": "incoterms"
+    },
+    {
+      "type": "true-false",
+      "text": "The four rules FAS, FOB, CFR, and CIF may be used exclusively for sea and inland waterway transport.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "incoterms"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Biofit (Wiener Neustadt) quotes sneakers for Happy Living (USA): EXW EUR 80.00, road to Salzburg EUR 2.50, road Salzburg-Amsterdam EUR 10.00, loading Amsterdam EUR 5.00, insurance WN-Salzburg EUR 0.50, sea freight EUR 20.00, marine insurance EUR 8.00, landing NY EUR 5.00, duties EUR 12.00. What are the FOB Amsterdam and CIF New York prices?",
+      "options": [
+        "FOB Amsterdam: EUR 93.00; CIF New York: EUR 121.00",
+        "FOB Amsterdam: EUR 98.00; CIF New York: EUR 131.00",
+        "FOB Amsterdam: EUR 98.00; CIF New York: EUR 126.00",
+        "FOB Amsterdam: EUR 103.00; CIF New York: EUR 143.00"
+      ],
+      "correctAnswer": "FOB Amsterdam: EUR 98.00; CIF New York: EUR 126.00",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Good4U Cosmetics (Dusseldorf) quotes Top Beauty (Lisbon): EXW EUR 10,000, road to Rotterdam EUR 300, loading Rotterdam EUR 200, sea transport EUR 1,500, sea insurance EUR 100, landing Lisbon EUR 170, road to Top Beauty EUR 80. What are the FAS Rotterdam and CIF Lisbon prices?",
+      "options": [
+        "FAS Rotterdam: EUR 10,500; CIF Lisbon: EUR 12,270",
+        "FAS Rotterdam: EUR 10,300; CIF Lisbon: EUR 12,100",
+        "FAS Rotterdam: EUR 10,300; CIF Lisbon: EUR 12,000",
+        "FAS Rotterdam: EUR 10,000; CIF Lisbon: EUR 12,350"
+      ],
+      "correctAnswer": "FAS Rotterdam: EUR 10,300; CIF Lisbon: EUR 12,100",
+      "points": 15,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "true-false",
+      "text": "In the Good4U Cosmetics case (Dusseldorf to Lisbon), under DAP Lisbon port the exporter also pays the Lisbon landing charges (EUR 170) and onward truck delivery to Top Beauty (EUR 80).",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "open-ended",
+      "text": "For PureFruit GmbH (Vienna to Barcelona, intra-EU), calculate the selling prices for FOB Hamburg, CIF Barcelona, and DDP Barcelona from EXW EUR 4,500, road Vienna-Hamburg EUR 480, loading Hamburg EUR 120, sea freight EUR 650, marine insurance EUR 70, landing Barcelona EUR 100, and road to Delicia Market EUR 80, and state the risk transfer point for each.",
+      "options": [],
+      "correctAnswer": "FOB Hamburg: 4,500 + 480 + 120 = EUR 5,100 (risk transfers on board in Hamburg). CIF Barcelona: 5,100 + 650 + 70 = EUR 5,820 (risk transfers on board in Hamburg as a two-point rule; excludes landing). DDP Barcelona: 5,820 + 100 + 80 = EUR 6,000 with EUR 0 intra-EU duties (risk transfers at Delicia Market in Barcelona, ready for unloading).",
+      "points": 20,
+      "topic": "export-calculation"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which transport document applies to air freight, and which applies to international rail transport?",
+      "options": [
+        "Air freight: CMR; rail: Bill of Lading (B/L)",
+        "Air freight: FIATA MTD; rail: Inland Waterway Bill of Lading",
+        "Air freight: Ocean Bill of Lading; rail: CMR",
+        "Air freight: Air Waybill (AWB); rail: Rail Consignment Note (CIM)"
+      ],
+      "correctAnswer": "Air freight: Air Waybill (AWB); rail: Rail Consignment Note (CIM)",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Why does an exporter issue a Pro Forma Invoice before shipping the goods?",
+      "options": [
+        "For customs purposes (such as valuation or import-license applications) without creating a payment obligation",
+        "As a legally binding payment reminder after a credit term expires",
+        "As a replacement for the Bill of Lading in a Letter of Credit",
+        "As proof that marine insurance claims have already been paid"
+      ],
+      "correctAnswer": "For customs purposes (such as valuation or import-license applications) without creating a payment obligation",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which document do companies need when trading with a free trade agreement partner (such as EU-Mexico) to obtain duty-free or reduced-tariff entry?",
+      "options": [
+        "A Forwarders Certificate of Receipt (FCR)",
+        "A Movement Certificate (EUR.1 or A.TR)",
+        "A Road Consignment Note (CMR)",
+        "An export license for military equipment"
+      ],
+      "correctAnswer": "A Movement Certificate (EUR.1 or A.TR)",
+      "points": 10,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "true-false",
+      "text": "The Commercial Invoice proves the actual sale, establishes the buyer's payment obligation, and is required for customs clearance.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "trade-documents"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Mayer Schokoladen imports cocoa beans for the first time from Pacari in Ecuador using a Letter of Credit. Which risk still remains with Mayer Schokoladen?",
+      "options": [
+        "That Pacari submits no shipping documents at all and still gets paid",
+        "That banks do not check document deadlines",
+        "That the delivered cocoa beans are defective, because banks inspect only documents and never physical goods",
+        "That the Letter of Credit can be revoked unilaterally without consent"
+      ],
+      "correctAnswer": "That the delivered cocoa beans are defective, because banks inspect only documents and never physical goods",
+      "points": 10,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "A. Pohli GmbH (Weiskirchen) opens an unconfirmed USD 10,250.00 Letter of Credit via RLB Upper Austria for Creation Private Ltd. (Bangladesh), advised by N.C.C. Bank Ltd. (Dhaka). Where does the exporter submit the documents?",
+      "options": [
+        "Directly to the Linz customs office",
+        "Directly to A. Pohli GmbH in Weiskirchen",
+        "To the freight forwarder Panalpina in Horsching",
+        "To its advising bank N.C.C. Bank Ltd. in Dhaka"
+      ],
+      "correctAnswer": "To its advising bank N.C.C. Bank Ltd. in Dhaka",
+      "points": 15,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "true-false",
+      "text": "Under a Documentary Collection, the collecting bank issues an irrevocable payment guarantee in favor of the exporter.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "open-ended",
+      "text": "Explain the difference between D/P and D/A in a Documentary Collection and name three conditions under which a Documentary Collection is recommended.",
+      "options": [],
+      "correctAnswer": "Under D/P (Documents against Payment), the importer receives the shipping documents simultaneously against immediate payment. Under D/A (Documents against Acceptance), the exporter grants a payment term and the importer receives the documents upon accepting a bill of exchange (which can be returned, held until maturity, or discounted for cash). Three conditions for Documentary Collection: (1) business partners know and trust each other, (2) buyer's willingness and ability to pay are certain, (3) country risk in the importing nation is low.",
+      "points": 20,
+      "topic": "documentary-payments"
+    }
+  ]
+}

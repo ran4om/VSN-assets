@@ -1,0 +1,120 @@
+{
+  "title": "06 Risiken im Außenhandel & Risikomanagement – Themenquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "In welcher Phase tritt das Annahmerisiko für einen Exporteur auf und warum ist es bei Spezialanfertigungen besonders hoch?",
+      "options": [
+        "Vor Auslieferung, weil Rohstoffe zu teuer werden können",
+        "Nach Auslieferung, weil Wechselkurse stark schwanken können",
+        "Während der Auslieferung, weil maßgefertigte Waren bei Annahmeverweigerung kaum weiterverkauft werden können",
+        "Nach Garantieablauf, weil Kunden kostenlose Reparaturen fordern"
+      ],
+      "correctAnswer": "Während der Auslieferung, weil maßgefertigte Waren bei Annahmeverweigerung kaum weiterverkauft werden können",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Palfinger AG kalkuliert einen Auftrag über 10.000,00 USD bei einem Kurs von 1 EUR = 1 USD. Bei Zahlung liegt der USD bei 0,90 EUR. Welches Ergebnis entsteht ohne Absicherung?",
+      "options": [
+        "Palfinger erhält 9.000,00 EUR und erleidet einen Kursverlust von 1.000,00 EUR",
+        "Palfinger erhält 11.000,00 EUR und erzielt einen Kursgewinn von 1.000,00 EUR",
+        "Palfinger erhält weiterhin exakt 10.000,00 EUR ohne Kursdifferenz",
+        "Palfinger erhält 9.900,00 EUR und verliert 100,00 EUR"
+      ],
+      "correctAnswer": "Palfinger erhält 9.000,00 EUR und erleidet einen Kursverlust von 1.000,00 EUR",
+      "points": 15,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Einrichtung refinanziert geförderte Exportkredite über die Hausbank für österreichische KMUs und welche für Großunternehmen?",
+      "options": [
+        "OeKB für KMUs und ÖGK für Großunternehmen",
+        "Österreichischer Exportfonds GmbH für KMUs und Oesterreichische Kontrollbank AG (OeKB) für Großunternehmen",
+        "SVS für KMUs und Handelskammer für Großunternehmen",
+        "Finanzamt für KMUs und IHK Paris für Großunternehmen"
+      ],
+      "correctAnswer": "Österreichischer Exportfonds GmbH für KMUs und Oesterreichische Kontrollbank AG (OeKB) für Großunternehmen",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Mit welchem Instrument sichert sich ein Unternehmen gezielt gegen das Preisänderungsrisiko bei steigenden Rohstoffpreisen ab?",
+      "options": [
+        "Durch ein Devisentermingeschäft mit der Hausbank",
+        "Durch eine Marktforschung im Zielland",
+        "Durch eine Transportversicherung für den Seeweg",
+        "Durch eine Preisschwankungs- oder Kostenschwankungsklausel im Vertrag"
+      ],
+      "correctAnswer": "Durch eine Preisschwankungs- oder Kostenschwankungsklausel im Vertrag",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Was versteht man im Außenhandel unter dem Transferrisiko?",
+      "options": [
+        "Die Gefahr, dass Waren beim Umladen im Hafen beschädigt werden",
+        "Die Gefahr, dass Geld aufgrund von Devisenbeschränkungen nicht aus dem Importland überwiesen werden kann",
+        "Die Gefahr, dass eine Spedition die falsche Route wählt",
+        "Die Gefahr, dass der Exporteur eine falsche Verpackung verwendet"
+      ],
+      "correctAnswer": "Die Gefahr, dass Geld aufgrund von Devisenbeschränkungen nicht aus dem Importland überwiesen werden kann",
+      "points": 5,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche Absicherungsmaßnahmen schützen einen Importeur vor dem Liefer- bzw. Erfüllungsrisiko (falsche Qualität, falsche Menge, Verspätung)?",
+      "options": [
+        "Hohe Vorauszahlung und Fakturierung in Fremdwährung",
+        "Exportfinanzierung über den Exportfonds und Marktforschung",
+        "Verzicht auf Incoterms und reine Barzahlung vor Produktion",
+        "Geringe Anzahlung, Zielkauf, Pönale (Vertragsstrafe), Prüfzertifikat und Bankgarantie"
+      ],
+      "correctAnswer": "Geringe Anzahlung, Zielkauf, Pönale (Vertragsstrafe), Prüfzertifikat und Bankgarantie",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Tridonic liefert LED-Beleuchtung von Österreich an AC Milan nach Italien. Welches Risiko entfällt bei diesem Exportgeschäft grundsätzlich?",
+      "options": [
+        "Das Wechselkursrisiko, da beide Länder zur Eurozone gehören",
+        "Das Transportrisiko, da innerhalb der EU keine Schäden auftreten",
+        "Das Zahlungsausfallrisiko, da italienische Vereine staatlich garantiert sind",
+        "Das Gewährleistungsrisiko, da innerhalb der EU keine Mängelhaftung gilt"
+      ],
+      "correctAnswer": "Das Wechselkursrisiko, da beide Länder zur Eurozone gehören",
+      "points": 10,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "true-false",
+      "text": "Mit einem Devisentermingeschäft kann ein Exporteur den Wechselkurs für eine künftige Fremdwährungszahlung bereits im Voraus fixieren.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "true-false",
+      "text": "Zwischen Anzahlung und Vorauszahlung gibt es keinen Unterschied, weil in beiden Fällen der gesamte Kaufpreis vorab überwiesen wird.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "foreign-trade-risks"
+    },
+    {
+      "type": "open-ended",
+      "text": "Erkläre den klassischen Interessenkonflikt zwischen Exporteur und Importeur bei den Zahlungsbedingungen und nenne die Zahlungsform, die beide Seiten absichert.",
+      "options": [],
+      "correctAnswer": "Der Exporteur möchte möglichst eine hohe Anzahlung oder vollständige Vorauszahlung, um Produktions-, Annahme- und Zahlungsausfallrisiken zu minimieren. Der Importeur wünscht hingegen geringe Anzahlung und Zielkauf (Zahlung nach Lieferung), um Lieferrisiko und Liquiditätsbindung zu senken. Das Dokumentenakkreditiv (Letter of Credit) verbindet beide Interessen, weil die Bank des Importeurs erst gegen fristgerechte Vorlage vertragsgemäßer Versanddokumente zahlt.",
+      "points": 20,
+      "topic": "foreign-trade-risks"
+    }
+  ]
+}

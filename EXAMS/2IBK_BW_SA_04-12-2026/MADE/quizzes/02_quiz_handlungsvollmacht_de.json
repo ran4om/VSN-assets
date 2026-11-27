@@ -1,0 +1,120 @@
+{
+  "title": "02 Handlungsvollmacht & Vergleich – Themenquiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Welche Geschäfte deckt eine Handlungsvollmacht (§§ 54-58 UGB) grundsätzlich ab?",
+      "options": [
+        "Alle gewöhnlichen und außergewöhnlichen Geschäfte jedes Betriebs",
+        "Nur Grundstücksverkäufe und Unternehmensumgründungen",
+        "Ausschließlich gewöhnliche (betriebsübliche) Geschäfte eines bestimmten Unternehmens",
+        "Nur die Vertretung des Unternehmens bei gerichtlichen Prozessen"
+      ],
+      "correctAnswer": "Ausschließlich gewöhnliche (betriebsübliche) Geschäfte eines bestimmten Unternehmens",
+      "points": 5,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Massimo Blardone bestellt viermal ohne Rückfrage Kaffeebohnen für sein Café, und sein Chef bezahlt jedes Mal die Rechnung. Wie wurde hier die Handlungsvollmacht erteilt?",
+      "options": [
+        "Durch schlüssige Handlung",
+        "Durch Eintragung im Firmenbuch",
+        "Durch gerichtlichen Beschluss",
+        "Durch eine gemischte Prokura"
+      ],
+      "correctAnswer": "Durch schlüssige Handlung",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Welche beiden Handlungen sind einem Prokuristen erlaubt, einem Handlungsbevollmächtigten jedoch gesetzlich verboten?",
+      "options": [
+        "Waren einkaufen und Gehälter auszahlen",
+        "Kredite aufnehmen und das Unternehmen vor Gericht vertreten",
+        "Kunden beraten und Liefertermine vereinbaren",
+        "Waren verkaufen und Rechnungen prüfen"
+      ],
+      "correctAnswer": "Kredite aufnehmen und das Unternehmen vor Gericht vertreten",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Ricarda Egger leitet eine C&A-Filiale und darf alle gewöhnlichen Geschäfte der Filiale abwickeln. Welche Vollmachtsart und welcher Unterschriftszusatz passen dazu?",
+      "options": [
+        "Spezialvollmacht mit dem Zusatz i. A.",
+        "Artvollmacht mit dem Zusatz pp.",
+        "Filialprokura mit dem Zusatz i. V.",
+        "Generalvollmacht mit dem Zusatz i. V."
+      ],
+      "correctAnswer": "Generalvollmacht mit dem Zusatz i. V.",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Florian Neuhaus erhält den einmaligen Auftrag, einen neuen Spiegel für eine Umkleidekabine bei C&A zu kaufen. Welche Art der Handlungsvollmacht liegt vor?",
+      "options": [
+        "Spezialvollmacht (Einzelvollmacht)",
+        "Generalvollmacht",
+        "Artvollmacht",
+        "Einzelprokura"
+      ],
+      "correctAnswer": "Spezialvollmacht (Einzelvollmacht)",
+      "points": 5,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Wann sind interne Beschränkungen einer Handlungsvollmacht auch gegenüber Dritten rechtswirksam?",
+      "options": [
+        "Niemals, da interne Grenzen Dritte rechtlich nicht betreffen",
+        "Nur dann, wenn sie über EVI im Firmenbuch veröffentlicht wurden",
+        "Wenn der Dritte von der Beschränkung weiß oder wissen müsste",
+        "Nur bei Beträgen über 40.000,00 EUR"
+      ],
+      "correctAnswer": "Wenn der Dritte von der Beschränkung weiß oder wissen müsste",
+      "points": 15,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Unter welcher Bedingung darf Fadil Berisha seine Handlungsvollmacht an eine andere Person weitergeben?",
+      "options": [
+        "Jederzeit ohne Rücksprache bei Urlaub oder Krankheit",
+        "Nur mit Zustimmung des Unternehmers oder eines Prokuristen",
+        "Überhaupt nicht, da jede Übertragung gesetzlich ausgeschlossen ist",
+        "Sobald der Empfänger im Firmenbuch eingetragen ist"
+      ],
+      "correctAnswer": "Nur mit Zustimmung des Unternehmers oder eines Prokuristen",
+      "points": 10,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "true-false",
+      "text": "Eine Handlungsvollmacht muss genau wie die Prokura im Firmenbuch eingetragen werden.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "true-false",
+      "text": "Sowohl Artvollmacht als auch Spezialvollmacht werden mit dem Zusatz i. A. (im Auftrag) unterschrieben.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "handlungsvollmacht"
+    },
+    {
+      "type": "open-ended",
+      "text": "Nenne vier wesentliche Unterschiede zwischen Prokura und Handlungsvollmacht.",
+      "options": [],
+      "correctAnswer": "1. Erteilungsbefugnis: Prokura nur durch Firmenbuch-Unternehmen, Handlungsvollmacht durch jeden Unternehmer oder Prokuristen. 2. Firmenbuch: Prokura ist eintragungspflichtig (plus EVI), Handlungsvollmacht wird nicht eingetragen. 3. Umfang: Prokura umfasst alle Geschäfte inkl. Kredite und Gericht; Handlungsvollmacht nur gewöhnliche Geschäfte des Betriebs ohne Kredite und Gericht. 4. Interne Grenzen / Unterschrift / Übertragbarkeit: Bei Prokura wirken interne Grenzen nicht gegen Dritte (pp./ppa., nicht übertragbar); bei Handlungsvollmacht wirken sie bei Kenntnis/Kennenmüssen (i. V. oder i. A., übertragbar mit Zustimmung).",
+      "points": 20,
+      "topic": "handlungsvollmacht"
+    }
+  ]
+}

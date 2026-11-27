@@ -1,0 +1,120 @@
+{
+  "title": "10 Documentary Collection & Letter of Credit - Topic Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Who is the applicant in a Letter of Credit, and who initiates a Documentary Collection?",
+      "options": [
+        "Exporter for a Letter of Credit; importer for a Documentary Collection",
+        "Importer for a Letter of Credit; exporter for a Documentary Collection",
+        "Always the importer in both payment methods",
+        "Always the freight forwarder in both payment methods"
+      ],
+      "correctAnswer": "Importer for a Letter of Credit; exporter for a Documentary Collection",
+      "points": 10,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which residual risk remains with the importer in BOTH a Letter of Credit and a Documentary Collection?",
+      "options": [
+        "That banks never inspect any shipping documents",
+        "That the goods are defective, because banks check only documents and never physical goods",
+        "That the Letter of Credit is amended unilaterally by the exporter without consent",
+        "That the importer must pay cash before the goods are shipped"
+      ],
+      "correctAnswer": "That the goods are defective, because banks check only documents and never physical goods",
+      "points": 10,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How do an unconfirmed Letter of Credit and a confirmed Letter of Credit differ regarding bank liability?",
+      "options": [
+        "Unconfirmed: only the buyer's issuing bank is liable; confirmed: the seller's bank is also liable",
+        "Unconfirmed: no bank is liable; confirmed: only the buyer's bank is liable",
+        "Unconfirmed: only the seller's bank is liable; confirmed: the freight forwarder is liable",
+        "In both forms, both banks are automatically liable in equal shares"
+      ],
+      "correctAnswer": "Unconfirmed: only the buyer's issuing bank is liable; confirmed: the seller's bank is also liable",
+      "points": 10,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "If no specific presentation period is stated in a Letter of Credit, what is the default maximum number of days after the shipment date to present transport documents?",
+      "options": [
+        "7 days",
+        "10 days",
+        "30 days",
+        "21 days"
+      ],
+      "correctAnswer": "21 days",
+      "points": 5,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Why is a Documentary Collection significantly riskier for the exporter than a Letter of Credit?",
+      "options": [
+        "Because there is no bank payment guarantee, so non-acceptance and transfer risks remain with the exporter",
+        "Because the exporter is legally required to pay all bank fees alone",
+        "Because the importer receives the shipping documents without payment or bill acceptance",
+        "Because Documentary Collection is permitted only for orders above EUR 100,000"
+      ],
+      "correctAnswer": "Because there is no bank payment guarantee, so non-acceptance and transfer risks remain with the exporter",
+      "points": 15,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "What is the difference between Documentary Collection D/P and D/A?",
+      "options": [
+        "D/P grants a payment term via bill of exchange; D/A requires immediate cash payment",
+        "D/P is a confirmed Letter of Credit; D/A is an unconfirmed Letter of Credit",
+        "D/P applies only to air freight; D/A applies only to ocean shipping",
+        "D/P releases documents against simultaneous payment; D/A releases documents against acceptance of a bill of exchange"
+      ],
+      "correctAnswer": "D/P releases documents against simultaneous payment; D/A releases documents against acceptance of a bill of exchange",
+      "points": 10,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Honigmayr GmbH sells honey worth EUR 8,500.00 to the well-known Novotel hotel chain in Berlin (EU). Which payment method is most suitable?",
+      "options": [
+        "A confirmed Letter of Credit due to very high country risk",
+        "Full payment in advance before production due to lack of trust",
+        "Documentary Collection D/P because of a trusted partner, low country risk, and moderate order value",
+        "An escrow account located outside the European Union"
+      ],
+      "correctAnswer": "Documentary Collection D/P because of a trusted partner, low country risk, and moderate order value",
+      "points": 15,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "true-false",
+      "text": "Under ICC Paris UCP rules, every Letter of Credit is irrevocable and time-limited.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "true-false",
+      "text": "Under a Letter of Credit, the involved banks personally inspect the quality and quantity of the physical goods at the port.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "documentary-payments"
+    },
+    {
+      "type": "open-ended",
+      "text": "Compare a Letter of Credit and a Documentary Collection across applicant, bank payment guarantee, exporter's risk of non-acceptance, and best use case.",
+      "options": [],
+      "correctAnswer": "Applicant: Letter of Credit = importer (buyer), Documentary Collection = exporter (seller). Bank guarantee: Letter of Credit gives an irrevocable bank payment promise (plus advising bank if confirmed); Documentary Collection has no bank guarantee. Non-acceptance risk: covered for the exporter under a Letter of Credit, but remains with the exporter (along with transfer risk) under Documentary Collection. Best use case: Letter of Credit for new partners, high order values, and higher country risk; Documentary Collection for trusted partners and low country risk (cheaper and simpler).",
+      "points": 20,
+      "topic": "documentary-payments"
+    }
+  ]
+}

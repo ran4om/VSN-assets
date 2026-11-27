@@ -1,0 +1,30 @@
+{
+  "vault": "/home/kiarad/.cache/vsn/school-vault",
+  "examNotes": [],
+  "linkedNotes": [],
+  "lessons": [],
+  "books": [
+    {
+      "file": "02 Subjects/BW/2026-09-28 - BW - Hausaufgabe S. 38-40.pdf",
+      "lfsBytes": 6108
+    },
+    {
+      "file": "02 Subjects/BW/Praxisblicke-BWL-II-HAK.pdf",
+      "lfsBytes": null
+    }
+  ],
+  "subjectIndex": [
+    "02 Subjects/BW/Inhaltsverzeichnis.md",
+    "02 Subjects/BW/BW.md"
+  ],
+  "pageRefs": [],
+  "existingVsnAssetsRaw": [],
+  "window": {
+    "since": "2026-10-23",
+    "until": "2026-12-04"
+  },
+  "missing": [
+    "no exam note for this date/subject in 04 Exams — ask the user for the Stoff (topics/pages)",
+    "no lesson notes in the window"
+  ]
+}

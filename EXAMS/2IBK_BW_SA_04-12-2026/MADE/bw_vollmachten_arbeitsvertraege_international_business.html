@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vollmachten, Arbeitsverträge &amp; International Business - VSN BW 2IBK SA 04.12.2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* =====================================================
+       DESIGN TOKENS
+    ===================================================== */
+    :root {
+      --vsn-primary:   #1e2e48;
+      --vsn-secondary: #fbc92d;
+      --vsn-accent:    #dc4ebf;
+      --vsn-blue:      #2980b9;
+      --vsn-light-bg:  #f7f8fb;
+      --vsn-border:    #dde2ea;
+      --vsn-text:      #1a2236;
+      --vsn-muted:     #6b7a99;
+
+      --callout-def-bg:  rgba(220, 78, 191, 0.12);
+      --callout-def-border: #dc4ebf;
+      --callout-info-bg: rgba(41, 128, 185, 0.10);
+      --callout-info-border: #2980b9;
+      --callout-tip-bg:  rgba(251, 201, 45, 0.15);
+      --callout-tip-border: #d4a800;
+
+      --radius: 8px;
+      --shadow: 0 2px 8px rgba(30,46,72,0.08);
+      --shadow-md: 0 4px 16px rgba(30,46,72,0.12);
+    }
+
+    /* =====================================================
+       RESET & BASE
+    ===================================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 10.5pt; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: var(--vsn-text);
+      background: #fff;
+      line-height: 1.55;
+    }
+
+    code, .mono, kbd, samp, .formula {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.88em;
+      background: rgba(30,46,72,0.06);
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+
+    strong { font-weight: 700; }
+    em { font-style: italic; color: var(--vsn-primary); }
+
+    /* =====================================================
+       PAGE & PRINT SETUP
+    ===================================================== */
+    @page {
+      size: A4;
+      margin: 13mm 15mm 15mm 15mm;
+    }
+
+    @page :first {
+      margin: 0;
+    }
+
+    @media print {
+      html { font-size: 9.5pt; }
+      body { background: #fff; }
+
+      .page-break {
+        page-break-after: always;
+        break-after: always;
+      }
+      .no-break {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      .no-break-before {
+        page-break-before: avoid;
+        break-before: avoid;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .cover {
+        height: 297mm;
+        width: 210mm;
+      }
+
+      .toc-page,
+      .section {
+        padding-top: 2mm;
+      }
+
+      .callout-box, .table-wrap, .bilingual-grid { orphans: 3; widows: 3; }
+    }
+
+    /* =====================================================
+       COVER PAGE
+    ===================================================== */
+    .cover {
+      width: 100%;
+      min-height: 100vh;
+      background: var(--vsn-primary);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover-bg-pattern {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      opacity: 0.04;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          #fff 0,
+          #fff 1px,
+          transparent 0,
+          transparent 50%
+        );
+      background-size: 30px 30px;
+      z-index: 0;
+    }
+
+    .cover-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 40px 50px;
+    }
+
+    .cover-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+    .cover-logo {
+      height: 64px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .cover-badge {
+      background: var(--vsn-secondary);
+      color: var(--vsn-primary);
+      font-weight: 700;
+      font-size: 0.78em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    .cover-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cover-label {
+      font-size: 0.72em;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--vsn-secondary);
+      margin-bottom: 16px;
+    }
+
+    .cover-title {
+      font-family: 'Playfair Display', 'Open Sans', serif;
+      font-size: 2.9em;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .cover-title-de {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.4em;
+      font-weight: 300;
+      color: rgba(255,255,255,0.68);
+      margin-bottom: 36px;
+      letter-spacing: 0.01em;
+    }
+
+    .cover-divider {
+      width: 80px;
+      height: 4px;
+      background: var(--vsn-secondary);
+      border-radius: 2px;
+      margin-bottom: 28px;
+    }
+
+    .cover-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .cover-meta-item {
+      font-size: 0.86em;
+      color: rgba(255,255,255,0.75);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cover-meta-item::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+      flex-shrink: 0;
+    }
+
+    .cover-footer {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cover-footer-text {
+      font-size: 0.74em;
+      color: rgba(255,255,255,0.42);
+      letter-spacing: 0.05em;
+    }
+
+    .cover-accent-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--vsn-secondary) 0%, var(--vsn-accent) 100%);
+    }
+
+    /* =====================================================
+       TABLE OF CONTENTS
+    ===================================================== */
+    .toc-page {
+      padding: 18px 0 0;
+    }
+
+    .toc-header {
+      margin-bottom: 22px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid var(--vsn-secondary);
+    }
+
+    .toc-header h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.68em;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 4px;
+    }
+
+    .toc-header h1 {
+      font-size: 1.7em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .toc-item {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid var(--vsn-border);
+      padding: 10px 0;
+    }
+
+    .toc-num {
+      font-weight: 700;
+      font-size: 1.25em;
+      color: var(--vsn-secondary);
+      width: 36px;
+      flex-shrink: 0;
+      padding-top: 1px;
+    }
+
+    .toc-content {
+      flex: 1;
+    }
+
+    .toc-title-en {
+      font-weight: 700;
+      color: var(--vsn-primary);
+      font-size: 0.98em;
+    }
+
+    .toc-title-de {
+      font-size: 0.84em;
+      color: var(--vsn-muted);
+      font-weight: 400;
+    }
+
+    /* =====================================================
+       SECTION STRUCTURE
+    ===================================================== */
+    .section {
+      padding: 6px 0 10px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid var(--vsn-secondary);
+    }
+
+    .section-num {
+      background: var(--vsn-primary);
+      color: var(--vsn-secondary);
+      font-weight: 700;
+      font-size: 1.05em;
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .section-title-en {
+      font-size: 1.3em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+      line-height: 1.2;
+    }
+
+    .section-title-de {
+      font-size: 0.84em;
+      color: var(--vsn-accent);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* =====================================================
+       BILINGUAL GRID
+    ===================================================== */
+    .bilingual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .col-en {
+      padding-right: 16px;
+      border-right: 3px solid var(--vsn-secondary);
+    }
+
+    .col-de {
+      padding-left: 16px;
+    }
+
+    .col-label {
+      font-size: 0.65em;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .col-label-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+      display: inline-block;
+    }
+
+    /* =====================================================
+       CONTENT ELEMENTS
+    ===================================================== */
+    .content-text {
+      font-size: 0.88em;
+      line-height: 1.55;
+      color: var(--vsn-text);
+      margin-bottom: 8px;
+    }
+
+    h3.subsection-title {
+      font-size: 0.94em;
+      font-weight: 700;
+      color: var(--vsn-primary);
+      margin: 10px 0 6px;
+      padding-left: 8px;
+      border-left: 3px solid var(--vsn-accent);
+    }
+
+    ul.content-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 8px;
+    }
+
+    ul.content-list > li {
+      padding: 2px 0 2px 16px;
+      position: relative;
+      font-size: 0.86em;
+      line-height: 1.48;
+    }
+
+    ul.content-list > li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--vsn-secondary);
+    }
+
+    .example-block {
+      background: var(--vsn-light-bg);
+      border-left: 3px solid var(--vsn-primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 7px 10px;
+      margin: 7px 0;
+      font-size: 0.84em;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .example-block .example-label {
+      font-size: 0.74em;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--vsn-muted);
+      margin-bottom: 3px;
+    }
+
+    .example-block p {
+      margin: 2px 0;
+      line-height: 1.42;
+    }
+
+    /* =====================================================
+       CALLOUT BOXES
+    ===================================================== */
+    .callout-box {
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 9px 12px;
+      margin: 8px 0;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .callout-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      margin-top: 1px;
+    }
+
+    .callout-content {
+      flex: 1;
+    }
+
+    .callout-label {
+      font-size: 0.66em;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .callout-text {
+      font-size: 0.85em;
+      line-height: 1.48;
+    }
+
+    .callout-def {
+      background: var(--callout-def-bg);
+      border-left: 4px solid var(--callout-def-border);
+    }
+    .callout-def .callout-label { color: #c0359e; }
+    .callout-def .callout-text { color: var(--vsn-text); }
+
+    .callout-info {
+      background: var(--callout-info-bg);
+      border-left: 4px solid var(--callout-info-border);
+    }
+    .callout-info .callout-label { color: #1a6a9a; }
+    .callout-info .callout-text { color: var(--vsn-text); }
+
+    .callout-tip {
+      background: var(--callout-tip-bg);
+      border-left: 4px solid var(--callout-tip-border);
+    }
+    .callout-tip .callout-label { color: #8a6b00; }
+    .callout-tip .callout-text { color: var(--vsn-text); }
+
+    /* =====================================================
+       TABLES
+    ===================================================== */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 10px 0;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    table.vsn-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.81em;
+    }
+
+    table.vsn-table th {
+      background: var(--vsn-primary);
+      color: #fff;
+      font-weight: 700;
+      padding: 6px 8px;
+      text-align: left;
+      letter-spacing: 0.02em;
+      font-size: 0.88em;
+    }
+
+    table.vsn-table th:first-child { border-radius: var(--radius) 0 0 0; }
+    table.vsn-table th:last-child  { border-radius: 0 var(--radius) 0 0; }
+
+    table.vsn-table td {
+      padding: 5px 8px;
+      border-bottom: 1px solid var(--vsn-border);
+      vertical-align: top;
+      line-height: 1.4;
+    }
+
+    table.vsn-table tr:nth-child(even) td {
+      background: #f3f5f9;
+    }
+
+    table.vsn-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    table.vsn-table td.type-cell {
+      font-weight: 700;
+      color: var(--vsn-primary);
+      white-space: nowrap;
+    }
+
+    table.vsn-table td.highlight-cell {
+      background: rgba(251,201,45,0.22) !important;
+      font-weight: 700;
+    }
+
+    /* =====================================================
+       SVG DIAGRAM & FIGURES
+    ===================================================== */
+    .diagram-wrap {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .diagram-caption {
+      text-align: center;
+      font-size: 0.74em;
+      color: var(--vsn-muted);
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    .hero-row {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 14px;
+      align-items: center;
+      margin: 8px 0 10px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    figure { margin: 8px 0; text-align: center; page-break-inside: avoid; break-inside: avoid; }
+    figure img { max-width: 100%; max-height: 58mm; border-radius: var(--radius, 8px); box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: block; margin: 0 auto; }
+    figcaption { font-size: 0.74em; color: #5a6475; margin-top: 4px; font-style: italic; }
+
+    /* =====================================================
+       PAGE NUMBERS / FOOTER
+    ===================================================== */
+    @media print {
+      @page {
+        @bottom-right {
+          content: counter(page);
+          font-family: 'Open Sans', sans-serif;
+          font-size: 8.5pt;
+          color: #999;
+        }
+        @bottom-left {
+          content: "VSN - Betriebswirtschaft: Vollmachten, Arbeitsvertraege & International Business";
+          font-family: 'Open Sans', sans-serif;
+          font-size: 8.5pt;
+          color: #999;
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ==================== COVER ==================== -->
+<div class="cover page-break">
+  <div class="cover-bg-pattern"></div>
+  <div class="cover-content">
+    <div class="cover-header">
+      <img class="cover-logo" src="assets/VSN_new.png" alt="VSN Logo">
+      <span class="cover-badge">2IBK · SA · 04.12.2026</span>
+    </div>
+    <div class="cover-main">
+      <div class="cover-label">Betriebswirtschaft · Business Administration</div>
+      <div class="cover-title">Vollmachten, Arbeitsverträge &amp; International Business</div>
+      <div class="cover-title-de">Powers of Attorney, Employment Contracts &amp; Foreign Trade</div>
+      <div class="cover-divider"></div>
+      <div class="cover-meta">
+        <div class="cover-meta-item">10 Kapitel · 10 Chapters (Buch S. 57-69, 73-98 + Arbeitsblätter)</div>
+        <div class="cover-meta-item">Prokura, Handlungsvollmacht, Arbeitsverträge, Globalisierung, Risiken, Incoterms 2020, Exportkalkulation, Dokumente, Inkasso &amp; Akkreditiv</div>
+        <div class="cover-meta-item">Zweisprachig: Englisch / Deutsch · Visual Study Booklet</div>
+      </div>
+    </div>
+    <div class="cover-footer">
+      <span class="cover-footer-text">VSN Lernunterlage © 2026</span>
+      <span class="cover-footer-text">Klasse 2IBK · Betriebswirtschaft</span>
+    </div>
+  </div>
+  <div class="cover-accent-bar"></div>
+</div>
+
+<!-- ==================== TABLE OF CONTENTS ==================== -->
+<div class="toc-page page-break">
+  <div class="toc-header">
+    <h2>Inhaltsverzeichnis · Table of Contents</h2>
+    <h1>Übersicht der 10 Kapitel</h1>
+  </div>
+  <ul class="toc-list">
+    <li class="toc-item no-break"><span class="toc-num">1</span><div class="toc-content"><div class="toc-title-en">Prokura (Commercial Power of Representation)</div><div class="toc-title-de">Prokura: Umfang, Arten, Unterschrift &amp; Erlöschen (Buch S. 57-60)</div></div></li>
+    <li class="toc-item no-break"><span class="toc-num">2</span><div class="toc-content"><div class="toc-title-en">Power of Attorney (Handlungsvollmacht) &amp; Comparison</div><div class="toc-title-de">Handlungsvollmacht: Arten, Umfang &amp; Vergleich mit Prokura (Buch S. 60-63)</div></div></li>
+    <li class="toc-item no-break"><span class="toc-num">3</span><div class="toc-content"><div class="toc-title-en">Employment Contract &amp; Special Forms</div><div class="toc-title-de">Echter Arbeitsvertrag, Ferialjob, Pflichtpraktikum &amp; Geringfügigkeit (Buch S. 64-66)</div></div></li>
+    <li class="toc-item no-break"><span class="toc-num">4</span><div class="toc-content"><div class="toc-title-en">Freelance Service Contract &amp; Contract for Work</div><div class="toc-title-de">Freier Dienstvertrag, Werkvertrag &amp; Gesamtvergleich (Buch S. 66-69)</div></div></li>
+    <li class="toc-item no-break"><span class="toc-num">5</span><div class="toc-content"><div class="toc-title-en">Globalisation &amp; International Business</div><div class="toc-title-de">Globalisierung, Außenhandel &amp; Bedeutung für Österreich (Buch S. 72-76 + WS)</div></div></li>
+    <li class="toc-item no-break"><span class="toc-num">6</span><div class="toc-content"><div class="toc-title-en">Risks in Foreign Trade &amp; Risk Management</div><div class="toc-title-de">Risiken im Außenhandel &amp; Absicherungsstrategien (Buch S. 77-81 + Infoblatt)</div></div></li>
+    <li class="toc-item no-break"><span class="toc-num">7</span><div class="toc-content"><div class="toc-title-en">Incoterms 2020</div><div class="toc-title-de">Incoterms 2020: Vier Gruppen, 11 Klauseln, Risiko &amp; Kosten (Buch S. 82-87 + BTG)</div></div></li>
+    <li class="toc-item no-break"><span class="toc-num">8</span><div class="toc-content"><div class="toc-title-en">Export Calculation</div><div class="toc-title-de">Exportkalkulation: Biofit, Good4U Cosmetics &amp; PureFruit (Arbeitsblätter)</div></div></li>
+    <li class="toc-item no-break"><span class="toc-num">9</span><div class="toc-content"><div class="toc-title-en">Documents in Foreign Trade</div><div class="toc-title-de">Dokumente im Außenhandel: Transport, Ursprung &amp; Rechnungen (Buch S. 87-91)</div></div></li>
+    <li class="toc-item no-break"><span class="toc-num">10</span><div class="toc-content"><div class="toc-title-en">Documentary Collection &amp; Letter of Credit</div><div class="toc-title-de">Dokumenteninkasso (D/P, D/A) &amp; Dokumentenakkreditiv (Buch S. 89-98)</div></div></li>
+  </ul>
+</div>
+
+<!-- ==================== CHAPTER 1: PROKURA ==================== -->
+<div class="section page-break" id="s1">
+  <div class="section-header no-break">
+    <div class="section-num">1</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Prokura (Commercial Power of Representation)</div>
+      <div class="section-title-de">Prokura: Umfang, Arten, Zeichnung &amp; Erlöschen (Buch S. 57-60)</div>
+    </div>
+  </div>
+
+  <div class="hero-row">
+    <figure>
+      <img src="assets/ch01_prokura.jpg" alt="Prokura commercial authority illustration">
+      <figcaption>Prokura: broadest registered power / Umfangreichste Vollmacht</figcaption>
+    </figure>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 380 185" style="width:100%;height:auto;display:block;">
+        <rect x="2" y="2" width="376" height="181" rx="8" fill="#f7f8fb" stroke="#dde2ea" stroke-width="1.5"/>
+        <rect x="14" y="12" width="352" height="24" rx="5" fill="#1e2e48"/>
+        <text x="190" y="28" text-anchor="middle" fill="#fbc92d" font-size="10.5" font-weight="700">4 Types of Prokura · 4 Arten (§§ 48-53 UGB)</text>
+        <rect x="14" y="46" width="168" height="44" rx="6" fill="#fff" stroke="#2980b9" stroke-width="1.5"/>
+        <text x="98" y="63" text-anchor="middle" fill="#1e2e48" font-size="9.5" font-weight="700">Einzelprokura (Sole)</text>
+        <text x="98" y="79" text-anchor="middle" fill="#6b7a99" font-size="8.2">Acts alone · Handelt allein</text>
+        <rect x="198" y="46" width="168" height="44" rx="6" fill="#fff" stroke="#dc4ebf" stroke-width="1.5"/>
+        <text x="282" y="63" text-anchor="middle" fill="#1e2e48" font-size="9.5" font-weight="700">Gesamtprokura (Joint)</text>
+        <text x="282" y="79" text-anchor="middle" fill="#6b7a99" font-size="8.2">Four-Eyes · Vier-Augen-Prinzip</text>
+        <rect x="14" y="100" width="168" height="44" rx="6" fill="#fff" stroke="#fbc92d" stroke-width="1.5"/>
+        <text x="98" y="117" text-anchor="middle" fill="#1e2e48" font-size="9.5" font-weight="700">Gemischte Prokura (Mixed)</text>
+        <text x="98" y="133" text-anchor="middle" fill="#6b7a99" font-size="8.2">With director · Mit GF/Vorstand</text>
+        <rect x="198" y="100" width="168" height="44" rx="6" fill="#fff" stroke="#1e2e48" stroke-width="1.5"/>
+        <text x="282" y="117" text-anchor="middle" fill="#1e2e48" font-size="9.5" font-weight="700">Filialprokura (Branch)</text>
+        <text x="282" y="133" text-anchor="middle" fill="#6b7a99" font-size="8.2">One branch · Nur eine Filiale</text>
+        <rect x="14" y="152" width="352" height="22" rx="5" fill="#fbc92d"/>
+        <text x="190" y="167" text-anchor="middle" fill="#1e2e48" font-size="8.8" font-weight="700">Sign: pp. / ppa. · Entry: Firmenbuch + EVI · Internal caps bind Innenverhältnis only</text>
+      </svg>
+      <div class="diagram-caption">Prokura forms and legal rules · Arten und Grundregeln</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">A <strong>Power of Attorney</strong> lets you act in another's name. <strong>Prokura</strong> (<code>§§ 48-53 UGB</code>) is the widest business power, covering all judicial and extrajudicial business acts.</div></div>
+      </div>
+      <ul class="content-list">
+        <li>Only <strong>Firmenbuch</strong>-registered firms grant it by express declaration, published via <code>EVI</code>.</li>
+        <li><strong>Four-Eyes Principle:</strong> Gesamtprokura requires two Prokuristen to sign together.</li>
+        <li>Ends by revocation, dismissal, death, legal incapacity, or company bankruptcy.</li>
+      </ul>
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" stroke="#d4a800" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Internal euro caps never bind third parties. Always state both sides: the external contract stays valid, while internal breach brings damages or dismissal.</div></div>
+      </div>
+      <div class="example-block">
+        <div class="example-label">Worked Example · Nesrin Kaya (p. 59)</div>
+        <p><strong>Cap:</strong> € 9,500 internal limit; buys € 65,000 delivery van.</p>
+        <p><strong>Result:</strong> Van contract is valid externally; company claims damages internally.</p>
+      </div>
+    </div>
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Eine <strong>Vollmacht</strong> verleiht Vertretungsmacht. Die <strong>Prokura</strong> (<code>§§ 48-53 UGB</code>) ist die umfangreichste Vollmacht für alle gerichtlichen und außergerichtlichen Geschäfte des Betriebs.</div></div>
+      </div>
+      <ul class="content-list">
+        <li>Nur im <strong>Firmenbuch</strong> eingetragene Firmen erteilen sie ausdrücklich; Verlautbarung via <code>EVI</code>.</li>
+        <li><strong>Vier-Augen-Prinzip:</strong> Gesamtprokura erfordert gemeinsame Zeichnung zur Kontrolle.</li>
+        <li>Erlischt durch Aufhebung, Kündigung, Tod, Geschäftsunfähigkeit oder Firmenkonkurs.</li>
+      </ul>
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" stroke="#d4a800" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Interne Betragsgrenzen wirken nie gegen Dritte. Nenne immer beide Ebenen: Außenverhältnis (Vertrag gültig) und Innenverhältnis (Schadenersatz, Kündigung).</div></div>
+      </div>
+      <div class="example-block">
+        <div class="example-label">Beispiel · Nesrin Kaya (S. 59)</div>
+        <p><strong>Grenze:</strong> 9.500 EUR intern; kauft Lieferwagen um 65.000 EUR.</p>
+        <p><strong>Folge:</strong> Kaufvertrag im Außenverhältnis gültig; intern drohen Schadenersatz und Kündigung.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap no-break">
+    <table class="vsn-table">
+      <thead><tr><th>Prokurist MAY / darf</th><th>Prokurist MAY NOT / darf nicht</th></tr></thead>
+      <tbody>
+        <tr><td>Buy &amp; sell goods · Waren ein- und verkaufen</td><td>Dissolve or sell company · Unternehmen auflösen/verkaufen</td></tr>
+        <tr><td>Hire &amp; dismiss staff · Personal einstellen/kündigen</td><td>Change company name · Firmennamen ändern</td></tr>
+        <tr><td>Take out bank loans · Kredite aufnehmen</td><td>Sell or encumber real estate · Grundstücke belasten/verkaufen</td></tr>
+        <tr><td>Grant Handlungsvollmacht · Represent in court</td><td>Sign balance sheet (Bilanz) · Appoint/transfer Prokura</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== CHAPTER 2: HANDLUNGSVOLLMACHT ==================== -->
+<div class="section page-break" id="s2">
+  <div class="section-header no-break">
+    <div class="section-num">2</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Power of Attorney (Handlungsvollmacht) &amp; Comparison</div>
+      <div class="section-title-de">Handlungsvollmacht: Arten, Umfang &amp; Vergleich mit Prokura (Buch S. 60-63)</div>
+    </div>
+  </div>
+
+  <div class="hero-row">
+    <figure>
+      <img src="assets/ch02_handlungsvollmacht.jpg" alt="Prokura versus Handlungsvollmacht comparison illustration">
+      <figcaption>Scope ladder: Prokura vs. 3 levels of Handlungsvollmacht</figcaption>
+    </figure>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 380 185" style="width:100%;height:auto;display:block;">
+        <rect x="2" y="2" width="376" height="181" rx="8" fill="#f7f8fb" stroke="#dde2ea" stroke-width="1.5"/>
+        <rect x="22" y="18" width="96" height="148" rx="6" fill="#1e2e48"/>
+        <text x="70" y="42" text-anchor="middle" fill="#fbc92d" font-size="11" font-weight="700">PROKURA</text>
+        <text x="70" y="62" text-anchor="middle" fill="#fff" font-size="8.5">Firmenbuch + EVI</text>
+        <text x="70" y="80" text-anchor="middle" fill="#fff" font-size="8.5">Loans + Court</text>
+        <text x="70" y="98" text-anchor="middle" fill="#fff" font-size="8.5">All business acts</text>
+        <rect x="34" y="132" width="72" height="22" rx="4" fill="#fbc92d"/>
+        <text x="70" y="147" text-anchor="middle" fill="#1e2e48" font-size="9.5" font-weight="700">ppa. / pp.</text>
+        <rect x="138" y="46" width="224" height="34" rx="6" fill="#2980b9"/>
+        <text x="150" y="61" fill="#fff" font-size="9.2" font-weight="700">Generalvollmacht (General)</text>
+        <text x="150" y="74" fill="#e8f4fc" font-size="7.8">All ordinary acts · C&amp;A branch · i. V.</text>
+        <rect x="138" y="89" width="224" height="34" rx="6" fill="#dc4ebf"/>
+        <text x="150" y="104" fill="#fff" font-size="9.2" font-weight="700">Artvollmacht (Category)</text>
+        <text x="150" y="117" fill="#fde9f9" font-size="7.8">One type of act · Orders up to € 40k · i. A.</text>
+        <rect x="138" y="132" width="224" height="34" rx="6" fill="#fbc92d"/>
+        <text x="150" y="147" fill="#1e2e48" font-size="9.2" font-weight="700">Spezialvollmacht (Special)</text>
+        <text x="150" y="160" fill="#1e2e48" font-size="7.8">One single act · Buy 1 mirror · i. A.</text>
+      </svg>
+      <div class="diagram-caption">Three types of Handlungsvollmacht vs. Prokura (C&amp;A p. 61)</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Commercial Power of Attorney</strong> (<code>§§ 54-58 UGB</code>) covers only ordinary acts of a specific business. Any owner or Prokurist grants it expressly or by <strong>Implied Conduct</strong>.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>General Power of Attorney</strong> (<code>i. V.</code>): all ordinary acts of that business.</li>
+        <li><strong>Category Power of Attorney</strong> (<code>i. A.</code>): one recurring kind of ordinary deal.</li>
+        <li><strong>Special Power of Attorney</strong> (<code>i. A.</code>): one single concrete transaction.</li>
+      </ul>
+      <div class="example-block">
+        <div class="example-label">Worked Example · Fadil Berisha (p. 62)</div>
+        <p><strong>Case:</strong> Branch head buys € 50,000 electronics at MediaMarkt.</p>
+        <p><strong>Result:</strong> Valid under Generalvollmacht; transferring needs owner/Prokurist consent.</p>
+      </div>
+    </div>
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Die <strong>Handlungsvollmacht</strong> (<code>§§ 54-58 UGB</code>) gilt nur für gewöhnliche Geschäfte eines bestimmten Betriebs. Jeder Unternehmer oder Prokurist erteilt sie ausdrücklich oder durch <strong>schlüssige Handlung</strong>.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>Generalvollmacht</strong> (<code>i. V.</code>): alle gewöhnlichen Geschäfte des Betriebs.</li>
+        <li><strong>Artvollmacht</strong> (<code>i. A.</code>): eine bestimmte Art wiederkehrender Geschäfte.</li>
+        <li><strong>Spezialvollmacht</strong> (<code>i. A.</code>): eine einzelne konkrete Handlung.</li>
+      </ul>
+      <div class="example-block">
+        <div class="example-label">Beispiel · Fadil Berisha (S. 62)</div>
+        <p><strong>Fall:</strong> Filialleiter kauft Elektronik um 50.000 EUR bei MediaMarkt.</p>
+        <p><strong>Lösung:</strong> Gültige Generalvollmacht; Weitergabe nur mit Zustimmung.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap no-break">
+    <table class="vsn-table">
+      <thead><tr><th>Criterion / Kriterium</th><th>Prokura (§§ 48-53 UGB)</th><th>Handlungsvollmacht (§§ 54-58 UGB)</th></tr></thead>
+      <tbody>
+        <tr><td class="type-cell">Issuer / Erteilung</td><td>Firmenbuch firms only · Express only</td><td>Any owner or Prokurist · Express or implied</td></tr>
+        <tr><td class="type-cell">Firmenbuch</td><td>Mandatory + EVI · Pflicht</td><td>Not registered · Kein Eintrag</td></tr>
+        <tr><td class="type-cell">Loans &amp; Court</td><td class="highlight-cell">Allowed · Erlaubt</td><td>Forbidden · Verboten</td></tr>
+        <tr><td class="type-cell">Internal Limits</td><td>No effect on third parties · Unwirksam</td><td>Bind third parties if known / ought to know</td></tr>
+        <tr><td class="type-cell">Transfer / Signature</td><td>Not transferable · <code>pp. / ppa.</code></td><td>With consent · <code>i. V.</code> (General) / <code>i. A.</code> (Art, Spezial)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== CHAPTER 3: EMPLOYMENT CONTRACT ==================== -->
+<div class="section page-break" id="s3">
+  <div class="section-header no-break">
+    <div class="section-num">3</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Employment Contract &amp; Special Forms</div>
+      <div class="section-title-de">Echter Arbeitsvertrag, Ferialjob, Pflichtpraktikum &amp; Geringfügigkeit (Buch S. 64-66)</div>
+    </div>
+  </div>
+
+  <div class="hero-row">
+    <figure>
+      <img src="assets/ch03_employment.jpg" alt="Austrian employment forms workplace illustration">
+      <figcaption>Regular staff, interns, and marginal retail workers</figcaption>
+    </figure>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 380 185" style="width:100%;height:auto;display:block;">
+        <rect x="2" y="2" width="376" height="181" rx="8" fill="#f7f8fb" stroke="#dde2ea" stroke-width="1.5"/>
+        <rect x="14" y="12" width="352" height="26" rx="5" fill="#1e2e48"/>
+        <text x="190" y="29" text-anchor="middle" fill="#fbc92d" font-size="10" font-weight="700">Echter Arbeitsvertrag: 5 Core Traits · 5 Merkmale</text>
+        <rect x="14" y="46" width="170" height="60" rx="5" fill="#fff" stroke="#2980b9" stroke-width="1.5"/>
+        <text x="24" y="61" fill="#1e2e48" font-size="8.4" font-weight="700">1. Personal Labor (Pers. Arbeit)</text>
+        <text x="24" y="74" fill="#1e2e48" font-size="8.4" font-weight="700">2. Instructions (Weisungen)</text>
+        <text x="24" y="87" fill="#1e2e48" font-size="8.4" font-weight="700">3. Fixed time &amp; workplace</text>
+        <text x="24" y="100" fill="#1e2e48" font-size="8.4" font-weight="700">4. Employer Work Equipment</text>
+        <rect x="196" y="46" width="170" height="60" rx="5" fill="#fff" stroke="#dc4ebf" stroke-width="1.5"/>
+        <text x="206" y="62" fill="#1e2e48" font-size="8.4" font-weight="700">5. Zero economic risk</text>
+        <text x="206" y="76" fill="#2980b9" font-size="8.2">ÖGK + Wage Tax (Lohnsteuer)</text>
+        <text x="206" y="90" fill="#27ae60" font-size="8.2">Paid Vacation + Sick Pay</text>
+        <text x="206" y="102" fill="#27ae60" font-size="8.2">Special Payments (13./14.)</text>
+        <rect x="14" y="116" width="110" height="56" rx="5" fill="#fbc92d"/>
+        <text x="69" y="133" text-anchor="middle" fill="#1e2e48" font-size="8.8" font-weight="700">Ferialjob</text>
+        <text x="69" y="148" text-anchor="middle" fill="#1e2e48" font-size="7.8">Holiday Job</text>
+        <text x="69" y="162" text-anchor="middle" fill="#1e2e48" font-size="7.5">Full employee rights</text>
+        <rect x="135" y="116" width="110" height="56" rx="5" fill="#2980b9"/>
+        <text x="190" y="133" text-anchor="middle" fill="#fff" font-size="8.8" font-weight="700">Pflichtpraktikum</text>
+        <text x="190" y="148" text-anchor="middle" fill="#e8f4fc" font-size="7.8">300 h HAK (II.-V.)</text>
+        <text x="190" y="162" text-anchor="middle" fill="#e8f4fc" font-size="7.5">Contract or training</text>
+        <rect x="256" y="116" width="110" height="56" rx="5" fill="#dc4ebf"/>
+        <text x="311" y="133" text-anchor="middle" fill="#fff" font-size="8.8" font-weight="700">Geringfügig</text>
+        <text x="311" y="148" text-anchor="middle" fill="#fde9f9" font-size="7.8">≤ € 551.10/mo*</text>
+        <text x="311" y="162" text-anchor="middle" fill="#fde9f9" font-size="7.5">Unfallvers. only</text>
+      </svg>
+      <div class="diagram-caption">Regular employment traits and special forms (*2025/2026 reference)</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">In a <strong>Regular Employment Contract</strong>, you supply <strong>Personal Labor</strong> under <strong>Instructions</strong> using employer <strong>Work Equipment</strong>, insured with the <strong>Austrian Health Insurance Fund</strong> (<code>ÖGK</code>).</div></div>
+      </div>
+      <ul class="content-list">
+        <li>Employer deducts <strong>Wage Tax</strong>; rights include <strong>Paid Vacation</strong>, <strong>Sick Pay</strong>, and <strong>Special Payments</strong>.</li>
+        <li><strong>Holiday Job</strong> = full contract; <strong>Mandatory Internship</strong> = <code>300 h</code> for HAK (Year II to V).</li>
+        <li><strong>Marginal Employment</strong> stays at or below the <strong>Marginal Earnings Threshold</strong>: only <strong>Accident Insurance</strong> applies.</li>
+      </ul>
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" stroke="#d4a800" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Marginal workers still receive paid vacation, sick pay, and 13th/14th pay. They only lack health, pension, and unemployment insurance.</div></div>
+      </div>
+    </div>
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Beim <strong>echten Arbeitsvertrag</strong> leistest du <strong>persönliche Arbeitskraft</strong> nach <strong>Weisungen</strong> mit <strong>Arbeitsmitteln</strong> des Arbeitgebers, gemeldet bei der <strong>ÖGK</strong>.</div></div>
+      </div>
+      <ul class="content-list">
+        <li>Arbeitgeber zieht <strong>Lohnsteuer</strong> ab; Anspruch auf <strong>bezahlten Urlaub</strong>, <strong>Entgeltfortzahlung im Krankheitsfall</strong> und <strong>Sonderzahlungen</strong>.</li>
+        <li><strong>Ferialjob</strong> = echter Vertrag; <strong>Pflichtpraktikum</strong> = <code>300 Std.</code> an der HAK (II.-V. Jg.).</li>
+        <li><strong>Geringfügige Beschäftigung</strong> bis zur <strong>Geringfügigkeitsgrenze</strong>: nur <strong>Unfallversicherung</strong>.</li>
+      </ul>
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" stroke="#d4a800" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Geringfügig Beschäftigte erhalten Urlaub, Krankenstand-Fortzahlung und Sonderzahlungen. Es fehlen nur Kranken-, Pensions- und Arbeitslosenversicherung.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap no-break">
+    <table class="vsn-table">
+      <thead><tr><th>Form / Art</th><th>Vacation, Sick Pay, 13./14.</th><th>Social Insurance</th><th>Wage Tax</th><th>Example (p. 66-69)</th></tr></thead>
+      <tbody>
+        <tr><td class="type-cell">Echter Arbeitsvertrag</td><td>Yes / Ja</td><td>Full ÖGK (Employer)</td><td>Yes (Employer)</td><td>Sascha Seidel (AT&amp;S)</td></tr>
+        <tr><td class="type-cell">Ferialjob / Praktikum</td><td>Yes (if employment contract)</td><td>Full ÖGK</td><td>If above threshold</td><td>300 h HAK placement</td></tr>
+        <tr><td class="type-cell">Geringfügig</td><td class="highlight-cell">Yes / Ja</td><td class="highlight-cell">Accident only (UV)</td><td>No / Nein</td><td>Amara Hadic (H&amp;M Sat.)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== CHAPTER 4: FREELANCE & CONTRACT FOR WORK ==================== -->
+<div class="section page-break" id="s4">
+  <div class="section-header no-break">
+    <div class="section-num">4</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Freelance Service Contract &amp; Contract for Work</div>
+      <div class="section-title-de">Freier Dienstvertrag, Werkvertrag &amp; Vergleich (Buch S. 66-69)</div>
+    </div>
+  </div>
+
+  <div class="hero-row">
+    <figure>
+      <img src="assets/ch04_contracts.jpg" alt="Three contract types comparison illustration">
+      <figcaption>Employee vs. Freelance Employee vs. Self-Employed Contractor</figcaption>
+    </figure>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 380 185" style="width:100%;height:auto;display:block;">
+        <rect x="2" y="2" width="376" height="181" rx="8" fill="#f7f8fb" stroke="#dde2ea" stroke-width="1.5"/>
+        <rect x="75" y="10" width="230" height="30" rx="6" fill="#1e2e48"/>
+        <text x="190" y="29" text-anchor="middle" fill="#fbc92d" font-size="9.5" font-weight="700">Paid for 1 finished result + own tools?</text>
+        <line x1="125" y1="40" x2="72" y2="68" stroke="#1e2e48" stroke-width="2"/>
+        <line x1="255" y1="40" x2="295" y2="68" stroke="#1e2e48" stroke-width="2"/>
+        <text x="80" y="57" fill="#dc4ebf" font-size="8.5" font-weight="700">YES</text>
+        <text x="292" y="57" fill="#2980b9" font-size="8.5" font-weight="700">NO (ongoing)</text>
+        <rect x="14" y="68" width="122" height="104" rx="6" fill="#dc4ebf"/>
+        <text x="75" y="88" text-anchor="middle" fill="#fff" font-size="9.5" font-weight="700">Werkvertrag</text>
+        <text x="75" y="104" text-anchor="middle" fill="#fde9f9" font-size="8">Fee (Honorar) on success</text>
+        <text x="75" y="119" text-anchor="middle" fill="#fde9f9" font-size="8">Own tools + own risk</text>
+        <text x="75" y="134" text-anchor="middle" fill="#fde9f9" font-size="8">Warranty · Gewährleistung</text>
+        <text x="75" y="152" text-anchor="middle" fill="#fbc92d" font-size="8.5" font-weight="700">SVS + Einkommensteuer</text>
+        <rect x="160" y="68" width="206" height="28" rx="5" fill="#2980b9"/>
+        <text x="263" y="86" text-anchor="middle" fill="#fff" font-size="8.8" font-weight="700">Bound by instructions, time &amp; place?</text>
+        <line x1="210" y1="96" x2="205" y2="114" stroke="#1e2e48" stroke-width="1.8"/>
+        <line x1="315" y1="96" x2="320" y2="114" stroke="#1e2e48" stroke-width="1.8"/>
+        <rect x="150" y="114" width="106" height="58" rx="5" fill="#1e2e48"/>
+        <text x="203" y="130" text-anchor="middle" fill="#fbc92d" font-size="8.3" font-weight="700">YES: Arbeitsvertrag</text>
+        <text x="203" y="145" text-anchor="middle" fill="#fff" font-size="7.6">ÖGK + Lohnsteuer</text>
+        <text x="203" y="159" text-anchor="middle" fill="#fff" font-size="7.6">Vacation + Sick Pay</text>
+        <rect x="264" y="114" width="104" height="58" rx="5" fill="#fbc92d"/>
+        <text x="316" y="130" text-anchor="middle" fill="#1e2e48" font-size="8.2" font-weight="700">NO: Freier Dienstv.</text>
+        <text x="316" y="145" text-anchor="middle" fill="#1e2e48" font-size="7.6">ÖGK + Einkommenst.</text>
+        <text x="316" y="159" text-anchor="middle" fill="#1e2e48" font-size="7.6">No vacation/sick pay</text>
+      </svg>
+      <div class="diagram-caption">Two-step contract decision tree · Zwei-Fragen-Check</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">A <strong>Freelance Service Contract</strong> supplies ongoing labor with employer tools and no personal dependency. A <strong>Contract for Work</strong> delivers a finished result for a <strong>Fee</strong>.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>Freelance Employee:</strong> ÖGK via employer, self-taxed via <strong>Income Tax Return</strong>, no vacation.</li>
+        <li><strong>Contractor:</strong> Own tools, own risk, <strong>Warranty Liability</strong>, self-insured at <strong>Self-Employed Social Insurance</strong> (<code>SVS</code>).</li>
+      </ul>
+      <div class="example-block">
+        <div class="example-label">Worked Example · Thea Brandt at AT&amp;S (p. 69)</div>
+        <p><strong>Task:</strong> Builds database for € 18,900 on completion → <strong>Werkvertrag</strong>.</p>
+        <p><strong>Rights:</strong> No paid vacation; may delegate work while keeping warranty.</p>
+      </div>
+    </div>
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Ein <strong>freier Dienstvertrag</strong> bietet laufende Arbeit ohne persönliche Abhängigkeit. Ein <strong>Werkvertrag</strong> schuldet einen fertigen Erfolg gegen ein <strong>Honorar</strong>.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>Freier Dienstnehmer:</strong> ÖGK durch Arbeitgeber, <strong>Einkommensteuererklärung</strong> selbst, kein Urlaub.</li>
+        <li><strong>Werkvertragsnehmer:</strong> Eigene Mittel, eigenes Risiko, <strong>Gewährleistung</strong>, meldet sich selbst bei der <strong>SVS</strong>.</li>
+      </ul>
+      <div class="example-block">
+        <div class="example-label">Beispiel · Thea Brandt bei AT&amp;S (S. 69)</div>
+        <p><strong>Auftrag:</strong> Kundendatenbank um 18.900 EUR bei Erfolg → <strong>Werkvertrag</strong>.</p>
+        <p><strong>Folge:</strong> Kein Urlaubsanspruch; darf Teile weitergeben, haftet aber weiter.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap no-break">
+    <table class="vsn-table">
+      <thead><tr><th>Criterion</th><th>Echter Arbeitsvertrag</th><th>Freier Dienstvertrag</th><th>Werkvertrag</th></tr></thead>
+      <tbody>
+        <tr><td class="type-cell">Instructions / Tools</td><td>Bound / Employer</td><td>Free / Employer</td><td>Free / Contractor (own)</td></tr>
+        <tr><td class="type-cell">Risk &amp; Insurance</td><td>Employer · ÖGK</td><td>Employer · ÖGK</td><td class="highlight-cell">Contractor · SVS</td></tr>
+        <tr><td class="type-cell">Tax / Rights</td><td>Lohnsteuer · Full rights</td><td>Einkommensteuer · Pay only</td><td>Einkommensteuer · Fee on result</td></tr>
+        <tr><td class="type-cell">Kronen Zeitung (p. 68)</td><td>Sharif Salah (staff)</td><td>Lisa Wenig (3 articles/wk)</td><td>Pascal Geiger (1 illustration)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== CHAPTER 5: GLOBALISATION ==================== -->
+<div class="section page-break" id="s5">
+  <div class="section-header no-break">
+    <div class="section-num">5</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Globalisation &amp; International Business</div>
+      <div class="section-title-de">Globalisierung &amp; Bedeutung des Außenhandels (Buch S. 72-76 + WS)</div>
+    </div>
+  </div>
+
+  <div class="hero-row">
+    <figure>
+      <img src="assets/ch05_globalisation.jpg" alt="Globalisation and Austria international trade illustration">
+      <figcaption>Global networks, shipping, and Austria's export economy</figcaption>
+    </figure>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 380 185" style="width:100%;height:auto;display:block;">
+        <rect x="2" y="2" width="376" height="181" rx="8" fill="#f7f8fb" stroke="#dde2ea" stroke-width="1.5"/>
+        <rect x="14" y="10" width="352" height="24" rx="5" fill="#1e2e48"/>
+        <text x="190" y="26" text-anchor="middle" fill="#fbc92d" font-size="10" font-weight="700">Austria's Foreign Trade Dashboard (WKO 2025, p. 74)</text>
+        <rect x="14" y="42" width="110" height="52" rx="5" fill="#fff" stroke="#2980b9" stroke-width="1.5"/>
+        <text x="69" y="62" text-anchor="middle" fill="#1e2e48" font-size="13" font-weight="700">€ 203 bn</text>
+        <text x="69" y="79" text-anchor="middle" fill="#6b7a99" font-size="8">Exports (2024)</text>
+        <rect x="135" y="42" width="110" height="52" rx="5" fill="#fff" stroke="#dc4ebf" stroke-width="1.5"/>
+        <text x="190" y="62" text-anchor="middle" fill="#1e2e48" font-size="13" font-weight="700">63,000+</text>
+        <text x="190" y="79" text-anchor="middle" fill="#6b7a99" font-size="8">Export firms</text>
+        <rect x="256" y="42" width="110" height="52" rx="5" fill="#fff" stroke="#fbc92d" stroke-width="1.5"/>
+        <text x="311" y="62" text-anchor="middle" fill="#1e2e48" font-size="13" font-weight="700">200+</text>
+        <text x="311" y="79" text-anchor="middle" fill="#6b7a99" font-size="8">Countries</text>
+        <rect x="14" y="104" width="352" height="30" rx="5" fill="#1e2e48"/>
+        <text x="190" y="123" text-anchor="middle" fill="#fff" font-size="8.6">Top Partners: Germany · USA · Italy · Switzerland | Machinery, Chemicals, Vehicles</text>
+        <rect x="14" y="142" width="102" height="30" rx="5" fill="#2980b9"/>
+        <text x="65" y="161" text-anchor="middle" fill="#fff" font-size="8.2" font-weight="700">Brazil (Import)</text>
+        <line x1="116" y1="157" x2="138" y2="157" stroke="#1e2e48" stroke-width="2"/>
+        <rect x="139" y="142" width="102" height="30" rx="5" fill="#fbc92d"/>
+        <text x="190" y="161" text-anchor="middle" fill="#1e2e48" font-size="8.2" font-weight="700">Rauch Austria</text>
+        <line x1="241" y1="157" x2="263" y2="157" stroke="#1e2e48" stroke-width="2"/>
+        <rect x="264" y="142" width="102" height="30" rx="5" fill="#dc4ebf"/>
+        <text x="315" y="161" text-anchor="middle" fill="#fff" font-size="8.2" font-weight="700">Qatar (Export)</text>
+      </svg>
+      <div class="diagram-caption">WKO 2025 export stats and Rauch Import/Export chain (p. 74)</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Globalisation</strong> connects countries economically and culturally. <strong>Foreign Trade</strong> comprises <strong>Import</strong> and <strong>Export</strong>, measured by the <strong>Export Ratio</strong>.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>History &amp; drivers:</strong> From the <strong>Silk Road</strong> to container ships, internet, and TNCs.</li>
+        <li><strong>Trade causes:</strong> Missing resources (coffee), specialization (skis), surplus (cheese), brands (Red Bull).</li>
+        <li><strong>Challenges:</strong> Language (Tagalog), laws, currencies, customs, political risk, local rivals.</li>
+      </ul>
+      <div class="example-block">
+        <div class="example-label">Business Case · BWT AG (p. 73)</div>
+        <p>Mondsee exporter sells water filters to Seda Hotels (Philippines) for growth and brand reach.</p>
+      </div>
+    </div>
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Globalisierung</strong> vernetzt Länder wirtschaftlich und kulturell. Der <strong>Außenhandel</strong> umfasst <strong>Einfuhr</strong> und <strong>Ausfuhr</strong>, gemessen an der <strong>Exportquote</strong>.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>Treiber:</strong> Von der <strong>Seidenstraße</strong> zu Containerschiffen, Internet und TNCs.</li>
+        <li><strong>Ursachen:</strong> Fehlende Rohstoffe (Kaffee), Spezialisierung (Ski), Überschuss (Käse), Marken.</li>
+        <li><strong>Hürden:</strong> Sprache, Rechtssysteme, Währungen, Zoll, Politik und lokale Konkurrenz.</li>
+      </ul>
+      <div class="example-block">
+        <div class="example-label">Praxisfall · BWT AG (S. 73)</div>
+        <p>Exporteur aus Mondsee liefert Wasserfilter an Seda Hotels (Philippinen) für Wachstum und Risikostreuung.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap no-break">
+    <table class="vsn-table">
+      <thead><tr><th>Group / Gruppe</th><th>Benefits (Pros / Vorteile)</th><th>Drawbacks (Cons / Nachteile)</th></tr></thead>
+      <tbody>
+        <tr><td class="type-cell">Individuals / Privat</td><td>Year-round choice, lower prices, travel/study abroad</td><td>Job offshoring, wage pressure, higher CO2 footprint</td></tr>
+        <tr><td class="type-cell">Companies / Firmen</td><td>Larger markets, scale economies, cheaper inputs</td><td>Global price pressure, FX/legal risks, fragile chains</td></tr>
+        <tr><td class="type-cell">Industrialized</td><td>Export prosperity, raw-material access, high-tech</td><td>Factory job losses, import dependence (energy/chips)</td></tr>
+        <tr><td class="type-cell">Developing</td><td>FDI investment, new jobs, technology transfer</td><td>Labor exploitation, pollution, profit outflow, brain drain</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== CHAPTER 6: RISKS & RISK MANAGEMENT ==================== -->
+<div class="section page-break" id="s6">
+  <div class="section-header no-break">
+    <div class="section-num">6</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Risks in Foreign Trade &amp; Risk Management</div>
+      <div class="section-title-de">Risiken im Außenhandel &amp; Risikomanagement (Buch S. 77-81 + Infoblatt)</div>
+    </div>
+  </div>
+
+  <div class="hero-row">
+    <figure>
+      <img src="assets/ch06_risks.jpg" alt="Foreign trade risks and protective hedging illustration">
+      <figcaption>Shielding international cargo, payments, and currencies</figcaption>
+    </figure>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 380 192" style="width:100%;height:auto;display:block;">
+        <rect x="2" y="2" width="376" height="188" rx="8" fill="#f7f8fb" stroke="#dde2ea" stroke-width="1.5"/>
+        <rect x="12" y="10" width="114" height="22" rx="4" fill="#1e2e48"/>
+        <text x="69" y="24" text-anchor="middle" fill="#fbc92d" font-size="8.5" font-weight="700">1. BEFORE / VOR</text>
+        <rect x="133" y="10" width="114" height="22" rx="4" fill="#2980b9"/>
+        <text x="190" y="24" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="700">2. DURING / WÄHREND</text>
+        <rect x="254" y="10" width="114" height="22" rx="4" fill="#dc4ebf"/>
+        <text x="311" y="24" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="700">3. AFTER / NACH</text>
+        <rect x="12" y="38" width="114" height="72" rx="5" fill="#fff" stroke="#1e2e48" stroke-width="1.2"/>
+        <text x="18" y="51" fill="#1e2e48" font-size="7.6" font-weight="700">Exporter:</text>
+        <text x="18" y="63" fill="#1e2e48" font-size="7.3">• Market Risk (Marktforschung)</text>
+        <text x="18" y="75" fill="#1e2e48" font-size="7.3">• Production Risk (Anzahlung,</text>
+        <text x="22" y="86" fill="#6b7a99" font-size="7">Vorauszahlung, Zahlungsgar.)</text>
+        <text x="18" y="101" fill="#dc4ebf" font-size="7.3" font-weight="700">Importer: Delivery Risk</text>
+        <rect x="133" y="38" width="114" height="72" rx="5" fill="#fff" stroke="#2980b9" stroke-width="1.2"/>
+        <text x="139" y="51" fill="#1e2e48" font-size="7.6" font-weight="700">Both / Exporter:</text>
+        <text x="139" y="63" fill="#1e2e48" font-size="7.3">• Transport Risk (Incoterms,</text>
+        <text x="143" y="74" fill="#6b7a99" font-size="7">Transport Insurance)</text>
+        <text x="139" y="88" fill="#1e2e48" font-size="7.3">• Non-Acceptance (L/C,</text>
+        <text x="143" y="99" fill="#6b7a99" font-size="7">Annahmerisiko)</text>
+        <rect x="254" y="38" width="114" height="72" rx="5" fill="#fff" stroke="#dc4ebf" stroke-width="1.2"/>
+        <text x="260" y="51" fill="#1e2e48" font-size="7.6" font-weight="700">Exporter / Importer:</text>
+        <text x="260" y="63" fill="#1e2e48" font-size="7.2">• Default (OeKB Guarantee)</text>
+        <text x="260" y="74" fill="#1e2e48" font-size="7.2">• Credit (Export Financing)</text>
+        <text x="260" y="85" fill="#1e2e48" font-size="7.2">• FX (Forward Contract)</text>
+        <text x="260" y="99" fill="#dc4ebf" font-size="7.2" font-weight="700">Importer: Warranty Risk</text>
+        <rect x="12" y="118" width="356" height="64" rx="5" fill="#1e2e48"/>
+        <text x="190" y="133" text-anchor="middle" fill="#fbc92d" font-size="8.4" font-weight="700">Infosheet Extra Risks &amp; Instruments · Weitere Risiken &amp; Schutz</text>
+        <text x="22" y="148" fill="#fff" font-size="7.4">Interest Rate Risk (Zins) · Price Change Risk (Price Fluctuation Clause / Preisschwankungsklausel)</text>
+        <text x="22" y="161" fill="#fff" font-size="7.4">Political, Transfer &amp; Legal Risk → Escrow Account (Treuhandkonto), L/C, State Export Guarantee (OeKB)</text>
+        <text x="22" y="174" fill="#fbc92d" font-size="7.4">Performance Risk (Erfüllungsrisiko) → Bank Guarantee, Credit Purchase (Zielkauf), Pönale, Test Certificate</text>
+      </svg>
+      <div class="diagram-caption">All export/import risks across phases plus Infosheet tools</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Risk</strong> is the danger of losing capital or missing planned profit. Cross-border trade adds currency, transport, political, and legal hazards.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>Export Financing:</strong> SMEs refinance via Exportfonds; large firms via <strong>Oesterreichische Kontrollbank AG</strong> (<code>OeKB</code>).</li>
+        <li><strong>Exchange Rate Risk:</strong> Lock rates with <strong>Currency Hedging</strong> like a <strong>Forward Exchange Contract</strong>.</li>
+        <li><strong>Importer tools:</strong> Low down payment, <strong>Contractual Penalty</strong>, <strong>Test Certificate</strong>, bank guarantee.</li>
+      </ul>
+      <div class="example-block">
+        <div class="example-label">FX Example · BWT &amp; Palfinger (p. 79)</div>
+        <p>USD 10,000 drops from € 1.00 to € 0.90 → € 1,000 loss. BWT lost € 12,000 on USD 250,000.</p>
+      </div>
+    </div>
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Risiko</strong> ist die Gefahr, Kapital zu verlieren oder Gewinn zu verfehlen. Fremde Gesetze, Währungen und lange Wege erhöhen das Risiko.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>Exportfinanzierung:</strong> KMUs über Exportfonds; Großfirmen und Garantien über die <strong>OeKB</strong>.</li>
+        <li><strong>Wechselkursrisiko:</strong> Absicherung durch <strong>Kurssicherungsgeschäfte</strong> wie das <strong>Devisentermingeschäft</strong>.</li>
+        <li><strong>Importeur-Schutz:</strong> Geringe Anzahlung, <strong>Pönale</strong>, <strong>Prüfzertifikat</strong>, <strong>Bankgarantie</strong>.</li>
+      </ul>
+      <div class="example-block">
+        <div class="example-label">Kursbeispiel · BWT &amp; Palfinger (S. 79)</div>
+        <p>10.000 USD sinken von 1,00 auf 0,90 EUR → 1.000 EUR Verlust. BWT verlor 12.000 EUR.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap no-break">
+    <table class="vsn-table">
+      <thead><tr><th>Risk / Risiko</th><th>Key Danger / Gefahr</th><th>Main Protection / Absicherung</th></tr></thead>
+      <tbody>
+        <tr><td class="type-cell">Market &amp; Production</td><td>Wrong product / buyer cancels</td><td>Market Research · Down Payment / Payment in Advance</td></tr>
+        <tr><td class="type-cell">Transport &amp; Non-Accept.</td><td>Damage, theft / buyer refuses</td><td>Incoterms · Transport Insurance · Letter of Credit</td></tr>
+        <tr><td class="type-cell">Default Risk &amp; Credit Risk</td><td>Non-payment / liquidity gap (Zahlungsausfall- / Kreditrisiko)</td><td>Payment Guarantee · State Export Guarantee (OeKB)</td></tr>
+        <tr><td class="type-cell">Political, Transfer Risk &amp; Legal</td><td>War, currency freeze (Transferrisiko), new law</td><td>Advance payment · L/C · Escrow Account · OeKB</td></tr>
+        <tr><td class="type-cell">Delivery &amp; Warranty</td><td>Late/bad goods / no repair</td><td>Credit Purchase (Zielkauf) · Pönale · Bank Guarantee</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== CHAPTER 7: INCOTERMS 2020 ==================== -->
+<div class="section page-break" id="s7">
+  <div class="section-header no-break">
+    <div class="section-num">7</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Incoterms 2020</div>
+      <div class="section-title-de">Incoterms 2020: Vier Gruppen, 11 Klauseln, Risiko- &amp; Kostenübergang (Buch S. 82-87)</div>
+    </div>
+  </div>
+
+  <div class="hero-row">
+    <figure>
+      <img src="assets/ch07_incoterms.jpg" alt="International multimodal shipping Incoterms route">
+      <figcaption>Factory → Truck → Port → Ship → Destination Warehouse</figcaption>
+    </figure>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 380 198" style="width:100%;height:auto;display:block;">
+        <rect x="2" y="2" width="376" height="194" rx="8" fill="#f7f8fb" stroke="#dde2ea" stroke-width="1.5"/>
+        <text x="64" y="18" fill="#6b7a99" font-size="7.5" font-weight="700">Seller</text>
+        <text x="128" y="18" fill="#6b7a99" font-size="7.5" font-weight="700">Carrier/Port</text>
+        <text x="214" y="18" fill="#6b7a99" font-size="7.5" font-weight="700">Main Carriage</text>
+        <text x="294" y="18" fill="#6b7a99" font-size="7.5" font-weight="700">Dest. Port</text>
+        <text x="342" y="18" fill="#6b7a99" font-size="7.5" font-weight="700">Buyer</text>
+        <!-- EXW -->
+        <text x="10" y="34" fill="#1e2e48" font-size="8" font-weight="700">EXW</text>
+        <rect x="52" y="25" width="30" height="10" rx="2" fill="#1e2e48"/><rect x="82" y="25" width="286" height="10" rx="2" fill="#dde2ea"/>
+        <!-- FCA / FAS / FOB -->
+        <text x="10" y="51" fill="#1e2e48" font-size="8" font-weight="700">FCA</text>
+        <rect x="52" y="42" width="84" height="10" rx="2" fill="#2980b9"/><rect x="136" y="42" width="232" height="10" rx="2" fill="#dde2ea"/>
+        <text x="10" y="68" fill="#2980b9" font-size="8" font-weight="700">FAS*</text>
+        <rect x="52" y="59" width="110" height="10" rx="2" fill="#2980b9"/><rect x="162" y="59" width="206" height="10" rx="2" fill="#dde2ea"/>
+        <text x="10" y="85" fill="#2980b9" font-size="8" font-weight="700">FOB*</text>
+        <rect x="52" y="76" width="128" height="10" rx="2" fill="#2980b9"/><rect x="180" y="76" width="188" height="10" rx="2" fill="#dde2ea"/>
+        <!-- C-clauses (TWO POINT: Risk vs Cost split!) -->
+        <text x="10" y="104" fill="#dc4ebf" font-size="8" font-weight="700">CPT/CIP</text>
+        <rect x="52" y="94" width="84" height="6" rx="1" fill="#dc4ebf"/><rect x="52" y="101" width="268" height="6" rx="1" fill="#fbc92d"/>
+        <text x="10" y="123" fill="#dc4ebf" font-size="8" font-weight="700">CFR/CIF*</text>
+        <rect x="52" y="113" width="128" height="6" rx="1" fill="#dc4ebf"/><rect x="52" y="120" width="242" height="6" rx="1" fill="#fbc92d"/>
+        <!-- D-clauses -->
+        <text x="10" y="142" fill="#1e2e48" font-size="8" font-weight="700">DAP</text>
+        <rect x="52" y="133" width="276" height="10" rx="2" fill="#1e2e48"/><rect x="328" y="133" width="40" height="10" rx="2" fill="#dde2ea"/>
+        <text x="10" y="159" fill="#1e2e48" font-size="8" font-weight="700">DPU</text>
+        <rect x="52" y="150" width="292" height="10" rx="2" fill="#1e2e48"/><rect x="344" y="150" width="24" height="10" rx="2" fill="#dde2ea"/>
+        <text x="10" y="176" fill="#1e2e48" font-size="8" font-weight="700">DDP</text>
+        <rect x="52" y="167" width="316" height="10" rx="2" fill="#1e2e48"/>
+        <text x="10" y="191" fill="#6b7a99" font-size="7.3">C-clauses = 2-Point (Magenta = Risk ends early · Yellow = Cost ends at dest.) | *Sea/Inland only</text>
+      </svg>
+      <div class="diagram-caption">Incoterms 2020 Risk &amp; Cost transfer bars (BTG chart)</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Incoterms</strong> (ICC Paris) set <strong>Transfer of Risk</strong>, <strong>Transfer of Costs</strong>, transport documents, and customs. They do NOT cover payment, breach, or law.</div></div>
+      </div>
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" stroke="#d4a800" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Under C-clauses (<code>CPT, CIP, CFR, CIF</code>), the buyer bears main-carriage risk and files damage claims even though the seller paid freight.</div></div>
+      </div>
+      <div class="example-block">
+        <div class="example-label">Worked Example · CIP Bahnhof Wels (p. 84)</div>
+        <p>Risk passes at Milan rail station; costs at Wels. Buyer claims damaged meters.</p>
+      </div>
+    </div>
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Incoterms</strong> (IHK Paris) regeln <strong>Risikoübergang</strong>, <strong>Kostenübergang</strong>, Transportpapiere und Zoll. Zahlung, Vertragsbruch und Recht bleiben ungeregelt.</div></div>
+      </div>
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" stroke="#d4a800" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Bei C-Klauseln (Zweipunktklauseln) trägt immer der Käufer das Haupttransportrisiko und meldet Schäden, obwohl der Verkäufer die Fracht zahlt.</div></div>
+      </div>
+      <div class="example-block">
+        <div class="example-label">Beispiel · CIP Bahnhof Wels (S. 84)</div>
+        <p>Risiko ab Bahnhof Mailand, Kosten bis Wels. Welser Käufer klärt den Schaden.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap no-break">
+    <table class="vsn-table">
+      <thead><tr><th>Mode</th><th>Code</th><th>English / Deutsch</th><th>Risk → Cost Transfer</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="7" class="type-cell">Any Mode<br>(Alle)</td><td><code>EXW</code></td><td>Ex Works · Ab Werk</td><td>Seller's premises (not loaded)</td></tr>
+        <tr><td><code>FCA</code></td><td>Free Carrier · Frei Frachtführer</td><td>First carrier (a: seller loads; b: ready to unload)</td></tr>
+        <tr><td><code>CPT</code></td><td>Carriage Paid To · Frachtfrei</td><td class="highlight-cell">Risk: 1st carrier → Cost: destination</td></tr>
+        <tr><td><code>CIP</code></td><td>Carriage Insurance Paid · Frachtfrei versichert</td><td class="highlight-cell">Risk: 1st carrier → Cost: dest. + insurance</td></tr>
+        <tr><td><code>DAP</code></td><td>Delivered at Place · Geliefert benannter Ort</td><td>Named destination (ready to unload)</td></tr>
+        <tr><td><code>DPU</code></td><td>Delivered Place Unloaded · Geliefert entladen</td><td>Named destination, unloaded by seller</td></tr>
+        <tr><td><code>DDP</code></td><td>Delivered Duty Paid · Geliefert verzollt</td><td>Destination + import customs/duties</td></tr>
+        <tr><td rowspan="4" class="type-cell">Sea Only<br>(Blau)</td><td><code>FAS</code></td><td>Free Alongside Ship · Frei Längsseite Schiff</td><td>Alongside ship (buyer loads)</td></tr>
+        <tr><td><code>FOB</code></td><td>Free on Board · Frei an Bord</td><td>On board ship at shipment port</td></tr>
+        <tr><td><code>CFR</code></td><td>Cost and Freight · Kosten und Fracht</td><td class="highlight-cell">Risk: on board → Cost: dest. port</td></tr>
+        <tr><td><code>CIF</code></td><td>Cost Insurance Freight · Kosten Vers. Fracht</td><td class="highlight-cell">Risk: on board → Cost: dest. port + ins.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== CHAPTER 8: EXPORT CALCULATION ==================== -->
+<div class="section page-break" id="s8">
+  <div class="section-header no-break">
+    <div class="section-num">8</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Export Calculation</div>
+      <div class="section-title-de">Exportkalkulation nach Incoterms: Biofit, Good4U &amp; PureFruit</div>
+    </div>
+  </div>
+
+  <div class="hero-row">
+    <figure>
+      <img src="assets/ch08_export_calc.jpg" alt="Export calculation stacked cost steps illustration">
+      <figcaption>Adding cost blocks step by step from EXW to DDP</figcaption>
+    </figure>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 380 185" style="width:100%;height:auto;display:block;">
+        <rect x="2" y="2" width="376" height="181" rx="8" fill="#f7f8fb" stroke="#dde2ea" stroke-width="1.5"/>
+        <rect x="14" y="10" width="352" height="22" rx="4" fill="#1e2e48"/>
+        <text x="190" y="24" text-anchor="middle" fill="#fbc92d" font-size="9.5" font-weight="700">PureFruit Cost Waterfall (Vienna → Barcelona, EUR)</text>
+        <rect x="26" y="76" width="66" height="78" rx="4" fill="#1e2e48"/>
+        <text x="59" y="118" text-anchor="middle" fill="#fff" font-size="9.5" font-weight="700">€ 4,500</text>
+        <text x="59" y="168" text-anchor="middle" fill="#1e2e48" font-size="8.5" font-weight="700">EXW</text>
+        <rect x="114" y="64" width="66" height="90" rx="4" fill="#2980b9"/>
+        <text x="147" y="84" text-anchor="middle" fill="#fbc92d" font-size="7.8" font-weight="700">+480 +120</text>
+        <text x="147" y="116" text-anchor="middle" fill="#fff" font-size="9.5" font-weight="700">€ 5,100</text>
+        <text x="147" y="168" text-anchor="middle" fill="#2980b9" font-size="8.5" font-weight="700">FOB Hamb.</text>
+        <rect x="202" y="48" width="66" height="106" rx="4" fill="#dc4ebf"/>
+        <text x="235" y="68" text-anchor="middle" fill="#fbc92d" font-size="7.8" font-weight="700">+650 +70</text>
+        <text x="235" y="106" text-anchor="middle" fill="#fff" font-size="9.5" font-weight="700">€ 5,820</text>
+        <text x="235" y="168" text-anchor="middle" fill="#dc4ebf" font-size="8.5" font-weight="700">CIF Barc.</text>
+        <rect x="290" y="40" width="66" height="114" rx="4" fill="#fbc92d"/>
+        <text x="323" y="60" text-anchor="middle" fill="#1e2e48" font-size="7.8" font-weight="700">+100 +80</text>
+        <text x="323" y="100" text-anchor="middle" fill="#1e2e48" font-size="9.5" font-weight="700">€ 6,000</text>
+        <text x="323" y="168" text-anchor="middle" fill="#1e2e48" font-size="8.5" font-weight="700">DDP Barc.</text>
+      </svg>
+      <div class="diagram-caption">Cost build-up from EXW to DDP (PureFruit worksheet)</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text"><strong>Export Calculation</strong> starts at the <code>EXW</code> price and adds every transport, loading, insurance, and customs item up to the clause's cost transfer point.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><code>FAS</code> excludes port loading; <code>FOB</code> includes port loading onto the vessel.</li>
+        <li><code>CIF</code> adds sea freight + marine insurance but excludes destination landing charges.</li>
+        <li><code>DDP</code> adds landing, final truck, and import duties (€ 0 inside the EU).</li>
+      </ul>
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" stroke="#d4a800" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Good4U's CIF Lisbon and DAP Lisbon port both total € 12,100, yet risk differs: buyer bears sea risk under CIF, seller under DAP.</div></div>
+      </div>
+    </div>
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Die <strong>Exportkalkulation</strong> startet beim <code>EXW</code>-Preis und addiert alle Kosten bis zum jeweiligen Kostenübergang der gewählten Incoterm-Klausel.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><code>FAS</code> ohne Verladung im Abgangshafen; <code>FOB</code> inklusive Verladung an Bord.</li>
+        <li><code>CIF</code> plus Seefracht und Seeversicherung, aber ohne Zielhafen-Entladung.</li>
+        <li><code>DDP</code> umfasst Entladung, Weitertransport und Einfuhrzölle (EU = 0 EUR).</li>
+      </ul>
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" stroke="#d4a800" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Bei Good4U kosten CIF Lissabon und DAP Lissabon Hafen je 12.100 EUR. Unterschied: Bei CIF trägt der Käufer das Seerisiko, bei DAP der Verkäufer.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap no-break">
+    <table class="vsn-table">
+      <thead><tr><th>Worksheet Case</th><th>EXW</th><th>F-Clause Result</th><th>C-Clause Result</th><th>D-Clause Result</th></tr></thead>
+      <tbody>
+        <tr><td class="type-cell">Biofit (AT → USA)</td><td>€ 80.00/pr</td><td><strong>FOB Amsterdam: € 98.00</strong><br>(+2.50+10+5+0.50 ins.)</td><td><strong>CIF New York: € 126.00</strong><br>(+20 sea + 8 ins.)</td><td>Buyer pays € 12 US duty &amp; € 5 landing</td></tr>
+        <tr><td class="type-cell">Good4U (DE → PT)</td><td>€ 10,000</td><td><strong>FAS Rotterdam: € 10,300</strong><br>(+300 road; no € 200 load)</td><td><strong>CIF Lisbon: € 12,100</strong><br>(+200+1,500+100 ins.)</td><td class="highlight-cell"><strong>DAP Lisbon port: € 12,100</strong><br>(no € 170 landing / € 80 road)</td></tr>
+        <tr><td class="type-cell">PureFruit (AT → ES)</td><td>€ 4,500</td><td><strong>FOB Hamburg: € 5,100</strong><br>(+480 road + 120 load)</td><td><strong>CIF Barcelona: € 5,820</strong><br>(+650 sea + 70 ins.)</td><td class="highlight-cell"><strong>DDP Barcelona: € 6,000</strong><br>(+100 landing + 80 road)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== CHAPTER 9: DOCUMENTS ==================== -->
+<div class="section page-break" id="s9">
+  <div class="section-header no-break">
+    <div class="section-num">9</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Documents in Foreign Trade</div>
+      <div class="section-title-de">Dokumente im Außenhandel: Transport, Herkunft &amp; Fakturen (Buch S. 87-91)</div>
+    </div>
+  </div>
+
+  <div class="hero-row">
+    <figure>
+      <img src="assets/ch09_documents.jpg" alt="International trade documents fan illustration">
+      <figcaption>Transport papers, origin proofs, permits, and invoices</figcaption>
+    </figure>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 380 185" style="width:100%;height:auto;display:block;">
+        <rect x="2" y="2" width="376" height="181" rx="8" fill="#f7f8fb" stroke="#dde2ea" stroke-width="1.5"/>
+        <rect x="12" y="12" width="112" height="160" rx="6" fill="#1e2e48"/>
+        <line x1="20" y1="36" x2="116" y2="36" stroke="#fbc92d" stroke-width="1.5"/>
+        <text x="68" y="30" text-anchor="middle" fill="#fbc92d" font-size="8.8" font-weight="700">1. TRANSPORT (6)</text>
+        <text x="20" y="50" fill="#fff" font-size="7.8">• Sea: Bill of Lading</text>
+        <text x="20" y="68" fill="#fff" font-size="7.8">• River: Flusskonnos.</text>
+        <text x="20" y="86" fill="#fff" font-size="7.8">• Air: Air Waybill (AWB)</text>
+        <text x="20" y="104" fill="#fff" font-size="7.8">• Rail: CIM</text>
+        <text x="20" y="122" fill="#fff" font-size="7.8">• Truck: CMR</text>
+        <text x="20" y="140" fill="#fff" font-size="7.8">• Multi: FIATA MTD</text>
+        <rect x="134" y="12" width="112" height="160" rx="6" fill="#2980b9"/>
+        <line x1="142" y1="36" x2="238" y2="36" stroke="#ffffff" stroke-width="1.5"/>
+        <text x="190" y="30" text-anchor="middle" fill="#fff" font-size="8.8" font-weight="700">2. CUSTOMS / ORIGIN</text>
+        <text x="142" y="52" fill="#e8f4fc" font-size="7.8">• Ursprungszeugnis</text>
+        <text x="146" y="64" fill="#e8f4fc" font-size="7">(GSP Form A)</text>
+        <text x="142" y="84" fill="#e8f4fc" font-size="7.8">• EUR.1 / A.TR</text>
+        <text x="146" y="96" fill="#e8f4fc" font-size="7">(Free trade tariff)</text>
+        <text x="142" y="118" fill="#e8f4fc" font-size="7.8">• Export License</text>
+        <text x="146" y="130" fill="#e8f4fc" font-size="7">(e.g. Schiebel drone)</text>
+        <rect x="256" y="12" width="112" height="160" rx="6" fill="#dc4ebf"/>
+        <line x1="264" y1="36" x2="360" y2="36" stroke="#fbc92d" stroke-width="1.5"/>
+        <text x="312" y="30" text-anchor="middle" fill="#fff" font-size="8.8" font-weight="700">3. TRADE &amp; INSUR.</text>
+        <text x="264" y="52" fill="#fde9f9" font-size="7.8">• Pro-Forma Invoice</text>
+        <text x="268" y="64" fill="#fde9f9" font-size="7">(No payment due!)</text>
+        <text x="264" y="86" fill="#fde9f9" font-size="7.8">• Commercial Invoice</text>
+        <text x="268" y="98" fill="#fde9f9" font-size="7">(Handelsrechnung)</text>
+        <text x="264" y="120" fill="#fde9f9" font-size="7.8">• Packing List</text>
+        <text x="264" y="140" fill="#fbc92d" font-size="7.8" font-weight="700">• Insurance: 110% CIF</text>
+      </svg>
+      <div class="diagram-caption">Three document groups in foreign trade · Drei Dokumentengruppen</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">A <strong>Freight Forwarder</strong> organizes shipping and hires a <strong>Carrier</strong> who issues the mode-specific <strong>Transport Document</strong>.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>Pro-Forma Invoice:</strong> Issued before shipment with no payment obligation (for customs/permits).</li>
+        <li><strong>Commercial Invoice:</strong> Proves the actual sale, triggers payment, and clears customs.</li>
+        <li><strong>Export permits:</strong> Needed for dual-use/military goods (Schiebel Camcopter S-100).</li>
+      </ul>
+      <div class="example-block">
+        <div class="example-label">Worked Example · TrainingsBox (p. 88)</div>
+        <p>Truck Innsbruck → Basel (CPT, EUR): <code>CMR</code> document; seller pays freight; risk passes in Innsbruck.</p>
+      </div>
+    </div>
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Eine <strong>Spedition</strong> organisiert den Transport und beauftragt einen <strong>Frachtführer</strong>, der das jeweilige <strong>Transportdokument</strong> ausstellt.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>Pro-Forma-Rechnung:</strong> Vor Lieferung, keine Zahlungspflicht (für Zoll/Genehmigung).</li>
+        <li><strong>Handelsrechnung (Faktura):</strong> Belegt echten Verkauf, begründet Zahlungspflicht und Zoll.</li>
+        <li><strong>Ausfuhrgenehmigung:</strong> Pflicht für Hightech-/Militärgüter (Schiebel Camcopter S-100).</li>
+      </ul>
+      <div class="example-block">
+        <div class="example-label">Beispiel · TrainingsBox (S. 88)</div>
+        <p>Lkw Innsbruck → Basel (CPT, EUR): <code>CMR</code>-Frachtbrief; Verkäufer zahlt Fracht; Risiko ab Innsbruck.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap no-break">
+    <table class="vsn-table">
+      <thead><tr><th>Mode / Verkehrsträger</th><th>English Document</th><th>Deutsches Dokument</th></tr></thead>
+      <tbody>
+        <tr><td class="type-cell">Sea / Meer</td><td><strong>Bill of Lading</strong> (<code>B/L</code>)</td><td><strong>Seekonnossement</strong></td></tr>
+        <tr><td class="type-cell">River / Binnengewässer</td><td><strong>Inland Waterway B/L</strong></td><td><strong>Flusskonnossement</strong></td></tr>
+        <tr><td class="type-cell">Air / Flugzeug</td><td><strong>Air Waybill</strong> (<code>AWB</code>)</td><td><strong>Luftfrachtbrief</strong></td></tr>
+        <tr><td class="type-cell">Rail / Eisenbahn</td><td><strong>Rail Consignment Note (CIM)</strong></td><td>Internationaler Eisenbahnfrachtbrief</td></tr>
+        <tr><td class="type-cell">Truck / Lkw</td><td><strong>Road Consignment Note (CMR)</strong></td><td>Straßenfrachtbrief</td></tr>
+        <tr><td class="type-cell">Combined / Kombiniert</td><td><strong>Multimodal Transport B/L (FIATA MTD)</strong></td><td>Spediteurzertifikat kombinierter Transport</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== CHAPTER 10: L/C & COLLECTION ==================== -->
+<div class="section page-break" id="s10">
+  <div class="section-header no-break">
+    <div class="section-num">10</div>
+    <div class="section-title-block">
+      <div class="section-title-en">Documentary Collection &amp; Letter of Credit</div>
+      <div class="section-title-de">Dokumenteninkasso (D/P, D/A) &amp; Dokumentenakkreditiv (Buch S. 89-98)</div>
+    </div>
+  </div>
+
+  <div class="hero-row">
+    <figure>
+      <img src="assets/ch10_lc_collection.jpg" alt="Letter of credit bank bridge illustration">
+      <figcaption>Two banks bridging exporter and importer securely</figcaption>
+    </figure>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 380 185" style="width:100%;height:auto;display:block;">
+        <rect x="2" y="2" width="376" height="181" rx="8" fill="#f7f8fb" stroke="#dde2ea" stroke-width="1.5"/>
+        <rect x="12" y="10" width="356" height="22" rx="4" fill="#1e2e48"/>
+        <text x="190" y="24" text-anchor="middle" fill="#fbc92d" font-size="9" font-weight="700">Letter of Credit (10 Steps) vs. Documentary Collection (7 Steps)</text>
+        <rect x="14" y="42" width="82" height="34" rx="5" fill="#2980b9"/>
+        <text x="55" y="57" text-anchor="middle" fill="#fff" font-size="8.2" font-weight="700">Exporter</text>
+        <text x="55" y="69" text-anchor="middle" fill="#e8f4fc" font-size="7">Begünst./Einr.</text>
+        <rect x="108" y="42" width="76" height="34" rx="5" fill="#dc4ebf"/>
+        <text x="146" y="57" text-anchor="middle" fill="#fff" font-size="7.8" font-weight="700">Advising /</text>
+        <text x="146" y="69" text-anchor="middle" fill="#fde9f9" font-size="7">Remitting Bank</text>
+        <rect x="196" y="42" width="76" height="34" rx="5" fill="#1e2e48"/>
+        <text x="234" y="57" text-anchor="middle" fill="#fbc92d" font-size="7.8" font-weight="700">Issuing /</text>
+        <text x="234" y="69" text-anchor="middle" fill="#fff" font-size="7">Collecting Bank</text>
+        <rect x="284" y="42" width="82" height="34" rx="5" fill="#fbc92d"/>
+        <text x="325" y="57" text-anchor="middle" fill="#1e2e48" font-size="8.2" font-weight="700">Importer</text>
+        <text x="325" y="69" text-anchor="middle" fill="#1e2e48" font-size="7">Auftragg./Bez.</text>
+        <line x1="96" y1="59" x2="108" y2="59" stroke="#1e2e48" stroke-width="1.8"/>
+        <line x1="184" y1="59" x2="196" y2="59" stroke="#1e2e48" stroke-width="1.8"/>
+        <line x1="272" y1="59" x2="284" y2="59" stroke="#1e2e48" stroke-width="1.8"/>
+        <rect x="14" y="84" width="352" height="42" rx="5" fill="#fff" stroke="#dc4ebf" stroke-width="1.3"/>
+        <text x="22" y="99" fill="#c0359e" font-size="8.2" font-weight="700">L/C (Akkreditiv): Buyer opens (1-4) → Seller ships &amp; presents docs (5-7) → Banks settle (8-10)</text>
+        <text x="22" y="114" fill="#1e2e48" font-size="7.6">Always Irrevocable &amp; Time-Limited · Deadlines: Expiry · Latest Shipment · 21d Presentation</text>
+        <rect x="14" y="134" width="352" height="42" rx="5" fill="#fff" stroke="#2980b9" stroke-width="1.3"/>
+        <text x="22" y="149" fill="#1a6a9a" font-size="8.2" font-weight="700">Inkasso: Seller ships &amp; orders Remitting Bank → Collecting Bank releases docs on D/P or D/A</text>
+        <text x="22" y="164" fill="#1e2e48" font-size="7.6">D/P = cash now (Zug-um-Zug) · D/A = accept Bill of Exchange (Wechsel) · NO bank guarantee!</text>
+      </svg>
+      <div class="diagram-caption">L/C opening/utilization vs. Documentary Collection D/P and D/A</div>
+    </div>
+  </div>
+
+  <div class="bilingual-grid">
+    <div class="col-en">
+      <div class="col-label"><span class="col-label-dot"></span>English</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">In a <strong>Letter of Credit</strong>, the <strong>Issuing Bank</strong> gives an <strong>Irrevocable</strong>, <strong>Time-Limited</strong> promise to pay via the <strong>Advising Bank</strong> against compliant documents.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>L/C deadlines:</strong> <strong>Expiry Date</strong>, <strong>Latest Shipment Date</strong>, and <strong>Presentation Period</strong> (21 days default).</li>
+        <li><strong>Documentary Collection:</strong> <strong>Remitting Bank</strong> instructs <strong>Collecting Bank</strong> to hand docs for cash (<code>D/P</code>) or accepted <strong>Bill of Exchange</strong> (<code>D/A</code>).</li>
+      </ul>
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" stroke="#d4a800" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Exam Tip</div><div class="callout-text">Banks check ONLY documents, never physical goods! Both tools leave defective-goods risk with the importer.</div></div>
+      </div>
+    </div>
+    <div class="col-de">
+      <div class="col-label"><span class="col-label-dot"></span>Deutsch</div>
+      <div class="callout-box callout-def no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#dc4ebf" stroke-width="2"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#dc4ebf" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Definition</div><div class="callout-text">Beim <strong>Dokumentenakkreditiv</strong> gibt die <strong>Akkreditivbank</strong> ein <strong>unwiderrufliches</strong>, <strong>befristetes</strong> Zahlungsversprechen über die <strong>avisierende Bank</strong> gegen Dokumente ab.</div></div>
+      </div>
+      <ul class="content-list">
+        <li><strong>Fristen:</strong> <strong>Verfallsfrist</strong>, <strong>Verladefrist</strong> und <strong>Vorlagefrist</strong> (Standard max. 21 Tage).</li>
+        <li><strong>Dokumenteninkasso:</strong> <strong>Einreicherbank</strong> sendet Dokumente an <strong>Inkassobank</strong> gegen Zahlung (<code>D/P</code>) oder <strong>Wechsel</strong>-Akzept (<code>D/A</code>).</li>
+      </ul>
+      <div class="callout-box callout-tip no-break">
+        <svg class="callout-icon" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" stroke="#d4a800" stroke-width="2"/></svg>
+        <div class="callout-content"><div class="callout-label">Prüfungstipp</div><div class="callout-text">Banken prüfen NUR Dokumente, nie die Ware! Mangelhafte Ware bleibt bei beiden Verfahren Risiko des Importeurs.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap no-break">
+    <table class="vsn-table">
+      <thead><tr><th>Criterion / Kriterium</th><th>Letter of Credit / Akkreditiv</th><th>Documentary Collection / Inkasso</th></tr></thead>
+      <tbody>
+        <tr><td class="type-cell">Applicant / Auftraggeber</td><td class="highlight-cell">Importer (Buyer / Käufer)</td><td class="highlight-cell">Exporter (Seller / Verkäufer)</td></tr>
+        <tr><td class="type-cell">Bank Guarantee</td><td>Yes (Buyer's bank; + Seller's if confirmed)</td><td>No bank payment guarantee · Keine Garantie</td></tr>
+        <tr><td class="type-cell">Non-Acceptance Risk</td><td>Covered for exporter · Abgesichert</td><td>Remains with exporter · Bleibt beim Verkäufer</td></tr>
+        <tr><td class="type-cell">Best Case (p. 91, 96)</td><td>New overseas partner (BWT / A. Pöhli USD 10,250)</td><td>Trusted EU partner (Honigmayr / Novotel € 8,500 D/P)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

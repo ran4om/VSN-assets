@@ -1,0 +1,120 @@
+{
+  "title": "03 Regular Employment Contract & Special Forms - Topic Quiz",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "text": "Which characteristic is typical of an employee under a Regular Employment Contract?",
+      "options": [
+        "They carry the full economic risk of the company",
+        "They may freely send a third-party substitute at any time",
+        "They provide personal labor while bound by instructions",
+        "They register themselves independently with the SVS"
+      ],
+      "correctAnswer": "They provide personal labor while bound by instructions",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Who registers the employee for social insurance under a Regular Employment Contract, and with which institution?",
+      "options": [
+        "The employer registers the employee with the OeGK",
+        "The employee registers themselves with the OeGK",
+        "The employer registers the employee with the SVS",
+        "The employee registers themselves with the SVS"
+      ],
+      "correctAnswer": "The employer registers the employee with the OeGK",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How is income tax generally paid under a Regular Employment Contract?",
+      "options": [
+        "The employee must file an independent income tax return",
+        "The employer deducts wage tax and remits it to the tax office",
+        "No income taxes apply to dependent employment",
+        "The OeGK deducts wage tax directly from the employer's account"
+      ],
+      "correctAnswer": "The employer deducts wage tax and remits it to the tax office",
+      "points": 10,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "How many hours of mandatory internship must HAK students complete between Year II and before entering Year V?",
+      "options": [
+        "150 hours during regular school lesson hours",
+        "200 hours exclusively during the final school year",
+        "400 hours split across two separate companies",
+        "300 hours during lesson-free time"
+      ],
+      "correctAnswer": "300 hours during lesson-free time",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Amara Hadic works Saturdays at H&M and earns below the marginal earnings threshold per month. Which insurance does her employer cover?",
+      "options": [
+        "Only accident insurance",
+        "Health, pension, and unemployment insurance",
+        "Only health and pension insurance",
+        "No statutory social insurance at all"
+      ],
+      "correctAnswer": "Only accident insurance",
+      "points": 10,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "Which entitlements do marginally employed workers have toward their employer?",
+      "options": [
+        "Only the agreed hourly wage with no additional rights",
+        "Paid vacation, but neither sick pay nor special payments",
+        "Paid vacation, sick pay, and special payments",
+        "Only special payments, but no paid vacation entitlement"
+      ],
+      "correctAnswer": "Paid vacation, sick pay, and special payments",
+      "points": 15,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "multiple-choice",
+      "text": "An accountant works daily at a carpentry office using the firm's computer, keeps fixed hours, and follows the owner's instructions. Which contract applies?",
+      "options": [
+        "Freelance Service Contract",
+        "Regular Employment Contract",
+        "Contract for Work",
+        "Marginal Work Order"
+      ],
+      "correctAnswer": "Regular Employment Contract",
+      "points": 10,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "true-false",
+      "text": "A holiday job is always a Regular Employment Contract with full entitlement to paid vacation, sick pay, and special payments.",
+      "options": [],
+      "correctAnswer": "True",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "true-false",
+      "text": "In Austria, a Regular Employment Contract is legally valid only if concluded in writing.",
+      "options": [],
+      "correctAnswer": "False",
+      "points": 5,
+      "topic": "employment-contract"
+    },
+    {
+      "type": "open-ended",
+      "text": "Explain the five main traits of an employee under a Regular Employment Contract and name three key statutory entitlements besides wages or salary.",
+      "options": [],
+      "correctAnswer": "Five traits: (1) owes personal labor, (2) bound by employer instructions, (3) keeps fixed working hours and workplace, (4) uses employer's work equipment, (5) carries no economic risk. Three key entitlements: paid vacation, sick pay, and special payments (vacation bonus and Christmas bonus).",
+      "points": 20,
+      "topic": "employment-contract"
+    }
+  ]
+}
